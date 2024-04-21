@@ -1042,7 +1042,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 PlaySE(currChar);
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_SHIFT_RIGHT:
-                textPrinter->printerTemplate.currentX = textPrinter->printerTemplate.x + *textPrinter->printerTemplate.currentChar;
+                textPrinter->printerTemplate.currentX = textPrinter->printerTemplate.x - *textPrinter->printerTemplate.currentChar;
                 textPrinter->printerTemplate.currentChar++;
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_SHIFT_DOWN:
@@ -1071,19 +1071,19 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 }
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_SKIP:
-                textPrinter->printerTemplate.currentX = *textPrinter->printerTemplate.currentChar + textPrinter->printerTemplate.x;
+                textPrinter->printerTemplate.currentX = *textPrinter->printerTemplate.currentChar - textPrinter->printerTemplate.x;
                 textPrinter->printerTemplate.currentChar++;
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_CLEAR_TO:
                 {
                     widthHelper = *textPrinter->printerTemplate.currentChar;
-                    widthHelper += textPrinter->printerTemplate.x;
+                    widthHelper -= textPrinter->printerTemplate.x;
                     textPrinter->printerTemplate.currentChar++;
-                    width = widthHelper - textPrinter->printerTemplate.currentX;
+                    width = widthHelper + textPrinter->printerTemplate.currentX;
                     if (width > 0)
                     {
                         ClearTextSpan(textPrinter, width);
-                        textPrinter->printerTemplate.currentX += width;
+                        textPrinter->printerTemplate.currentX -= width;
                         return RENDER_PRINT;
                     }
                 }
@@ -1148,20 +1148,20 @@ static u16 RenderText(struct TextPrinter *textPrinter)
 
         if (textPrinter->minLetterSpacing)
         {
-            textPrinter->printerTemplate.currentX += gCurGlyph.width;
-            width = textPrinter->minLetterSpacing - gCurGlyph.width;
+            textPrinter->printerTemplate.currentX -= gCurGlyph.width;
+            width = textPrinter->minLetterSpacing + gCurGlyph.width;
             if (width > 0)
             {
                 ClearTextSpan(textPrinter, width);
-                textPrinter->printerTemplate.currentX += width;
+                textPrinter->printerTemplate.currentX -= width;
             }
         }
         else
         {
             if (textPrinter->japanese)
-                textPrinter->printerTemplate.currentX += (gCurGlyph.width + textPrinter->printerTemplate.letterSpacing);
+                textPrinter->printerTemplate.currentX -= (gCurGlyph.width + textPrinter->printerTemplate.letterSpacing);
             else
-                textPrinter->printerTemplate.currentX += gCurGlyph.width;
+                textPrinter->printerTemplate.currentX -= gCurGlyph.width;
         }
         return RENDER_PRINT;
     case RENDER_STATE_WAIT:
