@@ -173,9 +173,9 @@ u16 AddTextPrinterParameterized2(u8 windowId, u8 fontId, const u8 *str, u8 speed
     printer.currentChar = str;
     printer.windowId = windowId;
     printer.fontId = fontId;
-    printer.x = 200;
+    printer.x = 200; //s7 start from right side
     printer.y = 1;
-    printer.currentX = 200;
+    printer.currentX = 200; //s7 start from right side
     printer.currentY = 1;
     printer.letterSpacing = 0;
     printer.lineSpacing = 0;

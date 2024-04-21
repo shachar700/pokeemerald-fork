@@ -1159,7 +1159,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
         else
         {
             if (textPrinter->japanese)
-                textPrinter->printerTemplate.currentX -= (gCurGlyph.width + textPrinter->printerTemplate.letterSpacing);
+                textPrinter->printerTemplate.currentX -= (gCurGlyph.width - textPrinter->printerTemplate.letterSpacing);
             else
                 textPrinter->printerTemplate.currentX -= gCurGlyph.width;
         }
