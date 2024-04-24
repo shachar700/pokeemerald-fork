@@ -611,7 +611,7 @@ void CopyGlyphToWindow(struct TextPrinter *textPrinter)
     if ((glyphHeight = (template->height * 8) - textPrinter->printerTemplate.currentY) > gCurGlyph.height)
         glyphHeight = gCurGlyph.height;
 
-    currX = textPrinter->printerTemplate.currentX;
+    currX = textPrinter->printerTemplate.currentX - glyphWidth;
     currY = textPrinter->printerTemplate.currentY;
     glyphPixels = gCurGlyph.gfxBufferTop;
     windowTiles = window->tileData;
@@ -634,14 +634,14 @@ void CopyGlyphToWindow(struct TextPrinter *textPrinter)
         if (glyphHeight < 9)
         {
             GLYPH_COPY(windowTiles, widthOffset, currX, currY, glyphPixels, 8, glyphHeight);
-            GLYPH_COPY(windowTiles, widthOffset, currX + 8, currY, glyphPixels + 8, glyphWidth - 8, glyphHeight);
+            GLYPH_COPY(windowTiles, widthOffset, currX - 8, currY, glyphPixels + 8, glyphWidth - 8, glyphHeight);
         }
         else
         {
             GLYPH_COPY(windowTiles, widthOffset, currX, currY, glyphPixels, 8, 8);
-            GLYPH_COPY(windowTiles, widthOffset, currX + 8, currY, glyphPixels + 8, glyphWidth - 8, 8);
+            GLYPH_COPY(windowTiles, widthOffset, currX - 8, currY, glyphPixels + 8, glyphWidth - 8, 8);
             GLYPH_COPY(windowTiles, widthOffset, currX, currY + 8, glyphPixels + 16, 8, glyphHeight - 8);
-            GLYPH_COPY(windowTiles, widthOffset, currX + 8, currY + 8, glyphPixels + 24, glyphWidth - 8, glyphHeight - 8);
+            GLYPH_COPY(windowTiles, widthOffset, currX - 8, currY + 8, glyphPixels + 24, glyphWidth - 8, glyphHeight - 8);
         }
     }
 }
@@ -657,7 +657,7 @@ void ClearTextSpan(struct TextPrinter *textPrinter, u32 width)
     {
         window = &gWindows[textPrinter->printerTemplate.windowId];
         pixels_data.pixels = window->tileData;
-        pixels_data.width = window->window.width << 3;
+        pixels_data.width = window->window.width >> 3;
         pixels_data.height = window->window.height << 3;
 
         glyph = &gCurGlyph;
@@ -1066,7 +1066,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 if (width > 0)
                 {
                     ClearTextSpan(textPrinter, width);
-                    textPrinter->printerTemplate.currentX += width;
+                    textPrinter->printerTemplate.currentX -= width;
                     return RENDER_PRINT;
                 }
                 return RENDER_REPEAT;
@@ -1079,7 +1079,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                     widthHelper = *textPrinter->printerTemplate.currentChar;
                     widthHelper -= textPrinter->printerTemplate.x;
                     textPrinter->printerTemplate.currentChar++;
-                    width = widthHelper + textPrinter->printerTemplate.currentX;
+                    width = widthHelper - textPrinter->printerTemplate.currentX;
                     if (width > 0)
                     {
                         ClearTextSpan(textPrinter, width);
@@ -1114,7 +1114,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
         case CHAR_KEYPAD_ICON:
             currChar = *textPrinter->printerTemplate.currentChar++;
             gCurGlyph.width = DrawKeypadIcon(textPrinter->printerTemplate.windowId, currChar, textPrinter->printerTemplate.currentX, textPrinter->printerTemplate.currentY);
-            textPrinter->printerTemplate.currentX += gCurGlyph.width + textPrinter->printerTemplate.letterSpacing;
+            textPrinter->printerTemplate.currentX -= gCurGlyph.width - textPrinter->printerTemplate.letterSpacing;
             return RENDER_PRINT;
         case EOS:
             return RENDER_FINISH;
@@ -1149,7 +1149,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
         if (textPrinter->minLetterSpacing)
         {
             textPrinter->printerTemplate.currentX -= gCurGlyph.width;
-            width = textPrinter->minLetterSpacing + gCurGlyph.width;
+            width = textPrinter->minLetterSpacing - gCurGlyph.width;
             if (width > 0)
             {
                 ClearTextSpan(textPrinter, width);
@@ -1496,6 +1496,7 @@ s32 GetStringWidth(u8 fontId, const u8 *str, s16 letterSpacing)
         return lineWidth;
     return width;
 }
+
 
 u8 RenderTextHandleBold(u8 *pixels, u8 fontId, u8 *str)
 {

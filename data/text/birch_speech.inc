@@ -1,20 +1,20 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "היי! סליחה על ההמתנה!\p"
+	.string "ברוכים הבאים לעולם הפוקימונים!\p"
+	.string "שמי הוא בירץ'.\p"
+	.string "אבל כולם קוראים לי הפרופסור\n"
+	.string "לפוקימון.\p"
 	.string "$"
 
 gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
+	.string "לזה אנחנו קוראים פוקימון.\p"
 	.string "\n"
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "We humans live alongside POKéMON,\n"
+	.string "העולם שלנו מיושב לרווחה\n"
+	.string "ביצורים הידועים בשם פוקימון.\p"
+	.string "אנחנו בני האדם חיים לד פוקימון,\n"
 	.string "at times as friendly playmates, and\l"
 	.string "at times as cooperative workmates.\p"
 	.string "And sometimes, we band together\n"
