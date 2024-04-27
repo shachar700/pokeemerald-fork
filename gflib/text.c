@@ -639,9 +639,9 @@ void CopyGlyphToWindow(struct TextPrinter *textPrinter)
         else
         {
             GLYPH_COPY(windowTiles, widthOffset, currX, currY, glyphPixels, 8, 8);
-            GLYPH_COPY(windowTiles, widthOffset, currX - 8, currY, glyphPixels + 8, glyphWidth + 8, 8);
+            GLYPH_COPY(windowTiles, widthOffset, currX - 8, currY, glyphPixels + 8, glyphWidth - 8, 8);
             GLYPH_COPY(windowTiles, widthOffset, currX, currY + 8, glyphPixels + 16, 8, glyphHeight - 8);
-            GLYPH_COPY(windowTiles, widthOffset, currX - 8, currY + 8, glyphPixels + 24, glyphWidth + 8, glyphHeight - 8);
+            GLYPH_COPY(windowTiles, widthOffset, currX - 8, currY + 8, glyphPixels + 24, glyphWidth - 8, glyphHeight - 8);
         }
     }
 }

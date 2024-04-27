@@ -7,55 +7,55 @@ gText_Birch_Welcome::
 	.string "$"
 
 gText_Birch_Pokemon::
-	.string "לזה אנחנו קוראים פוקימון.\p"
+	.string "זה מה שאנחנו מכנים פוקימון.\p"
 	.string "\n"
 	.string "$"
 
 gText_Birch_MainSpeech::
 	.string "העולם שלנו מיושב לרווחה\n"
 	.string "ביצורים הידועים בשם פוקימון.\p"
-	.string "אנחנו בני האדם חיים לד פוקימון,\n"
-	.string "at times as friendly playmates, and\l"
-	.string "at times as cooperative workmates.\p"
-	.string "And sometimes, we band together\n"
-	.string "and battle others like us.\p"
-	.string "But despite our closeness, we don't\n"
-	.string "know everything about POKéMON.\p"
-	.string "In fact, there are many, many\n"
-	.string "secrets surrounding POKéMON.\p"
-	.string "To unravel POKéMON mysteries,\n"
-	.string "I've been undertaking research.\l"
-	.string "That's what I do.\p"
+	.string "אנחנו בני האדם חיים לצד פוקימון,\n"
+	.string "בזמני משחקי ידידות,\l"
+	.string "ובזמנים כעובדים משותפים.\p"
+	.string "ולפעמים, אנחנו קושרים יחדיו\n"
+	.string "ונלחמים באחרים כמונו. \p"
+	.string "אבל למרות הקירוב, אנחנו לא\n"
+	.string "יודעים הרבה על פוקימון.\p"
+	.string "למעשה, יש הרבה, הרבה\n"
+	.string "סודות סביב פוקימון.\p"
+	.string "כדי לחשוף תעלומות של פוקימון,\n"
+	.string "אני עושה מחקרים.\l"
+	.string "זה מה שאני עושה.\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "And you are?$"
+	.string "ומי אתם?$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "הנך בן?\n"
+	.string "או בת?$"
 
 gText_Birch_WhatsYourName::
-	.string "All right.\n"
-	.string "What's your name?$"
+	.string "מצויין.\n"
+	.string "מה שמך?$"
 
 gText_Birch_SoItsPlayer::
-	.string "So it's {PLAYER}{KUN}?$"
+	.string "אז זה {PLAYER}{KUN}?$"
 
 gText_Birch_YourePlayer::
-	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
-	.string "I get it now!\p"
+	.string "אה, אוקיי!\p"
+	.string "הנך {PLAYER}{KUN} שמגיע\n"
+	.string "לעיר מולדי ליטלרוט.\l"
+	.string "אני מבין את זה עכשיו!\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
-	.string "All right, are you ready?\p"
-	.string "Your very own adventure is about\n"
-	.string "to unfold.\p"
-	.string "Take courage, and leap into the\n"
-	.string "world of POKéMON where dreams,\l"
-	.string "adventure, and friendships await!\p"
-	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my POKéMON LAB.\p"
+	.string "בסדר, הנך מוכן?\p"
+	.string "ההרפתקאה שלך עומדת\n"
+	.string "להתחיל.\p"
+	.string "אזרו אומץ, וזנקו אל תוך\n"
+	.string "עולם הפוקימונים, איפה שחלומות, \l"
+	.string "הרפתקאות, וחברות מחכים!\p"
+	.string "ובכן, אני מצפה לראותך מאוחר יותר.\n"
+	.string "בואו לראות אותי במעבדת הפוקימון שלי.\p"
 	.string "$"
