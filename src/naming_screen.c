@@ -473,9 +473,9 @@ static void NamingScreen_Init(void)
     sNamingScreen->bgToHide = 1;
     sNamingScreen->template = sNamingScreenTemplates[sNamingScreen->templateNum];
     sNamingScreen->currentPage = sNamingScreen->template->initialPage;
-    sNamingScreen->inputCharBaseXPos = (DISPLAY_WIDTH - sNamingScreen->template->maxChars * 8) / 2 + 6;
+    sNamingScreen->inputCharBaseXPos = (DISPLAY_WIDTH - sNamingScreen->template->maxChars * 8) / 2 + 60;
     if (sNamingScreen->templateNum == NAMING_SCREEN_WALDA)
-        sNamingScreen->inputCharBaseXPos += 11;
+        sNamingScreen->inputCharBaseXPos -= 11;
     sNamingScreen->keyRepeatStartDelayCopy = gKeyRepeatStartDelay;
     memset(sNamingScreen->textBuffer, EOS, sizeof(sNamingScreen->textBuffer));
     if (sNamingScreen->template->copyExistingString)
@@ -1349,12 +1349,13 @@ static void CreateTextEntrySprites(void)
     u8 spriteId;
     s16 xPos;
     u8 i;
-
-    xPos = sNamingScreen->inputCharBaseXPos - 5 + 70;
+    //arrow thingy
+    xPos = sNamingScreen->inputCharBaseXPos - 5 + 20;
     spriteId = CreateSprite(&sSpriteTemplate_InputArrow, xPos, 56, 0);
     gSprites[spriteId].oam.priority = 3;
     gSprites[spriteId].invisible = TRUE;
-    xPos = sNamingScreen->inputCharBaseXPos + 54;
+    // s7 lines dancing both for mon and player
+    xPos = sNamingScreen->inputCharBaseXPos + 8;
     for (i = 0; i < sNamingScreen->template->maxChars; i++, xPos -= 8)
     {
         spriteId = CreateSprite(&sSpriteTemplate_Underscore, xPos - 3, 60, 0);
@@ -1715,7 +1716,7 @@ static void DrawMonTextEntryBox(void)
     StringCopy(buffer, gSpeciesNames[sNamingScreen->monSpecies]);
     StringAppendN(buffer, sNamingScreen->template->title, 15);
     FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], PIXEL_FILL(1));
-    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, buffer, 100, 1, 0, 0); //s7 
+    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, buffer, 100, 1, 0, 0); //s7 mudkip's nickname?
     PutWindowTilemap(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX]);
 }
 
@@ -1910,8 +1911,8 @@ static void DrawTextEntry(void)
         temp[0] = sNamingScreen->textBuffer[i];
         temp[1] = gText_ExpandedPlaceholder_Empty[0];
         extraWidth = (IsWideLetter(temp[0]) == TRUE) ? 2 : 0;
-        //s7 letters in the lines of name selection
-        AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, temp, 122 - i * 8 - x - extraWidth, 1, TEXT_SKIP_DRAW, NULL);
+        //s7 letters in the lines of name selection both for mon and player
+        AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, temp, 184 - i * 8 - x - extraWidth, 1, TEXT_SKIP_DRAW, NULL);
     }
 
     TryDrawGenderIcon();
@@ -1953,7 +1954,7 @@ static void PrintKeyboardKeys(u8 window, u8 page)
 
     FillWindowPixelBuffer(window, sFillValues[page]);
 
-    for (i = 0; i < KBROW_COUNT; i++) // keyboard keys in name selection screen
+    for (i = 0; i < KBROW_COUNT; i++) // s7 letters in the box in name selection screen
         AddTextPrinterParameterized3(window, FONT_NORMAL, 140, i * 16 + 1, sKeyboardTextColors[page], 0, sNamingScreenKeyboardText[page][i]);
 
     PutWindowTilemap(window);
