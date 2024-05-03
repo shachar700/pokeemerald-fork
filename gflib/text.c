@@ -611,7 +611,7 @@ void CopyGlyphToWindow(struct TextPrinter *textPrinter)
     if ((glyphHeight = (template->height * 8) - textPrinter->printerTemplate.currentY) > gCurGlyph.height)
         glyphHeight = gCurGlyph.height;
 
-    currX = textPrinter->printerTemplate.currentX - glyphWidth;
+    currX = textPrinter->printerTemplate.currentX; // - glyphWidth causes memory issues in summary of pokemon
     currY = textPrinter->printerTemplate.currentY;
     glyphPixels = gCurGlyph.gfxBufferTop;
     windowTiles = window->tileData;
