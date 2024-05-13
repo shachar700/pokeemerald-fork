@@ -1,0 +1,3 @@
+[submodule "docker-gba-compiler"]
+	path = docker-gba-compiler
+	url = https://github.com/TheLoneDev/docker-gba-compiler
