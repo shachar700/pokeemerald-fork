@@ -611,7 +611,12 @@ void CopyGlyphToWindow(struct TextPrinter *textPrinter)
     if ((glyphHeight = (template->height * 8) - textPrinter->printerTemplate.currentY) > gCurGlyph.height)
         glyphHeight = gCurGlyph.height;
 
-    currX = textPrinter->printerTemplate.currentX; // - glyphWidth causes memory issues in summary of pokemon
+    DebugPrintf("CopyGlpyhToWindow: currX= %d, glyphwidth= %d", textPrinter->printerTemplate.currentX, gCurGlyph.width);
+
+    if (textPrinter->printerTemplate.currentX >= gCurGlyph.width)
+        currX = textPrinter->printerTemplate.currentX - gCurGlyph.width;
+    else
+        currX = 0;
     currY = textPrinter->printerTemplate.currentY;
     glyphPixels = gCurGlyph.gfxBufferTop;
     windowTiles = window->tileData;
@@ -639,9 +644,9 @@ void CopyGlyphToWindow(struct TextPrinter *textPrinter)
         else
         {
             GLYPH_COPY(windowTiles, widthOffset, currX, currY, glyphPixels, 8, 8);
-            GLYPH_COPY(windowTiles, widthOffset, currX - 8, currY, glyphPixels + 8, glyphWidth - 8, 8);
+            GLYPH_COPY(windowTiles, widthOffset, currX + 8, currY, glyphPixels + 8, glyphWidth - 8, 8);
             GLYPH_COPY(windowTiles, widthOffset, currX, currY + 8, glyphPixels + 16, 8, glyphHeight - 8);
-            GLYPH_COPY(windowTiles, widthOffset, currX - 8, currY + 8, glyphPixels + 24, glyphWidth - 8, glyphHeight - 8);
+            GLYPH_COPY(windowTiles, widthOffset, currX + 8, currY + 8, glyphPixels + 24, glyphWidth - 8, glyphHeight - 8);
         }
     }
 }
@@ -1114,7 +1119,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
         case CHAR_KEYPAD_ICON:
             currChar = *textPrinter->printerTemplate.currentChar++;
             gCurGlyph.width = DrawKeypadIcon(textPrinter->printerTemplate.windowId, currChar, textPrinter->printerTemplate.currentX, textPrinter->printerTemplate.currentY);
-            textPrinter->printerTemplate.currentX -= gCurGlyph.width + textPrinter->printerTemplate.letterSpacing;
+            textPrinter->printerTemplate.currentX -= gCurGlyph.width - textPrinter->printerTemplate.letterSpacing;
             return RENDER_PRINT;
         case EOS:
             return RENDER_FINISH;
