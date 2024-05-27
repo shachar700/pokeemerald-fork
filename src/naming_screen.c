@@ -1350,12 +1350,12 @@ static void CreateTextEntrySprites(void)
     s16 xPos;
     u8 i;
     //arrow thingy
-    xPos = sNamingScreen->inputCharBaseXPos - 5 + 20;
+    xPos = sNamingScreen->inputCharBaseXPos - 5 + 28;
     spriteId = CreateSprite(&sSpriteTemplate_InputArrow, xPos, 56, 0);
     gSprites[spriteId].oam.priority = 3;
     gSprites[spriteId].invisible = TRUE;
     // s7 lines dancing both for mon and player
-    xPos = sNamingScreen->inputCharBaseXPos + 8;
+    xPos = sNamingScreen->inputCharBaseXPos + 16;
     for (i = 0; i < sNamingScreen->template->maxChars; i++, xPos -= 8)
     {
         spriteId = CreateSprite(&sSpriteTemplate_Underscore, xPos - 3, 60, 0);
@@ -1705,7 +1705,7 @@ static void HandleDpadMovement(struct Task *task)
 static void DrawNormalTextEntryBox(void)
 {
     FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], PIXEL_FILL(1));
-    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, sNamingScreen->template->title, 100, 1, 0, 0); //s7 //your name?
+    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, sNamingScreen->template->title, 130, 1, 0, 0); //s7 //your name?
     PutWindowTilemap(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX]);
 }
 
@@ -1716,7 +1716,7 @@ static void DrawMonTextEntryBox(void)
     StringCopy(buffer, gSpeciesNames[sNamingScreen->monSpecies]);
     StringAppendN(buffer, sNamingScreen->template->title, 15);
     FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], PIXEL_FILL(1));
-    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, buffer, 100, 1, 0, 0); //s7 mudkip's nickname?
+    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, buffer, 130, 1, 0, 0); //s7 mudkip's nickname?
     PutWindowTilemap(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX]);
 }
 
@@ -1772,7 +1772,7 @@ static void DrawGenderIcon(void)
             StringCopy(text, gText_FemaleSymbol);
             isFemale = TRUE;
         }
-        AddTextPrinterParameterized3(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, (POKEMON_NAME_LENGTH * 4) + 64, 1, sGenderColors[isFemale], TEXT_SKIP_DRAW, text);
+        AddTextPrinterParameterized3(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, 10 /* s7 (POKEMON_NAME_LENGTH * 4) + 64*/ , 1, sGenderColors[isFemale], TEXT_SKIP_DRAW, text);
     }
 }
 
@@ -1902,6 +1902,7 @@ static void DrawTextEntry(void)
     u8 temp[2];
     u16 extraWidth;
     u8 maxChars = sNamingScreen->template->maxChars;
+    u8 startXPos; //s7
     u16 x = sNamingScreen->inputCharBaseXPos - 0x40;
 
     FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY], PIXEL_FILL(1));
@@ -1911,8 +1912,9 @@ static void DrawTextEntry(void)
         temp[0] = sNamingScreen->textBuffer[i];
         temp[1] = gText_ExpandedPlaceholder_Empty[0];
         extraWidth = (IsWideLetter(temp[0]) == TRUE) ? 2 : 0;
+        startXPos = (sNamingScreen->templateNum == NAMING_SCREEN_PLAYER || sNamingScreen->templateNum == NAMING_SCREEN_BOX || sNamingScreen->templateNum == NAMING_SCREEN_WALDA) ? 192 : 168;
         //s7 letters in the lines of name selection both for mon and player
-        AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, temp, 184 - i * 8 - x - extraWidth, 1, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, temp, startXPos - i * 8 - x - extraWidth, 1, TEXT_SKIP_DRAW, NULL);
     }
 
     TryDrawGenderIcon();

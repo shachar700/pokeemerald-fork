@@ -435,7 +435,7 @@ static void TextSpeed_DrawChoices(u8 selection)
     widthFast = GetStringWidth(FONT_NORMAL, gText_TextSpeedFast, 0);
 
     widthMid -= 94;
-    xMid = (widthSlow - widthMid - widthFast) / 2 + 34;
+    xMid = (widthSlow - widthMid - widthFast) / 2 + 44;
     DrawOptionMenuChoice(gText_TextSpeedMid, xMid, YPOS_TEXTSPEED, styles[1]);
 
     DrawOptionMenuChoice(gText_TextSpeedFast, GetStringRightAlignXOffset(FONT_NORMAL, gText_TextSpeedFast, 136), YPOS_TEXTSPEED, styles[2]);
