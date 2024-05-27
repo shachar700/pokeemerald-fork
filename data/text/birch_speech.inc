@@ -29,10 +29,10 @@ gText_Birch_MainSpeech::
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "ומי אתם?$"
+	.string "ומי אתה?$"
 
 gText_Birch_BoyOrGirl::
-	.string "בן?\n"
+	.string "אתה בן?\n"
 	.string "או בת?$"
 
 gText_Birch_WhatsYourName::
