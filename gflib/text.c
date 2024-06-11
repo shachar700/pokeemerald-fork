@@ -255,9 +255,9 @@ u16 AddTextPrinterParameterized(u8 windowId, u8 fontId, const u8 *str, u8 x, u8 
     printerTemplate.currentChar = str;
     printerTemplate.windowId = windowId;
     printerTemplate.fontId = fontId;
-    printerTemplate.x = x;
+    printerTemplate.x = x + 40;
     printerTemplate.y = y;
-    printerTemplate.currentX = x;
+    printerTemplate.currentX = x  + 40;
     printerTemplate.currentY = y;
     printerTemplate.letterSpacing = gFonts[fontId].letterSpacing;
     printerTemplate.lineSpacing = gFonts[fontId].lineSpacing;
