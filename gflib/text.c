@@ -248,6 +248,7 @@ void DeactivateAllTextPrinters(void)
         sTextPrinters[printer].active = FALSE;
 }
 
+//s7 used for town name pop ups, menu boxes, and more
 u16 AddTextPrinterParameterized(u8 windowId, u8 fontId, const u8 *str, u8 x, u8 y, u8 speed, void (*callback)(struct TextPrinterTemplate *, u16))
 {
     struct TextPrinterTemplate printerTemplate;
@@ -255,9 +256,9 @@ u16 AddTextPrinterParameterized(u8 windowId, u8 fontId, const u8 *str, u8 x, u8 
     printerTemplate.currentChar = str;
     printerTemplate.windowId = windowId;
     printerTemplate.fontId = fontId;
-    printerTemplate.x = x + 40;
+    printerTemplate.x = x;
     printerTemplate.y = y;
-    printerTemplate.currentX = x  + 40;
+    printerTemplate.currentX = x;
     printerTemplate.currentY = y;
     printerTemplate.letterSpacing = gFonts[fontId].letterSpacing;
     printerTemplate.lineSpacing = gFonts[fontId].lineSpacing;
