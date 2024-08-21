@@ -357,7 +357,7 @@ static void ShowMapNamePopUpWindow(void)
     }
     AddMapNamePopUpWindow();
     LoadMapNamePopUpWindowBg();
-    x = GetStringCenterAlignXOffset(FONT_NARROW, withoutPrefixPtr, 80);
+    x = GetStringCenterAlignXOffset(FONT_NARROW, withoutPrefixPtr, 180); //was 80 s7 town names popup alignment
     mapDisplayHeader[0] = EXT_CTRL_CODE_BEGIN;
     mapDisplayHeader[1] = EXT_CTRL_CODE_HIGHLIGHT;
     mapDisplayHeader[2] = TEXT_COLOR_TRANSPARENT;
