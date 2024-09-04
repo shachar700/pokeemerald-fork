@@ -8,7 +8,7 @@ const u8 gText_EasyChatKeyboard_TUVWXYZ[] = _("{CLEAR 11}T{CLEAR 6}U{CLEAR 6}V{C
 
 // Naming Screen keyboard
 const u8 gText_NamingScreenKeyboard_abcdef[] = _("{CLEAR 3}.             ו  ה  ד         ג  ב  א");
-const u8 gText_NamingScreenKeyboard_ghijkl[] = _("{CLEAR 3},            ל  כ   י          ט  ח  ז");
+const u8 gText_NamingScreenKeyboard_ghijkl[] = _("{CLEAR 3},            ל  כ   י         ט  ח  ז");
 const u8 gText_NamingScreenKeyboard_mnopqrs[] = _("{CLEAR 3}         ק  צ  פ  ע         ס  נ  מ");
 const u8 gText_NamingScreenKeyboard_tuvwxyz[] = _("{CLEAR 3}ץ        ף  ן  ם  ך         ת  ש  ר");
 const u8 gText_NamingScreenKeyboard_ABCDEF[] = _("{CLEAR 3}.            F  E  D         C  B  A");

@@ -454,12 +454,12 @@ static bool32 PrintStartMenuActions(s8 *pIndex, u32 count)
     {
         if (sStartMenuItems[sCurrentStartMenuActions[index]].func.u8_void == StartMenuPlayerNameCallback)
         {
-            PrintPlayerNameOnWindow(GetStartMenuWindowId(), sStartMenuItems[sCurrentStartMenuActions[index]].text, 42, (index << 4) + 9); // s7 pos of name in start menu
+            PrintPlayerNameOnWindow(GetStartMenuWindowId(), sStartMenuItems[sCurrentStartMenuActions[index]].text, 40, (index << 4) + 9); // s7 pos of name in start menu
         }
         else
         {
             StringExpandPlaceholders(gStringVar4, sStartMenuItems[sCurrentStartMenuActions[index]].text);
-            AddTextPrinterParameterized(GetStartMenuWindowId(), FONT_NORMAL, gStringVar4, 42, (index << 4) + 9, TEXT_SKIP_DRAW, NULL); // s7 pos of options in start menu
+            AddTextPrinterParameterized(GetStartMenuWindowId(), FONT_NORMAL, gStringVar4, 40, (index << 4) + 9, TEXT_SKIP_DRAW, NULL); // s7 pos of options in start menu
         }
 
         index++;
@@ -508,7 +508,7 @@ static bool32 InitStartMenuStep(void)
             sInitStartMenuData[0]++;
         break;
     case 5:
-        sStartMenuCursorPos = InitMenuNormal(GetStartMenuWindowId(), FONT_NORMAL, /* s7 x pos of arrow in start menu */ 18, 9, 16, sNumStartMenuActions, sStartMenuCursorPos); 
+        sStartMenuCursorPos = InitMenuNormal(GetStartMenuWindowId(), FONT_NORMAL, /* s7 x pos of arrow in start menu */ 16, 9, 16, sNumStartMenuActions, sStartMenuCursorPos); 
         CopyWindowToVram(GetStartMenuWindowId(), COPYWIN_MAP);
         return TRUE;
     }
