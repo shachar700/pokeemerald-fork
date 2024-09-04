@@ -15,7 +15,7 @@ For contacts and other pret projects, see [pret.github.io](https://pret.github.i
 ## TODO
 Technical work (20%)
 - Numbers logic implementation
-- Align Menus (Battle, Pokemon Summary, Bag, PokeDex, Road signs)
+- Align Menus (Battle, Pokemon Summary, Bag, PokeDex, Road signs, Choiceboxes)
 
 Translation (1%)
 
