@@ -4,6 +4,7 @@ GAME_CODE   := BPEE
 MAKER_CODE  := 01
 REVISION    := 0
 MODERN      ?= 0
+KEEP_TEMPS  ?= 0
 
 # `File name`.gba ('_modern' will be appended to the modern builds)
 FILE_NAME := pokeemerald
@@ -90,17 +91,13 @@ SYM := $(ROM:.gba=.sym)
 
 # Commonly used directories
 C_SUBDIR = src
-GFLIB_SUBDIR = gflib
 ASM_SUBDIR = asm
 DATA_SRC_SUBDIR = src/data
 DATA_ASM_SUBDIR = data
 SONG_SUBDIR = sound/songs
 MID_SUBDIR = sound/songs/midi
-SAMPLE_SUBDIR = sound/direct_sound_samples
-CRY_SUBDIR = sound/direct_sound_samples/cries
 
 C_BUILDDIR = $(OBJ_DIR)/$(C_SUBDIR)
-GFLIB_BUILDDIR = $(OBJ_DIR)/$(GFLIB_SUBDIR)
 ASM_BUILDDIR = $(OBJ_DIR)/$(ASM_SUBDIR)
 DATA_ASM_BUILDDIR = $(OBJ_DIR)/$(DATA_ASM_SUBDIR)
 SONG_BUILDDIR = $(OBJ_DIR)/$(SONG_SUBDIR)
@@ -116,7 +113,7 @@ INCLUDE_CPP_ARGS := $(INCLUDE_DIRS:%=-iquote %)
 INCLUDE_SCANINC_ARGS := $(INCLUDE_DIRS:%=-I %)
 
 O_LEVEL ?= 2
-CPPFLAGS := $(INCLUDE_CPP_ARGS) -iquote $(GFLIB_SUBDIR) -Wno-trigraphs -DMODERN=$(MODERN)
+CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=$(MODERN)
 ifeq ($(MODERN),0)
   CPPFLAGS += -I tools/agbcc/include -I tools/agbcc -nostdinc -undef
   CC1 := tools/agbcc/bin/agbcc$(EXE)
@@ -162,8 +159,6 @@ MAKEFLAGS += --no-print-directory
 .SECONDARY:
 # Delete files that weren't built properly
 .DELETE_ON_ERROR:
-# Secondary expansion is required for dependency variables in object rules.
-.SECONDEXPANSION:
 
 RULES_NO_SCAN += libagbsyscall clean clean-assets tidy tidymodern tidynonmodern generated clean-generated
 .PHONY: all rom modern compare
@@ -196,9 +191,6 @@ C_SRCS_IN := $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c)
 C_SRCS := $(foreach src,$(C_SRCS_IN),$(if $(findstring .inc.c,$(src)),,$(src)))
 C_OBJS := $(patsubst $(C_SUBDIR)/%.c,$(C_BUILDDIR)/%.o,$(C_SRCS))
 
-GFLIB_SRCS := $(wildcard $(GFLIB_SUBDIR)/*.c)
-GFLIB_OBJS := $(patsubst $(GFLIB_SUBDIR)/%.c,$(GFLIB_BUILDDIR)/%.o,$(GFLIB_SRCS))
-
 C_ASM_SRCS := $(wildcard $(C_SUBDIR)/*.s $(C_SUBDIR)/*/*.s $(C_SUBDIR)/*/*/*.s)
 C_ASM_OBJS := $(patsubst $(C_SUBDIR)/%.s,$(C_BUILDDIR)/%.o,$(C_ASM_SRCS))
 
@@ -217,7 +209,7 @@ SONG_OBJS := $(patsubst $(SONG_SUBDIR)/%.s,$(SONG_BUILDDIR)/%.o,$(SONG_SRCS))
 MID_SRCS := $(wildcard $(MID_SUBDIR)/*.mid)
 MID_OBJS := $(patsubst $(MID_SUBDIR)/%.mid,$(MID_BUILDDIR)/%.o,$(MID_SRCS))
 
-OBJS     := $(C_OBJS) $(GFLIB_OBJS) $(C_ASM_OBJS) $(ASM_OBJS) $(DATA_ASM_OBJS) $(SONG_OBJS) $(MID_OBJS)
+OBJS     := $(C_OBJS) $(C_ASM_OBJS) $(ASM_OBJS) $(DATA_ASM_OBJS) $(SONG_OBJS) $(MID_OBJS)
 OBJS_REL := $(patsubst $(OBJ_DIR)/%,%,$(OBJS))
 
 SUBDIRS  := $(sort $(dir $(OBJS)))
@@ -261,24 +253,22 @@ include graphics_file_rules.mk
 include map_data_rules.mk
 include spritesheet_rules.mk
 include json_data_rules.mk
-include songs.mk
+include audio_rules.mk
 
 generated: $(AUTO_GEN_TARGETS)
 
-%.s: ;
+%.s:   ;
 %.png: ;
 %.pal: ;
 %.aif: ;
 
-%.1bpp: %.png  ; $(GFX) $< $@
-%.4bpp: %.png  ; $(GFX) $< $@
-%.8bpp: %.png  ; $(GFX) $< $@
-%.gbapal: %.pal ; $(GFX) $< $@
-%.gbapal: %.png ; $(GFX) $< $@
-%.lz: % ; $(GFX) $< $@
-%.rl: % ; $(GFX) $< $@
-$(CRY_SUBDIR)/%.bin: $(CRY_SUBDIR)/%.aif ; $(AIF) $< $@ --compress
-sound/%.bin: sound/%.aif ; $(AIF) $< $@
+%.1bpp:   %.png  ; $(GFX) $< $@
+%.4bpp:   %.png  ; $(GFX) $< $@
+%.8bpp:   %.png  ; $(GFX) $< $@
+%.gbapal: %.pal  ; $(GFX) $< $@
+%.gbapal: %.png  ; $(GFX) $< $@
+%.lz:     %      ; $(GFX) $< $@
+%.rl:     %      ; $(GFX) $< $@
 
 # NOTE: Tools must have been built prior (FIXME)
 generated: tools $(AUTO_GEN_TARGETS)
@@ -316,7 +306,7 @@ endef
 # $1: Output file without extension, $2 input file, $3 temp path (if keeping)
 define C_DEP_IMPL
 $1.o: $2
-ifeq (,$(KEEP_TEMPS))
+ifneq ($(KEEP_TEMPS),1)
 	@echo "$$(CC1) <flags> -o $$@ $$<"
 	@$$(CPP) $$(CPPFLAGS) $$< | $$(PREPROC) -i $$< charmap.txt | $$(CC1) $$(CFLAGS) -o - - | cat - <(echo -e ".text\n\t.align\t2, 0") | $$(AS) $$(ASFLAGS) -o $$@ -
 else
@@ -325,22 +315,19 @@ else
 	@echo -e ".text\n\t.align\t2, 0\n" >> $3.s
 	$$(AS) $$(ASFLAGS) -o $$@ $3.s
 endif
-$(call C_SCANINC,$1,$2)
-endef
-# Calls SCANINC to find dependencies
-define C_SCANINC
+$1.d: $2
+	$(SCANINC) -M $1.d $(INCLUDE_SCANINC_ARGS) -I tools/agbcc/include $2
 ifneq ($(NODEP),1)
-$1.o: $2 $$(shell $(SCANINC) $(INCLUDE_SCANINC_ARGS) -I tools/agbcc/include -I gflib $2)
+$1.o: $1.d
+-include $1.d
 endif
 endef
 
 # Create generic rules if no dependency scanning, else create the real rules
 ifeq ($(NODEP),1)
 $(eval $(call C_DEP,$(C_BUILDDIR)/%,$(C_SUBDIR)/%.c))
-$(eval $(call C_DEP,$(GFLIB_BUILDDIR)/%,$(GFLIB_SUBDIR)/%.c))
 else
 $(foreach src,$(C_SRCS),$(eval $(call C_DEP,$(OBJ_DIR)/$(basename $(src)),$(src))))
-$(foreach src,$(GFLIB_SRCS),$(eval $(call C_DEP,$(OBJ_DIR)/$(basename $(src)),$(src))))
 endif
 
 # Similar methodology for Assembly files
@@ -359,7 +346,10 @@ endef
 
 define ASM_SCANINC
 ifneq ($(NODEP),1)
-$1.o: $2 $$(shell $(SCANINC) $(INCLUDE_SCANINC_ARGS) -I "" $2)
+$1.o: $1.d
+$1.d: $2
+	$(SCANINC) -M $1.d $(INCLUDE_SCANINC_ARGS) -I "" $2
+-include $1.d
 endif
 endef
 
@@ -373,10 +363,6 @@ $(foreach src, $(ASM_SRCS), $(eval $(call ASM_DEP,$(src:%.s=$(OBJ_DIR)/%),$(src)
 $(foreach src, $(C_ASM_SRCS), $(eval $(call ASM_DEP_PREPROC,$(src:%.s=$(OBJ_DIR)/%),$(src))))
 $(foreach src, $(REGULAR_DATA_ASM_SRCS), $(eval $(call ASM_DEP_PREPROC,$(src:%.s=$(OBJ_DIR)/%),$(src))))
 endif
-
-# Additional rules
-$(SONG_BUILDDIR)/%.o: $(SONG_SUBDIR)/%.s
-	$(AS) $(ASFLAGS) -I sound -o $@ $<
 
 $(OBJ_DIR)/sym_bss.ld: sym_bss.txt
 	$(RAMSCRGEN) .bss $< ENGLISH > $@
@@ -396,18 +382,14 @@ LD_SCRIPT := ld_script_modern.ld
 LD_SCRIPT_DEPS :=
 endif
 
-$(OBJ_DIR)/ld_script.ld: $(LD_SCRIPT) $(LD_SCRIPT_DEPS)
-	sed "s#tools/#tools/#g" $(LD_SCRIPT) > $(OBJ_DIR)/ld_script.ld
-
 # Final rules
 
 libagbsyscall:
 	@$(MAKE) -C libagbsyscall TOOLCHAIN=$(TOOLCHAIN) MODERN=$(MODERN)
 
 # Elf from object files
-$(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS) libagbsyscall
-	@echo "cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ld_script.ld -o ../../$@ <objects> <lib>"
-	@cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ld_script.ld --print-memory-usage -o ../../$@ $(OBJS_REL) $(LIB) | cat
+$(ELF): $(LD_SCRIPT) $(LD_SCRIPT_DEPS) $(OBJS) libagbsyscall
+	@cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ../../$< --print-memory-usage -o ../../$@ $(OBJS_REL) $(LIB) | cat
 	$(FIX) $@ -t"$(TITLE)" -c$(GAME_CODE) -m$(MAKER_CODE) -r$(REVISION) --silent
 
 # Builds the rom from the elf file
