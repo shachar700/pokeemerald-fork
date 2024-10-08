@@ -2970,9 +2970,9 @@ void BattlePutTextOnWindow(const u8 *text, u8 windowId)
     printerTemplate.currentChar = text;
     printerTemplate.windowId = windowId;
     printerTemplate.fontId = textInfo[windowId].fontId;
-    printerTemplate.x = textInfo[windowId].x + 200;
+    printerTemplate.x = textInfo[windowId].x + 156;
     printerTemplate.y = textInfo[windowId].y;
-    printerTemplate.currentX = printerTemplate.x + 200;
+    printerTemplate.currentX = printerTemplate.x + 156;
     printerTemplate.currentY = printerTemplate.y;
     printerTemplate.letterSpacing = textInfo[windowId].letterSpacing;
     printerTemplate.lineSpacing = textInfo[windowId].lineSpacing;
@@ -2986,7 +2986,7 @@ void BattlePutTextOnWindow(const u8 *text, u8 windowId)
     {
         u32 width = GetBattleWindowTemplatePixelWidth(gBattleScripting.windowsType, windowId);
         s32 alignX = GetStringCenterAlignXOffsetWithLetterSpacing(printerTemplate.fontId, printerTemplate.currentChar, width, printerTemplate.letterSpacing);
-        printerTemplate.x = printerTemplate.currentX = alignX + 200;
+        printerTemplate.x = printerTemplate.currentX = alignX;
     }
 
     if (windowId == ARENA_WIN_JUDGMENT_TEXT)
