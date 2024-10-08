@@ -2967,6 +2967,7 @@ void BattlePutTextOnWindow(const u8 *text, u8 windowId)
         copyToVram = TRUE;
     }
 
+    // s7 affects battle attacks positions
     printerTemplate.currentChar = text;
     printerTemplate.windowId = windowId;
     printerTemplate.fontId = textInfo[windowId].fontId;
