@@ -1,6 +1,7 @@
 #include "global.h"
 #include "reset_rtc_screen.h"
 #include "event_data.h"
+#include "fake_rtc.h"
 #include "main.h"
 #include "menu.h"
 #include "palette.h"
@@ -770,6 +771,11 @@ static void Task_ResetRtcScreen(u8 taskId)
                 // Time has been chosen, reset rtc and save
                 DestroyTask(tSubTaskId);
                 RtcReset();
+                FakeRtc_AdvanceTimeBy(
+                    gLocalTime.days,
+                    gLocalTime.hours,
+                    gLocalTime.minutes,
+                    gLocalTime.seconds);
                 RtcCalcLocalTimeOffset(
                     gLocalTime.days,
                     gLocalTime.hours,
