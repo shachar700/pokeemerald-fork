@@ -771,11 +771,6 @@ static void Task_ResetRtcScreen(u8 taskId)
                 // Time has been chosen, reset rtc and save
                 DestroyTask(tSubTaskId);
                 RtcReset();
-                FakeRtc_AdvanceTimeBy(
-                    gLocalTime.days,
-                    gLocalTime.hours,
-                    gLocalTime.minutes,
-                    gLocalTime.seconds);
                 RtcCalcLocalTimeOffset(
                     gLocalTime.days,
                     gLocalTime.hours,
