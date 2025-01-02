@@ -77,7 +77,8 @@ script GinkoWoods_EventScript_Bean {
 
 	fadescreen(FADE_TO_BLACK)
 
-	advancefakertcby(1, 30, 0)
+	//TODO: REPLACE WITH FUNCTIONING MACROOOO
+	//advancefakertcby(1, 30, 0)
 	delay(60)
 
 	fadescreen(FADE_FROM_BLACK)
