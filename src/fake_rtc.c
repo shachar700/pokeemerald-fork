@@ -7,6 +7,10 @@
 #include "event_data.h"
 #include "script.h"
 
+void Script_ResumeFakeRtc(void);
+void Script_PauseFakeRtc(void);
+static void FakeRtc_CalcTimeDifference(struct Time *result, struct SiiRtcInfo *t1, struct Time *t2);
+
 void FakeRtc_Reset(void)
 {
 #if OW_USE_FAKE_RTC
@@ -99,8 +103,51 @@ void FakeRtc_AdvanceTimeBy(u32 days, u32 hours, u32 minutes, u32 seconds)
     }
 }
 
+void FakeRtc_ForwardTimeTo(u32 hour, u32 minute, u32 second)
+{
+    Script_PauseFakeRtc();
+    struct Time diff, target;
+    struct SiiRtcInfo *fakeRtc = FakeRtc_GetCurrentTime();
 
-void FakeRtc_ManuallySetTime(u32 day, u32 hour, u32 minute, u32 second)
+    target.hours = hour;
+    target.minutes = minute;
+    target.seconds = second;
+
+    FakeRtc_CalcTimeDifference(&diff, fakeRtc, &target);
+
+    FakeRtc_AdvanceTimeBy(0, diff.hours, diff.minutes, diff.seconds);
+
+    Script_ResumeFakeRtc();
+}
+
+
+static void FakeRtc_CalcTimeDifference(struct Time *result, struct SiiRtcInfo *t1, struct Time *t2)
+{
+    result->seconds = t2->seconds - t1->second;
+    result->minutes = t2->minutes - t1->minute;
+    result->hours = t2->hours - t1->hour;
+    result->days = t2->days - t1->day;
+
+    if (result->seconds < 0)
+    {
+        result->seconds += SECONDS_PER_MINUTE;
+        --result->minutes;
+    }
+
+    if (result->minutes < 0)
+    {
+        result->minutes += MINUTES_PER_HOUR;
+        --result->hours;
+    }
+
+    if (result->hours < 0)
+    {
+        result->hours += HOURS_PER_DAY;
+        --result->days;
+    }
+}
+
+void FakeRtc_ForceSetTime(u32 day, u32 hour, u32 minute, u32 second)
 {
     FakeRtc_Reset();
     FakeRtc_AdvanceTimeBy(day, hour, minute, second);
@@ -133,4 +180,25 @@ void Script_ResumeFakeRtc(void)
 void Script_ToggleFakeRtc(void)
 {
     FlagToggle(OW_FLAG_PAUSE_TIME);
+}
+
+bool8 ScrCmd_addtime(struct ScriptContext *ctx)
+{
+    u32 days = ScriptReadWord(ctx);
+    u32 hours = ScriptReadWord(ctx);
+    u32 minutes = ScriptReadWord(ctx);
+
+    FakeRtc_AdvanceTimeBy(days, hours, minutes, 0);
+
+    return FALSE;
+}
+
+bool8 ScrCmd_fwdtime(struct ScriptContext *ctx)
+{
+    u32 hours = ScriptReadWord(ctx);
+    u32 minutes = ScriptReadWord(ctx);
+
+    FakeRtc_ForwardTimeTo(hours, minutes, 0);
+
+    return FALSE;
 }
