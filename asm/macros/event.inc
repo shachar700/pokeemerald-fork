@@ -2399,11 +2399,19 @@
 	.4byte \minutes
 	.endm
 
-	@ Forwards the time to a specified hour and minute. This causes the time to go to the next day if the time has already been past. 
+	@ Forwards the time to a specified hour and minute. 
+	@ This causes the time to go to the next day if the time has already been past. 
 	.macro fwdtime hours:req, minutes:req
 	callnative ScrCmd_fwdtime
 	.4byte \hours
 	.4byte \minutes
+	.endm
+
+	@ Forwards the time to a specified day of the week. Uses a 0-index starting from Monday.
+	@ This causes the time to go to the next day if the time has already been past. 
+	.macro fwdweekday weekday:req
+	callnative ScrCmd_fwdweekday
+	.4byte \weekday
 	.endm
 
 	@ ============================ @

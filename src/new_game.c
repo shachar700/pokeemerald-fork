@@ -166,7 +166,7 @@ void ResetMenuAndMonGlobals(void)
 void NewGameInitData(void)
 {
     if (gSaveFileStatus == SAVE_STATUS_EMPTY || gSaveFileStatus == SAVE_STATUS_CORRUPT)
-        RtcReset();
+        RtcReset();      
 
     gDifferentSaveFile = TRUE;
     gSaveBlock2Ptr->encryptionKey = 0;
@@ -224,7 +224,8 @@ void NewGameInitData(void)
     ResetItemFlags();
 
     // Custom
-    //FakeRtc_ManuallySetTime(0, 8, 0, 0);
+    FakeRtc_ForwardTimeTo(12, 0, 0);
+    FakeRtc_SetNewGameDay();
     InitTimeBasedEvents();
 }
 

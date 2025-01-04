@@ -48,59 +48,72 @@ void FakeRtc_TickTimeForward(void)
     FakeRtc_AdvanceTimeBy(0, 0, 0, FakeRtc_GetSecondsRatio());
 }
 
+static void FakeRtc_AdvanceSeconds(struct SiiRtcInfo *rtc, u32 *days, u32 *hours, u32 *minutes, u32 *seconds)
+{
+    *seconds += rtc->second;
+    *minutes += rtc->minute;
+    *hours += rtc->hour;
+
+    while (*seconds >= SECONDS_PER_MINUTE)
+    {
+        (*minutes)++;
+        *seconds -= SECONDS_PER_MINUTE;
+    }
+    while (*minutes >= MINUTES_PER_HOUR)
+    {
+        (*hours)++;
+        *minutes -= MINUTES_PER_HOUR;
+    }
+    while (*hours >= HOURS_PER_DAY)
+    {
+        (*days)++;
+        *hours -= HOURS_PER_DAY;
+    }
+    
+    rtc->second = *seconds;
+    rtc->minute = *minutes;
+    rtc->hour = *hours;
+}
+
+static void FakeRtc_SetDayOfWeek(struct SiiRtcInfo *rtc, u32 daysToAdd)
+{
+    rtc->dayOfWeek = (rtc->dayOfWeek + daysToAdd) % WEEKDAY_COUNT;
+}
+
+static void FakeRtc_AdvanceDays(struct SiiRtcInfo *rtc, u32 *days)
+{
+    Script_PauseFakeRtc();
+    u32 remainingDaysInMonth = (sNumDaysInMonths[rtc->month - 1] + (rtc->month == MONTH_FEB && IsLeapYear(rtc->year)) - rtc->day);
+    if (*days > remainingDaysInMonth)
+    {
+        rtc->day = 1;
+        rtc->month++;
+        if (rtc->month > MONTH_DEC)
+        {
+            rtc->month = MONTH_JAN;
+            rtc->year++;
+        }
+        *days -= (remainingDaysInMonth + 1);
+        FakeRtc_SetDayOfWeek(rtc, remainingDaysInMonth + 1);
+    }
+    else
+    {
+        rtc->day += *days;
+        FakeRtc_SetDayOfWeek(rtc, *days);
+        *days = 0;
+    }
+    Script_ResumeFakeRtc();
+}
+
 void FakeRtc_AdvanceTimeBy(u32 days, u32 hours, u32 minutes, u32 seconds)
 {
+    Script_PauseFakeRtc();
     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
-    
-    seconds += rtc->second;
-    minutes += rtc->minute;
-    hours += rtc->hour;
-
-    while(seconds >= SECONDS_PER_MINUTE)
-    {
-        minutes++;
-        seconds -= SECONDS_PER_MINUTE;
-    }
-
-    while(minutes >= MINUTES_PER_HOUR)
-    {
-        hours++;
-        minutes -= MINUTES_PER_HOUR;
-    }
-
-    while(hours >= HOURS_PER_DAY)
-    {
-        days++;
-        hours -= HOURS_PER_DAY;
-    }
-
-    rtc->second = seconds;
-    rtc->minute = minutes;
-    rtc->hour = hours;
+    FakeRtc_AdvanceSeconds(rtc, &days, &hours, &minutes, &seconds);
 
     while (days > 0)
-    {
-        u32 remainingDaysInMonth = (sNumDaysInMonths[rtc->month - 1] + (rtc->month == MONTH_FEB && IsLeapYear(rtc->year)) - rtc->day);
-
-        if (days > remainingDaysInMonth)
-        {
-            rtc->day = 1;
-            rtc->month++;
-            if (rtc->month > MONTH_DEC)
-            {
-                rtc->month = MONTH_JAN;
-                rtc->year++;
-            }
-            days -= (remainingDaysInMonth + 1);
-            rtc->dayOfWeek = (rtc->dayOfWeek + remainingDaysInMonth + 1) % WEEKDAY_COUNT;
-        }
-        else
-        {
-            rtc->day += days;
-            rtc->dayOfWeek = (rtc->dayOfWeek + days) % WEEKDAY_COUNT;
-            days = 0;
-        }
-    }
+        FakeRtc_AdvanceDays(rtc, &days);
+    Script_ResumeFakeRtc();
 }
 
 void FakeRtc_ForwardTimeTo(u32 hour, u32 minute, u32 second)
@@ -120,6 +133,13 @@ void FakeRtc_ForwardTimeTo(u32 hour, u32 minute, u32 second)
     Script_ResumeFakeRtc();
 }
 
+// void FakeRtc_SetNewGameDay(void)
+// {
+//     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
+//     u32 daysToAdd;
+//     daysToAdd = ((0 - rtc->dayOfWeek) + 7) % 7;
+//     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);
+// }
 
 static void FakeRtc_CalcTimeDifference(struct Time *result, struct SiiRtcInfo *t1, struct Time *t2)
 {
@@ -151,11 +171,6 @@ void FakeRtc_ForceSetTime(u32 day, u32 hour, u32 minute, u32 second)
 {
     FakeRtc_Reset();
     FakeRtc_AdvanceTimeBy(day, hour, minute, second);
-}
-
-void AdvanceScript(void)
-{
-    FakeRtc_AdvanceTimeBy(300, 0, 0, 0);
 }
 
 u32 FakeRtc_GetSecondsRatio(void)
@@ -200,5 +215,25 @@ bool8 ScrCmd_fwdtime(struct ScriptContext *ctx)
 
     FakeRtc_ForwardTimeTo(hours, minutes, 0);
 
+    return FALSE;
+}
+
+bool8 ScrCmd_fwdweekday(struct ScriptContext *ctx)
+{
+    
+    struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
+    
+    u32 weekdayTarget = ScriptReadWord(ctx);
+    u32 weekdayCurrent = rtc->dayOfWeek;
+    u32 daysToAdd;
+    MgbaPrintf(MGBA_LOG_WARN, "weekdayTarget: %u", weekdayTarget);
+    MgbaPrintf(MGBA_LOG_WARN, "weekdayCurrent: %u", weekdayCurrent);
+    MgbaPrintf(MGBA_LOG_WARN, "Operation: %u", ((weekdayTarget - weekdayCurrent) + 7) % 7);
+    daysToAdd = ((weekdayTarget - weekdayCurrent) + 7) % 7;
+    MgbaPrintf(MGBA_LOG_WARN, "daysToAdd: %u", daysToAdd);
+    FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);
+    MgbaPrintf(MGBA_LOG_WARN, "rtc->day mod 7: %u", (rtc->day % 7));
+    MgbaPrintf(MGBA_LOG_WARN, "gLocalTime.days mod 7: %u", (gLocalTime.days % 7));
+    MgbaPrintf(MGBA_LOG_WARN, "rtc->dayOfWeek: %u", (rtc->dayOfWeek));
     return FALSE;
 }
