@@ -505,7 +505,7 @@ SunriseVillage_Event_Boy_Text_2:
 
 SunriseVillage_Event_Woman_Text_0:
 # 183 "data/maps/SunriseVillage/scripts.pory"
-	.string "I can see the Pokéballs from here…\n"
+	.string "I can see the Poké Balls from here…\n"
 	.string "I've never seen so many in my life!$"
 
 SunriseVillage_Event_Farmer_Text_0:

@@ -180,7 +180,7 @@ script SunriseVillage_Event_Woman {
     lockall
     speakername("Neighbour")
     msgbox(format(
-        "I can see the Pokéballs from here… I've never seen so many in my life!"
+        "I can see the Poké Balls from here… I've never seen so many in my life!"
     ))
     releaseall
     end

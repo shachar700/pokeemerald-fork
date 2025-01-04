@@ -163,7 +163,7 @@ SunriseVillage_RivalsHouse_EventScript_Natsuki_Text_1:
 
 SunriseVillage_RivalsHouse_EventScript_Natsuki_Text_2:
 # 46 "data/maps/SunriseVillage_RivalsHouse/scripts.pory"
-	.string "Pokéballs, check…\n"
+	.string "Poké Balls, check…\n"
 	.string "Medicine, check…\l"
 	.string "Spare pair of underwear, check…$"
 

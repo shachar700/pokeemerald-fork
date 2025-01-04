@@ -84,7 +84,7 @@ script SunriseVillage_PlayersHouse_LR_EventScript_BigSis {
 			"… … … … … …\n… … … … … …\p"
 			"So you're going on a journey…\p"
 			"That's great! I'm proud of you, {PLAYER}.\p"
-			"Take some of these Pokéballs for your trip, in case you find any good Pokémon!"
+			"Take some of these Poké Balls for your trip, in case you find any good Pokémon!"
 		))
 		closemessage
 
@@ -98,11 +98,22 @@ script SunriseVillage_PlayersHouse_LR_EventScript_BigSis {
 
 		giveitem(ITEM_TOWN_MAP)
 
+		speakername("Big sis")
+		msgbox(format(
+			"I think that was all…\n"
+			"Ah, one last thing! Take my good luck statuette with you.\p"
+			"I like the tradition, so indulge me, alright? Please? Everyone carries one!"
+		))
+		closemessage
+
+		giveitem(ITEM_ENTEI_STATUETTE)
+
 		special(GetPlayerBrotherSisterString)
 		speakername("Big sis")
 		msgbox(format(
 			"Alrighty! You all set? Have a safe journey, little {STR_VAR_1}.\p"
-			"Come say hi sometimes though, will you?"
+			"Maybe I'll see you around!\p"
+			"Come back home sometimes though, will you?"
 		))
 		closemessage
 

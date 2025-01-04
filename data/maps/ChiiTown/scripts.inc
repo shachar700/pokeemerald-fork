@@ -222,7 +222,7 @@ ChiiTown_EventScript_Shopper_Text_0:
 # 58 "data/maps/ChiiTown/scripts.pory"
 	.string "The lady who keeps the town's market\n"
 	.string "has started selling Pokémon medicine\l"
-	.string "and Pokéballs!\p"
+	.string "and Poké Balls!\p"
 	.string "Be careful, though: the ointments she\n"
 	.string "sells can't be used in the middle of a\l"
 	.string "battle.$"

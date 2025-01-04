@@ -453,7 +453,10 @@ $(OBJEVENTGFXDIR)/people/youngster.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/crobat_shadows/zubat.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/crobat_shadows/zubat_align.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/crobat_shadows/zubat_f.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/crobat_shadows/crobat.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/crobat_shadows/kevin.4bpp: %.4bpp: %.png

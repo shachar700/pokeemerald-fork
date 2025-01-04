@@ -417,7 +417,7 @@ ChiiTown_PokemonCenter_EventScript_NeedMarket_Text_0:
 ChiiTown_PokemonCenter_EventScript_NeedMarket_Text_1:
 # 150 "data/maps/ChiiTown_PokemonCenter/scripts.pory"
 	.string "Berries, potions… Oh, right, I should\n"
-	.string "get a few more Pokéballs from the\l"
+	.string "get a few more Poké Balls from the\l"
 	.string "town market!$"
 
 ChiiTown_PokemonCenter_EventScript_RefugePresentation_Text_0:

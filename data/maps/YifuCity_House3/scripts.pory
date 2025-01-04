@@ -30,7 +30,7 @@ script YifuCity_House3_EventScript_EggGirl {
 	lock
 	faceplayer
 
-	if (flag(FLAG_TRADED_EGG)) {
+	if (var(VAR_EGG_SPECIES_GIVEN_TO_EGG_GIRL) != SPECIES_NONE) {
 		call(YifuCity_House3_NotTradedYet)
 	} else {
 		// TODO Make egg hatch after a while (nb steps? badge?)
@@ -132,6 +132,7 @@ script YifuCity_House3_TradeEgg {
 	} else {
 		special(IsSelectedMonEgg)
 		if (var(VAR_RESULT)) {
+			specialvar(VAR_EGG_SPECIES_GIVEN_TO_EGG_GIRL, ScriptGetPartyMonSpeciesEvenIfEgg)
 			special(DestroySelectedPartyMon)
 			// TODO EVA random egg from pool
 			// randomelement(SPECIES_TREECKO, SPECIES_TORCHIC, SPECIES_MUDKIP)
@@ -148,8 +149,6 @@ script YifuCity_House3_TradeEgg {
 				"Aren't you wondering what you're gonna get?"
 			))
 			closemessage
-
-			setflag(FLAG_TRADED_EGG)
 		} else {
 			speakername("Little girl")
 			msgbox(format("That's not an egg, you silly!"))

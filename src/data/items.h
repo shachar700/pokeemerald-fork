@@ -14134,4 +14134,20 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_BasementKey,
         .iconPalette = gItemIconPalette_OldKey,
     },
+
+    [ITEM_ENTEI_STATUETTE] =
+    {
+        .name = _("Entei Statuette"),
+        .price = 500,
+        .description = COMPOUND_STRING(
+            "A statuette made\n"
+            "from volcanic rock.\n"
+            "It depicts Entei."
+        ),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_EnteiStatuette,
+        .iconPalette = gItemIconPalette_EnteiStatuette,
+    },
 };

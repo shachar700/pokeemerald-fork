@@ -28,6 +28,15 @@ script YifuCity_CrobatShop_Cashier {
 script YifuCity_CrobatShop_Guard {
 	lock
 	faceplayer
+	if (flag(FLAG_CROBAT_PASSWORD_CORRECT)) {
+		speakername("Shady man")
+		msgbox(format(
+			"Standin' guard is boring… Yawn…"
+		))
+		release
+		end
+	}
+
 	applymovement(VAR_LAST_TALKED, moves(lock_facing_direction, walk_in_place_faster_left, unlock_facing_direction))
 	speakername("Shady man")
 	msgbox(format(
@@ -67,7 +76,6 @@ script YifuCity_CrobatShop_Guard {
 			applymovement(OBJ_EVENT_ID_PLAYER, moves(lock_facing_direction, lock_anim, jump_2_left, unlock_facing_direction, unlock_anim))
 		}
 
-		
 		waitmovement(VAR_LAST_TALKED)
 		waitmovement(OBJ_EVENT_ID_PLAYER)
 		release
@@ -111,7 +119,9 @@ script YifuCity_CrobatShop_Guard {
 			if (flag(FLAG_CROBAT_PASSWORD_SECOND_HALF_CORRECT) && flag(FLAG_CROBAT_PASSWORD_SECOND_HALF_CORRECT)) {
 				speakername("Shady man")
 				msgbox(format(
-					"Alright."
+					"Hmmm… Ya don't look like the typical Zubat…\p"
+					"… … … …\n… …Alright, ya can go through.\l"
+					"Next time wear the damn uniform though, will ya?"
 				))
 				closemessage
 
@@ -153,7 +163,19 @@ script YifuCity_CrobatShop_Customer2 {
 	faceplayer
 	speakername("Customer")
 	msgbox(format(
-		"These Super Balls looks… different, somehow…"
+		"These Ultra Balls looks… different, somehow…"
+	))
+	closemessage
+	release
+}
+
+script YifuCity_CrobatShop_EventScript_Samurai {
+	lock
+	faceplayer
+	speakername("Samurai")
+	msgbox(format(
+		"Shhh, don't look at me!\nSomeone tipped me off that the Crobat Shadows' band of misfits has a secret hideout right under the city!\p"
+		"I'm trying to know more by standing around and listening!"
 	))
 	closemessage
 	release

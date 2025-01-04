@@ -256,8 +256,8 @@ SunriseVillage_PlayersHouse_LR_EventScript_BigSis_Text_2:
 	.string "So you're going on a journey…\p"
 	.string "That's great! I'm proud of you,\n"
 	.string "{PLAYER}.\p"
-	.string "Take some of these Pokéballs for your\n"
-	.string "trip, in case you find any good\l"
+	.string "Take some of these Poké Balls for\n"
+	.string "your trip, in case you find any good\l"
 	.string "Pokémon!$"
 
 SunriseVillage_PlayersHouse_LR_EventScript_BigSis_Text_3:

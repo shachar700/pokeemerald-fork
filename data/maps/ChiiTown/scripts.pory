@@ -55,7 +55,7 @@ script ChiiTown_EventScript_SpawnBirds {
 script ChiiTown_EventScript_Shopper {
 	speakername("Woman")
 	msgbox(format(
-		"The lady who keeps the town's market has started selling Pokémon medicine and Pokéballs!\p"
+		"The lady who keeps the town's market has started selling Pokémon medicine and Poké Balls!\p"
 		"Be careful, though: the ointments she sells can't be used in the middle of a battle."
 	), MSGBOX_NPC)
 }
