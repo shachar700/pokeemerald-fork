@@ -133,13 +133,13 @@ void FakeRtc_ForwardTimeTo(u32 hour, u32 minute, u32 second)
     Script_ResumeFakeRtc();
 }
 
-// void FakeRtc_SetNewGameDay(void)
-// {
-//     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
-//     u32 daysToAdd;
-//     daysToAdd = ((0 - rtc->dayOfWeek) + 7) % 7;
-//     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);
-// }
+void FakeRtc_SetNewGameDay(void)
+{
+    struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
+    u32 daysToAdd;
+    daysToAdd = ((0 - rtc->dayOfWeek) + 7) % 7;
+    FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);
+}
 
 static void FakeRtc_CalcTimeDifference(struct Time *result, struct SiiRtcInfo *t1, struct Time *t2)
 {
