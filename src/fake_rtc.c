@@ -208,6 +208,33 @@ bool8 ScrCmd_addtime(struct ScriptContext *ctx)
     return FALSE;
 }
 
+bool8 ScrCmd_adddays(struct ScriptContext *ctx)
+{
+    u32 days = ScriptReadWord(ctx);
+
+    FakeRtc_AdvanceTimeBy(days, 0, 0, 0);
+
+    return FALSE;
+}
+
+bool8 ScrCmd_addhours(struct ScriptContext *ctx)
+{
+    u32 hours = ScriptReadWord(ctx);
+
+    FakeRtc_AdvanceTimeBy(0, hours, 0, 0);
+
+    return FALSE;
+}
+
+bool8 ScrCmd_addminutes(struct ScriptContext *ctx)
+{
+    u32 minutes = ScriptReadWord(ctx);
+
+    FakeRtc_AdvanceTimeBy(0, 0, minutes, 0);
+
+    return FALSE;
+}
+
 bool8 ScrCmd_fwdtime(struct ScriptContext *ctx)
 {
     u32 hours = ScriptReadWord(ctx);
@@ -226,14 +253,8 @@ bool8 ScrCmd_fwdweekday(struct ScriptContext *ctx)
     u32 weekdayTarget = ScriptReadWord(ctx);
     u32 weekdayCurrent = rtc->dayOfWeek;
     u32 daysToAdd;
-    MgbaPrintf(MGBA_LOG_WARN, "weekdayTarget: %u", weekdayTarget);
-    MgbaPrintf(MGBA_LOG_WARN, "weekdayCurrent: %u", weekdayCurrent);
-    MgbaPrintf(MGBA_LOG_WARN, "Operation: %u", ((weekdayTarget - weekdayCurrent) + 7) % 7);
     daysToAdd = ((weekdayTarget - weekdayCurrent) + 7) % 7;
-    MgbaPrintf(MGBA_LOG_WARN, "daysToAdd: %u", daysToAdd);
     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);
-    MgbaPrintf(MGBA_LOG_WARN, "rtc->day mod 7: %u", (rtc->day % 7));
-    MgbaPrintf(MGBA_LOG_WARN, "gLocalTime.days mod 7: %u", (gLocalTime.days % 7));
-    MgbaPrintf(MGBA_LOG_WARN, "rtc->dayOfWeek: %u", (rtc->dayOfWeek));
     return FALSE;
 }
+

@@ -2399,6 +2399,24 @@
 	.4byte \minutes
 	.endm
 
+	@ Adds a specified number of days to the time. 
+	.macro adddays days:req
+	callnative ScrCmd_adddays
+	.4byte \days
+	.endm
+
+	@ Adds a specified number of days, hours, and minutes to the time. 
+	.macro addtime hours:req
+	callnative ScrCmd_addhours
+	.4byte \hours
+	.endm
+
+	@ Adds a specified number of days, hours, and minutes to the time. 
+	.macro addtime minutes:req
+	callnative ScrCmd_addminutes
+	.4byte \minutes
+	.endm
+
 	@ Forwards the time to a specified hour and minute. 
 	@ This causes the time to go to the next day if the time has already been past. 
 	.macro fwdtime hours:req, minutes:req
