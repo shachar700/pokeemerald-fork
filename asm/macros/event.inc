@@ -2406,13 +2406,13 @@
 	.endm
 
 	@ Adds a specified number of days, hours, and minutes to the time. 
-	.macro addtime hours:req
+	.macro addhours hours:req
 	callnative ScrCmd_addhours
 	.4byte \hours
 	.endm
 
 	@ Adds a specified number of days, hours, and minutes to the time. 
-	.macro addtime minutes:req
+	.macro addminutes minutes:req
 	callnative ScrCmd_addminutes
 	.4byte \minutes
 	.endm

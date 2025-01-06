@@ -11,5 +11,6 @@ void FakeRtc_TickTimeForward(void);
 u32 FakeRtc_GetSecondsRatio(void);
 void FakeRtc_SetNewGameDay(void);
 void FakeRtc_ForwardTimeTo(u32 hour, u32 minute, u32 second);
+void PrintTimesIntoMgbaPrintf(void);
 
 #endif // GUARD_FAKE_RTC_UTIL_H
