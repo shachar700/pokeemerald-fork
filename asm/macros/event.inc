@@ -324,9 +324,14 @@
 	.byte 0x2e
 	.endm
 
-	@ Sets the value of variable VAR_0x8000 to the current time of day (TIME_MORNING, TIME_DAY, TIME_EVENING, TIME_NIGHT).
+	@ Sets the value of variable VAR_0x8000 to the current time of day (TIME_DEAD_NIGHT, TIME_EARLY_MORNING, TIME_MORNING, TIME_LUNCHTIME, TIME_NOONTIME, TIME_EVENING, TIME_NIGHTTIME).
 	.macro gettimeofday
 	.byte 0xe8
+	.endm
+
+	@ Sets the value of variable VAR_0x8000 to the current day of the week.
+	.macro getweekday
+	callnative ScrCmd_getweekday
 	.endm
 
 	@ Plays the specified sound. Only one sound may play at a time, with newer ones interrupting older ones.
