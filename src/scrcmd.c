@@ -731,7 +731,24 @@ bool8 ScrCmd_gettime(struct ScriptContext *ctx)
 
 bool8 ScrCmd_getweekday(struct ScriptContext *ctx)
 {
-    gSpecialVar_0x8000 = FakeRtc_GetWeekday();
+    struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
+    switch (rtc->dayOfWeek)
+    {
+    case WEEKDAY_SUN:
+        gSpecialVar_0x8000 = WEEKDAY_SUN;
+    case WEEKDAY_MON:
+        gSpecialVar_0x8000 = WEEKDAY_MON;
+    case WEEKDAY_TUE:
+        gSpecialVar_0x8000 = WEEKDAY_TUE;
+    case WEEKDAY_WED:
+        gSpecialVar_0x8000 = WEEKDAY_WED;
+    case WEEKDAY_THU:
+        gSpecialVar_0x8000 = WEEKDAY_THU;
+    case WEEKDAY_FRI:
+        gSpecialVar_0x8000 = WEEKDAY_FRI;
+    case WEEKDAY_SAT:
+        gSpecialVar_0x8000 = WEEKDAY_SAT;
+    } 
     return FALSE;
 }
 

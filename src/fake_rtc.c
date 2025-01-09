@@ -76,7 +76,8 @@ static void FakeRtc_AdvanceSeconds(struct SiiRtcInfo *rtc, u32 *days, u32 *hours
 }
 
 static void FakeRtc_SetDayOfWeek(struct SiiRtcInfo *rtc, u32 daysToAdd)
-rtc->dayOfWeek rtc->dayOfWeek + daysToAdd) % WEEKDAY_COUNT;
+{
+    rtc->dayOfWeek = (rtc->dayOfWeek + daysToAdd) % WEEKDAY_COUNT;
 }
 
 static void FakeRtc_AdvanceDays(struct SiiRtcInfo *rtc, u32 *days)
@@ -196,28 +197,6 @@ void Script_ToggleFakeRtc(void)
     FlagToggle(OW_FLAG_PAUSE_TIME);
 }
 
-u32 FakeRtc_GetWeekday(void)
-{
-    struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
-    switch (rtc->dayOfWeek)
-    {
-    case WEEKDAY_SUN:
-        return WEEKDAY_SUN;
-    case WEEKDAY_MON:
-        return WEEKDAY_MON;
-    case WEEKDAY_TUE:
-        return WEEKDAY_TUE;
-    case WEEKDAY_WED:
-        return WEEKDAY_WED;
-    case WEEKDAY_THU:
-        return WEEKDAY_THU;
-    case WEEKDAY_FRI:
-        return WEEKDAY_FRI;
-    case WEEKDAY_SAT:
-        return WEEKDAY_SAT;
-    } 
-}
-
 bool8 ScrCmd_addtime(struct ScriptContext *ctx)
 {
     u32 days = ScriptReadWord(ctx);
@@ -272,7 +251,7 @@ bool8 ScrCmd_fwdweekday(struct ScriptContext *ctx)
     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
     
     u32 weekdayTarget = ScriptReadWord(ctx);
-    u32 rtc->dayOfWeek;
+    u32 weekdayCurrent = rtc->dayOfWeek;
     u32 daysToAdd;
     daysToAdd = ((weekdayTarget - weekdayCurrent) + 7) % 7;
     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);

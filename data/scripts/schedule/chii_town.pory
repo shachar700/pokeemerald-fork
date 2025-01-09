@@ -1,0 +1,65 @@
+script ChiiTown_NPCSchedules{
+	//setflag(flags)
+    gettimeofday
+	switch(var(VAR_0x8000)){
+        case TIME_DEAD_NIGHT:
+            call(ChiiTown_DeadNightSchedules)
+        case TIME_EARLY_MORNING:
+            call(ChiiTown_EarlySchedules)
+        case TIME_MORNING:
+            call(ChiiTown_MorningSchedules)
+        case TIME_LUNCHTIME:
+            call(ChiiTown_LunchtimeSchedules)
+        case TIME_NOONTIME:
+            call(ChiiTown_AfternoonSchedules)
+        case TIME_EVENING:
+            call(ChiiTown_EveningSchedules)
+        case TIME_NIGHT:
+            call(ChiiTown_NightSchedules)
+    }
+}
+
+// script ChiiTown_DrawMetatiles{ 
+//     switch(var(VAR_HOUR_OF_DAY)){
+//         case TIME_DEAD_NIGHT:
+//             setmetatile()
+//         case TIME_EARLY:
+//             setmetatile()
+//         case TIME_MORNING:
+//             setmetatile()
+//         case TIME_LUNCHTIME:
+//             setmetatile()
+//         case TIME_AFTERNOON:
+//             setmetatile()
+//         case TIME_EVENING:
+//             setmetatile()
+//         case TIME_NIGHT:
+//             setmetatile()
+//         default:
+//             end
+//     }
+// }
+
+script(local) ChiiTown_DeadNightSchedules{
+
+}
+
+script(local) ChiiTown_EarlySchedules{
+
+}
+
+script(local) ChiiTown_MorningSchedules{
+
+}
+script(local) ChiiTown_LunchtimeSchedules{
+
+}
+script(local) ChiiTown_AfternoonSchedules{
+
+}
+script(local) ChiiTown_EveningSchedules{
+
+}
+script(local) ChiiTown_NightSchedules{
+
+}
