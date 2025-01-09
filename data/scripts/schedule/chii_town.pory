@@ -1,5 +1,9 @@
+const FLAG_LITTLE_GIRL_AND_BOY = FLAG_TEMP_5
+const FLAG_MOTHER = FLAG_TEMP_6
+
 script ChiiTown_NPCSchedules{
-	//setflag(flags)
+	setflag(FLAG_TEMP_5)
+    setflag(FLAG_TEMP_6)
     gettimeofday
 	switch(var(VAR_0x8000)){
         case TIME_DEAD_NIGHT:
@@ -49,13 +53,13 @@ script(local) ChiiTown_EarlySchedules{
 }
 
 script(local) ChiiTown_MorningSchedules{
-
+    clearflag(FLAG_MOTHER)
 }
 script(local) ChiiTown_LunchtimeSchedules{
-
+    clearflag(FLAG_LITTLE_GIRL_AND_BOY)
 }
 script(local) ChiiTown_AfternoonSchedules{
-
+    clearflag(FLAG_MOTHER)
 }
 script(local) ChiiTown_EveningSchedules{
 

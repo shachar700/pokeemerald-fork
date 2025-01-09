@@ -2,9 +2,11 @@ const FLAG_TAILLOW_1 = FLAG_TEMP_1
 const FLAG_TAILLOW_2 = FLAG_TEMP_2
 const FLAG_FLETCHLING_1 = FLAG_TEMP_3
 const FLAG_FLETCHLING_2 = FLAG_TEMP_4
-const VAR_HOUR_OF_DAY = VAR_0x8000
 
 mapscripts ChiiTown_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		call(ChiiTown_NPCSchedules)
+	}
 	MAP_SCRIPT_ON_LOAD {
         call(ChiiTown_EventScript_SpawnBirds)
     }
@@ -13,12 +15,30 @@ mapscripts ChiiTown_MapScripts {
     ]
 }
 
+script ChiiTown_EventScript_MomNPCDialogue {
+
+}
+
+script ChiiTown_EventScript_MomDroppingOff{
+	gettimeofday
+	speakername("Woman")
+	switch(var(VAR_TIME_OF_DAY)){
+		case TIME_MORNING:
+			msgbox(format(
+				"I'm dropping off my children to school.\p"
+				"With all the recent Pokémon attacks, I will not let them leave my sight!"
+			), MSGBOX_NPC)	
+		case TIME_NOONTIME:
+			msgbox(format(
+				"I'm waiting to pick up my children after school.\p"
+				"With all the recent Pokémon attacks, I will not let them leave my sight!"
+			), MSGBOX_NPC)
+	}
+}
+
 script ChiiTown_EventScript_MomWaiting {
 	speakername("Woman")
-	msgbox(format(
-		"I'm waiting to pick up my children after school.\p"
-		"With all the recent Pokémon attacks, I will not let them leave my sight!"
-	), MSGBOX_NPC)
+
 }
 
 script ChiiTown_EventScript_SpawnBirds {
@@ -32,7 +52,7 @@ script ChiiTown_EventScript_SpawnBirds {
 
 	gettime
 	// Morning
-	if (var(VAR_HOUR_OF_DAY) >= 5 && var(VAR_HOUR_OF_DAY) <= 8) {
+	if (var(VAR_TIME_HOUR) >= 5 && var(VAR_TIME_HOUR) <= 8) {
 		random(2)
 		switch(var(VAR_RESULT)) {
 			case 0:
@@ -40,8 +60,8 @@ script ChiiTown_EventScript_SpawnBirds {
 			case 1:
 				clearflag(FLAG_TAILLOW_2)
 		}
-		// Day
-	} elif (var(VAR_HOUR_OF_DAY) >= 9 && var(VAR_HOUR_OF_DAY) <= 17) {
+	// Day
+	} elif (var(VAR_TIME_HOUR) >= 9 && var(VAR_TIME_HOUR) <= 17) {
 		random(2)
 		switch(var(VAR_RESULT)) {
 			case 0:
