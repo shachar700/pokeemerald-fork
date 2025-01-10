@@ -1,16 +1,16 @@
 // script  _NPCSchedules{
 // 	setflag(flags)
 //     gettimeofday
-// 	switch(var(VAR_HOUR_OF_DAY)){
+// 	switch(var(VAR_0x8000)){
 //         case TIME_DEAD_NIGHT:
 //             call( _DeadNightSchedules)
-//         case TIME_EARLY:
+//         case TIME_EARLY_MORNING:
 //             call( _EarlySchedules)
 //         case TIME_MORNING:
 //             call( _MorningSchedules)
 //         case TIME_LUNCHTIME:
 //             call( _LunchtimeSchedules)
-//         case TIME_AFTERNOON:
+//         case TIME_NOONTIME:
 //             call( _AfternoonSchedules)
 //         case TIME_EVENING:
 //             call( _EveningSchedules)
@@ -20,7 +20,7 @@
 // }
 
 // script  _DrawMetatiles{ 
-//     switch(var(VAR_HOUR_OF_DAY)){
+//     switch(var(VAR_0x8000)){
 //         case TIME_DEAD_NIGHT:
 //             setmetatile()
 //         case TIME_EARLY:

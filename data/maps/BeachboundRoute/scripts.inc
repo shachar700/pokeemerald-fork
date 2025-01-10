@@ -17,11 +17,11 @@ BeachboundRoute_EventScript_TimeBasedEvents::
 # 21 "data/maps/BeachboundRoute/scripts.pory"
 	gettimeofday
 # 22 "data/maps/BeachboundRoute/scripts.pory"
-	compare VAR_TIME_OF_DAY, TIME_NIGHT
+	compare VAR_0x8000, TIME_NIGHT
 	goto_if_ne BeachboundRoute_EventScript_TimeBasedEvents_2
 BeachboundRoute_EventScript_TimeBasedEvents_1:
 # 26 "data/maps/BeachboundRoute/scripts.pory"
-	compare VAR_TIME_OF_DAY, TIME_NIGHT
+	compare VAR_0x8000, TIME_NIGHT
 	goto_if_ne BeachboundRoute_EventScript_TimeBasedEvents_5
 	return
 
@@ -37,7 +37,7 @@ BeachboundRoute_EventScript_TimeBasedEvents_4:
 
 BeachboundRoute_EventScript_TimeBasedEvents_5:
 # 26 "data/maps/BeachboundRoute/scripts.pory"
-	compare VAR_TIME_OF_DAY, TIME_EVENING
+	compare VAR_0x8000, TIME_EVENING
 	goto_if_ne BeachboundRoute_EventScript_TimeBasedEvents_4
 	return
 

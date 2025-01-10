@@ -1,3 +1,7 @@
+///////////////////////////////
+////////// CHII TOWN //////////
+///////////////////////////////
+
 const FLAG_LITTLE_GIRL_AND_BOY = FLAG_TEMP_5
 const FLAG_MOTHER = FLAG_TEMP_6
 
@@ -24,7 +28,7 @@ script ChiiTown_NPCSchedules{
 }
 
 // script ChiiTown_DrawMetatiles{ 
-//     switch(var(VAR_HOUR_OF_DAY)){
+//     switch(var(VAR_0x8000)){
 //         case TIME_DEAD_NIGHT:
 //             setmetatile()
 //         case TIME_EARLY:
@@ -65,5 +69,85 @@ script(local) ChiiTown_EveningSchedules{
 
 }
 script(local) ChiiTown_NightSchedules{
+
+}
+
+//////////////////////////////////////
+////////// CHII TOWN SCHOOL //////////
+//////////////////////////////////////
+
+const FLAG_RECESS_GOERS = FLAG_TEMP_1
+const FLAG_RECESS_STAYERS = FLAG_TEMP_2
+const FLAG_TEACHER = FLAG_TEMP_3
+
+script ChiiTownSchool_NPCSchedules{
+	setflag(FLAG_RECESS_GOERS)
+    setflag(FLAG_RECESS_STAYERS)
+    setflag(FLAG_TEACHER)
+    gettimeofday
+	switch(var(VAR_0x8000)){
+        case TIME_DEAD_NIGHT:
+            call(ChiiTownSchool_DeadNightSchedules)
+        case TIME_EARLY_MORNING:
+            call(ChiiTownSchool_EarlySchedules)
+        case TIME_MORNING:
+            call(ChiiTownSchool_MorningSchedules)
+        case TIME_LUNCHTIME:
+            call(ChiiTownSchool_LunchtimeSchedules)
+        case TIME_NOONTIME:
+            call(ChiiTownSchool_AfternoonSchedules)
+        case TIME_EVENING:
+            call(ChiiTownSchool_EveningSchedules)
+        case TIME_NIGHT:
+            call(ChiiTownSchool_NightSchedules)
+    }
+}
+
+// script ChiiTownSchool_DrawMetatiles{ 
+//     switch(var(VAR_0x8000)){
+//         case TIME_DEAD_NIGHT:
+//             setmetatile()
+//         case TIME_EARLY:
+//             setmetatile()
+//         case TIME_MORNING:
+//             setmetatile()
+//         case TIME_LUNCHTIME:
+//             setmetatile()
+//         case TIME_AFTERNOON:
+//             setmetatile()
+//         case TIME_EVENING:
+//             setmetatile()
+//         case TIME_NIGHT:
+//             setmetatile()
+//         default:
+//             end
+//     }
+// }
+
+script(local) ChiiTownSchool_DeadNightSchedules{
+
+}
+
+script(local) ChiiTownSchool_EarlySchedules{
+    clearflag(FLAG_TEACHER)
+}
+
+script(local) ChiiTownSchool_MorningSchedules{
+    clearflag(FLAG_RECESS_GOERS)
+    clearflag(FLAG_RECESS_STAYERS)
+    clearflag(FLAG_TEACHER)
+}
+script(local) ChiiTownSchool_LunchtimeSchedules{
+    clearflag(FLAG_RECESS_STAYERS)
+}
+script(local) ChiiTownSchool_AfternoonSchedules{
+    clearflag(FLAG_RECESS_GOERS)
+    clearflag(FLAG_RECESS_STAYERS)
+    clearflag(FLAG_TEACHER)
+}
+script(local) ChiiTownSchool_EveningSchedules{
+    clearflag(FLAG_TEACHER)
+}
+script(local) ChiiTownSchool_NightSchedules{
 
 }
