@@ -4,10 +4,14 @@
 
 const FLAG_LITTLE_GIRL_AND_BOY = FLAG_TEMP_5
 const FLAG_MOTHER = FLAG_TEMP_6
+const FLAG_SHOPPER = FLAG_TEMP_7
+const FLAG_MART = FLAG_TEMP_8
 
 script ChiiTown_NPCSchedules{
 	setflag(FLAG_TEMP_5)
     setflag(FLAG_TEMP_6)
+    setflag(FLAG_TEMP_7)
+    setflag(FLAG_TEMP_8)
     gettimeofday
 	switch(var(VAR_0x8000)){
         case TIME_DEAD_NIGHT:
@@ -27,49 +31,48 @@ script ChiiTown_NPCSchedules{
     }
 }
 
-// script ChiiTown_DrawMetatiles{ 
-//     switch(var(VAR_0x8000)){
-//         case TIME_DEAD_NIGHT:
-//             setmetatile()
-//         case TIME_EARLY:
-//             setmetatile()
-//         case TIME_MORNING:
-//             setmetatile()
-//         case TIME_LUNCHTIME:
-//             setmetatile()
-//         case TIME_AFTERNOON:
-//             setmetatile()
-//         case TIME_EVENING:
-//             setmetatile()
-//         case TIME_NIGHT:
-//             setmetatile()
-//         default:
-//             end
-//     }
-// }
+script ChiiTown_DrawMetatiles{ 
+    switch(var(VAR_0x8000)){
+        case TIME_DEAD_NIGHT:
+            setmetatile(14, 6, METATILE_PorytilesPrimaryTutorial_DoorPlaceholder, TRUE)
+            setmetatile(24, 20, METATILE_PorytilesPrimaryTutorial_DoorPlaceholder, TRUE)
+        case TIME_EARLY_MORNING:
+        case TIME_MORNING:
+        case TIME_LUNCHTIME:
+        case TIME_NOONTIME:
+        case TIME_EVENING:
+        case TIME_NIGHT:
+        default:
+            end
+    }
+}
 
 script(local) ChiiTown_DeadNightSchedules{
 
 }
 
 script(local) ChiiTown_EarlySchedules{
-
+    clearflag(FLAG_MART)
 }
 
 script(local) ChiiTown_MorningSchedules{
     clearflag(FLAG_MOTHER)
+    clearflag(FLAG_MART)
 }
 script(local) ChiiTown_LunchtimeSchedules{
     clearflag(FLAG_LITTLE_GIRL_AND_BOY)
+    clearflag(FLAG_MART)
 }
 script(local) ChiiTown_AfternoonSchedules{
     clearflag(FLAG_MOTHER)
+    clearflag(FLAG_SHOPPER)
+    clearflag(FLAG_MART)
 }
 script(local) ChiiTown_EveningSchedules{
-
+    clearflag(FLAG_MART)
 }
 script(local) ChiiTown_NightSchedules{
-
+    clearflag(FLAG_MART)
 }
 
 //////////////////////////////////////
@@ -106,19 +109,19 @@ script ChiiTownSchool_NPCSchedules{
 // script ChiiTownSchool_DrawMetatiles{ 
 //     switch(var(VAR_0x8000)){
 //         case TIME_DEAD_NIGHT:
-//             setmetatile()
+//
 //         case TIME_EARLY:
-//             setmetatile()
+//
 //         case TIME_MORNING:
-//             setmetatile()
+//
 //         case TIME_LUNCHTIME:
-//             setmetatile()
+//
 //         case TIME_AFTERNOON:
-//             setmetatile()
+//
 //         case TIME_EVENING:
-//             setmetatile()
+//
 //         case TIME_NIGHT:
-//             setmetatile()
+//
 //         default:
 //             end
 //     }
