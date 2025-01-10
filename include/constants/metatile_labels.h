@@ -452,6 +452,7 @@
 
 // gTileset_PorytilesPrimaryTutorial
 #define METATILE_PorytilesPrimaryTutorial_CaveEntrance            0x073
+#define METATILE_PorytilesPrimaryTutorial_DoorPlaceholder         0x0F1
 #define METATILE_PorytilesPrimaryTutorial_Grass                   0x000
 #define METATILE_PorytilesPrimaryTutorial_Grass2                  0x001
 #define METATILE_PorytilesPrimaryTutorial_Grass3                  0x002

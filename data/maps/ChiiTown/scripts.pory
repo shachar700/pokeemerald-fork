@@ -2,23 +2,18 @@ const FLAG_TAILLOW_1 = FLAG_TEMP_1
 const FLAG_TAILLOW_2 = FLAG_TEMP_2
 const FLAG_FLETCHLING_1 = FLAG_TEMP_3
 const FLAG_FLETCHLING_2 = FLAG_TEMP_4
-const VAR_HOUR_OF_DAY = VAR_0x8000
 
 mapscripts ChiiTown_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION {
+		call(ChiiTown_NPCSchedules)
+	}
 	MAP_SCRIPT_ON_LOAD {
         call(ChiiTown_EventScript_SpawnBirds)
+		call(ChiiTown_DrawMetatiles)
     }
 	MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_CHII_TOWN_OLD_MAN_TRESPASS_STATE, 2: ChiiTown_EventScript_SetTrespassVar
     ]
-}
-
-script ChiiTown_EventScript_MomWaiting {
-	speakername("Woman")
-	msgbox(format(
-		"I'm waiting to pick up my children after school.\p"
-		"With all the recent Pokémon attacks, I will not let them leave my sight!"
-	), MSGBOX_NPC)
 }
 
 script ChiiTown_EventScript_SpawnBirds {
@@ -32,7 +27,7 @@ script ChiiTown_EventScript_SpawnBirds {
 
 	gettime
 	// Morning
-	if (var(VAR_HOUR_OF_DAY) >= 5 && var(VAR_HOUR_OF_DAY) <= 8) {
+	if (var(VAR_0x8000) >= 5 && var(VAR_0x8000) <= 8) {
 		random(2)
 		switch(var(VAR_RESULT)) {
 			case 0:
@@ -40,8 +35,8 @@ script ChiiTown_EventScript_SpawnBirds {
 			case 1:
 				clearflag(FLAG_TAILLOW_2)
 		}
-		// Day
-	} elif (var(VAR_HOUR_OF_DAY) >= 9 && var(VAR_HOUR_OF_DAY) <= 17) {
+	// Day
+	} elif (var(VAR_0x8000) >= 9 && var(VAR_0x8000) <= 17) {
 		random(2)
 		switch(var(VAR_RESULT)) {
 			case 0:
@@ -52,12 +47,33 @@ script ChiiTown_EventScript_SpawnBirds {
 	}
 }
 
+script ChiiTown_EventScript_WatchfulMom{
+	gettimeofday
+	speakername("Woman")
+	switch(var(VAR_0x8000)){
+		case TIME_MORNING:
+			msgbox(format(
+				"I'm dropping off my children to school.\p"
+				"With all the recent Pokémon attacks, I will not let them leave my sight!"
+			), MSGBOX_NPC)	
+		case TIME_NOONTIME:
+			msgbox(format(
+				"I'm waiting to pick up my children after school.\p"
+				"With all the recent Pokémon attacks, I will not let them leave my sight!"
+			), MSGBOX_NPC)
+	}
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+}
+
 script ChiiTown_EventScript_Shopper {
 	speakername("Woman")
 	msgbox(format(
 		"The lady who keeps the town's market has started selling Pokémon medicine and Pokéballs!\p"
 		"Be careful, though: the ointments she sells can't be used in the middle of a battle."
 	), MSGBOX_NPC)
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
 }
 
 script ChiiTown_EventScript_Kecleon {
@@ -81,6 +97,65 @@ script ChiiTown_EventScript_PlantingFlowers {
 	msgbox(format(
 		"I'm planting flowers so that the wild Pokémon become happy again!"
 	), MSGBOX_NPC)
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+}
+
+script ChiiTown_EventScript_AlsoPlantingFlowers {
+	speakername("Little boy")
+	msgbox(format(
+		"She's making me plant flowers so that the wild Pokémon become happy again.\p"
+		"I'm not though…"
+	), MSGBOX_NPC)
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+}
+
+script ChiiTown_EventScript_WatchingTheChildren {
+	speakername("Sensei")
+	msgbox(format(
+		"To make sure the children's energy isn't pent up too much, I bring them out for recess."
+	), MSGBOX_NPC)
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+}
+
+script ChiiTown_EventScript_EatingBerries {
+	lock
+	faceplayer
+	speakername("Twin girl")
+	msgbox(format(
+		"Sensei said that we should eat berries to grow big and strong!\p"
+		"But how are we supposed to get them if we aren't big and strong yet?"
+	), MSGBOX_DEFAULT)
+	closemessage
+	checkitem(520, 1)
+	if(var(VAR_RESULT) == TRUE){
+		msgbox(format(
+			"Give the girl an Oran Berry?"
+		), MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			removeitem(520, 1)
+			speakername("Twin girl")
+			msgbox(format(
+				"Oh my gosh, thank you!"
+			), MSGBOX_DEFAULT)
+		}
+	}
+	closemessage
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}
+
+script ChiiTown_EventScript_BerryEnthusiast {
+	speakername("Twin boy")
+	msgbox(format(
+		"I've been eating berries just like Sensei said, but I haven't grown yet.\p"
+		"I don't care though. They're delicious!"
+	), MSGBOX_NPC)
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
 }
 
 script ChiiTown_EventScript_Mart {
