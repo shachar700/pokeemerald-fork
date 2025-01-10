@@ -15,11 +15,7 @@ mapscripts ChiiTown_MapScripts {
     ]
 }
 
-script ChiiTown_EventScript_MomNPCDialogue {
-
-}
-
-script ChiiTown_EventScript_MomDroppingOff{
+script ChiiTown_EventScript_WatchfulMom{
 	gettimeofday
 	speakername("Woman")
 	switch(var(VAR_TIME_OF_DAY)){
@@ -34,11 +30,6 @@ script ChiiTown_EventScript_MomDroppingOff{
 				"With all the recent Pokémon attacks, I will not let them leave my sight!"
 			), MSGBOX_NPC)
 	}
-}
-
-script ChiiTown_EventScript_MomWaiting {
-	speakername("Woman")
-
 }
 
 script ChiiTown_EventScript_SpawnBirds {
