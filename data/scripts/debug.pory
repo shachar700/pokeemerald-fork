@@ -143,32 +143,21 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 `
 script Debug_EventScript_Script_1{
-	fwdtime(8, 0)
-	msgbox("Forwards to 8am", MSGBOX_DEFAULT)
 	release
 	end
 }
 
 script Debug_EventScript_Script_2{
-	fwdtime(12, 0)
-	msgbox("Forwards to 12NN", MSGBOX_DEFAULT)
-	closemessage 
 	release
 	end
 }
 
 script Debug_EventScript_Script_3{
-	fwdtime(14, 0)
-	msgbox("Forwards to 2pm", MSGBOX_DEFAULT)
-	closemessage
 	release
 	end
 }
 
 script Debug_EventScript_Script_4{
-	fwdtime(5, 0)
-	msgbox("Forwards to 5AM", MSGBOX_DEFAULT)
-	closemessage
 	release
 	end
 }
