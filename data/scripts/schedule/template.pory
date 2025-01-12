@@ -1,35 +1,36 @@
-// script  _NPCSchedules{
+// script X_NPCSchedules{
 // 	setflag(flags)
 //     gettimeofday
 // 	switch(var(VAR_0x8000)){
 //         case TIME_DEAD_NIGHT:
-//             call( _DeadNightSchedules)
+//             call(X_DeadNightSchedules)
 //         case TIME_EARLY_MORNING:
-//             call( _EarlySchedules)
+//             call(X_EarlySchedules)
 //         case TIME_MORNING:
-//             call( _MorningSchedules)
+//             call(X_MorningSchedules)
 //         case TIME_LUNCHTIME:
-//             call( _LunchtimeSchedules)
+//             call(X_LunchtimeSchedules)
 //         case TIME_NOONTIME:
-//             call( _AfternoonSchedules)
+//             call(X_AfternoonSchedules)
 //         case TIME_EVENING:
-//             call( _EveningSchedules)
+//             call(X_EveningSchedules)
 //         case TIME_NIGHT:
-//             call( _NightSchedules)
+//             call(X_NightSchedules)
 //     }
 // }
 
-// script  _DrawMetatiles{ 
+// script X_DrawMetatiles{ 
+//     gettimeofday 
 //     switch(var(VAR_0x8000)){
 //         case TIME_DEAD_NIGHT:
 //             setmetatile()
-//         case TIME_EARLY:
+//         case TIME_EARLY_MORNING:
 //             setmetatile()
 //         case TIME_MORNING:
 //             setmetatile()
 //         case TIME_LUNCHTIME:
 //             setmetatile()
-//         case TIME_AFTERNOON:
+//         case TIME_NOONTIME:
 //             setmetatile()
 //         case TIME_EVENING:
 //             setmetatile()
@@ -40,26 +41,26 @@
 //     }
 // }
 
-// script(local)  _DeadNightSchedules{
+// script(local) X_DeadNightSchedules{
 
 // }
 
-// script(local)  _EarlySchedules{
+// script(local) X_EarlySchedules{
 
 // }
 
-// script(local)  _MorningSchedules{
+// script(local) X_MorningSchedules{
 
 // }
-// script(local)  _LunchtimeSchedules{
+// script(local) X_LunchtimeSchedules{
 
 // }
-// script(local)  _AfternoonSchedules{
+// script(local) X_AfternoonSchedules{
 
 // }
-// script(local)  _EveningSchedules{
+// script(local) X_EveningSchedules{
 
 // }
-// script(local)  _NightSchedules{
+// script(local) X_NightSchedules{
 
 // }
