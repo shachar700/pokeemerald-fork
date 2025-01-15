@@ -45,5 +45,11 @@ YifuCity_BigHouse_1F_EventScript_Man_Text_0:
 	.string "Guy$"
 
 YifuCity_BigHouse_1F_EventScript_Man_Text_1:
-# 21 "data/maps/YifuCity_BigHouse_1F/scripts.pory"
-	.string "Some interesting dialogue here.$"
+# 20 "data/maps/YifuCity_BigHouse_1F/scripts.pory"
+	.string "Did you know? The Samurai aren't\n"
+	.string "actually affiliated with the Elder\l"
+	.string "council of Toku. That's a common\l"
+	.string "misconception!\p"
+	.string "They're their own organization, which\n"
+	.string "mostly deals in protecting the\l"
+	.string "population and fighting crime.$"

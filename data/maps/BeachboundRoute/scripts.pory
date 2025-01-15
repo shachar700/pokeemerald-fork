@@ -341,7 +341,6 @@ script BeachboundRoute_EventScript_Mugging {
 	waitmovement(LOCALID_GRUNT_1)
 	waitmovement(LOCALID_GRUNT_2)
 
-	// TODO EVA Samurai joins for a 2v2
 	trainerbattle_two_trainers(
 		TRAINER_GRUNT_BEACHBOUND_ROUTE_1,
 		format("Aw, man!"),

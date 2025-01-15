@@ -225,7 +225,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_BEACHBOUND_ROUTE_1 ===
 Name: Grunt
 Class: Zubat
-Pic: Aqua Grunt M
+Pic: Zubat Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -5977,18 +5977,17 @@ Surskit
 Level: 10
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_JOEY ===
-Name: JOEY
-Class: Youngster
-Pic: Youngster
+=== TRAINER_ADMIN_CROBAT_HIDEOUT_1 ===
+Name: Grunt
+Class: Zubat
+Pic: Zubat Grunt M
 Gender: Male
-Music: Male
+Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Try To Faint
 
-Machop
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Golbat
+Level: 20
 
 === TRAINER_NANAMI ===
 Name: Nanami
@@ -6291,7 +6290,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_BEACHBOUND_ROUTE_2 ===
 Name: Grunt
 Class: Zubat
-Pic: Aqua Grunt M
+Pic: Zubat Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -11248,22 +11247,17 @@ Smeargle
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JOSE ===
-Name: JOSE
-Class: Bug Catcher
-Pic: Bug Catcher
+=== TRAINER_GRUNT_CROBAT_HIDEOUT_6 ===
+Name: Grunt
+Class: Zubat
+Pic: Zubat Grunt M
 Gender: Male
-Music: Male
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Nincada
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Zubat
+Level: 18
 
 === TRAINER_DOUG ===
 Name: DOUG
@@ -11494,14 +11488,17 @@ Graveler
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CLARK ===
-Name: CLARK
-Class: Hiker
-Pic: Hiker
+=== TRAINER_ADMIN_CROBAT_HIDEOUT_2 ===
+Name: Grunt
+Class: Zubat
+Pic: Zubat Grunt F
 Gender: Male
-Music: Hiker
+Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Try To Faint
+
+Golbat
+Level: 20
 
 Geodude
 Level: 8
@@ -13715,29 +13712,25 @@ Roselia
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KYRA ===
-Name: KYRA
-Class: Triathlete
-Pic: Running Triathlete F
-Gender: Female
-Music: Female
+=== TRAINER_GRUNT_CROBAT_HIDEOUT_2 ===
+Name: Grunt
+Class: Zubat
+Pic: Zubat Grunt M
+Gender: Male
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
-Level: 26
+Zubat
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Dodrio
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_JAIDEN ===
-Name: JAIDEN
-Class: Ninja Boy
-Pic: Ninja Boy
+=== TRAINER_GRUNT_CROBAT_HIDEOUT_3 ===
+Name: Grunt
+Class: Zubat
+Pic: Zubat Grunt M
 Gender: Male
-Music: Suspicious
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
@@ -13749,54 +13742,40 @@ Gulpin
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ALIX ===
-Name: ALIX
-Class: Psychic
-Pic: Psychic F
+=== TRAINER_GRUNT_CROBAT_HIDEOUT_4 ===
+Name: Grunt
+Class: Zubat
+Pic: Zubat Grunt F
 Gender: Female
-Music: Intense
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Kirlia
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_HELENE ===
-Name: HELENE
-Class: Battle Girl
-Pic: Battle Girl
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Meditite
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Makuhita
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_MARLENE ===
-Name: MARLENE
-Class: Psychic
-Pic: Psychic F
-Gender: Female
-Music: Intense
-Double Battle: No
-AI: Check Bad Move
-
-Meditite
+Zubat
 Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Spoink
+=== TRAINER_GRUNT_CROBAT_HIDEOUT_5 ===
+Name: Grunt
+Class: Zubat
+Pic: Zubat Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 18
+
+=== TRAINER_GRUNT_CROBAT_HIDEOUT_1 ===
+Name: Grunt
+Class: Zubat
+Pic: Zubat Grunt F
+Gender: Female
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 

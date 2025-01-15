@@ -40,7 +40,8 @@ YifuCity_House3_EventScript_EggGirl::
 # 31 "data/maps/YifuCity_House3/scripts.pory"
 	faceplayer
 # 33 "data/maps/YifuCity_House3/scripts.pory"
-	goto_if_set FLAG_TRADED_EGG, YifuCity_House3_EventScript_EggGirl_2
+	compare VAR_EGG_SPECIES_GIVEN_TO_EGG_GIRL, SPECIES_NONE
+	goto_if_ne YifuCity_House3_EventScript_EggGirl_2
 # 37 "data/maps/YifuCity_House3/scripts.pory"
 	speakername YifuCity_House3_EventScript_EggGirl_Text_0
 # 38 "data/maps/YifuCity_House3/scripts.pory"
@@ -149,11 +150,11 @@ YifuCity_House3_TradeEgg::
 # 134 "data/maps/YifuCity_House3/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne YifuCity_House3_TradeEgg_4
-# 154 "data/maps/YifuCity_House3/scripts.pory"
+# 153 "data/maps/YifuCity_House3/scripts.pory"
 	speakername YifuCity_House3_EventScript_EggGirl_Text_0
-# 155 "data/maps/YifuCity_House3/scripts.pory"
+# 154 "data/maps/YifuCity_House3/scripts.pory"
 	msgbox YifuCity_House3_TradeEgg_Text_3
-# 156 "data/maps/YifuCity_House3/scripts.pory"
+# 155 "data/maps/YifuCity_House3/scripts.pory"
 	closemessage
 	return
 
@@ -168,25 +169,25 @@ YifuCity_House3_TradeEgg_1:
 
 YifuCity_House3_TradeEgg_4:
 # 135 "data/maps/YifuCity_House3/scripts.pory"
+	specialvar VAR_EGG_SPECIES_GIVEN_TO_EGG_GIRL, ScriptGetPartyMonSpeciesEvenIfEgg
+# 136 "data/maps/YifuCity_House3/scripts.pory"
 	special DestroySelectedPartyMon
-# 139 "data/maps/YifuCity_House3/scripts.pory"
-	giveegg SPECIES_WYNAUT
 # 140 "data/maps/YifuCity_House3/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	giveegg SPECIES_WYNAUT
 # 141 "data/maps/YifuCity_House3/scripts.pory"
-	message YifuCity_House3_TradeEgg_Text_1
+	playfanfare MUS_OBTAIN_ITEM
 # 142 "data/maps/YifuCity_House3/scripts.pory"
-	waitmessage
+	message YifuCity_House3_TradeEgg_Text_1
 # 143 "data/maps/YifuCity_House3/scripts.pory"
+	waitmessage
+# 144 "data/maps/YifuCity_House3/scripts.pory"
 	waitfanfare
-# 145 "data/maps/YifuCity_House3/scripts.pory"
-	speakername YifuCity_House3_EventScript_EggGirl_Text_0
 # 146 "data/maps/YifuCity_House3/scripts.pory"
+	speakername YifuCity_House3_EventScript_EggGirl_Text_0
+# 147 "data/maps/YifuCity_House3/scripts.pory"
 	msgbox YifuCity_House3_TradeEgg_Text_2
-# 150 "data/maps/YifuCity_House3/scripts.pory"
+# 151 "data/maps/YifuCity_House3/scripts.pory"
 	closemessage
-# 152 "data/maps/YifuCity_House3/scripts.pory"
-	setflag FLAG_TRADED_EGG
 	return
 
 
@@ -286,17 +287,17 @@ YifuCity_House3_TradeEgg_Text_0:
 	.string "Have you changed your mind?$"
 
 YifuCity_House3_TradeEgg_Text_1:
-# 141 "data/maps/YifuCity_House3/scripts.pory"
+# 142 "data/maps/YifuCity_House3/scripts.pory"
 	.string "{PLAYER} received the mysterious\n"
 	.string "egg!$"
 
 YifuCity_House3_TradeEgg_Text_2:
-# 147 "data/maps/YifuCity_House3/scripts.pory"
+# 148 "data/maps/YifuCity_House3/scripts.pory"
 	.string "Yay!!! I can't wait for my egg to\n"
 	.string "hatch!\p"
 	.string "Aren't you wondering what you're\n"
 	.string "gonna get?$"
 
 YifuCity_House3_TradeEgg_Text_3:
-# 155 "data/maps/YifuCity_House3/scripts.pory"
+# 154 "data/maps/YifuCity_House3/scripts.pory"
 	.string "That's not an egg, you silly!$"
