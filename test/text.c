@@ -230,6 +230,7 @@ TEST("Item names fit on Pokemon Storage System")
     case ITEM_CORNERSTONE_MASK:
     case ITEM_WELLSPRING_MASK:
     case ITEM_HEARTHFLAME_MASK:
+    case ITEM_ENTEI_STATUETTE:
         EXPECT_GT(GetStringWidth(fontId, gItemsInfo[item].name, 0), widthPx);
         break;
     default:
