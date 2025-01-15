@@ -1157,6 +1157,8 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/scripts/schedule/chii_town.inc"
+	.include "data/scripts/schedule/kura_village.inc"
+	.include "data/scripts/schedule/saku_village.inc"
 
 	.include "data/maps/SunriseVillage/scripts.inc"
 

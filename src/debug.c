@@ -4208,126 +4208,142 @@ static void DebugAction_Give_DayCareEgg(u8 taskId)
 }
 
 // *******************************
-// Actions PCBag
+// Actions TimeMenu
 
 static void DebugAction_TimeSkip_Dead_Night(u8 taskId)
 {
-    FakeRtc_ForwardTimeTo(0, 0, 0);
     DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
+    FakeRtc_ForwardTimeTo(0, 0, 0);
 }
 
 static void DebugAction_TimeSkip_EarlyMorning(u8 taskId)
 {
-    FakeRtc_ForwardTimeTo(5, 0, 0);
     DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
+    FakeRtc_ForwardTimeTo(5, 0, 0);
 }
 
 static void DebugAction_TimeSkip_Morning(u8 taskId)
 {
-    FakeRtc_ForwardTimeTo(8, 0, 0);
     DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
+    FakeRtc_ForwardTimeTo(8, 0, 0);
 }
 
 static void DebugAction_TimeSkip_Lunchtime(u8 taskId)
 {
-    FakeRtc_ForwardTimeTo(12, 0, 0);
     DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
+    FakeRtc_ForwardTimeTo(12, 0, 0);
 }
 
 static void DebugAction_TimeSkip_Noontime(u8 taskId)
 {
-    FakeRtc_ForwardTimeTo(14, 0, 0);
     DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
+    FakeRtc_ForwardTimeTo(14, 0, 0);
 }
 
 static void DebugAction_TimeSkip_Evening(u8 taskId)
 {
-    FakeRtc_ForwardTimeTo(18, 0, 0);
     DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
+    FakeRtc_ForwardTimeTo(18, 0, 0);
 }
 
 static void DebugAction_TimeSkip_Night(u8 taskId)
 {
-    FakeRtc_ForwardTimeTo(22, 0, 0);
     DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
+    FakeRtc_ForwardTimeTo(22, 0, 0);
 }
 
 static void DebugAction_TimeSkip_Sunday(u8 taskId)
 {
+    DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
     
     u32 weekdayCurrent = rtc->dayOfWeek;
     u32 daysToAdd;
     daysToAdd = ((0 - weekdayCurrent) + 7) % 7;
     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);    
-    DebugAction_DestroyExtraWindow(taskId);
 }
 
 static void DebugAction_TimeSkip_Monday(u8 taskId)
 {
+    DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
     
     u32 weekdayCurrent = rtc->dayOfWeek;
     u32 daysToAdd;
     daysToAdd = ((1 - weekdayCurrent) + 7) % 7;
     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);
-    DebugAction_DestroyExtraWindow(taskId);
 }
 
 static void DebugAction_TimeSkip_Tuesday(u8 taskId)
 {
+    DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
     
     u32 weekdayCurrent = rtc->dayOfWeek;
     u32 daysToAdd;
     daysToAdd = ((2 - weekdayCurrent) + 7) % 7;
     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);
-    DebugAction_DestroyExtraWindow(taskId);
 }
 
 static void DebugAction_TimeSkip_Wednesday(u8 taskId)
 {
+    DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
     
     u32 weekdayCurrent = rtc->dayOfWeek;
     u32 daysToAdd;
     daysToAdd = ((3 - weekdayCurrent) + 7) % 7;
     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);
-    DebugAction_DestroyExtraWindow(taskId);
 }
 
 static void DebugAction_TimeSkip_Thursday(u8 taskId)
 {
+    DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
     
     u32 weekdayCurrent = rtc->dayOfWeek;
     u32 daysToAdd;
     daysToAdd = ((4 - weekdayCurrent) + 7) % 7;
     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);
-    DebugAction_DestroyExtraWindow(taskId);
 }
 
 static void DebugAction_TimeSkip_Friday(u8 taskId)
 {
+    DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
     
     u32 weekdayCurrent = rtc->dayOfWeek;
     u32 daysToAdd;
     daysToAdd = ((5 - weekdayCurrent) + 7) % 7;
     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);
-    DebugAction_DestroyExtraWindow(taskId);
 }
 
 static void DebugAction_TimeSkip_Saturday(u8 taskId)
 {
+    DebugAction_DestroyExtraWindow(taskId);
+    Debug_DestroyMenu(taskId);
+
     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
     
     u32 weekdayCurrent = rtc->dayOfWeek;
     u32 daysToAdd;
     daysToAdd = ((6 - weekdayCurrent) + 7) % 7;
     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);    
-    DebugAction_DestroyExtraWindow(taskId);
 }
+
 
 // *******************************
 // Actions PCBag

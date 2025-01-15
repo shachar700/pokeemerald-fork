@@ -466,6 +466,7 @@
 // gTileset_SakuKura
 #define METATILE_SakuKura_BoardGame       0x2F7
 #define METATILE_SakuKura_ClosedDojoDoor  0x30F
+#define METATILE_SakuKura_Door            0x2C6
 
 // gTileset_SecretBase
 #define METATILE_SecretBase_AttractMat_BottomLeft       0x313
