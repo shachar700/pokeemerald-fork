@@ -43,3 +43,4 @@ convert_inc.sh
 tools/trainerproc/trainerproc
 *.mp4
 *.Identifier
+tools/poryscript

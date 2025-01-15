@@ -77,7 +77,7 @@ script GinkoWoods_EventScript_Bean {
 
 	fadescreen(FADE_TO_BLACK)
 
-	advancefakertcby(1, 30, 0)
+	addtime(0, 1, 30)
 	delay(60)
 
 	fadescreen(FADE_FROM_BLACK)

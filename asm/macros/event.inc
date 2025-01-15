@@ -324,9 +324,14 @@
 	.byte 0x2e
 	.endm
 
-	@ Sets the value of variable VAR_0x8000 to the current time of day (TIME_MORNING, TIME_DAY, TIME_EVENING, TIME_NIGHT).
+	@ Sets the value of variable VAR_0x8000 to the current time of day (TIME_DEAD_NIGHT, TIME_EARLY_MORNING, TIME_MORNING, TIME_LUNCHTIME, TIME_NOONTIME, TIME_EVENING, TIME_NIGHT).
 	.macro gettimeofday
 	.byte 0xe8
+	.endm
+
+	@ Sets the value of variable VAR_0x8000 to the current day of the week.
+	.macro getweekday
+	callnative ScrCmd_getweekday
 	.endm
 
 	@ Plays the specified sound. Only one sound may play at a time, with newer ones interrupting older ones.
@@ -2372,6 +2377,10 @@
 	callnative ScriptSetDoubleBattleFlag
 	.endm
 
+	@ ============================ @
+	@        FAKE RTC MACROS       @
+	@ ============================ @
+
 	@ When OW_USE_FAKE_RTC and OW_FLAG_PAUSE_TIME is assigned, this macro will stop the flow of time.
 	.macro pausefakertc
 	callnative Script_PauseFakeRtc
@@ -2387,11 +2396,45 @@
 	callnative Script_ToggleFakeRtc
 	.endm
 
-	.macro advancefakertcby hours:req, minutes:req, seconds:req
-	callnative Script_AdvanceTimeBy
-	.2byte \hours
-	.2byte \minutes
-	.2byte \seconds
+	@ Adds a specified number of days, hours, and minutes to the time. 
+	.macro addtime days:req, hours:req, minutes:req
+	callnative ScrCmd_addtime
+	.4byte \days
+	.4byte \hours
+	.4byte \minutes
+	.endm
+
+	@ Adds a specified number of days to the time. 
+	.macro adddays days:req
+	callnative ScrCmd_adddays
+	.4byte \days
+	.endm
+
+	@ Adds a specified number of days, hours, and minutes to the time. 
+	.macro addhours hours:req
+	callnative ScrCmd_addhours
+	.4byte \hours
+	.endm
+
+	@ Adds a specified number of days, hours, and minutes to the time. 
+	.macro addminutes minutes:req
+	callnative ScrCmd_addminutes
+	.4byte \minutes
+	.endm
+
+	@ Forwards the time to a specified hour and minute. 
+	@ This causes the time to go to the next day if the time has already been past. 
+	.macro fwdtime hours:req, minutes:req
+	callnative ScrCmd_fwdtime
+	.4byte \hours
+	.4byte \minutes
+	.endm
+
+	@ Forwards the time to a specified day of the week. Uses a 0-index starting from Monday.
+	@ This causes the time to go to the next day if the time has already been past. 
+	.macro fwdweekday weekday:req
+	callnative ScrCmd_fwdweekday
+	.4byte \weekday
 	.endm
 
 	@ ============================ @

@@ -68,7 +68,7 @@ GinkoWoods_EventScript_Bean::
 # 78 "data/maps/GinkoWoods/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 80 "data/maps/GinkoWoods/scripts.pory"
-	advancefakertcby 1, 30, 0
+	addtime 0, 1, 30
 # 81 "data/maps/GinkoWoods/scripts.pory"
 	delay 60
 # 83 "data/maps/GinkoWoods/scripts.pory"

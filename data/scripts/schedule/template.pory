@@ -1,0 +1,65 @@
+// script  _NPCSchedules{
+// 	setflag(flags)
+//     gettimeofday
+// 	switch(var(VAR_0x8000)){
+//         case TIME_DEAD_NIGHT:
+//             call( _DeadNightSchedules)
+//         case TIME_EARLY_MORNING:
+//             call( _EarlySchedules)
+//         case TIME_MORNING:
+//             call( _MorningSchedules)
+//         case TIME_LUNCHTIME:
+//             call( _LunchtimeSchedules)
+//         case TIME_NOONTIME:
+//             call( _AfternoonSchedules)
+//         case TIME_EVENING:
+//             call( _EveningSchedules)
+//         case TIME_NIGHT:
+//             call( _NightSchedules)
+//     }
+// }
+
+// script  _DrawMetatiles{ 
+//     switch(var(VAR_0x8000)){
+//         case TIME_DEAD_NIGHT:
+//             setmetatile()
+//         case TIME_EARLY:
+//             setmetatile()
+//         case TIME_MORNING:
+//             setmetatile()
+//         case TIME_LUNCHTIME:
+//             setmetatile()
+//         case TIME_AFTERNOON:
+//             setmetatile()
+//         case TIME_EVENING:
+//             setmetatile()
+//         case TIME_NIGHT:
+//             setmetatile()
+//         default:
+//             end
+//     }
+// }
+
+// script(local)  _DeadNightSchedules{
+
+// }
+
+// script(local)  _EarlySchedules{
+
+// }
+
+// script(local)  _MorningSchedules{
+
+// }
+// script(local)  _LunchtimeSchedules{
+
+// }
+// script(local)  _AfternoonSchedules{
+
+// }
+// script(local)  _EveningSchedules{
+
+// }
+// script(local)  _NightSchedules{
+
+// }
