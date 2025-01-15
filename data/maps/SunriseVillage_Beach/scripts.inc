@@ -548,7 +548,7 @@ SunriseVillage_Beach_EventScript_RivalSpeech_Text_16:
 
 SunriseVillage_Beach_EventScript_RivalSpeech_Text_17:
 # 197 "data/maps/SunriseVillage_Beach/scripts.pory"
-	.string "Oh Shuckles, the distribution's\n"
+	.string "Aw Shuckles, the distribution's\n"
 	.string "already started!\p"
 	.string "Let's go, {PLAYER}!!$"
 

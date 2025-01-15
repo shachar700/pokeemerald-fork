@@ -147,7 +147,7 @@ script ChiiTown_PokemonCenter_EventScript_NeedMarket {
 	faceplayer
 	speakername("Woman")
 	msgbox(format(
-		"Berries, potions… Oh, right, I should get a few more Pokéballs from the town market!"
+		"Berries, potions… Oh, right, I should get a few more Poké Balls from the town market!"
 	))
 	closemessage
 	release

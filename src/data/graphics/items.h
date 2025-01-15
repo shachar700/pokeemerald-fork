@@ -2099,3 +2099,6 @@ const u32 gItemIconPalette_TwiceSpicedRadish[] = INCBIN_U32("graphics/items/icon
 
 const u32 gItemIcon_Fishcake[] = INCBIN_U32("graphics/items/icons/fishcake.4bpp.lz");
 const u32 gItemIconPalette_Fishcake[] = INCBIN_U32("graphics/items/icons/fishcake.gbapal.lz");
+
+const u32 gItemIcon_EnteiStatuette[] = INCBIN_U32("graphics/items/icons/entei_statuette.4bpp.lz");
+const u32 gItemIconPalette_EnteiStatuette[] = INCBIN_U32("graphics/items/icons/entei_statuette.gbapal.lz");

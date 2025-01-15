@@ -1610,6 +1610,11 @@ u16 ScriptGetPartyMonSpecies(void)
     return GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES_OR_EGG, NULL);
 }
 
+u16 ScriptGetPartyMonSpeciesEvenIfEgg(void)
+{
+    return GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES, NULL);
+}
+
 // Removed for Emerald
 void TryInitBattleTowerAwardManObjectEvent(void)
 {

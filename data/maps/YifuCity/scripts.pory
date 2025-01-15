@@ -4,6 +4,13 @@ const LOCALID_GRUNT_PASSWORD_ZUBAT = 11
 const FLAG_IS_MON_SENT_TO_PC = FLAG_TEMP_1
 
 mapscripts YifuCity_MapScripts {
+	MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_CROBAT_HIDEOUT_STATE, 3: YifuCity_EscapedCrobatHideoutWithSamurai
+    ]
+}
+
+script YifuCity_EscapedCrobatHideoutWithSamurai {
+	
 }
 
 script YifuCity_EventScript_StoleMyMon {
@@ -23,8 +30,8 @@ script YifuCity_EventScript_IDontFeelSafe {
 	faceplayer
 	speakername("Woman")
 	msgbox(format(
-		"I don't feel safe with those Crobat dudes creeping around the city…\p"
-		"I can't imagine how much worse it'd be if it were not for the patrolling Samurai!"
+		"I don't feel safe with those Crobat weirdos creeping around the city…\p"
+		"I can't imagine how much worse it'd be were it not for the patrolling Samurai!"
 	))
 	closemessage
 	release
@@ -69,7 +76,7 @@ script YifuCity_EventScript_ShinySeller {
 	
 	speakername("Shady man")
 	msgbox(format(
-		"So whadyasay?\n"
+		"So whaddyasay?\n"
 		"It's yours for only ¥10000."
 	))
 
@@ -202,7 +209,7 @@ script YifuCity_ShinySellerChoice {
 			hidemoneybox
 			speakername("Shady man")
 			msgbox(format(
-				"Then why are ya bothering me? Scram, kid!"
+				"Then why are ya botherin' me? Scram, kid!"
 			))
 			closemessage
 		case 2:
@@ -242,8 +249,11 @@ script YifuCity_Trigger_CrobatGruntsScram {
 	turnobject(LOCALID_GRUNT_PASSWORD_TOP, DIR_WEST)
 	turnobject(LOCALID_GRUNT_PASSWORD_BOTTOM, DIR_WEST)
 	delay(48)
+
+	playse(SE_LEDGE)
 	applymovement(LOCALID_GRUNT_PASSWORD_TOP, moves(jump_in_place_left))
 	waitmovement(0)
+	waitse
 
 	speakername("Shady man")
 	msgbox(format(
@@ -252,6 +262,7 @@ script YifuCity_Trigger_CrobatGruntsScram {
 	))
 	closemessage
 
+	playse(SE_BALL_OPEN)
 	addobject(LOCALID_GRUNT_PASSWORD_ZUBAT)
 	playmoncry(SPECIES_ZUBAT, CRY_MODE_NORMAL)
 	applymovement(
@@ -268,6 +279,7 @@ script YifuCity_Trigger_CrobatGruntsScram {
 		)
 	)
 	waitmoncry
+	waitse
 	waitmovement(0)
 
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(lock_facing_direction, walk_left * 2, unlock_facing_direction))
@@ -342,14 +354,18 @@ script YifuCity_Trigger_CrobatGruntsEavesdropPassword {
 		"It's uh…\nSomethin' with Crobat…\l"
 		"“{COLOR RED}Crobat is{COLOR DARK_GRAY}”… Uh…"
 	))
+
+	playse(SE_LEDGE)
 	applymovement(LOCALID_GRUNT_PASSWORD_BOTTOM, moves(jump_in_place_up))
 	speakername("Shady man")
 	msgbox(format(
 		"Aw man! I forgot it too!"
 	))
 	waitmovement(0)
+	waitse
 	closemessage
 
+	playse(SE_LEDGE)
 	applymovement(LOCALID_GRUNT_PASSWORD_TOP, moves(jump_in_place_down))
 	speakername("Shady man")
 	msgbox(format(
@@ -358,6 +374,7 @@ script YifuCity_Trigger_CrobatGruntsEavesdropPassword {
 		"C'mon, lessgo!"
 	))
 	waitmovement(0)
+	waitse
 	closemessage
 
 	applymovement(LOCALID_GRUNT_PASSWORD_TOP, moves(walk_left * 10))
@@ -380,7 +397,7 @@ script YifuCity_EventScript_HearEcho {
 	faceplayer
 	speakername("Boy")
 	msgbox(format(
-		"There's a ghost haunting the canal!\n"
+		"There's a ghost haunting the sewers!\n"
 		"I swear I heard a voice calling when I was walking along the canal!"
 	))
 	closemessage
@@ -393,7 +410,7 @@ script YifuCity_Trigger_CrobatGruntStuckInHole {
 	if (flag(FLAG_GOT_CROBAT_PASSWORD_SECOND_HALF)) {
 		speakername("???")
 
-		random(3)
+		random(5)
 		switch(var(VAR_RESULT)) {
 		case 0:
 			msgbox(format(
@@ -408,6 +425,17 @@ script YifuCity_Trigger_CrobatGruntStuckInHole {
 				"Echo! … … …\n… … …{FONT_SMALL}echo{FONT_NORMAL}…\p"
 				"Hehe…\p"
 				"…Sigh…"
+			))
+		case 3:
+			msgbox(format(
+				"Echo! … … …\n… … …{FONT_SMALL}echo{FONT_NORMAL}…\p"
+				"Hehe…\p"
+				"…Sigh…"
+			))
+		case 4:
+			msgbox(format(
+				"“{COLOR RED}Crime is awesome{COLOR DARK_GRAY}”!\nHmm…\p"
+				"“{COLOR RED}Stealing is awesome{COLOR DARK_GRAY}”?\nNah… That's not it."
 			))
 		}
 

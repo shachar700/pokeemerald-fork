@@ -262,6 +262,13 @@ const u32 gTrainerPalette_MagmaLeaderMaxie[] = INCBIN_U32("graphics/trainers/fro
 const u32 gTrainerFrontPic_Lass[] = INCBIN_U32("graphics/trainers/front_pics/lass.4bpp.lz");
 const u32 gTrainerPalette_Lass[] = INCBIN_U32("graphics/trainers/front_pics/lass.gbapal.lz");
 
+const u32 gTrainerFrontPic_ZubatGruntM[] = INCBIN_U32("graphics/trainers/front_pics/crobat_shadows/zubat_m.4bpp.lz");
+const u32 gTrainerFrontPic_ZubatGruntF[] = INCBIN_U32("graphics/trainers/front_pics/crobat_shadows/zubat_f.4bpp.lz");
+const u32 gTrainerPalette_Zubat[] = INCBIN_U32("graphics/trainers/front_pics/crobat_shadows/zubat_m.gbapal.lz");
+
+const u32 gTrainerFrontPic_CrobatBoss[] = INCBIN_U32("graphics/trainers/front_pics/crobat_shadows/crobat.4bpp.lz");
+const u32 gTrainerPalette_Crobat[] = INCBIN_U32("graphics/trainers/front_pics/crobat_shadows/crobat.gbapal.lz");
+
 const u32 gTrainerFrontPic_KimonoGirl[] = INCBIN_U32("graphics/trainers/front_pics/kimono_girl.4bpp.lz");
 const u32 gTrainerPalette_KimonoGirl[] = INCBIN_U32("graphics/trainers/front_pics/kimono_girl.gbapal.lz");
 
@@ -429,6 +436,9 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_POKEMON_RANGER_F, gTrainerFrontPic_PokemonRangerF, gTrainerPalette_PokemonRangerF),
     TRAINER_SPRITE(TRAINER_PIC_MAGMA_LEADER_MAXIE, gTrainerFrontPic_MagmaLeaderMaxie, gTrainerPalette_MagmaLeaderMaxie),
     TRAINER_SPRITE(TRAINER_PIC_LASS, gTrainerFrontPic_Lass, gTrainerPalette_Lass),
+    TRAINER_SPRITE(TRAINER_PIC_ZUBAT_GRUNT_M, gTrainerFrontPic_ZubatGruntM, gTrainerPalette_Zubat),
+    TRAINER_SPRITE(TRAINER_PIC_ZUBAT_GRUNT_F, gTrainerFrontPic_ZubatGruntF, gTrainerPalette_Zubat),
+    TRAINER_SPRITE(TRAINER_PIC_CROBAT_BOSS, gTrainerFrontPic_CrobatBoss, gTrainerPalette_Crobat),
     TRAINER_SPRITE(TRAINER_PIC_KIMONO_GIRL, gTrainerFrontPic_KimonoGirl, gTrainerPalette_KimonoGirl),
     TRAINER_SPRITE(TRAINER_PIC_MONK, gTrainerFrontPic_Monk, gTrainerPalette_Monk),
     TRAINER_SPRITE(TRAINER_PIC_YOUNG_COUPLE, gTrainerFrontPic_YoungCouple, gTrainerPalette_YoungCouple),
