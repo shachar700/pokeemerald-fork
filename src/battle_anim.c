@@ -112,7 +112,7 @@ EWRAM_DATA static u16 sSoundAnimFramesToWait = 0;
 EWRAM_DATA static u8 sMonAnimTaskIdArray[2] = {0};
 EWRAM_DATA u8 gAnimMoveTurn = 0;
 EWRAM_DATA static u8 sAnimBackgroundFadeState = 0;
-EWRAM_DATA u16 gAnimMoveIndex = 0; // Set but unused.
+EWRAM_DATA u16 gAnimMoveIndex = 0;
 EWRAM_DATA u8 gBattleAnimAttacker = 0;
 EWRAM_DATA u8 gBattleAnimTarget = 0;
 EWRAM_DATA u16 gAnimBattlerSpecies[MAX_BATTLERS_COUNT] = {0};
@@ -2230,7 +2230,7 @@ static void Cmd_jumpifmovetypeequal(void)
 {
     const u8 *type = sBattleAnimScriptPtr + 1;
     sBattleAnimScriptPtr += 2;
-    if (*type != GetMoveType(gCurrentMove))
+    if (*type != GetBattleMoveType(gCurrentMove))
         sBattleAnimScriptPtr += 4;
     else
         sBattleAnimScriptPtr = T2_READ_PTR(sBattleAnimScriptPtr);
