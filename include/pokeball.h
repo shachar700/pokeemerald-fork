@@ -32,9 +32,9 @@ enum PokeBall
     BALL_BEAST = 26,
     BALL_CHERISH = 27,
     BALL_LIGHT = 28,
+    POKEBALL_COUNT,
     // ah yes, srs: this is for kaba's speech and not for anything else
-    BALL_KABA = 29,
-    POKEBALL_COUNT
+    BALL_KABA = 30,
 };
 
 enum {

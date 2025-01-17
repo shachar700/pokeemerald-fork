@@ -10177,6 +10177,7 @@ static const u16 sQuagsireTeachableLearnset[] = {
 
 #if P_PALDEAN_FORMS
 static const u16 sWooperPaldeaTeachableLearnset[] = {
+    MOVE_BULLDOZE,
     MOVE_DIG,
     MOVE_EARTHQUAKE,
     MOVE_FACADE,
@@ -33773,6 +33774,7 @@ static const u16 sCalyrexIceTeachableLearnset[] = {
 };
 
 static const u16 sCalyrexShadowTeachableLearnset[] = {
+    MOVE_BULLDOZE,
     MOVE_BULLET_SEED,
     MOVE_CALM_MIND,
     MOVE_FACADE,

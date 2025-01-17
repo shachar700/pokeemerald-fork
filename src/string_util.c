@@ -4,7 +4,7 @@
 #include "strings.h"
 #include "union_room_chat.h"
 #include "malloc.h"
-#include "characters.h"
+#include "constants/characters.h"
 
 static u8 ToLowerCaseChar(u8 c);
 

@@ -727,8 +727,10 @@
 #define STRINGID_SUPEREFFECTIVETWOFOES                725
 #define STRINGID_NOTVERYEFFECTIVETWOFOES              726
 #define STRINGID_ITDOESNTAFFECTTWOFOES                727
+// Custom
+#define STRINGID_PLAYERWHITEOUT3                      728
 
-#define BATTLESTRINGS_COUNT                           728
+#define BATTLESTRINGS_COUNT                           729
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

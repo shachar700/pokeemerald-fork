@@ -347,8 +347,8 @@ const struct RematchTrainer gRematchTable[REMATCH_TABLE_ENTRIES] =
     [REMATCH_KIRA_AND_DAN] = REMATCH(TRAINER_KIRA_AND_DAN_1, TRAINER_KIRA_AND_DAN_2, TRAINER_KIRA_AND_DAN_3, TRAINER_KIRA_AND_DAN_4, TRAINER_KIRA_AND_DAN_5, ABANDONED_SHIP_ROOMS2_1F),
     [REMATCH_WALLY_VR] = REMATCH(TRAINER_WALLY_VR_2, TRAINER_WALLY_VR_3, TRAINER_WALLY_VR_4, TRAINER_WALLY_VR_5, TRAINER_WALLY_VR_5, VICTORY_ROAD_1F),
     [REMATCH_ROXANNE] = REMATCH(TRAINER_KOISHI_1, TRAINER_ROXANNE_2, TRAINER_ROXANNE_3, TRAINER_ROXANNE_4, TRAINER_ROXANNE_5, RUSTBORO_CITY),
-    [REMATCH_HANA] = REMATCH(TRAINER_HANA_1, TRAINER_BRAWLY_2, TRAINER_BRAWLY_3, TRAINER_BRAWLY_4, TRAINER_BRAWLY_5, DEWFORD_TOWN),
-    [REMATCH_YUTAKA] = REMATCH(TRAINER_YUTAKA_1, TRAINER_YUTAKA_2, TRAINER_YUTAKA_3, TRAINER_YUTAKA_4, TRAINER_YUTAKA_5, MAUVILLE_CITY),
+    // [REMATCH_HANA] = REMATCH(TRAINER_HANA_1, TRAINER_BRAWLY_2, TRAINER_BRAWLY_3, TRAINER_BRAWLY_4, TRAINER_BRAWLY_5, DEWFORD_TOWN),
+    // [REMATCH_YUTAKA] = REMATCH(TRAINER_YUTAKA_1, TRAINER_YUTAKA_2, TRAINER_YUTAKA_3, TRAINER_YUTAKA_4, TRAINER_YUTAKA_5, MAUVILLE_CITY),
     [REMATCH_FLANNERY] = REMATCH(TRAINER_FLANNERY_1, TRAINER_FLANNERY_2, TRAINER_FLANNERY_3, TRAINER_FLANNERY_4, TRAINER_FLANNERY_5, LAVARIDGE_TOWN),
     [REMATCH_NORMAN] = REMATCH(TRAINER_NORMAN_1, TRAINER_NORMAN_2, TRAINER_NORMAN_3, TRAINER_NORMAN_4, TRAINER_NORMAN_5, PETALBURG_CITY),
     [REMATCH_WINONA] = REMATCH(TRAINER_WINONA_1, TRAINER_WINONA_2, TRAINER_WINONA_3, TRAINER_WINONA_4, TRAINER_WINONA_5, FORTREE_CITY),
@@ -1171,7 +1171,7 @@ void SetMapVarsToTrainer(void)
         gSelectedObjectEvent = GetObjectEventIdByLocalIdAndMap(sTrainerObjectEventLocalId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
     }
     if (gTrainerBattleOpponent_A != 0) {
-        gSpeakerName = gTrainers[gTrainerBattleOpponent_A].trainerName;
+        gSpeakerName = gTrainers[gTrainerBattleOpponent_A]->trainerName;
     }
 }
 
@@ -1645,11 +1645,11 @@ static const u8 *ReturnEmptyStringIfNull(const u8 *string)
 static const u8 *GetIntroSpeechOfApproachingTrainer(void)
 {
     if (gApproachingTrainerId == 0) {
-        gSpeakerName = gTrainers[gTrainerBattleOpponent_A].trainerName;
+        gSpeakerName = gTrainers[gTrainerBattleOpponent_A]->trainerName;
         return ReturnEmptyStringIfNull(sTrainerAIntroSpeech);
     }
     else {
-        gSpeakerName = gTrainers[gTrainerBattleOpponent_B].trainerName;
+        gSpeakerName = gTrainers[gTrainerBattleOpponent_B]->trainerName;
         return ReturnEmptyStringIfNull(sTrainerBIntroSpeech);
     }
 }

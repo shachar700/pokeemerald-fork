@@ -6308,7 +6308,7 @@ const u8 *GetTrainerPartnerName(void)
     {
         if (gPartnerTrainerId == TRAINER_PARTNER(PARTNER_SAMURAI))
         {
-            return GetTrainerNameFromId(PARTNER_STEVEN);
+            return GetTrainerNameFromId(PARTNER_SAMURAI);
         }
         else
         {

@@ -231,7 +231,7 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     {
         if (gSaveBlock1Ptr->registeredItemListCount == 1) 
         {
-            if (UseRegisteredKeyItemOnField() == TRUE)
+            if (UseRegisteredKeyItemOnField(1) == TRUE)
             {
                 return TRUE;
             }
