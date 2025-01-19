@@ -1165,7 +1165,7 @@ static u8 GetMapsecType(u16 mapSecId)
     case MAPSEC_NONE:
         return MAPSECTYPE_NONE;
     case MAPSEC_SUNRISE_VILLAGE:
-        return FlagGet(FLAG_VISITED_LITTLEROOT_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+        return FlagGet(FLAG_VISITED_SUNRISE_VILLAGE) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     case MAPSEC_CHII_TOWN:
         return FlagGet(FLAG_VISITED_CHII_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     case MAPSEC_SAKU_TOWN:
@@ -1833,7 +1833,7 @@ static void CreateFlyDestIcons(void)
     u16 shape;
     u8 spriteId;
 
-    canFlyFlag = FLAG_VISITED_LITTLEROOT_TOWN;
+    canFlyFlag = FLAG_VISITED_SUNRISE_VILLAGE;
     for (mapSecId = MAPSEC_SUNRISE_VILLAGE; mapSecId <= MAPSEC_EVER_GRANDE_CITY; mapSecId++)
     {
         GetMapSecDimensions(mapSecId, &x, &y, &width, &height);

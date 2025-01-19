@@ -164,6 +164,7 @@ TRAINERPROC  := $(TOOLS_DIR)/trainerproc/trainerproc$(EXE)
 PATCHELF     := $(TOOLS_DIR)/patchelf/patchelf$(EXE)
 ROMTEST      ?= $(shell { command -v mgba-rom-test || command -v $(TOOLS_DIR)/mgba/mgba-rom-test$(EXE); } 2>/dev/null)
 ROMTESTHYDRA := $(TOOLS_DIR)/mgba-rom-test-hydra/mgba-rom-test-hydra$(EXE)
+SCRIPT       := $(TOOLS_DIR)/poryscript/poryscript$(EXE)
 
 PERL := perl
 SHA1 := $(shell { command -v sha1sum || command -v shasum; } 2>/dev/null) -c
@@ -317,6 +318,8 @@ include spritesheet_rules.mk
 include json_data_rules.mk
 include audio_rules.mk
 
+AUTO_GEN_TARGETS += $(patsubst %.pory,%.inc,$(shell find data/ -type f -name '*.pory'))
+
 # NOTE: Tools must have been built prior (FIXME)
 # so you can't really call this rule directly
 generated: $(AUTO_GEN_TARGETS)
@@ -335,6 +338,8 @@ generated: $(AUTO_GEN_TARGETS)
 %.gbapal: %.png  ; $(GFX) $< $@
 %.lz:     %      ; $(GFX) $< $@
 %.rl:     %      ; $(GFX) $< $@
+
+data/%.inc: data/%.pory; $(SCRIPT) -i $< -o $@ -fc tools/poryscript/font_config.json -l 198 -cc tools/poryscript/command_config.json
 
 clean-generated:
 	-rm -f $(AUTO_GEN_TARGETS)

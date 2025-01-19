@@ -1424,7 +1424,7 @@ static u8 Debug_CheckToggleFlags(u8 id)
             result = FlagGet(FLAG_SYS_B_DASH);
             break;
         case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_LOCATIONS:
-            result = FlagGet(FLAG_VISITED_LITTLEROOT_TOWN) &&
+            result = FlagGet(FLAG_VISITED_SUNRISE_VILLAGE) &&
                 FlagGet(FLAG_VISITED_CHII_TOWN) &&
                 FlagGet(FLAG_VISITED_SAKU_TOWN) &&
                 FlagGet(FLAG_VISITED_KURA_TOWN) &&
@@ -2851,7 +2851,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
     if (FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER))
     {
         PlaySE(SE_PC_OFF);
-        FlagClear(FLAG_VISITED_LITTLEROOT_TOWN);
+        FlagClear(FLAG_VISITED_SUNRISE_VILLAGE);
         FlagClear(FLAG_VISITED_CHII_TOWN);
         FlagClear(FLAG_VISITED_SAKU_TOWN);
         FlagClear(FLAG_VISITED_KURA_TOWN);
@@ -2873,7 +2873,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
     else
     {
         PlaySE(SE_PC_LOGIN);
-        FlagSet(FLAG_VISITED_LITTLEROOT_TOWN);
+        FlagSet(FLAG_VISITED_SUNRISE_VILLAGE);
         FlagSet(FLAG_VISITED_CHII_TOWN);
         FlagSet(FLAG_VISITED_SAKU_TOWN);
         FlagSet(FLAG_VISITED_KURA_TOWN);

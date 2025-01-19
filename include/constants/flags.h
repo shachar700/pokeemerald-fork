@@ -1374,7 +1374,7 @@
 #define NUM_BADGES                                   (1 + FLAG_BADGE08_GET - FLAG_BADGE01_GET)
 
 // Towns and Cities
-#define FLAG_VISITED_LITTLEROOT_TOWN                (SYSTEM_FLAGS + 0xF)
+#define FLAG_VISITED_SUNRISE_VILLAGE                (SYSTEM_FLAGS + 0xF)
 #define FLAG_VISITED_CHII_TOWN                    (SYSTEM_FLAGS + 0x10)
 #define FLAG_VISITED_SAKU_TOWN                   (SYSTEM_FLAGS + 0x11)
 #define FLAG_VISITED_KURA_TOWN                 (SYSTEM_FLAGS + 0x12)

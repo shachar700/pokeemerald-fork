@@ -87,7 +87,7 @@ LittlerootTown_MapScripts::
 # 44 "data/maps/LittlerootTown/scripts.pory"
 LittlerootTown_OnTransition:
 # 45 "data/maps/LittlerootTown/scripts.pory"
-	setflag FLAG_VISITED_LITTLEROOT_TOWN
+	setflag FLAG_VISITED_SUNRISE_VILLAGE
 # 46 "data/maps/LittlerootTown/scripts.pory"
 	call Common_EventScript_SetupRivalGfxId
 # 47 "data/maps/LittlerootTown/scripts.pory"
