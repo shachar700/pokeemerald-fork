@@ -918,3 +918,35 @@ void ToLowerCase(u8 *string)
         string++;
     }
 }
+
+u8 *StringCopyCensorWord(u8 *dest, const u8 *src, u8 wordStartIndex, u8 wordLength)
+{
+    u8 index = 0;
+
+    // Copy characters until the beginning of the censored word.
+    while (*src != EOS)
+    {
+        if (index == wordStartIndex)
+        {
+            // Insert three ellipses instead of the censored word.
+            *dest++ = 0xB0; // First ellipsis
+            *dest++ = 0xB0; // Second ellipsis
+            *dest++ = 0xB0; // Third ellipsis
+
+            // Skip the censored word.
+            src += wordLength;
+            index += wordLength;
+        }
+        else
+        {
+            // Copy characters normally.
+            *dest++ = *src++;
+            index++;
+        }
+    }
+
+    // Null-terminate the destination string.
+    *dest = EOS;
+
+    return dest;
+}
