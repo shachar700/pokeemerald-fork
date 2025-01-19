@@ -1712,7 +1712,7 @@ static void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
 {
     u8 nickname[POKEMON_NAME_LENGTH + 1];
     void *ptr;
-    u32 windowId, spriteTileNum, species;
+    u32 windowId, spriteTileNum;
     u8 *windowTileData;
     u8 gender;
     struct Pokemon *illusionMon = GetIllusionMonPtr(gSprites[healthboxSpriteId].hMain_Battler);
@@ -1725,7 +1725,6 @@ static void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
     ptr = StringAppend(gDisplayedStringBattle, nickname);
 
     gender = GetMonGender(mon);
-    species = GetMonData(mon, MON_DATA_SPECIES);
 
     switch (gender)
     {
