@@ -365,9 +365,6 @@ static u8 *CopyConditionMonNameGender(u8 *str, u16 listId, bool8 skipPadding)
         level = GetLevelFromBoxMonExp(boxMon);
     }
 
-    if ((species == SPECIES_NIDORAN_F || species == SPECIES_NIDORAN) && !StringCompare(str, GetSpeciesName(species)))
-        gender = MON_GENDERLESS;
-
     str_ = str; // For some reason, a variable is needed to match.
     while (*str_ != EOS)
         (str_++);

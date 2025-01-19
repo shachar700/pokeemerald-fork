@@ -4212,6 +4212,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicSizeFemale = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(32, 40) : MON_COORDS_SIZE(40, 40),
         .backPicSizeFemale = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 40) : MON_COORDS_SIZE(48, 40),
         .paletteFemale = gMonPalette_NidoranF,
+        .shinyPaletteFemale = gMonShinyPalette_NidoranF,
     #if P_CUSTOM_GENDER_DIFF_ICONS == TRUE
         .iconSpriteFemale = gMonIcon_NidoranF,
         .iconPalIndexFemale = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,

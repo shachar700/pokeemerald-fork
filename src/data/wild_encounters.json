@@ -11610,12 +11610,12 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_NIDORAN_M"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_NIDORAN_F"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 3,
@@ -11764,12 +11764,12 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_NIDORAN_M"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_NIDORAN_F"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 3,
@@ -12206,12 +12206,12 @@
               {
                 "min_level": 14,
                 "max_level": 19,
-                "species": "SPECIES_NIDORAN_F"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 12,
                 "max_level": 18,
-                "species": "SPECIES_NIDORAN_M"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 16,
@@ -12305,12 +12305,12 @@
               {
                 "min_level": 14,
                 "max_level": 19,
-                "species": "SPECIES_NIDORAN_F"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 12,
                 "max_level": 18,
-                "species": "SPECIES_NIDORAN_M"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 16,
@@ -12404,12 +12404,12 @@
               {
                 "min_level": 14,
                 "max_level": 19,
-                "species": "SPECIES_NIDORAN_F"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 12,
                 "max_level": 18,
-                "species": "SPECIES_NIDORAN_M"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 16,
@@ -12503,12 +12503,12 @@
               {
                 "min_level": 14,
                 "max_level": 19,
-                "species": "SPECIES_NIDORAN_F"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 12,
                 "max_level": 18,
-                "species": "SPECIES_NIDORAN_M"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 16,
@@ -12622,12 +12622,12 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_NIDORAN_M"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_NIDORAN_F"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 3,
@@ -12721,12 +12721,12 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_NIDORAN_M"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_NIDORAN_F"
+                "species": "SPECIES_NIDORAN"
               },
               {
                 "min_level": 3,
