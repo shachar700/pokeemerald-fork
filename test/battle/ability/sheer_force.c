@@ -605,6 +605,7 @@ static inline bool32 IsMoveSheerForceBoosted(u32 move)
         case MOVE_ZING_ZAP:
         case MOVE_ELECTRO_SHOT:
         case MOVE_PSYCHIC_NOISE:
+        case MOVE_FLIPPER_SPLASH:
             return TRUE;
     }
     return FALSE;

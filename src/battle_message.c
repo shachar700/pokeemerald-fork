@@ -2993,6 +2993,7 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst, u32 dstSize)
                 break;
             case B_TXT_RIVAL_NAME:
                 toCpy = gSaveBlock2Ptr->rivalName;
+                break;
             case B_TXT_PARTNER_NAME:
                 break;
             case B_TXT_PARTNER_NAME_WITH_CLASS:

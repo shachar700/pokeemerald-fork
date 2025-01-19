@@ -11189,9 +11189,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM51"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "The user tramples its\n"
-            "target into the ground.\n"
-            "Also lowers Speed."
+            "Tramples target\n"
+            "into the ground.\n"
+            "Also Lowers Speed."
         ),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
@@ -11205,9 +11205,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM52"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "This attack inflicts\n"
-            "massive damage if the user\n"
-            "isn't holding an item."
+            "Does more damage\n"
+            "when the user is\n"
+            "not holding an item."
         ),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
@@ -14126,9 +14126,9 @@ const struct Item gItemsInfo[] =
         .name = _("Fishcake"),
         .price = 500,
         .description = COMPOUND_STRING(
-            "A fish-shaped cake.\n"
-            "Heals all status\n"
-            "problems."
+            "A fish-shaped\n"
+            "cake. Heals all\n"
+            "status problems."
         ),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
