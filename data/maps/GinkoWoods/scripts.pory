@@ -6,7 +6,7 @@ mapscripts GinkoWoods_MapScripts {
 
 script GinkoWoods_EventScript_ScrubNumberOne {
 	trainerbattle_single(
-		TRAINER_SCRUB_1,
+		TRAINER_SCRUB_1 ,
 		format("I am a scrub bug catcher whose sole purpose is to get stomped!"),
 		format("I got stomped!")
 	)
