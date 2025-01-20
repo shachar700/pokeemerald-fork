@@ -2081,18 +2081,18 @@ bool8 ScrCmd_randomdexmessage(struct ScriptContext *ctx)
 {
     u16 species = NationalPokedexNumToSpecies(HoennToNationalOrder((Random() % HOENN_DEX_COUNT) + 1));
     struct WindowTemplate winTemplate;
-
-    do
-    {
-        species = NationalPokedexNumToSpecies(HoennToNationalOrder((Random() % HOENN_DEX_COUNT) + 1));
-
-    } while (DoesStringContainMonName(GetSpeciesPokedexDescription(species), GetSpeciesName(species)) != -1);
     
     const u8 *speciesName = GetSpeciesName(species);
     const u8 *randomDexDesc = GetSpeciesPokedexDescription(species);
     StringCopy(gStringVar1, speciesName);
 
-    StringExpandPlaceholders(gStringVar4, randomDexDesc);
+    // Calculates the start of the mon's name if present. If not present, returns -1.
+    s8 monNameStartIndex = DoesStringContainMonName(randomDexDesc, speciesName);
+    if (monNameStartIndex != -1)
+        StringCopyCensorWord(gStringVar4, randomDexDesc, monNameStartIndex, StringLength(speciesName));
+    else
+        StringCopy(gStringVar4, randomDexDesc);
+
     winTemplate = CreateWindowTemplate(0, 1, 5, 28, 9, 0xF, 0x1);
     sRandomDexWindowId = AddWindow(&winTemplate);
     LoadUserWindowBorderGfx(sRandomDexWindowId, 0x214, BG_PLTT_ID(14));
