@@ -440,6 +440,7 @@
             {
 #line 256
             .species = SPECIES_NIDORAN,
+#line 256
             .gender = TRAINER_MON_MALE,
 #line 258
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -498,6 +499,7 @@ F_TRAINER_FEMALE |
             {
 #line 280
             .species = SPECIES_NIDORAN,
+#line 280
             .gender = TRAINER_MON_FEMALE,
 #line 282
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
