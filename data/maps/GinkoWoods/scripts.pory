@@ -4,7 +4,8 @@ mapscripts GinkoWoods_MapScripts {
 
 }
 
-script GinkoWoods_EventScript_ScrubNumberOne {
+script GinkoWoods_EventScript_Scrub1 {
+	// TODO EVA dialogue
 	trainerbattle_single(
 		TRAINER_SCRUB_1 ,
 		format("I am a scrub bug catcher whose sole purpose is to get stomped!"),
