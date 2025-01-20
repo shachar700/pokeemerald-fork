@@ -49,6 +49,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BlackBelt;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Beauty;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scientist1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lass;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokemonBreederF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokemonBreederM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CoolTrainer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KimonoGirl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Monk;
@@ -322,6 +324,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BEAUTY] =                   &gObjectEventGraphicsInfo_Beauty,
     [OBJ_EVENT_GFX_SCIENTIST_1] =              &gObjectEventGraphicsInfo_Scientist1,
     [OBJ_EVENT_GFX_LASS] =                     &gObjectEventGraphicsInfo_Lass,
+    [OBJ_EVENT_GFX_BREEDER_F] =                &gObjectEventGraphicsInfo_PokemonBreederF,
+    [OBJ_EVENT_GFX_BREEDER_M] =                &gObjectEventGraphicsInfo_PokemonBreederM,
     [OBJ_EVENT_GFX_COOLTRAINER] =              &gObjectEventGraphicsInfo_CoolTrainer,
     [OBJ_EVENT_GFX_KIMONO_GIRL] =              &gObjectEventGraphicsInfo_KimonoGirl,
     [OBJ_EVENT_GFX_MONK] =                     &gObjectEventGraphicsInfo_Monk,

@@ -169,8 +169,8 @@ WindsweptRoute_EventScript_Trainer3_Text_2:
 WindsweptRoute_EventScript_Trainer3_Text_3:
 # 51 "data/maps/WindsweptRoute/scripts.pory"
 	.string "Look at that poor sod over there! His\n"
-	.string "rod is so short, I can't help but\l"
-	.string "laugh!$"
+	.string "fishing rod's so short, I can't help\l"
+	.string "but laugh!$"
 
 WindsweptRoute_EventScript_Fisherman_ShortRod_Text_0:
 # 58 "data/maps/WindsweptRoute/scripts.pory"
@@ -179,7 +179,7 @@ WindsweptRoute_EventScript_Fisherman_ShortRod_Text_0:
 WindsweptRoute_EventScript_Fisherman_ShortRod_Text_1:
 # 60 "data/maps/WindsweptRoute/scripts.pory"
 	.string "That guy over there keeps bragging\n"
-	.string "about having a long rod.\p"
+	.string "about having a long fishing rod.\p"
 	.string "Little does he realize that I, with my\n"
 	.string "much shorter rod, catch only the\l"
 	.string "highest-jumping fish!$"

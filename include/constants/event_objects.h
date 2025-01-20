@@ -258,11 +258,13 @@
 #define OBJ_EVENT_GFX_COOLTRAINER                254
 #define OBJ_EVENT_GFX_CROBAT_SHADOWS_BOSS        255
 #define OBJ_EVENT_GFX_CROBAT_SHADOWS_KEVIN       256
+#define OBJ_EVENT_GFX_BREEDER_F                  257
+#define OBJ_EVENT_GFX_BREEDER_M                  258
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        257
+#define NUM_OBJ_EVENT_GFX                        259
 
 
 // These are dynamic object gfx ids.
@@ -477,6 +479,10 @@
 
 // More custom Hearth palettes
 #define OBJ_EVENT_PAL_TAG_NPC_ELECTRIC_BLUE_ORANGE 0x116B
+#define OBJ_EVENT_PAL_TAG_YOUNGSTER  0x116C
+#define OBJ_EVENT_PAL_TAG_HEX_MANIAC 0x116D
+#define OBJ_EVENT_PAL_TAG_BREEDER_M 0x116E
+#define OBJ_EVENT_PAL_TAG_BREEDER_F 0x116F
 
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
