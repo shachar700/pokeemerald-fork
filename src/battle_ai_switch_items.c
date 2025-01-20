@@ -197,7 +197,7 @@ static bool32 ShouldSwitchIfHasBadOdds(u32 battler)
             && gBattleMons[battler].hp >= gBattleMons[battler].maxHP / 4)))
     {
         // 50% chance to stay in regardless
-        if (RandomPercentage(RNG_AI_SWITCH_HASBADODDS, 50) || AI_DATA->aiSwitchPredictionInProgress)
+        if (RandomPercentage(RNG_AI_SWITCH_HASBADODDS, 50) && !AI_DATA->aiSwitchPredictionInProgress)
             return FALSE;
 
         // Switch mon out
@@ -217,7 +217,7 @@ static bool32 ShouldSwitchIfHasBadOdds(u32 battler)
                 return FALSE;
 
             // 50% chance to stay in regardless
-            if (RandomPercentage(RNG_AI_SWITCH_HASBADODDS, 50) || AI_DATA->aiSwitchPredictionInProgress)
+            if (RandomPercentage(RNG_AI_SWITCH_HASBADODDS, 50) && !AI_DATA->aiSwitchPredictionInProgress)
                 return FALSE;
 
             // Switch mon out
@@ -1120,7 +1120,7 @@ void AI_TrySwitchOrUseItem(u32 battler)
                 gBattleStruct->AI_monToSwitchIntoId[battler] = monToSwitchId;
             }
 
-            *(gBattleStruct->monToSwitchIntoId + battler) = gBattleStruct->AI_monToSwitchIntoId[battler];
+            gBattleStruct->monToSwitchIntoId[battler] = gBattleStruct->AI_monToSwitchIntoId[battler];
             AI_DATA->monToSwitchInId[battler] = gBattleStruct->AI_monToSwitchIntoId[battler];
             return;
         }
@@ -1984,8 +1984,8 @@ u32 GetMostSuitableMonToSwitchInto(u32 battler, bool32 switchAfterMonKOd)
     s32 lastId = 0; // + 1
     struct Pokemon *party;
 
-    if (*(gBattleStruct->monToSwitchIntoId + battler) != PARTY_SIZE)
-        return *(gBattleStruct->monToSwitchIntoId + battler);
+    if (gBattleStruct->monToSwitchIntoId[battler] != PARTY_SIZE)
+        return gBattleStruct->monToSwitchIntoId[battler];
     if (gBattleTypeFlags & BATTLE_TYPE_ARENA)
         return gBattlerPartyIndexes[battler] + 1;
 

@@ -9,6 +9,7 @@
 #include "config/pokemon.h"
 #include "config/overworld.h"
 #include "config/dexnav.h"
+#include "config/summary_screen.h"
 
 // Invalid Versions show as "----------" in Gen 4 and Gen 5's summary screen.
 // In Gens 6 and 7, invalid versions instead show "a distant land" in the summary screen.
@@ -132,7 +133,7 @@
 #define FEMALE 1
 #define GENDER_COUNT 2
 
-#define BARD_SONG_LENGTH       6
+#define NUM_BARD_SONG_WORDS    6
 #define NUM_STORYTELLER_TALES  4
 #define NUM_TRADER_ITEMS       4
 #define GIDDY_MAX_TALES       10
