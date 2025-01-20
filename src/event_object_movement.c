@@ -180,7 +180,6 @@ static void SpriteCB_CameraObject(struct Sprite *);
 static void CameraObject_Init(struct Sprite *);
 static void CameraObject_UpdateMove(struct Sprite *);
 static void CameraObject_UpdateFrozen(struct Sprite *);
-static const struct ObjectEventTemplate *FindObjectEventTemplateByLocalId(u8, const struct ObjectEventTemplate *, u8);
 static void ObjectEventSetSingleMovement(struct ObjectEvent *, struct Sprite *, u8);
 static void SetSpriteDataForNormalStep(struct Sprite *, u8, u8);
 static void InitSpriteForFigure8Anim(struct Sprite *);
@@ -202,9 +201,7 @@ static bool8 GetFollowerInfo(u16 *species, u8 *form, u8 *shiny);
 static u8 LoadDynamicFollowerPalette(u16 species, u8 form, bool32 shiny);
 static const struct ObjectEventGraphicsInfo *SpeciesToGraphicsInfo(u16 species, u8 form);
 static bool8 NpcTakeStep(struct Sprite *);
-static bool8 IsElevationMismatchAt(u8, s16, s16);
 static bool8 AreElevationsCompatible(u8, u8);
-static u16 PackGraphicsId(const struct ObjectEventTemplate *template);
 static void CopyObjectGraphicsInfoToSpriteTemplate_WithMovementType(u16 graphicsId, u16 movementType, struct SpriteTemplate *spriteTemplate, const struct SubspriteTable **subspriteTables);
 
 static const struct SpriteFrameImage sPicTable_PechaBerryTree[];
@@ -1460,7 +1457,7 @@ static u8 InitObjectEventStateFromTemplate(const struct ObjectEventTemplate *tem
     y = template->y + MAP_OFFSET;
     objectEvent->active = TRUE;
     objectEvent->triggerGroundEffectsOnMove = TRUE;
-    objectEvent->graphicsId = PackGraphicsId(template);
+    objectEvent->graphicsId = template->graphicsId;
     SetObjectEventDynamicGraphicsId(objectEvent);
     if (IS_OW_MON_OBJ(objectEvent))
     {
@@ -1779,33 +1776,10 @@ static u8 TrySetupObjectEventSprite(const struct ObjectEventTemplate *objectEven
     return objectEventId;
 }
 
-// Pack pokemon form info into a graphicsId, from a template's script
-static u16 PackGraphicsId(const struct ObjectEventTemplate *template)
-{
-    u16 graphicsId = template->graphicsId;
-    u32 form = 0;
-    // set form based on template's script,
-    // if first command is bufferspeciesname
-    if (IS_OW_MON_OBJ(template))
-    {
-        if (template->script && template->script[0] == 0x7d)
-        {
-            form = T1_READ_16(&template->script[2]);
-            form = (form >> 10) & 0x1F;
-        }
-        else if (template->trainerRange_berryTreeId)
-        {
-            form = template->trainerRange_berryTreeId & 0x1F;
-        }
-        graphicsId |= form << OBJ_EVENT_GFX_SPECIES_BITS;
-    }
-    return graphicsId;
-}
-
 static u8 TrySpawnObjectEventTemplate(const struct ObjectEventTemplate *objectEventTemplate, u8 mapNum, u8 mapGroup, s16 cameraX, s16 cameraY)
 {
     u8 objectEventId;
-    u16 graphicsId = PackGraphicsId(objectEventTemplate);
+    u16 graphicsId = objectEventTemplate->graphicsId;
     struct SpriteTemplate spriteTemplate;
     struct SpriteFrameImage spriteFrameImage;
     const struct ObjectEventGraphicsInfo *graphicsInfo;
@@ -1952,6 +1926,51 @@ u8 CreateObjectGraphicsSprite(u16 graphicsId, void (*callback)(struct Sprite *),
     return spriteId;
 }
 
+//  Horrible workaround for sprite the visualizer, this should probably be reworked later
+u8 CreateObjectGraphicsFollowerSpriteForVisualizer(u16 graphicsId, void (*callback)(struct Sprite *), s16 x, s16 y, u8 subpriority, struct FollowerSpriteVisualizerData *data)
+{
+    struct SpriteTemplate *spriteTemplate;
+    const struct SubspriteTable *subspriteTables;
+    const struct ObjectEventGraphicsInfo *graphicsInfo = GetObjectEventGraphicsInfo(graphicsId);
+    struct Sprite *sprite;
+    u8 spriteId;
+    bool32 isShiny = data->isShiny;
+
+    spriteTemplate = Alloc(sizeof(struct SpriteTemplate));
+    CopyObjectGraphicsInfoToSpriteTemplate(graphicsId, callback, spriteTemplate, &subspriteTables);
+
+    if (OW_GFX_COMPRESS)
+    {
+        // Checking only for compressed here so as not to mess with decorations
+        if (graphicsInfo->compressed)
+            spriteTemplate->tileTag = LoadSheetGraphicsInfo(graphicsInfo, graphicsId, NULL);
+    }
+
+    if (spriteTemplate->paletteTag == OBJ_EVENT_PAL_TAG_DYNAMIC)
+    {
+        u32 paletteNum = LoadDynamicFollowerPaletteFromGraphicsId(graphicsId, isShiny, spriteTemplate);
+        spriteTemplate->paletteTag = GetSpritePaletteTagByPaletteNum(paletteNum);
+    }
+    else if (spriteTemplate->paletteTag != TAG_NONE)
+    {
+        LoadObjectEventPalette(spriteTemplate->paletteTag);
+    }
+
+    spriteId = CreateSprite(spriteTemplate, x, y, subpriority);
+
+    Free(spriteTemplate);
+
+    if (spriteId != MAX_SPRITES && subspriteTables != NULL)
+    {
+        sprite = &gSprites[spriteId];
+        if (OW_GFX_COMPRESS && graphicsInfo->compressed)
+            sprite->sheetSpan = GetSpanPerImage(sprite->oam.shape, sprite->oam.size);
+        SetSubspriteTables(sprite, subspriteTables);
+        sprite->subspriteMode = SUBSPRITES_IGNORE_PRIORITY;
+    }
+    return spriteId;
+}
+
 #define sVirtualObjId   data[0]
 #define sVirtualObjElev data[1]
 
@@ -2036,11 +2055,13 @@ static const struct ObjectEventGraphicsInfo *SpeciesToGraphicsInfo(u16 species, 
         graphicsInfo = &gSpeciesInfo[form ? SPECIES_UNOWN_B + form - 1 : species].overworldData;
         break;
     default:
+    #if P_GENDER_DIFFERENCES
         if (form == 1 && gSpeciesInfo[species].overworldDataFemale.paletteTag == OBJ_EVENT_PAL_TAG_DYNAMIC)
         {
             graphicsInfo = &gSpeciesInfo[species].overworldDataFemale;
         }
         else
+    #endif
         {
             graphicsInfo = &gSpeciesInfo[species].overworldData;
         }
@@ -2074,6 +2095,7 @@ static u8 LoadDynamicFollowerPalette(u16 species, u8 form, bool32 shiny)
         if ((paletteNum = IndexOfSpritePaletteTag(palTag)) < 16)
             return paletteNum;
         spritePalette.tag = palTag;
+    #if P_GENDER_DIFFERENCES
         if (female && gSpeciesInfo[species].overworldPaletteFemale != NULL)
         {
             if (shiny)
@@ -2082,6 +2104,7 @@ static u8 LoadDynamicFollowerPalette(u16 species, u8 form, bool32 shiny)
                 spritePalette.data = gSpeciesInfo[species].overworldPaletteFemale;
         }
         else
+    #endif
         {
             if (shiny)
                 spritePalette.data = gSpeciesInfo[species].overworldShinyPalette;
@@ -2553,7 +2576,7 @@ void GetFollowerAction(struct ScriptContext *ctx) // Essentially a big switch fo
         }
         if (multi < NUMBER_OF_MON_TYPES)
         {
-            multi = GetTypeEffectiveness(mon, multi);
+            multi = GetOverworldTypeEffectiveness(mon, multi);
             if (multi <= UQ_4_12(0.5))
                 condEmotes[condCount++] = (struct SpecialEmote) {.emotion = FOLLOWER_EMOTION_HAPPY, .index = 32};
             else if (multi >= UQ_4_12(2.0))
@@ -2929,9 +2952,6 @@ const struct ObjectEventGraphicsInfo *GetObjectEventGraphicsInfo(u16 graphicsId)
     if (graphicsId >= OBJ_EVENT_GFX_VARS && graphicsId <= OBJ_EVENT_GFX_VAR_F)
         graphicsId = VarGetObjectEventGraphicsId(graphicsId - OBJ_EVENT_GFX_VARS);
 
-    if (graphicsId >= OBJ_EVENT_GFX_MON_BASE + SPECIES_SHINY_TAG)
-        graphicsId -= SPECIES_SHINY_TAG;
-    // graphicsId may contain mon form info
     if (graphicsId > OBJ_EVENT_GFX_SPECIES_MASK)
     {
         form = graphicsId >> OBJ_EVENT_GFX_SPECIES_BITS;
@@ -3478,7 +3498,7 @@ static const struct ObjectEventTemplate *GetObjectEventTemplateByLocalIdAndMap(u
     return FindObjectEventTemplateByLocalId(localId, templates, count);
 }
 
-static const struct ObjectEventTemplate *FindObjectEventTemplateByLocalId(u8 localId, const struct ObjectEventTemplate *templates, u8 count)
+const struct ObjectEventTemplate *FindObjectEventTemplateByLocalId(u8 localId, const struct ObjectEventTemplate *templates, u8 count)
 {
     u8 i;
 
@@ -6058,9 +6078,15 @@ u8 GetDirectionToFace(s16 x, s16 y, s16 targetX, s16 targetY)
 // Uses the above, but script accessible, and uses localIds
 void GetDirectionToFaceScript(struct ScriptContext *ctx)
 {
-    u16 *var = GetVarPointer(ScriptReadHalfword(ctx));
+    u32 varId = ScriptReadHalfword(ctx);
     u8 sourceId = GetObjectEventIdByLocalId(ScriptReadByte(ctx));
     u8 targetId = GetObjectEventIdByLocalId(ScriptReadByte(ctx));
+
+    Script_RequestEffects(SCREFF_V1);
+    Script_RequestWriteVar(varId);
+
+    u16 *var = GetVarPointer(varId);
+
     if (var == NULL)
         return;
     if (sourceId >= OBJECT_EVENTS_COUNT || targetId >= OBJECT_EVENTS_COUNT)
@@ -6076,7 +6102,12 @@ void GetDirectionToFaceScript(struct ScriptContext *ctx)
 // Intended to be called before the field effect itself
 void IsFollowerFieldMoveUser(struct ScriptContext *ctx)
 {
-    u16 *var = GetVarPointer(ScriptReadHalfword(ctx));
+    u32 varId = ScriptReadHalfword(ctx);
+
+    Script_RequestEffects(SCREFF_V1);
+    Script_RequestWriteVar(varId);
+
+    u16 *var = GetVarPointer(varId);
     u16 userIndex = gFieldEffectArguments[0]; // field move user index
     struct Pokemon *follower = GetFirstLiveMon();
     struct ObjectEvent *obj = GetFollowerObject();
@@ -7492,12 +7523,12 @@ static u8 LoadFillColorPalette(u16 color, u16 paletteTag, struct Sprite *sprite)
 static void ObjectEventSetPokeballGfx(struct ObjectEvent *objEvent)
 {
     #if OW_FOLLOWERS_POKEBALLS
-    u32 ball = BALL_POKE;
+    enum PokeBall ball = BALL_STRANGE;
     if (objEvent->localId == OBJ_EVENT_ID_FOLLOWER)
     {
         struct Pokemon *mon = GetFirstLiveMon();
         if (mon)
-            ball = ItemIdToBallId(GetMonData(mon, MON_DATA_POKEBALL));
+            ball = GetMonData(mon, MON_DATA_POKEBALL);
     }
 
     if (ball != BALL_POKE && ball < POKEBALL_COUNT)
@@ -9754,7 +9785,7 @@ static void SetObjectEventSpriteOamTableForLongGrass(struct ObjectEvent *objEven
         sprite->subspriteTableNum = 5;
 }
 
-static bool8 IsElevationMismatchAt(u8 elevation, s16 x, s16 y)
+bool8 IsElevationMismatchAt(u8 elevation, s16 x, s16 y)
 {
     u8 mapElevation;
 
@@ -11193,6 +11224,13 @@ void GetDaycareGraphics(struct ScriptContext *ctx)
     u8 form;
     u8 shiny;
     s32 i;
+
+    Script_RequestEffects(SCREFF_V1);
+    Script_RequestWriteVar(varGfx[0]);
+    Script_RequestWriteVar(varGfx[1]);
+    Script_RequestWriteVar(varForm[0]);
+    Script_RequestWriteVar(varForm[1]);
+
     for (i = 0; i < 2; i++)
     {
         GetMonInfo((struct Pokemon *) &gSaveBlock1Ptr->daycare.mons[i].mon, &specGfx, &form, &shiny);

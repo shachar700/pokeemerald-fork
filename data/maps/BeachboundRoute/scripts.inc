@@ -306,153 +306,153 @@ BeachboundRoute_EventScript_Mugging_1:
 	waitmovement 23
 # 341 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 26
-# 344 "data/maps/BeachboundRoute/scripts.pory"
+# 343 "data/maps/BeachboundRoute/scripts.pory"
 	trainerbattle_two_trainers TRAINER_GRUNT_BEACHBOUND_ROUTE_1, BeachboundRoute_EventScript_Mugging_Text_17, TRAINER_GRUNT_BEACHBOUND_ROUTE_2, BeachboundRoute_EventScript_Mugging_Text_18
-# 351 "data/maps/BeachboundRoute/scripts.pory"
+# 350 "data/maps/BeachboundRoute/scripts.pory"
 	setvar VAR_CROBAT_SHADOWS_FIRST_ENCOUNTERS_STATE, 4
-# 353 "data/maps/BeachboundRoute/scripts.pory"
+# 352 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 23, Common_Movement_WalkInPlaceFasterRight
+# 353 "data/maps/BeachboundRoute/scripts.pory"
+	waitmovement 23
 # 354 "data/maps/BeachboundRoute/scripts.pory"
-	waitmovement 23
+	speakername BeachboundRoute_EventScript_Mugging_Text_19
 # 355 "data/maps/BeachboundRoute/scripts.pory"
-	speakername BeachboundRoute_EventScript_Mugging_Text_19
-# 356 "data/maps/BeachboundRoute/scripts.pory"
 	msgbox BeachboundRoute_EventScript_Mugging_Text_20
-# 359 "data/maps/BeachboundRoute/scripts.pory"
+# 358 "data/maps/BeachboundRoute/scripts.pory"
 	closemessage
-# 361 "data/maps/BeachboundRoute/scripts.pory"
+# 360 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 26, Common_Movement_WalkInPlaceFasterRight
+# 361 "data/maps/BeachboundRoute/scripts.pory"
+	waitmovement 26
 # 362 "data/maps/BeachboundRoute/scripts.pory"
-	waitmovement 26
-# 363 "data/maps/BeachboundRoute/scripts.pory"
 	speakername BeachboundRoute_EventScript_Mugging_Text_19
-# 364 "data/maps/BeachboundRoute/scripts.pory"
+# 363 "data/maps/BeachboundRoute/scripts.pory"
 	msgbox BeachboundRoute_EventScript_Mugging_Text_21
-# 367 "data/maps/BeachboundRoute/scripts.pory"
+# 366 "data/maps/BeachboundRoute/scripts.pory"
 	closemessage
-# 369 "data/maps/BeachboundRoute/scripts.pory"
+# 368 "data/maps/BeachboundRoute/scripts.pory"
 	delay 24
+# 370 "data/maps/BeachboundRoute/scripts.pory"
+	speakername BeachboundRoute_EventScript_Mugging_Text_14
 # 371 "data/maps/BeachboundRoute/scripts.pory"
-	speakername BeachboundRoute_EventScript_Mugging_Text_14
-# 372 "data/maps/BeachboundRoute/scripts.pory"
 	msgbox BeachboundRoute_EventScript_Mugging_Text_22
-# 377 "data/maps/BeachboundRoute/scripts.pory"
+# 376 "data/maps/BeachboundRoute/scripts.pory"
 	closemessage
-# 379 "data/maps/BeachboundRoute/scripts.pory"
+# 378 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 25, Common_Movement_WalkInPlaceFasterDown
+# 379 "data/maps/BeachboundRoute/scripts.pory"
+	waitmovement 0
 # 380 "data/maps/BeachboundRoute/scripts.pory"
-	waitmovement 0
-# 381 "data/maps/BeachboundRoute/scripts.pory"
 	speakername BeachboundRoute_EventScript_Mugging_Text_10
-# 382 "data/maps/BeachboundRoute/scripts.pory"
+# 381 "data/maps/BeachboundRoute/scripts.pory"
 	msgbox BeachboundRoute_EventScript_Mugging_Text_23
-# 385 "data/maps/BeachboundRoute/scripts.pory"
+# 384 "data/maps/BeachboundRoute/scripts.pory"
 	closemessage
-# 387 "data/maps/BeachboundRoute/scripts.pory"
+# 386 "data/maps/BeachboundRoute/scripts.pory"
 	delay 24
-# 389 "data/maps/BeachboundRoute/scripts.pory"
+# 388 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 24, BeachboundRoute_EventScript_Mugging_Movement_2
-# 390 "data/maps/BeachboundRoute/scripts.pory"
+# 389 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 0
+# 391 "data/maps/BeachboundRoute/scripts.pory"
+	speakername BeachboundRoute_EventScript_Mugging_Text_14
 # 392 "data/maps/BeachboundRoute/scripts.pory"
-	speakername BeachboundRoute_EventScript_Mugging_Text_14
-# 393 "data/maps/BeachboundRoute/scripts.pory"
 	msgbox BeachboundRoute_EventScript_Mugging_Text_24
-# 396 "data/maps/BeachboundRoute/scripts.pory"
+# 395 "data/maps/BeachboundRoute/scripts.pory"
 	closemessage
-# 398 "data/maps/BeachboundRoute/scripts.pory"
+# 397 "data/maps/BeachboundRoute/scripts.pory"
 	delay 48
-# 400 "data/maps/BeachboundRoute/scripts.pory"
+# 399 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 24, BeachboundRoute_EventScript_Mugging_Movement_3
-# 401 "data/maps/BeachboundRoute/scripts.pory"
+# 400 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 0
+# 402 "data/maps/BeachboundRoute/scripts.pory"
+	speakername BeachboundRoute_EventScript_Mugging_Text_14
 # 403 "data/maps/BeachboundRoute/scripts.pory"
-	speakername BeachboundRoute_EventScript_Mugging_Text_14
-# 404 "data/maps/BeachboundRoute/scripts.pory"
 	msgbox BeachboundRoute_EventScript_Mugging_Text_25
-# 409 "data/maps/BeachboundRoute/scripts.pory"
+# 408 "data/maps/BeachboundRoute/scripts.pory"
 	closemessage
-# 411 "data/maps/BeachboundRoute/scripts.pory"
+# 410 "data/maps/BeachboundRoute/scripts.pory"
 	turnobject 24, DIR_NORTH
-# 413 "data/maps/BeachboundRoute/scripts.pory"
+# 412 "data/maps/BeachboundRoute/scripts.pory"
 	speakername BeachboundRoute_EventScript_Mugging_Text_14
-# 414 "data/maps/BeachboundRoute/scripts.pory"
+# 413 "data/maps/BeachboundRoute/scripts.pory"
 	msgbox BeachboundRoute_EventScript_Mugging_Text_26
-# 417 "data/maps/BeachboundRoute/scripts.pory"
+# 416 "data/maps/BeachboundRoute/scripts.pory"
 	closemessage
-# 419 "data/maps/BeachboundRoute/scripts.pory"
+# 418 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 23, BeachboundRoute_EventScript_Mugging_Movement_4
-# 420 "data/maps/BeachboundRoute/scripts.pory"
+# 419 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 26, BeachboundRoute_EventScript_Mugging_Movement_4
+# 420 "data/maps/BeachboundRoute/scripts.pory"
+	waitmovement 23
 # 421 "data/maps/BeachboundRoute/scripts.pory"
-	waitmovement 23
+	waitmovement 26
 # 422 "data/maps/BeachboundRoute/scripts.pory"
-	waitmovement 26
-# 423 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 23, BeachboundRoute_EventScript_Mugging_Movement_5
-# 424 "data/maps/BeachboundRoute/scripts.pory"
+# 423 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 26, BeachboundRoute_EventScript_Mugging_Movement_5
-# 425 "data/maps/BeachboundRoute/scripts.pory"
+# 424 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 25, BeachboundRoute_EventScript_Mugging_Movement_5
+# 425 "data/maps/BeachboundRoute/scripts.pory"
+	waitmovement 23
 # 426 "data/maps/BeachboundRoute/scripts.pory"
-	waitmovement 23
+	waitmovement 26
 # 427 "data/maps/BeachboundRoute/scripts.pory"
-	waitmovement 26
-# 428 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 25
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 24, BeachboundRoute_EventScript_Mugging_Movement_6
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 23, BeachboundRoute_EventScript_Mugging_Movement_7
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 26, BeachboundRoute_EventScript_Mugging_Movement_8
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 25, BeachboundRoute_EventScript_Mugging_Movement_9
-# 434 "data/maps/BeachboundRoute/scripts.pory"
+# 433 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 24
-# 435 "data/maps/BeachboundRoute/scripts.pory"
+# 434 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 23
-# 436 "data/maps/BeachboundRoute/scripts.pory"
+# 435 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 26
-# 437 "data/maps/BeachboundRoute/scripts.pory"
+# 436 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 25
-# 439 "data/maps/BeachboundRoute/scripts.pory"
+# 438 "data/maps/BeachboundRoute/scripts.pory"
 	removeobject 24
-# 440 "data/maps/BeachboundRoute/scripts.pory"
+# 439 "data/maps/BeachboundRoute/scripts.pory"
 	removeobject 23
-# 441 "data/maps/BeachboundRoute/scripts.pory"
+# 440 "data/maps/BeachboundRoute/scripts.pory"
 	removeobject 26
-# 442 "data/maps/BeachboundRoute/scripts.pory"
+# 441 "data/maps/BeachboundRoute/scripts.pory"
 	removeobject 25
-# 443 "data/maps/BeachboundRoute/scripts.pory"
+# 442 "data/maps/BeachboundRoute/scripts.pory"
 	setflag FLAG_HIDE_CROBAT_SHADOWS_BEACHBOUND_RT
-# 445 "data/maps/BeachboundRoute/scripts.pory"
+# 444 "data/maps/BeachboundRoute/scripts.pory"
 	delay 60
-# 447 "data/maps/BeachboundRoute/scripts.pory"
+# 446 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 22, BeachboundRoute_EventScript_Mugging_Movement_10
-# 448 "data/maps/BeachboundRoute/scripts.pory"
+# 447 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 22
+# 449 "data/maps/BeachboundRoute/scripts.pory"
+	speakername BeachboundRoute_EventScript_Mugging_Text_27
 # 450 "data/maps/BeachboundRoute/scripts.pory"
-	speakername BeachboundRoute_EventScript_Mugging_Text_27
-# 451 "data/maps/BeachboundRoute/scripts.pory"
 	msgbox BeachboundRoute_EventScript_Mugging_Text_28
-# 456 "data/maps/BeachboundRoute/scripts.pory"
+# 455 "data/maps/BeachboundRoute/scripts.pory"
 	closemessage
-# 459 "data/maps/BeachboundRoute/scripts.pory"
+# 458 "data/maps/BeachboundRoute/scripts.pory"
 	giveitem ITEM_WHITE_HERB
-# 461 "data/maps/BeachboundRoute/scripts.pory"
+# 460 "data/maps/BeachboundRoute/scripts.pory"
 	speakername BeachboundRoute_EventScript_Mugging_Text_27
-# 462 "data/maps/BeachboundRoute/scripts.pory"
+# 461 "data/maps/BeachboundRoute/scripts.pory"
 	msgbox BeachboundRoute_EventScript_Mugging_Text_29
-# 467 "data/maps/BeachboundRoute/scripts.pory"
+# 466 "data/maps/BeachboundRoute/scripts.pory"
 	closemessage
-# 469 "data/maps/BeachboundRoute/scripts.pory"
+# 468 "data/maps/BeachboundRoute/scripts.pory"
 	addvar VAR_PLAYER_REPUTATION, 1
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement 22, BeachboundRoute_EventScript_Mugging_Movement_11
-# 472 "data/maps/BeachboundRoute/scripts.pory"
+# 471 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 22
-# 473 "data/maps/BeachboundRoute/scripts.pory"
+# 472 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 0
 	return
 
@@ -575,21 +575,21 @@ BeachboundRoute_EventScript_Mugging_9:
 
 
 BeachboundRoute_EventScript_SeeDecay::
-# 477 "data/maps/BeachboundRoute/scripts.pory"
+# 476 "data/maps/BeachboundRoute/scripts.pory"
 	lockall
-# 479 "data/maps/BeachboundRoute/scripts.pory"
+# 478 "data/maps/BeachboundRoute/scripts.pory"
 	playse SE_PIN
-# 480 "data/maps/BeachboundRoute/scripts.pory"
+# 479 "data/maps/BeachboundRoute/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
-# 481 "data/maps/BeachboundRoute/scripts.pory"
+# 480 "data/maps/BeachboundRoute/scripts.pory"
 	waitse
-# 482 "data/maps/BeachboundRoute/scripts.pory"
+# 481 "data/maps/BeachboundRoute/scripts.pory"
 	waitmovement 0
-# 484 "data/maps/BeachboundRoute/scripts.pory"
+# 483 "data/maps/BeachboundRoute/scripts.pory"
 	setflag FLAG_SPAWN_INVISIBLE
-# 485 "data/maps/BeachboundRoute/scripts.pory"
+# 484 "data/maps/BeachboundRoute/scripts.pory"
 	warpsilent MAP_BEACHBOUND_ROUTE_DECAY, 43, 17
-# 487 "data/maps/BeachboundRoute/scripts.pory"
+# 486 "data/maps/BeachboundRoute/scripts.pory"
 	releaseall
 	return
 
@@ -626,217 +626,217 @@ BeachboundRoute_EventScript_Mugging_Movement_1:
 	walk_down
 	step_end
 
-# 389 "data/maps/BeachboundRoute/scripts.pory"
+# 388 "data/maps/BeachboundRoute/scripts.pory"
 BeachboundRoute_EventScript_Mugging_Movement_2:
-# 389 "data/maps/BeachboundRoute/scripts.pory"
+# 388 "data/maps/BeachboundRoute/scripts.pory"
 	face_up
 	step_end
 
-# 400 "data/maps/BeachboundRoute/scripts.pory"
+# 399 "data/maps/BeachboundRoute/scripts.pory"
 BeachboundRoute_EventScript_Mugging_Movement_3:
-# 400 "data/maps/BeachboundRoute/scripts.pory"
+# 399 "data/maps/BeachboundRoute/scripts.pory"
 	face_right
 	step_end
 
-# 419 "data/maps/BeachboundRoute/scripts.pory"
+# 418 "data/maps/BeachboundRoute/scripts.pory"
 BeachboundRoute_EventScript_Mugging_Movement_4:
-# 419 "data/maps/BeachboundRoute/scripts.pory"
+# 418 "data/maps/BeachboundRoute/scripts.pory"
 	walk_up
-# 419 "data/maps/BeachboundRoute/scripts.pory"
+# 418 "data/maps/BeachboundRoute/scripts.pory"
 	face_down
 	step_end
 
-# 423 "data/maps/BeachboundRoute/scripts.pory"
+# 422 "data/maps/BeachboundRoute/scripts.pory"
 BeachboundRoute_EventScript_Mugging_Movement_5:
-# 423 "data/maps/BeachboundRoute/scripts.pory"
+# 422 "data/maps/BeachboundRoute/scripts.pory"
 	face_down
-# 423 "data/maps/BeachboundRoute/scripts.pory"
+# 422 "data/maps/BeachboundRoute/scripts.pory"
 	zubats_align
-# 423 "data/maps/BeachboundRoute/scripts.pory"
+# 422 "data/maps/BeachboundRoute/scripts.pory"
 	delay_16
-# 423 "data/maps/BeachboundRoute/scripts.pory"
+# 422 "data/maps/BeachboundRoute/scripts.pory"
 	delay_16
 	step_end
 
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 BeachboundRoute_EventScript_Mugging_Movement_6:
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 430 "data/maps/BeachboundRoute/scripts.pory"
+# 429 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
 	step_end
 
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 BeachboundRoute_EventScript_Mugging_Movement_7:
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_right
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_right
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 431 "data/maps/BeachboundRoute/scripts.pory"
+# 430 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
 	step_end
 
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 BeachboundRoute_EventScript_Mugging_Movement_8:
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_right
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 432 "data/maps/BeachboundRoute/scripts.pory"
+# 431 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
 	step_end
 
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 BeachboundRoute_EventScript_Mugging_Movement_9:
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 433 "data/maps/BeachboundRoute/scripts.pory"
+# 432 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
 	step_end
 
-# 447 "data/maps/BeachboundRoute/scripts.pory"
+# 446 "data/maps/BeachboundRoute/scripts.pory"
 BeachboundRoute_EventScript_Mugging_Movement_10:
-# 447 "data/maps/BeachboundRoute/scripts.pory"
+# 446 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 447 "data/maps/BeachboundRoute/scripts.pory"
+# 446 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
 	step_end
 
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 BeachboundRoute_EventScript_Mugging_Movement_11:
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_down
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
-# 471 "data/maps/BeachboundRoute/scripts.pory"
+# 470 "data/maps/BeachboundRoute/scripts.pory"
 	walk_left
 	step_end
 
@@ -1072,27 +1072,27 @@ BeachboundRoute_EventScript_Mugging_Text_16:
 	.string "Take care of this clown, boys!$"
 
 BeachboundRoute_EventScript_Mugging_Text_17:
-# 346 "data/maps/BeachboundRoute/scripts.pory"
+# 345 "data/maps/BeachboundRoute/scripts.pory"
 	.string "Aw, man!$"
 
 BeachboundRoute_EventScript_Mugging_Text_18:
-# 348 "data/maps/BeachboundRoute/scripts.pory"
+# 347 "data/maps/BeachboundRoute/scripts.pory"
 	.string "Mama!$"
 
 BeachboundRoute_EventScript_Mugging_Text_19:
-# 355 "data/maps/BeachboundRoute/scripts.pory"
+# 354 "data/maps/BeachboundRoute/scripts.pory"
 	.string "Zubat Grunt$"
 
 BeachboundRoute_EventScript_Mugging_Text_20:
-# 357 "data/maps/BeachboundRoute/scripts.pory"
+# 356 "data/maps/BeachboundRoute/scripts.pory"
 	.string "Sorry, boss!$"
 
 BeachboundRoute_EventScript_Mugging_Text_21:
-# 365 "data/maps/BeachboundRoute/scripts.pory"
+# 364 "data/maps/BeachboundRoute/scripts.pory"
 	.string "We got stomped proper, boss!$"
 
 BeachboundRoute_EventScript_Mugging_Text_22:
-# 373 "data/maps/BeachboundRoute/scripts.pory"
+# 372 "data/maps/BeachboundRoute/scripts.pory"
 	.string "Ya gotta be kiddin' me…\p"
 	.string "Can't even do no regular muggin' in\n"
 	.string "peace anymore!\p"
@@ -1100,15 +1100,15 @@ BeachboundRoute_EventScript_Mugging_Text_22:
 	.string "ya myself!$"
 
 BeachboundRoute_EventScript_Mugging_Text_23:
-# 383 "data/maps/BeachboundRoute/scripts.pory"
+# 382 "data/maps/BeachboundRoute/scripts.pory"
 	.string "Boss, what's a stoop?$"
 
 BeachboundRoute_EventScript_Mugging_Text_24:
-# 394 "data/maps/BeachboundRoute/scripts.pory"
+# 393 "data/maps/BeachboundRoute/scripts.pory"
 	.string "For the love of god, Kevin…$"
 
 BeachboundRoute_EventScript_Mugging_Text_25:
-# 405 "data/maps/BeachboundRoute/scripts.pory"
+# 404 "data/maps/BeachboundRoute/scripts.pory"
 	.string "Movin' on! You've not seen the last of\n"
 	.string "us, ya annoying brat!\p"
 	.string "Ya better steer clear of the Crobat\n"
@@ -1116,15 +1116,15 @@ BeachboundRoute_EventScript_Mugging_Text_25:
 	.string "Let's move it, boys!$"
 
 BeachboundRoute_EventScript_Mugging_Text_26:
-# 415 "data/maps/BeachboundRoute/scripts.pory"
+# 414 "data/maps/BeachboundRoute/scripts.pory"
 	.string "ZUBATS, ALIGN!!$"
 
 BeachboundRoute_EventScript_Mugging_Text_27:
-# 450 "data/maps/BeachboundRoute/scripts.pory"
+# 449 "data/maps/BeachboundRoute/scripts.pory"
 	.string "Woman$"
 
 BeachboundRoute_EventScript_Mugging_Text_28:
-# 452 "data/maps/BeachboundRoute/scripts.pory"
+# 451 "data/maps/BeachboundRoute/scripts.pory"
 	.string "Thank you so much for helping me!\p"
 	.string "Those ruffians were about to steal my\n"
 	.string "Pokémon!\p"
@@ -1132,7 +1132,7 @@ BeachboundRoute_EventScript_Mugging_Text_28:
 	.string "thanks, but please take this!$"
 
 BeachboundRoute_EventScript_Mugging_Text_29:
-# 463 "data/maps/BeachboundRoute/scripts.pory"
+# 462 "data/maps/BeachboundRoute/scripts.pory"
 	.string "What's your name?\n"
 	.string "{PLAYER}?\p"
 	.string "I'll be sure to tell everyone what a\n"
