@@ -163,6 +163,7 @@ const u32 gTrainerFrontPic_SushiChef[] = INCBIN_U32("graphics/trainers/front_pic
 const u32 gTrainerPalette_SushiChef[] = INCBIN_U32("graphics/trainers/palettes/sushi_chef.gbapal.lz");
 
 const u32 gTrainerFrontPic_Youngster[] = INCBIN_U32("graphics/trainers/front_pics/youngster.4bpp.lz");
+const u32 gTrainerPalette_Youngster[] = INCBIN_U32("graphics/trainers/front_pics/youngster.gbapal.lz");
 
 const u32 gTrainerFrontPic_ChampionWallace[] = INCBIN_U32("graphics/trainers/front_pics/champion_wallace.4bpp.lz");
 const u32 gTrainerPalette_ChampionWallace[] = INCBIN_U32("graphics/trainers/front_pics/champion_wallace.gbapal.lz");
@@ -401,7 +402,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_SR_AND_JR, gTrainerFrontPic_SrAndJr, gTrainerPalette_SrAndJr),
     TRAINER_SPRITE(TRAINER_PIC_POKEFAN_M, gTrainerFrontPic_PokefanM, gTrainerPalette_PokefanM),
     TRAINER_SPRITE(TRAINER_PIC_POKEFAN_F, gTrainerFrontPic_PokefanF, gTrainerPalette_PokefanF),
-    TRAINER_SPRITE(TRAINER_PIC_YOUNGSTER, gTrainerFrontPic_Youngster, gTrainerPalette_Lass),
+    TRAINER_SPRITE(TRAINER_PIC_YOUNGSTER, gTrainerFrontPic_Youngster, gTrainerPalette_Youngster),
     TRAINER_SPRITE(TRAINER_PIC_CHAMPION_WALLACE, gTrainerFrontPic_ChampionWallace, gTrainerPalette_ChampionWallace, -8, 7, 0x188),
     TRAINER_SPRITE(TRAINER_PIC_FISHERMAN, gTrainerFrontPic_Fisherman, gTrainerPalette_Fisherman),
     TRAINER_SPRITE(TRAINER_PIC_CYCLING_TRIATHLETE_M, gTrainerFrontPic_CyclingTriathleteM, gTrainerPalette_CyclingTriathleteM),

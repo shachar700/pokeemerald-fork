@@ -11734,7 +11734,7 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_KRICKETOT"
+                "species": "SPECIES_HOOTHOOT"
               },
               {
                 "min_level": 3,
@@ -11754,7 +11754,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_KRICKETOT"
+                "species": "SPECIES_HOOTHOOT"
               },
               {
                 "min_level": 4,
@@ -12459,6 +12459,75 @@
                 "min_level": 10,
                 "max_level": 14,
                 "species": "SPECIES_ONIX"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_WHITESLATE_ROUTE",
+          "base_label": "gWhiteslateRouteDay",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SHUCKLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
               }
             ]
           }
