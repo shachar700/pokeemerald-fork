@@ -80,7 +80,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ARON)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SNIVY)",
       "x": 5,
       "y": 4,
       "elevation": 0,
@@ -93,7 +93,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPHEAL)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FROAKIE)",
       "x": 6,
       "y": 4,
       "elevation": 0,
@@ -106,7 +106,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TRAPINCH)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CYNDAQUIL)",
       "x": 7,
       "y": 4,
       "elevation": 0,
