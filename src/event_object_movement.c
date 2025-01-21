@@ -2718,11 +2718,14 @@ void TrySpawnObjectEvents(s16 cameraX, s16 cameraY)
             s16 npcX = template->x + MAP_OFFSET;
             s16 npcY = template->y + MAP_OFFSET;
 
+            if (FlagGet(template->flagId))
+                break;
+
             if (top <= npcY && bottom >= npcY && left <= npcX && right >= npcX)
             {
                 if (areAnyTimeVisibilityFieldsSet(template))
                     TrySpawnObjectEventTemplateBasedOnSchedule(template, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, cameraX, cameraY, timeOfDay);
-                else if (!FlagGet(template->flagId))
+                else
                     TrySpawnObjectEventTemplate(template, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, cameraX, cameraY);
             }
         }
