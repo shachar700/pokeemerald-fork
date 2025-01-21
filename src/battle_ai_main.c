@@ -468,7 +468,7 @@ void SetAiLogicDataForTurn(struct AiLogicData *aiData)
     // Set delay timer to count how long it takes for AI to choose action/move
     gBattleStruct->aiDelayTimer = gMain.vblankCounter1;
 
-    aiData->weatherHasEffect = WEATHER_HAS_EFFECT;
+    aiData->weatherHasEffect = HasWeatherEffect();
     weather = AI_GetWeather(aiData);
 
     // get/assume all battler data and simulate AI damage
@@ -794,7 +794,7 @@ void BattleAI_DoAIProcessing_PredictedSwitchin(struct AI_ThinkingStruct *aiThink
                 aiData->effectiveness[battlerAtk][battlerDef][aiThink->movesetIndex] = effectivenessSwitchin[aiThink->movesetIndex];
                 aiData->moveAccuracy[battlerAtk][battlerDef][aiThink->movesetIndex] = moveAccuracySwitchin[aiThink->movesetIndex];
             }
-            
+
             else
             {
                 if (aiThink->aiLogicId < ARRAY_COUNT(sBattleAiFuncTable)
@@ -824,7 +824,7 @@ void BattleAI_DoAIProcessing_PredictedSwitchin(struct AI_ThinkingStruct *aiThink
     for (moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
     {
         aiData->simulatedDmg[battlerAtk][battlerDef][moveIndex] = simulatedDamageSwitchout[moveIndex];
-        aiData->effectiveness[battlerAtk][battlerDef][moveIndex] = effectivenessSwitchout[moveIndex]; 
+        aiData->effectiveness[battlerAtk][battlerDef][moveIndex] = effectivenessSwitchout[moveIndex];
         aiData->moveAccuracy[battlerAtk][battlerDef][moveIndex] = moveAccuracySwitchout[moveIndex];
     }
 }
@@ -5410,6 +5410,7 @@ static s32 AI_PredictSwitch(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
     switch (moveEffect)
     {
     case EFFECT_PURSUIT:
+    {
         u32 hitsToKO = GetNoOfHitsToKOBattler(battlerAtk, battlerDef, AI_THINKING_STRUCT->movesetIndex);
         if (hitsToKO == 2)
             ADJUST_SCORE(GOOD_EFFECT);
@@ -5418,6 +5419,7 @@ static s32 AI_PredictSwitch(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
         // else if (IsPredictedToUsePursuitableMove(battlerDef, battlerAtk) && !MoveWouldHitFirst(move, battlerAtk, battlerDef)) //Pursuit against fast U-Turn
         //     ADJUST_SCORE(GOOD_EFFECT);
         break;
+    }
 
     case EFFECT_FOCUS_PUNCH:
         ADJUST_SCORE(DECENT_EFFECT);
