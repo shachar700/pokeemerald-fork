@@ -235,7 +235,7 @@ bool32 IsAffectedByFollowMe(u32 battlerAtk, u32 defSide, u32 move)
 // Functions
 void HandleAction_UseMove(void)
 {
-    u32 battler, i, side, moveType, var = 4;
+    u32 battler, i, side, moveType, ability, var = MAX_BATTLERS_COUNT;
     u16 moveTarget;
 
     gBattlerAttacker = gBattlerByTurnOrder[gCurrentTurnActionNumber];
@@ -253,7 +253,7 @@ void HandleAction_UseMove(void)
     gBattleScripting.savedDmg = 0;
     gBattleCommunication[MISS_TYPE] = 0;
     gBattleScripting.savedMoveEffect = 0;
-    gCurrMovePos = gChosenMovePos = *(gBattleStruct->chosenMovePositions + gBattlerAttacker);
+    gCurrMovePos = gChosenMovePos = gBattleStruct->chosenMovePositions[gBattlerAttacker];
 
     // choose move
     if (gProtectStructs[gBattlerAttacker].noValidMoves)
@@ -261,7 +261,7 @@ void HandleAction_UseMove(void)
         gProtectStructs[gBattlerAttacker].noValidMoves = FALSE;
         gCurrentMove = gChosenMove = MOVE_STRUGGLE;
         gHitMarker |= HITMARKER_NO_PPDEDUCT;
-        *(gBattleStruct->moveTarget + gBattlerAttacker) = GetBattleMoveTarget(MOVE_STRUGGLE, NO_TARGET_OVERRIDE);
+        gBattleStruct->moveTarget[gBattlerAttacker] = GetBattleMoveTarget(MOVE_STRUGGLE, NO_TARGET_OVERRIDE);
     }
     else if (gBattleMons[gBattlerAttacker].status2 & STATUS2_MULTIPLETURNS || gBattleMons[gBattlerAttacker].status2 & STATUS2_RECHARGE)
     {
@@ -273,7 +273,7 @@ void HandleAction_UseMove(void)
     {
         gCurrentMove = gChosenMove = gDisableStructs[gBattlerAttacker].encoredMove;
         gCurrMovePos = gChosenMovePos = gDisableStructs[gBattlerAttacker].encoredMovePos;
-        *(gBattleStruct->moveTarget + gBattlerAttacker) = GetBattleMoveTarget(gCurrentMove, NO_TARGET_OVERRIDE);
+        gBattleStruct->moveTarget[gBattlerAttacker] = GetBattleMoveTarget(gCurrentMove, NO_TARGET_OVERRIDE);
     }
     // check if the encored move wasn't overwritten
     else if (GetActiveGimmick(gBattlerAttacker) != GIMMICK_Z_MOVE && gDisableStructs[gBattlerAttacker].encoredMove != MOVE_NONE
@@ -284,12 +284,12 @@ void HandleAction_UseMove(void)
         gDisableStructs[gBattlerAttacker].encoredMove = MOVE_NONE;
         gDisableStructs[gBattlerAttacker].encoredMovePos = 0;
         gDisableStructs[gBattlerAttacker].encoreTimer = 0;
-        *(gBattleStruct->moveTarget + gBattlerAttacker) = GetBattleMoveTarget(gCurrentMove, NO_TARGET_OVERRIDE);
+        gBattleStruct->moveTarget[gBattlerAttacker] = GetBattleMoveTarget(gCurrentMove, NO_TARGET_OVERRIDE);
     }
     else if (gBattleMons[gBattlerAttacker].moves[gCurrMovePos] != gChosenMoveByBattler[gBattlerAttacker])
     {
         gCurrentMove = gChosenMove = gBattleMons[gBattlerAttacker].moves[gCurrMovePos];
-        *(gBattleStruct->moveTarget + gBattlerAttacker) = GetBattleMoveTarget(gCurrentMove, NO_TARGET_OVERRIDE);
+        gBattleStruct->moveTarget[gBattlerAttacker] = GetBattleMoveTarget(gCurrentMove, NO_TARGET_OVERRIDE);
     }
     else
     {
@@ -326,6 +326,7 @@ void HandleAction_UseMove(void)
 
     // choose target
     side = BATTLE_OPPOSITE(GetBattlerSide(gBattlerAttacker));
+    ability = GetBattlerAbility(gBattleStruct->moveTarget[gBattlerAttacker]);
     if (IsAffectedByFollowMe(gBattlerAttacker, side, gCurrentMove)
         && moveTarget == MOVE_TARGET_SELECTED
         && GetBattlerSide(gBattlerAttacker) != GetBattlerSide(gSideTimers[side].followmeTarget))
@@ -334,18 +335,20 @@ void HandleAction_UseMove(void)
     }
     else if (IsDoubleBattle()
            && gSideTimers[side].followmeTimer == 0
-           && !gBattleStruct->battlerState[*(gBattleStruct->moveTarget + gBattlerAttacker)].pursuitTarget
+           && !gBattleStruct->battlerState[gBattleStruct->moveTarget[gBattlerAttacker]].pursuitTarget
            && (!IsBattleMoveStatus(gCurrentMove) || (moveTarget != MOVE_TARGET_USER && moveTarget != MOVE_TARGET_ALL_BATTLERS))
-           && ((GetBattlerAbility(*(gBattleStruct->moveTarget + gBattlerAttacker)) != ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
-            || (GetBattlerAbility(*(gBattleStruct->moveTarget + gBattlerAttacker)) != ABILITY_STORM_DRAIN && moveType == TYPE_WATER)))
+           && ((ability != ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
+            || (ability != ABILITY_STORM_DRAIN && moveType == TYPE_WATER)))
     {
-        side = GetBattlerSide(gBattlerAttacker);
+        // Find first battler that redirects the move (in turn order)
         for (battler = 0; battler < gBattlersCount; battler++)
         {
-            if (side != GetBattlerSide(battler)
-                && *(gBattleStruct->moveTarget + gBattlerAttacker) != battler
-                && ((GetBattlerAbility(battler) == ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
-                 || (GetBattlerAbility(battler) == ABILITY_STORM_DRAIN && moveType == TYPE_WATER))
+            ability = GetBattlerAbility(battler);
+            if ((B_REDIRECT_ABILITY_ALLIES >= GEN_4 || !IsAlly(gBattlerAttacker, battler))
+                && battler != gBattlerAttacker
+                && gBattleStruct->moveTarget[gBattlerAttacker] != battler
+                && ((ability == ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
+                 || (ability == ABILITY_STORM_DRAIN && moveType == TYPE_WATER))
                 && GetBattlerTurnOrderNum(battler) < var
                 && moveEffect != EFFECT_SNIPE_SHOT
                 && moveEffect != EFFECT_PLEDGE
@@ -355,7 +358,7 @@ void HandleAction_UseMove(void)
                 var = GetBattlerTurnOrderNum(battler);
             }
         }
-        if (var == 4)
+        if (var == MAX_BATTLERS_COUNT)
         {
             if (moveTarget & MOVE_TARGET_RANDOM)
             {
@@ -373,7 +376,7 @@ void HandleAction_UseMove(void)
             }
             else
             {
-                gBattlerTarget = *(gBattleStruct->moveTarget + gBattlerAttacker);
+                gBattlerTarget = gBattleStruct->moveTarget[gBattlerAttacker];
             }
 
             if (!IsBattlerAlive(gBattlerTarget) && GetBattlerSide(gBattlerAttacker) != GetBattlerSide(gBattlerTarget))
@@ -423,7 +426,7 @@ void HandleAction_UseMove(void)
     }
     else
     {
-        gBattlerTarget = *(gBattleStruct->moveTarget + gBattlerAttacker);
+        gBattlerTarget = gBattleStruct->moveTarget[gBattlerAttacker];
         if (!IsBattlerAlive(gBattlerTarget)
          && moveTarget != MOVE_TARGET_OPPONENTS_FIELD
          && (GetBattlerSide(gBattlerAttacker) != GetBattlerSide(gBattlerTarget)))
@@ -483,7 +486,7 @@ void HandleAction_Switch(void)
     gActionSelectionCursor[gBattlerAttacker] = 0;
     gMoveSelectionCursor[gBattlerAttacker] = 0;
 
-    PREPARE_MON_NICK_BUFFER(gBattleTextBuff1, gBattlerAttacker, *(gBattleStruct->battlerPartyIndexes + gBattlerAttacker))
+    PREPARE_MON_NICK_BUFFER(gBattleTextBuff1, gBattlerAttacker, gBattleStruct->battlerPartyIndexes[gBattlerAttacker]);
 
     gBattleScripting.battler = gBattlerAttacker;
     gBattlescriptCurrInstr = BattleScript_ActionSwitch;
@@ -785,7 +788,7 @@ void HandleAction_ActionFinished(void)
 {
     u32 i, j, moveType;
     bool32 afterYouActive = gSpecialStatuses[gBattlerByTurnOrder[gCurrentTurnActionNumber + 1]].afterYou;
-    *(gBattleStruct->monToSwitchIntoId + gBattlerByTurnOrder[gCurrentTurnActionNumber]) = gSelectedMonPartyId = PARTY_SIZE;
+    gBattleStruct->monToSwitchIntoId[gBattlerByTurnOrder[gCurrentTurnActionNumber]] = gSelectedMonPartyId = PARTY_SIZE;
     gCurrentTurnActionNumber++;
     gCurrentActionFuncId = gActionsByTurnOrder[gCurrentTurnActionNumber];
     SpecialStatusesClear();
@@ -3474,7 +3477,7 @@ static void CancellerParalysed(u32 *effect)
 {
     if (!gBattleStruct->isAtkCancelerForCalledMove
         && (gBattleMons[gBattlerAttacker].status1 & STATUS1_PARALYSIS)
-        && (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD && B_MAGIC_GUARD >= GEN_4)
+        && !(B_MAGIC_GUARD == GEN_4 && GetBattlerAbility(gBattlerAttacker) == ABILITY_MAGIC_GUARD)
         && !RandomPercentage(RNG_PARALYSIS, 75))
     {
         gProtectStructs[gBattlerAttacker].prlzImmobility = TRUE;
@@ -3898,7 +3901,7 @@ bool32 HasNoMonsToSwitch(u32 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2
         {
             if (IsValidForBattle(&party[i])
              && i != partyIdBattlerOn1 && i != partyIdBattlerOn2
-             && i != *(gBattleStruct->monToSwitchIntoId + flankId) && i != playerId[gBattleStruct->monToSwitchIntoId])
+             && i != gBattleStruct->monToSwitchIntoId[flankId] && i != playerId[gBattleStruct->monToSwitchIntoId])
                 break;
         }
         return (i == PARTY_SIZE);
@@ -3920,7 +3923,7 @@ bool32 HasNoMonsToSwitch(u32 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2
             {
                 if (IsValidForBattle(&party[i])
                  && i != partyIdBattlerOn1 && i != partyIdBattlerOn2
-                 && i != *(gBattleStruct->monToSwitchIntoId + flankId) && i != playerId[gBattleStruct->monToSwitchIntoId])
+                 && i != gBattleStruct->monToSwitchIntoId[flankId] && i != playerId[gBattleStruct->monToSwitchIntoId])
                     break;
             }
             return (i == PARTY_SIZE);
@@ -4009,7 +4012,7 @@ bool32 HasNoMonsToSwitch(u32 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2
         {
             if (IsValidForBattle(&party[i])
              && i != partyIdBattlerOn1 && i != partyIdBattlerOn2
-             && i != *(gBattleStruct->monToSwitchIntoId + flankId) && i != playerId[gBattleStruct->monToSwitchIntoId])
+             && i != gBattleStruct->monToSwitchIntoId[flankId] && i != playerId[gBattleStruct->monToSwitchIntoId])
                 break;
         }
         return (i == PARTY_SIZE);
@@ -6295,7 +6298,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             {
                 // Set bit and save Dancer mon's original target
                 gSpecialStatuses[battler].dancerUsedMove = TRUE;
-                gSpecialStatuses[battler].dancerOriginalTarget = *(gBattleStruct->moveTarget + battler) | 0x4;
+                gSpecialStatuses[battler].dancerOriginalTarget = gBattleStruct->moveTarget[battler] | 0x4;
                 gBattleStruct->atkCancellerTracker = 0;
                 gBattlerAttacker = gBattlerAbility = battler;
                 gCalledMove = gCurrentMove;
@@ -8543,22 +8546,36 @@ u32 GetBattleMoveTarget(u16 move, u8 setTarget)
         }
         else
         {
+            u32 battlerAbilityOnField = 0;
+
             targetBattler = SetRandomTarget(gBattlerAttacker);
-            if (moveType == TYPE_ELECTRIC
-                && IsAbilityOnOpposingSide(gBattlerAttacker, ABILITY_LIGHTNING_ROD)
-                && GetBattlerAbility(targetBattler) != ABILITY_LIGHTNING_ROD)
+            if (moveType == TYPE_ELECTRIC && GetBattlerAbility(targetBattler) != ABILITY_LIGHTNING_ROD)
             {
-                targetBattler ^= BIT_FLANK;
-                RecordAbilityBattle(targetBattler, gBattleMons[targetBattler].ability);
-                gSpecialStatuses[targetBattler].lightningRodRedirected = TRUE;
+                if (B_REDIRECT_ABILITY_ALLIES >= GEN_4)
+                    battlerAbilityOnField = IsAbilityOnField(ABILITY_LIGHTNING_ROD);
+                else
+                    battlerAbilityOnField = IsAbilityOnOpposingSide(targetBattler, ABILITY_LIGHTNING_ROD);
+
+                if (battlerAbilityOnField > 0)
+                {
+                    targetBattler = battlerAbilityOnField - 1;
+                    RecordAbilityBattle(targetBattler, gBattleMons[targetBattler].ability);
+                    gSpecialStatuses[targetBattler].lightningRodRedirected = TRUE;
+                }
             }
-            else if (moveType == TYPE_WATER
-                && IsAbilityOnOpposingSide(gBattlerAttacker, ABILITY_STORM_DRAIN)
-                && GetBattlerAbility(targetBattler) != ABILITY_STORM_DRAIN)
+            else if (moveType == TYPE_WATER && GetBattlerAbility(targetBattler) != ABILITY_STORM_DRAIN)
             {
-                targetBattler ^= BIT_FLANK;
-                RecordAbilityBattle(targetBattler, gBattleMons[targetBattler].ability);
-                gSpecialStatuses[targetBattler].stormDrainRedirected = TRUE;
+                if (B_REDIRECT_ABILITY_ALLIES >= GEN_4)
+                    battlerAbilityOnField = IsAbilityOnField(ABILITY_STORM_DRAIN);
+                else
+                    battlerAbilityOnField = IsAbilityOnOpposingSide(targetBattler, ABILITY_STORM_DRAIN);
+
+                if (battlerAbilityOnField > 0)
+                {
+                    targetBattler = battlerAbilityOnField - 1;
+                    RecordAbilityBattle(targetBattler, gBattleMons[targetBattler].ability);
+                    gSpecialStatuses[targetBattler].lightningRodRedirected = TRUE;
+                }
             }
         }
         break;
@@ -8594,7 +8611,7 @@ u32 GetBattleMoveTarget(u16 move, u8 setTarget)
         break;
     }
 
-    *(gBattleStruct->moveTarget + gBattlerAttacker) = targetBattler;
+    gBattleStruct->moveTarget[gBattlerAttacker] = targetBattler;
 
     return targetBattler;
 }
@@ -10908,21 +10925,18 @@ bool32 DoesSpeciesUseHoldItemToChangeForm(u16 species, u16 heldItemId)
     u32 i;
     const struct FormChange *formChanges = GetSpeciesFormChanges(species);
 
-    if (formChanges != NULL)
+    for (i = 0; formChanges != NULL && formChanges[i].method != FORM_CHANGE_TERMINATOR; i++)
     {
-        for (i = 0; formChanges[i].method != FORM_CHANGE_TERMINATOR; i++)
+        switch (formChanges[i].method)
         {
-            switch (formChanges[i].method)
-            {
-            case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM:
-            case FORM_CHANGE_BATTLE_PRIMAL_REVERSION:
-            case FORM_CHANGE_BATTLE_ULTRA_BURST:
-            case FORM_CHANGE_ITEM_HOLD:
-            case FORM_CHANGE_BEGIN_BATTLE:
-                if (formChanges[i].param1 == heldItemId)
-                    return TRUE;
-                break;
-            }
+        case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM:
+        case FORM_CHANGE_BATTLE_PRIMAL_REVERSION:
+        case FORM_CHANGE_BATTLE_ULTRA_BURST:
+        case FORM_CHANGE_ITEM_HOLD:
+        case FORM_CHANGE_BEGIN_BATTLE:
+            if (formChanges[i].param1 == heldItemId)
+                return TRUE;
+            break;
         }
     }
     return FALSE;
@@ -11053,103 +11067,98 @@ u16 GetBattleFormChangeTargetSpecies(u32 battler, u16 method)
     u32 targetSpecies = species;
     const struct FormChange *formChanges = GetSpeciesFormChanges(species);
     struct Pokemon *mon = &GetBattlerParty(battler)[gBattlerPartyIndexes[battler]];
-    u16 heldItem;
+    u16 heldItem = gBattleMons[battler].item;
 
-    if (formChanges != NULL)
+    for (i = 0; formChanges != NULL && formChanges[i].method != FORM_CHANGE_TERMINATOR; i++)
     {
-        heldItem = gBattleMons[battler].item;
-
-        for (i = 0; formChanges[i].method != FORM_CHANGE_TERMINATOR; i++)
+        if (method == formChanges[i].method && species != formChanges[i].targetSpecies)
         {
-            if (method == formChanges[i].method && species != formChanges[i].targetSpecies)
+            switch (method)
             {
-                switch (method)
+            case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM:
+            case FORM_CHANGE_BATTLE_PRIMAL_REVERSION:
+            case FORM_CHANGE_BATTLE_ULTRA_BURST:
+                if (heldItem == formChanges[i].param1)
+                    targetSpecies = formChanges[i].targetSpecies;
+                break;
+            case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE:
+                if (gBattleMons[battler].moves[0] == formChanges[i].param1
+                    || gBattleMons[battler].moves[1] == formChanges[i].param1
+                    || gBattleMons[battler].moves[2] == formChanges[i].param1
+                    || gBattleMons[battler].moves[3] == formChanges[i].param1)
+                    targetSpecies = formChanges[i].targetSpecies;
+                break;
+            case FORM_CHANGE_BATTLE_SWITCH:
+                if (formChanges[i].param1 == GetBattlerAbility(battler) || formChanges[i].param1 == ABILITY_NONE)
+                    targetSpecies = formChanges[i].targetSpecies;
+                break;
+            case FORM_CHANGE_BATTLE_HP_PERCENT:
+                if (formChanges[i].param1 == GetBattlerAbility(battler))
                 {
-                case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM:
-                case FORM_CHANGE_BATTLE_PRIMAL_REVERSION:
-                case FORM_CHANGE_BATTLE_ULTRA_BURST:
-                    if (heldItem == formChanges[i].param1)
-                        targetSpecies = formChanges[i].targetSpecies;
-                    break;
-                case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE:
-                    if (gBattleMons[battler].moves[0] == formChanges[i].param1
-                     || gBattleMons[battler].moves[1] == formChanges[i].param1
-                     || gBattleMons[battler].moves[2] == formChanges[i].param1
-                     || gBattleMons[battler].moves[3] == formChanges[i].param1)
-                        targetSpecies = formChanges[i].targetSpecies;
-                    break;
-                case FORM_CHANGE_BATTLE_SWITCH:
-                    if (formChanges[i].param1 == GetBattlerAbility(battler) || formChanges[i].param1 == ABILITY_NONE)
-                        targetSpecies = formChanges[i].targetSpecies;
-                    break;
-                case FORM_CHANGE_BATTLE_HP_PERCENT:
-                    if (formChanges[i].param1 == GetBattlerAbility(battler))
+                    // We multiply by 100 to make sure that integer division doesn't mess with the health check.
+                    u32 hpCheck = gBattleMons[battler].hp * 100 * 100 / gBattleMons[battler].maxHP;
+                    switch(formChanges[i].param2)
                     {
-                        // We multiply by 100 to make sure that integer division doesn't mess with the health check.
-                        u32 hpCheck = gBattleMons[battler].hp * 100 * 100 / gBattleMons[battler].maxHP;
-                        switch(formChanges[i].param2)
-                        {
-                        case HP_HIGHER_THAN:
-                            if (hpCheck > formChanges[i].param3 * 100)
-                                targetSpecies = formChanges[i].targetSpecies;
-                            break;
-                        case HP_LOWER_EQ_THAN:
-                            if (hpCheck <= formChanges[i].param3 * 100)
-                                targetSpecies = formChanges[i].targetSpecies;
-                            break;
-                        }
+                    case HP_HIGHER_THAN:
+                        if (hpCheck > formChanges[i].param3 * 100)
+                            targetSpecies = formChanges[i].targetSpecies;
+                        break;
+                    case HP_LOWER_EQ_THAN:
+                        if (hpCheck <= formChanges[i].param3 * 100)
+                            targetSpecies = formChanges[i].targetSpecies;
+                        break;
                     }
-                    break;
-                case FORM_CHANGE_BATTLE_GIGANTAMAX:
-                    if (GetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR))
-                        targetSpecies = formChanges[i].targetSpecies;
-                    break;
-                case FORM_CHANGE_BATTLE_WEATHER:
-                    // Check if there is a required ability and if the battler's ability does not match it
-                    // or is suppressed. If so, revert to the no weather form.
-                    if (formChanges[i].param2
-                        && GetBattlerAbility(battler) != formChanges[i].param2
-                        && formChanges[i].param1 == B_WEATHER_NONE)
-                    {
-                        targetSpecies = formChanges[i].targetSpecies;
-                    }
-                    // We need to revert the weather form if the field is under Air Lock, too.
-                    else if (!WEATHER_HAS_EFFECT && formChanges[i].param1 == B_WEATHER_NONE)
-                    {
-                        targetSpecies = formChanges[i].targetSpecies;
-                    }
-                    // Otherwise, just check for a match between the weather and the form change table.
-                    // Added a check for whether the weather is in effect to prevent end-of-turn soft locks with Cloud Nine / Air Lock
-                    else if (((gBattleWeather & formChanges[i].param1) && WEATHER_HAS_EFFECT)
-                        || (gBattleWeather == B_WEATHER_NONE && formChanges[i].param1 == B_WEATHER_NONE))
-                    {
-                        targetSpecies = formChanges[i].targetSpecies;
-                    }
-                    break;
-                case FORM_CHANGE_BATTLE_TURN_END:
-                case FORM_CHANGE_HIT_BY_MOVE:
-                    if (formChanges[i].param1 == GetBattlerAbility(battler))
-                        targetSpecies = formChanges[i].targetSpecies;
-                    break;
-                case FORM_CHANGE_STATUS:
-                    if (gBattleMons[battler].status1 & formChanges[i].param1)
-                        targetSpecies = formChanges[i].targetSpecies;
-                    break;
-                case FORM_CHANGE_BATTLE_TERASTALLIZATION:
-                    if (GetBattlerTeraType(battler) == formChanges[i].param1)
-                        targetSpecies = formChanges[i].targetSpecies;
-                    break;
-                case FORM_CHANGE_BATTLE_BEFORE_MOVE:
-                    if (formChanges[i].param1 == gCurrentMove
-                     && (formChanges[i].param2 == ABILITY_NONE || formChanges[i].param2 == GetBattlerAbility(battler)))
-                        targetSpecies = formChanges[i].targetSpecies;
-                    break;
-                case FORM_CHANGE_BATTLE_BEFORE_MOVE_CATEGORY:
-                    if (formChanges[i].param1 == GetBattleMoveCategory(gCurrentMove)
-                     && (formChanges[i].param2 == ABILITY_NONE || formChanges[i].param2 == GetBattlerAbility(battler)))
-                        targetSpecies = formChanges[i].targetSpecies;
-                    break;
                 }
+                break;
+            case FORM_CHANGE_BATTLE_GIGANTAMAX:
+                if (GetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR))
+                    targetSpecies = formChanges[i].targetSpecies;
+                break;
+            case FORM_CHANGE_BATTLE_WEATHER:
+                // Check if there is a required ability and if the battler's ability does not match it
+                // or is suppressed. If so, revert to the no weather form.
+                if (formChanges[i].param2
+                    && GetBattlerAbility(battler) != formChanges[i].param2
+                    && formChanges[i].param1 == B_WEATHER_NONE)
+                {
+                    targetSpecies = formChanges[i].targetSpecies;
+                }
+                // We need to revert the weather form if the field is under Air Lock, too.
+                else if (!WEATHER_HAS_EFFECT && formChanges[i].param1 == B_WEATHER_NONE)
+                {
+                    targetSpecies = formChanges[i].targetSpecies;
+                }
+                // Otherwise, just check for a match between the weather and the form change table.
+                // Added a check for whether the weather is in effect to prevent end-of-turn soft locks with Cloud Nine / Air Lock
+                else if (((gBattleWeather & formChanges[i].param1) && WEATHER_HAS_EFFECT)
+                    || (gBattleWeather == B_WEATHER_NONE && formChanges[i].param1 == B_WEATHER_NONE))
+                {
+                    targetSpecies = formChanges[i].targetSpecies;
+                }
+                break;
+            case FORM_CHANGE_BATTLE_TURN_END:
+            case FORM_CHANGE_HIT_BY_MOVE:
+                if (formChanges[i].param1 == GetBattlerAbility(battler))
+                    targetSpecies = formChanges[i].targetSpecies;
+                break;
+            case FORM_CHANGE_STATUS:
+                if (gBattleMons[battler].status1 & formChanges[i].param1)
+                    targetSpecies = formChanges[i].targetSpecies;
+                break;
+            case FORM_CHANGE_BATTLE_TERASTALLIZATION:
+                if (GetBattlerTeraType(battler) == formChanges[i].param1)
+                    targetSpecies = formChanges[i].targetSpecies;
+                break;
+            case FORM_CHANGE_BATTLE_BEFORE_MOVE:
+                if (formChanges[i].param1 == gCurrentMove
+                    && (formChanges[i].param2 == ABILITY_NONE || formChanges[i].param2 == GetBattlerAbility(battler)))
+                    targetSpecies = formChanges[i].targetSpecies;
+                break;
+            case FORM_CHANGE_BATTLE_BEFORE_MOVE_CATEGORY:
+                if (formChanges[i].param1 == GetBattleMoveCategory(gCurrentMove)
+                    && (formChanges[i].param2 == ABILITY_NONE || formChanges[i].param2 == GetBattlerAbility(battler)))
+                    targetSpecies = formChanges[i].targetSpecies;
+                break;
             }
         }
     }
