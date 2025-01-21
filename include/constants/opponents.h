@@ -603,7 +603,7 @@
 #define TRAINER_TABITHA_MT_CHIMNEY          597
 #define TRAINER_JONATHAN                    598
 #define TRAINER_BRENDAN_RUSTBORO_TORCHIC    599
-#define TRAINER_RIVAL_SAKU_SPHEAL         600
+#define TRAINER_RIVAL_SAKU_FROAKIE         600
 #define TRAINER_MAXIE_MAGMA_HIDEOUT         601
 #define TRAINER_MAXIE_MT_CHIMNEY            602
 #define TRAINER_CHIKAO                       603
@@ -771,8 +771,8 @@
 #define TRAINER_MYLES                       765
 #define TRAINER_PAT                         766
 #define TRAINER_CRISTIN_1                   767
-#define TRAINER_RIVAL_SAKU_ARON        768
-#define TRAINER_RIVAL_SAKU_TRAPINCH        769
+#define TRAINER_RIVAL_SAKU_SNIVY        768
+#define TRAINER_RIVAL_SAKU_CYNDAQUIL        769
 #define TRAINER_ROXANNE_2                   770
 #define TRAINER_ROXANNE_3                   771
 #define TRAINER_ROXANNE_4                   772

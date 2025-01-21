@@ -14143,7 +14143,7 @@ Vigoroth
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_SAKU_ARON ===
+=== TRAINER_RIVAL_SAKU_SNIVY ===
 Name: {B_RIVAL_NAME}
 Class: Rival
 Pic: May
@@ -14160,7 +14160,7 @@ Trapinch
 Level: 9
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_RIVAL_SAKU_TRAPINCH ===
+=== TRAINER_RIVAL_SAKU_CYNDAQUIL ===
 Name: {B_RIVAL_NAME}
 Class: Rival
 Pic: May

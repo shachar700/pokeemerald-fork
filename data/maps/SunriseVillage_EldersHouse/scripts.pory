@@ -187,9 +187,9 @@ script SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter {
 		case SPECIES_FROAKIE:
 			msgbox(format("Do you choose {STR_VAR_1},\nsoul of the crashing sea waves?"), MSGBOX_YESNO)
 		case SPECIES_SNIVY:
-			msgbox(format("Do you choose {STR_VAR_1},\nthe swift leafy dancer?"), MSGBOX_YESNO)
+			msgbox(format("Do you choose {STR_VAR_1},\nswift leafy dragon?"), MSGBOX_YESNO)
 		case SPECIES_CYNDAQUIL:
-			msgbox(format("Do you choose {STR_VAR_1},\nswift dancer of sandstorms?"), MSGBOX_YESNO)
+			msgbox(format("Do you choose {STR_VAR_1},\ntender heart of the hearth?"), MSGBOX_YESNO)
 	}
 	if (var(VAR_RESULT) == NO || var(VAR_RESULT) == MULTI_B_PRESSED) {
 		hidemonpic
@@ -200,11 +200,11 @@ script SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter {
 	} elif (var(VAR_RESULT) == YES) {
 		switch(var(VAR_TEMP_1)) {
 			case SPECIES_FROAKIE:
-				givemon(SPECIES_FROAKIE, 5, ITEM_ORAN_BERRY, move1=MOVE_FLIPPER_SPLASH, move2=MOVE_TAIL_WHIP, move3=MOVE_NONE, move4=MOVE_NONE)
+				givemon(SPECIES_FROAKIE, 5, ITEM_ORAN_BERRY)
 			case SPECIES_SNIVY:
-				givemon(SPECIES_SNIVY, 5, ITEM_ORAN_BERRY, move1=MOVE_TACKLE, move2=MOVE_HARDEN, move3=MOVE_NONE, move4=MOVE_NONE)
+				givemon(SPECIES_SNIVY, 5, ITEM_ORAN_BERRY)
 			case SPECIES_CYNDAQUIL:
-				givemon(SPECIES_CYNDAQUIL, 5, ITEM_ORAN_BERRY, move1=MOVE_MUD_SLAP, move2=MOVE_SAND_ATTACK, move3=MOVE_NONE, move4=MOVE_NONE)
+				givemon(SPECIES_CYNDAQUIL, 5, ITEM_ORAN_BERRY)
 		}
 		playfanfare(MUS_OBTAIN_ITEM)
 		message(format("{PLAYER} received the Pokémon {STR_VAR_1}!"))
@@ -256,16 +256,16 @@ script SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter {
 				case DIR_NORTH:
 					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down, walk_in_place_faster_up, step_end))
 				case DIR_EAST:
-					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left, walk_down * 2, walk_right * 2, walk_in_place_faster_up, step_end))
+					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right, walk_down * 2, walk_in_place_faster_up, step_end))
 			}
 		case SPECIES_CYNDAQUIL:
 			switch(var(VAR_FACING)) {
 				case DIR_SOUTH:
-					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right, walk_down * 2, walk_left * 2, walk_down, walk_in_place_faster_up, step_end))
+					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down * 2, walk_left * 2, walk_down, walk_in_place_faster_up, step_end))
 				case DIR_NORTH:
 					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left * 2, walk_down, walk_in_place_faster_up, step_end))
 				case DIR_WEST:
-					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down, walk_left * 2, walk_down, walk_in_place_faster_up, step_end))
+					applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down, walk_left * 3, walk_down, walk_in_place_faster_up, step_end))
 			}
 	}
 

@@ -27804,7 +27804,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 11098
-    [DIFFICULTY_NORMAL][TRAINER_RIVAL_SAKU_SPHEAL] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVAL_SAKU_FROAKIE] =
     {
 #line 11099
         .trainerName = _("{B_RIVAL_NAME}"),
@@ -35481,7 +35481,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 14146
-    [DIFFICULTY_NORMAL][TRAINER_RIVAL_SAKU_ARON] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVAL_SAKU_SNIVY] =
     {
 #line 14147
         .trainerName = _("{B_RIVAL_NAME}"),
@@ -35526,7 +35526,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 14163
-    [DIFFICULTY_NORMAL][TRAINER_RIVAL_SAKU_TRAPINCH] =
+    [DIFFICULTY_NORMAL][TRAINER_RIVAL_SAKU_CYNDAQUIL] =
     {
 #line 14164
         .trainerName = _("{B_RIVAL_NAME}"),

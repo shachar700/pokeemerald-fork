@@ -513,17 +513,17 @@ SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_20:
 
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_23:
 # 203 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
-	givemon SPECIES_FROAKIE, 5, ITEM_ORAN_BERRY, move1 = MOVE_FLIPPER_SPLASH, move2 = MOVE_TAIL_WHIP, move3 = MOVE_NONE, move4 = MOVE_NONE
+	givemon SPECIES_FROAKIE, 5, ITEM_ORAN_BERRY
 	goto SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_21
 
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_24:
 # 205 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
-	givemon SPECIES_SNIVY, 5, ITEM_ORAN_BERRY, move1 = MOVE_TACKLE, move2 = MOVE_HARDEN, move3 = MOVE_NONE, move4 = MOVE_NONE
+	givemon SPECIES_SNIVY, 5, ITEM_ORAN_BERRY
 	goto SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_21
 
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_25:
 # 207 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
-	givemon SPECIES_CYNDAQUIL, 5, ITEM_ORAN_BERRY, move1 = MOVE_MUD_SLAP, move2 = MOVE_SAND_ATTACK, move3 = MOVE_NONE, move4 = MOVE_NONE
+	givemon SPECIES_CYNDAQUIL, 5, ITEM_ORAN_BERRY
 	goto SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_21
 
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_28:
@@ -898,15 +898,11 @@ SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Movement_3:
 # 259 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Movement_4:
 # 259 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
-	walk_left
+	walk_right
 # 259 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
 	walk_down
 # 259 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
 	walk_down
-# 259 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
-	walk_right
-# 259 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
-	walk_right
 # 259 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
 	walk_in_place_faster_up
 # 259 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
@@ -914,8 +910,6 @@ SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Movement_4:
 
 # 264 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Movement_5:
-# 264 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
-	walk_right
 # 264 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
 	walk_down
 # 264 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
@@ -948,6 +942,8 @@ SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Movement_6:
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Movement_7:
 # 268 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
 	walk_down
+# 268 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
+	walk_left
 # 268 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
 	walk_left
 # 268 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
@@ -1135,12 +1131,12 @@ SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Text_1:
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Text_2:
 # 190 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
 	.string "Do you choose {STR_VAR_1},\n"
-	.string "the swift leafy dancer?$"
+	.string "swift leafy dragon?$"
 
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Text_3:
 # 192 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
 	.string "Do you choose {STR_VAR_1},\n"
-	.string "swift dancer of sandstorms?$"
+	.string "tender heart of the hearth?$"
 
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Text_4:
 # 197 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
