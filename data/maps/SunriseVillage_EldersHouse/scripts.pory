@@ -187,7 +187,7 @@ script SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter {
 		case SPECIES_FROAKIE:
 			msgbox(format("Do you choose {STR_VAR_1},\nsoul of the crashing sea waves?"), MSGBOX_YESNO)
 		case SPECIES_SNIVY:
-			msgbox(format("Do you choose {STR_VAR_1},\nswift leafy dragon?"), MSGBOX_YESNO)
+			msgbox(format("Do you choose {STR_VAR_1},\ngraceful storm of leaves?"), MSGBOX_YESNO)
 		case SPECIES_CYNDAQUIL:
 			msgbox(format("Do you choose {STR_VAR_1},\ntender heart of the hearth?"), MSGBOX_YESNO)
 	}
