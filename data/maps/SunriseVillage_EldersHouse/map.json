@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Aron",
+      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Snivy",
       "flag": "FLAG_TEMP_2"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Spheal",
+      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Froakie",
       "flag": "FLAG_TEMP_2"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Trapinch",
+      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Cyndaquil",
       "flag": "FLAG_TEMP_2"
     },
     {
@@ -89,7 +89,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Aron",
+      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Snivy",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Spheal",
+      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Froakie",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Trapinch",
+      "script": "SunriseVillage_EldersHouse_Event_Pokeball_Starter_Cyndaquil",
       "flag": "FLAG_TEMP_1"
     },
     {
