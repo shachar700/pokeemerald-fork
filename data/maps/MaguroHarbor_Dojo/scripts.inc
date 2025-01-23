@@ -306,11 +306,12 @@ MaguroHarbor_Dojo_EventScript_KoishiDefeated_Text_4:
 
 MaguroHarbor_Dojo_EventScript_Izumi_Text_0:
 # 120 "data/maps/MaguroHarbor_Dojo/scripts.pory"
-	.string "My Pokémon is the daintiest there is!$"
+	.string "My Pokémon are the daintiest there\n"
+	.string "is!$"
 
 MaguroHarbor_Dojo_EventScript_Izumi_Text_1:
 # 121 "data/maps/MaguroHarbor_Dojo/scripts.pory"
-	.string "My poor Goldeen!$"
+	.string "My poor Feebas!$"
 
 MaguroHarbor_Dojo_EventScript_Izumi_Text_2:
 # 124 "data/maps/MaguroHarbor_Dojo/scripts.pory"

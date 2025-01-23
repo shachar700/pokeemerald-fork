@@ -821,7 +821,7 @@ TranquilRoute_EventScript_GrassCutscene_Movement_1:
 # 283 "data/maps/TranquilRoute/scripts.pory"
 TranquilRoute_EventScript_WhiteslateRoadblock_Movement_0:
 # 283 "data/maps/TranquilRoute/scripts.pory"
-	walk_left
+	walk_right
 	step_end
 
 # 400 "data/maps/TranquilRoute/scripts.pory"

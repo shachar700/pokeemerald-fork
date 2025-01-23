@@ -513,17 +513,17 @@ SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_20:
 
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_23:
 # 203 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
-	givemon SPECIES_FROAKIE, 5, ITEM_ORAN_BERRY
+	givemon SPECIES_FROAKIE, 5, ITEM_ORAN_BERRY, move1 = MOVE_POUND, move2 = MOVE_GROWL, move3 = MOVE_NONE, move4 = MOVE_NONE
 	goto SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_21
 
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_24:
 # 205 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
-	givemon SPECIES_SNIVY, 5, ITEM_ORAN_BERRY
+	givemon SPECIES_SNIVY, 5, ITEM_ORAN_BERRY, move1 = MOVE_TACKLE, move2 = MOVE_LEER, move3 = MOVE_NONE, move4 = MOVE_NONE
 	goto SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_21
 
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_25:
 # 207 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
-	givemon SPECIES_CYNDAQUIL, 5, ITEM_ORAN_BERRY
+	givemon SPECIES_CYNDAQUIL, 5, ITEM_ORAN_BERRY, move1 = MOVE_TACKLE, move2 = MOVE_LEER, move3 = MOVE_NONE, move4 = MOVE_NONE
 	goto SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_21
 
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_28:
@@ -1131,7 +1131,7 @@ SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Text_1:
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Text_2:
 # 190 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
 	.string "Do you choose {STR_VAR_1},\n"
-	.string "swift leafy dragon?$"
+	.string "graceful storm of leaves?$"
 
 SunriseVillage_EldersHouse_Event_Common_Pokeball_Starter_Text_3:
 # 192 "data/maps/SunriseVillage_EldersHouse/scripts.pory"
