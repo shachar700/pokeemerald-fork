@@ -12,6 +12,7 @@
 #include "malloc.h"
 #include "palette.h"
 #include "script.h"
+#include "string_util.h"
 #include "battle_setup.h"
 #include "constants/event_objects.h"
 #include "constants/battle_frontier.h"
@@ -1515,13 +1516,13 @@ static void BufferTrainerIntro(void)
 {
     if (gSpecialVar_0x8005 == 0)
     {
-        if (gTrainerBattleOpponent_A < FRONTIER_TRAINERS_COUNT)
-            FrontierSpeechToString(gFacilityTrainers[gTrainerBattleOpponent_A].speechBefore);
+        if (TRAINER_BATTLE_PARAM.opponentA < FRONTIER_TRAINERS_COUNT)
+            StringCopy(gStringVar4, gFacilityTrainers[TRAINER_BATTLE_PARAM.opponentA].speechBefore);
     }
     else if (gSpecialVar_0x8005 == 1)
     {
-        if (gTrainerBattleOpponent_B < FRONTIER_TRAINERS_COUNT)
-            FrontierSpeechToString(gFacilityTrainers[gTrainerBattleOpponent_B].speechBefore);
+        if (TRAINER_BATTLE_PARAM.opponentB < FRONTIER_TRAINERS_COUNT)
+            StringCopy(gStringVar4, gFacilityTrainers[TRAINER_BATTLE_PARAM.opponentB].speechBefore);
     }
 }
 
