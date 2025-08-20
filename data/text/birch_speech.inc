@@ -25,11 +25,11 @@ gText_Birch_MainSpeech::
 	.string "סודות סביב פוקימון.\p"
 	.string "כדי לפענח את תעלומות הפוקימון,\n"
 	.string "אני עושה מחקרים.\l"
-	.string "זאת פרנסתי.\p"
+	.string "זה מה שאני עושה.\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "הנך?$"
+	.string "והנך?$"
 
 gText_Birch_BoyOrGirl::
 	.string "הנך בן?\n"
