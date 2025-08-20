@@ -1,0 +1,98 @@
+--- a/src/text.c
++++ b/src/text.c
+@@
+ static u16 RenderText(struct TextPrinter *);
+ static u32 RenderFont(struct TextPrinter *);
+@@
+ static u32 GetGlyphWidth_SmallNarrow(u16, bool32);
+ 
++// RTL helpers (add in this file):
++// You need to create these functions.
++static bool8 IsHebrewChar(u16 ch)
++{
++    // Matches your charmap range for Hebrew + finals (e.g., 'א'..'ץ').
++    // Adjust if your table differs.
++    return ((ch >= 0xD5 && ch <= 0xEE ) || ch == F1);
++}
++
++static bool8 IsDigitChar(u16 ch)
++{
++    // CHAR_0..CHAR_9 are defined in the project charmap.
++    return (ch >= CHAR_0 && ch <= CHAR_9);
++}
+@@
+ static u16 RenderText(struct TextPrinter *textPrinter)
+ {
+@@
+-        switch (subStruct->fontId)
++        // Keep track of whether THIS glyph should be RTL (Hebrew)
++        // We must capture this before we possibly rewrite currChar (e.g., with 0x100 for extra symbols).
++        bool8 isRtlHebrew = IsHebrewChar(currChar);
++
++        switch (subStruct->fontId)
+         {
+         case FONT_SMALL:
+             DecompressGlyph_Small(currChar, textPrinter->japanese);
+             break;
+         case FONT_NORMAL:
+             DecompressGlyph_Normal(currChar, textPrinter->japanese);
+             break;
+@@
+         CopyGlyphToWindow(textPrinter);
+ 
+-        if (textPrinter->minLetterSpacing)
+-        {
+-            textPrinter->printerTemplate.currentX += gCurGlyph.width;
+-            width = textPrinter->minLetterSpacing - gCurGlyph.width;
+-            if (width > 0)
+-            {
+-                ClearTextSpan(textPrinter, width);
+-                textPrinter->printerTemplate.currentX += width;
+-            }
+-        }
+-        else
+-        {
+-            if (textPrinter->japanese)
+-                textPrinter->printerTemplate.currentX += (gCurGlyph.width + textPrinter->printerTemplate.letterSpacing);
+-            else
+-                textPrinter->printerTemplate.currentX += gCurGlyph.width;
+-        }
++        // Advance cursor: Hebrew goes RTL (move left), digits stay LTR.
++        // Minimal change: we only flip direction for Hebrew glyphs.
++        if (textPrinter->minLetterSpacing)
++        {
++            // Advance by the glyph's visual width in the appropriate direction.
++            if (isRtlHebrew)
++                textPrinter->printerTemplate.currentX -= gCurGlyph.width;
++            else
++                textPrinter->printerTemplate.currentX += gCurGlyph.width;
++
++            // Any extra spacing is cleared and applied in the same direction.
++            width = textPrinter->minLetterSpacing - gCurGlyph.width;
++            if (width > 0)
++            {
++                if (isRtlHebrew)
++                {
++                    // For RTL spacing, move left to make room, then clear that span.
++                    textPrinter->printerTemplate.currentX -= width;
++                    ClearTextSpan(textPrinter, width);
++                }
++                else
++                {
++                    ClearTextSpan(textPrinter, width);
++                    textPrinter->printerTemplate.currentX += width;
++                }
++            }
++        }
++        else
++        {
++            s32 advance = gCurGlyph.width;
++            if (textPrinter->japanese)
++                advance += textPrinter->printerTemplate.letterSpacing;
++
++            if (isRtlHebrew)
++                textPrinter->printerTemplate.currentX -= advance;
++            else
++                textPrinter->printerTemplate.currentX += advance;
++        }
+         return RENDER_PRINT;

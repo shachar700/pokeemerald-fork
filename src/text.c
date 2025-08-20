@@ -611,7 +611,12 @@ void CopyGlyphToWindow(struct TextPrinter *textPrinter)
     if ((glyphHeight = (template->height * 8) - textPrinter->printerTemplate.currentY) > gCurGlyph.height)
         glyphHeight = gCurGlyph.height;
 
-    currX = textPrinter->printerTemplate.currentX;
+    if (textPrinter->printerTemplate.currentX >= gCurGlyph.width)
+        currX = textPrinter->printerTemplate.currentX - gCurGlyph.width;
+    else
+        currX = 0;
+
+    //currX = textPrinter->printerTemplate.currentX;
     currY = textPrinter->printerTemplate.currentY;
     glyphPixels = gCurGlyph.gfxBufferTop;
     windowTiles = window->tileData;
@@ -769,6 +774,11 @@ static u16 FontFunc_SmallNarrow(struct TextPrinter *textPrinter)
     return RenderText(textPrinter);
 }
 
+static bool8 IsNumChar(u16 ch)
+{
+   return (ch >= 0xA1 && ch <= 0xAA );
+}
+
 void TextPrinterInitDownArrowCounters(struct TextPrinter *textPrinter)
 {
     struct TextPrinterSubStruct *subStruct = (struct TextPrinterSubStruct *)(&textPrinter->subStructFields);
@@ -800,7 +810,7 @@ void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter)
             FillWindowPixelRect(
                 textPrinter->printerTemplate.windowId,
                 textPrinter->printerTemplate.bgColor << 4 | textPrinter->printerTemplate.bgColor,
-                textPrinter->printerTemplate.currentX,
+                textPrinter->printerTemplate.currentX -10,
                 textPrinter->printerTemplate.currentY,
                 8,
                 16);
@@ -823,7 +833,7 @@ void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter)
                 sDownArrowYCoords[subStruct->downArrowYPosIdx],
                 8,
                 16,
-                textPrinter->printerTemplate.currentX,
+                textPrinter->printerTemplate.currentX -10,
                 textPrinter->printerTemplate.currentY,
                 8,
                 16);
@@ -840,7 +850,7 @@ void TextPrinterClearDownArrow(struct TextPrinter *textPrinter)
     FillWindowPixelRect(
         textPrinter->printerTemplate.windowId,
         textPrinter->printerTemplate.bgColor << 4 | textPrinter->printerTemplate.bgColor,
-        textPrinter->printerTemplate.currentX,
+        textPrinter->printerTemplate.currentX - 10,
         textPrinter->printerTemplate.currentY,
         8,
         16);
@@ -937,6 +947,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
     u16 currChar;
     s32 width;
     s32 widthHelper;
+    bool8 isNumChar;
 
     switch (textPrinter->state)
     {
@@ -1042,7 +1053,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 PlaySE(currChar);
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_SHIFT_RIGHT:
-                textPrinter->printerTemplate.currentX = textPrinter->printerTemplate.x + *textPrinter->printerTemplate.currentChar;
+                textPrinter->printerTemplate.currentX = textPrinter->printerTemplate.x - *textPrinter->printerTemplate.currentChar;
                 textPrinter->printerTemplate.currentChar++;
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_SHIFT_DOWN:
@@ -1066,12 +1077,12 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 if (width > 0)
                 {
                     ClearTextSpan(textPrinter, width);
-                    textPrinter->printerTemplate.currentX += width;
+                    textPrinter->printerTemplate.currentX -= width;
                     return RENDER_PRINT;
                 }
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_SKIP:
-                textPrinter->printerTemplate.currentX = *textPrinter->printerTemplate.currentChar + textPrinter->printerTemplate.x;
+                textPrinter->printerTemplate.currentX = *textPrinter->printerTemplate.currentChar - textPrinter->printerTemplate.x;
                 textPrinter->printerTemplate.currentChar++;
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_CLEAR_TO:
@@ -1114,11 +1125,13 @@ static u16 RenderText(struct TextPrinter *textPrinter)
         case CHAR_KEYPAD_ICON:
             currChar = *textPrinter->printerTemplate.currentChar++;
             gCurGlyph.width = DrawKeypadIcon(textPrinter->printerTemplate.windowId, currChar, textPrinter->printerTemplate.currentX, textPrinter->printerTemplate.currentY);
-            textPrinter->printerTemplate.currentX += gCurGlyph.width + textPrinter->printerTemplate.letterSpacing;
+            textPrinter->printerTemplate.currentX -= gCurGlyph.width - textPrinter->printerTemplate.letterSpacing;
             return RENDER_PRINT;
         case EOS:
             return RENDER_FINISH;
         }
+
+        isNumChar  = IsNumChar(currChar);
 
         switch (subStruct->fontId)
         {
@@ -1146,6 +1159,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
 
         CopyGlyphToWindow(textPrinter);
 
+        /*
         if (textPrinter->minLetterSpacing)
         {
             textPrinter->printerTemplate.currentX += gCurGlyph.width;
@@ -1162,6 +1176,44 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 textPrinter->printerTemplate.currentX += (gCurGlyph.width + textPrinter->printerTemplate.letterSpacing);
             else
                 textPrinter->printerTemplate.currentX += gCurGlyph.width;
+        }*/
+       // Advance cursor: Hebrew goes RTL (move left), digits stay LTR.
+       // Minimal change: we only flip direction for Hebrew glyphs.
+        if (textPrinter->minLetterSpacing)
+        {
+            // Advance by the glyph's visual width in the appropriate direction.
+            if (isNumChar)
+                textPrinter->printerTemplate.currentX += gCurGlyph.width;
+            else
+                textPrinter->printerTemplate.currentX -= gCurGlyph.width;
+
+            // Any extra spacing is cleared and applied in the same direction.
+            width = textPrinter->minLetterSpacing - gCurGlyph.width;
+            if (width > 0)
+            {
+                if (isNumChar)
+                {
+                    // For RTL spacing, move left to make room, then clear that span.
+                    textPrinter->printerTemplate.currentX += width;
+                    ClearTextSpan(textPrinter, width);
+                }
+                else
+                {
+                    ClearTextSpan(textPrinter, width);
+                    textPrinter->printerTemplate.currentX -= width;
+                }
+            }
+        }
+        else
+        {
+            s32 advance = gCurGlyph.width;
+            if (textPrinter->japanese)
+                advance += textPrinter->printerTemplate.letterSpacing;
+
+            if (isNumChar)
+                textPrinter->printerTemplate.currentX += advance;
+            else
+                textPrinter->printerTemplate.currentX -= advance;
         }
         return RENDER_PRINT;
     case RENDER_STATE_WAIT:

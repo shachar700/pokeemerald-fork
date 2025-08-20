@@ -110,7 +110,7 @@ u16 FontFunc_Braille(struct TextPrinter *textPrinter)
                 char_ = *++textPrinter->printerTemplate.currentChar;
                 break;
             case EXT_CTRL_CODE_SHIFT_RIGHT:
-                textPrinter->printerTemplate.currentX = textPrinter->printerTemplate.x + *textPrinter->printerTemplate.currentChar++;
+                textPrinter->printerTemplate.currentX = textPrinter->printerTemplate.x - *textPrinter->printerTemplate.currentChar++;
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_SHIFT_DOWN:
                 textPrinter->printerTemplate.currentY = textPrinter->printerTemplate.y + *textPrinter->printerTemplate.currentChar++;
