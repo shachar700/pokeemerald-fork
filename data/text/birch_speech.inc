@@ -16,8 +16,8 @@ gText_Birch_MainSpeech::
 	.string "ביצורים הידועים בשם פוקימון.\p"
 	.string "אנחנו בני האדם חיים לצד פוקימון,\n"
 	.string "לעיתים כחברים ידידותיים למשחק,\l"
-	.string "לעיתים כעמיתים לעבודה\p"
-	.string "ולעיתים, אנחנו נקשרים יחד\n"
+	.string "לעיתים כעמיתים לעבודה,\p"
+	.string "ולעיתים אנחנו נקשרים יחד\n"
 	.string "ונלחמים באחרים כמונו. \p"
 	.string "אבל למרות הקרבה שלנו, אנחנו לא\n"
 	.string "יודעים הכל על פוקימון.\p"
@@ -29,7 +29,7 @@ gText_Birch_MainSpeech::
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "והנך?$"
+	.string "הנך?$"
 
 gText_Birch_BoyOrGirl::
 	.string "הנך בן?\n"
