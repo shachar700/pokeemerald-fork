@@ -1588,7 +1588,7 @@ void PrintMenuTable(u8 windowId, u8 itemCount, const struct MenuAction *menuActi
     u32 i;
 
     for (i = 0; i < itemCount; i++)
-        AddTextPrinterParameterized(windowId, 1, menuActions[i].text, 8, (i * 16) + 1, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(windowId, 1, menuActions[i].text, 20/*8*/, (i * 16) + 1, TEXT_SKIP_DRAW, NULL);
 
     CopyWindowToVram(windowId, COPYWIN_GFX);
 }
@@ -1606,8 +1606,8 @@ void PrintMenuActionTextsInUpperLeftCorner(u8 windowId, u8 itemCount, const stru
     printer.unk = GetFontAttribute(FONT_NORMAL, FONTATTR_UNKNOWN);
     printer.letterSpacing = 0;
     printer.lineSpacing = 0;
-    printer.x = 8;
-    printer.currentX = 8;
+    printer.x = 28; //8;
+    printer.currentX = 28;  //8;
 
     for (i = 0; i < itemCount; i++)
     {
@@ -1630,7 +1630,7 @@ void CreateYesNoMenu(const struct WindowTemplate *window, u16 baseTileNum, u8 pa
     printer.currentChar = gText_YesNo;
     printer.windowId = sYesNoWindowId;
     printer.fontId = FONT_NORMAL;
-    printer.x = 8;
+    printer.x = 20; //8
     printer.y = 1;
     printer.currentX = printer.x;
     printer.currentY = printer.y;
