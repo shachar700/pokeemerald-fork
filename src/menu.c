@@ -1558,7 +1558,7 @@ u8 InitMenuInUpperLeftCorner(u8 windowId, u8 itemCount, u8 initialCursorPos, boo
 {
     s32 pos;
 
-    sMenu.left = 0;
+    sMenu.left = 30 /*0*/;
     sMenu.top = 1;
     sMenu.minCursorPos = 0;
     sMenu.maxCursorPos = itemCount - 1;
