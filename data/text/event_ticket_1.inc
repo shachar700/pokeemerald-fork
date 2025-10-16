@@ -1,41 +1,41 @@
 EventTicket_Text_ShowOldSeaMap:
-	.string "The ferry to SLATEPORT is…\p"
-	.string "I beg your pardon?\n"
-	.string "Can we sail to this place on the map?\p"
-	.string "I know someone who will help you better.\n"
-	.string "Please wait.$"
+	.string "המעבורת ל-SLATEPORT @ TODO היא...\p"
+	.string "סליחה?\n"
+	.string "האם נוכל להפליג למקום הזה במפה?\p"
+	.string "אני מכיר מישהו שיוכל לעזור לך יותר.\n"
+	.string "אנא המתן.$"
 
 EventTicket_Text_ThatPass:
-	.string "The ferry to SLATEPORT is…\p"
-	.string "Oh?\n"
-	.string "That PASS…$"
+	.string "המעבורת ל-SLATEPORT @ TODO היא...\p"
+	.string "אה?\n"
+	.string "הכרטיס הזה...$"
 
 EventTicket_Text_ShowEonTicket:
-	.string "Aye, mate, are you the one who brought\n"
-	.string "that mighty odd PASS?\p"
-	.string "I'll tell you, you're trying to reach a\n"
-	.string "tiny spit of an island far in the south.\p"
-	.string "There's no telling what we'll encounter\n"
-	.string "once we reach there, aye.\l"
-	.string "That shivers my timbers!\p"
-	.string "All aboard!$"
+	.string "היי, חבר, אתה זה שהבאת\n"
+	.string "את הכרטיס המוזר הזה?\p"
+	.string "אני אגיד לך, אתה מנסה להגיע\n"
+	.string "לאי קטן בדרום הרחוק.\p"
+	.string "אי אפשר לדעת מה נפגוש\n"
+	.string "כשהגענו לשם, הא?\l"
+	.string "זה ממש מרגש!\p"
+	.string "כולם לעלות!$"
 
 EventTicket_Text_SouthernIslandSailBack:
-	.string "Aye, mate, there's nothing here to\n"
-	.string "see or do on this forgettable island.\p"
-	.string "What say we sail back to LILYCOVE?$"
+	.string "היי, חבר, אין כאן מה לראות\n"
+	.string "או לעשות באי הזה.\p"
+	.string "מה דעתך שנחזור לליליקוב?" @ TODO
 
 EventTicket_Text_SailHome:
-	.string "Aye, right, then!\n"
-	.string "Sail home we will!$"
+	.string "טוב, בסדר!\n"
+	.string "נפליג הביתה!$"
 
 EventTicket_Text_AsYouLike:
-	.string "Aye, right, as you like, then.$"
+	.string "טוב, כפי שתרצה.$"
 
 SouthernIsland_Interior_Text_Sign:
-	.string "“All dreams are but another reality.\n"
-	.string "Never forget…”$"
+	.string ""כל החלומות הם רק מציאות אחרת.\n"
+	.string "לעולם אל תשכח..."$"
 
 SouthernIsland_Exterior_Text_Sign:
-	.string "“Those whose memories fade seek to\n"
-	.string "carve them in their hearts…”$"
+	.string ""אלו שזכרונותיהם דוהים מחפשים\n"
+	.string "לחרוט אותם בליבם..."$"

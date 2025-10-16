@@ -1,96 +1,90 @@
 gContestHallPaintingCaption::
 	.string "{STR_VAR_1}\n"
-	.string "{STR_VAR_2}'s {STR_VAR_3}$"
+	.string "{STR_VAR_3} של {STR_VAR_2}$"
 
 @ Unused
 gContestPaintingContest::
-	.string "CONTEST$"
+	.string "תחרות$"
 
 gContestRankNormal::
-	.string "NORMAL RANK$"
+	.string "דרגה רגילה$"
 
 gContestRankSuper::
-	.string "SUPER RANK$"
+	.string "דרגה על$"
 
 gContestRankHyper::
-	.string "HYPER RANK$"
+	.string "דרגה היפר$"
 
 gContestRankMaster::
-	.string "MASTER RANK$"
+	.string "דרגת מאסטר$"
 
 gContestLink::
-	.string "LINK$"
+	.string "קישור$"
 
 gContestCoolness::
-	.string "COOLNESS$"
+	.string "קוליות$"
 
 gContestBeauty::
-	.string "BEAUTY$"
+	.string "יופי$"
 
 gContestCuteness::
-	.string "CUTENESS$"
+	.string "חמידות$"
 
 gContestSmartness::
-	.string "SMARTNESS$"
+	.string "חוכמה$"
 
 gContestToughness::
-	.string "TOUGHNESS$"
+	.string "חוזק$"
 
 gContestPaintingCool1::
-	.string "Nonstop supercool--\n"
-	.string "the inestimable {STR_VAR_1}$"
+	.string "קוליות בלתי פוסקת--\n"
+	.string "הבלתי ניתן להערכה {STR_VAR_1}$"
 
 gContestPaintingCool2::
-	.string "Hey, there!\n"
-	.string "The good-looking POKéMON {STR_VAR_1}$"
+	.string "היי, אתה!\n"
+	.string "הפוקימון הנאה {STR_VAR_1}$" @ TODO
 
 gContestPaintingCool3::
-	.string "The marvelous, wonderful, and\n"
-	.string "very great {STR_VAR_1}$"
+	.string "הנפלא, המדהים, והגדול מאוד {STR_VAR_1}$"
 
 gContestPaintingBeauty1::
-	.string "This century's last Venus--\n"
-	.string "the beautiful {STR_VAR_1}$"
+	.string "ונוס האחרונה של המאה הזו--\n"
+	.string "היפה {STR_VAR_1}$"
 
 gContestPaintingBeauty2::
-	.string "{STR_VAR_1}'s dazzling,\n"
-	.string "glittering smile$"
+	.string "החיוך הנוצץ והמנצנץ של {STR_VAR_1}$"
 
 gContestPaintingBeauty3::
-	.string "POKéMON CENTER's super idol--\n"
-	.string "the incomparable {STR_VAR_1}$"
+	.string "האליל העל של מרכז הפוקימון--\n" @ TODO
+	.string "הבלתי ניתן להשוואה {STR_VAR_1}$"
 
 gContestPaintingCute1::
-	.string "The lovely and sweet {STR_VAR_1}$"
+	.string "החמוד והמתוק {STR_VAR_1}$"
 
 gContestPaintingCute2::
-	.string "The pretty {STR_VAR_1}'s\n"
-	.string "winning portrait$"
+	.string "הדיוקן המנצח של {STR_VAR_1} היפה$"
 
 gContestPaintingCute3::
-	.string "Give us a wink!\n"
-	.string "The cutie POKéMON {STR_VAR_1}$"
+	.string "תן לנו קריצה!\n"
+	.string "הפוקימון החמוד {STR_VAR_1}$" @ TODO
 
 gContestPaintingSmart1::
-	.string "The smartness maestro--\n"
-	.string "the wise POKéMON {STR_VAR_1}$"
+	.string "מאסטר החוכמה--\n"
+	.string "הפוקימון החכם {STR_VAR_1}$" @ TODO
 
 gContestPaintingSmart2::
-	.string "{STR_VAR_1}--the one chosen\n"
-	.string "above all POKéMON$"
+	.string "{STR_VAR_1}--הנבחר\n"
+	.string "מעל כל הפוקימונים$" @ TODO
 
 gContestPaintingSmart3::
-	.string "The excellent {STR_VAR_1}'s\n"
-	.string "moment of elegance$"
+	.string "הרגע האלגנטי של {STR_VAR_1} המצוין$"
 
 gContestPaintingTough1::
-	.string "The powerfully muscular\n"
-	.string "speedster {STR_VAR_1}$"
+	.string "המהיר השרירי והחזק {STR_VAR_1}$"
 
 gContestPaintingTough2::
-	.string "The strong, stronger, and\n"
-	.string "strongest {STR_VAR_1}$"
+	.string "החזק, החזק יותר, והכי חזק {STR_VAR_1}$"
 
 gContestPaintingTough3::
-	.string "The mighty tough\n"
-	.string "hyper POKéMON {STR_VAR_1}$"
+	.string "הפוקימון החזק מאוד\n" @ TODO
+	.string "היפר {STR_VAR_1}$"
