@@ -248,35 +248,26 @@ void DeactivateAllTextPrinters(void)
         sTextPrinters[printer].active = FALSE;
 }
 
-u16 AddTextPrinterParameterizedWithRTL(u8 windowId,u8 fontId,const u8 *str,s8 x,u8 y,u8 speed,void (*callback)(struct TextPrinterTemplate *, u16),bool8 rtlMode)
+
+u16 AddTextPrinterParameterizedWithRTL(u8 windowId, u8 fontId, const u8 *str, s8 x, u8 y, u8 speed, void (*callback)(struct TextPrinterTemplate *, u16), bool8 rtlMode)
 {
     struct TextPrinterTemplate printerTemplate;
-    s32 baseX;
-    u16 windowWidthPx = GetWindowAttribute(windowId, WINDOW_WIDTH) * 8;
+    u16 windowPxWidth = GetWindowAttribute(windowId, WINDOW_WIDTH) * 8;
 
     printerTemplate.currentChar = str;
     printerTemplate.windowId = windowId;
     printerTemplate.fontId = fontId;
+    printerTemplate.x = (rtlMode ? windowPxWidth - x : x);
     printerTemplate.y = y;
+    printerTemplate.currentX = printerTemplate.x;
+    printerTemplate.currentY = y;
     printerTemplate.letterSpacing = gFonts[fontId].letterSpacing;
     printerTemplate.lineSpacing = gFonts[fontId].lineSpacing;
     printerTemplate.unk = gFonts[fontId].unk;
     printerTemplate.fgColor = gFonts[fontId].fgColor;
     printerTemplate.bgColor = gFonts[fontId].bgColor;
     printerTemplate.shadowColor = gFonts[fontId].shadowColor;
-
-    // RTL: interpret x as right padding
-    if (rtlMode)
-        baseX = (s32)windowWidthPx - x;
-    else
-        baseX = (s32)x;
-
-    // don’t clamp: store full value
-    printerTemplate.x = baseX;
-    printerTemplate.currentX = baseX;
-    printerTemplate.currentY = y;
     printerTemplate.rtlMode = rtlMode;
-
     return AddTextPrinter(&printerTemplate, speed, callback);
 }
 

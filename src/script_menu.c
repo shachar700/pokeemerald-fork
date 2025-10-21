@@ -639,7 +639,7 @@ void ClearToTransparentAndRemoveWindow(u8 windowId)
     RemoveWindow(windowId);
 }
 
-/* static void DrawLinkServicesMultichoiceMenu(u8 multichoiceId)
+static void DrawLinkServicesMultichoiceMenu(u8 multichoiceId)
 {
     switch (multichoiceId)
     {
@@ -668,9 +668,9 @@ void ClearToTransparentAndRemoveWindow(u8 windowId)
         AddTextPrinterParameterized2(0, FONT_NORMAL, sCableClubOptions_NoRecordMix[Menu_GetCursorPos()], 0, NULL, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
         break;
     }
-} */
+}
 
-static void DrawLinkServicesMultichoiceMenu(u8 multichoiceId)
+/* static void DrawLinkServicesMultichoiceMenu(u8 multichoiceId)
 {
     u8 buffer[200]; // Temporary buffer for expanded text
 
@@ -703,7 +703,7 @@ static void DrawLinkServicesMultichoiceMenu(u8 multichoiceId)
 
     // Print the expanded string
     AddTextPrinterParameterized2(0, FONT_NORMAL, buffer, 0, NULL, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
-}
+} */
 
 bool16 ScriptMenu_CreateStartMenuForPokenavTutorial(void)
 {
