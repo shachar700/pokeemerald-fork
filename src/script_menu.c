@@ -670,41 +670,6 @@ static void DrawLinkServicesMultichoiceMenu(u8 multichoiceId)
     }
 }
 
-/* static void DrawLinkServicesMultichoiceMenu(u8 multichoiceId)
-{
-    u8 buffer[200]; // Temporary buffer for expanded text
-
-    FillWindowPixelBuffer(0, PIXEL_FILL(1));
-
-    switch (multichoiceId)
-    {
-    case MULTI_WIRELESS_NO_BERRY:
-        StringExpandPlaceholders(buffer, sWirelessOptionsNoBerryCrush[Menu_GetCursorPos()]);
-        break;
-    case MULTI_CABLE_CLUB_WITH_RECORD_MIX:
-        StringExpandPlaceholders(buffer, sCableClubOptions_WithRecordMix[Menu_GetCursorPos()]);
-        break;
-    case MULTI_WIRELESS_NO_RECORD:
-        StringExpandPlaceholders(buffer, sWirelessOptions_NoRecordMix[Menu_GetCursorPos()]);
-        break;
-    case MULTI_WIRELESS_ALL_SERVICES:
-        StringExpandPlaceholders(buffer, sWirelessOptions_AllServices[Menu_GetCursorPos()]);
-        break;
-    case MULTI_WIRELESS_NO_RECORD_BERRY:
-        StringExpandPlaceholders(buffer, sWirelessOptions_NoRecordMixBerryCrush[Menu_GetCursorPos()]);
-        break;
-    case MULTI_CABLE_CLUB_NO_RECORD_MIX:
-        StringExpandPlaceholders(buffer, sCableClubOptions_NoRecordMix[Menu_GetCursorPos()]);
-        break;
-    default:
-        buffer[0] = EOS; // Empty string for safety
-        break;
-    }
-
-    // Print the expanded string
-    AddTextPrinterParameterized2(0, FONT_NORMAL, buffer, 0, NULL, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
-} */
-
 bool16 ScriptMenu_CreateStartMenuForPokenavTutorial(void)
 {
     if (FuncIsActiveTask(Task_HandleMultichoiceInput) == TRUE)
