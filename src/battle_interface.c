@@ -2150,12 +2150,11 @@ static void UpdateSafariBallsTextOnHealthbox(u8 healthboxSpriteId)
 static void UpdateLeftNoOfBallsTextOnHealthbox(u8 healthboxSpriteId)
 {
     u8 text[16];
-    u8 *txtPtr;
     u32 windowId, spriteTileNum;
     u8 *windowTileData;
 
-    txtPtr = StringCopy(text, gText_SafariBallLeft);
-    ConvertIntToDecimalStringN(txtPtr, gNumSafariBalls, STR_CONV_MODE_LEFT_ALIGN, 2);
+    ConvertIntToDecimalStringN(text, gNumSafariBalls, STR_CONV_MODE_LEFT_ALIGN, 2);
+    StringAppend(text, gText_SafariBallLeft);
 
     windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(text, GetStringRightAlignXOffset(FONT_SMALL, text, 0x2F), 3, 2, &windowId, FALSE);
     spriteTileNum = gSprites[healthboxSpriteId].oam.tileNum * TILE_SIZE_4BPP;
