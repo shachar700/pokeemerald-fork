@@ -2131,12 +2131,12 @@ static void CreateCancelConfirmWindows(bool8 chooseHalf)
         if (gPartyMenu.menuType != PARTY_MENU_TYPE_SPIN_TRADE)
         {
             mainOffset = GetStringCenterAlignXOffset(FONT_SMALL, gText_Cancel, 48);
-            AddTextPrinterParameterized3WithRTL(cancelWindowId, FONT_SMALL, mainOffset + offset - 6, 1, sFontColorTable[0], TEXT_SKIP_DRAW, gText_Cancel, TRUE);
+            AddTextPrinterParameterized3WithRTL(cancelWindowId, FONT_SMALL, mainOffset + offset, 1, sFontColorTable[0], TEXT_SKIP_DRAW, gText_Cancel, TRUE);
         }
         else
         {
             mainOffset = GetStringCenterAlignXOffset(FONT_SMALL, gText_Cancel2, 48);
-            AddTextPrinterParameterized3WithRTL(cancelWindowId, FONT_SMALL, mainOffset + offset - 6, 1, sFontColorTable[0], TEXT_SKIP_DRAW, gText_Cancel2, TRUE);
+            AddTextPrinterParameterized3WithRTL(cancelWindowId, FONT_SMALL, mainOffset + offset, 1, sFontColorTable[0], TEXT_SKIP_DRAW, gText_Cancel2, TRUE);
         }
         PutWindowTilemap(cancelWindowId);
         CopyWindowToVram(cancelWindowId, COPYWIN_GFX);
