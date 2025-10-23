@@ -126,34 +126,34 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "ובכן, ל{SWAP_CHAF}{ADD_YUD} על זה!$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa! What a breathtaking victory!\n"
-	.string "My cheering must've worked!\p"
-	.string "Great!\n"
-	.string "Check your TRAINER CARD.\p"
-	.string "The STONE BADGE you got should be\n"
-	.string "properly recorded on it.\p"
-	.string "In other words…\p"
-	.string "You've climbed the first step on\n"
-	.string "the stairs to the CHAMPIONSHIP!\p"
-	.string "That's got to feel awesome!$"
+	.string "וואו! איזה ניצחון עוצר נשימה!\n"
+	.string "העידוד שלי כנראה עבד!\p"
+	.string "נהדר!\n"
+	.string "תבד{EMIT_VAV}ק{ADD_YUD} את כרטיס המאמן שלך.\p"
+	.string "תג האבן שהשגת אמור להיות\n"
+	.string "מתועד בו.\p"
+	.string "במילים אחרות…\p"
+	.string "עשית את הצעד הראשון\n"
+	.string "במדרגות לאליפות!\p"
+	.string "זה בטח מרגיש מדהים!$"
 
 RustboroCity_Gym_Text_JoshIntro:
-	.string "Don't take us GYM TRAINERS lightly!\n"
-	.string "I'll show you why we're better!$"
+	.string "אל תקח{ADD_YUD} אותנו מאמני המכון בקלות!\n"
+	.string "אני אראה לך למה אנחנו טובים יותר!$"
 
 RustboroCity_Gym_Text_JoshDefeat:
-	.string "You were too good for me…$"
+	.string "היית טוב{ADD_HEY} מדי בשבילי…$"
 
 RustboroCity_Gym_Text_JoshPostBattle:
-	.string "You haven't seen anything of the ROCK\n"
-	.string "type's terrifying power!$"
+	.string "עוד לא ראית כלום מהכוח המפחיד\n"
+	.string "של פוקימון מסוג סלע!$"
 
 RustboroCity_Gym_Text_TommyIntro:
-	.string "If you can't beat me, you won't stand\n"
-	.string "a chance against ROXANNE!$"
+	.string "אם את{EMIT_HEY} לא מצליח{ADD_HEY} להביס אותי, אין לך\n"
+	.string "סיכוי נגד רוקסן!$"
 
 RustboroCity_Gym_Text_TommyDefeat:
-	.string "Wow! You've got some potential!$"
+	.string "וואו! יש לך באמת פוטנציאל!$"
 
 RustboroCity_Gym_Text_TommyPostBattle:
 	.string "ROXANNE is stronger than me by\n"
@@ -185,8 +185,8 @@ RustboroCity_Gym_Text_RoxanneIntro:
 	.string "battle, and with which POKéMON?$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
-	.string "So…\n"
-	.string "I lost…\p"
+	.string "אז…\n"
+	.string "הפסדתי…\p"
 	.string "It seems that I still have much more\n"
 	.string "to learn…\p"
 	.string "I understand.\p"
