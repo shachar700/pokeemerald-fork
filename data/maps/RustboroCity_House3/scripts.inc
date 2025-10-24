@@ -29,7 +29,7 @@ RustboroCity_House3_Text_IGivePerfectlySuitedNicknames:
 	.string "יצירתיות, כן, זהו זה!$"
 
 RustboroCity_House3_Text_NamingPikachuPekachu:
-	.string "אבל לתת את השם פקצ'ו\n"
+	.string "אבל לתת את השם פקצ׳ו\n"
 	.string "ל{STR_VAR_1}? זה חסר טעם.\p"
 	.string "אני מניחה שטוב להשתמש בשם\n"
 	.string "שקל להבין, אבל עדיין…$"

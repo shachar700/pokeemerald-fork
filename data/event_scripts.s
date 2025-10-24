@@ -843,7 +843,7 @@ gText_PokemonCenterSign::
 	.string "מרכז פוקימון$"
 
 gText_MomOrDadMightLikeThisProgram::
-	.string "התכנית עלולה להיות אהובה ע”י {STR_VAR_1}.\n"
+	.string "התכנית עלולה להיות אהובה ע״י {STR_VAR_1}.\n"
 	.string "… … … … … … … … … … … … … … … …\p"
 	.string "כדאי לצאת לדרך!$"
 
@@ -887,8 +887,8 @@ gText_RegisteredTrainerinPokeNav::
 	.string "בפוקינווט.$"
 
 gText_ComeBackWithSecretPower::
-	.string "האם את{EMIT_HEY} מכיר{ADD_HEY} את המ”מ כוח סודי?\p"
-	.string "הקבוצה שלנו, אוהבת את המ”מ כוח סודי\p"
+	.string "האם את{EMIT_HEY} מכיר{ADD_HEY} את המ״מ כוח סודי?\p"
+	.string "הקבוצה שלנו, אוהבת את המ״מ כוח סודי\p"
 	.string "אחד החברים שלנו ייתן לך אותו.\n"
 	.string "תחז{EMIT_VAV}ר{ADD_YUD} ותרא{EMIT_HEY}{ADD_YUD} לי לאחר שקיבלת אותו.\p"
 	.string "נקבל אותך כחבר קבוצה ונמכור\n"

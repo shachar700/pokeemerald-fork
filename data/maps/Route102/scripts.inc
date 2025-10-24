@@ -94,7 +94,7 @@ Route102_Text_ImNotVeryTall:
 	.string "לעשב הגבוה.\p"
 	.string "הדשא עולה לי לאף ו…\n"
 	.string "פוואפוואפוואפווא…\p"
-	.string "פוואצ'ו!$"
+	.string "פוואצ׳ו!$"
 
 Route102_Text_CatchWholeBunchOfPokemon:
 	.string "אני הולך לתפוס המון פוקימונים!$"

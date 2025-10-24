@@ -1275,13 +1275,13 @@ PetalburgCity_Gym_Text_ReceivedBalanceBadge:
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
 	.string "אבא: עם התג הזה, ההגנה של כל\n"
 	.string "הפוקימונים שלך תעלה.\p"
-	.string "פוקימונים שיודעים את תנועת המ”נ גלישה\n"
+	.string "פוקימונים שיודעים את תנועת המ״נ גלישה\n"
 	.string "יוכלו לעבור מעל המים.\p"
 	.string "וזה המתנה שלי לך, {PLAYER}.\n"
 	.string "אני בטוח שתדע{ADD_YUD} להשתמש בזה נכון.$"
 
 PetalburgCity_Gym_Text_ExplainFacade:
-	.string "אבא: מ”מ24 מכיל את המתקפה חזות.\p"
+	.string "אבא: מ״מ24 מכיל את המתקפה חזות.\p"
 	.string "הכוח שלה מוכפל אם הפוקימון\n"
 	.string "מורעל, משותק או נכווה.\p"
 	.string "לפעמים אפשר להפוך מצב רע\n"

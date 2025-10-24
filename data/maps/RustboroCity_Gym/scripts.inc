@@ -208,13 +208,13 @@ RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 	.string "קח{ADD_YUD} את זה גם איתך.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:
-	.string "המכשיר מהלך הזה, מ”מ93,\n"
+	.string "המכשיר מהלך הזה, מ״מ93,\n"
 	.string "מכיל קבורת סלע.\p"
 	.string "הוא לא רק גורם לנזק על ידי זריקת\n"
 	.string "אבנים, אלא גם מוריד מהירות.\p"
-	.string "אם את{EMIT_HEY} משתמש{ADD_TAF} במ”מ, זה מלמד\n"
+	.string "אם את{EMIT_HEY} משתמש{ADD_TAF} במ״מ, זה מלמד\n"
 	.string "מיד את המהלך לפוקימון .\p"
-	.string "זכ{EMIT_VAV}ר{ADD_YUD}, ניתן להשתמש במ”מ רק פעם אחת,\n"
+	.string "זכ{EMIT_VAV}ר{ADD_YUD}, ניתן להשתמש במ״מ רק פעם אחת,\n"
 	.string "אז חש{EMIT_VAV}ב{ADD_YUD} היטב לפני שאת{EMIT_HEY} משתמש{ADD_TAF} בו.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle:

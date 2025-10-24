@@ -249,11 +249,11 @@ RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
 
 RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "מר סטון: כשפוקימון מחזיק את\n"
-	.string "עוד נ”נ, הוא יקבל חלק\l"
+	.string "עוד נ״נ, הוא יקבל חלק\l"
 	.string "מנקודות הניסיון מהקרב.\p"
 	.string "הוא יקבל ניסיון גם אם לא נלחם\n"
 	.string "בעצמו.\p"
-	.string "אפשר לומר שעוד נ”נ שימושי מאוד\n"
+	.string "אפשר לומר שעוד נ״נ שימושי מאוד\n"
 	.string "לגידול פוקימונים חלשים.$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:

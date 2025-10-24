@@ -1033,7 +1033,7 @@ Route104_Text_LikeFillingMouthWithSeedsTakeThis:
 
 Route104_Text_TMsAreOneTimeUse:
 	.string "עצה קטנה!\p"
-	.string "מ”מ, מכשירי מהלכים, הם טובים\n"
+	.string "מ״מ, מכשירי מהלכים, הם טובים\n"
 	.string "לשימוש חד פעמי.\p"
 	.string "ברגע שהשתמשת בה, היא נעלמת.\n"
 	.string "חש{EMIT_VAV}ב{ADD_YUD} פעמיים לפני שאת{EMIT_HEY} משתמש{ADD_TAF} בה!$"

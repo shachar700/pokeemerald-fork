@@ -34,14 +34,14 @@ RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse:
 	.string "קדימה, קח{ADD_YUD} אותו!$"
 
 RustboroCity_CuttersHouse_Text_ExplainCut:
-	.string "המכשיר הנסתר הזה, או מ”נ\n"
+	.string "המכשיר הנסתר הזה, או מ״נ\n"
 	.string "לקיצור, הוא חיתוך.\p"
-	.string "מהלך מ”נ הוא כזה שניתן להשתמש בו\n"
+	.string "מהלך מ״נ הוא כזה שניתן להשתמש בו\n"
 	.string "על ידי פוקימון גם מחוץ לקרב.\p"
 	.string "כל פוקימון שלמד חיתוך יכול\n"
 	.string "לחתוך עצים דקים אם המאמן\l"
 	.string "זכה בתג האבן.\p"
-	.string "ובניגוד למ”מ, ניתן להשתמש במ”נ \n"
+	.string "ובניגוד למ״מ, ניתן להשתמש במ״נ \n"
 	.string "יותר מפעם אחת.$"
 
 RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees:

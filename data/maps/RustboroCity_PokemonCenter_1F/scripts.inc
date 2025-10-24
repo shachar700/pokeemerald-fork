@@ -41,6 +41,6 @@ RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon:
 	.string "במה הם שונים.$"
 
 RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
-	.string "האיש ממול נתן לי מ”נ!\p"
+	.string "האיש ממול נתן לי מ״נ!\p"
 	.string "השתמשתי בו כדי ללמד את הפוקימון שלי\n"
 	.string "איך לחתוך עצים דקים.$"

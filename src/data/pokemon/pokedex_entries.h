@@ -3494,7 +3494,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_NINJASK] =
     {
-        .categoryName = _("נינג'ה"),
+        .categoryName = _("נינג׳ה"),
         .height = 8,
         .weight = 120,
         .description = gNinjaskPokedexText,
@@ -4634,7 +4634,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_DEOXYS] =
     {
-        .categoryName = _("דנ”א"),
+        .categoryName = _("דנ״א"),
         .height = 17,
         .weight = 608,
         .description = gDeoxysPokedexText,

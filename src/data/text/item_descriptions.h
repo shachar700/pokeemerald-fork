@@ -430,7 +430,7 @@ static const u8 sHarborMailDesc[] = _(
 
 static const u8 sGlitterMailDesc[] = _(
     "דואר עם הדפס\n"
-    "פיקאצ'ו שפוקימון\n"
+    "פיקאצ׳ו שפוקימון\n"
     "יכול להחזיק.");
 
 static const u8 sMechMailDesc[] = _(
@@ -787,7 +787,7 @@ static const u8 sFocusBandDesc[] = _(
 
 static const u8 sLuckyEggDesc[] = _(
     "פריט להחזקה\n"
-    "שמגביר נ“נ\n"
+    "שמגביר נ״נ\n"
     "שנצברו בקרב.");
 
 static const u8 sScopeLensDesc[] = _(
@@ -813,7 +813,7 @@ static const u8 sDragonScaleDesc[] = _(
 static const u8 sLightBallDesc[] = _(
     "פריט להחזקה\n"
     "שמעלה התקפה מ.\n"
-    "של פיקאצ'ו.");
+    "של פיקאצ׳ו.");
 
 static const u8 sSoftSandDesc[] = _(
     "פריט להחזקה\n"
@@ -896,7 +896,7 @@ static const u8 sUpGradeDesc[] = _(
 
 static const u8 sShellBellDesc[] = _(
     "פריט להחזקה\n"
-    "שמחזיר נ“ח בעת\n"
+    "שמחזיר נ״ח בעת\n"
     "פגיעה ביריב.");
 
 static const u8 sSeaIncenseDesc[] = _(
@@ -912,7 +912,7 @@ static const u8 sLaxIncenseDesc[] = _(
 static const u8 sLuckyPunchDesc[] = _(
     "פריט להחזקה\n"
     "שמעלה את יחס\n"
-    "מכה קריטית לצ'נסי.");
+    "מכה קריטית לצ׳נסי.");
 
 static const u8 sMetalPowderDesc[] = _(
     "פריט להחזקה\n"
@@ -1465,7 +1465,7 @@ static const u8 sFameCheckerDesc[] = _(
 
 static const u8 sTMCaseDesc[] = _(
     "תיק נוח שמחזיק\n"
-    "במ”מ ומ”נ.");
+    "במ״מ ומ״נ.");
 
 static const u8 sBerryPouchDesc[] = _(
     "מארז נוח\n"

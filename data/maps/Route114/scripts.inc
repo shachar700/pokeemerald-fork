@@ -180,10 +180,10 @@ Route114_Text_AllMyMonDoesIsRoarTakeThis:
 	.string "כל מה שהפוקימון שלי עושה זה שאגה…\n"
 	.string "אף אחד לא מעז להתקרב אליי…\p"
 	.string "אנחה… אם תרצ{EMIT_HEY}{ADD_YUD}, בבקשה קח{ADD_YUD}\n"
-	.string "את המ”מ ממני…$"
+	.string "את המ״מ ממני…$"
 
 Route114_Text_ExplainRoar:
-	.string "מ”מ מכיל שאגה.\n"
+	.string "מ״מ מכיל שאגה.\n"
 	.string "שאגה מפחידה את הפוקימון במהרה.$"
 
 Route114_Text_Poochyena:
