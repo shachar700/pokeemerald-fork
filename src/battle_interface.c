@@ -1110,11 +1110,11 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
     u32 xPos;
     u8 *objVram;
 
-    //text[0] = CHAR_EXTRA_SYMBOL;
-    text[0] = CHAR_t/* CHAR_LV_2 */;
+    text[0] = CHAR_EXTRA_SYMBOL;
+    text[1] = CHAR_LV_2;
   
-    objVram = ConvertIntToDecimalStringN(text + 1, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
-    ReverseNumeric(text + 1);
+    objVram = ConvertIntToDecimalStringN(text + 2, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
+    ReverseNumeric(text + 2);
     //*objVram++ = CHAR_LV_2;
     //*objVram = EOS;
     xPos = 5 * (3 - (objVram - (text + 2)));

@@ -738,8 +738,8 @@ static void BufferSearchMonListItem(struct PokenavMonListItem *item, u8 *dest)
     }
     s = StringCopy(gStringVar1, genderStr);
     *s++ = CHAR_SLASH;
-//    *s++ = CHAR_EXTRA_SYMBOL;
-    *s++ = CHAR_t/* CHAR_LV_2 */;
+    *s++ = CHAR_EXTRA_SYMBOL;
+    *s++ = CHAR_LV_2;
     ConvertIntToDecimalStringN(s, level, STR_CONV_MODE_LEFT_ALIGN, 3);
     ReverseNumeric(s);
     GetStringClearToWidth(dest, FONT_NORMAL, gStringVar1, 40);
