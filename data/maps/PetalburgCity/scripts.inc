@@ -732,7 +732,7 @@ PetalburgCity_Text_FullPartyExplanation:
 	.string "דרך חיבור המחשב.$"
 
 PetalburgCity_Text_GymSign:
-	.string "מכון פוקימון של העיר פטלבורג\n"
+	.string "מכון הפוקימון של העיר פטלבורג\n"
 	.string "מנהיג: נורמן\l"
 	.string "”אדם במרדף לעוצמה!“$"
 
