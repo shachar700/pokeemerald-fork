@@ -45,7 +45,7 @@ enum
 };
 
 #define KBROW_COUNT 4
-#define KBCOL_COUNT 8
+#define KBCOL_COUNT 9
 
 enum
 {
@@ -245,10 +245,10 @@ static const struct WindowTemplate sWindowTemplates[WIN_COUNT + 1] =
 // The keys shown on the keyboard are handled separately by sNamingScreenKeyboardText
 static const u8 sKeyboardChars[KBPAGE_COUNT][KBROW_COUNT][KBCOL_COUNT] = {
     [KEYBOARD_LETTERS_LOWER] = {
-        __("אבגדהו ."),
-        __("זחטיכל ,"),
-        __("מנסעפצק "),
-        __("רשתךםןףץ"),
+        __(" והד גבא׳"),
+        __("לךכי טחז״"),
+        __("ףפעסןנםמ."),
+        __(" תשר קץצ,"),
     },
     [KEYBOARD_LETTERS_UPPER] = {
         __("ABCDEF ."),
@@ -265,10 +265,10 @@ static const u8 sKeyboardChars[KBPAGE_COUNT][KBROW_COUNT][KBCOL_COUNT] = {
 
 static const u8 sPageColumnCounts[KBPAGE_COUNT] = {
     [KEYBOARD_LETTERS_LOWER] = KBCOL_COUNT,
-    [KEYBOARD_LETTERS_UPPER] = KBCOL_COUNT,
+    [KEYBOARD_LETTERS_UPPER] = KBCOL_COUNT - 1,
     [KEYBOARD_SYMBOLS] = 6};
 static const u8 sPageColumnXPos[KBPAGE_COUNT][KBCOL_COUNT] = {
-    [KEYBOARD_LETTERS_LOWER] = {0, 12, 24, 56, 68, 80, 92, 123},
+    [KEYBOARD_LETTERS_LOWER] = {0, 12, 24, 36, 56, 68, 80, 92, 123},
     [KEYBOARD_LETTERS_UPPER] = {0, 12, 24, 56, 68, 80, 92, 123},
     [KEYBOARD_SYMBOLS] = {0, 22, 44, 66, 88, 110}};
 
@@ -1079,7 +1079,7 @@ static void CreateCursorSprite(void)
     gSprites[sNamingScreen->cursorSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
     gSprites[sNamingScreen->cursorSpriteId].sColorIncr = 1; // ? immediately overwritten
     gSprites[sNamingScreen->cursorSpriteId].sColorIncr = 2;
-    SetCursorPos(0, 0);
+    SetCursorPos(7, 0);
 }
 
 static void SetCursorPos(s16 x, s16 y)
