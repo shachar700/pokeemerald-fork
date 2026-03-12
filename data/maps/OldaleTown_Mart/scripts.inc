@@ -61,8 +61,8 @@ OldaleTown_Mart_Text_ImGoingToBuyPokeBalls:
 	.string "ולתפוס מלא פוקימונים!$"
 
 OldaleTown_Mart_Text_RestoreHPWithPotion:
-	.string "אם פוקימון נפגע ומאבד את נ“ח שלו\n"
+	.string "אם פוקימון נפגע ומאבד את נ”ח שלו\n"
 	.string "ומתעלף, הוא לא יוכל להילחם.\p"
-	.string "כדי למנוע מהפוקימון שלך להתעלף,To prevent your POKéMON from fainting,\n"
-	.string "החז{ADD_YUD}ר{ADD_YUD} נ“ח עם שיקוי.$"
+	.string "כדי למנוע מהפוקימון שלך להתעלף,\n"
+	.string "החז{ADD_YUD}ר{ADD_YUD} נ”ח עם שיקוי.$"
 

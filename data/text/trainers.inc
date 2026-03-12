@@ -3220,7 +3220,7 @@ Route121_Text_CristinRematchIntro:
 
 Route121_Text_CristinRematchDefeat:
 	.string "חכ{EMIT_HEY}{ADD_YUD}! זה נורא!\n"
-	.string "אני דורש קרב חוזר!$"
+	.string "אני דורשת קרב חוזר!$"
 
 Route121_Text_CristinPostRematch:
 	.string "יריב{ADD_HEY} שאני פשוט לא יכולה להביס…\n"

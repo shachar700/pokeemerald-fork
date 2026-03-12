@@ -518,11 +518,11 @@ SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow:
 	.string "הסורק שלך, תודיע{ADD_YUD} לי.$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaTooth:
-	.string "קפטן סטרן: אז את{EMIT_HEY} תחלי{SWAP_PEY}{ADD_YUD} אותו עבורSo you'll trade it for\n"
+	.string "קפטן סטרן: אז את{EMIT_HEY} תחלי{SWAP_PEY}{ADD_YUD} אותו עבור\n"
 	.string "השן מצולות שלי?$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaScale:
-	.string "קפטן סטרן: אז את{EMIT_HEY} תחלי{SWAP_PEY}{ADD_YUD} אותו עבורSo you'll trade it for\n"
+	.string "קפטן סטרן: אז את{EMIT_HEY} תחלי{SWAP_PEY}{ADD_YUD} אותו עבור\n"
 	.string "הקשקש מצולות שלי?$"
 
 SlateportCity_Harbor_Text_WhichOneDoYouWant:

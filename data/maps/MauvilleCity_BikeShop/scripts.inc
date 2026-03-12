@@ -246,7 +246,7 @@ MauvilleCity_BikeShop_Text_HappyYouLikeIt:
 MauvilleCity_BikeShop_Text_OhYourBikeIsInPC:
 	.string "או? מה קרה לאופניים האלה\n"
 	.string "שנתתי לך?\p"
-	.string "או, הבנתי, את{EMIT_HEY} אחסנת אותם באמצעות המחשב שלך.\p"
+	.string "או, הבנתי, את{EMIT_HEY} אחסנת אותם בעזרת המחשב שלך.\p"
 	.string "טוב, הוצ{ADD_YUD}א{ADD_YUD} אותם מאחסון המחשב,\n"
 	.string "ואשמח להחליף אותם!\p"
 	.string "מי ייתן והרוח תמיד תהיה בגבך\n"

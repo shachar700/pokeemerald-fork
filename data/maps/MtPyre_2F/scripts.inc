@@ -44,8 +44,8 @@ MtPyre_2F_EventScript_Zander::
 	end
 
 MtPyre_2F_Text_MemoriesOfSkitty:
-	.string "זיכרונות על {STR_VAR_1} המתוק שלי…\n"
-	.string "העיניים שלי עולות על גדותיהן כשאני חושב עליו.$"
+	.string "זיכרונות על {STR_VAR_1} היקר שלי…\n"
+	.string "עיניי עולות על גדותיהן מלחשוב על זה.$"
 
 MtPyre_2F_Text_TumbledFromFloorAbove:
 	.string "אוץ', אאוץ'… יש כאן ושם חורים\n"

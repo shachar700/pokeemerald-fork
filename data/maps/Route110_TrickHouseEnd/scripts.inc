@@ -255,8 +255,8 @@ Route110_TrickHouseEnd_Text_YouveMadeItToMe:
 Route110_TrickHouseEnd_Text_AllNightToPlantTrees:
 	.string "לקח לי כל הלילה לשתול את כל\n"
 	.string "העצים האלה…\p"
-	.string "את{EMIT_HEY} כמעט שווה לי בגדולה בפער של\n"
-	.string "אחד, שניים, שלושה, ארבעה, חמישה, שישה מקומות!$"
+	.string "את{EMIT_HEY} כמעט שווה לי בגדולה באחד, שניים,\n"
+	.string "שלושה, ארבעה, חמישה, שישה מקומות!$"
 
 Route110_TrickHouseEnd_Text_AllNightToMakeMaze:
 	.string "לקח לי כל הלילה להכין את המבוך…\p"

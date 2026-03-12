@@ -551,7 +551,7 @@ MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
 	.string "אותנו את זה…$"
 
 MtPyre_Summit_Text_WillYouHearOutMyTale:
-	.string "הר המוקד הוא המקום שבו אנחנו מרגיעים את הרוחות\n"
+	.string "הר המוקד הוא המקום בו אנו מרגיעים את הרוחות\n"
 	.string "של פוקימונים שנפטרו…\p"
 	.string "זהו מקום גבוה שבו אפשר\n"
 	.string "לראות את כל הואן…\p"

@@ -1391,7 +1391,7 @@ PetalburgCity_Gym_Text_GeorgePostBattle:
 	.string "לא, רגע! היכולות של מאמן נקנות רק\n"
 	.string "באמצעות מאמץ.\p"
 	.string "הפסדתי כי לא התאמצתי מספיק.\p"
-	.string "תמשי{SWAP_CHAF}{ADD_YUD}! החדר הבא הוא חדר הנוקאאוט במכה אחת.$"
+	.string "תמשי{SWAP_CHAF}{ADD_YUD}! החדר הבא הוא חדר הנוקאאוט.$"
 
 PetalburgCity_Gym_Text_GeorgePostBadge:
 	.string "אני מתכוון להמשיך להתאמן במכונים.\n"
@@ -1415,7 +1415,8 @@ PetalburgCity_Gym_Text_BerkePostBattle:
 
 PetalburgCity_Gym_Text_BerkePostBadge:
 	.string "מאז שאבא שלך נהיה מנהיג המכון,\n"
-	.string "המאמנים של עיר פטלבורג נהיו הרבה יותר חזקים.$"
+	.string "המאמנים של עיר פטלבורג נהיו\l"
+	.string "הרבה יותר חזקים.$"
 
 PetalburgCity_Gym_Text_MaryIntro:
 	.string "צחקוק…\n"
