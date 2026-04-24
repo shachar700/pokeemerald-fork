@@ -20,7 +20,6 @@ Roulette_EventScript_Table2::
 
 Roulette_EventScript_Play::
 	special PlayRoulette
-	waitstate
 	end
 Roulette_Text_PlayMinimumWagerIsX::
 	.string "ההימור המינימלי בשולחן הזה הוא {STR_VAR_1}.\n"

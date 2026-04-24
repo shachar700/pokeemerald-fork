@@ -2038,7 +2038,7 @@ MatchCall_Text_Mom3::
 	.string "תנעלי את נעלי הריצה האלה עד\n"
 	.string "שהן יתפרקו, מותק!$"
 
-MatchCall_Text_Roxanne1::
+MatchCall_Text_Roxanne_Preparing::
 	.string "רוקסן: אוי, שלום, {PLAYER}!\p"
 	.string "עבדתי קשה על אימון מחדש\n"
 	.string "מאז שנפגשנו.\p"
@@ -2047,7 +2047,7 @@ MatchCall_Text_Roxanne1::
 	.string "אבל כשאעשה זאת, בבקשה בקר במכון שלי\n"
 	.string "לקרב חוזר!$"
 
-MatchCall_Text_Roxanne2::
+MatchCall_Text_Roxanne_PreparingPostGame::
 	.string "רוקסן: זה {PLAYER}?\n"
 	.string "ברכות!\l"
 	.string "אני שומעת עליך!\p"
@@ -2056,18 +2056,18 @@ MatchCall_Text_Roxanne2::
 	.string "אבל כשאעשה זאת, בבקשה בקר במכון שלי\n"
 	.string "לקרב חוזר!$"
 
-MatchCall_Text_Roxanne3::
+MatchCall_Text_Roxanne_RematchReady::
 	.string "רוקסן: {PLAYER}!\n"
 	.string "המכון שלי מוכן!\p"
 	.string "בבקשה בקר ברסטבורו בכל פעם\n"
 	.string "שתוכל!$"
 
-MatchCall_Text_Roxanne4::
+MatchCall_Text_Roxanne_PostRematch::
 	.string "רוקסן: במכון רסטבורו,\n"
 	.string "העובדה שנלחמנו, {PLAYER},\l"
 	.string "היא עניין של גאווה.$"
 
-MatchCall_Text_Brawly1::
+MatchCall_Text_Brawly_Preparing::
 	.string "בראולי: היי, {PLAYER}{KUN}!\p"
 	.string "למדתי הרבה מהקרב שהיה לנו\n"
 	.string "יחד.\p"
@@ -2078,7 +2078,7 @@ MatchCall_Text_Brawly1::
 	.string "אבל אם אני אוכל לפתוח מחדש את המכון,\n"
 	.string "אני רוצה שתאתגר אותנו שוב.$"
 
-MatchCall_Text_Brawly2::
+MatchCall_Text_Brawly_PreparingPostGame::
 	.string "בראולי: היי, {PLAYER}{KUN}!\n"
 	.string "ברכות!\p"
 	.string "השמועות על מעשיך הגיעו\n"
@@ -2090,17 +2090,17 @@ MatchCall_Text_Brawly2::
 	.string "אבל אם אני אוכל לפתוח מחדש את המכון,\n"
 	.string "אני רוצה שתאתגר אותנו שוב.$"
 
-MatchCall_Text_Brawly3::
+MatchCall_Text_Brawly_RematchReady::
 	.string "בראולי: היי, {PLAYER}{KUN}!\n"
 	.string "המכון שלי מוכן לפעולה!\p"
 	.string "תחזור לדיופורד בכל עת\n"
 	.string "לאתגר נוסף!$"
 
-MatchCall_Text_Brawly4::
+MatchCall_Text_Brawly_PostRematch::
 	.string "בראולי: {PLAYER}{KUN}, אני לא חושב\n"
 	.string "שאני אי פעם אשתעמם מלהילחם בך!$"
 
-MatchCall_Text_Wattson1::
+MatchCall_Text_Wattson_Preparing::
 	.string "ווטסון: אוי, זה את{EMIT_HEY}!\p"
 	.string "אחרי שעזבת, אני עושה מחדש\n"
 	.string "את האימונים שלי מהתחלה.\p"
@@ -2109,7 +2109,7 @@ MatchCall_Text_Wattson1::
 	.string "תצטרך לחכות עד אז!\n"
 	.string "וואהאהאהא!$"
 
-MatchCall_Text_Wattson2::
+MatchCall_Text_Wattson_PreparingPostGame::
 	.string "ווטסון: וואהאהאהא!\p"
 	.string "את{EMIT_HEY} באמת עשית את זה, לא?\n"
 	.string "אני מקבל שמועות עליך!\p"
@@ -2120,18 +2120,18 @@ MatchCall_Text_Wattson2::
 	.string "תצטרך לחכות עד אז!\n"
 	.string "וואהאהאהא!$"
 
-MatchCall_Text_Wattson3::
+MatchCall_Text_Wattson_RematchReady::
 	.string "ווטסון: אוי, זה את{EMIT_HEY}!\n"
 	.string "המכון שלי מוכן!\p"
 	.string "בקר במאוביל בכל עת!\n"
 	.string "וואהאהאהא!$"
 
-MatchCall_Text_Wattson4::
+MatchCall_Text_Wattson_PostRematch::
 	.string "ווטסון: וואהאהאהא!\p"
 	.string "קרב איתך תמיד טעון\n"
 	.string "בכוח מזעזע!$"
 
-MatchCall_Text_Flannery1::
+MatchCall_Text_Flannery_Preparing::
 	.string "פלאנרי: {PLAYER}…\p"
 	.string "כאשר נלחמנו, למדתי בדיוק\n"
 	.string "כמה ילדותית אני.\p"
@@ -2141,7 +2141,7 @@ MatchCall_Text_Flannery1::
 	.string "כשיגיע הזמן, {PLAYER},\n"
 	.string "בבקשה תאתגר אותנו שוב.$"
 
-MatchCall_Text_Flannery2::
+MatchCall_Text_Flannery_PreparingPostGame::
 	.string "פלאנרי: שלום, {PLAYER}?\n"
 	.string "ברכות!\p"
 	.string "שמועות על הצלחתך הגיעו\n"
@@ -2152,44 +2152,44 @@ MatchCall_Text_Flannery2::
 	.string "ליד השם שלי ברשימת\l"
 	.string "השיחות המותאמות.$"
 
-MatchCall_Text_Flannery3::
+MatchCall_Text_Flannery_RematchReady::
 	.string "פלאנרי: אוי, {PLAYER}?\n"
 	.string "המכון שלנו מוכן!\p"
 	.string "בוא{ADD_YUD} ללברידג' להשרות\n"
 	.string "במעיין החם ולאתגר!$"
 
-MatchCall_Text_Flannery4::
+MatchCall_Text_Flannery_PostRematch::
 	.string "פלאנרי: {PLAYER}…\n"
 	.string "אני בטוחה שאת{EMIT_HEY} ממשיך להשתפר\l"
 	.string "באימונים בכל פעם.$"
 
-MatchCall_Text_Winona1::
+MatchCall_Text_Winona_Preparing::
 	.string "וינונה: שלום, {PLAYER}!\p"
 	.string "תודה על הקרב שלנו, הגעתי ל\n"
 	.string "הבנה של נקודות החולשה שלי!\p"
 	.string "כשאני אפתח מחדש את המכון, אני לא\n"
 	.string "אפסיד שוב!$"
 
-MatchCall_Text_Winona2::
+MatchCall_Text_Winona_PreparingPostGame::
 	.string "וינונה: עשית את זה, {PLAYER}!\p"
 	.string "חדשות על האלוף החדש\n"
 	.string "הגיעו אלינו בפורטרי!\p"
 	.string "אבל… בפעם הבאה שנילחם,\n"
 	.string "זה לא יסתיים באותה צורה.$"
 
-MatchCall_Text_Winona3::
+MatchCall_Text_Winona_RematchReady::
 	.string "וינונה: זה {PLAYER}?\n"
 	.string "המכון שלנו חזר לפעולה!\p"
 	.string "אנחנו מחכים לך בפורטרי!$"
 
-MatchCall_Text_Winona4::
+MatchCall_Text_Winona_PostRematch::
 	.string "וינונה: {PLAYER}…\n"
 	.string "למרות שהפסדתי, הכנפיים שלי\l"
 	.string "לעולם לא יישברו.\p"
 	.string "כן, בדיוק באותה דרך שבה\n"
 	.string "את{EMIT_HEY} אף פעם לא איבדת את החזון שלך.$"
 
-MatchCall_Text_TateLiza1::
+MatchCall_Text_TateLiza_Preparing::
 	.string "טייט: אוי! את{EMIT_HEY}…\n"
 	.string "ליזה: {PLAYER}!\p"
 	.string "טייט: אנחנו שוב באימונים…\n"
@@ -2199,7 +2199,7 @@ MatchCall_Text_TateLiza1::
 	.string "טייט: יופיע סימן ליד השם שלנו…\n"
 	.string "ליזה: ברשימת השיחות המותאמות.$"
 
-MatchCall_Text_TateLiza2::
+MatchCall_Text_TateLiza_PreparingPostGame::
 	.string "טייט: {PLAYER}, ברכות!\n"
 	.string "ליזה: {PLAYER}, ברכות!\p"
 	.string "טייט: שנינו…\n"
@@ -2209,7 +2209,7 @@ MatchCall_Text_TateLiza2::
 	.string "טייט: יופיע סימן ליד השם שלנו…\n"
 	.string "ליזה: ברשימת השיחות המותאמות.$"
 
-MatchCall_Text_TateLiza3::
+MatchCall_Text_TateLiza_RematchReady::
 	.string "טייט: {PLAYER}!\n"
 	.string "ליזה: {PLAYER}!\p"
 	.string "טייט: המכון שלנו מוכן!\n"
@@ -2217,13 +2217,13 @@ MatchCall_Text_TateLiza3::
 	.string "טייט: בבקשה בוא{ADD_YUD} לבקר ב…\n"
 	.string "ליזה: מוסדיפ בכל עת!$"
 
-MatchCall_Text_TateLiza4::
+MatchCall_Text_TateLiza_PostRematch::
 	.string "טייט: {PLAYER}, הקרב שהיה לנו…\n"
 	.string "ליזה: הוא חוויה שלא יסולא בפז.\p"
 	.string "טייט: זה יהיה נחמד אם…\n"
 	.string "ליזה: נוכל להילחם שוב כולנו!$"
 
-MatchCall_Text_Juan1::
+MatchCall_Text_Juan_Preparing::
 	.string "חואן: הממ…\n"
 	.string "{PLAYER}{KUN}… זה את{EMIT_HEY}?\p"
 	.string "הקרב שהיה לנו יחד, הוא\n"
@@ -2232,7 +2232,7 @@ MatchCall_Text_Juan1::
 	.string "אולי את{EMIT_HEY} גאון שאולי\n"
 	.string "יעלה על וולאס!$"
 
-MatchCall_Text_Juan2::
+MatchCall_Text_Juan_PreparingPostGame::
 	.string "חואן: פופו… {PLAYER}{KUN}…\n"
 	.string "סוף סוף השגת את מטרתך.\p"
 	.string "חוש ההערכה שלי לכישרון לא\n"
@@ -2241,14 +2241,14 @@ MatchCall_Text_Juan2::
 	.string "אותך, כי טיפסת לפסגת\l"
 	.string "הכוח והיוקרה.$"
 
-MatchCall_Text_Juan3::
+MatchCall_Text_Juan_RematchReady::
 	.string "חואן: הוהו… {PLAYER}{KUN}…\p"
 	.string "מכון סוטופוליס שלנו סוף סוף\n"
 	.string "נפתח מחדש.\p"
 	.string "אם את{EMIT_HEY} רוצה לראות אותי, את{EMIT_HEY}\n"
 	.string "מוזמן לבקר בכל עת.$"
 
-MatchCall_Text_Juan4::
+MatchCall_Text_Juan_PostRematch::
 	.string "חואן: {PLAYER}{KUN}…\p"
 	.string "כמו המוזיקה המשובחת ביותר, הקרבות\n"
 	.string "שאנו מנהלים יחד מנגנים נימים\l"
@@ -2747,20 +2747,20 @@ MatchCall_Text_Norman5::
 	.string "אבל עם שם כזה, זה אולי\n"
 	.string "קשור איכשהו להר געש!$"
 
-MatchCall_Text_Norman6::
+MatchCall_Text_Norman_Preparing::
 	.string "אבא: הייא! האא! דווא!\p"
 	.string "…אוי? {PLAYER}!\p"
 	.string "תפסת אותי ממש באמצע\n"
 	.string "אימון פוקימונים!$"
 
-MatchCall_Text_Norman7::
+MatchCall_Text_Norman_PreparingPostGame::
 	.string "אבא: {PLAYER}!\p"
 	.string "מי היה מאמין שתהפוך\n"
 	.string "לאלוף ליגת הפוקימונים…\p"
 	.string "אוקיי!\n"
 	.string "אני לא אשאר מאחור!$"
 
-MatchCall_Text_Norman8::
+MatchCall_Text_Norman_RematchReady::
 	.string "אבא: הממ? {PLAYER}?\n"
 	.string "איזה תזמון טוב!\p"
 	.string "הפעם, אני הולך לאתגר\n"
@@ -2768,7 +2768,7 @@ MatchCall_Text_Norman8::
 	.string "אני מחכ{EMIT_HEY}{ADD_YUD} במכון פטלבורג.\n"
 	.string "קבל את האתגר שלי בכל עת!$"
 
-MatchCall_Text_Norman9::
+MatchCall_Text_Norman_PostRematch::
 	.string "אבא: …את{EMIT_HEY} מדהים אותי, {PLAYER}.\n"
 	.string "כמה גבוה יותר תרקיע?$"
 
