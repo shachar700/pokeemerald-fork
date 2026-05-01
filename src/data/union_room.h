@@ -535,7 +535,7 @@ static const u8 *const sNoWonderSharedTexts[] = {
     sText_NoNewsSharedRightNow
 };
 
-ALIGNED(4) static const u8 sText_Battle[] = _("BATTLE");
+ALIGNED(4) static const u8 sText_Battle[] = _("קרב");
 ALIGNED(4) static const u8 sText_Chat2[] = _("CHAT");
 ALIGNED(4) static const u8 sText_Greetings[] = _("GREETINGS");
 ALIGNED(4) static const u8 sText_Exit[] = _("EXIT");
