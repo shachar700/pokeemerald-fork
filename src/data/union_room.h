@@ -85,7 +85,7 @@ static const u8 *const sPlayersNeededOrModeTexts[][5] = {
     }
 };
 
-ALIGNED(4) static const u8 sText_BButtonCancel[] = _("{B_button}ביטול");
+ALIGNED(4) static const u8 sText_BButtonCancel[] = _("{B_BUTTON}ביטול");
 ALIGNED(4) static const u8 sJPText_SearchingForParticipants[] = _("ため\nさんかしゃ ぼしゅうちゅう です！"); // Unused, may have been cut off
 ALIGNED(4) static const u8 sText_PlayerContactedYouForXAccept[] = _("{STR_VAR_2} יצר איתך קשר עבור\n{STR_VAR_1}. לאשר?");
 ALIGNED(4) static const u8 sText_PlayerContactedYouShareX[] = _("{STR_VAR_2} יצר איתך קשר.\nהאם תשת{SWAP_PEY}{ADD_YUD} {STR_VAR_1}?");
@@ -475,7 +475,7 @@ static const u8 *const sCantTradeMonTexts[] = {
 
 ALIGNED(4) static const u8 sText_TradeOfferRejected[] = _("הצעת ההחלפה שלך נדחתה.\p");
 ALIGNED(4) static const u8 sText_EggTrade[] = _("החלפת ביצים");
-ALIGNED(4) static const u8 sText_ChooseJoinCancel[] = _("{DPAD_UPDOWN}בחר  {A_button}הצטרף  {B_button}בטל");
+ALIGNED(4) static const u8 sText_ChooseJoinCancel[] = _("{DPAD_UPDOWN}בחר  {A_BUTTON}הצטרף  {B_BUTTON}בטל");
 ALIGNED(4) static const u8 sText_ChooseTrainer[] = _("נא לבחור מאמן.");
 ALIGNED(4) static const u8 sText_ChooseTrainerSingleBattle[] = _("נא לבחור מאמן לקרב\nיחיד.");
 ALIGNED(4) static const u8 sText_ChooseTrainerDoubleBattle[] = _("נא לבחור מאמן לקרב\nכפול.");

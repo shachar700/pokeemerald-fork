@@ -512,7 +512,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     [SLATEPORT_TENT_TRAINER_JOLIE] = {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
         .trainerName = _("ג'ולי"),
-        .speechBefore = {EC_WORD_WHAT, EC_WORD_WILL, EC_WORD_I, EC_WORD_BE, EC_WORD_TOMORROW, EC_WORD_QUES},
+        .speechBefore = {EC_WORD_WHAT, EC_WORD_I, EC_WORD_IWILL, EC_WORD_TOMORROW, EC_WORD_QUES},
         .speechWin = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_LIKE, EC_WORD_IT_S, EC_WORD_FRIDAY, EC_WORD_EXCL},
         .speechLose = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_LIKE, EC_WORD_IT_S, EC_WORD_MONDAY, EC_WORD_ELLIPSIS},
         .monSet = gSlateportBattleTentTrainerMons_Jolie
@@ -624,7 +624,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     [SLATEPORT_TENT_TRAINER_STEPHON] = {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
         .trainerName = _("סטפון"),
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_TO, EC_WORD_ENJOY, EC_WORD_AN, EC_WORD_EGG},
+        .speechBefore = {EC_WORD_I_AM, EC_WORD_GOING, /* EC_WORD_TO,  */EC_WORD_ENJOY, EC_WORD_FROM/* EC_WORD_AN */, EC_WORD_EGG},
         .speechWin = {EC_WORD_I, EC_WORD_WILL, EC_WORD_ENJOY, EC_WORD_THIS, EC_WORD_TASTY, EC_WORD_VICTORY},
         .speechLose = {EC_WORD_AWFUL, EC_WORD_EXCL_EXCL, -1, EC_WORD_JUST, EC_WORD_AWFUL, EC_WORD_EXCL_EXCL},
         .monSet = gSlateportBattleTentTrainerMons_Stephon
@@ -2517,7 +2517,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_JAMESON] = {
         .facilityClass = FACILITY_CLASS_CAMPER,
-        .trainerName = _("ג'יימסון"),
+        .trainerName = _("ג'יימסן"),
         .speechBefore = {EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_SILKY, EC_WORD_SMOOTH, EC_WORD_EXCL},
         .speechWin = {EC_WORD_MY, EC_WORD_SILKY, EC_WORD_SMOOTH, EC_WORD_POKEMON, EC_WORD_RULE, EC_WORD_EXCL},
         .speechLose = {EC_WORD_MY, EC_WORD_POKEMON, EC_MOVE2(STRUGGLE), EC_WORD_IN, EC_WORD_YOUR, EC_WORD_STICKY_HOLD},

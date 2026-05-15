@@ -576,6 +576,8 @@
 #define EC_WORD_ONCE           ((EC_GROUP_ENDINGS << EC_MASK_BITS) | 67)
 #define EC_WORD_ANYWHERE       ((EC_GROUP_ENDINGS << EC_MASK_BITS) | 68)
 
+#define EC_WORD_IWILL           ((EC_GROUP_ENDINGS << EC_MASK_BITS) | 69)
+
 // FEELINGS
 #define EC_WORD_MEET          ((EC_GROUP_FEELINGS << EC_MASK_BITS) | 0)
 #define EC_WORD_PLAY          ((EC_GROUP_FEELINGS << EC_MASK_BITS) | 1)

@@ -458,27 +458,27 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_LetUsRestoreMons:
 	.string "הרש{EMIT_HEY}{ADD_YUD} לנו להשיב את הפוקימונים שלך!$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor2ndOpponent:
-	.string "המשחק השני הוא הבא!\n"
+	.string "המשחק השני הוא הבא בתור!\n"
 	.string "האם את{EMIT_HEY} מוכ{SWAP_NUN}{ADD_HEY}?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor3rdOpponent:
-	.string "המשחק השלישי הוא הבא!\n"
+	.string "המשחק השלישי הוא הבא בתור!\n"
 	.string "האם את{EMIT_HEY} מוכ{SWAP_NUN}{ADD_HEY}?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor4thOpponent:
-	.string "המשחק הרביעי הוא הבא!\n"
+	.string "המשחק הרביעי הוא הבא בתור!\n"
 	.string "האם את{EMIT_HEY} מוכ{SWAP_NUN}{ADD_HEY}?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor5thOpponent:
-	.string "המשחק החמישי הוא הבא!\n"
+	.string "המשחק החמישי הוא הבא בתור!\n"
 	.string "האם את{EMIT_HEY} מוכ{SWAP_NUN}{ADD_HEY}?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor6thOpponent:
-	.string "המשחק השישי הוא הבא!\n"
+	.string "המשחק השישי הוא הבא בתור!\n"
 	.string "האם את{EMIT_HEY} מוכ{SWAP_NUN}{ADD_HEY}?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ReadyFor7thOpponent:
-	.string "לבסוף, המשחק השביעי הוא הבא!\n"
+	.string "לבסוף, המשחק השביעי הוא הבא בתור!\n"
 	.string "האם את{EMIT_HEY} מוכ{SWAP_NUN}{ADD_HEY}?$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_SaveAndQuitGame:
