@@ -263,11 +263,11 @@ gText_MonAppealedWithMove::
 
 gText_MonWasWatchingOthers::
 	.string "{STR_VAR_1} צפה\n"
-	.string "באחרים.{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}$"
+	.string "באחרים.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_AllOutOfAppealTime::
 	.string "נגמר לנו כל\n"
-	.string "זמן המשיכה!{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}$"
+	.string "זמן המשיכה!{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 @ Unused appeal result texts
 
@@ -602,6 +602,7 @@ gText_ScrambledUpOrderForNextTurn::
 	.string "סדר לתור הבא.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_JudgeLookedAtMonExpectantly::
+<<<<<<< HEAD
 	.string "השופט הסתכל על\n"
 	.string "{STR_VAR_1} בציפייה.{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}$"
 
@@ -718,6 +719,124 @@ gText_CrowdContinuesToWatchMon::
 gText_MonsMoveIsIgnored::
 	.string "ה{STR_VAR_2} של {STR_VAR_1}\n"
 	.string "זוכה להתעלמות.{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}$"
+=======
+	.string "The JUDGE looked at\n"
+	.string "{STR_VAR_1} expectantly.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_AppealComboWentOverWell::
+	.string "The appeal combo went\n"
+	.string "over well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_AppealComboWentOverVeryWell::
+	.string "The appeal combo went\n"
+	.string "over very well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_AppealComboWentOverExcellently::
+	.string "The appeal combo went\n"
+	.string "over excellently.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonManagedToAvertGaze::
+	.string "{STR_VAR_1} managed to\n"
+	.string "avert its gaze.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonManagedToAvoidSeeingIt::
+	.string "{STR_VAR_1} managed to\n"
+	.string "avoid seeing it.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonIsntFazedByThatSortOfThing::
+	.string "{STR_VAR_1} isn't fazed\n"
+	.string "by that sort of thing.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonBecameALittleDistracted::
+	.string "{STR_VAR_1} became a\n"
+	.string "little distracted.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_TriedToStartleOtherPokemon::
+	.string "It tried to startle the\n"
+	.string "other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonLookedDownOutOfDistraction::
+	.string "{STR_VAR_1} looked down\n"
+	.string "out of distraction.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonTurnedBackOutOfDistraction::
+	.string "{STR_VAR_1} turned back\n"
+	.string "out of distraction.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonCouldntHelpUtteringCry::
+	.string "{STR_VAR_1} couldn't help\n"
+	.string "uttering a cry.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonCouldntHelpLeapingUp::
+	.string "{STR_VAR_1} couldn't help\n"
+	.string "leaping up.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonTrippedOutOfDistraction::
+	.string "{STR_VAR_1} tripped over\n"
+	.string "out of distraction.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonWasTooNervousToMove::
+	.string "{STR_VAR_1} was too\n"
+	.string "nervous to move.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_ButItMessedUp2::
+	.string "But it messed up.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_ButItFailedToMakeTargetNervous::
+	.string "But it failed to make\n"
+	.string "the target nervous.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_ButItFailedToMakeAnyoneNervous::
+	.string "But it failed to make\n"
+	.string "anyone nervous.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_ButItWasIgnored::
+	.string "But it was ignored…{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_CouldntImproveItsCondition::
+	.string "But it couldn't improve\n"
+	.string "its condition…{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_BadConditionResultedInWeakAppeal::
+	.string "Its bad condition\n"
+	.string "resulted in a weak appeal.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonWasUnaffected::
+	.string "{STR_VAR_1} was\n"
+	.string "unaffected.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_RepeatedAppeal::
+	.string "{STR_VAR_1} disappointed\n"
+	.string "by repeating an appeal.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonsXWentOverGreat::
+	.string "{STR_VAR_1}'s {STR_VAR_3}\n"
+	.string "went over great.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonsXDidntGoOverWell::
+	.string "{STR_VAR_1}'s {STR_VAR_3}\n"
+	.string "didn't go over well here…{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonsXGotTheCrowdGoing::
+	.string "{STR_VAR_1}'s {STR_VAR_3}\n"
+	.string "got the crowd going.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonCantAppealNextTurn::
+	.string "{STR_VAR_1} can't appeal\n"
+	.string "next turn…{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_AttractedCrowdsAttention::
+	.string "It attracted the crowd's\n"
+	.string "attention.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_CrowdContinuesToWatchMon::
+	.string "The crowd continues to\n"
+	.string "watch {STR_VAR_3}.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+
+gText_MonsMoveIsIgnored::
+	.string "{STR_VAR_1}'s\n"
+	.string "{STR_VAR_2} is ignored.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+>>>>>>> 0d3100185e0b13faabfc589fc402dd46f83c1d6a
 
 gText_Contest_Shyness::
 	.string "ביישנות$"

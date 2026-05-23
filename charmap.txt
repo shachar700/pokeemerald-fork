@@ -461,7 +461,7 @@ B_MON_ADD_HEY = FD 3D
 NAME_END = FC 00
 
 @ special 0xF7 character
-DYNAMIC  =   F7
+DYNAMIC = F7
 
 @ more text functions
 
