@@ -1394,6 +1394,7 @@ const u32 gStorageSystemPartyMenu_Tilemap[] = INCGFX_U32("graphics/pokemon_stora
 const u16 gNamingScreenMenu_Pal[7][16] =
 {
     INCGFX_U16("graphics/naming_screen/menu.pal", ".gbapal"),
+    INCGFX_U16("graphics/naming_screen/page_swap_heb.pal", ".gbapal"),
     INCGFX_U16("graphics/naming_screen/page_swap_upper.pal", ".gbapal"),
     INCGFX_U16("graphics/naming_screen/page_swap_lower.pal", ".gbapal"),
     INCGFX_U16("graphics/naming_screen/page_swap_others.pal", ".gbapal"),
