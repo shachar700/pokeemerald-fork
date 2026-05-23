@@ -1,6 +1,8 @@
-# Pokémon Emerald
+# Pokémon Bareket
 
-This is a decompilation of Pokémon Emerald.
+This is a decompilation of Pokémon Emerald in Hebrew.
+
+<img src="collage.png">
 
 It builds the following ROM:
 
