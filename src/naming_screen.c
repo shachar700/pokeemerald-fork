@@ -2511,10 +2511,10 @@ static const struct SpriteSheet sSpriteSheets[] =
 static const struct SpritePalette sSpritePalettes[] =
     {
         {gNamingScreenMenu_Pal[0], PALTAG_MENU},
-        {gNamingScreenMenu_Pal[1], PALTAG_PAGE_SWAP_HEB},
-        {gNamingScreenMenu_Pal[2], PALTAG_PAGE_SWAP_UPPER},
-        {gNamingScreenMenu_Pal[3], PALTAG_PAGE_SWAP_LOWER},
-        {gNamingScreenMenu_Pal[4], PALTAG_PAGE_SWAP_OTHERS},
+        {gNamingScreenMenu_Pal[0], PALTAG_PAGE_SWAP_HEB},
+        {gNamingScreenMenu_Pal[1], PALTAG_PAGE_SWAP_UPPER},
+        {gNamingScreenMenu_Pal[2], PALTAG_PAGE_SWAP_LOWER},
+        {gNamingScreenMenu_Pal[3], PALTAG_PAGE_SWAP_OTHERS},
         {gNamingScreenMenu_Pal[4], PALTAG_PAGE_SWAP},
         {gNamingScreenMenu_Pal[5], PALTAG_CURSOR},
         {gNamingScreenMenu_Pal[4], PALTAG_BACK_BUTTON},
