@@ -2515,8 +2515,8 @@ static const struct SpritePalette sSpritePalettes[] =
         {gNamingScreenMenu_Pal[2], PALTAG_PAGE_SWAP_UPPER},
         {gNamingScreenMenu_Pal[3], PALTAG_PAGE_SWAP_LOWER},
         {gNamingScreenMenu_Pal[4], PALTAG_PAGE_SWAP_OTHERS},
-        {gNamingScreenMenu_Pal[5], PALTAG_PAGE_SWAP},
-        {gNamingScreenMenu_Pal[6], PALTAG_CURSOR},
-        {gNamingScreenMenu_Pal[5], PALTAG_BACK_BUTTON},
-        {gNamingScreenMenu_Pal[5], PALTAG_OK_BUTTON},
+        {gNamingScreenMenu_Pal[4], PALTAG_PAGE_SWAP},
+        {gNamingScreenMenu_Pal[5], PALTAG_CURSOR},
+        {gNamingScreenMenu_Pal[4], PALTAG_BACK_BUTTON},
+        {gNamingScreenMenu_Pal[4], PALTAG_OK_BUTTON},
         {}};
