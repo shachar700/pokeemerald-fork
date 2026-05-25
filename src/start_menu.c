@@ -1357,39 +1357,39 @@ static void ShowSaveInfoWindow(void)
     // Print region name
     yOffset = 1;
     BufferSaveMenuText(SAVE_MENU_LOCATION, gStringVar4, TEXT_COLOR_GREEN);
-    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, 0, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
+    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, 2, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
 
     // Print player name
     yOffset += 16;
     StringExpandPlaceholders(gStringVar4, gText_SavingPlayer);
-    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, 0, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
+    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, 2, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
     BufferSaveMenuText(SAVE_MENU_NAME, gStringVar4, color);
     xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x70);
-    PrintPlayerNameOnWindow(sSaveInfoWindowId, gStringVar4, xOffset - 28, yOffset);
+    PrintPlayerNameOnWindow(sSaveInfoWindowId, gStringVar4, xOffset - 2, yOffset);
 
     // Print badge count
     yOffset += 16;
-    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gText_SavingBadges, 0, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
+    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gText_SavingBadges, 2, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
     BufferSaveMenuText(SAVE_MENU_BADGES, gStringVar4, color);
-    xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x70);
-    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, xOffset - 28, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
+    //xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x70);
+    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, 104, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
 
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
     {
         // Print Pokédex count
         yOffset += 16;
-        AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gText_SavingPokedex, 0, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
+        AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gText_SavingPokedex, 2, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
         BufferSaveMenuText(SAVE_MENU_CAUGHT, gStringVar4, color);
-        xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x70);
-        AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, xOffset - 66, yOffset, TEXT_SKIP_DRAW, NULL, FALSE);
+        //xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x70);
+        AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, 2, yOffset, TEXT_SKIP_DRAW, NULL, FALSE);
     }
 
     // Print play time
     yOffset += 16;
-    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gText_SavingTime, 0, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
+    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gText_SavingTime, 2, yOffset, TEXT_SKIP_DRAW, NULL, TRUE);
     BufferSaveMenuText(SAVE_MENU_PLAY_TIME, gStringVar4, color);
-    xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x70);
-    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, xOffset - 52, yOffset, TEXT_SKIP_DRAW, NULL, FALSE);
+    //xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x70);
+    AddTextPrinterParameterizedWithRTL(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, 2, yOffset, TEXT_SKIP_DRAW, NULL, FALSE);
 
     CopyWindowToVram(sSaveInfoWindowId, COPYWIN_GFX);
 }

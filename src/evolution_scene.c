@@ -660,10 +660,6 @@ static void Task_EvolutionScene(u8 taskId)
     case EVOSTATE_INTRO_MSG:
         if (!gPaletteFade.active)
         {
-            if (GetMonGender(mon) == MON_FEMALE)
-                StringCopy(gStringVar2, gText_ExpandedPlaceholder_Taf);
-            else
-                StringCopy(gStringVar2, gText_ExpandedPlaceholder_Empty);
             StringExpandPlaceholders(gStringVar4, gText_PkmnIsEvolving);
             BattlePutTextOnWindow(gStringVar4, B_WIN_MSG, TRUE);
             gTasks[taskId].tState++;
@@ -761,10 +757,6 @@ static void Task_EvolutionScene(u8 taskId)
     case EVOSTATE_SET_MON_EVOLVED:
         if (IsCryFinished())
         {
-            if (GetMonGender(mon) == MON_FEMALE)
-                StringCopy(gStringVar3, gText_ExpandedPlaceholder_Hey);
-            else
-                StringCopy(gStringVar3, gText_ExpandedPlaceholder_Empty);
             StringExpandPlaceholders(gStringVar4, gText_CongratsPkmnEvolved);
             BattlePutTextOnWindow(gStringVar4, B_WIN_MSG, TRUE);
             PlayBGM(MUS_EVOLVED);
@@ -846,11 +838,6 @@ static void Task_EvolutionScene(u8 taskId)
     case EVOSTATE_CANCEL_MSG:
         if (EvoScene_IsMonAnimFinished(sEvoStructPtr->preEvoSpriteId))
         {
-            if (GetMonGender(mon) == MON_FEMALE)
-                StringCopy(gStringVar2, gText_ExpandedPlaceholder_Hey);
-            else
-                StringCopy(gStringVar2, gText_ExpandedPlaceholder_Empty);
-
             if (gTasks[taskId].tEvoWasStopped) // FRLG auto cancellation
                 StringExpandPlaceholders(gStringVar4, gText_EllipsisQuestionMark);
             else
@@ -1098,10 +1085,6 @@ static void Task_TradeEvolutionScene(u8 taskId)
     switch (gTasks[taskId].tState)
     {
     case T_EVOSTATE_INTRO_MSG:
-        if (GetMonGender(mon) == MON_FEMALE)
-                StringCopy(gStringVar2, gText_ExpandedPlaceholder_Taf);
-        else
-                StringCopy(gStringVar2, gText_ExpandedPlaceholder_Empty);
         StringExpandPlaceholders(gStringVar4, gText_PkmnIsEvolving);
         DrawTextOnTradeWindow(0, gStringVar4, 1);
         gTasks[taskId].tState++;

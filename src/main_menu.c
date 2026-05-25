@@ -756,8 +756,8 @@ static void Task_DisplayMainMenu(u8 taskId)
         default:
             FillWindowPixelBuffer(0, PIXEL_FILL(0xA));
             FillWindowPixelBuffer(1, PIXEL_FILL(0xA));
-            AddTextPrinterParameterized3WithRTL(0, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame, TRUE);
-            AddTextPrinterParameterized3WithRTL(1, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption, TRUE);
+            AddTextPrinterParameterized3WithRTL(0, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame, TRUE);
+            AddTextPrinterParameterized3WithRTL(1, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption, TRUE);
             PutWindowTilemap(0);
             PutWindowTilemap(1);
             CopyWindowToVram(0, COPYWIN_GFX);
@@ -769,9 +769,9 @@ static void Task_DisplayMainMenu(u8 taskId)
             FillWindowPixelBuffer(2, PIXEL_FILL(0xA));
             FillWindowPixelBuffer(3, PIXEL_FILL(0xA));
             FillWindowPixelBuffer(4, PIXEL_FILL(0xA));
-            AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuContinue, TRUE);
-            AddTextPrinterParameterized3WithRTL(3, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame, TRUE);
-            AddTextPrinterParameterized3WithRTL(4, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption, TRUE);
+            AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuContinue, TRUE);
+            AddTextPrinterParameterized3WithRTL(3, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame, TRUE);
+            AddTextPrinterParameterized3WithRTL(4, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption, TRUE);
             MainMenu_FormatSavegameText();
             PutWindowTilemap(2);
             PutWindowTilemap(3);
@@ -788,10 +788,10 @@ static void Task_DisplayMainMenu(u8 taskId)
             FillWindowPixelBuffer(3, PIXEL_FILL(0xA));
             FillWindowPixelBuffer(4, PIXEL_FILL(0xA));
             FillWindowPixelBuffer(5, PIXEL_FILL(0xA));
-            AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuContinue, TRUE);
-            AddTextPrinterParameterized3WithRTL(3, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame, TRUE);
-            AddTextPrinterParameterized3WithRTL(4, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryGift, TRUE);
-            AddTextPrinterParameterized3WithRTL(5, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption, TRUE);
+            AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuContinue, TRUE);
+            AddTextPrinterParameterized3WithRTL(3, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame, TRUE);
+            AddTextPrinterParameterized3WithRTL(4, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryGift, TRUE);
+            AddTextPrinterParameterized3WithRTL(5, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption, TRUE);
             MainMenu_FormatSavegameText();
             PutWindowTilemap(2);
             PutWindowTilemap(3);
@@ -812,11 +812,11 @@ static void Task_DisplayMainMenu(u8 taskId)
             FillWindowPixelBuffer(4, PIXEL_FILL(0xA));
             FillWindowPixelBuffer(5, PIXEL_FILL(0xA));
             FillWindowPixelBuffer(6, PIXEL_FILL(0xA));
-            AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuContinue, TRUE);
-            AddTextPrinterParameterized3WithRTL(3, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame, TRUE);
-            AddTextPrinterParameterized3WithRTL(4, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryGift2, TRUE);
-            AddTextPrinterParameterized3WithRTL(5, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryEvents, TRUE);
-            AddTextPrinterParameterized3WithRTL(6, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption, TRUE);
+            AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuContinue, TRUE);
+            AddTextPrinterParameterized3WithRTL(3, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame, TRUE);
+            AddTextPrinterParameterized3WithRTL(4, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryGift2, TRUE);
+            AddTextPrinterParameterized3WithRTL(5, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryEvents, TRUE);
+            AddTextPrinterParameterized3WithRTL(6, FONT_NORMAL, 2, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption, TRUE);
             MainMenu_FormatSavegameText();
             PutWindowTilemap(2);
             PutWindowTilemap(3);
@@ -2115,7 +2115,7 @@ static void MainMenu_FormatSavegameText(void)
 static void MainMenu_FormatSavegamePlayer(void)
 {
     StringExpandPlaceholders(gStringVar4, gText_ContinueMenuPlayer);
-    AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 0, 17, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4, TRUE);
+    AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 2, 17, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4, TRUE);
     AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, gSaveBlock2Ptr->playerName, 100), 17, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gSaveBlock2Ptr->playerName, TRUE);
 }
 
@@ -2129,7 +2129,7 @@ static void MainMenu_FormatSavegamePlayer(void)
     ptr = ConvertIntToDecimalStringN(str, gSaveBlock2Ptr->playTimeHours, STR_CONV_MODE_LEFT_ALIGN, 3);
     *ptr = 0xF0;
     ConvertIntToDecimalStringN(ptr + 1, gSaveBlock2Ptr->playTimeMinutes, STR_CONV_MODE_LEADING_ZEROS, 2);
-    AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 40/* GetStringRightAlignXOffset(FONT_NORMAL, str, 0xD0 ) */, 17, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str, FALSE);
+    AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 2/* GetStringRightAlignXOffset(FONT_NORMAL, str, 0xD0 ) */, 17, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str, FALSE);
 }
 
 static void MainMenu_FormatSavegamePokedex(void)
@@ -2144,7 +2144,7 @@ static void MainMenu_FormatSavegamePokedex(void)
         else
             dexCount = GetHoennPokedexCount(FLAG_GET_CAUGHT);
         StringExpandPlaceholders(gStringVar4, gText_ContinueMenuPokedex);
-        AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 0, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4, TRUE);
+        AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 2, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4, TRUE);
         ConvertIntToDecimalStringN(str, dexCount, STR_CONV_MODE_LEFT_ALIGN, 3);
         ReverseNumeric(str);
         AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, str, 100), 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str, TRUE);
@@ -2165,7 +2165,7 @@ static void MainMenu_FormatSavegameBadges(void)
     StringExpandPlaceholders(gStringVar4, gText_ContinueMenuBadges);
     AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 0x6C, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4, TRUE);
     ConvertIntToDecimalStringN(str, badgeCount, STR_CONV_MODE_LEADING_ZEROS, 1);
-    AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, str, 160/* 0xD0 */), 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str, TRUE);
+    AddTextPrinterParameterized3WithRTL(2, FONT_NORMAL, 2/* GetStringRightAlignXOffset(FONT_NORMAL, str, 0xD0) */, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str, FALSE);
 }
 
 static void LoadMainMenuWindowFrameTiles(u8 bgId, u16 tileOffset)

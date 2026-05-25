@@ -1136,15 +1136,14 @@ static void PrintTimeOnCard(void)
     {
         x = 128;
         y = 89;
-    }
+    } 
     totalWidth = width + 30;
-    x -= totalWidth;
-    x += 28;
+    x -= 5;
 
     FillWindowPixelRect(1, PIXEL_FILL(0), x, y, totalWidth, 15);
     ConvertIntToDecimalStringN(gStringVar4, hours, STR_CONV_MODE_RIGHT_ALIGN, 3);
     AddTextPrinterParameterized3WithRTL(1, FONT_NORMAL, x, y, sTrainerCardTextColors, TEXT_SKIP_DRAW, gStringVar4, FALSE);
-    x += 18;
+    x += 18; //18
     AddTextPrinterParameterized3WithRTL(1, FONT_NORMAL, x, y, sTimeColonTextColors[sData->timeColonInvisible], TEXT_SKIP_DRAW, gText_Colon2, FALSE);
     x += width;
     ConvertIntToDecimalStringN(gStringVar4, minutes, STR_CONV_MODE_LEADING_ZEROS, 2);

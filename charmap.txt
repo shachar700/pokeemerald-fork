@@ -448,14 +448,7 @@ B_BUFF3 = FD 34
 
 B_ADD_YUD = FD 35
 B_ADD_HEY = FD 36
-B_ADD_TAF = FD 37
-B_EMIT_YUD = FD 38
-B_EMIT_HEY = FD 39
-B_EMIT_TAF = FD 3A
-B_EMIT_VAV = FD 3B
-
-B_MON_ADD_YUD = FD 3C
-B_MON_ADD_HEY = FD 3D
+B_EMIT_HEY = FD 37
 
 @ indicates the end of a town/city name (before " TOWN" or " CITY")
 NAME_END = FC 00
