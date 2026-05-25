@@ -76,6 +76,6 @@ PetalburgCity_Mart_Text_RepelIsUseful:
 PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou:
 	.string "האם יש לך נוגדן איתך?\p"
 	.string "אם את{EMIT_HEY} הול{SWAP_CHAF}{ADD_TAF} עם פוקימון מורעל,\n"
-	.string "הוא יאבד נח עד שיתעלף.\l"
+	.string "הוא יאבד נ”ח עד שיתעלף.\l"
 	.string "קח{ADD_YUD} כמה נוגדנים איתך.$"
 

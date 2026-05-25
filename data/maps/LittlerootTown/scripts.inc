@@ -958,8 +958,8 @@ LittlerootTown_Text_CanUsePCToStoreItems:
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
 	.string "פרופ. בירץ' מבלה ימים שלמים במעבדה שלו\n"
-	.string "לומד, ואז פתאום יוצא\l"
-	.string "לטבע כדי לעשות עוד מחקר…\p"
+	.string "לומד, ואז פתאום יוצא לטבע\l"
+	.string "כדי לעשות עוד מחקר…\p"
 	.string "מתי פרופ' בירץ' נמצא בבית?$"
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:

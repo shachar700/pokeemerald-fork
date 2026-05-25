@@ -61,7 +61,7 @@ PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem:
 
 PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP:
 	.string "כשהפוקימון שלי אכל פרי אוכמניה,\n"
-	.string "זה החזיר לו נח!$"
+	.string "זה החזיר לו נ”ח!$"
 
 PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
 	.string "ישנם סוגים רבים של פוקימון.\p"

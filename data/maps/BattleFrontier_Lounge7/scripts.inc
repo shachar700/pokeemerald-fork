@@ -451,7 +451,7 @@ BattleFrontier_Lounge7_Text_IcyWindDesc::
 BattleFrontier_Lounge7_Text_EndureDesc::
 	.string "עומד בכל\n"
 	.string "התקפה למשך\n"
-	.string "סיבוב אחד, ומשאיר 1 נח.$"
+	.string "סיבוב אחד, ומשאיר 1 נ”ח.$"
 
 BattleFrontier_Lounge7_Text_PsychUpDesc::
 	.string "מעתיק את\n"

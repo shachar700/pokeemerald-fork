@@ -72,7 +72,7 @@ RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish:
 
 RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead:
 	.string "הפוקימון שלי התפתח.\n"
-	.string "יש לו הרבה נח עכשיו.\p"
+	.string "יש לו הרבה נ”ח עכשיו.\p"
 	.string "אני צריך לקנות לו שיקוי רב\n"
 	.string "במקום שיקויים רגילים.$"
 

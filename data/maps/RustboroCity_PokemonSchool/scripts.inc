@@ -209,7 +209,7 @@ RustboroCity_PokemonSchool_Text_ReadWhichTopic:
 
 RustboroCity_PokemonSchool_Text_ExplainPoison:
 	.string "אם פוקימון מורעל, הוא יאבד\n"
-	.string "בהדרגה נקודות חיים, נח בקיצור.\p"
+	.string "בהדרגה נקודות חיים, נ”ח בקיצור.\p"
 	.string "השפעות הרעל נשארות גם לאחר\n"
 	.string "הקרב.\p"
 	.string "הנח של פוקימון מורעל יירדו\n"
@@ -234,7 +234,7 @@ RustboroCity_PokemonSchool_Text_ExplainSleep:
 
 RustboroCity_PokemonSchool_Text_ExplainBurn:
 	.string "כוויה מפחיתה את עוצמת ההתקפה, ובהדרגה\n"
-	.string "מפחיתה נח של הקורבן.\p"
+	.string "מפחיתה נ”ח של הקורבן.\p"
 	.string "כוויה נמשכת גם לאחר הקרב.\n"
 	.string "לרפא כויה בעזרת ריפוי כויה.$"
 

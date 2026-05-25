@@ -608,7 +608,7 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainRulesMoves:
 	.string "ישיר לאויב.\p"
 	.string "יש מהלכי הגנה שמשמשים\n"
 	.string "להכנה להתקפות אויב או\l"
-	.string "משמשים לריפוי נח וכך הלאה.\p"
+	.string "משמשים לריפוי נ”ח וכך הלאה.\p"
 	.string "יש גם מהלכים מוזרים אחרים\n"
 	.string "שעשויים להחליש את האויבים עם\l"
 	.string "בעיות נתונים כולל רעל\l"

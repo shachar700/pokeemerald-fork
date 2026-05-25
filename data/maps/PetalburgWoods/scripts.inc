@@ -462,7 +462,7 @@ PetalburgWoods_Text_TrainerTipsExperience:
 
 PetalburgWoods_Text_TrainerTipsPP:
 	.string "טיפים למאמנים\p"
-	.string "בנוסף לנקודות חיים (נח), לפוקימון\n"
+	.string "בנוסף לנקודות חיים (נ”ח), לפוקימון\n"
 	.string "יש גם נקודות כוח (נכ) שמשמשות\l"
 	.string "למהלכים בקרב.\p"
 	.string "אם לפוקימון נגמר הנכ, צריך לקחת,\n"

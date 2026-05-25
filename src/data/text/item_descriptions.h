@@ -61,7 +61,7 @@ static const u8 sPremierBallDesc[] = _(
 
 // Medicine
 static const u8 sPotionDesc[] = _(
-    "מחזיר נח של\n"
+    "מחזיר נ”ח של\n"
     "פוקימון ב-02\n"
     "נקודות.");
 
@@ -86,20 +86,20 @@ static const u8 sParalyzeHealDesc[] = _(
     "משותק.");
 
 static const u8 sFullRestoreDesc[] = _(
-    "מרפא לחלוטין נח\n"
+    "מרפא לחלוטין נ”ח\n"
     "וסטטוס של פוקימון.");
 
 static const u8 sMaxPotionDesc[] = _(
-    "מרפא לחלוטין נח\n"
+    "מרפא לחלוטין נ”ח\n"
     "של פוקימון.");
 
 static const u8 sHyperPotionDesc[] = _(
-    "מרפא נח של\n"
+    "מרפא נ”ח של\n"
     "פוקימון ב-002\n"
     "נקודות.");
 
 static const u8 sSuperPotionDesc[] = _(
-    "מרפא נח של\n"
+    "מרפא נ”ח של\n"
     "פוקימון ב-05\n"
     "נקודות.");
 
@@ -110,41 +110,41 @@ static const u8 sFullHealDesc[] = _(
 
 static const u8 sReviveDesc[] = _(
     "מחייה פוקימון\n"
-    "שהתעלף עם חצי נח.");
+    "שהתעלף עם חצי נ”ח.");
 
 static const u8 sMaxReviveDesc[] = _(
     "מחייה פוקימון\n"
-    "שהתעלף עם נח\n"
+    "שהתעלף עם נ”ח\n"
     "מלאים.");
 
 static const u8 sFreshWaterDesc[] = _(
     "מים מינרלים\n"
-    "שמחזירים נח\n"
+    "שמחזירים נ”ח\n"
     "ב-05 נקודות.");
 
 static const u8 sSodaPopDesc[] = _(
     "סודה פופ תוסס\n"
-    "שמחזיר נח\n"
+    "שמחזיר נ”ח\n"
     "ב-06 נקודות.");
 
 static const u8 sLemonadeDesc[] = _(
     "משקה מתוק מאוד\n"
-    "שמחזיר נח\n"
+    "שמחזיר נ”ח\n"
     "ב-08 נקודות.");
 
 static const u8 sMoomooMilkDesc[] = _(
     "חלב מזין\n"
-    "שמחזיר נח\n"
+    "שמחזיר נ”ח\n"
     "ב-001 נקודות.");
 
 static const u8 sEnergyPowderDesc[] = _(
     "אבקה מרירה\n"
-    "שמחזירה נח\n"
+    "שמחזירה נ”ח\n"
     "ב-05 נקודות.");
 
 static const u8 sEnergyRootDesc[] = _(
     "שורש מר\n"
-    "שמחזיר נח\n"
+    "שמחזיר נ”ח\n"
     "ב-002 נקודות.");
 
 static const u8 sHealPowderDesc[] = _(
@@ -207,7 +207,7 @@ static const u8 sWhiteFluteDesc[] = _(
 
 static const u8 sBerryJuiceDesc[] = _(
     "מיץ 001% טהור\n"
-    "שמחזיר נח\n"
+    "שמחזיר נ”ח\n"
     "ב-02 נקודות.");
 
 static const u8 sSacredAshDesc[] = _(
@@ -244,7 +244,7 @@ static const u8 sGreenShardDesc[] = _(
 
 // Vitamins
 static const u8 sHPUpDesc[] = _(
-    "מעלה את בסיס נח\n"
+    "מעלה את בסיס נ”ח\n"
     "של פוקימון אחד.");
 
 static const u8 sProteinDesc[] = _(
@@ -511,7 +511,7 @@ static const u8 sLeppaBerryDesc[] = _(
 
 static const u8 sOranBerryDesc[] = _(
     "פריט להחזקה\n"
-    "שמרפא 01 נח\n"
+    "שמרפא 01 נ”ח\n"
     "בקרב.");
 
 static const u8 sPersimBerryDesc[] = _(
@@ -526,32 +526,32 @@ static const u8 sLumBerryDesc[] = _(
 
 static const u8 sSitrusBerryDesc[] = _(
     "פריט להחזקה\n"
-    "שמרפא 03 נח\n"
+    "שמרפא 03 נ”ח\n"
     "בקרב.");
 
 static const u8 sFigyBerryDesc[] = _(
     "פריט להחזקה\n"
-    "שמחזיר נח אבל\n"
+    "שמחזיר נ”ח אבל\n"
     "עשוי לבלבל.");
 
 static const u8 sWikiBerryDesc[] = _(
     "פריט להחזקה\n"
-    "שמחזיר נח אבל\n"
+    "שמחזיר נ”ח אבל\n"
     "עשוי לבלבל.");
 
 static const u8 sMagoBerryDesc[] = _(
     "פריט להחזקה\n"
-    "שמחזיר נח אבל\n"
+    "שמחזיר נ”ח אבל\n"
     "עשוי לבלבל.");
 
 static const u8 sAguavBerryDesc[] = _(
     "פריט להחזקה\n"
-    "שמחזיר נח אבל\n"
+    "שמחזיר נ”ח אבל\n"
     "עשוי לבלבל.");
 
 static const u8 sIapapaBerryDesc[] = _(
     "פריט להחזקה\n"
-    "שמחזיר נח אבל\n"
+    "שמחזיר נ”ח אבל\n"
     "עשוי לבלבל.");
 
 static const u8 sRazzBerryDesc[] = _(
@@ -582,7 +582,7 @@ static const u8 sPinapBerryDesc[] = _(
 static const u8 sPomegBerryDesc[] = _(
     "גורם לפוקימון\n"
     "להתידד אבל מוריד\n"
-    "בסיס נח.");
+    "בסיס נ”ח.");
 
 static const u8 sKelpsyBerryDesc[] = _(
     "גורם לפוקימון\n"
@@ -803,7 +803,7 @@ static const u8 sMetalCoatDesc[] = _(
 static const u8 sLeftoversDesc[] = _(
     "פריט להחזקה\n"
     "שמחזיר בהדרגה\n"
-    "נח בקרב.");
+    "נ”ח בקרב.");
 
 static const u8 sDragonScaleDesc[] = _(
     "קשקש מוזר שמוחזק\n"

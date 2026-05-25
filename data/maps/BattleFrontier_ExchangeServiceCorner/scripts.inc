@@ -681,11 +681,11 @@ BattleFrontier_ExchangeServiceCorner_Text_CarbosDesc::
 	.string "של פוקימון אחד.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_HPUpDesc::
-	.string "מעלה את נח של פוקימון אחד.$"
+	.string "מעלה את נ”ח של פוקימון אחד.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc::
 	.string "פריט להחזקה שמחזיר בהדרגה\n"
-	.string "נח בקרב.$"
+	.string "נ”ח בקרב.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc::
 	.string "פריט להחזקה שמחזיר כל נתון\n"
