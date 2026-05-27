@@ -5770,7 +5770,17 @@ static u16 SetSelectedWordGroup_GroupMode(u16 groupId)
     if (groupId == EC_GROUP_POKEMON || groupId == EC_GROUP_POKEMON_NATIONAL
      || groupId == EC_GROUP_MOVE_1  || groupId == EC_GROUP_MOVE_2)
     {
-        list = gEasyChatGroups[groupId].wordData.valueList;
+        if (groupId == EC_GROUP_POKEMON_NATIONAL)
+        {
+            list = (gSaveBlock2Ptr->optionsSpeciesNames == 1)
+                 ? gEasyChatGroup_Pokemon2_Translit
+                 : gEasyChatGroup_Pokemon2_Literal;
+        }
+        else 
+        {
+            list = gEasyChatGroups[groupId].wordData.valueList;
+        }
+        
         for (i = 0, totalWords = 0; i < numWords; i++)
         {
             if (IsEasyChatIndexAndGroupUnlocked(list[i], groupId))

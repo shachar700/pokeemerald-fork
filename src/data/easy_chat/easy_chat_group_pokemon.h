@@ -1,3 +1,4 @@
+// hoenn dex
 const u16 gEasyChatGroup_Pokemon[] = {
     SPECIES_ABRA,
     SPECIES_ABSOL,
