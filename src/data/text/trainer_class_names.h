@@ -1,4 +1,4 @@
-const u8 gTrainerClassNames[][13] = {
+const u8 gTrainerClassNames[][14] = {
     [TRAINER_CLASS_PKMN_TRAINER_1] = _("מאמן פוקימון"),
     [TRAINER_CLASS_PKMN_TRAINER_2] = _("מאמן פוקימון"),
     [TRAINER_CLASS_HIKER] = _("מטפס"),
@@ -50,6 +50,7 @@ const u8 gTrainerClassNames[][13] = {
     [TRAINER_CLASS_COOLTRAINER_2] = _("מאמנת מגניבה"),
     [TRAINER_CLASS_MAGMA_ADMIN] = _("מנהל מגמה"),
     [TRAINER_CLASS_RIVAL] = _("מאמן פוקימון"),
+    [TRAINER_CLASS_RIVAL_FEMALE] = _("מאמנת פוקימון"),
     [TRAINER_CLASS_BUG_CATCHER] = _("לוכד חרקים"),
     [TRAINER_CLASS_PKMN_RANGER] = _("שומר פוקימון"),
     [TRAINER_CLASS_MAGMA_LEADER] = _("מנהיג מגמה"),

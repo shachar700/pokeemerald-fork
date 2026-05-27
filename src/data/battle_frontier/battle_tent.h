@@ -512,9 +512,9 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     [SLATEPORT_TENT_TRAINER_JOLIE] = {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
         .trainerName = _("ג'ולי"),
-        .speechBefore = {EC_WORD_WHAT, EC_WORD_I, EC_WORD_IWILL, EC_WORD_TOMORROW, EC_WORD_QUES},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_LIKE, EC_WORD_IT_S, EC_WORD_FRIDAY, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_LIKE, EC_WORD_IT_S, EC_WORD_MONDAY, EC_WORD_ELLIPSIS},
+        .speechBefore = {EC_WORD_WHAT, EC_WORD_I, EC_WORD_IWILL, EC_WORD_TOMORROW, EC_WORD_QUES}, // מה אני אהיה מחר ?
+        .speechWin = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_LIKE, EC_WORD_IT_S, EC_WORD_FRIDAY, EC_WORD_EXCL}, // אני מרגיש כאילו זה יום שישי !
+        .speechLose = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_LIKE, EC_WORD_IT_S, EC_WORD_MONDAY, EC_WORD_ELLIPSIS}, // אני מרגיש כאילו זה יום שני...
         .monSet = gSlateportBattleTentTrainerMons_Jolie
     },
     [SLATEPORT_TENT_TRAINER_MALACHI] = {
