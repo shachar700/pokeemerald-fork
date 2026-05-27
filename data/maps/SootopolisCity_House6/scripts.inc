@@ -35,7 +35,7 @@ SootopolisCity_House6_Text_FirstGuestInWhileTakeDoll:
 	.string "שלום! את{EMIT_HEY} האורח{ADD_TAF} הראשו{SWAP_NUN}{ADD_HEY} שלנו\n"
 	.string "מזה זמן רב.\p"
 	.string "הבאת אור ליום שלי, אז אני\n"
-	.string "אתן לך בובת ויילמר ענקית!$"
+	.string "אתן לך בובת וויילמר ענקית!$"
 
 SootopolisCity_House6_Text_TakeGoodCareOfIt:
 	.string "תשמ{EMIT_VAV}ר{ADD_YUD} עליה היטב!$"

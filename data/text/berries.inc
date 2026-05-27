@@ -177,7 +177,7 @@ Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis:
 
 Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation:
 	.string "בעת שצמחי פרי יער גדלים,\n"
-	.string "השקה אותם עם מזלף ויילמר.\p"
+	.string "השקה אותם עם מזלף וויילמר.\p"
 	.string "או, דבר נוסף.\p"
 	.string "אם לא תקטוף פירות יער זמן מה,\n"
 	.string "הם ייפלו לקרקע.\l"

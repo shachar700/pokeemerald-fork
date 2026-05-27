@@ -445,7 +445,7 @@ static const u8 sWoodMailDesc[] = _(
 
 static const u8 sWaveMailDesc[] = _(
     "דואר עם הדפס\n"
-    "ויילמר שפוקימון\n"
+    "וויילמר שפוקימון\n"
     "יכול להחזיק.");
 
 static const u8 sBeadMailDesc[] = _(
@@ -995,8 +995,7 @@ static const u8 sContestPassDesc[] = _(
 
 static const u8 sWailmerPailDesc[] = _(
     "כלי המשמש להשקיית\n"
-    "פירות יער\n"
-    "וצמחים.");
+    "פירות יער וצמחים.");
 
 static const u8 sDevonGoodsDesc[] = _(
     "חבילה המכילה\n"
@@ -1051,7 +1050,7 @@ static const u8 sScannerDesc[] = _(
 static const u8 sGoGogglesDesc[] = _(
     "משקפי מגן נחמדים\n"
     "שמגנים על העיניים\n"
-    "מפני סופות חול במדבר.");
+    "מפני סופת חול במדבר.");
 
 static const u8 sMeteoriteDesc[] = _(
     "מטאוריט שנמצא\n"

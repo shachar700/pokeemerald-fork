@@ -237,7 +237,7 @@ BerryTree_Text_BerryLeftUnpicked:
 
 BerryTree_Text_WantToWater:
 	.string "רוצה להשקות את {STR_VAR_1} עם\n"
-	.string "המזלף ויילמר?$"
+	.string "המזלף ויילמרו?$"
 
 BerryTree_Text_WateredTheBerry:
 	.string "{PLAYER} השק{ADD_TAF}ה את {STR_VAR_1}.$"
