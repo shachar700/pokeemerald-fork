@@ -1934,10 +1934,10 @@ static u16 HandleEasyChatInput_Keyboard(void)
         return MoveKeyboardCursor(INPUT_DOWN);
 
     if (JOY_REPEAT(DPAD_LEFT))
-        return MoveKeyboardCursor(INPUT_LEFT);
+        return MoveKeyboardCursor(INPUT_RIGHT);
 
     if (JOY_REPEAT(DPAD_RIGHT))
-        return MoveKeyboardCursor(INPUT_RIGHT);
+        return MoveKeyboardCursor(INPUT_LEFT);
 
     return ECFUNC_NONE;
 }
@@ -2460,12 +2460,16 @@ static int MoveKeyboardCursor_Alphabet(u32 input)
         return ECFUNC_UPDATE_KEYBOARD_CURSOR;
     case INPUT_RIGHT:
         sEasyChatScreen->keyboardColumn++;
+        if (sEasyChatScreen->keyboardRow >= 2 && sEasyChatScreen->keyboardColumn == 2)
+            sEasyChatScreen->keyboardColumn++;
         if (IsSelectedKeyboardIndexInvalid())
             SetKeyboardCursorInButtonWindow();
 
         return ECFUNC_UPDATE_KEYBOARD_CURSOR;
     case INPUT_LEFT:
         sEasyChatScreen->keyboardColumn--;
+        if (sEasyChatScreen->keyboardRow >= 2 && sEasyChatScreen->keyboardColumn == 2)
+            sEasyChatScreen->keyboardColumn--;
         if (sEasyChatScreen->keyboardColumn < 0)
             SetKeyboardCursorInButtonWindow();
 
@@ -2493,11 +2497,11 @@ static int MoveKeyboardCursor_ButtonWindow(u32 input)
             sEasyChatScreen->keyboardRow = 0;
 
         return ECFUNC_UPDATE_KEYBOARD_CURSOR;
-    case INPUT_LEFT:
+    case INPUT_RIGHT:
         sEasyChatScreen->keyboardColumn = 0;
         sEasyChatScreen->keyboardRow++;
         return ECFUNC_UPDATE_KEYBOARD_CURSOR;
-    case INPUT_RIGHT:
+    case INPUT_LEFT:
         sEasyChatScreen->keyboardRow++;
         SetKeyboardCursorToLastColumn();
         return ECFUNC_UPDATE_KEYBOARD_CURSOR;
@@ -2647,6 +2651,7 @@ static u8 GetLastAlphabetColumn(u8 row)
     default:
         return NUM_ALPHABET_COLUMNS - 1;
     case 1:
+    case 3:
         return NUM_ALPHABET_COLUMNS - 2; // At 6 letters, only the 2nd row (index 1) has less than the max columns
                                          // The 3rd and 4th row have 7 letters, the 1st row has 6 letters and 'Others'
     }
@@ -4761,17 +4766,17 @@ static void SetRectangleCursorPos_AlphabetMode(s8 column, s8 row)
     if (column != -1)
     {
         y = row * 16 + 96;
-        x = 32;
+        x = 166;
         if (column == NUM_ALPHABET_COLUMNS - 1 && row == 0)
         {
             // Cursor is on 'Others'
-            x = 158;
+            x = 48;
             anim = RECTCURSOR_ANIM_ON_OTHERS;
         }
         else
         {
             // Cursor is on a letter
-            x += sAlphabetKeyboardColumnOffsets[(u8)column < NUM_ALPHABET_COLUMNS ? column : 0];
+            x -= sAlphabetKeyboardColumnOffsets[(u8)column < NUM_ALPHABET_COLUMNS ? column : 0];
             anim = RECTCURSOR_ANIM_ON_LETTER;
         }
 
