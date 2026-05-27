@@ -26,9 +26,9 @@
 const struct EasyChatGroup gEasyChatGroups[] = {
     [EC_GROUP_POKEMON] =
     {
-        .wordData = {.valueList = gEasyChatGroup_Pokemon},
-        .numWords = ARRAY_COUNT(gEasyChatGroup_Pokemon),
-        .numEnabledWords = ARRAY_COUNT(gEasyChatGroup_Pokemon),
+        .wordData = {.valueList = gEasyChatGroup_Pokemon_Literal},
+        .numWords = ARRAY_COUNT(gEasyChatGroup_Pokemon_Literal),
+        .numEnabledWords = ARRAY_COUNT(gEasyChatGroup_Pokemon_Literal),
     },
     [EC_GROUP_TRAINER] =
     {

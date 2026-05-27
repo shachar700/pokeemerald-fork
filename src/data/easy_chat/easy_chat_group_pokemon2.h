@@ -1,4 +1,3 @@
-//national dex
 const u16 gEasyChatGroup_Pokemon2_Literal[] = {
     SPECIES_SUICUNE,
 	SPECIES_VAPOREON,
