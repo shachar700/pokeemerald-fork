@@ -393,5 +393,5 @@ OldaleTown_Text_BrendanLetsGoBack:
 
 OldaleTown_Text_TownSign:
 	.string "עיירת אולדייל\n"
-	.string "“היכן שדברים מתחילים דלים.”$"
+	.string "”היכן שדברים מתחילים דלים.“$"
 
