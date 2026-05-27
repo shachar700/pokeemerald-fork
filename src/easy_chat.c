@@ -2414,7 +2414,7 @@ static int MoveKeyboardCursor_GroupNames(u32 input)
             return funcId;
         }
         break;
-    case INPUT_LEFT:
+    case INPUT_RIGHT:
         if (sEasyChatScreen->keyboardColumn < 1)
         {
             sEasyChatScreen->keyboardColumn++;
@@ -2426,7 +2426,7 @@ static int MoveKeyboardCursor_GroupNames(u32 input)
             SetKeyboardCursorInButtonWindow();
         }
         return ECFUNC_UPDATE_KEYBOARD_CURSOR;
-    case INPUT_RIGHT:
+    case INPUT_LEFT:
         if (sEasyChatScreen->keyboardColumn)
             sEasyChatScreen->keyboardColumn--;
         else
