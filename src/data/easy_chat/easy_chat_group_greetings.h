@@ -42,256 +42,297 @@ const u8 gEasyChatWord_ComeOver[] = _("בוא לכאן");
 const u8 gEasyChatWord_CountOn[] = _("סמוך על");
 
 const struct EasyChatWordInfo gEasyChatGroup_Greetings[] = {
-    [EC_INDEX(EC_WORD_THANKS)] =
-    {
-        .text = gEasyChatWord_Thanks,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_APOLOGIZE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_YES)] =
-    {
-        .text = gEasyChatWord_Yes,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_APPRECIATE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HERE_GOES)] =
-    {
-        .text = gEasyChatWord_HereGoes,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_BYE_BYE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HERE_I_COME)] =
-    {
-        .text = gEasyChatWord_HereICome,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_COME_OVER),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HERE_IT_IS)] =
-    {
-        .text = gEasyChatWord_HereItIs,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CONGRATS),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_YEAH)] =
-    {
-        .text = gEasyChatWord_Yeah,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_COUNT_ON),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_WELCOME)] =
-    {
-        .text = gEasyChatWord_Welcome,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EXCUSE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_OI)] =
-    {
-        .text = gEasyChatWord_Oi,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EXCUSE_ME),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HOW_DO)] =
-    {
-        .text = gEasyChatWord_HowDo,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FORGIVE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_CONGRATS)] =
-    {
-        .text = gEasyChatWord_Congrats,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GIVE_ME),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_GIVE_ME)] =
-    {
-        .text = gEasyChatWord_GiveMe,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GO_AHEAD),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_SORRY)] =
-    {
-        .text = gEasyChatWord_Sorry,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GOOD_BYE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_APOLOGIZE)] =
-    {
-        .text = gEasyChatWord_Apologize,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HELLO),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_FORGIVE)] =
-    {
-        .text = gEasyChatWord_Forgive,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HERE_GOES),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HEY_THERE)] =
-    {
-        .text = gEasyChatWord_HeyThere,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HERE_I_COME),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HELLO)] =
-    {
-        .text = gEasyChatWord_Hello,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HERE_IT_IS),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_GOOD_BYE)] =
-    {
-        .text = gEasyChatWord_GoodBye,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HEY),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_THANK_YOU)] =
-    {
-        .text = gEasyChatWord_ThankYou,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HEY_THERE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_I_VE_ARRIVED)] =
-    {
-        .text = gEasyChatWord_IveArrived,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HEY_QUES),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_PARDON)] =
-    {
-        .text = gEasyChatWord_Pardon,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HI),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_EXCUSE)] =
-    {
-        .text = gEasyChatWord_Excuse,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HOO_HAH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_SEE_YA)] =
-    {
-        .text = gEasyChatWord_SeeYa,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HOW_DO),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_EXCUSE_ME)] =
-    {
-        .text = gEasyChatWord_ExcuseMe,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HUH_QUES),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_WELL_THEN)] =
+[0] =
     {
         .text = gEasyChatWord_WellThen,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_I_VE_ARRIVED),
+        .alphabeticalOrder = 0,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_GO_AHEAD)] =
+
+[1] =
     {
-        .text = gEasyChatWord_GoAhead,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LISTENING),
+        .text = gEasyChatWord_HowDo,
+        .alphabeticalOrder = 1,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_APPRECIATE)] =
-    {
-        .text = gEasyChatWord_Appreciate,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MEET_YOU),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HEY_QUES)] =
-    {
-        .text = gEasyChatWord_HeyQues,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_NO),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_WHAT_S_UP_QUES)] =
-    {
-        .text = gEasyChatWord_WhatsUpQues,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OI),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HUH_QUES)] =
-    {
-        .text = gEasyChatWord_HuhQues,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_PARDON),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_NO)] =
-    {
-        .text = gEasyChatWord_No,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SEE_YA),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HI)] =
-    {
-        .text = gEasyChatWord_Hi,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SMELL),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_YEAH_YEAH)] =
-    {
-        .text = gEasyChatWord_YeahYeah,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SORRY),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_BYE_BYE)] =
-    {
-        .text = gEasyChatWord_ByeBye,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_THANK_YOU),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_MEET_YOU)] =
-    {
-        .text = gEasyChatWord_MeetYou,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_THANKS),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HEY)] =
-    {
-        .text = gEasyChatWord_Hey,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WELCOME),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_SMELL)] =
-    {
-        .text = gEasyChatWord_Smell,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WELL_THEN),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_LISTENING)] =
-    {
-        .text = gEasyChatWord_Listening,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WHAT_S_UP_QUES),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HOO_HAH)] =
-    {
-        .text = gEasyChatWord_HooHah,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_YAHOO),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_YAHOO)] =
-    {
-        .text = gEasyChatWord_Yahoo,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_YEAH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_YO)] =
-    {
-        .text = gEasyChatWord_Yo,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_YEAH_YEAH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_COME_OVER)] =
+
+[2] =
     {
         .text = gEasyChatWord_ComeOver,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_YES),
+        .alphabeticalOrder = 2,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_COUNT_ON)] =
+
+[3] =
+    {
+        .text = gEasyChatWord_ByeBye,
+        .alphabeticalOrder = 3,
+        .enabled = TRUE,
+    },
+
+[4] =
+    {
+        .text = gEasyChatWord_Welcome,
+        .alphabeticalOrder = 4,
+        .enabled = TRUE,
+    },
+
+[5] =
+    {
+        .text = gEasyChatWord_HuhQues,
+        .alphabeticalOrder = 5,
+        .enabled = TRUE,
+    },
+
+[6] =
+    {
+        .text = gEasyChatWord_IveArrived,
+        .alphabeticalOrder = 6,
+        .enabled = TRUE,
+    },
+
+[7] =
+    {
+        .text = gEasyChatWord_HooHah,
+        .alphabeticalOrder = 7,
+        .enabled = TRUE,
+    },
+
+[8] =
+    {
+        .text = gEasyChatWord_Oi,
+        .alphabeticalOrder = 8,
+        .enabled = TRUE,
+    },
+
+[9] =
+    {
+        .text = gEasyChatWord_Hi,
+        .alphabeticalOrder = 9,
+        .enabled = TRUE,
+    },
+
+[10] =
+    {
+        .text = gEasyChatWord_Hey,
+        .alphabeticalOrder = 10,
+        .enabled = TRUE,
+    },
+
+[11] =
+    {
+        .text = gEasyChatWord_HeyThere,
+        .alphabeticalOrder = 11,
+        .enabled = TRUE,
+    },
+
+[12] =
+    {
+        .text = gEasyChatWord_HeyQues,
+        .alphabeticalOrder = 12,
+        .enabled = TRUE,
+    },
+
+[13] =
+    {
+        .text = gEasyChatWord_HereICome,
+        .alphabeticalOrder = 13,
+        .enabled = TRUE,
+    },
+
+[14] =
+    {
+        .text = gEasyChatWord_HereItIs,
+        .alphabeticalOrder = 14,
+        .enabled = TRUE,
+    },
+
+[15] =
+    {
+        .text = gEasyChatWord_HereGoes,
+        .alphabeticalOrder = 15,
+        .enabled = TRUE,
+    },
+
+[16] =
+    {
+        .text = gEasyChatWord_Yahoo,
+        .alphabeticalOrder = 16,
+        .enabled = TRUE,
+    },
+
+[17] =
+    {
+        .text = gEasyChatWord_Yo,
+        .alphabeticalOrder = 17,
+        .enabled = TRUE,
+    },
+
+[18] =
+    {
+        .text = gEasyChatWord_Yes,
+        .alphabeticalOrder = 18,
+        .enabled = TRUE,
+    },
+
+[19] =
+    {
+        .text = gEasyChatWord_Yeah,
+        .alphabeticalOrder = 19,
+        .enabled = TRUE,
+    },
+
+[20] =
+    {
+        .text = gEasyChatWord_YeahYeah,
+        .alphabeticalOrder = 20,
+        .enabled = TRUE,
+    },
+
+[21] =
+    {
+        .text = gEasyChatWord_No,
+        .alphabeticalOrder = 21,
+        .enabled = TRUE,
+    },
+
+[22] =
+    {
+        .text = gEasyChatWord_GoodBye,
+        .alphabeticalOrder = 22,
+        .enabled = TRUE,
+    },
+
+[23] =
+    {
+        .text = gEasyChatWord_Forgive,
+        .alphabeticalOrder = 23,
+        .enabled = TRUE,
+    },
+
+[24] =
+    {
+        .text = gEasyChatWord_WhatsUpQues,
+        .alphabeticalOrder = 24,
+        .enabled = TRUE,
+    },
+
+[25] =
+    {
+        .text = gEasyChatWord_Congrats,
+        .alphabeticalOrder = 25,
+        .enabled = TRUE,
+    },
+
+[26] =
+    {
+        .text = gEasyChatWord_Appreciate,
+        .alphabeticalOrder = 26,
+        .enabled = TRUE,
+    },
+
+[27] =
+    {
+        .text = gEasyChatWord_Listening,
+        .alphabeticalOrder = 27,
+        .enabled = TRUE,
+    },
+
+[28] =
+    {
+        .text = gEasyChatWord_Apologize,
+        .alphabeticalOrder = 28,
+        .enabled = TRUE,
+    },
+
+[29] =
+    {
+        .text = gEasyChatWord_MeetYou,
+        .alphabeticalOrder = 29,
+        .enabled = TRUE,
+    },
+
+[30] =
+    {
+        .text = gEasyChatWord_SeeYa,
+        .alphabeticalOrder = 30,
+        .enabled = TRUE,
+    },
+
+[31] =
+    {
+        .text = gEasyChatWord_Sorry,
+        .alphabeticalOrder = 31,
+        .enabled = TRUE,
+    },
+
+[32] =
+    {
+        .text = gEasyChatWord_Pardon,
+        .alphabeticalOrder = 32,
+        .enabled = TRUE,
+    },
+
+[33] =
+    {
+        .text = gEasyChatWord_Excuse,
+        .alphabeticalOrder = 33,
+        .enabled = TRUE,
+    },
+
+[34] =
+    {
+        .text = gEasyChatWord_ExcuseMe,
+        .alphabeticalOrder = 34,
+        .enabled = TRUE,
+    },
+
+[35] =
     {
         .text = gEasyChatWord_CountOn,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_YO),
+        .alphabeticalOrder = 35,
+        .enabled = TRUE,
+    },
+
+[36] =
+    {
+        .text = gEasyChatWord_GoAhead,
+        .alphabeticalOrder = 36,
+        .enabled = TRUE,
+    },
+
+[37] =
+    {
+        .text = gEasyChatWord_Smell,
+        .alphabeticalOrder = 37,
+        .enabled = TRUE,
+    },
+
+[38] =
+    {
+        .text = gEasyChatWord_Hello,
+        .alphabeticalOrder = 38,
+        .enabled = TRUE,
+    },
+
+[39] =
+    {
+        .text = gEasyChatWord_Thanks,
+        .alphabeticalOrder = 39,
+        .enabled = TRUE,
+    },
+
+[40] =
+    {
+        .text = gEasyChatWord_ThankYou,
+        .alphabeticalOrder = 40,
+        .enabled = TRUE,
+    },
+
+[41] =
+    {
+        .text = gEasyChatWord_GiveMe,
+        .alphabeticalOrder = 41,
         .enabled = TRUE,
     },
 };

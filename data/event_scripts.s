@@ -897,8 +897,8 @@ gText_ComeBackWithSecretPower::
 
 gText_PokerusExplanation::
 	.string "ייתכן שהפוקימון שלך נגוע\n"
-	.string "בפוקיוירוס.\p"
-	.string "מעט ידוע על הפוקיוירוס\n"
+	.string "בפוקירוס.\p"
+	.string "מעט ידוע על הפוקירוס\n"
 	.string "מלבד העובדה שאלה צורות חיים \l"
 	.string "מיקרוסקופיים שנצמדות לפוקימון.\p"
 	.string "בזמן הנגע, נאמר שפוקימוןo\n"

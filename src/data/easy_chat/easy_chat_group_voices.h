@@ -63,382 +63,444 @@ const u8 gEasyChatWord_Gwah[] = _("גוואה");
 const u8 gEasyChatWord_Wahahaha[] = _("וואהאהאהא");
 
 const struct EasyChatWordInfo gEasyChatGroup_Voices[] = {
-    [EC_INDEX(EC_WORD_EXCL)] =
-    {
-        .text = gEasyChatWord_Excl,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EXCL),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_EXCL_EXCL)] =
-    {
-        .text = gEasyChatWord_ExclExcl,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EXCL_EXCL),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_QUES_EXCL)] =
-    {
-        .text = gEasyChatWord_QuesExcl,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_DASH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_QUES)] =
-    {
-        .text = gEasyChatWord_Ques,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_DASH_DASH_DASH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_ELLIPSIS)] =
-    {
-        .text = gEasyChatWord_Ellipsis,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ELLIPSIS),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_ELLIPSIS_EXCL)] =
-    {
-        .text = gEasyChatWord_EllipsisExcl,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ELLIPSIS_EXCL),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS)] =
-    {
-        .text = gEasyChatWord_EllipsisEllipsisEllipsis,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_DASH)] =
+[0] =
     {
         .text = gEasyChatWord_Dash,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_QUES),
+        .alphabeticalOrder = 0,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_DASH_DASH_DASH)] =
+
+[1] =
     {
         .text = gEasyChatWord_DashDashDash,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_QUES_EXCL),
+        .alphabeticalOrder = 1,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_UH_OH)] =
+
+[2] =
     {
-        .text = gEasyChatWord_UhOh,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_AGREE),
+        .text = gEasyChatWord_Excl,
+        .alphabeticalOrder = 2,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_WAAAH)] =
+
+[3] =
     {
-        .text = gEasyChatWord_Waaah,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_AHAHA),
+        .text = gEasyChatWord_ExclExcl,
+        .alphabeticalOrder = 3,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_AHAHA)] =
+
+[4] =
     {
-        .text = gEasyChatWord_Ahaha,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_AIYEEH),
+        .text = gEasyChatWord_Ques,
+        .alphabeticalOrder = 4,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_OH_QUES)] =
+
+[5] =
     {
-        .text = gEasyChatWord_OhQues,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ARRGH),
+        .text = gEasyChatWord_QuesExcl,
+        .alphabeticalOrder = 5,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_NOPE)] =
+
+[6] =
     {
-        .text = gEasyChatWord_Nope,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_AWW),
+        .text = gEasyChatWord_Ellipsis,
+        .alphabeticalOrder = 6,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_URGH)] =
+
+[7] =
     {
-        .text = gEasyChatWord_Urgh,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CRIES),
+        .text = gEasyChatWord_EllipsisExcl,
+        .alphabeticalOrder = 7,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_HMM)] =
+
+[8] =
     {
-        .text = gEasyChatWord_Hmm,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CRY),
+        .text = gEasyChatWord_EllipsisEllipsisEllipsis,
+        .alphabeticalOrder = 8,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_WHOAH)] =
-    {
-        .text = gEasyChatWord_Whoah,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EEK),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_WROOOAAR_EXCL)] =
-    {
-        .text = gEasyChatWord_WroooaarExcl,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EH_QUES),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_WOW)] =
-    {
-        .text = gEasyChatWord_Wow,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EHEHE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_GIGGLE)] =
-    {
-        .text = gEasyChatWord_Giggle,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FUFUFU),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_SIGH)] =
-    {
-        .text = gEasyChatWord_Sigh,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GIGGLE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_UNBELIEVABLE)] =
-    {
-        .text = gEasyChatWord_Unbelievable,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GRAAAH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_CRIES)] =
-    {
-        .text = gEasyChatWord_Cries,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GWAH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_AGREE)] =
-    {
-        .text = gEasyChatWord_Agree,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_GWAHAHAHA),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_EH_QUES)] =
+
+[9] =
     {
         .text = gEasyChatWord_EhQues,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HAH),
+        .alphabeticalOrder = 9,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_CRY)] =
+
+[10] =
     {
-        .text = gEasyChatWord_Cry,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HAHAHA),
+        .text = gEasyChatWord_Ahaha,
+        .alphabeticalOrder = 10,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_EHEHE)] =
+
+[11] =
     {
-        .text = gEasyChatWord_Ehehe,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HEH),
+        .text = gEasyChatWord_UhOh,
+        .alphabeticalOrder = 11,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_OI_OI_OI)] =
-    {
-        .text = gEasyChatWord_OiOiOi,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HEHE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_OH_YEAH)] =
-    {
-        .text = gEasyChatWord_OhYeah,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HEHEHE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_OH)] =
-    {
-        .text = gEasyChatWord_Oh,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HIYAH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_OOPS)] =
-    {
-        .text = gEasyChatWord_Oops,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HMM),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_SHOCKED)] =
-    {
-        .text = gEasyChatWord_Shocked,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HOHOHO),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_EEK)] =
-    {
-        .text = gEasyChatWord_Eek,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HUMPH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_GRAAAH)] =
-    {
-        .text = gEasyChatWord_Graaah,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LALALA),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_GWAHAHAHA)] =
-    {
-        .text = gEasyChatWord_Gwahahaha,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LOL),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_WAY)] =
-    {
-        .text = gEasyChatWord_Way,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MMM),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_TCH)] =
-    {
-        .text = gEasyChatWord_Tch,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MUFUFU),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HEHE)] =
-    {
-        .text = gEasyChatWord_Hehe,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_NOPE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HAH)] =
-    {
-        .text = gEasyChatWord_Hah,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_YUP)] =
-    {
-        .text = gEasyChatWord_Yup,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OH_DEAR),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HAHAHA)] =
-    {
-        .text = gEasyChatWord_Hahaha,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OH_YEAH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_AIYEEH)] =
-    {
-        .text = gEasyChatWord_Aiyeeh,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OH_KAY),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HIYAH)] =
-    {
-        .text = gEasyChatWord_Hiyah,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OH_QUES),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_FUFUFU)] =
-    {
-        .text = gEasyChatWord_Fufufu,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OI_OI_OI),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_LOL)] =
-    {
-        .text = gEasyChatWord_Lol,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OKAY),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_SNORT)] =
-    {
-        .text = gEasyChatWord_Snort,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_OOPS),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HUMPH)] =
-    {
-        .text = gEasyChatWord_Humph,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SHOCKED),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HEHEHE)] =
-    {
-        .text = gEasyChatWord_Hehehe,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SIGH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HEH)] =
-    {
-        .text = gEasyChatWord_Heh,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SNORT),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HOHOHO)] =
-    {
-        .text = gEasyChatWord_Hohoho,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TCH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_UH_HUH)] =
+
+[12] =
     {
         .text = gEasyChatWord_UhHuh,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_UH_HUH),
+        .alphabeticalOrder = 12,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_OH_DEAR)] =
+
+[13] =
+    {
+        .text = gEasyChatWord_Oh,
+        .alphabeticalOrder = 13,
+        .enabled = TRUE,
+    },
+
+[14] =
     {
         .text = gEasyChatWord_OhDear,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_UH_OH),
+        .alphabeticalOrder = 14,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_ARRGH)] =
+
+[15] =
     {
-        .text = gEasyChatWord_Arrgh,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_UNBELIEVABLE),
+        .text = gEasyChatWord_OhYeah,
+        .alphabeticalOrder = 15,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_MUFUFU)] =
+
+[16] =
     {
-        .text = gEasyChatWord_Mufufu,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_URGH),
+        .text = gEasyChatWord_OhQues,
+        .alphabeticalOrder = 16,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_MMM)] =
-    {
-        .text = gEasyChatWord_Mmm,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WAAAH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_OH_KAY)] =
-    {
-        .text = gEasyChatWord_OhKay,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WAHAHAHA),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_OKAY)] =
-    {
-        .text = gEasyChatWord_Okay,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WAY),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_LALALA)] =
-    {
-        .text = gEasyChatWord_Lalala,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WHOAH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_YAY)] =
-    {
-        .text = gEasyChatWord_Yay,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WOW),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_AWW)] =
+
+[17] =
     {
         .text = gEasyChatWord_Aww,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WOWEE),
+        .alphabeticalOrder = 17,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_WOWEE)] =
+
+[18] =
     {
-        .text = gEasyChatWord_Wowee,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WROOOAAR_EXCL),
+        .text = gEasyChatWord_OiOiOi,
+        .alphabeticalOrder = 18,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_GWAH)] =
+
+[19] =
+    {
+        .text = gEasyChatWord_Oops,
+        .alphabeticalOrder = 19,
+        .enabled = TRUE,
+    },
+
+[20] =
+    {
+        .text = gEasyChatWord_Okay,
+        .alphabeticalOrder = 20,
+        .enabled = TRUE,
+    },
+
+[21] =
+    {
+        .text = gEasyChatWord_OhKay,
+        .alphabeticalOrder = 21,
+        .enabled = TRUE,
+    },
+
+[22] =
+    {
+        .text = gEasyChatWord_Urgh,
+        .alphabeticalOrder = 22,
+        .enabled = TRUE,
+    },
+
+[23] =
+    {
+        .text = gEasyChatWord_Arrgh,
+        .alphabeticalOrder = 23,
+        .enabled = TRUE,
+    },
+
+[24] =
+    {
+        .text = gEasyChatWord_Ehehe,
+        .alphabeticalOrder = 24,
+        .enabled = TRUE,
+    },
+
+[25] =
+    {
+        .text = gEasyChatWord_Aiyeeh,
+        .alphabeticalOrder = 25,
+        .enabled = TRUE,
+    },
+
+[26] =
+    {
+        .text = gEasyChatWord_Eek,
+        .alphabeticalOrder = 26,
+        .enabled = TRUE,
+    },
+
+[27] =
+    {
+        .text = gEasyChatWord_Sigh,
+        .alphabeticalOrder = 27,
+        .enabled = TRUE,
+    },
+
+[28] =
+    {
+        .text = gEasyChatWord_Cries,
+        .alphabeticalOrder = 28,
+        .enabled = TRUE,
+    },
+
+[29] =
+    {
+        .text = gEasyChatWord_Cry,
+        .alphabeticalOrder = 29,
+        .enabled = TRUE,
+    },
+
+[30] =
     {
         .text = gEasyChatWord_Gwah,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_YAY),
+        .alphabeticalOrder = 30,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_WAHAHAHA)] =
+
+[31] =
+    {
+        .text = gEasyChatWord_Gwahahaha,
+        .alphabeticalOrder = 31,
+        .enabled = TRUE,
+    },
+
+[32] =
+    {
+        .text = gEasyChatWord_Graaah,
+        .alphabeticalOrder = 32,
+        .enabled = TRUE,
+    },
+
+[33] =
+    {
+        .text = gEasyChatWord_Way,
+        .alphabeticalOrder = 33,
+        .enabled = TRUE,
+    },
+
+[34] =
+    {
+        .text = gEasyChatWord_Hah,
+        .alphabeticalOrder = 34,
+        .enabled = TRUE,
+    },
+
+[35] =
+    {
+        .text = gEasyChatWord_Hahaha,
+        .alphabeticalOrder = 35,
+        .enabled = TRUE,
+    },
+
+[36] =
+    {
+        .text = gEasyChatWord_Humph,
+        .alphabeticalOrder = 36,
+        .enabled = TRUE,
+    },
+
+[37] =
+    {
+        .text = gEasyChatWord_Hohoho,
+        .alphabeticalOrder = 37,
+        .enabled = TRUE,
+    },
+
+[38] =
+    {
+        .text = gEasyChatWord_Heh,
+        .alphabeticalOrder = 38,
+        .enabled = TRUE,
+    },
+
+[39] =
+    {
+        .text = gEasyChatWord_Hehe,
+        .alphabeticalOrder = 39,
+        .enabled = TRUE,
+    },
+
+[40] =
+    {
+        .text = gEasyChatWord_Hehehe,
+        .alphabeticalOrder = 40,
+        .enabled = TRUE,
+    },
+
+[41] =
+    {
+        .text = gEasyChatWord_Hiyah,
+        .alphabeticalOrder = 41,
+        .enabled = TRUE,
+    },
+
+[42] =
+    {
+        .text = gEasyChatWord_Hmm,
+        .alphabeticalOrder = 42,
+        .enabled = TRUE,
+    },
+
+[43] =
+    {
+        .text = gEasyChatWord_Waaah,
+        .alphabeticalOrder = 43,
+        .enabled = TRUE,
+    },
+
+[44] =
+    {
+        .text = gEasyChatWord_Whoah,
+        .alphabeticalOrder = 44,
+        .enabled = TRUE,
+    },
+
+[45] =
     {
         .text = gEasyChatWord_Wahahaha,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_YUP),
+        .alphabeticalOrder = 45,
+        .enabled = TRUE,
+    },
+
+[46] =
+    {
+        .text = gEasyChatWord_Wow,
+        .alphabeticalOrder = 46,
+        .enabled = TRUE,
+    },
+
+[47] =
+    {
+        .text = gEasyChatWord_Wowee,
+        .alphabeticalOrder = 47,
+        .enabled = TRUE,
+    },
+
+[48] =
+    {
+        .text = gEasyChatWord_Snort,
+        .alphabeticalOrder = 48,
+        .enabled = TRUE,
+    },
+
+[49] =
+    {
+        .text = gEasyChatWord_Tch,
+        .alphabeticalOrder = 49,
+        .enabled = TRUE,
+    },
+
+[50] =
+    {
+        .text = gEasyChatWord_Yay,
+        .alphabeticalOrder = 50,
+        .enabled = TRUE,
+    },
+
+[51] =
+    {
+        .text = gEasyChatWord_Yup,
+        .alphabeticalOrder = 51,
+        .enabled = TRUE,
+    },
+
+[52] =
+    {
+        .text = gEasyChatWord_Unbelievable,
+        .alphabeticalOrder = 52,
+        .enabled = TRUE,
+    },
+
+[53] =
+    {
+        .text = gEasyChatWord_Lalala,
+        .alphabeticalOrder = 53,
+        .enabled = TRUE,
+    },
+
+[54] =
+    {
+        .text = gEasyChatWord_Lol,
+        .alphabeticalOrder = 54,
+        .enabled = TRUE,
+    },
+
+[55] =
+    {
+        .text = gEasyChatWord_Mufufu,
+        .alphabeticalOrder = 55,
+        .enabled = TRUE,
+    },
+
+[56] =
+    {
+        .text = gEasyChatWord_Shocked,
+        .alphabeticalOrder = 56,
+        .enabled = TRUE,
+    },
+
+[57] =
+    {
+        .text = gEasyChatWord_Mmm,
+        .alphabeticalOrder = 57,
+        .enabled = TRUE,
+    },
+
+[58] =
+    {
+        .text = gEasyChatWord_Agree,
+        .alphabeticalOrder = 58,
+        .enabled = TRUE,
+    },
+
+[59] =
+    {
+        .text = gEasyChatWord_Fufufu,
+        .alphabeticalOrder = 59,
+        .enabled = TRUE,
+    },
+
+[60] =
+    {
+        .text = gEasyChatWord_Giggle,
+        .alphabeticalOrder = 60,
+        .enabled = TRUE,
+    },
+
+[61] =
+    {
+        .text = gEasyChatWord_WroooaarExcl,
+        .alphabeticalOrder = 61,
+        .enabled = TRUE,
+    },
+
+[62] =
+    {
+        .text = gEasyChatWord_Nope,
+        .alphabeticalOrder = 62,
         .enabled = TRUE,
     },
 };

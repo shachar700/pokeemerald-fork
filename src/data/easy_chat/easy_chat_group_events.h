@@ -29,178 +29,178 @@ const u8 gEasyChatWord_Wireless[] = _("אלחוטי");
 const u8 gEasyChatWord_Frontier[] = _("חזית");
 
 const struct EasyChatWordInfo gEasyChatGroup_Events[] = {
-    [EC_INDEX(EC_WORD_APPEAL)] =
-    {
-        .text = gEasyChatWord_Appeal,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_APPEAL),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_EVENTS)] =
-    {
-        .text = gEasyChatWord_Events,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_BATTLE_ROOM),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_STAY_AT_HOME)] =
-    {
-        .text = gEasyChatWord_StayAtHome,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_BATTLE_TOWER),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_BERRY)] =
-    {
-        .text = gEasyChatWord_Berry,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_BERRY),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_CONTEST)] =
-    {
-        .text = gEasyChatWord_Contest,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_BLEND),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_MC)] =
-    {
-        .text = gEasyChatWord_Mc,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CONTEST),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_JUDGE)] =
-    {
-        .text = gEasyChatWord_Judge,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_CRUSH),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_SUPER)] =
-    {
-        .text = gEasyChatWord_Super,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_DIRECT),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_STAGE)] =
-    {
-        .text = gEasyChatWord_Stage,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EVENTS),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HALL_OF_FAME)] =
-    {
-        .text = gEasyChatWord_HallOfFame,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_EVOLUTION),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_EVOLUTION)] =
-    {
-        .text = gEasyChatWord_Evolution,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_FRONTIER),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HYPER)] =
-    {
-        .text = gEasyChatWord_Hyper,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HALL_OF_FAME),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_BATTLE_TOWER)] =
-    {
-        .text = gEasyChatWord_BattleTower,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HIDDEN),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_LEADERS)] =
-    {
-        .text = gEasyChatWord_Leaders,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_HYPER),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_BATTLE_ROOM)] =
-    {
-        .text = gEasyChatWord_BattleRoom,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_JUDGE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_HIDDEN)] =
-    {
-        .text = gEasyChatWord_Hidden,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_LEADERS),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_SECRET_BASE)] =
-    {
-        .text = gEasyChatWord_SecretBase,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MASTER),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_BLEND)] =
-    {
-        .text = gEasyChatWord_Blend,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_MC),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_POKEBLOCK)] =
-    {
-        .text = gEasyChatWord_POKEBLOCK,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_POKEBLOCK),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_MASTER)] =
-    {
-        .text = gEasyChatWord_Master,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_RANK),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_RANK)] =
-    {
-        .text = gEasyChatWord_Rank,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_RIBBON),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_RIBBON)] =
-    {
-        .text = gEasyChatWord_Ribbon,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_ROOM),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_CRUSH)] =
-    {
-        .text = gEasyChatWord_Crush,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SECRET_BASE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_DIRECT)] =
-    {
-        .text = gEasyChatWord_Direct,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_STAGE),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_TOWER)] =
-    {
-        .text = gEasyChatWord_Tower,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_STAY_AT_HOME),
-        .enabled = TRUE,
-    },
-    [EC_INDEX(EC_WORD_UNION)] =
+[0] =
     {
         .text = gEasyChatWord_Union,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_SUPER),
+        .alphabeticalOrder = 0,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_ROOM)] =
+[1] =
     {
-        .text = gEasyChatWord_Room,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_TOWER),
+        .text = gEasyChatWord_Events,
+        .alphabeticalOrder = 1,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_WIRELESS)] =
+[2] =
     {
         .text = gEasyChatWord_Wireless,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_UNION),
+        .alphabeticalOrder = 2,
         .enabled = TRUE,
     },
-    [EC_INDEX(EC_WORD_FRONTIER)] =
+[3] =
+    {
+        .text = gEasyChatWord_SecretBase,
+        .alphabeticalOrder = 3,
+        .enabled = TRUE,
+    },
+[4] =
+    {
+        .text = gEasyChatWord_Rank,
+        .alphabeticalOrder = 4,
+        .enabled = TRUE,
+    },
+[5] =
+    {
+        .text = gEasyChatWord_HallOfFame,
+        .alphabeticalOrder = 5,
+        .enabled = TRUE,
+    },
+[6] =
+    {
+        .text = gEasyChatWord_Hyper,
+        .alphabeticalOrder = 6,
+        .enabled = TRUE,
+    },
+[7] =
+    {
+        .text = gEasyChatWord_Evolution,
+        .alphabeticalOrder = 7,
+        .enabled = TRUE,
+    },
+[8] =
+    {
+        .text = gEasyChatWord_Room,
+        .alphabeticalOrder = 8,
+        .enabled = TRUE,
+    },
+[9] =
+    {
+        .text = gEasyChatWord_BattleRoom,
+        .alphabeticalOrder = 9,
+        .enabled = TRUE,
+    },
+[10] =
     {
         .text = gEasyChatWord_Frontier,
-        .alphabeticalOrder = EC_INDEX(EC_WORD_WIRELESS),
+        .alphabeticalOrder = 10,
+        .enabled = TRUE,
+    },
+[11] =
+    {
+        .text = gEasyChatWord_Direct,
+        .alphabeticalOrder = 11,
+        .enabled = TRUE,
+    },
+[12] =
+    {
+        .text = gEasyChatWord_Master,
+        .alphabeticalOrder = 12,
+        .enabled = TRUE,
+    },
+[13] =
+    {
+        .text = gEasyChatWord_Tower,
+        .alphabeticalOrder = 13,
+        .enabled = TRUE,
+    },
+[14] =
+    {
+        .text = gEasyChatWord_BattleTower,
+        .alphabeticalOrder = 14,
+        .enabled = TRUE,
+    },
+[15] =
+    {
+        .text = gEasyChatWord_Hidden,
+        .alphabeticalOrder = 15,
+        .enabled = TRUE,
+    },
+[16] =
+    {
+        .text = gEasyChatWord_Leaders,
+        .alphabeticalOrder = 16,
+        .enabled = TRUE,
+    },
+[17] =
+    {
+        .text = gEasyChatWord_Mc,
+        .alphabeticalOrder = 17,
+        .enabled = TRUE,
+    },
+[18] =
+    {
+        .text = gEasyChatWord_Crush,
+        .alphabeticalOrder = 18,
+        .enabled = TRUE,
+    },
+[19] =
+    {
+        .text = gEasyChatWord_Appeal,
+        .alphabeticalOrder = 19,
+        .enabled = TRUE,
+    },
+[20] =
+    {
+        .text = gEasyChatWord_StayAtHome,
+        .alphabeticalOrder = 20,
+        .enabled = TRUE,
+    },
+[21] =
+    {
+        .text = gEasyChatWord_Super,
+        .alphabeticalOrder = 21,
+        .enabled = TRUE,
+    },
+[22] =
+    {
+        .text = gEasyChatWord_Ribbon,
+        .alphabeticalOrder = 22,
+        .enabled = TRUE,
+    },
+[23] =
+    {
+        .text = gEasyChatWord_Blend,
+        .alphabeticalOrder = 23,
+        .enabled = TRUE,
+    },
+[24] =
+    {
+        .text = gEasyChatWord_POKEBLOCK,
+        .alphabeticalOrder = 24,
+        .enabled = TRUE,
+    },
+[25] =
+    {
+        .text = gEasyChatWord_Berry,
+        .alphabeticalOrder = 25,
+        .enabled = TRUE,
+    },
+[26] =
+    {
+        .text = gEasyChatWord_Judge,
+        .alphabeticalOrder = 26,
+        .enabled = TRUE,
+    },
+[27] =
+    {
+        .text = gEasyChatWord_Stage,
+        .alphabeticalOrder = 27,
+        .enabled = TRUE,
+    },
+[28] =
+    {
+        .text = gEasyChatWord_Contest,
+        .alphabeticalOrder = 28,
         .enabled = TRUE,
     },
 };
