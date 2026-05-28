@@ -289,7 +289,7 @@ MatchCall_PositiveBattleText6::
 	.string "היי, {PLAYER}{KUN}.\n"
 	.string "{STR_VAR_1} כאן.\p"
 	.string "מה קורה איתך?\p"
-	.string "אני נמצא במומנטום חם.\n"
+	.string "אני נמצא ברצף נצחונות.\n"
 	.string "למעשה, בדיוק ניצחתי בקרב.\p"
 	.string "בפעם הבאה שיהיה לנו קרב,\n"
 	.string "אני בטוח לא הולך להפסיד!$"

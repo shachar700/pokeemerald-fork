@@ -975,7 +975,7 @@ static u8 *GetConditionMenuMonString(u8 *dst, u16 boxId, u16 monId)
     *(str++) = TEXT_COLOR_TRANSPARENT;
     *(str++) = TEXT_COLOR_LIGHT_BLUE;
     *(str++) = CHAR_SLASH;
-    //*(str++) = CHAR_EXTRA_SYMBOL;
+    *(str++) = CHAR_EXTRA_SYMBOL;
     *(str++) = CHAR_LV_2;
     numStart = str;
     str = ConvertIntToDecimalStringN(str, level, STR_CONV_MODE_LEFT_ALIGN, 3);

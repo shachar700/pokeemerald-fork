@@ -200,7 +200,7 @@
 #define CHAR_LEFT_ARROW_2  0x02
 #define CHAR_RIGHT_ARROW_2 0x03
 #define CHAR_PLUS_2        0x04
-#define CHAR_LV_2          /* 0x05 */ 0x4D
+#define CHAR_LV_2          /* 0x4D */ 0x05
 #define CHAR_PP            0x06
 #define CHAR_ID            0x07
 #define CHAR_NO            0x08
