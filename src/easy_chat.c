@@ -2648,10 +2648,8 @@ static u8 GetLastAlphabetColumn(u8 row)
     switch (row)
     {
     case 0:
-    default:
         return NUM_ALPHABET_COLUMNS - 1;
-    case 1:
-    case 3:
+    default:
         return NUM_ALPHABET_COLUMNS - 2; // At 6 letters, only the 2nd row (index 1) has less than the max columns
                                          // The 3rd and 4th row have 7 letters, the 1st row has 6 letters and 'Others'
     }
@@ -5708,10 +5706,14 @@ static void SetUnlockedWordsByAlphabet(void)
     u16 numToProcess;
     int index;
 
+    const struct EasyChatWordsByLetter *pointerArray = (gSaveBlock2Ptr->optionsSpeciesNames == 1) 
+                                                     ? gEasyChatWordsByLetterPointers_Translit 
+                                                     : gEasyChatWordsByLetterPointers_Literal;
+
     for (i = 0; i < EC_NUM_ALPHABET_GROUPS; i++)
     {
-        numWords = gEasyChatWordsByLetterPointers[i].numWords;
-        words = gEasyChatWordsByLetterPointers[i].words;
+        numWords = pointerArray[i].numWords;
+        words = pointerArray[i].words;
         sWordData->numUnlockedAlphabetWords[i] = 0;
         index = 0;
         for (j = 0; j < numWords; j++)

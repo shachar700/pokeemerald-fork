@@ -3,7 +3,7 @@
 // Easy Chat keyboard
 const u8 gText_EasyChatKeyboard_ABCDEFothers[] = _("{CLEAR 26}{CLEAR 27}א{CLEAR 6}ב{CLEAR 6}ג{CLEAR 27}ד{CLEAR 6}ה{CLEAR 6}ו{CLEAR 26}אחרים");
 const u8 gText_EasyChatKeyboard_GHIJKL[] = _("{CLEAR 26}{CLEAR 27}ז{CLEAR 8}ח{CLEAR 6}ט{CLEAR 27}י{CLEAR 8}כ{CLEAR 6}ל");
-const u8 gText_EasyChatKeyboard_MNOPQRS[] = _("{CLEAR 26}{CLEAR 27}מ{CLEAR 6}נ{CLEAR 8} {CLEAR 27}ס{CLEAR 6}ע{CLEAR 6}פ{CLEAR 6}ק{CLEAR 26} ");
+const u8 gText_EasyChatKeyboard_MNOPQRS[] = _("{CLEAR 26}{CLEAR 27}מ{CLEAR 6}נ{CLEAR 8} {CLEAR 27}ס{CLEAR 6}ע{CLEAR 6}פ{CLEAR 26} ");
 const u8 gText_EasyChatKeyboard_TUVWXYZ[] = _("{CLEAR 26}{CLEAR 27}צ{CLEAR 6}ק{CLEAR 8} {CLEAR 27}ר{CLEAR 6}ש{CLEAR 6}ת{CLEAR 26} ");
 
 // Naming Screen keyboard

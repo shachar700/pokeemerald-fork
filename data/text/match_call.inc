@@ -1641,8 +1641,8 @@ MatchCall_BattleDomeText1::
 	.string "היי! {PLAYER}?\n"
 	.string "שלום, זו {STR_VAR_1}!\l"
 	.string "שמעתי את החדשות!\p"
-	.string "הפכת לאלוף ב\n"
-	.string "ה{STR_VAR_2} {STR_VAR_3} פעמים?\p"
+	.string "הפכת לאלוף\n"
+	.string "ב{STR_VAR_2} {STR_VAR_3} פעמים?\p"
 	.string "זה מדהים! אני חייב להשתפר!\n"
 	.string "נתראה!$"
 
