@@ -88,7 +88,7 @@ gTVBravoTrainerText05::
 	.string "אז שאלנו, כמובן!\p"
 	.string "התשובה כולה מתומצתת בצורה מושלמת:\n"
 	.string "”{STR_VAR_3}“!\p"
-	.string "זה מה שמושג {STR_VAR_2}\n"
+	.string "זה מה שהמושג {STR_VAR_2}\n"
 	.string "מייצג עבור {STR_VAR_1}!$"
 
 gTVBravoTrainerText06::

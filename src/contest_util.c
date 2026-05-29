@@ -1165,7 +1165,7 @@ static void TryCreateWirelessSprites(void)
     }
 }
 
-static s32 DrawResultsTextWindow(const u8 *text, u8 spriteId)
+/* static s32 DrawResultsTextWindow(const u8 *text, u8 spriteId)
 {
     u16 windowId;
     int tileWidth;
@@ -1218,6 +1218,87 @@ static s32 DrawResultsTextWindow(const u8 *text, u8 spriteId)
             windowTilesPtr += 0x20;
         }
 
+        dst = &spriteTilePtrs[(i + 1) / 8][((i + 1) % 8) * 32];
+        CpuCopy32(src + 32,  dst, 0x20);
+        CpuCopy32(src + 160, dst + 0x100, 0x20);
+        CpuCopy32(src + 160, dst + 0x200, 0x20);
+        CpuCopy32(src + 96,  dst + 0x300, 0x20);
+    }
+    RemoveWindow(windowId);
+
+    return (DISPLAY_WIDTH - (tileWidth + 2) * 8) / 2;
+} */
+
+static s32 DrawResultsTextWindow(const u8 *text, u8 spriteId)
+{
+    u16 windowId;
+    int tileWidth;
+    int strWidth;
+    u32 xPos;
+    u8 *spriteTilePtrs[4];
+    u8 *dst;
+    struct WindowTemplate windowTemplate; // Moved to the top to respect C89 declarations
+
+    // 1. Calculate string and tile width BEFORE creating the window
+    strWidth = GetStringWidth(FONT_NORMAL, text, 0);
+    tileWidth = (strWidth + 9) / 8;
+    if (tileWidth > DISPLAY_TILE_WIDTH)
+        tileWidth = DISPLAY_TILE_WIDTH;
+
+    // 2. Create the window dynamically sized to tileWidth
+    memset(&windowTemplate, 0, sizeof(windowTemplate));
+    windowTemplate.width = tileWidth;
+    windowTemplate.height = 2;
+    windowId = AddWindow(&windowTemplate);
+    FillWindowPixelBuffer(windowId, PIXEL_FILL(1));
+
+    // 3. Determine the X coordinate anchor
+    // NOTE: Depending on your specific RTL implementation, if your printer takes X
+    // as the right-most anchor and prints leftward, use the second formula.
+    // LTR Centering / Auto-RTL Centering:
+    xPos = (tileWidth * 8 - strWidth) / 2; 
+    // Right-Anchor RTL Centering (Uncomment if text renders out of bounds to the left):
+    // xPos = (tileWidth * 8 + strWidth) / 2;
+
+    AddTextPrinterParameterized3WithRTL(windowId, FONT_NORMAL, xPos, 1, sContestLinkTextColors, TEXT_SKIP_DRAW, text, TRUE);
+
+    {
+        s32 i;
+        struct Sprite *sprite;
+        const u8 *src, *windowTilesPtr;
+        windowTilesPtr = (u8 *)GetWindowAttribute(windowId, WINDOW_TILE_DATA);
+        src = (u8 *)sResultsTextWindow_Gfx;
+
+        sprite = &gSprites[spriteId];
+        spriteTilePtrs[0] = (u8 *)(sprite->oam.tileNum * 32 + OBJ_VRAM0);
+
+        for (i = 1; i < (int)ARRAY_COUNT(spriteTilePtrs); i++)
+            spriteTilePtrs[i] = (void *)(gSprites[sprite->data[i - 1]].oam.tileNum * 32 + OBJ_VRAM0);
+
+        for (i = 0; i < (int)ARRAY_COUNT(spriteTilePtrs); i++)
+            CpuFill32(0, spriteTilePtrs[i], 0x400);
+
+        // Copy left UI border
+        dst = spriteTilePtrs[0];
+        CpuCopy32(src, dst, 0x20);
+        CpuCopy32(src + 128, dst + 0x100, 0x20);
+        CpuCopy32(src + 128, dst + 0x200, 0x20);
+        CpuCopy32(src + 64,  dst + 0x300, 0x20);
+
+        for (i = 0; i < tileWidth; i++)
+        {
+            dst = &spriteTilePtrs[(i + 1) / 8][((i + 1) % 8) * 32];
+            CpuCopy32(src + 192, dst, 0x20);
+            CpuCopy32(windowTilesPtr, dst + 0x100, 0x20);
+            
+            // 4. Update the second row offset from a hardcoded 960 to (tileWidth * 32)
+            CpuCopy32(windowTilesPtr + (tileWidth * 32), dst + 0x200, 0x20);
+            
+            CpuCopy32(src + 224, dst + 0x300, 0x20);
+            windowTilesPtr += 0x20;
+        }
+
+        // Copy right UI border
         dst = &spriteTilePtrs[(i + 1) / 8][((i + 1) % 8) * 32];
         CpuCopy32(src + 32,  dst, 0x20);
         CpuCopy32(src + 160, dst + 0x100, 0x20);

@@ -33,7 +33,7 @@ MatchCall_WildBattleText4::
 	.string "חשבתי שתפסתי אותו אבל הוא ברח.\p"
 	.string "אם אראה אותו שוב, אני אשיג אותו\n"
 	.string "בטוח, למרות זאת.\p"
-	.string "טוב, נתפוס אותך מאוחר יותר.$"
+	.string "טוב, נדבר מאוחר יותר.$"
 
 MatchCall_WildBattleText5::
 	.string "היי, {PLAYER}{KUN}!\n"
@@ -159,7 +159,7 @@ MatchCall_NegativeBattleText4::
 	.string "ניסיתי קרב נוסף אתמול,\n"
 	.string "אבל לא הצלחתי לנצח.\p"
 	.string "הצוות שלי צריך עוד אימון.\n"
-	.string "טוב, נתפוס אותך מאוחר יותר.$"
+	.string "טוב, נדבר מאוחר יותר.$"
 
 MatchCall_NegativeBattleText5::
 	.string "היי {PLAYER}!\n"
@@ -389,7 +389,7 @@ MatchCall_SameRouteBattleRequestText3::
 	.string "מה דעתך להילחם\n"
 	.string "איתי ממש עכשיו?\p"
 	.string "אני לא מפסיד שוב!\n"
-	.string "אני אחכ{EMIT_HEY}{ADD_YUD}! נתפוס אותך בקרוב!$"
+	.string "אני אחכה! נדבר בקרוב!$"
 
 MatchCall_SameRouteBattleRequestText4::
 	.string "היי, {PLAYER}{KUN}.\n"
@@ -754,7 +754,7 @@ MatchCall_PersonalizedText11::
 	.string "אני מרגיש יותר טוב שהורדתי את זה\n"
 	.string "מהחזה שלי!\p"
 	.string "אני יוצא שוב לאזור הספארי!\n"
-	.string "נתפוס אותך!$"
+	.string "נדבר!$"
 
 MatchCall_PersonalizedText12::
 	.string "שלום, {STR_VAR_1} כאן.\n"
@@ -1236,7 +1236,7 @@ MatchCall_PersonalizedText53::
 	.string "זה יהיה אידיאלי.\n"
 	.string "אני באמת חושב כך.\p"
 	.string "אני חושב שאת{EMIT_HEY} בדרך הנכונה!\n"
-	.string "נתפוס אותך מאוחר יותר!$"
+	.string "נדבר מאוחר יותר!$"
 
 MatchCall_PersonalizedText54::
 	.string "היי, זה {STR_VAR_1}. את{EMIT_HEY} יודע{ADD_TAF},\n"
@@ -1409,7 +1409,7 @@ MatchCall_BattleFrontierStreakText3::
 	.string "רצף של {STR_VAR_3} ניצחונות גדול…\n"
 	.string "זה שיא גדול, לא?\p"
 	.string "מוטב שאתארגן על עצמי, גם!\n"
-	.string "נתפוס אותך בקרוב!$"
+	.string "נדבר בקרוב!$"
 
 MatchCall_BattleFrontierStreakText4::
 	.string "היי, {PLAYER}{KUN}.\n"
@@ -1535,7 +1535,7 @@ MatchCall_BattleFrontierRecordStreakText3::
 	.string "רצף של {STR_VAR_3} ניצחונות גדול…\n"
 	.string "זה שיא גדול, לא?\p"
 	.string "מוטב שאתארגן על עצמי, גם!\n"
-	.string "נתפוס אותך בקרוב!$"
+	.string "נדבר בקרוב!$"
 
 MatchCall_BattleFrontierRecordStreakText4::
 	.string "היי, {PLAYER}{KUN}.\n"
@@ -1661,7 +1661,7 @@ MatchCall_BattleDomeText3::
 	.string "שמעתי שניצחת אירועים {STR_VAR_3} פעמים\n"
 	.string "ב{STR_VAR_2}!\p"
 	.string "תעשה את זה פעם אחת נוספת בפעם הבאה!\n"
-	.string "נתפוס אותך בקרוב!$"
+	.string "נדבר בקרוב!$"
 
 MatchCall_BattleDomeText4::
 	.string "היי, {PLAYER}{KUN}.\n"
@@ -1787,7 +1787,7 @@ MatchCall_BattlePikeText3::
 	.string "שמעתי שניצחת את דרכך דרך {STR_VAR_3} חדרים\n"
 	.string "ב{STR_VAR_2}!\p"
 	.string "תנס{EMIT_HEY}{ADD_YUD} להצליח אפילו יותר בפעם הבאה!\n"
-	.string "נתפוס אותך בקרוב!$"
+	.string "נדבר בקרוב!$"
 
 MatchCall_BattlePikeText4::
 	.string "היי, {PLAYER}{KUN}.\n"
@@ -1912,7 +1912,7 @@ MatchCall_BattlePyramidText3::
 	.string "שמעתי שטיפסת {STR_VAR_3} קומות\n"
 	.string "ב{STR_VAR_2}!\p"
 	.string "תנס{EMIT_HEY}{ADD_YUD} להצליח אפילו יותר בפעם הבאה!\n"
-	.string "נתפוס אותך בקרוב!$"
+	.string "נדבר בקרוב!$"
 
 MatchCall_BattlePyramidText4::
 	.string "היי, {PLAYER}{KUN}.\n"
