@@ -1059,29 +1059,29 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_POKEMON(PLUSLE),
         EC_WORD_EXCL,
         EC_POKEMON(VOLBEAT),
-        EC_WORD_WILL,
+        EC_WORD_GOES, /* EC_WORD_WILL */
         EC_WORD_BE,
         EC_WORD_FANTASTIC
     }, {
-        EC_WORD_I,
-        EC_WORD_IWILL,
-        EC_WORD_MAKE,
         EC_POKEMON(BAGON),
+        EC_WORD_GOES,
+        EC_WORD_BE,
         EC_WORD_TOUGH,
         EC_WORD_PLEASE,
         EC_WORD_TRAIN,
         EC_POKEMON(HORSEA),
-        EC_WORD_WELL
+        EC_WORD_WELL,
+        EC_WORD_EXCL
     }, {
         EC_WORD_THANK_YOU,
         EC_WORD_FOR,
         EC_POKEMON(SKITTY),
         EC_POKEMON_NATIONAL(MEOWTH),
         EC_WORD_CRIES,
-        EC_WORD_IN,
-        EC_WORD_A,
+        EC_WORD_VERY, /* EC_WORD_IN */
         EC_WORD_CUTE,
-        EC_WORD_WAY
+        EC_WORD_EXCL,
+        EC_WORD_A
     }
 };
 

@@ -221,7 +221,7 @@ const struct ContestPokemon gContestOpponents[] =
 {
     [CONTEST_OPPONENT_JIMMY] = {
         .species = SPECIES_POOCHYENA,
-        .nickname = _("פוצ'י"),
+        .nickname = _("צבועי"),
         .trainerName = _("ג'ימי"),
         .trainerGfxId = OBJ_EVENT_GFX_BOY_1,
         .aiFlags = CONTEST_AI_SET_1,
