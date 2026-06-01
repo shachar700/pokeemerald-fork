@@ -50,35 +50,15 @@ static u16 sSavedTm3Cnt;
 static u16 sSavedSioCnt;
 static u16 sSavedRCnt;
 
-const u8 sTrainerHillSpeechBefore_Makie[] = _("מגוחך מקרה שם אליה אתגר בצחוק");
-const u8 sTrainerHillSpeechWin_Makie[] = _("שלה קלף מנצח כוח סודי משתמש ניצח!!");
-const u8 sTrainerHillSpeechLose_Makie[] = _("אליה ניצחון בצחוק שיאים מפחיד…!");
-const u8 sTrainerHillSpeechAfter_Makie[] = _("בור כך היום לילה אתה…");
-
-const u8 sTrainerHillSpeechBefore_Haruhito[] = _("קפיצה גבוה ככל שהם חזקים!");
-const u8 sTrainerHillSpeechWin_Haruhito[] = _("תעופה ככל שהם שמחים!");
-const u8 sTrainerHillSpeechLose_Haruhito[] = _("מזעור ככל שהם עצובים!");
-const u8 sTrainerHillSpeechAfter_Haruhito[] = _("נשיכה ככל שהם כועסים!");
-
-const u8 sTrainerHillSpeechBefore_Meiko[] = _("זוהר פוקימון שחרור היה תסכול ללא");
-const u8 sTrainerHillSpeechWin_Meiko[] = _("זוהר פוקימון אליה מתנה יודע ללא");
-const u8 sTrainerHillSpeechLose_Meiko[] = _("זה מעל אבד חנויות בצחוק…");
-const u8 sTrainerHillSpeechAfter_Meiko[] = _("משעשע אף אחד היי? כמעט!");
-
-const u8 sTrainerHillSpeechBefore_Pierre[] = _("היא הייתה מספר 1 חזק דוד שם!");
-const u8 sTrainerHillSpeechWin_Pierre[] = _("הא הא הא מורה הופך נותן זה?");
-const u8 sTrainerHillSpeechLose_Pierre[] = _("בחוץ דוד הפתעה אלה היי?…!");
-const u8 sTrainerHillSpeechAfter_Pierre[] = _("הוא מספר 1 חזק ילדים לא יכול!!");
-
 static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
     [0] = {
         .name = __("マキエ$$$$$   "),
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
         .unused = 0x1,
-        .speechBefore = sTrainerHillSpeechBefore_Makie,
-        .speechWin = sTrainerHillSpeechWin_Makie,
-        .speechLose = sTrainerHillSpeechLose_Makie,
-        .speechAfter = sTrainerHillSpeechAfter_Makie,
+        .speechBefore = { EC_WORD_PREPOSTEROUS, EC_WORD_CASE, EC_WORD_THERE, EC_WORD_TO_HER, EC_WORD_CHALLENGE, EC_WORD_JOKING },
+        .speechWin = { EC_WORD_HERS, EC_WORD_TRUMP_CARD, EC_MOVE2(SECRET_POWER), EC_WORD_USING, EC_WORD_WON, EC_WORD_EXCL_EXCL },
+        .speechLose = { EC_WORD_TO_HER, EC_WORD_WIN, EC_WORD_JOKING, EC_WORD_HIGHS, EC_WORD_SCARY, EC_WORD_ELLIPSIS_EXCL },
+        .speechAfter = { EC_WORD_IGNORANT, EC_WORD_SO, EC_WORD_TODAY, EC_WORD_NIGHTTIME, EC_WORD_YOU_RE, EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS },
         .mons = {
             [0] = DUMMY_HILL_MON,
             [1] = DUMMY_HILL_MON,
@@ -155,10 +135,10 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
         .name = __("ハルヒト$$$$   "),
         .facilityClass = FACILITY_CLASS_CAMPER,
         .unused = 0x1,
-        .speechBefore = sTrainerHillSpeechBefore_Haruhito,
-        .speechWin = sTrainerHillSpeechWin_Haruhito,
-        .speechLose = sTrainerHillSpeechLose_Haruhito,
-        .speechAfter = sTrainerHillSpeechAfter_Haruhito,
+        .speechBefore = { EC_MOVE2(BOUNCE), EC_WORD_AS_MUCH_AS, EC_EMPTY_WORD, EC_WORD_THEY_RE, EC_WORD_STRONG, EC_WORD_EXCL },
+        .speechWin = { EC_MOVE(FLY), EC_WORD_AS_MUCH_AS, EC_EMPTY_WORD, EC_WORD_THEY_RE, EC_WORD_HAPPY, EC_WORD_EXCL },
+        .speechLose = { EC_MOVE2(MINIMIZE), EC_WORD_AS_MUCH_AS, EC_EMPTY_WORD, EC_WORD_THEY_RE, EC_WORD_SAD, EC_WORD_EXCL },
+        .speechAfter = { EC_MOVE(BITE), EC_WORD_AS_MUCH_AS, EC_EMPTY_WORD, EC_WORD_THEY_RE, EC_WORD_ANGRY, EC_WORD_EXCL },
         .mons = {
             [0] = DUMMY_HILL_MON,
             [1] = DUMMY_HILL_MON,
@@ -235,10 +215,10 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
         .name = __("メイコ$$$$$   "),
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
         .unused = 0x1,
-        .speechBefore = sTrainerHillSpeechBefore_Meiko,
-        .speechWin = sTrainerHillSpeechWin_Meiko,
-        .speechLose = sTrainerHillSpeechLose_Meiko,
-        .speechAfter = sTrainerHillSpeechAfter_Meiko,
+        .speechBefore = { EC_WORD_SHINE, EC_WORD_POKEMON, EC_WORD_RELEASE, EC_WORD_WAS, EC_MOVE2(FRUSTRATION), EC_WORD_WITHOUT },
+        .speechWin = { EC_WORD_SHINE, EC_WORD_POKEMON, EC_WORD_TO_HER, EC_MOVE2(PRESENT), EC_WORD_KNOWS, EC_WORD_WITHOUT },
+        .speechLose = { EC_WORD_THAT, EC_WORD_ABOVE, EC_WORD_LOST, EC_WORD_STORES, EC_WORD_JOKING, EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS },
+        .speechAfter = { EC_WORD_ENTERTAINING, EC_WORD_NONE, EC_WORD_HEY_QUES, EC_WORD_ALMOST, EC_WORD_EXCL, EC_EMPTY_WORD },
         .mons = {
             [0] = DUMMY_HILL_MON,
             [1] = DUMMY_HILL_MON,
@@ -315,10 +295,10 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
         .name = __("ピエール$$$$   "),
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
         .unused = 0x1,
-        .speechBefore = sTrainerHillSpeechBefore_Pierre,
-        .speechWin = sTrainerHillSpeechWin_Pierre,
-        .speechLose = sTrainerHillSpeechLose_Pierre,
-        .speechAfter = sTrainerHillSpeechAfter_Pierre,
+        .speechBefore = { EC_WORD_SHE_WAS, EC_WORD_NO_1, EC_WORD_STRONG, EC_WORD_UNCLE, EC_WORD_THERE, EC_WORD_EXCL },
+        .speechWin = { EC_WORD_HAHAHA, EC_WORD_TEACHER, EC_WORD_BECOMES, EC_WORD_GIVE, EC_WORD_IS_IT_QUES, EC_EMPTY_WORD },
+        .speechLose = { EC_WORD_OUTSIDE, EC_WORD_UNCLE, EC_WORD_SURPRISE, EC_WORD_THESE, EC_WORD_HEY_QUES, EC_WORD_ELLIPSIS_EXCL },
+        .speechAfter = { EC_WORD_HE_S, EC_WORD_NO_1, EC_WORD_STRONG, EC_WORD_CHILDREN, EC_WORD_CAN_T, EC_WORD_EXCL_EXCL },
         .mons = {
             [0] = DUMMY_HILL_MON,
             [1] = DUMMY_HILL_MON,
