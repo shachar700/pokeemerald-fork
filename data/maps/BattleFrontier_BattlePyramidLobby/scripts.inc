@@ -522,7 +522,7 @@ BattleFrontier_BattlePyramidLobby_Text_WelcomeToBattlePyramid:
 	.string "איפה שאומץ של מאמנים\n"
 	.string "עומד למבחן!\p"
 	.string "ברו{SWAP_CHAF}{ADD_HEY} הבא{ADD_HEY} לפירמידת הקרב!\p"
-	.string "אני המדריך שלך\n"
+	.string "אני המדריכה שלך\n"
 	.string "למסע הקרבות.$"
 
 BattleFrontier_BattlePyramidLobby_Text_EmbarkOnChallenge:

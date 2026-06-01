@@ -267,7 +267,7 @@ BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike:
 	.string "המקום שבו המזל של מאמנים\n"
 	.string "מועמד למבחן…\p"
 	.string "ברו{SWAP_CHAF}{ADD_HEY} הבא{ADD_HEY} לנהר הקרב…\p"
-	.string "אני המדריך שלך לנהר הקרב…$"
+	.string "אני המדריכה שלך לנהר הקרב…$"
 
 BattleFrontier_BattlePikeLobby_Text_TakeChallenge:
 	.string "האם תרצ{EMIT_HEY}{ADD_YUD} לקבל את אתגר\n"
@@ -301,7 +301,7 @@ BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode:
 	.string "באיזה תתמודד{ADD_YUD}?$"
 
 BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLv50:
-	.string "אני מבקש את סליחתך, אבל…\p"
+	.string "אני מבקשת את סליחתך, אבל…\p"
 	.string "אין לך שלושה פוקימונים מתאימים\n"
 	.string "לאירוע בחירת הקרב.\p"
 	.string "את{EMIT_HEY} חייב{ADD_TAF} שיהיו לך שלושה פוקימונים שונים\n"
@@ -313,7 +313,7 @@ BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLv50:
 	.string "כשאת{EMIT_HEY} מוכ{SWAP_NUN}{ADD_HEY}…$"
 
 BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "אני מבקש את סליחתך, אבל…\p"
+	.string "אני מבקשת את סליחתך, אבל…\p"
 	.string "אין לך שלושה פוקימונים מתאימים\n"
 	.string "לאירוע בחירת הקרב.\p"
 	.string "את{EMIT_HEY} חייב{ADD_TAF} שיהיו לך שלושה פוקימונים\n"
@@ -364,7 +364,7 @@ BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit:
 	.string "עבור פרסים, ואז חז{EMIT_VAV}ר{ADD_YUD}…$"
 
 BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting:
-	.string "אני מבקש את סליחתך, אבל…\p"
+	.string "אני מבקשת את סליחתך, אבל…\p"
 	.string "לא שמרת לפני שהפסקת את\n"
 	.string "האתגר שלך בפעם האחרונה.\p"
 	.string "בגלל זה, האתגר שלך עד כה\n"

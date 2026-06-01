@@ -1102,7 +1102,7 @@ BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle:
 	.string "איפה שהכישורים של מאמנים\n"
 	.string "עומדים למבחן!\p"
 	.string "ברו{SWAP_CHAF}{ADD_HEY} הבא{ADD_HEY} למגדל הקרב!\p"
-	.string "אני המדריך שלך לחדרי קרב\n"
+	.string "אני המדריכה שלך לחדרי קרב\n"
 	.string "יחידיים.$"
 
 BattleFrontier_BattleTowerLobby_Text_TakeSinglesChallenge:
@@ -1132,7 +1132,7 @@ BattleFrontier_BattleTowerLobby_Text_WelcomeDoubleBattle:
 	.string "איפה שהכישורים של מאמנים\n"
 	.string "עומדים למבחן!\p"
 	.string "ברו{SWAP_CHAF}{ADD_HEY} הבא{ADD_HEY} למגדל הקרב!\p"
-	.string "אני המדריך שלך לחדרי קרב\n"
+	.string "אני המדריכה שלך לחדרי קרב\n"
 	.string "זוגיים.$"
 
 BattleFrontier_BattleTowerLobby_Text_TakeDoublesChallenge:
@@ -1162,7 +1162,7 @@ BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle:
 	.string "איפה שהכישורים של מאמנים\n"
 	.string "עומדים למבחן!\p"
 	.string "ברו{SWAP_CHAF}{ADD_HEY} הבא{ADD_HEY} למגדל הקרב!\p"
-	.string "אני המדריך שלך לחדרי קרב\n"
+	.string "אני המדריכה שלך לחדרי קרב\n"
 	.string "מרובי משתתפים.$"
 
 BattleFrontier_BattleTowerLobby_Text_TakeMultisChallenge:
@@ -1199,7 +1199,7 @@ BattleFrontier_BattleTowerLobby_Text_WelcomeLinkMultiBattle:
 	.string "איפה שהכישורים של מאמנים\n"
 	.string "עומדים למבחן!\p"
 	.string "ברו{SWAP_CHAF}{ADD_HEY} הבא{ADD_HEY} למגדל הקרב!\p"
-	.string "אני המדריך שלך לחדרי קרב\n"
+	.string "אני המדריכה שלך לחדרי קרב\n"
 	.string "מרובי משתתפים בקשר.$"
 
 BattleFrontier_BattleTowerLobby_Text_TakeLinkMultisChallenge:

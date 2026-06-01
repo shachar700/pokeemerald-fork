@@ -339,7 +339,7 @@ BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
 	.string "חופשי לבקר אם יש לך זמן.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFacilities:
-	.string "אני המדריך שלך למתקנים השונים\n"
+	.string "אני המדריכה שלך למתקנים השונים\n"
 	.string "כאן בחזית הקרב.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich2:
@@ -409,7 +409,7 @@ BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
 	.string "שם בפרסים מדהימים.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToRules:
-	.string "אני המדריך שלך לחוקים הבסיסיים\n"
+	.string "אני המדריכה שלך לחוקים הבסיסיים\n"
 	.string "שמשותפים לכל האתגרים המוצעים\l"
 	.string "על ידי המתקנים שבחזית הקרב.$"
 
@@ -462,7 +462,7 @@ BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
 	.string "פריטים שונים.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFrontierPass:
-	.string "אני המדריך שלך להיתר חזית הקרב.$"
+	.string "אני המדריכה שלך להיתר חזית הקרב.$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich1:
 	.string "על מה תרצ{EMIT_HEY}{ADD_YUD} ללמוד?$"

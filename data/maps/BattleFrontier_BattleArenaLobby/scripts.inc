@@ -353,7 +353,7 @@ BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena:
 	.string "המקום שבו רוח הקרב של מאמנים\n"
 	.string "מועמדת למבחן!\p"
 	.string "אני מברך את פניך לזירת הקרב!\p"
-	.string "אני המדריך שלך לטורניר נוקאאוט קבוע!$"
+	.string "אני המדריכה שלך לטורניר נוקאאוט קבוע!$"
 
 BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge:
 	.string "עכשיו, האם תרצ{EMIT_HEY} לקחת חלק\n"

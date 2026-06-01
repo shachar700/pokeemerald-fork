@@ -322,7 +322,7 @@ gText_ApprenticeLevelModeThanks6::
 	.string "תודה!$"
 
 gText_ApprenticePleaseTeach7::
-	.string "אני מבקש את סליחתך, אבל…\n"
+	.string "אני מבקשת את סליחתך, אבל…\n"
 	.string "את{EMIT_HEY} {PLAYER}?\p"
 	.string "אני {STR_VAR_1}, ואני שמח\n"
 	.string "להכיר אותך.\p"

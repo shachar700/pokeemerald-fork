@@ -238,7 +238,7 @@ LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall:
 	.string "לחיים מפוארים!$"
 
 LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit:
-	.string "אני מבקש את סליחתך. לא התכוונתי\n"
+	.string "אני מבקשת את סליחתך. לא התכוונתי\n"
 	.string "לנכס את השיחה.\p"
 	.string "עכשיו, מכיוון שאת{EMIT_HEY} צעיר{ADD_HEY}, ועם זאת\n"
 	.string "ברור שאת{EMIT_HEY} מטייל{ADD_TAF} הרבה…\p"

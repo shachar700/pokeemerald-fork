@@ -432,7 +432,7 @@ BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle:
 	.string "המקום שבו האסטרטגיות של מאמנים\n"
 	.string "מועמדות למבחן!\p"
 	.string "ברו{SWAP_CHAF}{ADD_HEY} הבא{ADD_HEY} לכיפת הקרב!\p"
-	.string "אני המדריך שלך לטורניר\n"
+	.string "אני המדריכה שלך לטורניר\n"
 	.string "קרב יחידים.$"
 
 BattleFrontier_BattleDomeLobby_Text_TakeSinglesChallenge:
@@ -543,7 +543,7 @@ BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle:
 	.string "המקום שבו האסטרטגיות של מאמנים\n"
 	.string "מועמדות למבחן!\p"
 	.string "ברו{SWAP_CHAF}{ADD_HEY} הבא{ADD_HEY} לכיפת הקרב!\p"
-	.string "אני המדריך שלך לטורניר\n"
+	.string "אני המדריכה שלך לטורניר\n"
 	.string "קרב זוגות.$"
 
 BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge:

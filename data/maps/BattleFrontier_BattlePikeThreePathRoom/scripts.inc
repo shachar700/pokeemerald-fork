@@ -319,13 +319,13 @@ BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack:
 	.string "ואין דרך חזרה…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose:
-	.string "אני מבקש את סליחתך, אבל…\p"
+	.string "אני מבקשת את סליחתך, אבל…\p"
 	.string "האם את{EMIT_HEY} אולי מוצא{ADD_TAF} את זה קשה\n"
 	.string "לבחור את הנתיב שלך?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence:
-	.string "אני מבין…\n"
-	.string "אני מתנצל על חוצפתי…$"
+	.string "אני מבינה…\n"
+	.string "אני מתנצלת על חוצפתי…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutRightPath:
 	.string "אה, ת{SWAP_NUN}{ADD_YUD} לי לראות… יש משהו\n"

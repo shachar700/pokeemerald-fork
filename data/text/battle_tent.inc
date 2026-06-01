@@ -1,7 +1,7 @@
 FallarborTown_BattleTentLobby_Text_WelcomeToBattleTent:
 	.string "אני מברך אותך על הגעתך לאוהל הקרב\n"
 	.string "אתר פאלרבור!\p"
-	.string "אני המדריך שלך לטורניר סט נוקאאוט!$"
+	.string "אני המדריכה שלך לטורניר סט נוקאאוט!$"
 
 FallarborTown_BattleTentLobby_Text_TakeChallenge:
 	.string "עכשיו, האם ברצונך לקבל את האתגר\n"
@@ -200,7 +200,7 @@ VerdanturfTown_BattleTentLobby_Text_PresentYouWithPrize:
 SlateportCity_BattleTentLobby_Text_WelcomeToBattleTent:
 	.string "ברוכים הבאים לאוהל הקרב\n"
 	.string "אתר סלייטפורט!\p"
-	.string "אני המדריך שלך לטורניר החלפת קרב.$"
+	.string "אני המדריכה שלך לטורניר החלפת קרב.$"
 
 SlateportCity_BattleTentLobby_Text_TakeChallenge:
 	.string "האם ברצונך לקבל את אתגר החלפת קרב?$"

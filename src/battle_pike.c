@@ -24,6 +24,8 @@
 #include "constants/party_menu.h"
 #include "constants/battle_pike.h"
 
+#include "string_util.h"
+
 struct PikeRoomNPC
 {
     u16 graphicsId;
@@ -418,9 +420,98 @@ static const struct PikeRoomNPC sNPCTable[] =
     }
 };
 
-static const u16 sNPCSpeeches[][EASY_CHAT_BATTLE_WORDS_COUNT] =
+static const u8 sText_NPCSpeech_0[]  = _("אני אבוד,\nאני צריך יד עוזרת");
+static const u8 sText_NPCSpeech_1[]  = _("אין לי מושג איפה אני");
+static const u8 sText_NPCSpeech_2[]  = _("מה כדאי לי לעשות?");
+static const u8 sText_NPCSpeech_3[]  = _("זה מרגש מדי בשבילי");
+static const u8 sText_NPCSpeech_4[]  = _("האם עשית טעות?");
+static const u8 sText_NPCSpeech_5[]  = _("זה נבזי ונוראי כאן");
+static const u8 sText_NPCSpeech_6[]  = _("התעייפתי מהמקום הזה");
+static const u8 sText_NPCSpeech_7[]  = _("אני די נהנה מהאתגר הזה");
+static const u8 sText_NPCSpeech_8[]  = _("תרא{EMIT_HEY}{ADD_YUD} איך אני נתקל בזה");
+static const u8 sText_NPCSpeech_9[]  = _("מוכ{SWAP_NUN}{ADD_HEY} כבר לוותר?");
+static const u8 sText_NPCSpeech_10[] = _("או לא, מי את{EMIT_HEY}?");
+static const u8 sText_NPCSpeech_11[] = _("אני משוטט כאן לנצח…");
+static const u8 sText_NPCSpeech_12[] = _("אני חושב שאוותר עכשיו");
+static const u8 sText_NPCSpeech_13[] = _("מה כדאי לי לעשות הלאה?");
+static const u8 sText_NPCSpeech_14[] = _("אני יכול לנצח עם\nהגאונות קור מוחלט שלי");
+static const u8 sText_NPCSpeech_15[] = _("האם מישהו מגניב יופיע?");
+static const u8 sText_NPCSpeech_16[] = _("לשחק בקרבות זה מדהים!");
+static const u8 sText_NPCSpeech_17[] = _("אני לא יכול להתמודד\nעם זה יותר");
+static const u8 sText_NPCSpeech_18[] = _("אני לא יודע אם זה בסדר");
+static const u8 sText_NPCSpeech_19[] = _("או לא! לא עוד מאמן");
+static const u8 sText_NPCSpeech_20[] = _("זה חייב להיות בבא שמאלה.");
+static const u8 sText_NPCSpeech_21[] = _("זה חייב להיגמר בקרוב, נכון?");
+static const u8 sText_NPCSpeech_22[] = _("זה לגמרי פשוט, לא?");
+static const u8 sText_NPCSpeech_23[] = _("אני הולך להסתער");
+static const u8 sText_NPCSpeech_24[] = _("אין ויתורים אצלי");
+static const u8 sText_NPCSpeech_25[] = _("אני הולך להצליח");
+static const u8 sText_NPCSpeech_26[] = _("תמשי{SWAP_CHAF}{ADD_YUD}, אני לא יכול יותר");
+static const u8 sText_NPCSpeech_27[] = _("עוד מאמן ועוד מאמן…");
+static const u8 sText_NPCSpeech_28[] = _("את{EMIT_HEY} אוהב{ADD_TAF} פוקימון פלדה?");
+static const u8 sText_NPCSpeech_29[] = _("כל מאמן כאן חלש מדי");
+static const u8 sText_NPCSpeech_30[] = _("את{EMIT_HEY} חושב{ADD_TAF} שזה קל?");
+static const u8 sText_NPCSpeech_31[] = _("מה יבוא לאחר מזה?");
+static const u8 sText_NPCSpeech_32[] = _("אני פשוט כל כך מבולבל!");
+static const u8 sText_NPCSpeech_33[] = _("אני רק רוצה לחזור הביתה…");
+static const u8 sText_NPCSpeech_34[] = _("ייהו! המקום הזה קלי קלות");
+static const u8 sText_NPCSpeech_35[] = _("עוד לא הייתי בקרב");
+static const u8 sText_NPCSpeech_36[] = _("אולי זה בבא ימינה, אני חושב");
+static const u8 sText_NPCSpeech_37[] = _("וואה! זאת לא הייתה הדרך הזאת");
+static const u8 sText_NPCSpeech_38[] = _("הפוקימונים שלי עייפים מדי…");
+static const u8 sText_NPCSpeech_39[] = _("הפוקימונים שלי חזקים\nנגד רעל");
+static const u8 sText_NPCSpeech_40[] = _("להלהלה להלהלה! אני מדהים להלהלה");
+static const u8 sText_NPCSpeech_41[] = _("רעל זה דבר נוראי, לא?");
+
+static const u8 *const sNPCSpeeches[] =
 {
-    {EC_WORD_I_AM, EC_WORD_LOST, EC_WORD_I, EC_WORD_NEED, EC_WORD_A, EC_MOVE2(HELPING_HAND)},
+    sText_NPCSpeech_0,
+    sText_NPCSpeech_1,
+    sText_NPCSpeech_2,
+    sText_NPCSpeech_3,
+    sText_NPCSpeech_4,
+    sText_NPCSpeech_5,
+    sText_NPCSpeech_6,
+    sText_NPCSpeech_7,
+    sText_NPCSpeech_8,
+    sText_NPCSpeech_9,
+    sText_NPCSpeech_10,
+    sText_NPCSpeech_11,
+    sText_NPCSpeech_12,
+    sText_NPCSpeech_13,
+    sText_NPCSpeech_14,
+    sText_NPCSpeech_15,
+    sText_NPCSpeech_16,
+    sText_NPCSpeech_17,
+    sText_NPCSpeech_18,
+    sText_NPCSpeech_19,
+    sText_NPCSpeech_20,
+    sText_NPCSpeech_21,
+    sText_NPCSpeech_22,
+    sText_NPCSpeech_23,
+    sText_NPCSpeech_24,
+    sText_NPCSpeech_25,
+    sText_NPCSpeech_26,
+    sText_NPCSpeech_27,
+    sText_NPCSpeech_28,
+    sText_NPCSpeech_29,
+    sText_NPCSpeech_30,
+    sText_NPCSpeech_31,
+    sText_NPCSpeech_32,
+    sText_NPCSpeech_33,
+    sText_NPCSpeech_34,
+    sText_NPCSpeech_35,
+    sText_NPCSpeech_36,
+    sText_NPCSpeech_37,
+    sText_NPCSpeech_38,
+    sText_NPCSpeech_39,
+    sText_NPCSpeech_40,
+    sText_NPCSpeech_41,
+};
+
+/* static const u16 sNPCSpeeches[] =
+{
+    sText_NPCSpeech_0,
     {EC_WORD_I_VE, EC_WORD_NO, EC_WORD_SENSE, EC_WORD_OF, EC_WORD_WHERE, EC_WORD_I_AM},
     {EC_WORD_WHAT, EC_WORD_SHOULD, EC_WORD_I, EC_WORD_DO, EC_WORD_NOW, EC_WORD_QUES},
     {EC_WORD_THIS, EC_WORD_IS, EC_WORD_TOO, EC_WORD_EXCITING, EC_WORD_FOR, EC_WORD_ME},
@@ -462,7 +553,7 @@ static const u16 sNPCSpeeches[][EASY_CHAT_BATTLE_WORDS_COUNT] =
     {EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_STRONG, EC_WORD_TO, EC_WORD_POISON},
     {EC_WORD_LALALA, EC_WORD_LALALA, EC_WORD_EXCL, EC_WORD_I_AM, EC_WORD_AWESOME, EC_WORD_LALALA},
     {EC_MOVE2(TOXIC), EC_WORD_IS, EC_WORD_A, EC_WORD_TERRIBLE, EC_WORD_THING, EC_WORD_ISN_T_IT_QUES},
-};
+}; */
 
 // Table duplicated from frontier_util, only Battle Pike entry used
 static const u8 sFrontierBrainStreakAppearances[NUM_FRONTIER_FACILITIES][4] =
@@ -769,7 +860,8 @@ static void BufferNPCMessage(void)
     else
         speechId = sNPCTable[sNpcId].speechId3;
 
-    FrontierSpeechToString(sNPCSpeeches[speechId]);
+    StringExpandPlaceholders(gStringVar4, sNPCSpeeches[speechId]);  
+    //FrontierSpeechToString(sNPCSpeeches[speechId]);
 }
 
 static void StatusInflictionScreenFlash(void)

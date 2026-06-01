@@ -1311,20 +1311,20 @@ const u8 gText_Paralysis[] = _("שיתוק");
 const u8 gText_Ice[] = _("קרח");
 const u8 gText_Confusion[] = _("בלבול");
 const u8 gText_Love[] = _("אהבה");
-const u8 gText_SpaceAndSpace[] = _(" and ");
+const u8 gText_SpaceAndSpace[] = _(" ו ");
 const u8 gText_CommaSpace[] = _(", ");
 const u8 gText_Space2[] = _(" ");
 const u8 gText_LineBreak[] = _("\l");
 const u8 gText_NewLine[] = _("\n");
-const u8 gText_Are[] = _("are");
-const u8 gText_Are2[] = _("are");
+const u8 gText_Are[] = _("הם");
+const u8 gText_Are2[] = _("הם");
 const u8 gText_BadEgg[] = _("ביצה רעה");
 const u8 gText_BattleWallyName[] = _("וולי");
 const u8 gText_Win[] = _("{HIGHLIGHT TRANSPARENT}ניצחון");
 const u8 gText_Loss[] = _("{HIGHLIGHT TRANSPARENT}הפסד");
 const u8 gText_Draw[] = _("{HIGHLIGHT TRANSPARENT}תיקו");
-static const u8 sText_SpaceIs[] = _(" is");
-static const u8 sText_ApostropheS[] = _("'s");
+static const u8 sText_SpaceIs[] = _(" הוא");
+static const u8 sText_ApostropheS[] = _("של");
 
 // For displaying names of invalid moves.
 // This is large enough that the text for TYPE_ELECTRIC will exceed TEXT_BUFF_ARRAY_COUNT.

@@ -323,7 +323,7 @@ BattleFrontier_BattleFactoryLobby_Text_WelcomeForSingleBattle:
 	.string "המקום שבו האינטליגנציה של מאמנים\n"
 	.string "מועמדת למבחן!\p"
 	.string "ברו{SWAP_CHAF}{ADD_HEY} הבא{ADD_HEY} למפעל הקרב!\p"
-	.string "אני המדריך שלך לטורניר החלפת\n"
+	.string "אני המדריכה שלך לטורניר החלפת\n"
 	.string "קרב יחידים.$"
 
 BattleFrontier_BattleFactoryLobby_Text_TakeSinglesChallenge:
@@ -419,7 +419,7 @@ BattleFrontier_BattleFactoryLobby_Text_WelcomeForDoubleBattle:
 	.string "המקום שבו האינטליגנציה של מאמנים\n"
 	.string "מועמדת למבחן!\p"
 	.string "ברו{SWAP_CHAF}{ADD_HEY} הבא{ADD_HEY} למפעל הקרב!\p"
-	.string "אני המדריך שלך לטורניר החלפת\n"
+	.string "אני המדריכה שלך לטורניר החלפת\n"
 	.string "קרב זוגות.$"
 
 BattleFrontier_BattleFactoryLobby_Text_TakeDoublesChallenge:
