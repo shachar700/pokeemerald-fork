@@ -8,10 +8,10 @@ struct TrainerHillTrainer
     u8 name[TRAINER_NAME_LENGTH + 1];
     u8 facilityClass;
     bool32 unused; // Set to TRUE on JP trainers
-    u16 speechBefore[64];
-    u16 speechWin[64];
-    u16 speechLose[64];
-    u16 speechAfter[64];
+    u16 speechBefore[EASY_CHAT_BATTLE_WORDS_COUNT];
+    u16 speechWin[EASY_CHAT_BATTLE_WORDS_COUNT];
+    u16 speechLose[EASY_CHAT_BATTLE_WORDS_COUNT];
+    u16 speechAfter[EASY_CHAT_BATTLE_WORDS_COUNT];
     struct BattleTowerPokemon mons[PARTY_SIZE];
 };
 
