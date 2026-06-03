@@ -456,7 +456,7 @@ MtChimney_EventScript_MachineOff::
 	end
 
 MtChimney_EventScript_MachineOn::
-	msgbox MtChimney_Text_MetoriteFittedOnMachine, MSGBOX_DEFAULT
+	msgbox MtChimney_Text_MeteoriteFittedOnMachine, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -709,7 +709,7 @@ MtChimney_Text_YouveNotGotTheMoney:
 MtChimney_Text_OhFineThen:
 	.string "או, טוב אם כך.$"
 
-MtChimney_Text_MetoriteFittedOnMachine:
+MtChimney_Text_MeteoriteFittedOnMachine:
 	.string "מטאוריט מותקן על מכונה\n"
 	.string "מסתורית…\p"
 	.string "נראה שהמכונה אוגרת\n"
