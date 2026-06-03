@@ -188,7 +188,7 @@ def convert_easychat_line(line: str) -> str:
     sentence = fix_contractions(sentence)
     sentence = smart_capitalize(sentence)
 
-    return f'{prefix}_(\"{sentence}\"),'
+    return f'{prefix}COMPOUND_STRING(\"{sentence}\"),'
 
 def convert_file_content(content: str) -> str:
     lines = content.splitlines()

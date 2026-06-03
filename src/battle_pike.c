@@ -1516,13 +1516,13 @@ static void BufferTrainerIntro(void)
 {
     if (gSpecialVar_0x8005 == 0)
     {
-        if (TRAINER_BATTLE_PARAM.opponentA < FRONTIER_TRAINERS_COUNT)
-            StringCopy(gStringVar4, gFacilityTrainers[TRAINER_BATTLE_PARAM.opponentA].speechBefore);
+        if (gTrainerBattleOpponent_A  < FRONTIER_TRAINERS_COUNT)
+            StringCopy(gStringVar4, gFacilityTrainers[gTrainerBattleOpponent_A].speechBefore);
     }
     else if (gSpecialVar_0x8005 == 1)
     {
-        if (TRAINER_BATTLE_PARAM.opponentB < FRONTIER_TRAINERS_COUNT)
-            StringCopy(gStringVar4, gFacilityTrainers[TRAINER_BATTLE_PARAM.opponentB].speechBefore);
+        if (gTrainerBattleOpponent_B < FRONTIER_TRAINERS_COUNT)
+            StringCopy(gStringVar4, gFacilityTrainers[gTrainerBattleOpponent_B].speechBefore);
     }
 }
 

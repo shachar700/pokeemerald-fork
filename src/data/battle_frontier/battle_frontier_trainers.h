@@ -1,4503 +1,3606 @@
+static const u8 sText_BradyBefore[] = _("I am never going to lose!");
+static const u8 sText_BradyWin[] = _("I am strong aren't I?");
+static const u8 sText_BradyLose[] = _("What? But how?");
+static const u8 sText_ConnerBefore[] = _("Losing doesn't bug me");
+static const u8 sText_ConnerWin[] = _("A win is just awesome");
+static const u8 sText_ConnerLose[] = _("Darn… Losing does bug me");
+static const u8 sText_BradleyBefore[] = _("Hey there! You're my opponent today");
+static const u8 sText_BradleyWin[] = _("Hahaha! See ya later!");
+static const u8 sText_BradleyLose[] = _("Tomorrow is when we really battle");
+static const u8 sText_CybilBefore[] = _("You're really not very scary at all");
+static const u8 sText_CybilWin[] = _("It's sad to see you struggle");
+static const u8 sText_CybilLose[] = _("This can't be happening to me!");
+static const u8 sText_RodetteBefore[] = _("Oh this is so exciting!");
+static const u8 sText_RodetteWin[] = _("It's incredible how strong I am!");
+static const u8 sText_RodetteLose[] = _("Oh, dear… I am just no good");
+static const u8 sText_PeggyBefore[] = _("Get ready to be destroyed!");
+static const u8 sText_PeggyWin[] = _("Hahaha!! I am lolling!");
+static const u8 sText_PeggyLose[] = _("I am feeling sad thanks to you");
+static const u8 sText_KeithBefore[] = _("I don't just study you know");
+static const u8 sText_KeithWin[] = _("You don't study enough…");
+static const u8 sText_KeithLose[] = _("I need to study more…");
+static const u8 sText_GraysonBefore[] = _("A Pokémon battle isn't child's play!");
+static const u8 sText_GraysonWin[] = _("You're done aren't you?");
+static const u8 sText_GraysonLose[] = _("We were like toys to you");
+static const u8 sText_GlennBefore[] = _("I would be cool if I win");
+static const u8 sText_GlennWin[] = _("Cool! That's what I am");
+static const u8 sText_GlennLose[] = _("I am not going to be cool");
+static const u8 sText_LilianaBefore[] = _("I won't give up until I win");
+static const u8 sText_LilianaWin[] = _("There is no surrender in me");
+static const u8 sText_LilianaLose[] = _("That's it… I give up…");
+static const u8 sText_EliseBefore[] = _("My strategy is from my father");
+static const u8 sText_EliseWin[] = _("I win! Father I've won");
+static const u8 sText_EliseLose[] = _("Forgive me father for I've lost");
+static const u8 sText_ZoeyBefore[] = _("Please battle like you mean it");
+static const u8 sText_ZoeyWin[] = _("Thank you!! Thank you so much");
+static const u8 sText_ZoeyLose[] = _("Were you really being serious?");
+static const u8 sText_ManuelBefore[] = _("Me lose? That's preposterous!");
+static const u8 sText_ManuelWin[] = _("Naturally I win");
+static const u8 sText_ManuelLose[] = _("Waaah! I lost mother");
+static const u8 sText_RussBefore[] = _("They all want my fabulous Pokémon");
+static const u8 sText_RussWin[] = _("I will have a Pokémon party");
+static const u8 sText_RussLose[] = _("How could you do that?");
+static const u8 sText_DustinBefore[] = _("I really like cool Pokémon");
+static const u8 sText_DustinWin[] = _("I like myself when I win!");
+static const u8 sText_DustinLose[] = _("I like myself if I lose too");
+static const u8 sText_TinaBefore[] = _("If I win you can have a sweet kiss");
+static const u8 sText_TinaWin[] = _("Here it is your sweet kiss from my Jynx");
+static const u8 sText_TinaLose[] = _("You want a swift mega kick instead");
+static const u8 sText_GillianBefore[] = _("The gourmet thing is so yesterday");
+static const u8 sText_GillianWin[] = _("Pokémon never go out of fashion");
+static const u8 sText_GillianLose[] = _("Losing doesn't disappoint me");
+static const u8 sText_ZoeBefore[] = _("I haven't a worry at all");
+static const u8 sText_ZoeWin[] = _("Life is always good to me");
+static const u8 sText_ZoeLose[] = _("I worry about my Pokémon skill");
+static const u8 sText_ChenBefore[] = _("I am totally ready to rock today");
+static const u8 sText_ChenWin[] = _("I am ready to go on!");
+static const u8 sText_ChenLose[] = _("I've lost my focus energy and toughness");
+static const u8 sText_AlBefore[] = _("Your look says you're really tough");
+static const u8 sText_AlWin[] = _("It's me who is really tough");
+static const u8 sText_AlLose[] = _("I am right! You're really tough");
+static const u8 sText_MitchBefore[] = _("Mother nature is my ally!");
+static const u8 sText_MitchWin[] = _("Was that enough for you?");
+static const u8 sText_MitchLose[] = _("Mother nature didn't let me win?");
+static const u8 sText_AnneBefore[] = _("I can't wait let's battle now");
+static const u8 sText_AnneWin[] = _("My happiness is overwhelming!");
+static const u8 sText_AnneLose[] = _("You've destroyed my happiness…");
+static const u8 sText_AlizeBefore[] = _("Cute and awfully strong that's me");
+static const u8 sText_AlizeWin[] = _("Yup I am cute and awfully strong");
+static const u8 sText_AlizeLose[] = _("I am weak… But I am cute");
+static const u8 sText_LaurenBefore[] = _("I am old but I am also good");
+static const u8 sText_LaurenWin[] = _("I said I was old but good");
+static const u8 sText_LaurenLose[] = _("What a weird dream that was!");
+static const u8 sText_KippBefore[] = _("If I win I am going to go surf");
+static const u8 sText_KippWin[] = _("Yeah! I am off to surf");
+static const u8 sText_KippLose[] = _("Oh no! A whirlpool!");
+static const u8 sText_JasonBefore[] = _("Teach me a good strategy");
+static const u8 sText_JasonWin[] = _("That was your good strategy?!");
+static const u8 sText_JasonLose[] = _("Wow that is an awesome strategy");
+static const u8 sText_JohnBefore[] = _("I am a pretty new trainer");
+static const u8 sText_JohnWin[] = _("I am new but I won!");
+static const u8 sText_JohnLose[] = _("I am new so what if I lose?");
+static const u8 sText_AnnBefore[] = _("It's so exciting it really is");
+static const u8 sText_AnnWin[] = _("I am so happy I can cry");
+static const u8 sText_AnnLose[] = _("I am so sad I will cry");
+static const u8 sText_EileenBefore[] = _("Let's pretend I am an adult ok?");
+static const u8 sText_EileenWin[] = _("So this is an adult feeling");
+static const u8 sText_EileenLose[] = _("An adult can't beat you?");
+static const u8 sText_CarlieBefore[] = _("My summer vacation is for Pokémon");
+static const u8 sText_CarlieWin[] = _("My summer vacation will be awesome");
+static const u8 sText_CarlieLose[] = _("I can't win like this…");
+static const u8 sText_GordonBefore[] = _("Victory will come to me!");
+static const u8 sText_GordonWin[] = _("Oh, yeah! I really won");
+static const u8 sText_GordonLose[] = _("Nothing is working out for me");
+static const u8 sText_AydenBefore[] = _("Come on I need a hot battle");
+static const u8 sText_AydenWin[] = _("I need water to cool down");
+static const u8 sText_AydenLose[] = _("You have me feeling ice cold");
+static const u8 sText_MarcoBefore[] = _("I surf in the winter too");
+static const u8 sText_MarcoWin[] = _("I will go surf right now");
+static const u8 sText_MarcoLose[] = _("I will beat up my surf board");
+static const u8 sText_CierraBefore[] = _("I like to synchronize my swift swim");
+static const u8 sText_CierraWin[] = _("My Pokémon synchronize with me");
+static const u8 sText_CierraLose[] = _("I need to synchronize better…");
+static const u8 sText_MarcyBefore[] = _("I am a knockout you can't win!");
+static const u8 sText_MarcyWin[] = _("After all I am a knockout!");
+static const u8 sText_MarcyLose[] = _("That's not the knockout I mean");
+static const u8 sText_KathyBefore[] = _("I've won every match today!");
+static const u8 sText_KathyWin[] = _("It's so great to win!");
+static const u8 sText_KathyLose[] = _("Huh? I should not have lost");
+static const u8 sText_PeytonBefore[] = _("I am never disappointed with my Pokémon");
+static const u8 sText_PeytonWin[] = _("I am happy if we win together");
+static const u8 sText_PeytonLose[] = _("I adore my Pokémon more if I lose");
+static const u8 sText_JulianBefore[] = _("You adore your Pokémon right?");
+static const u8 sText_JulianWin[] = _("You're totally out of the question");
+static const u8 sText_JulianLose[] = _("You do adore your Pokémon!");
+static const u8 sText_QuinnBefore[] = _("My Pokémon are but a dream");
+static const u8 sText_QuinnWin[] = _("This is a beautiful dream!");
+static const u8 sText_QuinnLose[] = _("This is an awful nightmare!");
+static const u8 sText_HayleeBefore[] = _("I don't know how I am feeling");
+static const u8 sText_HayleeWin[] = _("I am feeling overwhelming joy over this");
+static const u8 sText_HayleeLose[] = _("Destroyed is the way I am feeling");
+static const u8 sText_AmandaBefore[] = _("I come from a trainer family");
+static const u8 sText_AmandaWin[] = _("I will treasure this win");
+static const u8 sText_AmandaLose[] = _("I want to go home right now");
+static const u8 sText_StacyBefore[] = _("All Pokémon have their own cute charm");
+static const u8 sText_StacyWin[] = _("You see what I mean?");
+static const u8 sText_StacyLose[] = _("Should I not adore Pokémon?");
+static const u8 sText_RafaelBefore[] = _("Come on! Let's see some spirit");
+static const u8 sText_RafaelWin[] = _("That's it excl that's the spirit!");
+static const u8 sText_RafaelLose[] = _("Well so much for our spirit");
+static const u8 sText_OliverBefore[] = _("A genius that's what I am!");
+static const u8 sText_OliverWin[] = _("That's how a genius works!");
+static const u8 sText_OliverLose[] = _("You're more a genius than I am");
+static const u8 sText_PaytonBefore[] = _("I train from the egg up");
+static const u8 sText_PaytonWin[] = _("Well done!");
+static const u8 sText_PaytonLose[] = _("That was a soft boiled loss…");
+static const u8 sText_PamelaBefore[] = _("All Pokémon adore a kind trainer");
+static const u8 sText_PamelaWin[] = _("It's too bad you lost");
+static const u8 sText_PamelaLose[] = _("You're kind and you're also strong");
+static const u8 sText_ElizaBefore[] = _("I adore Pokémon like my children");
+static const u8 sText_ElizaWin[] = _("I am so happy for my Pokémon");
+static const u8 sText_ElizaLose[] = _("Oh, dear I am so sorry about this");
+static const u8 sText_MarisaBefore[] = _("I promise to battle seriously");
+static const u8 sText_MarisaWin[] = _("Promise me you will do better");
+static const u8 sText_MarisaLose[] = _("Promise me another battle please!");
+static const u8 sText_LewisBefore[] = _("A little bug is scary? Hahaha");
+static const u8 sText_LewisWin[] = _("Look look! A scary bug");
+static const u8 sText_LewisLose[] = _("Oh a bug isn't scary…");
+static const u8 sText_YoshiBefore[] = _("Bug Pokémon make me feeling lovey dovey");
+static const u8 sText_YoshiWin[] = _("Bug Pokémon are the best!");
+static const u8 sText_YoshiLose[] = _("You're ignorant about bug Pokémon");
+static const u8 sText_DestinBefore[] = _("It's way too hot here");
+static const u8 sText_DestinWin[] = _("I am about to overheat");
+static const u8 sText_DestinLose[] = _("Please I need some water");
+static const u8 sText_KeonBefore[] = _("Forgive me but here I come!");
+static const u8 sText_KeonWin[] = _("Forgive me for my overwhelming power");
+static const u8 sText_KeonLose[] = _("I am sorry…");
+static const u8 sText_StuartBefore[] = _("I promise you a hot battle");
+static const u8 sText_StuartWin[] = _("The master of cool that's me");
+static const u8 sText_StuartLose[] = _("I see I am not so cool");
+static const u8 sText_NestorBefore[] = _("Show me a really smooth move");
+static const u8 sText_NestorWin[] = _("There was nothing smooth about that");
+static const u8 sText_NestorLose[] = _("You really are smooth!");
+static const u8 sText_DerrickBefore[] = _("Let's see you meditate like me");
+static const u8 sText_DerrickWin[] = _("How I meditate is just beautiful");
+static const u8 sText_DerrickLose[] = _("I will meditate for a calm mind");
+static const u8 sText_BrysonBefore[] = _("Poison powder is in our cotton spore move");
+static const u8 sText_BrysonWin[] = _("How do you like our poison powder?");
+static const u8 sText_BrysonLose[] = _("My cotton spore was useless");
+static const u8 sText_ClaytonBefore[] = _("Huh? Where is it?");
+static const u8 sText_ClaytonWin[] = _("Where is it? I've lost my pokenav");
+static const u8 sText_ClaytonLose[] = _("Where is it? I've lost my sense");
+static const u8 sText_TrentonBefore[] = _("Come over for some tasty water");
+static const u8 sText_TrentonWin[] = _("Mmm do you want some?");
+static const u8 sText_TrentonLose[] = _("I got this tasty water shopping");
+static const u8 sText_JensonBefore[] = _("My Pokémon will make you downcast");
+static const u8 sText_JensonWin[] = _("Your Pokémon don't make the cut");
+static const u8 sText_JensonLose[] = _("I am the trainer who is feeling downcast");
+static const u8 sText_WesleyBefore[] = _("Mew Mew is how I cry");
+static const u8 sText_WesleyWin[] = _("Yes I know I am cute!");
+static const u8 sText_WesleyLose[] = _("Mew Mew! Mew!!");
+static const u8 sText_AntonBefore[] = _("Get ready for me to thrash");
+static const u8 sText_AntonWin[] = _("Wahahaha! Sorry about that!");
+static const u8 sText_AntonLose[] = _("It's a tough loss to swallow");
+static const u8 sText_LawsonBefore[] = _("I am young at heart!");
+static const u8 sText_LawsonWin[] = _("Not cool! Not at all");
+static const u8 sText_LawsonLose[] = _("I am old and feeling shaky…");
+static const u8 sText_SammyBefore[] = _("My party is ready to rock");
+static const u8 sText_SammyWin[] = _("My party is just incredible!");
+static const u8 sText_SammyLose[] = _("I cry for my party…");
+static const u8 sText_ArnieBefore[] = _("I am no 1 I have no rival");
+static const u8 sText_ArnieWin[] = _("You see? I can't lose");
+static const u8 sText_ArnieLose[] = _("No! I won't accept this");
+static const u8 sText_AdrianBefore[] = _("Yahoo! Yahoo!!");
+static const u8 sText_AdrianWin[] = _("Thank you! Thank you!!");
+static const u8 sText_AdrianLose[] = _("Good bye! Good bye!!");
+static const u8 sText_TristanBefore[] = _("Confused? I am a genius");
+static const u8 sText_TristanWin[] = _("See? I am a genius");
+static const u8 sText_TristanLose[] = _("I am not a genius in battle");
+static const u8 sText_JulianaBefore[] = _("I think I am shopping too much");
+static const u8 sText_JulianaWin[] = _("But I want a Pokémon plush doll");
+static const u8 sText_JulianaLose[] = _("I so want another Pokémon plush doll");
+static const u8 sText_RyleeBefore[] = _("Show me that you have guts");
+static const u8 sText_RyleeWin[] = _("Bye bye! You have no guts");
+static const u8 sText_RyleeLose[] = _("That was gutsy… You're quite super");
+static const u8 sText_ChelseaBefore[] = _("I seriously mean to win!");
+static const u8 sText_ChelseaWin[] = _("That was my will to win");
+static const u8 sText_ChelseaLose[] = _("You're far too strong for me");
+static const u8 sText_DanelaBefore[] = _("You must be my opponent now!");
+static const u8 sText_DanelaWin[] = _("Oh, dear too weak! Don't give up!");
+static const u8 sText_DanelaLose[] = _("That was good and this is good bye");
+static const u8 sText_LizbethBefore[] = _("If I lose you can have a present");
+static const u8 sText_LizbethWin[] = _("Here it is a little praise as your present");
+static const u8 sText_LizbethLose[] = _("Your present?! Here it is a double slap");
+static const u8 sText_AmeliaBefore[] = _("I believe in cute fashion appeal");
+static const u8 sText_AmeliaWin[] = _("Your fashion sense is a disaster");
+static const u8 sText_AmeliaLose[] = _("That was awful! I am going home");
+static const u8 sText_JillianBefore[] = _("What is that I smell?");
+static const u8 sText_JillianWin[] = _("It's the sweet scent of tasty water");
+static const u8 sText_JillianLose[] = _("It's your offensive stench that's what");
+static const u8 sText_AbbieBefore[] = _("You try my secret aromatherapy ok?");
+static const u8 sText_AbbieWin[] = _("My aromatherapy is terrible for you");
+static const u8 sText_AbbieLose[] = _("Didn't you smell a thing?!");
+static const u8 sText_BrianaBefore[] = _("My boy friend works too much");
+static const u8 sText_BrianaWin[] = _("I only miss him more…");
+static const u8 sText_BrianaLose[] = _("I am so lonesome without him…");
+static const u8 sText_AntonioBefore[] = _("I know how to go go");
+static const u8 sText_AntonioWin[] = _("But I don't like to dance");
+static const u8 sText_AntonioLose[] = _("Go go… Just flail about");
+static const u8 sText_JadenBefore[] = _("Hello I think I adore you");
+static const u8 sText_JadenWin[] = _("You make me thrash in frustration");
+static const u8 sText_JadenLose[] = _("This is it excl good bye forever!");
+static const u8 sText_DakotaBefore[] = _("You have to dance with power");
+static const u8 sText_DakotaWin[] = _("Got it? Dance with power");
+static const u8 sText_DakotaLose[] = _("Okay you understand all right!");
+static const u8 sText_BraydenBefore[] = _("Color change version toys are useless!");
+static const u8 sText_BraydenWin[] = _("I only collect normal version toys");
+static const u8 sText_BraydenLose[] = _("I attract color change version toys…");
+static const u8 sText_CorsonBefore[] = _("I get to beat up on you");
+static const u8 sText_CorsonWin[] = _("Too easy! I am so cool");
+static const u8 sText_CorsonLose[] = _("Why?! I curse you");
+static const u8 sText_TrevinBefore[] = _("There is none better than me");
+static const u8 sText_TrevinWin[] = _("Yes sir excl I am the best");
+static const u8 sText_TrevinLose[] = _("Serious?!");
+static const u8 sText_PatrickBefore[] = _("I am perfect! Give up now");
+static const u8 sText_PatrickWin[] = _("Don't be disappointed I am perfect");
+static const u8 sText_PatrickLose[] = _("But how? I am perfect…");
+static const u8 sText_KadenBefore[] = _("What are you up to?");
+static const u8 sText_KadenWin[] = _("You were a surprise to me!");
+static const u8 sText_KadenLose[] = _("I don't know who I am…");
+static const u8 sText_MaxwellBefore[] = _("Hey there who is your rival?");
+static const u8 sText_MaxwellWin[] = _("My rival is my girl friend");
+static const u8 sText_MaxwellLose[] = _("I am making you my rival");
+static const u8 sText_DarylBefore[] = _("I only know how to charge");
+static const u8 sText_DarylWin[] = _("Am I overwhelming or what?");
+static const u8 sText_DarylLose[] = _("You're going to a legend!");
+static const u8 sText_KennethBefore[] = _("You better not slack off with me");
+static const u8 sText_KennethWin[] = _("Did my taunt intimidate you?");
+static const u8 sText_KennethLose[] = _("I am sorry…");
+static const u8 sText_RichBefore[] = _("Your facade doesn't trick me");
+static const u8 sText_RichWin[] = _("Seriously are you really ok?");
+static const u8 sText_RichLose[] = _("That was really tough on me");
+static const u8 sText_CadenBefore[] = _("I can't be defeated!");
+static const u8 sText_CadenWin[] = _("Fire! Fire!!");
+static const u8 sText_CadenLose[] = _("I am tired… It's so hot");
+static const u8 sText_MarlonBefore[] = _("A pokedex is a little radio?");
+static const u8 sText_MarlonWin[] = _("A little radio huh? That's totally cool");
+static const u8 sText_MarlonLose[] = _("It's not? Is pokenav?");
+static const u8 sText_NashBefore[] = _("I am on fire baby!");
+static const u8 sText_NashWin[] = _("I left you just an ember");
+static const u8 sText_NashLose[] = _("Aiyeeh!! No water please");
+static const u8 sText_RobbyBefore[] = _("Hahaha! Happy to meet you!");
+static const u8 sText_RobbyWin[] = _("I am the leader with refreshing serene grace");
+static const u8 sText_RobbyLose[] = _("I will thrash my toys!");
+static const u8 sText_ReeceBefore[] = _("My quick attack can beat a teleport");
+static const u8 sText_ReeceWin[] = _("Like I said I am darn fast");
+static const u8 sText_ReeceLose[] = _("I was kidding about that teleport thing");
+static const u8 sText_KathrynBefore[] = _("I don't train good enough?");
+static const u8 sText_KathrynWin[] = _("Don't taunt me like that ok?");
+static const u8 sText_KathrynLose[] = _("Why couldn't I win this?");
+static const u8 sText_EllenBefore[] = _("Crush you like an egg!");
+static const u8 sText_EllenWin[] = _("That was a tasty victory for me");
+static const u8 sText_EllenLose[] = _("Too tough to crush!");
+static const u8 sText_RamonBefore[] = _("Okay! This is perfection");
+static const u8 sText_RamonWin[] = _("I am happy that I won!");
+static const u8 sText_RamonLose[] = _("It's a secret why I am happy");
+static const u8 sText_ArthurBefore[] = _("Here I come feeling ready for it all");
+static const u8 sText_ArthurWin[] = _("That's it excl that was fabulous!");
+static const u8 sText_ArthurLose[] = _("That was not what I need");
+static const u8 sText_AlondraBefore[] = _("Every day is a great day");
+static const u8 sText_AlondraWin[] = _("My dive will be a legend");
+static const u8 sText_AlondraLose[] = _("My dive left me cold…");
+static const u8 sText_AdrianaBefore[] = _("Come see an incredible swift swim!");
+static const u8 sText_AdrianaWin[] = _("I make it look so easy");
+static const u8 sText_AdrianaLose[] = _("I am feeling beat up and tired");
+static const u8 sText_MalikBefore[] = _("Oh not another battle please…");
+static const u8 sText_MalikWin[] = _("I finally won… I am tired");
+static const u8 sText_MalikLose[] = _("I finally lost… I am tired");
+static const u8 sText_JillBefore[] = _("I am the quick attack trainer!");
+static const u8 sText_JillWin[] = _("The quick attack trainer wins!");
+static const u8 sText_JillLose[] = _("The quick attack trainer gives up!");
+static const u8 sText_ErikBefore[] = _("I am the speed boost hero!");
+static const u8 sText_ErikWin[] = _("Thank you from the speed boost hero!");
+static const u8 sText_ErikLose[] = _("Waaah!! No no!!");
+static const u8 sText_YazminBefore[] = _("I would rather run than bike");
+static const u8 sText_YazminWin[] = _("Yes I would much rather run");
+static const u8 sText_YazminLose[] = _("Bye bye! I am going to run away");
+static const u8 sText_JamalBefore[] = _("I am going to be a father");
+static const u8 sText_JamalWin[] = _("I can't wait for my baby");
+static const u8 sText_JamalLose[] = _("My baby will be totally awesome");
+static const u8 sText_LeslieBefore[] = _("I am going to be a mother");
+static const u8 sText_LeslieWin[] = _("A baby will be a little challenge");
+static const u8 sText_LeslieLose[] = _("I am too happy to be angry");
+static const u8 sText_DaveBefore[] = _("What should I do today?");
+static const u8 sText_DaveWin[] = _("I should enjoy some sports!");
+static const u8 sText_DaveLose[] = _("I will go play a game");
+static const u8 sText_CarloBefore[] = _("Hah!! Yeah!!");
+static const u8 sText_CarloWin[] = _("I do things at extreme speed!");
+static const u8 sText_CarloLose[] = _("I lost at extreme speed…");
+static const u8 sText_EmiliaBefore[] = _("Me worry? I have none");
+static const u8 sText_EmiliaWin[] = _("Ahaha see? That was fantastic!");
+static const u8 sText_EmiliaLose[] = _("Ahaha see? That was entertaining!");
+static const u8 sText_DaliaBefore[] = _("My bike is very expensive");
+static const u8 sText_DaliaWin[] = _("Don't come near my bike!");
+static const u8 sText_DaliaLose[] = _("My bike is my best friend");
+static const u8 sText_HitomiBefore[] = _("Yeah!! Hah!!");
+static const u8 sText_HitomiWin[] = _("What?! I won?!");
+static const u8 sText_HitomiLose[] = _("Aiyeeh!! I am sorry!!");
+static const u8 sText_RicardoBefore[] = _("Come on! Play time is over");
+static const u8 sText_RicardoWin[] = _("You're out of here!");
+static const u8 sText_RicardoLose[] = _("Please don't hit me!");
+static const u8 sText_ShizukaBefore[] = _("Show me that you're serious!");
+static const u8 sText_ShizukaWin[] = _("I won't forget about you");
+static const u8 sText_ShizukaLose[] = _("You're perfect in every way!");
+static const u8 sText_JoanaBefore[] = _("You're going to lose right away");
+static const u8 sText_JoanaWin[] = _("I am the winner hear me roar");
+static const u8 sText_JoanaLose[] = _("I refuse to accept that outrage");
+static const u8 sText_KellyBefore[] = _("My night school is really scary");
+static const u8 sText_KellyWin[] = _("A lady ghost appears there");
+static const u8 sText_KellyLose[] = _("The home work is awfully scary");
+static const u8 sText_RaynaBefore[] = _("I am no 1 when it's about power");
+static const u8 sText_RaynaWin[] = _("Understand my power now?");
+static const u8 sText_RaynaLose[] = _("Terrible… I am terrible…");
+static const u8 sText_EvanBefore[] = _("Every battle has a smell");
+static const u8 sText_EvanWin[] = _("Oh! The sweet scent of victory");
+static const u8 sText_EvanLose[] = _("The awful stench of a loss");
+static const u8 sText_JordanBefore[] = _("Good! Come on!!");
+static const u8 sText_JordanWin[] = _("You can't beat me!");
+static const u8 sText_JordanLose[] = _("What?! But how?");
+static const u8 sText_JoelBefore[] = _("Fufufu…");
+static const u8 sText_JoelWin[] = _("Giggle…");
+static const u8 sText_JoelLose[] = _("Hahaha…");
+static const u8 sText_KristenBefore[] = _("Hahaha… A kid…");
+static const u8 sText_KristenWin[] = _("Just a little kid after all!");
+static const u8 sText_KristenLose[] = _("A tough kid huh? Humph!");
+static const u8 sText_SelphyBefore[] = _("Huh? What is it?");
+static const u8 sText_SelphyWin[] = _("Oh yes! Why not?");
+static const u8 sText_SelphyLose[] = _("Oh no! Why not?");
+static const u8 sText_ChloeBefore[] = _("Come we will do battle now");
+static const u8 sText_ChloeWin[] = _("More! Another battle!");
+static const u8 sText_ChloeLose[] = _("Oh! Strong you are");
+static const u8 sText_NortonBefore[] = _("I know only you");
+static const u8 sText_NortonWin[] = _("Excuse me but you're a pushover!");
+static const u8 sText_NortonLose[] = _("You're some kind of awesome!");
+static const u8 sText_LukasBefore[] = _("My joking is pretty terrible…");
+static const u8 sText_LukasWin[] = _("Your rock head exists to shine!");
+static const u8 sText_LukasLose[] = _("Your rock head come to shine");
+static const u8 sText_ZachBefore[] = _("I am an excellent mimic of Pokémon");
+static const u8 sText_ZachWin[] = _("I am happy like a little Togepi!");
+static const u8 sText_ZachLose[] = _("I am angry like a Mankey!");
+static const u8 sText_KaitlynBefore[] = _("I crush things with psychic power");
+static const u8 sText_KaitlynWin[] = _("My victory will make the news");
+static const u8 sText_KaitlynLose[] = _("No no… This won't do");
+static const u8 sText_BreannaBefore[] = _("My Pokémon will crush you!");
+static const u8 sText_BreannaWin[] = _("Have some more of this!");
+static const u8 sText_BreannaLose[] = _("You have guts and skill");
+static const u8 sText_KendraBefore[] = _("If you're smart stop right now");
+static const u8 sText_KendraWin[] = _("I said that you should stop");
+static const u8 sText_KendraLose[] = _("Why didn't you stop?");
+static const u8 sText_MollyBefore[] = _("Will my cute charm attract you?");
+static const u8 sText_MollyWin[] = _("Your Pokémon are my toys now");
+static const u8 sText_MollyLose[] = _("Oh how could you?");
+static const u8 sText_JazminBefore[] = _("I forecast terrible things for you");
+static const u8 sText_JazminWin[] = _("There wasn't my forecast right?");
+static const u8 sText_JazminLose[] = _("My foresight didn't show me this");
+static const u8 sText_KelseyBefore[] = _("I haven't slept in days…");
+static const u8 sText_KelseyWin[] = _("My sleep will be excellent now");
+static const u8 sText_KelseyLose[] = _("You have destroyed my sleep…");
+static const u8 sText_JalenBefore[] = _("I don't allow Pokémon to thrash");
+static const u8 sText_JalenWin[] = _("Hahaha! Are you angry?");
+static const u8 sText_JalenLose[] = _("Why is this so hard?");
+static const u8 sText_GriffenBefore[] = _("I swallow sludge to transform myself");
+static const u8 sText_GriffenWin[] = _("I have a growth of acid armor");
+static const u8 sText_GriffenLose[] = _("I have a growth of suction cups");
+static const u8 sText_XanderBefore[] = _("I got my Pokémon on rental");
+static const u8 sText_XanderWin[] = _("It's incredible my rental Pokémon won");
+static const u8 sText_XanderLose[] = _("Rental Pokémon aren't up to scratch");
+static const u8 sText_MarvinBefore[] = _("You're up to the challenge?");
+static const u8 sText_MarvinWin[] = _("I didn't think you're good enough");
+static const u8 sText_MarvinLose[] = _("I am feeling perfect thank you so much");
+static const u8 sText_BrennanBefore[] = _("I wish to see the news");
+static const u8 sText_BrennanWin[] = _("Comics get damp from drizzle?");
+static const u8 sText_BrennanLose[] = _("The tight money living channel?!");
+static const u8 sText_BaleyBefore[] = _("Screech is like music to me!");
+static const u8 sText_BaleyWin[] = _("My screech strategy is the best");
+static const u8 sText_BaleyLose[] = _("You're soundproof?");
+static const u8 sText_ZackaryBefore[] = _("Can you dig it yo?");
+static const u8 sText_ZackaryWin[] = _("Take down take a dive yo yo");
+static const u8 sText_ZackaryLose[] = _("Break down dive time for me");
+static const u8 sText_GabrielBefore[] = _("Pound the thick fat on my belly drum");
+static const u8 sText_GabrielWin[] = _("Pound my belly drum pound my belly drum");
+static const u8 sText_GabrielLose[] = _("My belly drum was too weak…");
+static const u8 sText_EmilyBefore[] = _("How about a tiny bit of hypnosis?");
+static const u8 sText_EmilyWin[] = _("My hypnosis strategy works to perfection");
+static const u8 sText_EmilyLose[] = _("My hypnosis strategy went badly…");
+static const u8 sText_JordynBefore[] = _("You don't know my secret…");
+static const u8 sText_JordynWin[] = _("I am not as I appear…");
+static const u8 sText_JordynLose[] = _("But how did you know?");
+static const u8 sText_SofiaBefore[] = _("Loudred probably has a sweet scent");
+static const u8 sText_SofiaWin[] = _("That's the feeling that I get");
+static const u8 sText_SofiaLose[] = _("I work at the dept store");
+static const u8 sText_BradenBefore[] = _("I choose you! This is it excl");
+static const u8 sText_BradenWin[] = _("I am feeling pretty awesome about myself");
+static const u8 sText_BradenLose[] = _("All right! I surrender!");
+static const u8 sText_KaydenBefore[] = _("They overdo that gourmet thing…");
+static const u8 sText_KaydenWin[] = _("That gourmet thing isn't for me");
+static const u8 sText_KaydenLose[] = _("Hey this is pretty tasty");
+static const u8 sText_CooperBefore[] = _("This should absolutely be a pushover");
+static const u8 sText_CooperWin[] = _("That was too exciting for me…");
+static const u8 sText_CooperLose[] = _("Please! Sorry I am sorry");
+static const u8 sText_JuliaBefore[] = _("Spirit alone won't make you win");
+static const u8 sText_JuliaWin[] = _("You should accept this with serene grace");
+static const u8 sText_JuliaLose[] = _("For now good bye but it's not over");
+static const u8 sText_AmaraBefore[] = _("Wroooaar!!! I am so ready!!");
+static const u8 sText_AmaraWin[] = _("I lose myself if it's exciting");
+static const u8 sText_AmaraLose[] = _("That's too much to tackle!");
+static const u8 sText_LynnBefore[] = _("Your secret can't be hidden forever");
+static const u8 sText_LynnWin[] = _("I know your secret now!");
+static const u8 sText_LynnLose[] = _("You can't safeguard your own secret");
+static const u8 sText_JovanBefore[] = _("Your battle sense is sadly lacking");
+static const u8 sText_JovanWin[] = _("My battle sense is cool isn't it?");
+static const u8 sText_JovanLose[] = _("I was minus my normal power today");
+static const u8 sText_DominicBefore[] = _("I have this excellent camera");
+static const u8 sText_DominicWin[] = _("My camera was awfully expensive");
+static const u8 sText_DominicLose[] = _("My camera doesn't miss a thing");
+static const u8 sText_NikolasBefore[] = _("I mimic Pokémon after every battle");
+static const u8 sText_NikolasWin[] = _("If I win I pretend I am a Tauros");
+static const u8 sText_NikolasLose[] = _("If I lose I pretend I am a Miltank");
+static const u8 sText_ValeriaBefore[] = _("I wish you would not glare");
+static const u8 sText_ValeriaWin[] = _("You're mean! I mean really");
+static const u8 sText_ValeriaLose[] = _("You have a really scary face!");
+static const u8 sText_DelaneyBefore[] = _("School is over time to play");
+static const u8 sText_DelaneyWin[] = _("My boy friend is from school");
+static const u8 sText_DelaneyLose[] = _("I have to work next week");
+static const u8 sText_MeghanBefore[] = _("School is out time to play");
+static const u8 sText_MeghanWin[] = _("My boy friend likes comics");
+static const u8 sText_MeghanLose[] = _("It's back to school soon");
+static const u8 sText_RobertoBefore[] = _("Dragon Pokémon are invincible!");
+static const u8 sText_RobertoWin[] = _("You weren't bad I was just better");
+static const u8 sText_RobertoLose[] = _("Aren't you satisfied yet?");
+static const u8 sText_DamianBefore[] = _("My pure power is machine like!");
+static const u8 sText_DamianWin[] = _("My mach punch will make a brick break");
+static const u8 sText_DamianLose[] = _("Arrgh! No!!");
+static const u8 sText_BrodyBefore[] = _("My fashion sense seems Oddish?");
+static const u8 sText_BrodyWin[] = _("It's my family stay at home look!");
+static const u8 sText_BrodyLose[] = _("I question your fashion sense seriously");
+static const u8 sText_GrahamBefore[] = _("Yeah! Yeah yeah!!");
+static const u8 sText_GrahamWin[] = _("Wahahaha wahahaha! Wahahaha wahahaha!!");
+static const u8 sText_GrahamLose[] = _("I am sorry… It's my bad");
+static const u8 sText_TylorBefore[] = _("Are you feeling my heat wave?");
+static const u8 sText_TylorWin[] = _("Yes I am on fire!");
+static const u8 sText_TylorLose[] = _("But I was on fire for you");
+static const u8 sText_JarenBefore[] = _("Fighting spirit? Me?");
+static const u8 sText_JarenWin[] = _("I want more cute Pokémon");
+static const u8 sText_JarenLose[] = _("Your Pokémon look quite cute");
+static const u8 sText_CordellBefore[] = _("A battle is decided on spirit");
+static const u8 sText_CordellWin[] = _("Can't you accept that?");
+static const u8 sText_CordellLose[] = _("I will be on my way");
+static const u8 sText_JazlynBefore[] = _("Is your pokedex really awesome?");
+static const u8 sText_JazlynWin[] = _("Oh, yeah wow your pokedex is super");
+static const u8 sText_JazlynLose[] = _("An avant garde pokedex would be awesome");
+static const u8 sText_ZacheryBefore[] = _("I have my own place yeehaw excl");
+static const u8 sText_ZacheryWin[] = _("It's an exciting time for me");
+static const u8 sText_ZacheryLose[] = _("You can't flatten my happiness!");
+static const u8 sText_JohanBefore[] = _("Winter will soon be here");
+static const u8 sText_JohanWin[] = _("My allowance could use a helping hand");
+static const u8 sText_JohanLose[] = _("I always use my allowance up");
+static const u8 sText_SheaBefore[] = _("Do you battle with beauty?");
+static const u8 sText_SheaWin[] = _("You battle in an ugly way");
+static const u8 sText_SheaLose[] = _("What is beauty to you?");
+static const u8 sText_KailaBefore[] = _("I am feeling thirsty right now…");
+static const u8 sText_KailaWin[] = _("I could use a cold drink");
+static const u8 sText_KailaLose[] = _("That loss is hard to swallow");
+static const u8 sText_IsiahBefore[] = _("I pretend to study a lot");
+static const u8 sText_IsiahWin[] = _("I trick mother for my allowance");
+static const u8 sText_IsiahLose[] = _("I don't want to study more");
+static const u8 sText_GarrettBefore[] = _("I enjoy comics and this game");
+static const u8 sText_GarrettWin[] = _("I like this music idol too");
+static const u8 sText_GarrettLose[] = _("But I have to study more");
+static const u8 sText_HaylieBefore[] = _("I worry too much to sleep");
+static const u8 sText_HaylieWin[] = _("A win gives me a calm mind");
+static const u8 sText_HaylieLose[] = _("My insomnia will get bad…");
+static const u8 sText_MeganBefore[] = _("I believe in an aromatherapy bath");
+static const u8 sText_MeganWin[] = _("I want a healthy clear body");
+static const u8 sText_MeganLose[] = _("If only aromatherapy were less expensive");
+static const u8 sText_IssacBefore[] = _("My hobby?");
+static const u8 sText_IssacWin[] = _("I like any kind of water sport");
+static const u8 sText_IssacLose[] = _("I dislike any kind of mud sport");
+static const u8 sText_QuintonBefore[] = _("I am sad cause I am too weak");
+static const u8 sText_QuintonWin[] = _("You aren't too strong for me");
+static const u8 sText_QuintonLose[] = _("Hey what did I do?");
+static const u8 sText_SalmaBefore[] = _("You've got your hustle on!");
+static const u8 sText_SalmaWin[] = _("I win you hustle on out");
+static const u8 sText_SalmaLose[] = _("I don't get how I lost");
+static const u8 sText_AnsleyBefore[] = _("I am bored… Dance for me");
+static const u8 sText_AnsleyWin[] = _("You've bored me some more");
+static const u8 sText_AnsleyLose[] = _("Take your frustration some other place");
+static const u8 sText_HoldenBefore[] = _("Let's commemorate my coolness in battle");
+static const u8 sText_HoldenWin[] = _("You're too weak for any praise");
+static const u8 sText_HoldenLose[] = _("Your battle sense is amusing");
+static const u8 sText_LucaBefore[] = _("We will have a cool battle");
+static const u8 sText_LucaWin[] = _("I won in a cool way");
+static const u8 sText_LucaLose[] = _("Hello? I am just a kid");
+static const u8 sText_JamisonBefore[] = _("My secret power is overwhelming to Pokémon");
+static const u8 sText_JamisonWin[] = _("Did you see that?");
+static const u8 sText_JamisonLose[] = _("I will use smokescreen to escape");
+static const u8 sText_GunnarBefore[] = _("I cut down every opponent");
+static const u8 sText_GunnarWin[] = _("Don't grudge me for your loss");
+static const u8 sText_GunnarLose[] = _("Please lose that scary face of yours");
+static const u8 sText_CraigBefore[] = _("I can't wait for my train");
+static const u8 sText_CraigWin[] = _("My train isn't here yet…");
+static const u8 sText_CraigLose[] = _("Here it is my train see ya!");
+static const u8 sText_PierceBefore[] = _("There was a heat wave last week");
+static const u8 sText_PierceWin[] = _("I can't take a heat wave");
+static const u8 sText_PierceLose[] = _("Didn't it hail too?");
+static const u8 sText_ReginaBefore[] = _("I like to play in water");
+static const u8 sText_ReginaWin[] = _("I refuse to come out");
+static const u8 sText_ReginaLose[] = _("You're not much good in water");
+static const u8 sText_AlisonBefore[] = _("This kindergarten magazine is too much");
+static const u8 sText_AlisonWin[] = _("How to bug your teacher?");
+static const u8 sText_AlisonLose[] = _("Enjoy a tasty school diet?");
+static const u8 sText_HankBefore[] = _("There is a bug event soon");
+static const u8 sText_HankWin[] = _("It's a bug fashion show!");
+static const u8 sText_HankLose[] = _("Don't you like bug Pokémon?");
+static const u8 sText_EarlBefore[] = _("The invincible bug trainer is here");
+static const u8 sText_EarlWin[] = _("The invincible bug trainer am I");
+static const u8 sText_EarlLose[] = _("See how fast I run away!");
+static const u8 sText_RamiroBefore[] = _("I went to a fishing school");
+static const u8 sText_RamiroWin[] = _("Seriously I am in the fishing hall of fame");
+static const u8 sText_RamiroLose[] = _("I want to go back…");
+static const u8 sText_HunterBefore[] = _("Show me a totally cool cross chop");
+static const u8 sText_HunterWin[] = _("You're too weak to do a cross chop");
+static const u8 sText_HunterLose[] = _("Was it a mistake?");
+static const u8 sText_AidenBefore[] = _("My work is making me healthy");
+static const u8 sText_AidenWin[] = _("You see? I am healthy!");
+static const u8 sText_AidenLose[] = _("You're more healthy than I am…");
+static const u8 sText_XavierBefore[] = _("Hey there! Look look!!");
+static const u8 sText_XavierWin[] = _("Good bye and thank you that was funny");
+static const u8 sText_XavierLose[] = _("Wowee! No no!!");
+static const u8 sText_ClintonBefore[] = _("Want to see my hypnosis?");
+static const u8 sText_ClintonWin[] = _("Your fury swipes, your strength young trainer");
+static const u8 sText_ClintonLose[] = _("Tch… I am too weak…");
+static const u8 sText_JesseBefore[] = _("This battle is for my mother");
+static const u8 sText_JesseWin[] = _("Mother will be happy for me");
+static const u8 sText_JesseLose[] = _("I want my mother!");
+static const u8 sText_EduardoBefore[] = _("Our music will play all night");
+static const u8 sText_EduardoWin[] = _("Nighttime is when I play best");
+static const u8 sText_EduardoLose[] = _("Let's party until the morning sun!");
+static const u8 sText_HalBefore[] = _("I am trendy aren't I?");
+static const u8 sText_HalWin[] = _("I am feeling hip and happening oh, yeah!");
+static const u8 sText_HalLose[] = _("I am always trendy thank you very much");
+static const u8 sText_GageBefore[] = _("Here it is a flying type hidden move");
+static const u8 sText_GageWin[] = _("It's a flying type victory!");
+static const u8 sText_GageLose[] = _("If I lose I just fly away");
+static const u8 sText_ArnoldBefore[] = _("I am feeling weird from a dream");
+static const u8 sText_ArnoldWin[] = _("Your scary face was in my dream");
+static const u8 sText_ArnoldLose[] = _("My incredible dream was so weird");
+static const u8 sText_JarrettBefore[] = _("Come on let's dance like it's yesterday");
+static const u8 sText_JarrettWin[] = _("You like how I dance?");
+static const u8 sText_JarrettLose[] = _("You don't appreciate how I dance");
+static const u8 sText_GarettBefore[] = _("My girl gives me a little sweet kiss");
+static const u8 sText_GarettWin[] = _("My girl friend is my treasure");
+static const u8 sText_GarettLose[] = _("A treasure isn't always about money");
+static const u8 sText_EmanuelBefore[] = _("Smartness alone won't make you win");
+static const u8 sText_EmanuelWin[] = _("I am not very smart but I won");
+static const u8 sText_EmanuelLose[] = _("How did you fake out me?");
+static const u8 sText_GustavoBefore[] = _("Charge! Charge!!");
+static const u8 sText_GustavoWin[] = _("Surrender? So soon?");
+static const u8 sText_GustavoLose[] = _("You can't make me surrender yet");
+static const u8 sText_KameronBefore[] = _("Take that! It's my fiery trick");
+static const u8 sText_KameronWin[] = _("Did my fiery trick astonish?");
+static const u8 sText_KameronLose[] = _("You didn't fall for my trick");
+static const u8 sText_AlfredoBefore[] = _("A fiery gourmet am I!");
+static const u8 sText_AlfredoWin[] = _("It's a tasty gourmet victory!");
+static const u8 sText_AlfredoLose[] = _("What a disaster that was!");
+static const u8 sText_RubenBefore[] = _("I can't wait to get going");
+static const u8 sText_RubenWin[] = _("Get going! This is good bye");
+static const u8 sText_RubenLose[] = _("I've got to get going");
+static const u8 sText_LamarBefore[] = _("A present for me?");
+static const u8 sText_LamarWin[] = _("Mmm this is quite tasty…");
+static const u8 sText_LamarLose[] = _("Oh it's a game is it?");
+static const u8 sText_JaxonBefore[] = _("A shell armor is what I want");
+static const u8 sText_JaxonWin[] = _("My father and mother won't accept");
+static const u8 sText_JaxonLose[] = _("Please I need a shell armor!");
+static const u8 sText_LoganBefore[] = _("If I lose I will study for school");
+static const u8 sText_LoganWin[] = _("Me study? Not very likely to see");
+static const u8 sText_LoganLose[] = _("No thanks I am going to sleep");
+static const u8 sText_EmileeBefore[] = _("Is this kind of battle ok?");
+static const u8 sText_EmileeWin[] = _("Let's go for an icy wind surf");
+static const u8 sText_EmileeLose[] = _("How about a rock slide show?");
+static const u8 sText_JosieBefore[] = _("A Pokémon fashion contest is pretty");
+static const u8 sText_JosieWin[] = _("I really like mode fashion things");
+static const u8 sText_JosieLose[] = _("You're totally lacking in fashion sense");
+static const u8 sText_ArmandoBefore[] = _("I need more grass type Pokémon");
+static const u8 sText_ArmandoWin[] = _("Trade me a grass Pokémon please");
+static const u8 sText_ArmandoLose[] = _("There aren't enough grass type Pokémon");
+static const u8 sText_SkylerBefore[] = _("Ingrain is my choice battle move");
+static const u8 sText_SkylerWin[] = _("You can't move me now!");
+static const u8 sText_SkylerLose[] = _("You cut me down…");
+static const u8 sText_RuthBefore[] = _("I want to enjoy this battle");
+static const u8 sText_RuthWin[] = _("That was much too easy!");
+static const u8 sText_RuthLose[] = _("Please stop I don't enjoy this");
+static const u8 sText_MelodyBefore[] = _("I wish sunday is a sunny day");
+static const u8 sText_MelodyWin[] = _("Sunday seems forever to come…");
+static const u8 sText_MelodyLose[] = _("The forecast says it will hail");
+static const u8 sText_PedroBefore[] = _("A swift swim will do you good");
+static const u8 sText_PedroWin[] = _("That's how I sink an opponent");
+static const u8 sText_PedroLose[] = _("Uh-oh! A whirlpool!");
+static const u8 sText_ErickBefore[] = _("I will tackle you down!");
+static const u8 sText_ErickWin[] = _("Don't you run away you loser!");
+static const u8 sText_ErickLose[] = _("I didn't think you would counter");
+static const u8 sText_ElaineBefore[] = _("My heroine adventure isn't going well");
+static const u8 sText_ElaineWin[] = _("Thank you! That's what I need");
+static const u8 sText_ElaineLose[] = _("I know I am not a heroine");
+static const u8 sText_JoyceBefore[] = _("You make me go ahaha!");
+static const u8 sText_JoyceWin[] = _("Lalala no losing for me!");
+static const u8 sText_JoyceLose[] = _("Lalala… Huh?");
+static const u8 sText_ToddBefore[] = _("You're a lightningrod for my power");
+static const u8 sText_ToddWin[] = _("That's all you could absorb?");
+static const u8 sText_ToddLose[] = _("You reflect my power back?");
+static const u8 sText_GavinBefore[] = _("I will bide my time");
+static const u8 sText_GavinWin[] = _("It's over so soon?");
+static const u8 sText_GavinLose[] = _("My mistake was too expensive…");
+static const u8 sText_MaloryBefore[] = _("Promise to show me cute Pokémon");
+static const u8 sText_MaloryWin[] = _("Giggle… Thank you so much");
+static const u8 sText_MaloryLose[] = _("Tch your Pokémon aren't very nice");
+static const u8 sText_EstherBefore[] = _("I want a nice present…");
+static const u8 sText_EstherWin[] = _("Please get me a Pokémon game");
+static const u8 sText_EstherLose[] = _("Message cards make a weak present");
+static const u8 sText_OscarBefore[] = _("Let's see your power in full");
+static const u8 sText_OscarWin[] = _("That was not your full power!");
+static const u8 sText_OscarLose[] = _("Not funny… You're too strong");
+static const u8 sText_WilsonBefore[] = _("Work is making me an early bird");
+static const u8 sText_WilsonWin[] = _("All work and no play…");
+static const u8 sText_WilsonLose[] = _("Endure is all I can do");
+static const u8 sText_ClareBefore[] = _("Yay! A tough trainer!");
+static const u8 sText_ClareWin[] = _("Aww! A wimpy trainer!");
+static const u8 sText_ClareLose[] = _("Cool! A genius trainer!");
+static const u8 sText_TessBefore[] = _("Want some Gulpin design sweets?");
+static const u8 sText_TessWin[] = _("They're a secret Pokémon gourmet item");
+static const u8 sText_TessLose[] = _("They're tasty! Refreshing too!");
+static const u8 sText_LeonBefore[] = _("I am better than any other trainer");
+static const u8 sText_LeonWin[] = _("I did it jump kick for joy");
+static const u8 sText_LeonLose[] = _("Back home I will go…");
+static const u8 sText_AlonzoBefore[] = _("I've not lost once yet!");
+static const u8 sText_AlonzoWin[] = _("Your sad look becomes you");
+static const u8 sText_AlonzoLose[] = _("I don't believe this…");
+static const u8 sText_VinceBefore[] = _("The top trainer that's me!");
+static const u8 sText_VinceWin[] = _("The top rank belongs to me!");
+static const u8 sText_VinceLose[] = _("I will appeal this outrage!");
+static const u8 sText_BryonBefore[] = _("My barrage will slam you!");
+static const u8 sText_BryonWin[] = _("You didn't count on any less?");
+static const u8 sText_BryonLose[] = _("I just don't get it…");
+static const u8 sText_AvaBefore[] = _("I am a treasure of this world");
+static const u8 sText_AvaWin[] = _("My world is full of wonder");
+static const u8 sText_AvaLose[] = _("Why are you so terrible?");
+static const u8 sText_MiriamBefore[] = _("Oh a trainer with a scary face");
+static const u8 sText_MiriamWin[] = _("Ahaha you only look scary!");
+static const u8 sText_MiriamLose[] = _("Aiyeeh! You really are scary");
+static const u8 sText_CarrieBefore[] = _("I will show you gutsy!");
+static const u8 sText_CarrieWin[] = _("It's all about guts!");
+static const u8 sText_CarrieLose[] = _("Oh no… Self destruct mode!");
+static const u8 sText_Gillian2Before[] = _("I seek a truly great battle");
+static const u8 sText_Gillian2Win[] = _("I need a lot better battle…");
+static const u8 sText_Gillian2Lose[] = _("That was a little too much to take");
+static const u8 sText_TylerBefore[] = _("Yo! Let's go!!");
+static const u8 sText_TylerWin[] = _("Yo! I won yo");
+static const u8 sText_TylerLose[] = _("Yo! I lost yo");
+static const u8 sText_ChazBefore[] = _("My Pokémon have too much power");
+static const u8 sText_ChazWin[] = _("They have more power now!");
+static const u8 sText_ChazLose[] = _("Yeah take down their power a tiny bit please");
+static const u8 sText_NelsonBefore[] = _("Well then will this Pokémon work?");
+static const u8 sText_NelsonWin[] = _("I see that it was too strong");
+static const u8 sText_NelsonLose[] = _("It didn't match up well I think");
+static const u8 sText_ShaniaBefore[] = _("All my Pokémon absolutely adore me");
+static const u8 sText_ShaniaWin[] = _("Happiness is a Pokémon with cute charm");
+static const u8 sText_ShaniaLose[] = _("You're so mean to cute Pokémon");
+static const u8 sText_StellaBefore[] = _("I want to see your Pokémon");
+static const u8 sText_StellaWin[] = _("Well aren't they boring? Ahaha");
+static const u8 sText_StellaLose[] = _("Your Pokémon are something else all right");
+static const u8 sText_DorineBefore[] = _("I am young and strong!");
+static const u8 sText_DorineWin[] = _("See? Aren't I good?");
+static const u8 sText_DorineLose[] = _("This isn't working out at all");
+static const u8 sText_MaddoxBefore[] = _("Dragon Pokémon are my no 1 choice");
+static const u8 sText_MaddoxWin[] = _("It's no secret dragon Pokémon win");
+static const u8 sText_MaddoxLose[] = _("Dragon Pokémon should not lose!");
+static const u8 sText_DavinBefore[] = _("Let's hear you roar!");
+static const u8 sText_DavinWin[] = _("Wroooaar! Victory!!");
+static const u8 sText_DavinLose[] = _("Wroooaar! Why?!");
+static const u8 sText_TrevonBefore[] = _("I am living only with dragon Pokémon");
+static const u8 sText_TrevonWin[] = _("The way I am living is perfect");
+static const u8 sText_TrevonLose[] = _("You've destroyed the way I am living");
+static const u8 sText_MateoBefore[] = _("This should be over soon enough");
+static const u8 sText_MateoWin[] = _("Well that didn't take very much");
+static const u8 sText_MateoLose[] = _("I can't lose so soon!");
+static const u8 sText_BretBefore[] = _("I like rock solid Pokémon the best");
+static const u8 sText_BretWin[] = _("Toughness is the way to go");
+static const u8 sText_BretLose[] = _("I also have a plush doll collection");
+static const u8 sText_RaulBefore[] = _("I reject every weak trainer");
+static const u8 sText_RaulWin[] = _("Humph! Another weak trainer…");
+static const u8 sText_RaulLose[] = _("There is nothing weak about you");
+static const u8 sText_KayBefore[] = _("And yet another battle?");
+static const u8 sText_KayWin[] = _("I won but I am tired…");
+static const u8 sText_KayLose[] = _("Good it's over at last…");
+static const u8 sText_ElenaBefore[] = _("A battle girl that's me!");
+static const u8 sText_ElenaWin[] = _("Isn't a battle girl awesome?");
+static const u8 sText_ElenaLose[] = _("You dislike a battle girl?");
+static const u8 sText_AlanaBefore[] = _("Eat my invincible attack you!");
+static const u8 sText_AlanaWin[] = _("You have much to learn");
+static const u8 sText_AlanaLose[] = _("So much for my invincible attack");
+static const u8 sText_AlexasBefore[] = _("Good to meet you young trainer!");
+static const u8 sText_AlexasWin[] = _("Wahahaha! Give it up");
+static const u8 sText_AlexasLose[] = _("You are a strong trainer kid");
+static const u8 sText_WestonBefore[] = _("I don't play down all right?");
+static const u8 sText_WestonWin[] = _("You're far too easy to attack");
+static const u8 sText_WestonLose[] = _("Well well… I surrender…");
+static const u8 sText_JasperBefore[] = _("I am not old I am skilled!");
+static const u8 sText_JasperWin[] = _("Skilled that's what I am!");
+static const u8 sText_JasperLose[] = _("I am shocked! Down I go");
+static const u8 sText_NadiaBefore[] = _("You can't beat me down!");
+static const u8 sText_NadiaWin[] = _("Hah! I beat you");
+static const u8 sText_NadiaLose[] = _("I am beat up and downcast…");
+static const u8 sText_MirandaBefore[] = _("Well well let's start");
+static const u8 sText_MirandaWin[] = _("What? Done so soon?");
+static const u8 sText_MirandaLose[] = _("Well I see that I am too weak");
+static const u8 sText_EmmaBefore[] = _("I've been hearing about you");
+static const u8 sText_EmmaWin[] = _("I think I've misheard things");
+static const u8 sText_EmmaLose[] = _("What I've been hearing is right");
+static const u8 sText_RolandoBefore[] = _("I am a super Pokémon hero!");
+static const u8 sText_RolandoWin[] = _("Was that enough for you?");
+static const u8 sText_RolandoLose[] = _("You should not beat a hero");
+static const u8 sText_StanlyBefore[] = _("This should be an easy match");
+static const u8 sText_StanlyWin[] = _("It really was easy");
+static const u8 sText_StanlyLose[] = _("Are you happy now?");
+static const u8 sText_DarioBefore[] = _("My foresight says I will win");
+static const u8 sText_DarioWin[] = _("My foresight has been perfect");
+static const u8 sText_DarioLose[] = _("I didn't see this reversal…");
+static const u8 sText_KarleeBefore[] = _("Something good will come of this");
+static const u8 sText_KarleeWin[] = _("You see? Fantastic!");
+static const u8 sText_KarleeLose[] = _("That something good went to you");
+static const u8 sText_JaylinBefore[] = _("Every trainer has been too weak…");
+static const u8 sText_JaylinWin[] = _("It's making me yawn that battle");
+static const u8 sText_JaylinLose[] = _("I slept and so I lost");
+static const u8 sText_IngridBefore[] = _("I am not a very mean trainer");
+static const u8 sText_IngridWin[] = _("Wasn't that a good match?");
+static const u8 sText_IngridLose[] = _("I lost cause you're mean…");
+static const u8 sText_DelilahBefore[] = _("Don't grudge me if I win ok?");
+static const u8 sText_DelilahWin[] = _("I am sorry to see you angry");
+static const u8 sText_DelilahLose[] = _("I have a grudge with you");
+static const u8 sText_CarlyBefore[] = _("I will scatter some poison powder about");
+static const u8 sText_CarlyWin[] = _("It's scary how my strategy works");
+static const u8 sText_CarlyLose[] = _("I dislike you and your Pokémon");
+static const u8 sText_LexieBefore[] = _("Want to see scary Pokémon?");
+static const u8 sText_LexieWin[] = _("Wasn't that scary eh?");
+static const u8 sText_LexieLose[] = _("You're more scary than my Pokémon");
+static const u8 sText_MillerBefore[] = _("Hello? Hello?!");
+static const u8 sText_MillerWin[] = _("Hello mother! I won!");
+static const u8 sText_MillerLose[] = _("My phone isn't working…");
+static const u8 sText_MarvBefore[] = _("You can lose your swagger now");
+static const u8 sText_MarvWin[] = _("There is no swagger left eh?");
+static const u8 sText_MarvLose[] = _("Go on swagger all you want");
+static const u8 sText_LaytonBefore[] = _("I know I am totally cool!");
+static const u8 sText_LaytonWin[] = _("You can look up to me");
+static const u8 sText_LaytonLose[] = _("You're cool! No really!");
+static const u8 sText_BrooksBefore[] = _("This is a high level battle");
+static const u8 sText_BrooksWin[] = _("That was high level and exciting too");
+static const u8 sText_BrooksLose[] = _("You're too high in level…");
+static const u8 sText_GregoryBefore[] = _("I am not that old yet");
+static const u8 sText_GregoryWin[] = _("Who says I am too old?");
+static const u8 sText_GregoryLose[] = _("Please I am really not that old");
+static const u8 sText_ReeseBefore[] = _("I've a couple things");
+static const u8 sText_ReeseWin[] = _("Don't diet play sports instead");
+static const u8 sText_ReeseLose[] = _("Instead of television get a book");
+static const u8 sText_MasonBefore[] = _("Please don't make this scary");
+static const u8 sText_MasonWin[] = _("Thank you… I am happy now");
+static const u8 sText_MasonLose[] = _("I am disappointed…");
+static const u8 sText_TobyBefore[] = _("Listen up I always win");
+static const u8 sText_TobyWin[] = _("I am a genius or what?");
+static const u8 sText_TobyLose[] = _("I can beat you at smartness");
+static const u8 sText_DorothyBefore[] = _("The sports world should accept Pokémon");
+static const u8 sText_DorothyWin[] = _("Thank you! That win was refreshing");
+static const u8 sText_DorothyLose[] = _("Thank you! That loss was refreshing");
+static const u8 sText_PiperBefore[] = _("Come on you need a speed boost?");
+static const u8 sText_PiperWin[] = _("You need to show more guts");
+static const u8 sText_PiperLose[] = _("Oh you!");
+static const u8 sText_FinnBefore[] = _("Not another trainer battle…");
+static const u8 sText_FinnWin[] = _("Won't this ever end?");
+static const u8 sText_FinnLose[] = _("I finally get to rest a little");
+static const u8 sText_SamirBefore[] = _("I dive below the surf!");
+static const u8 sText_SamirWin[] = _("Yahoo take a dive you!");
+static const u8 sText_SamirLose[] = _("I am going to sink…");
+static const u8 sText_FionaBefore[] = _("Did you limber up before?");
+static const u8 sText_FionaWin[] = _("You need to be more ready");
+static const u8 sText_FionaLose[] = _("Being limber didn't work for me");
+static const u8 sText_GloriaBefore[] = _("I like to attack with suction cups");
+static const u8 sText_GloriaWin[] = _("Giggle… It's over for you");
+static const u8 sText_GloriaLose[] = _("I don't get how suction cups work");
+static const u8 sText_NicoBefore[] = _("Like a sonic boom I've arrived");
+static const u8 sText_NicoWin[] = _("Sorry to make you so downcast");
+static const u8 sText_NicoLose[] = _("I am going with a supersonic speed boost");
+static const u8 sText_JeremyBefore[] = _("A Pokémon master that's my dream");
+static const u8 sText_JeremyWin[] = _("My dream isn't far off!");
+static const u8 sText_JeremyLose[] = _("What I dream isn't happening…");
+static const u8 sText_CaitlinBefore[] = _("Don't you think I am cute?");
+static const u8 sText_CaitlinWin[] = _("There is more to me than cuteness");
+static const u8 sText_CaitlinLose[] = _("My cute charm doesn't attract you?");
+static const u8 sText_ReenaBefore[] = _("I am always happy happy happy!");
+static const u8 sText_ReenaWin[] = _("Oh yay! Yahoo for me");
+static const u8 sText_ReenaLose[] = _("Yahoo! I am happy for you");
+static const u8 sText_AveryBefore[] = _("I've got a lot of bug Pokémon");
+static const u8 sText_AveryWin[] = _("My bug Pokémon are all unbelievable");
+static const u8 sText_AveryLose[] = _("My bug Pokémon are all upside down");
+static const u8 sText_LiamBefore[] = _("We really dislike fire and flying");
+static const u8 sText_LiamWin[] = _("Bug Pokémon aren't bad hey?");
+static const u8 sText_LiamLose[] = _("You know what we dislike hey?");
+static const u8 sText_TheoBefore[] = _("Fishing is my choice in life");
+static const u8 sText_TheoWin[] = _("Water Pokémon attract me without end");
+static const u8 sText_TheoLose[] = _("Don't count on that happening another time");
+static const u8 sText_BaileyBefore[] = _("I am an adult I battle easy");
+static const u8 sText_BaileyWin[] = _("I am an adult I swallow joy");
+static const u8 sText_BaileyLose[] = _("I am an adult I swallow frustration");
+static const u8 sText_HugoBefore[] = _("I try the best I can");
+static const u8 sText_HugoWin[] = _("I can win if I try enough");
+static const u8 sText_HugoLose[] = _("I did try didn't I?");
+static const u8 sText_BryceBefore[] = _("I was on vacation until only yesterday");
+static const u8 sText_BryceWin[] = _("I haven't lost my skill yet");
+static const u8 sText_BryceLose[] = _("That's it… I need sleep");
+static const u8 sText_GideonBefore[] = _("What's up? You think I am scary?");
+static const u8 sText_GideonWin[] = _("I am cool but not scary!");
+static const u8 sText_GideonLose[] = _("Look at my fabulous fashion sense");
+static const u8 sText_TristonBefore[] = _("I would rather look at Pokémon");
+static const u8 sText_TristonWin[] = _("Huh? You mean I won?!");
+static const u8 sText_TristonLose[] = _("See? I always lose");
+static const u8 sText_CharlesBefore[] = _("It's hopeless to struggle with me");
+static const u8 sText_CharlesWin[] = _("Submission was your only choice");
+static const u8 sText_CharlesLose[] = _("I am going down down down!");
+static const u8 sText_RaymondBefore[] = _("Want to hear my song?");
+static const u8 sText_RaymondWin[] = _("Satisfied that's what I am!");
+static const u8 sText_RaymondLose[] = _("Satisfied is what I can't be");
+static const u8 sText_DirkBefore[] = _("Flying Pokémon are above the rest");
+static const u8 sText_DirkWin[] = _("You can't win! Flying Pokémon rule");
+static const u8 sText_DirkLose[] = _("Aren't there more flying Pokémon?");
+static const u8 sText_HaroldBefore[] = _("My Pokémon appeal to you?");
+static const u8 sText_HaroldWin[] = _("You do like my Pokémon?");
+static const u8 sText_HaroldLose[] = _("So you dislike my Pokémon?");
+static const u8 sText_OmarBefore[] = _("Let me win in return for a present");
+static const u8 sText_OmarWin[] = _("Here you are some toxic sweets");
+static const u8 sText_OmarLose[] = _("Your present? What for?!");
+static const u8 sText_PeterBefore[] = _("I brag about my happiness ok?");
+static const u8 sText_PeterWin[] = _("You have to listen to me brag");
+static const u8 sText_PeterLose[] = _("I am disappointed you won't listen to me");
+static const u8 sText_DevBefore[] = _("Come on let's get a move on");
+static const u8 sText_DevWin[] = _("I get to nap after that");
+static const u8 sText_DevLose[] = _("I need to nap after that");
+static const u8 sText_CoreyBefore[] = _("Let's teach you how tough I am");
+static const u8 sText_CoreyWin[] = _("Look at me make a brick break");
+static const u8 sText_CoreyLose[] = _("My frustration is close to eruption");
+static const u8 sText_AndreBefore[] = _("Now this is a perfect flame body");
+static const u8 sText_AndreWin[] = _("Look at my fiery dance!");
+static const u8 sText_AndreLose[] = _("You want an explosion here?");
+static const u8 sText_FerrisBefore[] = _("I am no 1 in the old class");
+static const u8 sText_FerrisWin[] = _("No 1 that's what I am!");
+static const u8 sText_FerrisLose[] = _("I am not no 1 any more…");
+static const u8 sText_AliviaBefore[] = _("I am feeling giddy so should you");
+static const u8 sText_AliviaWin[] = _("It was all together too easy");
+static const u8 sText_AliviaLose[] = _("I will giddy up and away");
+static const u8 sText_PaigeBefore[] = _("Let's enjoy our battle together");
+static const u8 sText_PaigeWin[] = _("That's it excl thank you very much");
+static const u8 sText_PaigeLose[] = _("That's it excl do go on");
+static const u8 sText_AnyaBefore[] = _("I dislike oh so pretty fashion");
+static const u8 sText_AnyaWin[] = _("Fashion should match the person");
+static const u8 sText_AnyaLose[] = _("Pretty could be good");
+static const u8 sText_DawnBefore[] = _("I go all out!");
+static const u8 sText_DawnWin[] = _("Don't be a baby!");
+static const u8 sText_DawnLose[] = _("You won! Move on!");
+static const u8 sText_AbbyBefore[] = _("I like a trainer that's refreshing");
+static const u8 sText_AbbyWin[] = _("Victory has a sweet scent!");
+static const u8 sText_AbbyLose[] = _("What an awful stench!");
+static const u8 sText_GretelBefore[] = _("I cause outrage as a trainer");
+static const u8 sText_GretelWin[] = _("It's only natural see ya bye bye!");
+static const u8 sText_GretelLose[] = _("It's hard to believe but congrats");
+
 const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COUNT] =
 {
-    [FRONTIER_TRAINER_BRADY] = {
+    [FRONTIER_TRAINER_BRADY] =
+    {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
         .trainerName = _("BRADY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_NEVER, EC_WORD_GOING, EC_WORD_TO, EC_WORD_LOSE, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_STRONG, EC_WORD_AREN_T, EC_WORD_I, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_WHAT, EC_WORD_QUES, EC_EMPTY_WORD, EC_WORD_BUT, EC_WORD_HOW, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Brady
-=======
-        .speechBefore = COMPOUND_STRING("I am never going to lose!"),
-        .speechWin = COMPOUND_STRING("I am strong aren't I?"),
-        .speechLose = COMPOUND_STRING("What? But how?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BradyBefore,
+        .speechWin = sText_BradyWin,
+        .speechLose = sText_BradyLose,
+        .monSet = gBattleFrontierTrainerMons_Brady,
     },
-    [FRONTIER_TRAINER_CONNER] = {
+    [FRONTIER_TRAINER_CONNER] =
+    {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
         .trainerName = _("CONNER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_LOSING, EC_WORD_DOESN_T, EC_WORD_BUG, EC_WORD_ME, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_DOES, EC_WORD_BUG, EC_WORD_ME},
-        .monSet = gBattleFrontierTrainerMons_Conner
-=======
-        .speechBefore = COMPOUND_STRING("Losing doesn't bug me."),
-        .speechWin = COMPOUND_STRING("A win is just awesome."),
-        .speechLose = COMPOUND_STRING("Darn… Losing does bug me."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ConnerBefore,
+        .speechWin = sText_ConnerWin,
+        .speechLose = sText_ConnerLose,
+        .monSet = gBattleFrontierTrainerMons_Conner,
     },
-    [FRONTIER_TRAINER_BRADLEY] = {
+    [FRONTIER_TRAINER_BRADLEY] =
+    {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
         .trainerName = _("BRADLEY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HEY_THERE, EC_WORD_EXCL, EC_WORD_YOU_RE, EC_WORD_MY, EC_WORD_OPPONENT, EC_WORD_TODAY},
-        .speechWin = {EC_WORD_HAHAHA, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_SEE_YA, EC_WORD_LATER, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_TOMORROW, EC_WORD_IS, EC_WORD_WHEN, EC_WORD_WE, EC_WORD_REALLY, EC_WORD_BATTLE},
-        .monSet = gBattleFrontierTrainerMons_Bradley
-=======
-        .speechBefore = COMPOUND_STRING("Hey there! You're my opponent today."),
-        .speechWin = COMPOUND_STRING("Hahaha! See ya later!"),
-        .speechLose = COMPOUND_STRING("Tomorrow is when we really battle."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BradleyBefore,
+        .speechWin = sText_BradleyWin,
+        .speechLose = sText_BradleyLose,
+        .monSet = gBattleFrontierTrainerMons_Bradley,
     },
-    [FRONTIER_TRAINER_CYBIL] = {
+    [FRONTIER_TRAINER_CYBIL] =
+    {
         .facilityClass = FACILITY_CLASS_LASS,
         .trainerName = _("CYBIL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU_RE, EC_WORD_REALLY, EC_WORD_NOT_VERY, EC_WORD_SCARY, EC_WORD_AT, EC_WORD_ALL},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_SAD, EC_WORD_TO, EC_WORD_SEE, EC_WORD_YOU, EC_MOVE2(STRUGGLE)},
-        .speechLose = {EC_WORD_THIS, EC_WORD_CAN_T, EC_WORD_BE, EC_WORD_HAPPENING, EC_WORD_TO_ME, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Cybil
-=======
-        .speechBefore = COMPOUND_STRING("You're really not very scary at all."),
-        .speechWin = COMPOUND_STRING("It's sad to see you struggle."),
-        .speechLose = COMPOUND_STRING("This can't be happening to me!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CybilBefore,
+        .speechWin = sText_CybilWin,
+        .speechLose = sText_CybilLose,
+        .monSet = gBattleFrontierTrainerMons_Cybil,
     },
-    [FRONTIER_TRAINER_RODETTE] = {
+    [FRONTIER_TRAINER_RODETTE] =
+    {
         .facilityClass = FACILITY_CLASS_LASS,
         .trainerName = _("RODETTE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_OH, EC_WORD_THIS, EC_WORD_IS, EC_WORD_SO, EC_WORD_EXCITING, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_INCREDIBLE, EC_WORD_HOW, EC_WORD_STRONG, EC_WORD_I_AM, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_OH_DEAR, EC_WORD_ELLIPSIS, EC_WORD_I_AM, EC_WORD_JUST, EC_WORD_NO, EC_WORD_GOOD},
-        .monSet = gBattleFrontierTrainerMons_Rodette
-=======
-        .speechBefore = COMPOUND_STRING("Oh this is so exciting!"),
-        .speechWin = COMPOUND_STRING("It's incredible how strong I am!"),
-        .speechLose = COMPOUND_STRING("Oh, dear… I am just no good."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RodetteBefore,
+        .speechWin = sText_RodetteWin,
+        .speechLose = sText_RodetteLose,
+        .monSet = gBattleFrontierTrainerMons_Rodette,
     },
-    [FRONTIER_TRAINER_PEGGY] = {
+    [FRONTIER_TRAINER_PEGGY] =
+    {
         .facilityClass = FACILITY_CLASS_LASS,
         .trainerName = _("PEGGY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_GET, EC_WORD_READY, EC_WORD_TO, EC_WORD_BE, EC_WORD_DESTROYED, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_HAHAHA, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD, EC_WORD_I_AM, EC_WORD_LOLLING, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_SAD, EC_WORD_THANKS, EC_WORD_TO, EC_WORD_YOU},
-        .monSet = gBattleFrontierTrainerMons_Peggy
-=======
-        .speechBefore = COMPOUND_STRING("Get ready to be destroyed!"),
-        .speechWin = COMPOUND_STRING("Hahaha!! I am lolling!"),
-        .speechLose = COMPOUND_STRING("I am feeling sad thanks to you."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_PeggyBefore,
+        .speechWin = sText_PeggyWin,
+        .speechLose = sText_PeggyLose,
+        .monSet = gBattleFrontierTrainerMons_Peggy,
     },
-    [FRONTIER_TRAINER_KEITH] = {
+    [FRONTIER_TRAINER_KEITH] =
+    {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
         .trainerName = _("KEITH"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_JUST, EC_WORD_STUDY, EC_WORD_YOU, EC_WORD_KNOW},
-        .speechWin = {EC_WORD_YOU, EC_WORD_DON_T, EC_WORD_STUDY, EC_WORD_ENOUGH, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I, EC_WORD_NEED, EC_WORD_TO, EC_WORD_STUDY, EC_WORD_MORE, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Keith
-=======
-        .speechBefore = COMPOUND_STRING("I don't just study you know."),
-        .speechWin = COMPOUND_STRING("You don't study enough…"),
-        .speechLose = COMPOUND_STRING("I need to study more…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KeithBefore,
+        .speechWin = sText_KeithWin,
+        .speechLose = sText_KeithLose,
+        .monSet = gBattleFrontierTrainerMons_Keith,
     },
-    [FRONTIER_TRAINER_GRAYSON] = {
+    [FRONTIER_TRAINER_GRAYSON] =
+    {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
         .trainerName = _("GRAYSON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A, EC_WORD_POKEMON, EC_WORD_BATTLE, EC_WORD_ISN_T, EC_WORD_CHILD_S_PLAY, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_YOU_RE, EC_WORD_DONE, EC_WORD_AREN_T, EC_WORD_YOU, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_WE, EC_WORD_WERE, EC_WORD_LIKE, EC_WORD_TOYS, EC_WORD_TO, EC_WORD_YOU},
-        .monSet = gBattleFrontierTrainerMons_Grayson
-=======
-        .speechBefore = COMPOUND_STRING("A Pokémon battle isn't child's play!"),
-        .speechWin = COMPOUND_STRING("You're done aren't you?"),
-        .speechLose = COMPOUND_STRING("We were like toys to you."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GraysonBefore,
+        .speechWin = sText_GraysonWin,
+        .speechLose = sText_GraysonLose,
+        .monSet = gBattleFrontierTrainerMons_Grayson,
     },
-    [FRONTIER_TRAINER_GLENN] = {
+    [FRONTIER_TRAINER_GLENN] =
+    {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
         .trainerName = _("GLENN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WOULD, EC_WORD_BE, EC_WORD_COOL, EC_WORD_IF_I_WIN, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_COOL, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_THAT_S, EC_WORD_WHAT, EC_WORD_I_AM},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_GOING, EC_WORD_TO, EC_WORD_BE, EC_WORD_COOL},
-        .monSet = gBattleFrontierTrainerMons_Glenn
-=======
-        .speechBefore = COMPOUND_STRING("I would be cool if I win."),
-        .speechWin = COMPOUND_STRING("Cool! That's what I am."),
-        .speechLose = COMPOUND_STRING("I am not going to be cool."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GlennBefore,
+        .speechWin = sText_GlennWin,
+        .speechLose = sText_GlennLose,
+        .monSet = gBattleFrontierTrainerMons_Glenn,
     },
-    [FRONTIER_TRAINER_LILIANA] = {
+    [FRONTIER_TRAINER_LILIANA] =
+    {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
         .trainerName = _("LILIANA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WON_T, EC_WORD_GIVE_UP, EC_WORD_UNTIL, EC_WORD_I, EC_WORD_WIN},
-        .speechWin = {EC_WORD_THERE, EC_WORD_IS, EC_WORD_NO, EC_WORD_SURRENDER, EC_WORD_IN, EC_WORD_ME},
-        .speechLose = {EC_WORD_THAT_S, EC_WORD_IT, EC_WORD_ELLIPSIS, EC_WORD_I, EC_WORD_GIVE_UP, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Liliana
-=======
-        .speechBefore = COMPOUND_STRING("I won't give up until I win."),
-        .speechWin = COMPOUND_STRING("There is no surrender in me."),
-        .speechLose = COMPOUND_STRING("That's it… I give up…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LilianaBefore,
+        .speechWin = sText_LilianaWin,
+        .speechLose = sText_LilianaLose,
+        .monSet = gBattleFrontierTrainerMons_Liliana,
     },
-    [FRONTIER_TRAINER_ELISE] = {
+    [FRONTIER_TRAINER_ELISE] =
+    {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
         .trainerName = _("ELISE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_STRATEGY, EC_WORD_IS, EC_WORD_FROM, EC_WORD_MY, EC_WORD_FATHER},
-        .speechWin = {EC_WORD_I, EC_WORD_WIN, EC_WORD_EXCL, EC_WORD_FATHER, EC_WORD_I_VE, EC_WORD_WON},
-        .speechLose = {EC_WORD_FORGIVE, EC_WORD_ME, EC_WORD_FATHER, EC_WORD_FOR, EC_WORD_I_VE, EC_WORD_LOST},
-        .monSet = gBattleFrontierTrainerMons_Elise
-=======
-        .speechBefore = COMPOUND_STRING("My strategy is from my father."),
-        .speechWin = COMPOUND_STRING("I win! Father I've won."),
-        .speechLose = COMPOUND_STRING("Forgive me father for I've lost."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EliseBefore,
+        .speechWin = sText_EliseWin,
+        .speechLose = sText_EliseLose,
+        .monSet = gBattleFrontierTrainerMons_Elise,
     },
-    [FRONTIER_TRAINER_ZOEY] = {
+    [FRONTIER_TRAINER_ZOEY] =
+    {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
         .trainerName = _("ZOEY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_PLEASE, EC_WORD_BATTLE, EC_WORD_LIKE, EC_WORD_YOU, EC_WORD_MEAN, EC_WORD_IT},
-        .speechWin = {EC_WORD_THANK_YOU, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD, EC_WORD_THANK_YOU, EC_WORD_SO, EC_WORD_MUCH},
-        .speechLose = {EC_WORD_WERE, EC_WORD_YOU, EC_WORD_REALLY, EC_WORD_BEING, EC_WORD_SERIOUS, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Zoey
-=======
-        .speechBefore = COMPOUND_STRING("Please battle like you mean it."),
-        .speechWin = COMPOUND_STRING("Thank you!! Thank you so much."),
-        .speechLose = COMPOUND_STRING("Were you really being serious?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ZoeyBefore,
+        .speechWin = sText_ZoeyWin,
+        .speechLose = sText_ZoeyLose,
+        .monSet = gBattleFrontierTrainerMons_Zoey,
     },
-    [FRONTIER_TRAINER_MANUEL] = {
+    [FRONTIER_TRAINER_MANUEL] =
+    {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
         .trainerName = _("MANUEL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_ME, EC_WORD_LOSE, EC_WORD_QUES, EC_WORD_THAT_S, EC_WORD_PREPOSTEROUS, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_NATURALLY, EC_WORD_I, EC_WORD_WIN, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_WAAAH, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_I, EC_WORD_LOST, EC_WORD_MOTHER},
-        .monSet = gBattleFrontierTrainerMons_Manuel
-=======
-        .speechBefore = COMPOUND_STRING("Me lose? That's preposterous!"),
-        .speechWin = COMPOUND_STRING("Naturally I win."),
-        .speechLose = COMPOUND_STRING("Waaah! I lost mother."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ManuelBefore,
+        .speechWin = sText_ManuelWin,
+        .speechLose = sText_ManuelLose,
+        .monSet = gBattleFrontierTrainerMons_Manuel,
     },
-    [FRONTIER_TRAINER_RUSS] = {
+    [FRONTIER_TRAINER_RUSS] =
+    {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
         .trainerName = _("RUSS"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THEY, EC_WORD_ALL, EC_WORD_WANT, EC_WORD_MY, EC_WORD_FABULOUS, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_I, EC_WORD_WILL, EC_WORD_HAVE, EC_WORD_A, EC_WORD_POKEMON, EC_WORD_PARTY},
-        .speechLose = {EC_WORD_HOW, EC_WORD_COULD, EC_WORD_YOU, EC_WORD_DO, EC_WORD_THAT, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Russ
-=======
-        .speechBefore = COMPOUND_STRING("They all want my fabulous Pokémon."),
-        .speechWin = COMPOUND_STRING("I will have a Pokémon party."),
-        .speechLose = COMPOUND_STRING("How could you do that?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RussBefore,
+        .speechWin = sText_RussWin,
+        .speechLose = sText_RussLose,
+        .monSet = gBattleFrontierTrainerMons_Russ,
     },
-    [FRONTIER_TRAINER_DUSTIN] = {
+    [FRONTIER_TRAINER_DUSTIN] =
+    {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
         .trainerName = _("DUSTIN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_REALLY, EC_WORD_LIKE, EC_WORD_COOL, EC_WORD_POKEMON, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_MYSELF, EC_WORD_WHEN_I_WIN, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_MYSELF, EC_WORD_IF_I_LOSE, EC_WORD_TOO, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Dustin
-=======
-        .speechBefore = COMPOUND_STRING("I really like cool Pokémon."),
-        .speechWin = COMPOUND_STRING("I like myself when I win!"),
-        .speechLose = COMPOUND_STRING("I like myself if I lose too."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DustinBefore,
+        .speechWin = sText_DustinWin,
+        .speechLose = sText_DustinLose,
+        .monSet = gBattleFrontierTrainerMons_Dustin,
     },
-    [FRONTIER_TRAINER_TINA] = {
+    [FRONTIER_TRAINER_TINA] =
+    {
         .facilityClass = FACILITY_CLASS_LADY,
         .trainerName = _("TINA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_IF_I_WIN, EC_WORD_YOU, EC_WORD_CAN, EC_WORD_HAVE, EC_WORD_A, EC_MOVE2(SWEET_KISS)},
-        .speechWin = {EC_WORD_HERE_IT_IS, EC_WORD_YOUR, EC_MOVE2(SWEET_KISS), EC_WORD_FROM, EC_WORD_MY, EC_POKEMON_NATIONAL(JYNX)},
-        .speechLose = {EC_WORD_YOU, EC_WORD_WANT, EC_WORD_A, EC_MOVE(SWIFT), EC_MOVE2(MEGA_KICK), EC_WORD_INSTEAD},
-        .monSet = gBattleFrontierTrainerMons_Tina
-=======
-        .speechBefore = COMPOUND_STRING("If I win you can have a sweet kiss."),
-        .speechWin = COMPOUND_STRING("Here it is your sweet kiss from my Jynx."),
-        .speechLose = COMPOUND_STRING("You want a swift mega kick instead."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_TinaBefore,
+        .speechWin = sText_TinaWin,
+        .speechLose = sText_TinaLose,
+        .monSet = gBattleFrontierTrainerMons_Tina,
     },
-    [FRONTIER_TRAINER_GILLIAN1] = {
+    [FRONTIER_TRAINER_GILLIAN1] =
+    {
         .facilityClass = FACILITY_CLASS_LADY,
         .trainerName = _("GILLIAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THE, EC_WORD_GOURMET, EC_WORD_THING, EC_WORD_IS, EC_WORD_SO, EC_WORD_YESTERDAY},
-        .speechWin = {EC_WORD_POKEMON, EC_WORD_NEVER, EC_WORD_GO, EC_WORD_OUT, EC_WORD_OF, EC_WORD_FASHION},
-        .speechLose = {EC_WORD_LOSING, EC_WORD_DOESN_T, EC_WORD_DISAPPOINT, EC_WORD_ME, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Gillian
-=======
-        .speechBefore = COMPOUND_STRING("The gourmet thing is so yesterday."),
-        .speechWin = COMPOUND_STRING("Pokémon never go out of fashion."),
-        .speechLose = COMPOUND_STRING("Losing doesn't disappoint me."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GillianBefore,
+        .speechWin = sText_GillianWin,
+        .speechLose = sText_GillianLose,
+        .monSet = gBattleFrontierTrainerMons_Gillian,
     },
-    [FRONTIER_TRAINER_ZOE] = {
+    [FRONTIER_TRAINER_ZOE] =
+    {
         .facilityClass = FACILITY_CLASS_LADY,
         .trainerName = _("ZOE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_HAVEN_T, EC_WORD_A, EC_WORD_WORRY, EC_WORD_AT, EC_WORD_ALL},
-        .speechWin = {EC_WORD_LIFE, EC_WORD_IS, EC_WORD_ALWAYS, EC_WORD_GOOD, EC_WORD_TO_ME, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I, EC_WORD_WORRY, EC_WORD_ABOUT, EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_SKILL},
-        .monSet = gBattleFrontierTrainerMons_Zoe
-=======
-        .speechBefore = COMPOUND_STRING("I haven't a worry at all."),
-        .speechWin = COMPOUND_STRING("Life is always good to me."),
-        .speechLose = COMPOUND_STRING("I worry about my Pokémon skill."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ZoeBefore,
+        .speechWin = sText_ZoeWin,
+        .speechLose = sText_ZoeLose,
+        .monSet = gBattleFrontierTrainerMons_Zoe,
     },
-    [FRONTIER_TRAINER_CHEN] = {
+    [FRONTIER_TRAINER_CHEN] =
+    {
         .facilityClass = FACILITY_CLASS_CAMPER,
         .trainerName = _("CHEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_TOTALLY, EC_WORD_READY, EC_WORD_TO, EC_WORD_ROCK, EC_WORD_TODAY},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_READY, EC_WORD_TO, EC_WORD_GO, EC_WORD_ON, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I_VE, EC_WORD_LOST, EC_WORD_MY, EC_MOVE(FOCUS_ENERGY), EC_WORD_AND, EC_WORD_TOUGHNESS},
-        .monSet = gBattleFrontierTrainerMons_Chen
-=======
-        .speechBefore = COMPOUND_STRING("I am totally ready to rock today."),
-        .speechWin = COMPOUND_STRING("I am ready to go on!"),
-        .speechLose = COMPOUND_STRING("I've lost my focus energy and toughness."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ChenBefore,
+        .speechWin = sText_ChenWin,
+        .speechLose = sText_ChenLose,
+        .monSet = gBattleFrontierTrainerMons_Chen,
     },
-    [FRONTIER_TRAINER_AL] = {
+    [FRONTIER_TRAINER_AL] =
+    {
         .facilityClass = FACILITY_CLASS_CAMPER,
         .trainerName = _("AL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOUR, EC_WORD_LOOK, EC_WORD_SAYS, EC_WORD_YOU_RE, EC_WORD_REALLY, EC_WORD_TOUGH},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_ME, EC_WORD_WHO_IS, EC_WORD_REALLY, EC_WORD_TOUGH, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_RIGHT, EC_WORD_EXCL, EC_WORD_YOU_RE, EC_WORD_REALLY, EC_WORD_TOUGH},
-        .monSet = gBattleFrontierTrainerMons_Al
-=======
-        .speechBefore = COMPOUND_STRING("Your look says you're really tough."),
-        .speechWin = COMPOUND_STRING("It's me who is really tough."),
-        .speechLose = COMPOUND_STRING("I am right! You're really tough."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AlBefore,
+        .speechWin = sText_AlWin,
+        .speechLose = sText_AlLose,
+        .monSet = gBattleFrontierTrainerMons_Al,
     },
-    [FRONTIER_TRAINER_MITCH] = {
+    [FRONTIER_TRAINER_MITCH] =
+    {
         .facilityClass = FACILITY_CLASS_CAMPER,
         .trainerName = _("MITCH"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MOTHER, EC_WORD_NATURE, EC_WORD_IS, EC_WORD_MY, EC_WORD_ALLY, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_WAS, EC_WORD_THAT, EC_WORD_ENOUGH, EC_WORD_FOR, EC_WORD_YOU, EC_WORD_QUES},
-        .speechLose = {EC_WORD_MOTHER, EC_WORD_NATURE, EC_WORD_DIDN_T, EC_WORD_LET_ME_WIN, EC_WORD_QUES, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Mitch
-=======
-        .speechBefore = COMPOUND_STRING("Mother nature is my ally!"),
-        .speechWin = COMPOUND_STRING("Was that enough for you?"),
-        .speechLose = COMPOUND_STRING("Mother nature didn't let me win?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MitchBefore,
+        .speechWin = sText_MitchWin,
+        .speechLose = sText_MitchLose,
+        .monSet = gBattleFrontierTrainerMons_Mitch,
     },
-    [FRONTIER_TRAINER_ANNE] = {
+    [FRONTIER_TRAINER_ANNE] =
+    {
         .facilityClass = FACILITY_CLASS_PICNICKER,
         .trainerName = _("ANNE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_WAIT, EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_NOW},
-        .speechWin = {EC_WORD_MY, EC_WORD_HAPPINESS, EC_WORD_IS, EC_WORD_OVERWHELMING, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_YOU_VE, EC_WORD_DESTROYED, EC_WORD_MY, EC_WORD_HAPPINESS, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Anne
-=======
-        .speechBefore = COMPOUND_STRING("I can't wait let's battle now."),
-        .speechWin = COMPOUND_STRING("My happiness is overwhelming!"),
-        .speechLose = COMPOUND_STRING("You've destroyed my happiness…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AnneBefore,
+        .speechWin = sText_AnneWin,
+        .speechLose = sText_AnneLose,
+        .monSet = gBattleFrontierTrainerMons_Anne,
     },
-    [FRONTIER_TRAINER_ALIZE] = {
+    [FRONTIER_TRAINER_ALIZE] =
+    {
         .facilityClass = FACILITY_CLASS_PICNICKER,
         .trainerName = _("ALIZE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_CUTE, EC_WORD_AND, EC_WORD_AWFULLY, EC_WORD_STRONG, EC_WORD_THAT_S, EC_WORD_ME},
-        .speechWin = {EC_WORD_YUP, EC_WORD_I_AM, EC_WORD_CUTE, EC_WORD_AND, EC_WORD_AWFULLY, EC_WORD_STRONG},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_WEAK, EC_WORD_ELLIPSIS, EC_WORD_BUT, EC_WORD_I_AM, EC_WORD_CUTE},
-        .monSet = gBattleFrontierTrainerMons_Alize
-=======
-        .speechBefore = COMPOUND_STRING("Cute and awfully strong that's me."),
-        .speechWin = COMPOUND_STRING("Yup I am cute and awfully strong."),
-        .speechLose = COMPOUND_STRING("I am weak… But I am cute."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AlizeBefore,
+        .speechWin = sText_AlizeWin,
+        .speechLose = sText_AlizeLose,
+        .monSet = gBattleFrontierTrainerMons_Alize,
     },
-    [FRONTIER_TRAINER_LAUREN] = {
+    [FRONTIER_TRAINER_LAUREN] =
+    {
         .facilityClass = FACILITY_CLASS_PICNICKER,
         .trainerName = _("LAUREN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_OLD, EC_WORD_BUT, EC_WORD_I_AM, EC_WORD_ALSO, EC_WORD_GOOD},
-        .speechWin = {EC_WORD_I, EC_WORD_SAID, EC_WORD_I_WAS, EC_WORD_OLD, EC_WORD_BUT, EC_WORD_GOOD},
-        .speechLose = {EC_WORD_WHAT, EC_WORD_A, EC_WORD_WEIRD, EC_WORD_DREAM, EC_WORD_THAT_WAS, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Lauren
-=======
-        .speechBefore = COMPOUND_STRING("I am old but I am also good."),
-        .speechWin = COMPOUND_STRING("I said I was old but good."),
-        .speechLose = COMPOUND_STRING("What a weird dream that was!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LaurenBefore,
+        .speechWin = sText_LaurenWin,
+        .speechLose = sText_LaurenLose,
+        .monSet = gBattleFrontierTrainerMons_Lauren,
     },
-    [FRONTIER_TRAINER_KIPP] = {
+    [FRONTIER_TRAINER_KIPP] =
+    {
         .facilityClass = FACILITY_CLASS_TUBER_M,
         .trainerName = _("KIPP"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_IF_I_WIN, EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_TO, EC_WORD_GO, EC_MOVE2(SURF)},
-        .speechWin = {EC_WORD_YEAH, EC_WORD_EXCL, EC_WORD_I_AM, EC_WORD_OFF, EC_WORD_TO, EC_MOVE2(SURF)},
-        .speechLose = {EC_WORD_OH, EC_WORD_NO, EC_WORD_EXCL, EC_WORD_A, EC_MOVE(WHIRLPOOL), EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Kipp
-=======
-        .speechBefore = COMPOUND_STRING("If I win I am going to go surf."),
-        .speechWin = COMPOUND_STRING("Yeah! I am off to surf."),
-        .speechLose = COMPOUND_STRING("Oh no! A whirlpool!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KippBefore,
+        .speechWin = sText_KippWin,
+        .speechLose = sText_KippLose,
+        .monSet = gBattleFrontierTrainerMons_Kipp,
     },
-    [FRONTIER_TRAINER_JASON] = {
+    [FRONTIER_TRAINER_JASON] =
+    {
         .facilityClass = FACILITY_CLASS_TUBER_M,
         .trainerName = _("JASON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_TEACH, EC_WORD_ME, EC_WORD_A, EC_WORD_GOOD, EC_WORD_STRATEGY, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_THAT_WAS, EC_WORD_YOUR, EC_WORD_GOOD, EC_WORD_STRATEGY, EC_WORD_QUES_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_WOW, EC_WORD_THAT, EC_WORD_IS, EC_WORD_AN, EC_WORD_AWESOME, EC_WORD_STRATEGY},
-        .monSet = gBattleFrontierTrainerMons_Jason
-=======
-        .speechBefore = COMPOUND_STRING("Teach me a good strategy."),
-        .speechWin = COMPOUND_STRING("That was your good strategy?!"),
-        .speechLose = COMPOUND_STRING("Wow that is an awesome strategy."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JasonBefore,
+        .speechWin = sText_JasonWin,
+        .speechLose = sText_JasonLose,
+        .monSet = gBattleFrontierTrainerMons_Jason,
     },
-    [FRONTIER_TRAINER_JOHN] = {
+    [FRONTIER_TRAINER_JOHN] =
+    {
         .facilityClass = FACILITY_CLASS_TUBER_M,
         .trainerName = _("JOHN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_A, EC_WORD_PRETTY, EC_WORD_NEW, EC_WORD_TRAINER, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_NEW, EC_WORD_BUT, EC_WORD_I, EC_WORD_WON, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_NEW, EC_WORD_SO, EC_WORD_WHAT, EC_WORD_IF_I_LOSE, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_John
-=======
-        .speechBefore = COMPOUND_STRING("I am a pretty new trainer."),
-        .speechWin = COMPOUND_STRING("I am new but I won!"),
-        .speechLose = COMPOUND_STRING("I am new so what if I lose?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JohnBefore,
+        .speechWin = sText_JohnWin,
+        .speechLose = sText_JohnLose,
+        .monSet = gBattleFrontierTrainerMons_John,
     },
-    [FRONTIER_TRAINER_ANN] = {
+    [FRONTIER_TRAINER_ANN] =
+    {
         .facilityClass = FACILITY_CLASS_TUBER_F,
         .trainerName = _("ANN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_IT_S, EC_WORD_SO, EC_WORD_EXCITING, EC_WORD_IT, EC_WORD_REALLY, EC_WORD_IS},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_SO, EC_WORD_HAPPY, EC_WORD_I, EC_WORD_CAN, EC_WORD_CRY},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_SO, EC_WORD_SAD, EC_WORD_I, EC_WORD_WILL, EC_WORD_CRY},
-        .monSet = gBattleFrontierTrainerMons_Ann
-=======
-        .speechBefore = COMPOUND_STRING("It's so exciting it really is."),
-        .speechWin = COMPOUND_STRING("I am so happy I can cry."),
-        .speechLose = COMPOUND_STRING("I am so sad I will cry."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AnnBefore,
+        .speechWin = sText_AnnWin,
+        .speechLose = sText_AnnLose,
+        .monSet = gBattleFrontierTrainerMons_Ann,
     },
-    [FRONTIER_TRAINER_EILEEN] = {
+    [FRONTIER_TRAINER_EILEEN] =
+    {
         .facilityClass = FACILITY_CLASS_TUBER_F,
         .trainerName = _("EILEEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_LET_S, EC_WORD_PRETEND, EC_WORD_I_AM, EC_WORD_AN, EC_WORD_ADULT, EC_WORD_OK_QUES},
-        .speechWin = {EC_WORD_SO, EC_WORD_THIS, EC_WORD_IS, EC_WORD_AN, EC_WORD_ADULT, EC_WORD_FEELING},
-        .speechLose = {EC_WORD_AN, EC_WORD_ADULT, EC_WORD_CAN_T, EC_WORD_BEAT, EC_WORD_YOU, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Eileen
-=======
-        .speechBefore = COMPOUND_STRING("Let's pretend I am an adult ok ques."),
-        .speechWin = COMPOUND_STRING("So this is an adult feeling."),
-        .speechLose = COMPOUND_STRING("An adult can't beat you?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EileenBefore,
+        .speechWin = sText_EileenWin,
+        .speechLose = sText_EileenLose,
+        .monSet = gBattleFrontierTrainerMons_Eileen,
     },
-    [FRONTIER_TRAINER_CARLIE] = {
+    [FRONTIER_TRAINER_CARLIE] =
+    {
         .facilityClass = FACILITY_CLASS_TUBER_F,
         .trainerName = _("CARLIE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_SUMMER, EC_WORD_VACATION, EC_WORD_IS, EC_WORD_FOR, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_MY, EC_WORD_SUMMER, EC_WORD_VACATION, EC_WORD_WILL, EC_WORD_BE, EC_WORD_AWESOME},
-        .speechLose = {EC_WORD_I, EC_WORD_CAN_T_WIN, EC_WORD_LIKE, EC_WORD_THIS, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Carlie
-=======
-        .speechBefore = COMPOUND_STRING("My summer vacation is for Pokémon."),
-        .speechWin = COMPOUND_STRING("My summer vacation will be awesome."),
-        .speechLose = COMPOUND_STRING("I can't win like this…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CarlieBefore,
+        .speechWin = sText_CarlieWin,
+        .speechLose = sText_CarlieLose,
+        .monSet = gBattleFrontierTrainerMons_Carlie,
     },
-    [FRONTIER_TRAINER_GORDON] = {
+    [FRONTIER_TRAINER_GORDON] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
         .trainerName = _("GORDON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_VICTORY, EC_WORD_WILL, EC_WORD_COME, EC_WORD_TO_ME, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_OH_YEAH, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_I, EC_WORD_REALLY, EC_WORD_WON},
-        .speechLose = {EC_WORD_NOTHING, EC_WORD_IS, EC_WORD_WORKING, EC_WORD_OUT, EC_WORD_FOR, EC_WORD_ME},
-        .monSet = gBattleFrontierTrainerMons_Gordon
-=======
-        .speechBefore = COMPOUND_STRING("Victory will come to me!"),
-        .speechWin = COMPOUND_STRING("Oh, yeah! I really won."),
-        .speechLose = COMPOUND_STRING("Nothing is working out for me."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GordonBefore,
+        .speechWin = sText_GordonWin,
+        .speechLose = sText_GordonLose,
+        .monSet = gBattleFrontierTrainerMons_Gordon,
     },
-    [FRONTIER_TRAINER_AYDEN] = {
+    [FRONTIER_TRAINER_AYDEN] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
         .trainerName = _("AYDEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_COME_ON, EC_WORD_I, EC_WORD_NEED, EC_WORD_A, EC_WORD_HOT, EC_WORD_BATTLE},
-        .speechWin = {EC_WORD_I, EC_WORD_NEED, EC_WORD_WATER, EC_WORD_TO, EC_WORD_COOL, EC_WORD_DOWN},
-        .speechLose = {EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_ME, EC_WORD_FEELING, EC_WORD_ICE, EC_WORD_COLD},
-        .monSet = gBattleFrontierTrainerMons_Ayden
-=======
-        .speechBefore = COMPOUND_STRING("Come on I need a hot battle."),
-        .speechWin = COMPOUND_STRING("I need water to cool down."),
-        .speechLose = COMPOUND_STRING("You have me feeling ice cold."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AydenBefore,
+        .speechWin = sText_AydenWin,
+        .speechLose = sText_AydenLose,
+        .monSet = gBattleFrontierTrainerMons_Ayden,
     },
-    [FRONTIER_TRAINER_MARCO] = {
+    [FRONTIER_TRAINER_MARCO] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
         .trainerName = _("MARCO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_MOVE2(SURF), EC_WORD_IN, EC_WORD_THE, EC_WORD_WINTER, EC_WORD_TOO},
-        .speechWin = {EC_WORD_I, EC_WORD_WILL, EC_WORD_GO, EC_MOVE2(SURF), EC_WORD_RIGHT, EC_WORD_NOW},
-        .speechLose = {EC_WORD_I, EC_WORD_WILL, EC_MOVE2(BEAT_UP), EC_WORD_MY, EC_MOVE2(SURF), EC_WORD_BOARD},
-        .monSet = gBattleFrontierTrainerMons_Marco
-=======
-        .speechBefore = COMPOUND_STRING("I surf in the winter too."),
-        .speechWin = COMPOUND_STRING("I will go surf right now."),
-        .speechLose = COMPOUND_STRING("I will beat up my surf board."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MarcoBefore,
+        .speechWin = sText_MarcoWin,
+        .speechLose = sText_MarcoLose,
+        .monSet = gBattleFrontierTrainerMons_Marco,
     },
-    [FRONTIER_TRAINER_CIERRA] = {
+    [FRONTIER_TRAINER_CIERRA] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
         .trainerName = _("CIERRA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_TO, EC_WORD_SYNCHRONIZE, EC_WORD_MY, EC_WORD_SWIFT_SWIM},
-        .speechWin = {EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_SYNCHRONIZE, EC_WORD_WITH, EC_WORD_ME, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I, EC_WORD_NEED, EC_WORD_TO, EC_WORD_SYNCHRONIZE, EC_WORD_BETTER, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Cierra
-=======
-        .speechBefore = COMPOUND_STRING("I like to synchronize my swift swim."),
-        .speechWin = COMPOUND_STRING("My Pokémon synchronize with me."),
-        .speechLose = COMPOUND_STRING("I need to synchronize better…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CierraBefore,
+        .speechWin = sText_CierraWin,
+        .speechLose = sText_CierraLose,
+        .monSet = gBattleFrontierTrainerMons_Cierra,
     },
-    [FRONTIER_TRAINER_MARCY] = {
+    [FRONTIER_TRAINER_MARCY] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
         .trainerName = _("MARCY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_A, EC_WORD_KNOCKOUT, EC_WORD_YOU, EC_WORD_CAN_T_WIN, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_AFTER, EC_WORD_ALL, EC_WORD_I_AM, EC_WORD_A, EC_WORD_KNOCKOUT, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_THAT_S, EC_WORD_NOT, EC_WORD_THE, EC_WORD_KNOCKOUT, EC_WORD_I, EC_WORD_MEAN},
-        .monSet = gBattleFrontierTrainerMons_Marcy
-=======
-        .speechBefore = COMPOUND_STRING("I am a knockout you can't win!"),
-        .speechWin = COMPOUND_STRING("After all I am a knockout!"),
-        .speechLose = COMPOUND_STRING("That's not the knockout I mean."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MarcyBefore,
+        .speechWin = sText_MarcyWin,
+        .speechLose = sText_MarcyLose,
+        .monSet = gBattleFrontierTrainerMons_Marcy,
     },
-    [FRONTIER_TRAINER_KATHY] = {
+    [FRONTIER_TRAINER_KATHY] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
         .trainerName = _("KATHY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_VE, EC_WORD_WON, EC_WORD_EVERY, EC_WORD_MATCH, EC_WORD_TODAY, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_SO, EC_WORD_GREAT, EC_WORD_TO, EC_WORD_WIN, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_HUH_QUES, EC_WORD_I, EC_WORD_SHOULD, EC_WORD_NOT, EC_WORD_HAVE, EC_WORD_LOST},
-        .monSet = gBattleFrontierTrainerMons_Kathy
-=======
-        .speechBefore = COMPOUND_STRING("I've won every match today!"),
-        .speechWin = COMPOUND_STRING("It's so great to win!"),
-        .speechLose = COMPOUND_STRING("Huh ques I should not have lost."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KathyBefore,
+        .speechWin = sText_KathyWin,
+        .speechLose = sText_KathyLose,
+        .monSet = gBattleFrontierTrainerMons_Kathy,
     },
-    [FRONTIER_TRAINER_PEYTON] = {
+    [FRONTIER_TRAINER_PEYTON] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
         .trainerName = _("PEYTON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_NEVER, EC_WORD_DISAPPOINTED, EC_WORD_WITH, EC_WORD_MY, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_HAPPY, EC_WORD_IF, EC_WORD_WE, EC_WORD_WIN, EC_WORD_TOGETHER},
-        .speechLose = {EC_WORD_I, EC_WORD_ADORE, EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_MORE, EC_WORD_IF_I_LOSE},
-        .monSet = gBattleFrontierTrainerMons_Peyton
-=======
-        .speechBefore = COMPOUND_STRING("I am never disappointed with my Pokémon."),
-        .speechWin = COMPOUND_STRING("I am happy if we win together."),
-        .speechLose = COMPOUND_STRING("I adore my Pokémon more if I lose."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_PeytonBefore,
+        .speechWin = sText_PeytonWin,
+        .speechLose = sText_PeytonLose,
+        .monSet = gBattleFrontierTrainerMons_Peyton,
     },
-    [FRONTIER_TRAINER_JULIAN] = {
+    [FRONTIER_TRAINER_JULIAN] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
         .trainerName = _("JULIAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU, EC_WORD_ADORE, EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_RIGHT, EC_WORD_QUES},
-        .speechWin = {EC_WORD_YOU_RE, EC_WORD_TOTALLY, EC_WORD_OUT, EC_WORD_OF, EC_WORD_THE, EC_WORD_QUESTION},
-        .speechLose = {EC_WORD_YOU, EC_WORD_DO, EC_WORD_ADORE, EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Julian
-=======
-        .speechBefore = COMPOUND_STRING("You adore your Pokémon right?"),
-        .speechWin = COMPOUND_STRING("You're totally out of the question."),
-        .speechLose = COMPOUND_STRING("You do adore your Pokémon!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JulianBefore,
+        .speechWin = sText_JulianWin,
+        .speechLose = sText_JulianLose,
+        .monSet = gBattleFrontierTrainerMons_Julian,
     },
-    [FRONTIER_TRAINER_QUINN] = {
+    [FRONTIER_TRAINER_QUINN] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
         .trainerName = _("QUINN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_BUT, EC_WORD_A, EC_WORD_DREAM},
-        .speechWin = {EC_WORD_THIS, EC_WORD_IS, EC_WORD_A, EC_WORD_BEAUTIFUL, EC_WORD_DREAM, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_THIS, EC_WORD_IS, EC_WORD_AN, EC_WORD_AWFUL, EC_MOVE(NIGHTMARE), EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Quinn
-=======
-        .speechBefore = COMPOUND_STRING("My Pokémon are but a dream."),
-        .speechWin = COMPOUND_STRING("This is a beautiful dream!"),
-        .speechLose = COMPOUND_STRING("This is an awful nightmare!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_QuinnBefore,
+        .speechWin = sText_QuinnWin,
+        .speechLose = sText_QuinnLose,
+        .monSet = gBattleFrontierTrainerMons_Quinn,
     },
-    [FRONTIER_TRAINER_HAYLEE] = {
+    [FRONTIER_TRAINER_HAYLEE] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
         .trainerName = _("HAYLEE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_KNOW, EC_WORD_HOW, EC_WORD_I_AM, EC_WORD_FEELING},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_OVERWHELMING, EC_WORD_JOY, EC_WORD_OVER, EC_WORD_THIS},
-        .speechLose = {EC_WORD_DESTROYED, EC_WORD_IS, EC_WORD_THE, EC_WORD_WAY, EC_WORD_I_AM, EC_WORD_FEELING},
-        .monSet = gBattleFrontierTrainerMons_Haylee
-=======
-        .speechBefore = COMPOUND_STRING("I don't know how I am feeling."),
-        .speechWin = COMPOUND_STRING("I am feeling overwhelming joy over this."),
-        .speechLose = COMPOUND_STRING("Destroyed is the way I am feeling."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_HayleeBefore,
+        .speechWin = sText_HayleeWin,
+        .speechLose = sText_HayleeLose,
+        .monSet = gBattleFrontierTrainerMons_Haylee,
     },
-    [FRONTIER_TRAINER_AMANDA] = {
+    [FRONTIER_TRAINER_AMANDA] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
         .trainerName = _("AMANDA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_COME, EC_WORD_FROM, EC_WORD_A, EC_WORD_TRAINER, EC_WORD_FAMILY},
-        .speechWin = {EC_WORD_I, EC_WORD_WILL, EC_WORD_TREASURE, EC_WORD_THIS, EC_WORD_WIN, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I, EC_WORD_WANT, EC_WORD_TO, EC_WORD_GO_HOME, EC_WORD_RIGHT, EC_WORD_NOW},
-        .monSet = gBattleFrontierTrainerMons_Amanda
-=======
-        .speechBefore = COMPOUND_STRING("I come from a trainer family."),
-        .speechWin = COMPOUND_STRING("I will treasure this win."),
-        .speechLose = COMPOUND_STRING("I want to go home right now."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AmandaBefore,
+        .speechWin = sText_AmandaWin,
+        .speechLose = sText_AmandaLose,
+        .monSet = gBattleFrontierTrainerMons_Amanda,
     },
-    [FRONTIER_TRAINER_STACY] = {
+    [FRONTIER_TRAINER_STACY] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
         .trainerName = _("STACY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_ALL, EC_WORD_POKEMON, EC_WORD_HAVE, EC_WORD_THEIR, EC_WORD_OWN, EC_WORD_CUTE_CHARM},
-        .speechWin = {EC_WORD_YOU, EC_WORD_SEE, EC_WORD_WHAT, EC_WORD_I, EC_WORD_MEAN, EC_WORD_QUES},
-        .speechLose = {EC_WORD_SHOULD, EC_WORD_I, EC_WORD_NOT, EC_WORD_ADORE, EC_WORD_POKEMON, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Stacy
-=======
-        .speechBefore = COMPOUND_STRING("All Pokémon have their own cute charm."),
-        .speechWin = COMPOUND_STRING("You see what I mean?"),
-        .speechLose = COMPOUND_STRING("Should I not adore Pokémon?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_StacyBefore,
+        .speechWin = sText_StacyWin,
+        .speechLose = sText_StacyLose,
+        .monSet = gBattleFrontierTrainerMons_Stacy,
     },
-    [FRONTIER_TRAINER_RAFAEL] = {
+    // The below 6 are the early Pkmn Breeder class trainers, which use groups from other general classes
+    [FRONTIER_TRAINER_RAFAEL] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
         .trainerName = _("RAFAEL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_COME_ON, EC_WORD_EXCL, EC_WORD_LET_S, EC_WORD_SEE, EC_WORD_SOME, EC_WORD_SPIRIT},
-        .speechWin = {EC_WORD_THAT_S_IT_EXCL, EC_WORD_THAT_S, EC_WORD_THE, EC_WORD_SPIRIT, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_WELL, EC_WORD_SO, EC_WORD_MUCH, EC_WORD_FOR, EC_WORD_OUR, EC_WORD_SPIRIT},
-        .monSet = gBattleFrontierTrainerMons_Rafael
-=======
-        .speechBefore = COMPOUND_STRING("Come on! Let's see some spirit."),
-        .speechWin = COMPOUND_STRING("That's it excl that's the spirit!"),
-        .speechLose = COMPOUND_STRING("Well so much for our spirit."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RafaelBefore,
+        .speechWin = sText_RafaelWin,
+        .speechLose = sText_RafaelLose,
+        .monSet = gBattleFrontierTrainerMons_Rafael,
     },
-    [FRONTIER_TRAINER_OLIVER] = {
+    [FRONTIER_TRAINER_OLIVER] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
         .trainerName = _("OLIVER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A, EC_WORD_GENIUS, EC_WORD_THAT_S, EC_WORD_WHAT, EC_WORD_I_AM, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_THAT_S, EC_WORD_HOW, EC_WORD_A, EC_WORD_GENIUS, EC_WORD_WORKS, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_MORE, EC_WORD_A, EC_WORD_GENIUS, EC_WORD_THAN, EC_WORD_I_AM},
-        .monSet = gBattleFrontierTrainerMons_Oliver
-=======
-        .speechBefore = COMPOUND_STRING("A genius that's what I am!"),
-        .speechWin = COMPOUND_STRING("That's how a genius works!"),
-        .speechLose = COMPOUND_STRING("You're more a genius than I am."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_OliverBefore,
+        .speechWin = sText_OliverWin,
+        .speechLose = sText_OliverLose,
+        .monSet = gBattleFrontierTrainerMons_Oliver,
     },
-    [FRONTIER_TRAINER_PAYTON] = {
+    [FRONTIER_TRAINER_PAYTON] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
         .trainerName = _("PAYTON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_TRAIN, EC_WORD_FROM, EC_WORD_THE, EC_WORD_EGG, EC_WORD_UP},
-        .speechWin = {EC_WORD_WELL, EC_WORD_DONE, EC_WORD_EXCL, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_THAT_WAS, EC_WORD_A, EC_MOVE2(SOFT_BOILED), EC_WORD_LOSS, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Payton
-=======
-        .speechBefore = COMPOUND_STRING("I train from the egg up."),
-        .speechWin = COMPOUND_STRING("Well done!"),
-        .speechLose = COMPOUND_STRING("That was a soft boiled loss…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_PaytonBefore,
+        .speechWin = sText_PaytonWin,
+        .speechLose = sText_PaytonLose,
+        .monSet = gBattleFrontierTrainerMons_Payton,
     },
-    [FRONTIER_TRAINER_PAMELA] = {
+    [FRONTIER_TRAINER_PAMELA] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
         .trainerName = _("PAMELA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_ALL, EC_WORD_POKEMON, EC_WORD_ADORE, EC_WORD_A, EC_WORD_KIND, EC_WORD_TRAINER},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_TOO, EC_WORD_BAD, EC_WORD_YOU, EC_WORD_LOST, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_KIND, EC_WORD_AND, EC_WORD_YOU_RE, EC_WORD_ALSO, EC_WORD_STRONG},
-        .monSet = gBattleFrontierTrainerMons_Pamela
-=======
-        .speechBefore = COMPOUND_STRING("All Pokémon adore a kind trainer."),
-        .speechWin = COMPOUND_STRING("It's too bad you lost."),
-        .speechLose = COMPOUND_STRING("You're kind and you're also strong."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_PamelaBefore,
+        .speechWin = sText_PamelaWin,
+        .speechLose = sText_PamelaLose,
+        .monSet = gBattleFrontierTrainerMons_Pamela,
     },
-    [FRONTIER_TRAINER_ELIZA] = {
+    [FRONTIER_TRAINER_ELIZA] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
         .trainerName = _("ELIZA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_ADORE, EC_WORD_POKEMON, EC_WORD_LIKE, EC_WORD_MY, EC_WORD_CHILDREN},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_SO, EC_WORD_HAPPY, EC_WORD_FOR, EC_WORD_MY, EC_WORD_POKEMON},
-        .speechLose = {EC_WORD_OH_DEAR, EC_WORD_I_AM, EC_WORD_SO, EC_WORD_SORRY, EC_WORD_ABOUT, EC_WORD_THIS},
-        .monSet = gBattleFrontierTrainerMons_Eliza
-=======
-        .speechBefore = COMPOUND_STRING("I adore Pokémon like my children."),
-        .speechWin = COMPOUND_STRING("I am so happy for my Pokémon."),
-        .speechLose = COMPOUND_STRING("Oh, dear I am so sorry about this."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ElizaBefore,
+        .speechWin = sText_ElizaWin,
+        .speechLose = sText_ElizaLose,
+        .monSet = gBattleFrontierTrainerMons_Eliza,
     },
-    [FRONTIER_TRAINER_MARISA] = {
+    [FRONTIER_TRAINER_MARISA] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
         .trainerName = _("MARISA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_PROMISE, EC_WORD_TO, EC_WORD_BATTLE, EC_WORD_SERIOUSLY, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_PROMISE, EC_WORD_ME, EC_WORD_YOU, EC_WORD_WILL, EC_WORD_DO, EC_WORD_BETTER},
-        .speechLose = {EC_WORD_PROMISE, EC_WORD_ME, EC_WORD_ANOTHER, EC_WORD_BATTLE, EC_WORD_PLEASE, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Marisa
-=======
-        .speechBefore = COMPOUND_STRING("I promise to battle seriously."),
-        .speechWin = COMPOUND_STRING("Promise me you will do better."),
-        .speechLose = COMPOUND_STRING("Promise me another battle please!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MarisaBefore,
+        .speechWin = sText_MarisaWin,
+        .speechLose = sText_MarisaLose,
+        .monSet = gBattleFrontierTrainerMons_Marisa,
     },
-    [FRONTIER_TRAINER_LEWIS] = {
+    [FRONTIER_TRAINER_LEWIS] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_CATCHER,
         .trainerName = _("LEWIS"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A_LITTLE, EC_WORD_BUG, EC_WORD_IS, EC_WORD_SCARY, EC_WORD_QUES, EC_WORD_HAHAHA},
-        .speechWin = {EC_WORD_LOOK, EC_WORD_LOOK, EC_WORD_EXCL, EC_WORD_A, EC_WORD_SCARY, EC_WORD_BUG},
-        .speechLose = {EC_WORD_OH, EC_WORD_A, EC_WORD_BUG, EC_WORD_ISN_T, EC_WORD_SCARY, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Lewis
-=======
-        .speechBefore = COMPOUND_STRING("A little bug is scary? Hahaha."),
-        .speechWin = COMPOUND_STRING("Look look! A scary bug."),
-        .speechLose = COMPOUND_STRING("Oh a bug isn't scary…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LewisBefore,
+        .speechWin = sText_LewisWin,
+        .speechLose = sText_LewisLose,
+        .monSet = gBattleFrontierTrainerMons_Lewis,
     },
-    [FRONTIER_TRAINER_YOSHI] = {
+    [FRONTIER_TRAINER_YOSHI] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_CATCHER,
         .trainerName = _("YOSHI"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_BUG, EC_WORD_POKEMON, EC_WORD_MAKE, EC_WORD_ME, EC_WORD_FEELING, EC_WORD_LOVEY_DOVEY},
-        .speechWin = {EC_WORD_BUG, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_THE, EC_WORD_BEST, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_IGNORANT, EC_WORD_ABOUT, EC_WORD_BUG, EC_WORD_POKEMON, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Yoshi
-=======
-        .speechBefore = COMPOUND_STRING("Bug Pokémon make me feeling lovey dovey."),
-        .speechWin = COMPOUND_STRING("Bug Pokémon are the best!"),
-        .speechLose = COMPOUND_STRING("You're ignorant about bug Pokémon."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_YoshiBefore,
+        .speechWin = sText_YoshiWin,
+        .speechLose = sText_YoshiLose,
+        .monSet = gBattleFrontierTrainerMons_Yoshi,
     },
-    [FRONTIER_TRAINER_DESTIN] = {
+    [FRONTIER_TRAINER_DESTIN] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_CATCHER,
         .trainerName = _("DESTIN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_IT_S, EC_WORD_WAY, EC_WORD_TOO, EC_WORD_HOT, EC_WORD_HERE, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_ABOUT, EC_WORD_TO, EC_MOVE(OVERHEAT), EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_PLEASE, EC_WORD_I, EC_WORD_NEED, EC_WORD_SOME, EC_WORD_WATER, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Destin
-=======
-        .speechBefore = COMPOUND_STRING("It's way too hot here."),
-        .speechWin = COMPOUND_STRING("I am about to overheat."),
-        .speechLose = COMPOUND_STRING("Please I need some water."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DestinBefore,
+        .speechWin = sText_DestinWin,
+        .speechLose = sText_DestinLose,
+        .monSet = gBattleFrontierTrainerMons_Destin,
     },
-    [FRONTIER_TRAINER_KEON] = {
+    [FRONTIER_TRAINER_KEON] =
+    {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
         .trainerName = _("KEON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_FORGIVE, EC_WORD_ME, EC_WORD_BUT, EC_WORD_HERE_I_COME, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_FORGIVE, EC_WORD_ME, EC_WORD_FOR, EC_WORD_MY, EC_WORD_OVERWHELMING, EC_WORD_POWER},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_SORRY, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Keon
-=======
-        .speechBefore = COMPOUND_STRING("Forgive me but here I come!"),
-        .speechWin = COMPOUND_STRING("Forgive me for my overwhelming power."),
-        .speechLose = COMPOUND_STRING("I am sorry…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KeonBefore,
+        .speechWin = sText_KeonWin,
+        .speechLose = sText_KeonLose,
+        .monSet = gBattleFrontierTrainerMons_Keon,
     },
-    [FRONTIER_TRAINER_STUART] = {
+    [FRONTIER_TRAINER_STUART] =
+    {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
         .trainerName = _("STUART"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_PROMISE, EC_WORD_YOU, EC_WORD_A, EC_WORD_HOT, EC_WORD_BATTLE},
-        .speechWin = {EC_WORD_THE, EC_WORD_MASTER, EC_WORD_OF, EC_WORD_COOL, EC_WORD_THAT_S, EC_WORD_ME},
-        .speechLose = {EC_WORD_I, EC_WORD_SEE, EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_SO, EC_WORD_COOL},
-        .monSet = gBattleFrontierTrainerMons_Stuart
-=======
-        .speechBefore = COMPOUND_STRING("I promise you a hot battle."),
-        .speechWin = COMPOUND_STRING("The master of cool that's me."),
-        .speechLose = COMPOUND_STRING("I see I am not so cool."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_StuartBefore,
+        .speechWin = sText_StuartWin,
+        .speechLose = sText_StuartLose,
+        .monSet = gBattleFrontierTrainerMons_Stuart,
     },
-    [FRONTIER_TRAINER_NESTOR] = {
+    [FRONTIER_TRAINER_NESTOR] =
+    {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
         .trainerName = _("NESTOR"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_SHOW, EC_WORD_ME, EC_WORD_A, EC_WORD_REALLY, EC_WORD_SMOOTH, EC_WORD_MOVE},
-        .speechWin = {EC_WORD_THERE, EC_WORD_WAS, EC_WORD_NOTHING, EC_WORD_SMOOTH, EC_WORD_ABOUT, EC_WORD_THAT},
-        .speechLose = {EC_WORD_YOU, EC_WORD_REALLY, EC_WORD_ARE, EC_WORD_SMOOTH, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Nestor
-=======
-        .speechBefore = COMPOUND_STRING("Show me a really smooth move."),
-        .speechWin = COMPOUND_STRING("There was nothing smooth about that."),
-        .speechLose = COMPOUND_STRING("You really are smooth!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_NestorBefore,
+        .speechWin = sText_NestorWin,
+        .speechLose = sText_NestorLose,
+        .monSet = gBattleFrontierTrainerMons_Nestor,
     },
-    [FRONTIER_TRAINER_DERRICK] = {
+    [FRONTIER_TRAINER_DERRICK] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
         .trainerName = _("DERRICK"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_LET_S, EC_WORD_SEE, EC_WORD_YOU, EC_MOVE2(MEDITATE), EC_WORD_LIKE, EC_WORD_ME},
-        .speechWin = {EC_WORD_HOW, EC_WORD_I, EC_MOVE2(MEDITATE), EC_WORD_IS, EC_WORD_JUST, EC_WORD_BEAUTIFUL},
-        .speechLose = {EC_WORD_I, EC_WORD_WILL, EC_MOVE2(MEDITATE), EC_WORD_FOR, EC_WORD_A, EC_MOVE2(CALM_MIND)},
-        .monSet = gBattleFrontierTrainerMons_Derrick
-=======
-        .speechBefore = COMPOUND_STRING("Let's see you meditate like me."),
-        .speechWin = COMPOUND_STRING("How I meditate is just beautiful."),
-        .speechLose = COMPOUND_STRING("I will meditate for a calm mind."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DerrickBefore,
+        .speechWin = sText_DerrickWin,
+        .speechLose = sText_DerrickLose,
+        .monSet = gBattleFrontierTrainerMons_Derrick,
     },
-    [FRONTIER_TRAINER_BRYSON] = {
+    [FRONTIER_TRAINER_BRYSON] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
         .trainerName = _("BRYSON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_MOVE2(POISON_POWDER), EC_WORD_IS, EC_WORD_IN, EC_WORD_OUR, EC_MOVE2(COTTON_SPORE), EC_WORD_MOVE},
-        .speechWin = {EC_WORD_HOW_DO, EC_WORD_YOU, EC_WORD_LIKE, EC_WORD_OUR, EC_MOVE2(POISON_POWDER), EC_WORD_QUES},
-        .speechLose = {EC_WORD_MY, EC_MOVE2(COTTON_SPORE), EC_WORD_WAS, EC_WORD_USELESS, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Bryson
-=======
-        .speechBefore = COMPOUND_STRING("Poison powder is in our cotton spore move."),
-        .speechWin = COMPOUND_STRING("How do you like our poison powder?"),
-        .speechLose = COMPOUND_STRING("My cotton spore was useless."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BrysonBefore,
+        .speechWin = sText_BrysonWin,
+        .speechLose = sText_BrysonLose,
+        .monSet = gBattleFrontierTrainerMons_Bryson,
     },
-    [FRONTIER_TRAINER_CLAYTON] = {
+    [FRONTIER_TRAINER_CLAYTON] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
         .trainerName = _("CLAYTON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HUH_QUES, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_WORD_WHERE, EC_WORD_IS_IT_QUES, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_WHERE, EC_WORD_IS_IT_QUES, EC_WORD_I_VE, EC_WORD_LOST, EC_WORD_MY, EC_WORD_POKENAV},
-        .speechLose = {EC_WORD_WHERE, EC_WORD_IS_IT_QUES, EC_WORD_I_VE, EC_WORD_LOST, EC_WORD_MY, EC_WORD_SENSE},
-        .monSet = gBattleFrontierTrainerMons_Clayton
-=======
-        .speechBefore = COMPOUND_STRING("Huh ques where is it ques."),
-        .speechWin = COMPOUND_STRING("Where is it ques I've lost my pokenav."),
-        .speechLose = COMPOUND_STRING("Where is it ques I've lost my sense."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ClaytonBefore,
+        .speechWin = sText_ClaytonWin,
+        .speechLose = sText_ClaytonLose,
+        .monSet = gBattleFrontierTrainerMons_Clayton,
     },
-    [FRONTIER_TRAINER_TRENTON] = {
+    [FRONTIER_TRAINER_TRENTON] =
+    {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
         .trainerName = _("TRENTON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_COME_OVER, EC_WORD_FOR, EC_WORD_SOME, EC_WORD_TASTY, EC_WORD_WATER, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_MMM, EC_WORD_DO, EC_WORD_YOU, EC_WORD_WANT, EC_WORD_SOME, EC_WORD_QUES},
-        .speechLose = {EC_WORD_I, EC_WORD_GOT, EC_WORD_THIS, EC_WORD_TASTY, EC_WORD_WATER, EC_WORD_SHOPPING},
-        .monSet = gBattleFrontierTrainerMons_Trenton
-=======
-        .speechBefore = COMPOUND_STRING("Come over for some tasty water."),
-        .speechWin = COMPOUND_STRING("Mmm do you want some?"),
-        .speechLose = COMPOUND_STRING("I got this tasty water shopping."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_TrentonBefore,
+        .speechWin = sText_TrentonWin,
+        .speechLose = sText_TrentonLose,
+        .monSet = gBattleFrontierTrainerMons_Trenton,
     },
-    [FRONTIER_TRAINER_JENSON] = {
+    [FRONTIER_TRAINER_JENSON] =
+    {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
         .trainerName = _("JENSON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_WILL, EC_WORD_MAKE, EC_WORD_YOU, EC_WORD_DOWNCAST},
-        .speechWin = {EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_DON_T, EC_WORD_MAKE, EC_WORD_THE, EC_MOVE(CUT)},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_THE, EC_WORD_TRAINER, EC_WORD_WHO_IS, EC_WORD_FEELING, EC_WORD_DOWNCAST},
-        .monSet = gBattleFrontierTrainerMons_Jenson
-=======
-        .speechBefore = COMPOUND_STRING("My Pokémon will make you downcast."),
-        .speechWin = COMPOUND_STRING("Your Pokémon don't make the cut."),
-        .speechLose = COMPOUND_STRING("I am the trainer who is feeling downcast."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JensonBefore,
+        .speechWin = sText_JensonWin,
+        .speechLose = sText_JensonLose,
+        .monSet = gBattleFrontierTrainerMons_Jenson,
     },
-    [FRONTIER_TRAINER_WESLEY] = {
+    [FRONTIER_TRAINER_WESLEY] =
+    {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
         .trainerName = _("WESLEY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_POKEMON_NATIONAL(MEW), EC_POKEMON_NATIONAL(MEW), EC_WORD_IS, EC_WORD_HOW, EC_WORD_I, EC_WORD_CRY},
-        .speechWin = {EC_WORD_YES, EC_WORD_I, EC_WORD_KNOW, EC_WORD_I_AM, EC_WORD_CUTE, EC_WORD_EXCL},
-        .speechLose = {EC_POKEMON_NATIONAL(MEW), EC_POKEMON_NATIONAL(MEW), EC_WORD_EXCL, EC_POKEMON_NATIONAL(MEW), EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Wesley
-=======
-        .speechBefore = COMPOUND_STRING("Mew Mew is how I cry."),
-        .speechWin = COMPOUND_STRING("Yes I know I am cute!"),
-        .speechLose = COMPOUND_STRING("Mew Mew! Mew!!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_WesleyBefore,
+        .speechWin = sText_WesleyWin,
+        .speechLose = sText_WesleyLose,
+        .monSet = gBattleFrontierTrainerMons_Wesley,
     },
-    [FRONTIER_TRAINER_ANTON] = {
+    [FRONTIER_TRAINER_ANTON] =
+    {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
         .trainerName = _("ANTON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_GET, EC_WORD_READY, EC_WORD_FOR, EC_WORD_ME, EC_WORD_TO, EC_MOVE(THRASH)},
-        .speechWin = {EC_WORD_WAHAHAHA, EC_WORD_EXCL, EC_WORD_SORRY, EC_WORD_ABOUT, EC_WORD_THAT, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_IT_S, EC_WORD_A, EC_WORD_TOUGH, EC_WORD_LOSS, EC_WORD_TO, EC_MOVE2(SWALLOW)},
-        .monSet = gBattleFrontierTrainerMons_Anton
-=======
-        .speechBefore = COMPOUND_STRING("Get ready for me to thrash."),
-        .speechWin = COMPOUND_STRING("Wahahaha! Sorry about that!"),
-        .speechLose = COMPOUND_STRING("It's a tough loss to swallow."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AntonBefore,
+        .speechWin = sText_AntonWin,
+        .speechLose = sText_AntonLose,
+        .monSet = gBattleFrontierTrainerMons_Anton,
     },
-    [FRONTIER_TRAINER_LAWSON] = {
+    [FRONTIER_TRAINER_LAWSON] =
+    {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
         .trainerName = _("LAWSON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_YOUNG, EC_WORD_AT, EC_WORD_HEART, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_NOT, EC_WORD_COOL, EC_WORD_EXCL, EC_WORD_NOT, EC_WORD_AT, EC_WORD_ALL},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_OLD, EC_WORD_AND, EC_WORD_FEELING, EC_WORD_SHAKY, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Lawson
-=======
-        .speechBefore = COMPOUND_STRING("I am young at heart!"),
-        .speechWin = COMPOUND_STRING("Not cool! Not at all."),
-        .speechLose = COMPOUND_STRING("I am old and feeling shaky…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LawsonBefore,
+        .speechWin = sText_LawsonWin,
+        .speechLose = sText_LawsonLose,
+        .monSet = gBattleFrontierTrainerMons_Lawson,
     },
-    [FRONTIER_TRAINER_SAMMY] = {
+    [FRONTIER_TRAINER_SAMMY] =
+    {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
         .trainerName = _("SAMMY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_PARTY, EC_WORD_IS, EC_WORD_READY, EC_WORD_TO, EC_WORD_ROCK},
-        .speechWin = {EC_WORD_MY, EC_WORD_PARTY, EC_WORD_IS, EC_WORD_JUST, EC_WORD_INCREDIBLE, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I, EC_WORD_CRY, EC_WORD_FOR, EC_WORD_MY, EC_WORD_PARTY, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Sammy
-=======
-        .speechBefore = COMPOUND_STRING("My party is ready to rock."),
-        .speechWin = COMPOUND_STRING("My party is just incredible!"),
-        .speechLose = COMPOUND_STRING("I cry for my party…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_SammyBefore,
+        .speechWin = sText_SammyWin,
+        .speechLose = sText_SammyLose,
+        .monSet = gBattleFrontierTrainerMons_Sammy,
     },
-    [FRONTIER_TRAINER_ARNIE] = {
+    // The below 3 are the early Collector class trainers, which use groups from other general classes
+    [FRONTIER_TRAINER_ARNIE] =
+    {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
         .trainerName = _("ARNIE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_NO_1, EC_WORD_I, EC_WORD_HAVE, EC_WORD_NO, EC_WORD_RIVAL},
-        .speechWin = {EC_WORD_YOU, EC_WORD_SEE, EC_WORD_QUES, EC_WORD_I, EC_WORD_CAN_T, EC_WORD_LOSE},
-        .speechLose = {EC_WORD_NO, EC_WORD_EXCL, EC_WORD_I, EC_WORD_WON_T, EC_WORD_ACCEPT, EC_WORD_THIS},
-        .monSet = gBattleFrontierTrainerMons_Arnie
-=======
-        .speechBefore = COMPOUND_STRING("I am no 1 I have no rival."),
-        .speechWin = COMPOUND_STRING("You see? I can't lose."),
-        .speechLose = COMPOUND_STRING("No! I won't accept this."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ArnieBefore,
+        .speechWin = sText_ArnieWin,
+        .speechLose = sText_ArnieLose,
+        .monSet = gBattleFrontierTrainerMons_Arnie,
     },
-    [FRONTIER_TRAINER_ADRIAN] = {
+    [FRONTIER_TRAINER_ADRIAN] =
+    {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
         .trainerName = _("ADRIAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YAHOO, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_YAHOO, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_THANK_YOU, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_THANK_YOU, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_GOOD_BYE, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_GOOD_BYE, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Adrian
-=======
-        .speechBefore = COMPOUND_STRING("Yahoo! Yahoo!!"),
-        .speechWin = COMPOUND_STRING("Thank you! Thank you!!"),
-        .speechLose = COMPOUND_STRING("Good bye! Good bye!!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AdrianBefore,
+        .speechWin = sText_AdrianWin,
+        .speechLose = sText_AdrianLose,
+        .monSet = gBattleFrontierTrainerMons_Adrian,
     },
-    [FRONTIER_TRAINER_TRISTAN] = {
+    [FRONTIER_TRAINER_TRISTAN] =
+    {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
         .trainerName = _("TRISTAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_CONFUSED, EC_WORD_QUES, EC_EMPTY_WORD, EC_WORD_I_AM, EC_WORD_A, EC_WORD_GENIUS},
-        .speechWin = {EC_WORD_SEE, EC_WORD_QUES, EC_EMPTY_WORD, EC_WORD_I_AM, EC_WORD_A, EC_WORD_GENIUS},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_A, EC_WORD_GENIUS, EC_WORD_IN, EC_WORD_BATTLE},
-        .monSet = gBattleFrontierTrainerMons_Tristan
-=======
-        .speechBefore = COMPOUND_STRING("Confused? I am a genius."),
-        .speechWin = COMPOUND_STRING("See? I am a genius."),
-        .speechLose = COMPOUND_STRING("I am not a genius in battle."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_TristanBefore,
+        .speechWin = sText_TristanWin,
+        .speechLose = sText_TristanLose,
+        .monSet = gBattleFrontierTrainerMons_Tristan,
     },
-    [FRONTIER_TRAINER_JULIANA] = {
+    [FRONTIER_TRAINER_JULIANA] =
+    {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
         .trainerName = _("JULIANA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_THINK, EC_WORD_I_AM, EC_WORD_SHOPPING, EC_WORD_TOO, EC_WORD_MUCH},
-        .speechWin = {EC_WORD_BUT, EC_WORD_I, EC_WORD_WANT, EC_WORD_A, EC_WORD_POKEMON, EC_WORD_PLUSH_DOLL},
-        .speechLose = {EC_WORD_I, EC_WORD_SO, EC_WORD_WANT, EC_WORD_ANOTHER, EC_WORD_POKEMON, EC_WORD_PLUSH_DOLL},
-        .monSet = gBattleFrontierTrainerMons_Juliana
-=======
-        .speechBefore = COMPOUND_STRING("I think I am shopping too much."),
-        .speechWin = COMPOUND_STRING("But I want a Pokémon plush doll."),
-        .speechLose = COMPOUND_STRING("I so want another Pokémon plush doll."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JulianaBefore,
+        .speechWin = sText_JulianaWin,
+        .speechLose = sText_JulianaLose,
+        .monSet = gBattleFrontierTrainerMons_Juliana,
     },
-    [FRONTIER_TRAINER_RYLEE] = {
+    [FRONTIER_TRAINER_RYLEE] =
+    {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
         .trainerName = _("RYLEE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_SHOW, EC_WORD_ME, EC_WORD_THAT, EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_GUTS},
-        .speechWin = {EC_WORD_BYE_BYE, EC_WORD_EXCL, EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_NO, EC_WORD_GUTS},
-        .speechLose = {EC_WORD_THAT_WAS, EC_WORD_GUTSY, EC_WORD_ELLIPSIS, EC_WORD_YOU_RE, EC_WORD_QUITE, EC_WORD_SUPER},
-        .monSet = gBattleFrontierTrainerMons_Rylee
-=======
-        .speechBefore = COMPOUND_STRING("Show me that you have guts."),
-        .speechWin = COMPOUND_STRING("Bye bye! You have no guts."),
-        .speechLose = COMPOUND_STRING("That was gutsy… You're quite super."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RyleeBefore,
+        .speechWin = sText_RyleeWin,
+        .speechLose = sText_RyleeLose,
+        .monSet = gBattleFrontierTrainerMons_Rylee,
     },
-    [FRONTIER_TRAINER_CHELSEA] = {
+    [FRONTIER_TRAINER_CHELSEA] =
+    {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
         .trainerName = _("CHELSEA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_SERIOUSLY, EC_WORD_MEAN, EC_WORD_TO, EC_WORD_WIN, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_THAT_WAS, EC_WORD_MY, EC_WORD_WILL, EC_WORD_TO, EC_WORD_WIN, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_FAR, EC_WORD_TOO_STRONG, EC_WORD_FOR, EC_WORD_ME, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Chelsea
-=======
-        .speechBefore = COMPOUND_STRING("I seriously mean to win!"),
-        .speechWin = COMPOUND_STRING("That was my will to win."),
-        .speechLose = COMPOUND_STRING("You're far too strong for me."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ChelseaBefore,
+        .speechWin = sText_ChelseaWin,
+        .speechLose = sText_ChelseaLose,
+        .monSet = gBattleFrontierTrainerMons_Chelsea,
     },
-    [FRONTIER_TRAINER_DANELA] = {
+    // The below 3 are the early Beauty class trainers, which use groups from other general classes
+    [FRONTIER_TRAINER_DANELA] =
+    {
         .facilityClass = FACILITY_CLASS_BEAUTY,
         .trainerName = _("DANELA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU, EC_WORD_MUST_BE, EC_WORD_MY, EC_WORD_OPPONENT, EC_WORD_NOW, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_OH_DEAR, EC_WORD_TOO_WEAK, EC_WORD_EXCL, EC_WORD_DON_T, EC_WORD_GIVE_UP, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_THAT_WAS, EC_WORD_GOOD, EC_WORD_AND, EC_WORD_THIS, EC_WORD_IS, EC_WORD_GOOD_BYE},
-        .monSet = gBattleFrontierTrainerMons_Danela
-=======
-        .speechBefore = COMPOUND_STRING("You must be my opponent now!"),
-        .speechWin = COMPOUND_STRING("Oh, dear too weak! Don't give up!"),
-        .speechLose = COMPOUND_STRING("That was good and this is good bye."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DanelaBefore,
+        .speechWin = sText_DanelaWin,
+        .speechLose = sText_DanelaLose,
+        .monSet = gBattleFrontierTrainerMons_Danela,
     },
-    [FRONTIER_TRAINER_LIZBETH] = {
+    [FRONTIER_TRAINER_LIZBETH] =
+    {
         .facilityClass = FACILITY_CLASS_BEAUTY,
         .trainerName = _("LIZBETH"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_IF_I_LOSE, EC_WORD_YOU, EC_WORD_CAN, EC_WORD_HAVE, EC_WORD_A, EC_MOVE2(PRESENT)},
-        .speechWin = {EC_WORD_HERE_IT_IS, EC_WORD_A_LITTLE, EC_WORD_PRAISE, EC_WORD_AS, EC_WORD_YOUR, EC_MOVE2(PRESENT)},
-        .speechLose = {EC_WORD_YOUR, EC_MOVE2(PRESENT), EC_WORD_QUES_EXCL, EC_WORD_HERE_IT_IS, EC_WORD_A, EC_MOVE(DOUBLE_SLAP)},
-        .monSet = gBattleFrontierTrainerMons_Lizbeth
-=======
-        .speechBefore = COMPOUND_STRING("If I lose you can have a present."),
-        .speechWin = COMPOUND_STRING("Here it is a little praise as your present."),
-        .speechLose = COMPOUND_STRING("Your present?! Here it is a double slap."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LizbethBefore,
+        .speechWin = sText_LizbethWin,
+        .speechLose = sText_LizbethLose,
+        .monSet = gBattleFrontierTrainerMons_Lizbeth,
     },
-    [FRONTIER_TRAINER_AMELIA] = {
+    [FRONTIER_TRAINER_AMELIA] =
+    {
         .facilityClass = FACILITY_CLASS_BEAUTY,
         .trainerName = _("AMELIA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_BELIEVE, EC_WORD_IN, EC_WORD_CUTE, EC_WORD_FASHION, EC_WORD_APPEAL},
-        .speechWin = {EC_WORD_YOUR, EC_WORD_FASHION, EC_WORD_SENSE, EC_WORD_IS, EC_WORD_A, EC_WORD_DISASTER},
-        .speechLose = {EC_WORD_THAT_WAS, EC_WORD_AWFUL, EC_WORD_EXCL, EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_HOME},
-        .monSet = gBattleFrontierTrainerMons_Amelia
-=======
-        .speechBefore = COMPOUND_STRING("I believe in cute fashion appeal."),
-        .speechWin = COMPOUND_STRING("Your fashion sense is a disaster."),
-        .speechLose = COMPOUND_STRING("That was awful! I am going home."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AmeliaBefore,
+        .speechWin = sText_AmeliaWin,
+        .speechLose = sText_AmeliaLose,
+        .monSet = gBattleFrontierTrainerMons_Amelia,
     },
-    [FRONTIER_TRAINER_JILLIAN] = {
+    [FRONTIER_TRAINER_JILLIAN] =
+    {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
         .trainerName = _("JILLIAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WHAT, EC_WORD_IS, EC_WORD_THAT, EC_WORD_I, EC_WORD_SMELL, EC_WORD_QUES},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_THE, EC_MOVE(SWEET_SCENT), EC_WORD_OF, EC_WORD_TASTY, EC_WORD_WATER},
-        .speechLose = {EC_WORD_IT_S, EC_WORD_YOUR, EC_WORD_OFFENSIVE, EC_WORD_STENCH, EC_WORD_THAT_S, EC_WORD_WHAT},
-        .monSet = gBattleFrontierTrainerMons_Jillian
-=======
-        .speechBefore = COMPOUND_STRING("What is that I smell?"),
-        .speechWin = COMPOUND_STRING("It's the sweet scent of tasty water."),
-        .speechLose = COMPOUND_STRING("It's your offensive stench that's what."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JillianBefore,
+        .speechWin = sText_JillianWin,
+        .speechLose = sText_JillianLose,
+        .monSet = gBattleFrontierTrainerMons_Jillian,
     },
-    [FRONTIER_TRAINER_ABBIE] = {
+    [FRONTIER_TRAINER_ABBIE] =
+    {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
         .trainerName = _("ABBIE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU, EC_WORD_TRY, EC_WORD_MY, EC_WORD_SECRET, EC_MOVE(AROMATHERAPY), EC_WORD_OK_QUES},
-        .speechWin = {EC_WORD_MY, EC_MOVE(AROMATHERAPY), EC_WORD_IS, EC_WORD_TERRIBLE, EC_WORD_FOR, EC_WORD_YOU},
-        .speechLose = {EC_WORD_DIDN_T, EC_WORD_YOU, EC_WORD_SMELL, EC_WORD_A, EC_WORD_THING, EC_WORD_QUES_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Abbie
-=======
-        .speechBefore = COMPOUND_STRING("You try my secret aromatherapy ok ques."),
-        .speechWin = COMPOUND_STRING("My aromatherapy is terrible for you."),
-        .speechLose = COMPOUND_STRING("Didn't you smell a thing?!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AbbieBefore,
+        .speechWin = sText_AbbieWin,
+        .speechLose = sText_AbbieLose,
+        .monSet = gBattleFrontierTrainerMons_Abbie,
     },
-    [FRONTIER_TRAINER_BRIANA] = {
+    [FRONTIER_TRAINER_BRIANA] =
+    {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
         .trainerName = _("BRIANA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_BOY, EC_WORD_FRIEND, EC_WORD_WORKS, EC_WORD_TOO, EC_WORD_MUCH},
-        .speechWin = {EC_WORD_I, EC_WORD_ONLY, EC_WORD_MISS, EC_WORD_HIM, EC_WORD_MORE, EC_WORD_ELLIPSIS},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_SO, EC_WORD_LONESOME, EC_WORD_WITHOUT, EC_WORD_HIM, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Briana
-=======
-        .speechBefore = COMPOUND_STRING("My boy friend works too much."),
-        .speechWin = COMPOUND_STRING("I only miss him more…"),
-        .speechLose = COMPOUND_STRING("I am so lonesome without him…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BrianaBefore,
+        .speechWin = sText_BrianaWin,
+        .speechLose = sText_BrianaLose,
+        .monSet = gBattleFrontierTrainerMons_Briana,
     },
-    [FRONTIER_TRAINER_ANTONIO] = {
+    [FRONTIER_TRAINER_ANTONIO] =
+    {
         .facilityClass = FACILITY_CLASS_GUITARIST,
         .trainerName = _("ANTONIO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_KNOW, EC_WORD_HOW, EC_WORD_TO, EC_WORD_GO, EC_WORD_GO},
-        .speechWin = {EC_WORD_BUT, EC_WORD_I, EC_WORD_DON_T, EC_WORD_LIKE, EC_WORD_TO, EC_WORD_DANCE},
-        .speechLose = {EC_WORD_GO, EC_WORD_GO, EC_WORD_ELLIPSIS, EC_WORD_JUST, EC_MOVE(FLAIL), EC_WORD_ABOUT},
-        .monSet = gBattleFrontierTrainerMons_Antonio
-=======
-        .speechBefore = COMPOUND_STRING("I know how to go go."),
-        .speechWin = COMPOUND_STRING("But I don't like to dance."),
-        .speechLose = COMPOUND_STRING("Go go… Just flail about."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AntonioBefore,
+        .speechWin = sText_AntonioWin,
+        .speechLose = sText_AntonioLose,
+        .monSet = gBattleFrontierTrainerMons_Antonio,
     },
-    [FRONTIER_TRAINER_JADEN] = {
+    [FRONTIER_TRAINER_JADEN] =
+    {
         .facilityClass = FACILITY_CLASS_GUITARIST,
         .trainerName = _("JADEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HELLO, EC_WORD_I, EC_WORD_THINK, EC_WORD_I, EC_WORD_ADORE, EC_WORD_YOU},
-        .speechWin = {EC_WORD_YOU, EC_WORD_MAKE, EC_WORD_ME, EC_MOVE(THRASH), EC_WORD_IN, EC_MOVE2(FRUSTRATION)},
-        .speechLose = {EC_WORD_THIS_IS_IT_EXCL, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_WORD_GOOD_BYE, EC_WORD_FOREVER, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Jaden
-=======
-        .speechBefore = COMPOUND_STRING("Hello I think I adore you."),
-        .speechWin = COMPOUND_STRING("You make me thrash in frustration."),
-        .speechLose = COMPOUND_STRING("This is it excl good bye forever!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JadenBefore,
+        .speechWin = sText_JadenWin,
+        .speechLose = sText_JadenLose,
+        .monSet = gBattleFrontierTrainerMons_Jaden,
     },
-    [FRONTIER_TRAINER_DAKOTA] = {
+    [FRONTIER_TRAINER_DAKOTA] =
+    {
         .facilityClass = FACILITY_CLASS_GUITARIST,
         .trainerName = _("DAKOTA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_TO, EC_WORD_DANCE, EC_WORD_WITH, EC_WORD_POWER},
-        .speechWin = {EC_WORD_GOT, EC_WORD_IT, EC_WORD_QUES, EC_WORD_DANCE, EC_WORD_WITH, EC_WORD_POWER},
-        .speechLose = {EC_WORD_OKAY, EC_WORD_YOU, EC_WORD_UNDERSTAND, EC_WORD_ALL_RIGHT, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Dakota
-=======
-        .speechBefore = COMPOUND_STRING("You have to dance with power."),
-        .speechWin = COMPOUND_STRING("Got it? Dance with power."),
-        .speechLose = COMPOUND_STRING("Okay you understand all right!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DakotaBefore,
+        .speechWin = sText_DakotaWin,
+        .speechLose = sText_DakotaLose,
+        .monSet = gBattleFrontierTrainerMons_Dakota,
     },
-    [FRONTIER_TRAINER_BRAYDEN] = {
+    [FRONTIER_TRAINER_BRAYDEN] =
+    {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
         .trainerName = _("BRAYDEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_COLOR_CHANGE, EC_WORD_VERSION, EC_WORD_TOYS, EC_WORD_ARE, EC_WORD_USELESS, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_I, EC_WORD_ONLY, EC_WORD_COLLECT, EC_WORD_NORMAL, EC_WORD_VERSION, EC_WORD_TOYS},
-        .speechLose = {EC_WORD_I, EC_MOVE2(ATTRACT), EC_WORD_COLOR_CHANGE, EC_WORD_VERSION, EC_WORD_TOYS, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Brayden
-=======
-        .speechBefore = COMPOUND_STRING("Color change version toys are useless!"),
-        .speechWin = COMPOUND_STRING("I only collect normal version toys."),
-        .speechLose = COMPOUND_STRING("I attract color change version toys…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BraydenBefore,
+        .speechWin = sText_BraydenWin,
+        .speechLose = sText_BraydenLose,
+        .monSet = gBattleFrontierTrainerMons_Brayden,
     },
-    [FRONTIER_TRAINER_CORSON] = {
+    [FRONTIER_TRAINER_CORSON] =
+    {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
         .trainerName = _("CORSON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_GET, EC_WORD_TO, EC_MOVE2(BEAT_UP), EC_WORD_ON, EC_WORD_YOU},
-        .speechWin = {EC_WORD_TOO, EC_WORD_EASY, EC_WORD_EXCL, EC_WORD_I_AM, EC_WORD_SO, EC_WORD_COOL},
-        .speechLose = {EC_WORD_WHY, EC_WORD_QUES_EXCL, EC_EMPTY_WORD, EC_WORD_I, EC_MOVE2(CURSE), EC_WORD_YOU},
-        .monSet = gBattleFrontierTrainerMons_Corson
-=======
-        .speechBefore = COMPOUND_STRING("I get to beat up on you."),
-        .speechWin = COMPOUND_STRING("Too easy! I am so cool."),
-        .speechLose = COMPOUND_STRING("Why?! I curse you."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CorsonBefore,
+        .speechWin = sText_CorsonWin,
+        .speechLose = sText_CorsonLose,
+        .monSet = gBattleFrontierTrainerMons_Corson,
     },
-    [FRONTIER_TRAINER_TREVIN] = {
+    [FRONTIER_TRAINER_TREVIN] =
+    {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
         .trainerName = _("TREVIN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THERE, EC_WORD_IS, EC_WORD_NONE, EC_WORD_BETTER, EC_WORD_THAN, EC_WORD_ME},
-        .speechWin = {EC_WORD_YES_SIR_EXCL, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_WORD_I_AM, EC_WORD_THE, EC_WORD_BEST},
-        .speechLose = {EC_WORD_SERIOUS, EC_WORD_QUES_EXCL, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Trevin
-=======
-        .speechBefore = COMPOUND_STRING("There is none better than me."),
-        .speechWin = COMPOUND_STRING("Yes sir excl I am the best."),
-        .speechLose = COMPOUND_STRING("Serious?!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_TrevinBefore,
+        .speechWin = sText_TrevinWin,
+        .speechLose = sText_TrevinLose,
+        .monSet = gBattleFrontierTrainerMons_Trevin,
     },
-    [FRONTIER_TRAINER_PATRICK] = {
+    [FRONTIER_TRAINER_PATRICK] =
+    {
         .facilityClass = FACILITY_CLASS_SAILOR,
         .trainerName = _("PATRICK"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_PERFECT, EC_WORD_EXCL, EC_WORD_GIVE_UP, EC_WORD_NOW, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_DON_T, EC_WORD_BE, EC_WORD_DISAPPOINTED, EC_WORD_I_AM, EC_WORD_PERFECT, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_BUT, EC_WORD_HOW, EC_WORD_QUES, EC_WORD_I_AM, EC_WORD_PERFECT, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Patrick
-=======
-        .speechBefore = COMPOUND_STRING("I am perfect! Give up now."),
-        .speechWin = COMPOUND_STRING("Don't be disappointed I am perfect."),
-        .speechLose = COMPOUND_STRING("But how? I am perfect…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_PatrickBefore,
+        .speechWin = sText_PatrickWin,
+        .speechLose = sText_PatrickLose,
+        .monSet = gBattleFrontierTrainerMons_Patrick,
     },
-    [FRONTIER_TRAINER_KADEN] = {
+    [FRONTIER_TRAINER_KADEN] =
+    {
         .facilityClass = FACILITY_CLASS_SAILOR,
         .trainerName = _("KADEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WHAT, EC_WORD_ARE, EC_WORD_YOU, EC_WORD_UP, EC_WORD_TO, EC_WORD_QUES},
-        .speechWin = {EC_WORD_YOU, EC_WORD_WERE, EC_WORD_A, EC_WORD_SURPRISE, EC_WORD_TO_ME, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_KNOW, EC_WORD_WHO, EC_WORD_I_AM, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Kaden
-=======
-        .speechBefore = COMPOUND_STRING("What are you up to?"),
-        .speechWin = COMPOUND_STRING("You were a surprise to me!"),
-        .speechLose = COMPOUND_STRING("I don't know who I am…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KadenBefore,
+        .speechWin = sText_KadenWin,
+        .speechLose = sText_KadenLose,
+        .monSet = gBattleFrontierTrainerMons_Kaden,
     },
-    [FRONTIER_TRAINER_MAXWELL] = {
+    [FRONTIER_TRAINER_MAXWELL] =
+    {
         .facilityClass = FACILITY_CLASS_SAILOR,
         .trainerName = _("MAXWELL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HEY_THERE, EC_WORD_WHO_IS, EC_WORD_YOUR, EC_WORD_RIVAL, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_MY, EC_WORD_RIVAL, EC_WORD_IS, EC_WORD_MY, EC_WORD_GIRL, EC_WORD_FRIEND},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_MAKING, EC_WORD_YOU, EC_WORD_MY, EC_WORD_RIVAL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Maxwell
-=======
-        .speechBefore = COMPOUND_STRING("Hey there who is your rival?"),
-        .speechWin = COMPOUND_STRING("My rival is my girl friend."),
-        .speechLose = COMPOUND_STRING("I am making you my rival."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MaxwellBefore,
+        .speechWin = sText_MaxwellWin,
+        .speechLose = sText_MaxwellLose,
+        .monSet = gBattleFrontierTrainerMons_Maxwell,
     },
-    [FRONTIER_TRAINER_DARYL] = {
+    [FRONTIER_TRAINER_DARYL] =
+    {
         .facilityClass = FACILITY_CLASS_HIKER,
         .trainerName = _("DARYL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_ONLY, EC_WORD_KNOW, EC_WORD_HOW, EC_WORD_TO, EC_MOVE(CHARGE)},
-        .speechWin = {EC_WORD_AM, EC_WORD_I, EC_WORD_OVERWHELMING, EC_WORD_OR, EC_WORD_WHAT, EC_WORD_QUES},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_GOING, EC_WORD_TO, EC_WORD_A, EC_WORD_LEGEND, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Daryl
-=======
-        .speechBefore = COMPOUND_STRING("I only know how to charge."),
-        .speechWin = COMPOUND_STRING("Am I overwhelming or what?"),
-        .speechLose = COMPOUND_STRING("You're going to a legend!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DarylBefore,
+        .speechWin = sText_DarylWin,
+        .speechLose = sText_DarylLose,
+        .monSet = gBattleFrontierTrainerMons_Daryl,
     },
-    [FRONTIER_TRAINER_KENNETH] = {
+    [FRONTIER_TRAINER_KENNETH] =
+    {
         .facilityClass = FACILITY_CLASS_HIKER,
         .trainerName = _("KENNETH"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU, EC_WORD_BETTER, EC_WORD_NOT, EC_MOVE2(SLACK_OFF), EC_WORD_WITH, EC_WORD_ME},
-        .speechWin = {EC_WORD_DID, EC_WORD_MY, EC_MOVE2(TAUNT), EC_WORD_INTIMIDATE, EC_WORD_YOU, EC_WORD_QUES},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_SORRY, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Kenneth
-=======
-        .speechBefore = COMPOUND_STRING("You better not slack off with me."),
-        .speechWin = COMPOUND_STRING("Did my taunt intimidate you?"),
-        .speechLose = COMPOUND_STRING("I am sorry…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KennethBefore,
+        .speechWin = sText_KennethWin,
+        .speechLose = sText_KennethLose,
+        .monSet = gBattleFrontierTrainerMons_Kenneth,
     },
-    [FRONTIER_TRAINER_RICH] = {
+    [FRONTIER_TRAINER_RICH] =
+    {
         .facilityClass = FACILITY_CLASS_HIKER,
         .trainerName = _("RICH"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOUR, EC_MOVE(FACADE), EC_WORD_DOESN_T, EC_MOVE2(TRICK), EC_WORD_ME, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_SERIOUSLY, EC_WORD_ARE, EC_WORD_YOU, EC_WORD_REALLY, EC_WORD_OK_QUES, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_THAT_WAS, EC_WORD_REALLY, EC_WORD_TOUGH, EC_WORD_ON, EC_WORD_ME, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Rich
-=======
-        .speechBefore = COMPOUND_STRING("Your facade doesn't trick me."),
-        .speechWin = COMPOUND_STRING("Seriously are you really ok ques."),
-        .speechLose = COMPOUND_STRING("That was really tough on me."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RichBefore,
+        .speechWin = sText_RichWin,
+        .speechLose = sText_RichLose,
+        .monSet = gBattleFrontierTrainerMons_Rich,
     },
-    [FRONTIER_TRAINER_CADEN] = {
+    [FRONTIER_TRAINER_CADEN] =
+    {
         .facilityClass = FACILITY_CLASS_KINDLER,
         .trainerName = _("CADEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_BE, EC_WORD_DEFEATED, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_FIRE, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_FIRE, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_TIRED, EC_WORD_ELLIPSIS, EC_WORD_IT_S, EC_WORD_SO, EC_WORD_HOT},
-        .monSet = gBattleFrontierTrainerMons_Caden
-=======
-        .speechBefore = COMPOUND_STRING("I can't be defeated!"),
-        .speechWin = COMPOUND_STRING("Fire! Fire!!"),
-        .speechLose = COMPOUND_STRING("I am tired… It's so hot."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CadenBefore,
+        .speechWin = sText_CadenWin,
+        .speechLose = sText_CadenLose,
+        .monSet = gBattleFrontierTrainerMons_Caden,
     },
-    [FRONTIER_TRAINER_MARLON] = {
+    [FRONTIER_TRAINER_MARLON] =
+    {
         .facilityClass = FACILITY_CLASS_KINDLER,
         .trainerName = _("MARLON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A, EC_WORD_POKEDEX, EC_WORD_IS, EC_WORD_A_LITTLE, EC_WORD_RADIO, EC_WORD_QUES},
-        .speechWin = {EC_WORD_A_LITTLE, EC_WORD_RADIO, EC_WORD_HUH_QUES, EC_WORD_THAT_S, EC_WORD_TOTALLY, EC_WORD_COOL},
-        .speechLose = {EC_WORD_IT_S, EC_WORD_NOT, EC_WORD_QUES, EC_WORD_IS, EC_WORD_POKENAV, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Marlon
-=======
-        .speechBefore = COMPOUND_STRING("A pokedex is a little radio?"),
-        .speechWin = COMPOUND_STRING("A little radio huh ques that's totally cool."),
-        .speechLose = COMPOUND_STRING("It's not? Is pokenav?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MarlonBefore,
+        .speechWin = sText_MarlonWin,
+        .speechLose = sText_MarlonLose,
+        .monSet = gBattleFrontierTrainerMons_Marlon,
     },
-    [FRONTIER_TRAINER_NASH] = {
+    [FRONTIER_TRAINER_NASH] =
+    {
         .facilityClass = FACILITY_CLASS_KINDLER,
         .trainerName = _("NASH"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_ON, EC_WORD_FIRE, EC_WORD_BABY, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I, EC_WORD_LEFT, EC_WORD_YOU, EC_WORD_JUST, EC_WORD_AN, EC_MOVE2(EMBER)},
-        .speechLose = {EC_WORD_AIYEEH, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD, EC_WORD_NO, EC_WORD_WATER, EC_WORD_PLEASE},
-        .monSet = gBattleFrontierTrainerMons_Nash
-=======
-        .speechBefore = COMPOUND_STRING("I am on fire baby!"),
-        .speechWin = COMPOUND_STRING("I left you just an ember."),
-        .speechLose = COMPOUND_STRING("Aiyeeh!! No water please."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_NashBefore,
+        .speechWin = sText_NashWin,
+        .speechLose = sText_NashLose,
+        .monSet = gBattleFrontierTrainerMons_Nash,
     },
-    [FRONTIER_TRAINER_ROBBY] = {
+    [FRONTIER_TRAINER_ROBBY] =
+    {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
         .trainerName = _("ROBBY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HAHAHA, EC_WORD_EXCL, EC_WORD_HAPPY, EC_WORD_TO, EC_WORD_MEET_YOU, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_THE, EC_WORD_LEADER, EC_WORD_WITH, EC_WORD_REFRESHING, EC_WORD_SERENE_GRACE},
-        .speechLose = {EC_WORD_I, EC_WORD_WILL, EC_MOVE(THRASH), EC_WORD_MY, EC_WORD_TOYS, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Robby
-=======
-        .speechBefore = COMPOUND_STRING("Hahaha! Happy to meet you!"),
-        .speechWin = COMPOUND_STRING("I am the leader with refreshing serene grace."),
-        .speechLose = COMPOUND_STRING("I will thrash my toys!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RobbyBefore,
+        .speechWin = sText_RobbyWin,
+        .speechLose = sText_RobbyLose,
+        .monSet = gBattleFrontierTrainerMons_Robby,
     },
-    [FRONTIER_TRAINER_REECE] = {
+    [FRONTIER_TRAINER_REECE] =
+    {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
         .trainerName = _("REECE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_MOVE2(QUICK_ATTACK), EC_WORD_CAN, EC_WORD_BEAT, EC_WORD_A, EC_MOVE2(TELEPORT)},
-        .speechWin = {EC_WORD_LIKE, EC_WORD_I, EC_WORD_SAID, EC_WORD_I_AM, EC_WORD_DARN, EC_WORD_FAST},
-        .speechLose = {EC_WORD_I_WAS, EC_WORD_KIDDING, EC_WORD_ABOUT, EC_WORD_THAT, EC_MOVE2(TELEPORT), EC_WORD_THING},
-        .monSet = gBattleFrontierTrainerMons_Reece
-=======
-        .speechBefore = COMPOUND_STRING("My quick attack can beat a teleport."),
-        .speechWin = COMPOUND_STRING("Like I said I am darn fast."),
-        .speechLose = COMPOUND_STRING("I was kidding about that teleport thing."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ReeceBefore,
+        .speechWin = sText_ReeceWin,
+        .speechLose = sText_ReeceLose,
+        .monSet = gBattleFrontierTrainerMons_Reece,
     },
-    [FRONTIER_TRAINER_KATHRYN] = {
+    [FRONTIER_TRAINER_KATHRYN] =
+    {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
         .trainerName = _("KATHRYN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_TRAIN, EC_WORD_GOOD, EC_WORD_ENOUGH, EC_WORD_QUES},
-        .speechWin = {EC_WORD_DON_T, EC_MOVE2(TAUNT), EC_WORD_ME, EC_WORD_LIKE, EC_WORD_THAT, EC_WORD_OK_QUES},
-        .speechLose = {EC_WORD_WHY, EC_WORD_COULDN_T, EC_WORD_I, EC_WORD_WIN, EC_WORD_THIS, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Kathryn
-=======
-        .speechBefore = COMPOUND_STRING("I don't train good enough?"),
-        .speechWin = COMPOUND_STRING("Don't taunt me like that ok ques."),
-        .speechLose = COMPOUND_STRING("Why couldn't I win this?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KathrynBefore,
+        .speechWin = sText_KathrynWin,
+        .speechLose = sText_KathrynLose,
+        .monSet = gBattleFrontierTrainerMons_Kathryn,
     },
-    [FRONTIER_TRAINER_ELLEN] = {
+    [FRONTIER_TRAINER_ELLEN] =
+    {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
         .trainerName = _("ELLEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_CRUSH, EC_WORD_YOU, EC_WORD_LIKE, EC_WORD_AN, EC_WORD_EGG, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_THAT_WAS, EC_WORD_A, EC_WORD_TASTY, EC_WORD_VICTORY, EC_WORD_FOR, EC_WORD_ME},
-        .speechLose = {EC_WORD_TOO, EC_WORD_TOUGH, EC_WORD_TO, EC_WORD_CRUSH, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Ellen
-=======
-        .speechBefore = COMPOUND_STRING("Crush you like an egg!"),
-        .speechWin = COMPOUND_STRING("That was a tasty victory for me."),
-        .speechLose = COMPOUND_STRING("Too tough to crush!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EllenBefore,
+        .speechWin = sText_EllenWin,
+        .speechLose = sText_EllenLose,
+        .monSet = gBattleFrontierTrainerMons_Ellen,
     },
-    [FRONTIER_TRAINER_RAMON] = {
+    [FRONTIER_TRAINER_RAMON] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
         .trainerName = _("RAMON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_OKAY, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_THIS, EC_WORD_IS, EC_WORD_PERFECTION},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_HAPPY, EC_WORD_THAT, EC_WORD_I, EC_WORD_WON, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_IT_S, EC_WORD_A, EC_WORD_SECRET, EC_WORD_WHY, EC_WORD_I_AM, EC_WORD_HAPPY},
-        .monSet = gBattleFrontierTrainerMons_Ramon
-=======
-        .speechBefore = COMPOUND_STRING("Okay! This is perfection."),
-        .speechWin = COMPOUND_STRING("I am happy that I won!"),
-        .speechLose = COMPOUND_STRING("It's a secret why I am happy."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RamonBefore,
+        .speechWin = sText_RamonWin,
+        .speechLose = sText_RamonLose,
+        .monSet = gBattleFrontierTrainerMons_Ramon,
     },
-    [FRONTIER_TRAINER_ARTHUR] = {
+    [FRONTIER_TRAINER_ARTHUR] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
         .trainerName = _("ARTHUR"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HERE_I_COME, EC_WORD_FEELING, EC_WORD_READY, EC_WORD_FOR, EC_WORD_IT, EC_WORD_ALL},
-        .speechWin = {EC_WORD_THAT_S_IT_EXCL, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_WORD_THAT_WAS, EC_WORD_FABULOUS, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_THAT_WAS, EC_WORD_NOT, EC_WORD_WHAT, EC_WORD_I, EC_WORD_NEED, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Arthur
-=======
-        .speechBefore = COMPOUND_STRING("Here I come feeling ready for it all."),
-        .speechWin = COMPOUND_STRING("That's it excl that was fabulous!"),
-        .speechLose = COMPOUND_STRING("That was not what I need."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ArthurBefore,
+        .speechWin = sText_ArthurWin,
+        .speechLose = sText_ArthurLose,
+        .monSet = gBattleFrontierTrainerMons_Arthur,
     },
-    [FRONTIER_TRAINER_ALONDRA] = {
+    [FRONTIER_TRAINER_ALONDRA] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
         .trainerName = _("ALONDRA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_EVERY, EC_WORD_DAY, EC_WORD_IS, EC_WORD_A, EC_WORD_GREAT, EC_WORD_DAY},
-        .speechWin = {EC_WORD_MY, EC_MOVE2(DIVE), EC_WORD_WILL, EC_WORD_BE, EC_WORD_A, EC_WORD_LEGEND},
-        .speechLose = {EC_WORD_MY, EC_MOVE2(DIVE), EC_WORD_LEFT, EC_WORD_ME, EC_WORD_COLD, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Alondra
-=======
-        .speechBefore = COMPOUND_STRING("Every day is a great day."),
-        .speechWin = COMPOUND_STRING("My dive will be a legend."),
-        .speechLose = COMPOUND_STRING("My dive left me cold…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AlondraBefore,
+        .speechWin = sText_AlondraWin,
+        .speechLose = sText_AlondraLose,
+        .monSet = gBattleFrontierTrainerMons_Alondra,
     },
-    [FRONTIER_TRAINER_ADRIANA] = {
+    [FRONTIER_TRAINER_ADRIANA] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
         .trainerName = _("ADRIANA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_COME, EC_WORD_SEE, EC_WORD_AN, EC_WORD_INCREDIBLE, EC_WORD_SWIFT_SWIM, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_I, EC_WORD_MAKE, EC_WORD_IT, EC_WORD_LOOK, EC_WORD_SO, EC_WORD_EASY},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_FEELING, EC_MOVE2(BEAT_UP), EC_WORD_AND, EC_WORD_TIRED, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Adriana
-=======
-        .speechBefore = COMPOUND_STRING("Come see an incredible swift swim!"),
-        .speechWin = COMPOUND_STRING("I make it look so easy."),
-        .speechLose = COMPOUND_STRING("I am feeling beat up and tired."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AdrianaBefore,
+        .speechWin = sText_AdrianaWin,
+        .speechLose = sText_AdrianaLose,
+        .monSet = gBattleFrontierTrainerMons_Adriana,
     },
-    [FRONTIER_TRAINER_MALIK] = {
+    [FRONTIER_TRAINER_MALIK] =
+    {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
         .trainerName = _("MALIK"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_OH, EC_WORD_NOT, EC_WORD_ANOTHER, EC_WORD_BATTLE, EC_WORD_PLEASE, EC_WORD_ELLIPSIS},
-        .speechWin = {EC_WORD_I, EC_WORD_FINALLY, EC_WORD_WON, EC_WORD_ELLIPSIS, EC_WORD_I_AM, EC_WORD_TIRED},
-        .speechLose = {EC_WORD_I, EC_WORD_FINALLY, EC_WORD_LOST, EC_WORD_ELLIPSIS, EC_WORD_I_AM, EC_WORD_TIRED},
-        .monSet = gBattleFrontierTrainerMons_Malik
-=======
-        .speechBefore = COMPOUND_STRING("Oh not another battle please…"),
-        .speechWin = COMPOUND_STRING("I finally won… I am tired."),
-        .speechLose = COMPOUND_STRING("I finally lost… I am tired."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MalikBefore,
+        .speechWin = sText_MalikWin,
+        .speechLose = sText_MalikLose,
+        .monSet = gBattleFrontierTrainerMons_Malik,
     },
-    [FRONTIER_TRAINER_JILL] = {
+    [FRONTIER_TRAINER_JILL] =
+    {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
         .trainerName = _("JILL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_THE, EC_MOVE2(QUICK_ATTACK), EC_WORD_TRAINER, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_THE, EC_MOVE2(QUICK_ATTACK), EC_WORD_TRAINER, EC_WORD_WINS, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_THE, EC_MOVE2(QUICK_ATTACK), EC_WORD_TRAINER, EC_WORD_GIVES, EC_WORD_UP, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Jill
-=======
-        .speechBefore = COMPOUND_STRING("I am the quick attack trainer!"),
-        .speechWin = COMPOUND_STRING("The quick attack trainer wins!"),
-        .speechLose = COMPOUND_STRING("The quick attack trainer gives up!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JillBefore,
+        .speechWin = sText_JillWin,
+        .speechLose = sText_JillLose,
+        .monSet = gBattleFrontierTrainerMons_Jill,
     },
-    [FRONTIER_TRAINER_ERIK] = {
+    [FRONTIER_TRAINER_ERIK] =
+    {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
         .trainerName = _("ERIK"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_THE, EC_WORD_SPEED_BOOST, EC_WORD_HERO, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_THANK_YOU, EC_WORD_FROM, EC_WORD_THE, EC_WORD_SPEED_BOOST, EC_WORD_HERO, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_WAAAH, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD, EC_WORD_NO, EC_WORD_NO, EC_WORD_EXCL_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Erik
-=======
-        .speechBefore = COMPOUND_STRING("I am the speed boost hero!"),
-        .speechWin = COMPOUND_STRING("Thank you from the speed boost hero!"),
-        .speechLose = COMPOUND_STRING("Waaah!! No no!!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ErikBefore,
+        .speechWin = sText_ErikWin,
+        .speechLose = sText_ErikLose,
+        .monSet = gBattleFrontierTrainerMons_Erik,
     },
-    [FRONTIER_TRAINER_YAZMIN] = {
+    [FRONTIER_TRAINER_YAZMIN] =
+    {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
         .trainerName = _("YAZMIN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WOULD, EC_WORD_RATHER, EC_WORD_RUN, EC_WORD_THAN, EC_WORD_BIKE},
-        .speechWin = {EC_WORD_YES, EC_WORD_I, EC_WORD_WOULD, EC_WORD_MUCH, EC_WORD_RATHER, EC_WORD_RUN},
-        .speechLose = {EC_WORD_BYE_BYE, EC_WORD_EXCL, EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_TO, EC_WORD_RUN_AWAY},
-        .monSet = gBattleFrontierTrainerMons_Yazmin
-=======
-        .speechBefore = COMPOUND_STRING("I would rather run than bike."),
-        .speechWin = COMPOUND_STRING("Yes I would much rather run."),
-        .speechLose = COMPOUND_STRING("Bye bye! I am going to run away."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_YazminBefore,
+        .speechWin = sText_YazminWin,
+        .speechLose = sText_YazminLose,
+        .monSet = gBattleFrontierTrainerMons_Yazmin,
     },
-    [FRONTIER_TRAINER_JAMAL] = {
+    [FRONTIER_TRAINER_JAMAL] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
         .trainerName = _("JAMAL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_TO, EC_WORD_BE, EC_WORD_A, EC_WORD_FATHER},
-        .speechWin = {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_WAIT, EC_WORD_FOR, EC_WORD_MY, EC_WORD_BABY},
-        .speechLose = {EC_WORD_MY, EC_WORD_BABY, EC_WORD_WILL, EC_WORD_BE, EC_WORD_TOTALLY, EC_WORD_AWESOME},
-        .monSet = gBattleFrontierTrainerMons_Jamal
-=======
-        .speechBefore = COMPOUND_STRING("I am going to be a father."),
-        .speechWin = COMPOUND_STRING("I can't wait for my baby."),
-        .speechLose = COMPOUND_STRING("My baby will be totally awesome."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JamalBefore,
+        .speechWin = sText_JamalWin,
+        .speechLose = sText_JamalLose,
+        .monSet = gBattleFrontierTrainerMons_Jamal,
     },
-    [FRONTIER_TRAINER_LESLIE] = {
+    [FRONTIER_TRAINER_LESLIE] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
         .trainerName = _("LESLIE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_TO, EC_WORD_BE, EC_WORD_A, EC_WORD_MOTHER},
-        .speechWin = {EC_WORD_A, EC_WORD_BABY, EC_WORD_WILL, EC_WORD_BE, EC_WORD_A_LITTLE, EC_WORD_CHALLENGE},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_TOO, EC_WORD_HAPPY, EC_WORD_TO, EC_WORD_BE, EC_WORD_ANGRY},
-        .monSet = gBattleFrontierTrainerMons_Leslie
-=======
-        .speechBefore = COMPOUND_STRING("I am going to be a mother."),
-        .speechWin = COMPOUND_STRING("A baby will be a little challenge."),
-        .speechLose = COMPOUND_STRING("I am too happy to be angry."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LeslieBefore,
+        .speechWin = sText_LeslieWin,
+        .speechLose = sText_LeslieLose,
+        .monSet = gBattleFrontierTrainerMons_Leslie,
     },
-    [FRONTIER_TRAINER_DAVE] = {
+    [FRONTIER_TRAINER_DAVE] =
+    {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
         .trainerName = _("DAVE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WHAT, EC_WORD_SHOULD, EC_WORD_I, EC_WORD_DO, EC_WORD_TODAY, EC_WORD_QUES},
-        .speechWin = {EC_WORD_I, EC_WORD_SHOULD, EC_WORD_ENJOY, EC_WORD_SOME, EC_WORD_SPORTS, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I, EC_WORD_WILL, EC_WORD_GO, EC_WORD_PLAY, EC_WORD_A, EC_WORD_GAME},
-        .monSet = gBattleFrontierTrainerMons_Dave
-=======
-        .speechBefore = COMPOUND_STRING("What should I do today?"),
-        .speechWin = COMPOUND_STRING("I should enjoy some sports!"),
-        .speechLose = COMPOUND_STRING("I will go play a game."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DaveBefore,
+        .speechWin = sText_DaveWin,
+        .speechLose = sText_DaveLose,
+        .monSet = gBattleFrontierTrainerMons_Dave,
     },
-    [FRONTIER_TRAINER_CARLO] = {
+    [FRONTIER_TRAINER_CARLO] =
+    {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
         .trainerName = _("CARLO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HAH, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD, EC_WORD_YEAH, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I, EC_WORD_DO, EC_WORD_THINGS, EC_WORD_AT, EC_MOVE(EXTREME_SPEED), EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I, EC_WORD_LOST, EC_WORD_AT, EC_MOVE(EXTREME_SPEED), EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Carlo
-=======
-        .speechBefore = COMPOUND_STRING("Hah!! Yeah!!"),
-        .speechWin = COMPOUND_STRING("I do things at extreme speed!"),
-        .speechLose = COMPOUND_STRING("I lost at extreme speed…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CarloBefore,
+        .speechWin = sText_CarloWin,
+        .speechLose = sText_CarloLose,
+        .monSet = gBattleFrontierTrainerMons_Carlo,
     },
-    [FRONTIER_TRAINER_EMILIA] = {
+    [FRONTIER_TRAINER_EMILIA] =
+    {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
         .trainerName = _("EMILIA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_ME, EC_WORD_WORRY, EC_WORD_QUES, EC_WORD_I, EC_WORD_HAVE, EC_WORD_NONE},
-        .speechWin = {EC_WORD_AHAHA, EC_WORD_SEE, EC_WORD_QUES, EC_WORD_THAT_WAS, EC_WORD_FANTASTIC, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_AHAHA, EC_WORD_SEE, EC_WORD_QUES, EC_WORD_THAT_WAS, EC_WORD_ENTERTAINING, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Emilia
-=======
-        .speechBefore = COMPOUND_STRING("Me worry? I have none."),
-        .speechWin = COMPOUND_STRING("Ahaha see? That was fantastic!"),
-        .speechLose = COMPOUND_STRING("Ahaha see? That was entertaining!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EmiliaBefore,
+        .speechWin = sText_EmiliaWin,
+        .speechLose = sText_EmiliaLose,
+        .monSet = gBattleFrontierTrainerMons_Emilia,
     },
-    [FRONTIER_TRAINER_DALIA] = {
+    [FRONTIER_TRAINER_DALIA] =
+    {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
         .trainerName = _("DALIA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_BIKE, EC_WORD_IS, EC_WORD_VERY, EC_WORD_EXPENSIVE, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_DON_T, EC_WORD_COME, EC_WORD_NEAR, EC_WORD_MY, EC_WORD_BIKE, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_MY, EC_WORD_BIKE, EC_WORD_IS, EC_WORD_MY, EC_WORD_BEST, EC_WORD_FRIEND},
-        .monSet = gBattleFrontierTrainerMons_Dalia
-=======
-        .speechBefore = COMPOUND_STRING("My bike is very expensive."),
-        .speechWin = COMPOUND_STRING("Don't come near my bike!"),
-        .speechLose = COMPOUND_STRING("My bike is my best friend."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DaliaBefore,
+        .speechWin = sText_DaliaWin,
+        .speechLose = sText_DaliaLose,
+        .monSet = gBattleFrontierTrainerMons_Dalia,
     },
-    [FRONTIER_TRAINER_HITOMI] = {
+    [FRONTIER_TRAINER_HITOMI] =
+    {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
         .trainerName = _("HITOMI"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YEAH, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD, EC_WORD_HAH, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_WHAT, EC_WORD_QUES_EXCL, EC_EMPTY_WORD, EC_WORD_I, EC_WORD_WON, EC_WORD_QUES_EXCL},
-        .speechLose = {EC_WORD_AIYEEH, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD, EC_WORD_I_AM, EC_WORD_SORRY, EC_WORD_EXCL_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Hitomi
-=======
-        .speechBefore = COMPOUND_STRING("Yeah!! Hah!!"),
-        .speechWin = COMPOUND_STRING("What?! I won?!"),
-        .speechLose = COMPOUND_STRING("Aiyeeh!! I am sorry!!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_HitomiBefore,
+        .speechWin = sText_HitomiWin,
+        .speechLose = sText_HitomiLose,
+        .monSet = gBattleFrontierTrainerMons_Hitomi,
     },
-    [FRONTIER_TRAINER_RICARDO] = {
+    [FRONTIER_TRAINER_RICARDO] =
+    {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
         .trainerName = _("RICARDO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_COME_ON, EC_WORD_EXCL, EC_WORD_PLAY, EC_WORD_TIME, EC_WORD_IS, EC_WORD_OVER},
-        .speechWin = {EC_WORD_YOU_RE, EC_WORD_OUT, EC_WORD_OF, EC_WORD_HERE, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_PLEASE, EC_WORD_DON_T, EC_WORD_HIT, EC_WORD_ME, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Ricardo
-=======
-        .speechBefore = COMPOUND_STRING("Come on! Play time is over."),
-        .speechWin = COMPOUND_STRING("You're out of here!"),
-        .speechLose = COMPOUND_STRING("Please don't hit me!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RicardoBefore,
+        .speechWin = sText_RicardoWin,
+        .speechLose = sText_RicardoLose,
+        .monSet = gBattleFrontierTrainerMons_Ricardo,
     },
-    [FRONTIER_TRAINER_SHIZUKA] = {
+    [FRONTIER_TRAINER_SHIZUKA] =
+    {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
         .trainerName = _("SHIZUKA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_SHOW, EC_WORD_ME, EC_WORD_THAT, EC_WORD_YOU_RE, EC_WORD_SERIOUS, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_I, EC_WORD_WON_T, EC_WORD_FORGET, EC_WORD_ABOUT, EC_WORD_YOU, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_PERFECT, EC_WORD_IN, EC_WORD_EVERY, EC_WORD_WAY, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Shizuka
-=======
-        .speechBefore = COMPOUND_STRING("Show me that you're serious!"),
-        .speechWin = COMPOUND_STRING("I won't forget about you."),
-        .speechLose = COMPOUND_STRING("You're perfect in every way!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ShizukaBefore,
+        .speechWin = sText_ShizukaWin,
+        .speechLose = sText_ShizukaLose,
+        .monSet = gBattleFrontierTrainerMons_Shizuka,
     },
-    [FRONTIER_TRAINER_JOANA] = {
+    [FRONTIER_TRAINER_JOANA] =
+    {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
         .trainerName = _("JOANA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU_RE, EC_WORD_GOING, EC_WORD_TO, EC_WORD_LOSE, EC_WORD_RIGHT, EC_WORD_AWAY},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_THE, EC_WORD_WINNER, EC_WORD_HEAR, EC_WORD_ME, EC_MOVE2(ROAR)},
-        .speechLose = {EC_WORD_I, EC_WORD_REFUSE, EC_WORD_TO, EC_WORD_ACCEPT, EC_WORD_THAT, EC_MOVE(OUTRAGE)},
-        .monSet = gBattleFrontierTrainerMons_Joana
-=======
-        .speechBefore = COMPOUND_STRING("You're going to lose right away."),
-        .speechWin = COMPOUND_STRING("I am the winner hear me roar."),
-        .speechLose = COMPOUND_STRING("I refuse to accept that outrage."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JoanaBefore,
+        .speechWin = sText_JoanaWin,
+        .speechLose = sText_JoanaLose,
+        .monSet = gBattleFrontierTrainerMons_Joana,
     },
-    [FRONTIER_TRAINER_KELLY] = {
+    [FRONTIER_TRAINER_KELLY] =
+    {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
         .trainerName = _("KELLY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_NIGHT, EC_WORD_SCHOOL, EC_WORD_IS, EC_WORD_REALLY, EC_WORD_SCARY},
-        .speechWin = {EC_WORD_A, EC_WORD_LADY, EC_WORD_GHOST, EC_WORD_APPEARS, EC_WORD_THERE, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_THE, EC_WORD_HOME, EC_WORD_WORK, EC_WORD_IS, EC_WORD_AWFULLY, EC_WORD_SCARY},
-        .monSet = gBattleFrontierTrainerMons_Kelly
-=======
-        .speechBefore = COMPOUND_STRING("My night school is really scary."),
-        .speechWin = COMPOUND_STRING("A lady ghost appears there."),
-        .speechLose = COMPOUND_STRING("The home work is awfully scary."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KellyBefore,
+        .speechWin = sText_KellyWin,
+        .speechLose = sText_KellyLose,
+        .monSet = gBattleFrontierTrainerMons_Kelly,
     },
-    [FRONTIER_TRAINER_RAYNA] = {
+    [FRONTIER_TRAINER_RAYNA] =
+    {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
         .trainerName = _("RAYNA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_NO_1, EC_WORD_WHEN, EC_WORD_IT_S, EC_WORD_ABOUT, EC_WORD_POWER},
-        .speechWin = {EC_WORD_UNDERSTAND, EC_WORD_MY, EC_WORD_POWER, EC_WORD_NOW, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_TERRIBLE, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_WORD_I_AM, EC_WORD_TERRIBLE, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Rayna
-=======
-        .speechBefore = COMPOUND_STRING("I am no 1 when it's about power."),
-        .speechWin = COMPOUND_STRING("Understand my power now?"),
-        .speechLose = COMPOUND_STRING("Terrible… I am terrible…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RaynaBefore,
+        .speechWin = sText_RaynaWin,
+        .speechLose = sText_RaynaLose,
+        .monSet = gBattleFrontierTrainerMons_Rayna,
     },
-    [FRONTIER_TRAINER_EVAN] = {
+    [FRONTIER_TRAINER_EVAN] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
         .trainerName = _("EVAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_EVERY, EC_WORD_BATTLE, EC_WORD_HAS, EC_WORD_A, EC_WORD_SMELL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_OH, EC_WORD_EXCL, EC_WORD_THE, EC_MOVE(SWEET_SCENT), EC_WORD_OF, EC_WORD_VICTORY},
-        .speechLose = {EC_WORD_THE, EC_WORD_AWFUL, EC_WORD_STENCH, EC_WORD_OF, EC_WORD_A, EC_WORD_LOSS},
-        .monSet = gBattleFrontierTrainerMons_Evan
-=======
-        .speechBefore = COMPOUND_STRING("Every battle has a smell."),
-        .speechWin = COMPOUND_STRING("Oh! The sweet scent of victory."),
-        .speechLose = COMPOUND_STRING("The awful stench of a loss."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EvanBefore,
+        .speechWin = sText_EvanWin,
+        .speechLose = sText_EvanLose,
+        .monSet = gBattleFrontierTrainerMons_Evan,
     },
-    [FRONTIER_TRAINER_JORDAN] = {
+    [FRONTIER_TRAINER_JORDAN] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
         .trainerName = _("JORDAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_GOOD, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_COME_ON, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_YOU, EC_WORD_CAN_T, EC_WORD_BEAT, EC_WORD_ME, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_WHAT, EC_WORD_QUES_EXCL, EC_EMPTY_WORD, EC_WORD_BUT, EC_WORD_HOW, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Jordan
-=======
-        .speechBefore = COMPOUND_STRING("Good! Come on!!"),
-        .speechWin = COMPOUND_STRING("You can't beat me!"),
-        .speechLose = COMPOUND_STRING("What?! But how?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JordanBefore,
+        .speechWin = sText_JordanWin,
+        .speechLose = sText_JordanLose,
+        .monSet = gBattleFrontierTrainerMons_Jordan,
     },
-    [FRONTIER_TRAINER_JOEL] = {
+    [FRONTIER_TRAINER_JOEL] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
         .trainerName = _("JOEL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_FUFUFU, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_GIGGLE, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_HAHAHA, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Joel
-=======
-        .speechBefore = COMPOUND_STRING("Fufufu…"),
-        .speechWin = COMPOUND_STRING("Giggle…"),
-        .speechLose = COMPOUND_STRING("Hahaha…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JoelBefore,
+        .speechWin = sText_JoelWin,
+        .speechLose = sText_JoelLose,
+        .monSet = gBattleFrontierTrainerMons_Joel,
     },
-    [FRONTIER_TRAINER_KRISTEN] = {
+    [FRONTIER_TRAINER_KRISTEN] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
         .trainerName = _("KRISTEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HAHAHA, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_WORD_A, EC_WORD_KID, EC_WORD_ELLIPSIS},
-        .speechWin = {EC_WORD_JUST, EC_WORD_A_LITTLE, EC_WORD_KID, EC_WORD_AFTER, EC_WORD_ALL, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_A, EC_WORD_TOUGH, EC_WORD_KID, EC_WORD_HUH_QUES, EC_WORD_HUMPH, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Kristen
-=======
-        .speechBefore = COMPOUND_STRING("Hahaha… A kid…"),
-        .speechWin = COMPOUND_STRING("Just a little kid after all!"),
-        .speechLose = COMPOUND_STRING("A tough kid huh ques humph!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KristenBefore,
+        .speechWin = sText_KristenWin,
+        .speechLose = sText_KristenLose,
+        .monSet = gBattleFrontierTrainerMons_Kristen,
     },
-    [FRONTIER_TRAINER_SELPHY] = {
+    [FRONTIER_TRAINER_SELPHY] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
         .trainerName = _("SELPHY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HUH_QUES, EC_WORD_WHAT, EC_WORD_IS_IT_QUES, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_OH, EC_WORD_YES, EC_WORD_EXCL, EC_WORD_WHY, EC_WORD_NOT, EC_WORD_QUES},
-        .speechLose = {EC_WORD_OH, EC_WORD_NO, EC_WORD_EXCL, EC_WORD_WHY, EC_WORD_NOT, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Selphy
-=======
-        .speechBefore = COMPOUND_STRING("Huh ques what is it ques."),
-        .speechWin = COMPOUND_STRING("Oh yes! Why not?"),
-        .speechLose = COMPOUND_STRING("Oh no! Why not?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_SelphyBefore,
+        .speechWin = sText_SelphyWin,
+        .speechLose = sText_SelphyLose,
+        .monSet = gBattleFrontierTrainerMons_Selphy,
     },
-    [FRONTIER_TRAINER_CHLOE] = {
+    [FRONTIER_TRAINER_CHLOE] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
         .trainerName = _("CHLOE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_COME, EC_WORD_WE, EC_WORD_WILL, EC_WORD_DO, EC_WORD_BATTLE, EC_WORD_NOW},
-        .speechWin = {EC_WORD_MORE, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_ANOTHER, EC_WORD_BATTLE, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_OH, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_STRONG, EC_WORD_YOU, EC_WORD_ARE},
-        .monSet = gBattleFrontierTrainerMons_Chloe
-=======
-        .speechBefore = COMPOUND_STRING("Come we will do battle now."),
-        .speechWin = COMPOUND_STRING("More! Another battle!"),
-        .speechLose = COMPOUND_STRING("Oh! Strong you are."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ChloeBefore,
+        .speechWin = sText_ChloeWin,
+        .speechLose = sText_ChloeLose,
+        .monSet = gBattleFrontierTrainerMons_Chloe,
     },
-    [FRONTIER_TRAINER_NORTON] = {
+    [FRONTIER_TRAINER_NORTON] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
         .trainerName = _("NORTON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_KNOW, EC_WORD_ONLY, EC_WORD_YOU, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_EXCUSE_ME, EC_WORD_BUT, EC_WORD_YOU_RE, EC_WORD_A, EC_WORD_PUSHOVER, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_SOME, EC_WORD_KIND, EC_WORD_OF, EC_WORD_AWESOME, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Norton
-=======
-        .speechBefore = COMPOUND_STRING("I know only you."),
-        .speechWin = COMPOUND_STRING("Excuse me but you're a pushover!"),
-        .speechLose = COMPOUND_STRING("You're some kind of awesome!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_NortonBefore,
+        .speechWin = sText_NortonWin,
+        .speechLose = sText_NortonLose,
+        .monSet = gBattleFrontierTrainerMons_Norton,
     },
-    [FRONTIER_TRAINER_LUKAS] = {
+    [FRONTIER_TRAINER_LUKAS] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
         .trainerName = _("LUKAS"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_JOKING, EC_WORD_IS, EC_WORD_PRETTY, EC_WORD_TERRIBLE, EC_WORD_ELLIPSIS},
-        .speechWin = {EC_WORD_YOUR, EC_WORD_ROCK_HEAD, EC_WORD_EXISTS, EC_WORD_TO, EC_WORD_SHINE, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_YOUR, EC_WORD_ROCK_HEAD, EC_WORD_COME, EC_WORD_TO, EC_WORD_SHINE, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Lukas
-=======
-        .speechBefore = COMPOUND_STRING("My joking is pretty terrible…"),
-        .speechWin = COMPOUND_STRING("Your rock head exists to shine!"),
-        .speechLose = COMPOUND_STRING("Your rock head come to shine."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LukasBefore,
+        .speechWin = sText_LukasWin,
+        .speechLose = sText_LukasLose,
+        .monSet = gBattleFrontierTrainerMons_Lukas,
     },
-    [FRONTIER_TRAINER_ZACH] = {
+    [FRONTIER_TRAINER_ZACH] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
         .trainerName = _("ZACH"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_AN, EC_WORD_EXCELLENT, EC_MOVE2(MIMIC), EC_WORD_OF, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_HAPPY, EC_WORD_LIKE, EC_WORD_A_LITTLE, EC_POKEMON_NATIONAL(TOGEPI), EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_ANGRY, EC_WORD_LIKE, EC_WORD_A, EC_POKEMON_NATIONAL(MANKEY), EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Zach
-=======
-        .speechBefore = COMPOUND_STRING("I am an excellent mimic of Pokémon."),
-        .speechWin = COMPOUND_STRING("I am happy like a little Togepi!"),
-        .speechLose = COMPOUND_STRING("I am angry like a Mankey!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ZachBefore,
+        .speechWin = sText_ZachWin,
+        .speechLose = sText_ZachLose,
+        .monSet = gBattleFrontierTrainerMons_Zach,
     },
-    [FRONTIER_TRAINER_KAITLYN] = {
+    [FRONTIER_TRAINER_KAITLYN] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
         .trainerName = _("KAITLYN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_CRUSH, EC_WORD_THINGS, EC_WORD_WITH, EC_WORD_PSYCHIC, EC_WORD_POWER},
-        .speechWin = {EC_WORD_MY, EC_WORD_VICTORY, EC_WORD_WILL, EC_WORD_MAKE, EC_WORD_THE, EC_WORD_NEWS},
-        .speechLose = {EC_WORD_NO, EC_WORD_NO, EC_WORD_ELLIPSIS, EC_WORD_THIS, EC_WORD_WON_T, EC_WORD_DO},
-        .monSet = gBattleFrontierTrainerMons_Kaitlyn
-=======
-        .speechBefore = COMPOUND_STRING("I crush things with psychic power."),
-        .speechWin = COMPOUND_STRING("My victory will make the news."),
-        .speechLose = COMPOUND_STRING("No no… This won't do."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KaitlynBefore,
+        .speechWin = sText_KaitlynWin,
+        .speechLose = sText_KaitlynLose,
+        .monSet = gBattleFrontierTrainerMons_Kaitlyn,
     },
-    [FRONTIER_TRAINER_BREANNA] = {
+    [FRONTIER_TRAINER_BREANNA] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
         .trainerName = _("BREANNA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_WILL, EC_WORD_CRUSH, EC_WORD_YOU, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_HAVE, EC_WORD_SOME, EC_WORD_MORE, EC_WORD_OF, EC_WORD_THIS, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_GUTS, EC_WORD_AND, EC_WORD_SKILL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Breanna
-=======
-        .speechBefore = COMPOUND_STRING("My Pokémon will crush you!"),
-        .speechWin = COMPOUND_STRING("Have some more of this!"),
-        .speechLose = COMPOUND_STRING("You have guts and skill."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BreannaBefore,
+        .speechWin = sText_BreannaWin,
+        .speechLose = sText_BreannaLose,
+        .monSet = gBattleFrontierTrainerMons_Breanna,
     },
-    [FRONTIER_TRAINER_KENDRA] = {
+    [FRONTIER_TRAINER_KENDRA] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
         .trainerName = _("KENDRA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_IF, EC_WORD_YOU_RE, EC_WORD_SMART, EC_WORD_STOP, EC_WORD_RIGHT, EC_WORD_NOW},
-        .speechWin = {EC_WORD_I, EC_WORD_SAID, EC_WORD_THAT, EC_WORD_YOU, EC_WORD_SHOULD, EC_WORD_STOP},
-        .speechLose = {EC_WORD_WHY, EC_WORD_DIDN_T, EC_WORD_YOU, EC_WORD_STOP, EC_WORD_QUES, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Kendra
-=======
-        .speechBefore = COMPOUND_STRING("If you're smart stop right now."),
-        .speechWin = COMPOUND_STRING("I said that you should stop."),
-        .speechLose = COMPOUND_STRING("Why didn't you stop?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KendraBefore,
+        .speechWin = sText_KendraWin,
+        .speechLose = sText_KendraLose,
+        .monSet = gBattleFrontierTrainerMons_Kendra,
     },
-    [FRONTIER_TRAINER_MOLLY] = {
+    [FRONTIER_TRAINER_MOLLY] =
+    {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
         .trainerName = _("MOLLY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WILL, EC_WORD_MY, EC_WORD_CUTE_CHARM, EC_MOVE2(ATTRACT), EC_WORD_YOU, EC_WORD_QUES},
-        .speechWin = {EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_MY, EC_WORD_TOYS, EC_WORD_NOW},
-        .speechLose = {EC_WORD_OH, EC_WORD_HOW, EC_WORD_COULD, EC_WORD_YOU, EC_WORD_QUES, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Molly
-=======
-        .speechBefore = COMPOUND_STRING("Will my cute charm attract you?"),
-        .speechWin = COMPOUND_STRING("Your Pokémon are my toys now."),
-        .speechLose = COMPOUND_STRING("Oh how could you?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MollyBefore,
+        .speechWin = sText_MollyWin,
+        .speechLose = sText_MollyLose,
+        .monSet = gBattleFrontierTrainerMons_Molly,
     },
-    [FRONTIER_TRAINER_JAZMIN] = {
+    [FRONTIER_TRAINER_JAZMIN] =
+    {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
         .trainerName = _("JAZMIN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_FORECAST, EC_WORD_TERRIBLE, EC_WORD_THINGS, EC_WORD_FOR, EC_WORD_YOU},
-        .speechWin = {EC_WORD_THERE, EC_WORD_WASN_T, EC_WORD_MY, EC_WORD_FORECAST, EC_WORD_RIGHT, EC_WORD_QUES},
-        .speechLose = {EC_WORD_MY, EC_MOVE2(FORESIGHT), EC_WORD_DIDN_T, EC_WORD_SHOW, EC_WORD_ME, EC_WORD_THIS},
-        .monSet = gBattleFrontierTrainerMons_Jazmin
-=======
-        .speechBefore = COMPOUND_STRING("I forecast terrible things for you."),
-        .speechWin = COMPOUND_STRING("There wasn't my forecast right?"),
-        .speechLose = COMPOUND_STRING("My foresight didn't show me this."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JazminBefore,
+        .speechWin = sText_JazminWin,
+        .speechLose = sText_JazminLose,
+        .monSet = gBattleFrontierTrainerMons_Jazmin,
     },
-    [FRONTIER_TRAINER_KELSEY] = {
+    [FRONTIER_TRAINER_KELSEY] =
+    {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
         .trainerName = _("KELSEY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_HAVEN_T, EC_WORD_SLEPT, EC_WORD_IN, EC_WORD_DAYS, EC_WORD_ELLIPSIS},
-        .speechWin = {EC_WORD_MY, EC_WORD_SLEEP, EC_WORD_WILL, EC_WORD_BE, EC_WORD_EXCELLENT, EC_WORD_NOW},
-        .speechLose = {EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_DESTROYED, EC_WORD_MY, EC_WORD_SLEEP, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Kelsey
-=======
-        .speechBefore = COMPOUND_STRING("I haven't slept in days…"),
-        .speechWin = COMPOUND_STRING("My sleep will be excellent now."),
-        .speechLose = COMPOUND_STRING("You have destroyed my sleep…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KelseyBefore,
+        .speechWin = sText_KelseyWin,
+        .speechLose = sText_KelseyLose,
+        .monSet = gBattleFrontierTrainerMons_Kelsey,
     },
-    [FRONTIER_TRAINER_JALEN] = {
+    [FRONTIER_TRAINER_JALEN] =
+    {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
         .trainerName = _("JALEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_ALLOW, EC_WORD_POKEMON, EC_WORD_TO, EC_MOVE(THRASH)},
-        .speechWin = {EC_WORD_HAHAHA, EC_WORD_EXCL, EC_WORD_ARE, EC_WORD_YOU, EC_WORD_ANGRY, EC_WORD_QUES},
-        .speechLose = {EC_WORD_WHY, EC_WORD_IS, EC_WORD_THIS, EC_WORD_SO, EC_WORD_HARD, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Jalen
-=======
-        .speechBefore = COMPOUND_STRING("I don't allow Pokémon to thrash."),
-        .speechWin = COMPOUND_STRING("Hahaha! Are you angry?"),
-        .speechLose = COMPOUND_STRING("Why is this so hard?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JalenBefore,
+        .speechWin = sText_JalenWin,
+        .speechLose = sText_JalenLose,
+        .monSet = gBattleFrontierTrainerMons_Jalen,
     },
-    [FRONTIER_TRAINER_GRIFFEN] = {
+    [FRONTIER_TRAINER_GRIFFEN] =
+    {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
         .trainerName = _("GRIFFEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_MOVE2(SWALLOW), EC_MOVE2(SLUDGE), EC_WORD_TO, EC_MOVE2(TRANSFORM), EC_WORD_MYSELF},
-        .speechWin = {EC_WORD_I, EC_WORD_HAVE, EC_WORD_A, EC_MOVE(GROWTH), EC_WORD_OF, EC_MOVE2(ACID_ARMOR)},
-        .speechLose = {EC_WORD_I, EC_WORD_HAVE, EC_WORD_A, EC_MOVE(GROWTH), EC_WORD_OF, EC_WORD_SUCTION_CUPS},
-        .monSet = gBattleFrontierTrainerMons_Griffen
-=======
-        .speechBefore = COMPOUND_STRING("I swallow sludge to transform myself."),
-        .speechWin = COMPOUND_STRING("I have a growth of acid armor."),
-        .speechLose = COMPOUND_STRING("I have a growth of suction cups."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GriffenBefore,
+        .speechWin = sText_GriffenWin,
+        .speechLose = sText_GriffenLose,
+        .monSet = gBattleFrontierTrainerMons_Griffen,
     },
-    [FRONTIER_TRAINER_XANDER] = {
+    [FRONTIER_TRAINER_XANDER] =
+    {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
         .trainerName = _("XANDER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_GOT, EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_ON, EC_WORD_RENTAL},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_INCREDIBLE, EC_WORD_MY, EC_WORD_RENTAL, EC_WORD_POKEMON, EC_WORD_WON},
-        .speechLose = {EC_WORD_RENTAL, EC_WORD_POKEMON, EC_WORD_AREN_T, EC_WORD_UP, EC_WORD_TO, EC_MOVE2(SCRATCH)},
-        .monSet = gBattleFrontierTrainerMons_Xander
-=======
-        .speechBefore = COMPOUND_STRING("I got my Pokémon on rental."),
-        .speechWin = COMPOUND_STRING("It's incredible my rental Pokémon won."),
-        .speechLose = COMPOUND_STRING("Rental Pokémon aren't up to scratch."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_XanderBefore,
+        .speechWin = sText_XanderWin,
+        .speechLose = sText_XanderLose,
+        .monSet = gBattleFrontierTrainerMons_Xander,
     },
-    [FRONTIER_TRAINER_MARVIN] = {
+    [FRONTIER_TRAINER_MARVIN] =
+    {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
         .trainerName = _("MARVIN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU_RE, EC_WORD_UP, EC_WORD_TO, EC_WORD_THE, EC_WORD_CHALLENGE, EC_WORD_QUES},
-        .speechWin = {EC_WORD_I, EC_WORD_DIDN_T, EC_WORD_THINK, EC_WORD_YOU_RE, EC_WORD_GOOD, EC_WORD_ENOUGH},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_PERFECT, EC_WORD_THANK_YOU, EC_WORD_SO, EC_WORD_MUCH},
-        .monSet = gBattleFrontierTrainerMons_Marvin
-=======
-        .speechBefore = COMPOUND_STRING("You're up to the challenge?"),
-        .speechWin = COMPOUND_STRING("I didn't think you're good enough."),
-        .speechLose = COMPOUND_STRING("I am feeling perfect thank you so much."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MarvinBefore,
+        .speechWin = sText_MarvinWin,
+        .speechLose = sText_MarvinLose,
+        .monSet = gBattleFrontierTrainerMons_Marvin,
     },
-    [FRONTIER_TRAINER_BRENNAN] = {
+    [FRONTIER_TRAINER_BRENNAN] =
+    {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
         .trainerName = _("BRENNAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_MOVE2(WISH), EC_WORD_TO, EC_WORD_SEE, EC_WORD_THE, EC_WORD_NEWS},
-        .speechWin = {EC_WORD_COMICS, EC_WORD_GET, EC_WORD_DAMP, EC_WORD_FROM, EC_WORD_DRIZZLE, EC_WORD_QUES},
-        .speechLose = {EC_WORD_THE, EC_WORD_TIGHT, EC_WORD_MONEY, EC_WORD_LIVING, EC_WORD_CHANNEL, EC_WORD_QUES_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Brennan
-=======
-        .speechBefore = COMPOUND_STRING("I wish to see the news."),
-        .speechWin = COMPOUND_STRING("Comics get damp from drizzle?"),
-        .speechLose = COMPOUND_STRING("The tight money living channel?!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BrennanBefore,
+        .speechWin = sText_BrennanWin,
+        .speechLose = sText_BrennanLose,
+        .monSet = gBattleFrontierTrainerMons_Brennan,
     },
-    [FRONTIER_TRAINER_BALEY] = {
+    [FRONTIER_TRAINER_BALEY] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
         .trainerName = _("BALEY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_MOVE(SCREECH), EC_WORD_IS, EC_WORD_LIKE, EC_WORD_MUSIC, EC_WORD_TO_ME, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_MY, EC_MOVE(SCREECH), EC_WORD_STRATEGY, EC_WORD_IS, EC_WORD_THE, EC_WORD_BEST},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_SOUNDPROOF, EC_WORD_QUES, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Baley
-=======
-        .speechBefore = COMPOUND_STRING("Screech is like music to me!"),
-        .speechWin = COMPOUND_STRING("My screech strategy is the best."),
-        .speechLose = COMPOUND_STRING("You're soundproof?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BaleyBefore,
+        .speechWin = sText_BaleyWin,
+        .speechLose = sText_BaleyLose,
+        .monSet = gBattleFrontierTrainerMons_Baley,
     },
-    [FRONTIER_TRAINER_ZACKARY] = {
+    [FRONTIER_TRAINER_ZACKARY] =
+    {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
         .trainerName = _("ZACKARY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_CAN, EC_WORD_YOU, EC_MOVE(DIG), EC_WORD_IT, EC_WORD_YO, EC_WORD_QUES},
-        .speechWin = {EC_MOVE2(TAKE_DOWN), EC_WORD_TAKE, EC_WORD_A, EC_MOVE2(DIVE), EC_WORD_YO, EC_WORD_YO},
-        .speechLose = {EC_WORD_BREAK, EC_WORD_DOWN, EC_MOVE2(DIVE), EC_WORD_TIME, EC_WORD_FOR, EC_WORD_ME},
-        .monSet = gBattleFrontierTrainerMons_Zackary
-=======
-        .speechBefore = COMPOUND_STRING("Can you dig it yo?"),
-        .speechWin = COMPOUND_STRING("Take down take a dive yo yo."),
-        .speechLose = COMPOUND_STRING("Break down dive time for me."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ZackaryBefore,
+        .speechWin = sText_ZackaryWin,
+        .speechLose = sText_ZackaryLose,
+        .monSet = gBattleFrontierTrainerMons_Zackary,
     },
-    [FRONTIER_TRAINER_GABRIEL] = {
+    [FRONTIER_TRAINER_GABRIEL] =
+    {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
         .trainerName = _("GABRIEL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_MOVE2(POUND), EC_WORD_THE, EC_WORD_THICK_FAT, EC_WORD_ON, EC_WORD_MY, EC_MOVE2(BELLY_DRUM)},
-        .speechWin = {EC_MOVE2(POUND), EC_WORD_MY, EC_MOVE2(BELLY_DRUM), EC_MOVE2(POUND), EC_WORD_MY, EC_MOVE2(BELLY_DRUM)},
-        .speechLose = {EC_WORD_MY, EC_MOVE2(BELLY_DRUM), EC_WORD_WAS, EC_WORD_TOO_WEAK, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Gabriel
-=======
-        .speechBefore = COMPOUND_STRING("Pound the thick fat on my belly drum."),
-        .speechWin = COMPOUND_STRING("Pound my belly drum pound my belly drum."),
-        .speechLose = COMPOUND_STRING("My belly drum was too weak…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GabrielBefore,
+        .speechWin = sText_GabrielWin,
+        .speechLose = sText_GabrielLose,
+        .monSet = gBattleFrontierTrainerMons_Gabriel,
     },
-    [FRONTIER_TRAINER_EMILY] = {
+    [FRONTIER_TRAINER_EMILY] =
+    {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
         .trainerName = _("EMILY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HOW, EC_WORD_ABOUT, EC_WORD_A_TINY_BIT, EC_WORD_OF, EC_MOVE(HYPNOSIS), EC_WORD_QUES},
-        .speechWin = {EC_WORD_MY, EC_MOVE(HYPNOSIS), EC_WORD_STRATEGY, EC_WORD_WORKS, EC_WORD_TO, EC_WORD_PERFECTION},
-        .speechLose = {EC_WORD_MY, EC_MOVE(HYPNOSIS), EC_WORD_STRATEGY, EC_WORD_WENT, EC_WORD_BADLY, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Emily
-=======
-        .speechBefore = COMPOUND_STRING("How about a tiny bit of hypnosis?"),
-        .speechWin = COMPOUND_STRING("My hypnosis strategy works to perfection."),
-        .speechLose = COMPOUND_STRING("My hypnosis strategy went badly…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EmilyBefore,
+        .speechWin = sText_EmilyWin,
+        .speechLose = sText_EmilyLose,
+        .monSet = gBattleFrontierTrainerMons_Emily,
     },
-    [FRONTIER_TRAINER_JORDYN] = {
+    [FRONTIER_TRAINER_JORDYN] =
+    {
         .facilityClass = FACILITY_CLASS_BEAUTY,
         .trainerName = _("JORDYN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU, EC_WORD_DON_T, EC_WORD_KNOW, EC_WORD_MY, EC_WORD_SECRET, EC_WORD_ELLIPSIS},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_AS, EC_WORD_I, EC_WORD_APPEAR, EC_WORD_ELLIPSIS},
-        .speechLose = {EC_WORD_BUT, EC_WORD_HOW, EC_WORD_DID, EC_WORD_YOU, EC_WORD_KNOW, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Jordyn
-=======
-        .speechBefore = COMPOUND_STRING("You don't know my secret…"),
-        .speechWin = COMPOUND_STRING("I am not as I appear…"),
-        .speechLose = COMPOUND_STRING("But how did you know?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JordynBefore,
+        .speechWin = sText_JordynWin,
+        .speechLose = sText_JordynLose,
+        .monSet = gBattleFrontierTrainerMons_Jordyn,
     },
-    [FRONTIER_TRAINER_SOFIA] = {
+    [FRONTIER_TRAINER_SOFIA] =
+    {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
         .trainerName = _("SOFIA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_POKEMON(LOUDRED), EC_WORD_PROBABLY, EC_WORD_HAS, EC_WORD_A, EC_MOVE(SWEET_SCENT), EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_THAT_S, EC_WORD_THE, EC_WORD_FEELING, EC_WORD_THAT, EC_WORD_I, EC_WORD_GET},
-        .speechLose = {EC_WORD_I, EC_WORD_WORK, EC_WORD_AT, EC_WORD_THE, EC_WORD_DEPT_STORE, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Sofia
-=======
-        .speechBefore = COMPOUND_STRING("Loudred probably has a sweet scent."),
-        .speechWin = COMPOUND_STRING("That's the feeling that I get."),
-        .speechLose = COMPOUND_STRING("I work at the dept store."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_SofiaBefore,
+        .speechWin = sText_SofiaWin,
+        .speechLose = sText_SofiaLose,
+        .monSet = gBattleFrontierTrainerMons_Sofia,
     },
-    [FRONTIER_TRAINER_BRADEN] = {
+    [FRONTIER_TRAINER_BRADEN] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
         .trainerName = _("BRADEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_CHOOSE_YOU, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_THIS_IS_IT_EXCL, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_PRETTY, EC_WORD_AWESOME, EC_WORD_ABOUT, EC_WORD_MYSELF},
-        .speechLose = {EC_WORD_ALL_RIGHT, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_I, EC_WORD_SURRENDER, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Braden
-=======
-        .speechBefore = COMPOUND_STRING("I choose you! This is it excl."),
-        .speechWin = COMPOUND_STRING("I am feeling pretty awesome about myself."),
-        .speechLose = COMPOUND_STRING("All right! I surrender!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BradenBefore,
+        .speechWin = sText_BradenWin,
+        .speechLose = sText_BradenLose,
+        .monSet = gBattleFrontierTrainerMons_Braden,
     },
-    [FRONTIER_TRAINER_KAYDEN] = {
+    [FRONTIER_TRAINER_KAYDEN] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
         .trainerName = _("KAYDEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THEY, EC_WORD_OVERDO, EC_WORD_THAT, EC_WORD_GOURMET, EC_WORD_THING, EC_WORD_ELLIPSIS},
-        .speechWin = {EC_WORD_THAT, EC_WORD_GOURMET, EC_WORD_THING, EC_WORD_ISN_T, EC_WORD_FOR, EC_WORD_ME},
-        .speechLose = {EC_WORD_HEY, EC_WORD_THIS, EC_WORD_IS, EC_WORD_PRETTY, EC_WORD_TASTY, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Kayden
-=======
-        .speechBefore = COMPOUND_STRING("They overdo that gourmet thing…"),
-        .speechWin = COMPOUND_STRING("That gourmet thing isn't for me."),
-        .speechLose = COMPOUND_STRING("Hey this is pretty tasty."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KaydenBefore,
+        .speechWin = sText_KaydenWin,
+        .speechLose = sText_KaydenLose,
+        .monSet = gBattleFrontierTrainerMons_Kayden,
     },
-    [FRONTIER_TRAINER_COOPER] = {
+    [FRONTIER_TRAINER_COOPER] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
         .trainerName = _("COOPER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THIS, EC_WORD_SHOULD, EC_WORD_ABSOLUTELY, EC_WORD_BE, EC_WORD_A, EC_WORD_PUSHOVER},
-        .speechWin = {EC_WORD_THAT_WAS, EC_WORD_TOO, EC_WORD_EXCITING, EC_WORD_FOR, EC_WORD_ME, EC_WORD_ELLIPSIS},
-        .speechLose = {EC_WORD_PLEASE, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_SORRY, EC_WORD_I_AM, EC_WORD_SORRY},
-        .monSet = gBattleFrontierTrainerMons_Cooper
-=======
-        .speechBefore = COMPOUND_STRING("This should absolutely be a pushover."),
-        .speechWin = COMPOUND_STRING("That was too exciting for me…"),
-        .speechLose = COMPOUND_STRING("Please! Sorry I am sorry."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CooperBefore,
+        .speechWin = sText_CooperWin,
+        .speechLose = sText_CooperLose,
+        .monSet = gBattleFrontierTrainerMons_Cooper,
     },
-    [FRONTIER_TRAINER_JULIA] = {
+    [FRONTIER_TRAINER_JULIA] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
         .trainerName = _("JULIA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_SPIRIT, EC_WORD_ALONE, EC_WORD_WON_T, EC_WORD_MAKE, EC_WORD_YOU, EC_WORD_WIN},
-        .speechWin = {EC_WORD_YOU, EC_WORD_SHOULD, EC_WORD_ACCEPT, EC_WORD_THIS, EC_WORD_WITH, EC_WORD_SERENE_GRACE},
-        .speechLose = {EC_WORD_FOR_NOW, EC_WORD_GOOD_BYE, EC_WORD_BUT, EC_WORD_IT_S, EC_WORD_NOT, EC_WORD_OVER},
-        .monSet = gBattleFrontierTrainerMons_Julia
-=======
-        .speechBefore = COMPOUND_STRING("Spirit alone won't make you win."),
-        .speechWin = COMPOUND_STRING("You should accept this with serene grace."),
-        .speechLose = COMPOUND_STRING("For now good bye but it's not over."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JuliaBefore,
+        .speechWin = sText_JuliaWin,
+        .speechLose = sText_JuliaLose,
+        .monSet = gBattleFrontierTrainerMons_Julia,
     },
-    [FRONTIER_TRAINER_AMARA] = {
+    [FRONTIER_TRAINER_AMARA] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
         .trainerName = _("AMARA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WROOOAAR_EXCL, EC_WORD_EXCL_EXCL, EC_WORD_I_AM, EC_WORD_SO, EC_WORD_READY, EC_WORD_EXCL_EXCL},
-        .speechWin = {EC_WORD_I, EC_WORD_LOSE, EC_WORD_MYSELF, EC_WORD_IF, EC_WORD_IT_S, EC_WORD_EXCITING},
-        .speechLose = {EC_WORD_THAT_S, EC_WORD_TOO, EC_WORD_MUCH, EC_WORD_TO, EC_MOVE2(TACKLE), EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Amara
-=======
-        .speechBefore = COMPOUND_STRING("Wroooaar!!! I am so ready!!"),
-        .speechWin = COMPOUND_STRING("I lose myself if it's exciting."),
-        .speechLose = COMPOUND_STRING("That's too much to tackle!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AmaraBefore,
+        .speechWin = sText_AmaraWin,
+        .speechLose = sText_AmaraLose,
+        .monSet = gBattleFrontierTrainerMons_Amara,
     },
-    [FRONTIER_TRAINER_LYNN] = {
+    [FRONTIER_TRAINER_LYNN] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
         .trainerName = _("LYNN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOUR, EC_WORD_SECRET, EC_WORD_CAN_T, EC_WORD_BE, EC_WORD_HIDDEN, EC_WORD_FOREVER},
-        .speechWin = {EC_WORD_I, EC_WORD_KNOW, EC_WORD_YOUR, EC_WORD_SECRET, EC_WORD_NOW, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_YOU, EC_WORD_CAN_T, EC_MOVE(SAFEGUARD), EC_WORD_YOUR, EC_WORD_OWN, EC_WORD_SECRET},
-        .monSet = gBattleFrontierTrainerMons_Lynn
-=======
-        .speechBefore = COMPOUND_STRING("Your secret can't be hidden forever."),
-        .speechWin = COMPOUND_STRING("I know your secret now!"),
-        .speechLose = COMPOUND_STRING("You can't safeguard your own secret."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LynnBefore,
+        .speechWin = sText_LynnWin,
+        .speechLose = sText_LynnLose,
+        .monSet = gBattleFrontierTrainerMons_Lynn,
     },
-    [FRONTIER_TRAINER_JOVAN] = {
+    [FRONTIER_TRAINER_JOVAN] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
         .trainerName = _("JOVAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOUR, EC_WORD_BATTLE, EC_WORD_SENSE, EC_WORD_IS, EC_WORD_SADLY, EC_WORD_LACKING},
-        .speechWin = {EC_WORD_MY, EC_WORD_BATTLE, EC_WORD_SENSE, EC_WORD_IS, EC_WORD_COOL, EC_WORD_ISN_T_IT_QUES},
-        .speechLose = {EC_WORD_I_WAS, EC_WORD_MINUS, EC_WORD_MY, EC_WORD_NORMAL, EC_WORD_POWER, EC_WORD_TODAY},
-        .monSet = gBattleFrontierTrainerMons_Jovan
-=======
-        .speechBefore = COMPOUND_STRING("Your battle sense is sadly lacking."),
-        .speechWin = COMPOUND_STRING("My battle sense is cool isn't it ques."),
-        .speechLose = COMPOUND_STRING("I was minus my normal power today."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JovanBefore,
+        .speechWin = sText_JovanWin,
+        .speechLose = sText_JovanLose,
+        .monSet = gBattleFrontierTrainerMons_Jovan,
     },
-    [FRONTIER_TRAINER_DOMINIC] = {
+    [FRONTIER_TRAINER_DOMINIC] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
         .trainerName = _("DOMINIC"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_HAVE, EC_WORD_THIS, EC_WORD_EXCELLENT, EC_WORD_CAMERA, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_MY, EC_WORD_CAMERA, EC_WORD_WAS, EC_WORD_AWFULLY, EC_WORD_EXPENSIVE, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_MY, EC_WORD_CAMERA, EC_WORD_DOESN_T, EC_WORD_MISS, EC_WORD_A, EC_WORD_THING},
-        .monSet = gBattleFrontierTrainerMons_Dominic
-=======
-        .speechBefore = COMPOUND_STRING("I have this excellent camera."),
-        .speechWin = COMPOUND_STRING("My camera was awfully expensive."),
-        .speechLose = COMPOUND_STRING("My camera doesn't miss a thing."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DominicBefore,
+        .speechWin = sText_DominicWin,
+        .speechLose = sText_DominicLose,
+        .monSet = gBattleFrontierTrainerMons_Dominic,
     },
-    [FRONTIER_TRAINER_NIKOLAS] = {
+    [FRONTIER_TRAINER_NIKOLAS] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
         .trainerName = _("NIKOLAS"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_MOVE2(MIMIC), EC_WORD_POKEMON, EC_WORD_AFTER, EC_WORD_EVERY, EC_WORD_BATTLE},
-        .speechWin = {EC_WORD_IF_I_WIN, EC_WORD_I, EC_WORD_PRETEND, EC_WORD_I_AM, EC_WORD_A, EC_POKEMON_NATIONAL(TAUROS)},
-        .speechLose = {EC_WORD_IF_I_LOSE, EC_WORD_I, EC_WORD_PRETEND, EC_WORD_I_AM, EC_WORD_A, EC_POKEMON_NATIONAL(MILTANK)},
-        .monSet = gBattleFrontierTrainerMons_Nikolas
-=======
-        .speechBefore = COMPOUND_STRING("I mimic Pokémon after every battle."),
-        .speechWin = COMPOUND_STRING("If I win I pretend I am a Tauros."),
-        .speechLose = COMPOUND_STRING("If I lose I pretend I am a Miltank."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_NikolasBefore,
+        .speechWin = sText_NikolasWin,
+        .speechLose = sText_NikolasLose,
+        .monSet = gBattleFrontierTrainerMons_Nikolas,
     },
-    [FRONTIER_TRAINER_VALERIA] = {
+    [FRONTIER_TRAINER_VALERIA] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
         .trainerName = _("VALERIA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_MOVE2(WISH), EC_WORD_YOU, EC_WORD_WOULD, EC_WORD_NOT, EC_MOVE2(GLARE)},
-        .speechWin = {EC_WORD_YOU_RE, EC_WORD_MEAN, EC_WORD_EXCL, EC_WORD_I, EC_WORD_MEAN, EC_WORD_REALLY},
-        .speechLose = {EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_A, EC_WORD_REALLY, EC_MOVE(SCARY_FACE), EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Valeria
-=======
-        .speechBefore = COMPOUND_STRING("I wish you would not glare."),
-        .speechWin = COMPOUND_STRING("You're mean! I mean really."),
-        .speechLose = COMPOUND_STRING("You have a really scary face!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ValeriaBefore,
+        .speechWin = sText_ValeriaWin,
+        .speechLose = sText_ValeriaLose,
+        .monSet = gBattleFrontierTrainerMons_Valeria,
     },
-    [FRONTIER_TRAINER_DELANEY] = {
+    [FRONTIER_TRAINER_DELANEY] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
         .trainerName = _("DELANEY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_SCHOOL, EC_WORD_IS, EC_WORD_OVER, EC_WORD_TIME, EC_WORD_TO, EC_WORD_PLAY},
-        .speechWin = {EC_WORD_MY, EC_WORD_BOY, EC_WORD_FRIEND, EC_WORD_IS, EC_WORD_FROM, EC_WORD_SCHOOL},
-        .speechLose = {EC_WORD_I, EC_WORD_HAVE, EC_WORD_TO, EC_WORD_WORK, EC_WORD_NEXT, EC_WORD_WEEK},
-        .monSet = gBattleFrontierTrainerMons_Delaney
-=======
-        .speechBefore = COMPOUND_STRING("School is over time to play."),
-        .speechWin = COMPOUND_STRING("My boy friend is from school."),
-        .speechLose = COMPOUND_STRING("I have to work next week."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DelaneyBefore,
+        .speechWin = sText_DelaneyWin,
+        .speechLose = sText_DelaneyLose,
+        .monSet = gBattleFrontierTrainerMons_Delaney,
     },
-    [FRONTIER_TRAINER_MEGHAN] = {
+    [FRONTIER_TRAINER_MEGHAN] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
         .trainerName = _("MEGHAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_SCHOOL, EC_WORD_IS, EC_WORD_OUT, EC_WORD_TIME, EC_WORD_TO, EC_WORD_PLAY},
-        .speechWin = {EC_WORD_MY, EC_WORD_BOY, EC_WORD_FRIEND, EC_WORD_LIKES, EC_WORD_COMICS, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_IT_S, EC_WORD_BACK, EC_WORD_TO, EC_WORD_SCHOOL, EC_WORD_SOON, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Meghan
-=======
-        .speechBefore = COMPOUND_STRING("School is out time to play."),
-        .speechWin = COMPOUND_STRING("My boy friend likes comics."),
-        .speechLose = COMPOUND_STRING("It's back to school soon."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MeghanBefore,
+        .speechWin = sText_MeghanWin,
+        .speechLose = sText_MeghanLose,
+        .monSet = gBattleFrontierTrainerMons_Meghan,
     },
-    [FRONTIER_TRAINER_ROBERTO] = {
+    [FRONTIER_TRAINER_ROBERTO] =
+    {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
         .trainerName = _("ROBERTO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_DRAGON, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_INVINCIBLE, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_YOU, EC_WORD_WEREN_T, EC_WORD_BAD, EC_WORD_I_WAS, EC_WORD_JUST, EC_WORD_BETTER},
-        .speechLose = {EC_WORD_AREN_T, EC_WORD_YOU, EC_WORD_SATISFIED, EC_WORD_YET, EC_WORD_QUES, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Roberto
-=======
-        .speechBefore = COMPOUND_STRING("Dragon Pokémon are invincible!"),
-        .speechWin = COMPOUND_STRING("You weren't bad I was just better."),
-        .speechLose = COMPOUND_STRING("Aren't you satisfied yet?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RobertoBefore,
+        .speechWin = sText_RobertoWin,
+        .speechLose = sText_RobertoLose,
+        .monSet = gBattleFrontierTrainerMons_Roberto,
     },
-    [FRONTIER_TRAINER_DAMIAN] = {
+    [FRONTIER_TRAINER_DAMIAN] =
+    {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
         .trainerName = _("DAMIAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_PURE_POWER, EC_WORD_IS, EC_WORD_MACHINE, EC_WORD_LIKE, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_MY, EC_MOVE2(MACH_PUNCH), EC_WORD_WILL, EC_WORD_MAKE, EC_WORD_A, EC_MOVE(BRICK_BREAK)},
-        .speechLose = {EC_WORD_ARRGH, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_NO, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Damian
-=======
-        .speechBefore = COMPOUND_STRING("My pure power is machine like!"),
-        .speechWin = COMPOUND_STRING("My mach punch will make a brick break."),
-        .speechLose = COMPOUND_STRING("Arrgh! No!!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DamianBefore,
+        .speechWin = sText_DamianWin,
+        .speechLose = sText_DamianLose,
+        .monSet = gBattleFrontierTrainerMons_Damian,
     },
-    [FRONTIER_TRAINER_BRODY] = {
+    [FRONTIER_TRAINER_BRODY] =
+    {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
         .trainerName = _("BRODY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_FASHION, EC_WORD_SENSE, EC_WORD_SEEMS, EC_POKEMON(ODDISH), EC_WORD_QUES},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_MY, EC_WORD_FAMILY, EC_WORD_STAY_AT_HOME, EC_WORD_LOOK, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I, EC_WORD_QUESTION, EC_WORD_YOUR, EC_WORD_FASHION, EC_WORD_SENSE, EC_WORD_SERIOUSLY},
-        .monSet = gBattleFrontierTrainerMons_Brody
-=======
-        .speechBefore = COMPOUND_STRING("My fashion sense seems Oddish?"),
-        .speechWin = COMPOUND_STRING("It's my family stay at home look!"),
-        .speechLose = COMPOUND_STRING("I question your fashion sense seriously."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BrodyBefore,
+        .speechWin = sText_BrodyWin,
+        .speechLose = sText_BrodyLose,
+        .monSet = gBattleFrontierTrainerMons_Brody,
     },
-    [FRONTIER_TRAINER_GRAHAM] = {
+    [FRONTIER_TRAINER_GRAHAM] =
+    {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
         .trainerName = _("GRAHAM"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YEAH, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_YEAH_YEAH, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_WAHAHAHA, EC_WORD_WAHAHAHA, EC_WORD_EXCL, EC_WORD_WAHAHAHA, EC_WORD_WAHAHAHA, EC_WORD_EXCL_EXCL},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_SORRY, EC_WORD_ELLIPSIS, EC_WORD_IT_S, EC_WORD_MY, EC_WORD_BAD},
-        .monSet = gBattleFrontierTrainerMons_Graham
-=======
-        .speechBefore = COMPOUND_STRING("Yeah! Yeah yeah!!"),
-        .speechWin = COMPOUND_STRING("Wahahaha wahahaha! Wahahaha wahahaha!!"),
-        .speechLose = COMPOUND_STRING("I am sorry… It's my bad."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GrahamBefore,
+        .speechWin = sText_GrahamWin,
+        .speechLose = sText_GrahamLose,
+        .monSet = gBattleFrontierTrainerMons_Graham,
     },
-    [FRONTIER_TRAINER_TYLOR] = {
+    [FRONTIER_TRAINER_TYLOR] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
         .trainerName = _("TYLOR"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_ARE, EC_WORD_YOU, EC_WORD_FEELING, EC_WORD_MY, EC_MOVE2(HEAT_WAVE), EC_WORD_QUES},
-        .speechWin = {EC_WORD_YES, EC_WORD_I_AM, EC_WORD_ON, EC_WORD_FIRE, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_BUT, EC_WORD_I_WAS, EC_WORD_ON, EC_WORD_FIRE, EC_WORD_FOR, EC_WORD_YOU},
-        .monSet = gBattleFrontierTrainerMons_Tylor
-=======
-        .speechBefore = COMPOUND_STRING("Are you feeling my heat wave?"),
-        .speechWin = COMPOUND_STRING("Yes I am on fire!"),
-        .speechLose = COMPOUND_STRING("But I was on fire for you."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_TylorBefore,
+        .speechWin = sText_TylorWin,
+        .speechLose = sText_TylorLose,
+        .monSet = gBattleFrontierTrainerMons_Tylor,
     },
-    [FRONTIER_TRAINER_JAREN] = {
+    [FRONTIER_TRAINER_JAREN] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
         .trainerName = _("JAREN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_FIGHTING, EC_WORD_SPIRIT, EC_WORD_QUES, EC_WORD_ME, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I, EC_WORD_WANT, EC_WORD_MORE, EC_WORD_CUTE, EC_WORD_POKEMON, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_LOOK, EC_WORD_QUITE, EC_WORD_CUTE, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Jaren
-=======
-        .speechBefore = COMPOUND_STRING("Fighting spirit? Me?"),
-        .speechWin = COMPOUND_STRING("I want more cute Pokémon."),
-        .speechLose = COMPOUND_STRING("Your Pokémon look quite cute."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JarenBefore,
+        .speechWin = sText_JarenWin,
+        .speechLose = sText_JarenLose,
+        .monSet = gBattleFrontierTrainerMons_Jaren,
     },
-    [FRONTIER_TRAINER_CORDELL] = {
+    [FRONTIER_TRAINER_CORDELL] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
         .trainerName = _("CORDELL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A, EC_WORD_BATTLE, EC_WORD_IS, EC_WORD_DECIDED, EC_WORD_ON, EC_WORD_SPIRIT},
-        .speechWin = {EC_WORD_CAN_T, EC_WORD_YOU, EC_WORD_ACCEPT, EC_WORD_THAT, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I, EC_WORD_WILL, EC_WORD_BE, EC_WORD_ON, EC_WORD_MY, EC_WORD_WAY},
-        .monSet = gBattleFrontierTrainerMons_Cordell
-=======
-        .speechBefore = COMPOUND_STRING("A battle is decided on spirit."),
-        .speechWin = COMPOUND_STRING("Can't you accept that?"),
-        .speechLose = COMPOUND_STRING("I will be on my way."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CordellBefore,
+        .speechWin = sText_CordellWin,
+        .speechLose = sText_CordellLose,
+        .monSet = gBattleFrontierTrainerMons_Cordell,
     },
-    [FRONTIER_TRAINER_JAZLYN] = {
+    [FRONTIER_TRAINER_JAZLYN] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
         .trainerName = _("JAZLYN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_IS, EC_WORD_YOUR, EC_WORD_POKEDEX, EC_WORD_REALLY, EC_WORD_AWESOME, EC_WORD_QUES},
-        .speechWin = {EC_WORD_OH_YEAH, EC_WORD_WOW, EC_WORD_YOUR, EC_WORD_POKEDEX, EC_WORD_IS, EC_WORD_SUPER},
-        .speechLose = {EC_WORD_AN, EC_WORD_AVANT_GARDE, EC_WORD_POKEDEX, EC_WORD_WOULD, EC_WORD_BE, EC_WORD_AWESOME},
-        .monSet = gBattleFrontierTrainerMons_Jazlyn
-=======
-        .speechBefore = COMPOUND_STRING("Is your pokedex really awesome?"),
-        .speechWin = COMPOUND_STRING("Oh, yeah wow your pokedex is super."),
-        .speechLose = COMPOUND_STRING("An avant garde pokedex would be awesome."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JazlynBefore,
+        .speechWin = sText_JazlynWin,
+        .speechLose = sText_JazlynLose,
+        .monSet = gBattleFrontierTrainerMons_Jazlyn,
     },
-    [FRONTIER_TRAINER_ZACHERY] = {
+    [FRONTIER_TRAINER_ZACHERY] =
+    {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
         .trainerName = _("ZACHERY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_HAVE, EC_WORD_MY, EC_WORD_OWN, EC_WORD_PLACE, EC_WORD_YEEHAW_EXCL},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_AN, EC_WORD_EXCITING, EC_WORD_TIME, EC_WORD_FOR, EC_WORD_ME},
-        .speechLose = {EC_WORD_YOU, EC_WORD_CAN_T, EC_WORD_FLATTEN, EC_WORD_MY, EC_WORD_HAPPINESS, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Zachery
-=======
-        .speechBefore = COMPOUND_STRING("I have my own place yeehaw excl."),
-        .speechWin = COMPOUND_STRING("It's an exciting time for me."),
-        .speechLose = COMPOUND_STRING("You can't flatten my happiness!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ZacheryBefore,
+        .speechWin = sText_ZacheryWin,
+        .speechLose = sText_ZacheryLose,
+        .monSet = gBattleFrontierTrainerMons_Zachery,
     },
-    [FRONTIER_TRAINER_JOHAN] = {
+    [FRONTIER_TRAINER_JOHAN] =
+    {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
         .trainerName = _("JOHAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WINTER, EC_WORD_WILL, EC_WORD_SOON, EC_WORD_BE, EC_WORD_HERE, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_MY, EC_WORD_ALLOWANCE, EC_WORD_COULD, EC_WORD_USE, EC_WORD_A, EC_MOVE2(HELPING_HAND)},
-        .speechLose = {EC_WORD_I, EC_WORD_ALWAYS, EC_WORD_USE, EC_WORD_MY, EC_WORD_ALLOWANCE, EC_WORD_UP},
-        .monSet = gBattleFrontierTrainerMons_Johan
-=======
-        .speechBefore = COMPOUND_STRING("Winter will soon be here."),
-        .speechWin = COMPOUND_STRING("My allowance could use a helping hand."),
-        .speechLose = COMPOUND_STRING("I always use my allowance up."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JohanBefore,
+        .speechWin = sText_JohanWin,
+        .speechLose = sText_JohanLose,
+        .monSet = gBattleFrontierTrainerMons_Johan,
     },
-    [FRONTIER_TRAINER_SHEA] = {
+    [FRONTIER_TRAINER_SHEA] =
+    {
         .facilityClass = FACILITY_CLASS_LASS,
         .trainerName = _("SHEA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_DO, EC_WORD_YOU, EC_WORD_BATTLE, EC_WORD_WITH, EC_WORD_BEAUTY, EC_WORD_QUES},
-        .speechWin = {EC_WORD_YOU, EC_WORD_BATTLE, EC_WORD_IN, EC_WORD_AN, EC_WORD_UGLY, EC_WORD_WAY},
-        .speechLose = {EC_WORD_WHAT, EC_WORD_IS, EC_WORD_BEAUTY, EC_WORD_TO, EC_WORD_YOU, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Shea
-=======
-        .speechBefore = COMPOUND_STRING("Do you battle with beauty?"),
-        .speechWin = COMPOUND_STRING("You battle in an ugly way."),
-        .speechLose = COMPOUND_STRING("What is beauty to you?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_SheaBefore,
+        .speechWin = sText_SheaWin,
+        .speechLose = sText_SheaLose,
+        .monSet = gBattleFrontierTrainerMons_Shea,
     },
-    [FRONTIER_TRAINER_KAILA] = {
+    [FRONTIER_TRAINER_KAILA] =
+    {
         .facilityClass = FACILITY_CLASS_LASS,
         .trainerName = _("KAILA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_THIRSTY, EC_WORD_RIGHT, EC_WORD_NOW, EC_WORD_ELLIPSIS},
-        .speechWin = {EC_WORD_I, EC_WORD_COULD, EC_WORD_USE, EC_WORD_A, EC_WORD_COLD, EC_WORD_DRINK},
-        .speechLose = {EC_WORD_THAT, EC_WORD_LOSS, EC_WORD_IS, EC_WORD_HARD, EC_WORD_TO, EC_MOVE2(SWALLOW)},
-        .monSet = gBattleFrontierTrainerMons_Kaila
-=======
-        .speechBefore = COMPOUND_STRING("I am feeling thirsty right now…"),
-        .speechWin = COMPOUND_STRING("I could use a cold drink."),
-        .speechLose = COMPOUND_STRING("That loss is hard to swallow."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KailaBefore,
+        .speechWin = sText_KailaWin,
+        .speechLose = sText_KailaLose,
+        .monSet = gBattleFrontierTrainerMons_Kaila,
     },
-    [FRONTIER_TRAINER_ISIAH] = {
+    [FRONTIER_TRAINER_ISIAH] =
+    {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
         .trainerName = _("ISIAH"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_PRETEND, EC_WORD_TO, EC_WORD_STUDY, EC_WORD_A_LOT, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I, EC_MOVE2(TRICK), EC_WORD_MOTHER, EC_WORD_FOR, EC_WORD_MY, EC_WORD_ALLOWANCE},
-        .speechLose = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_WANT, EC_WORD_TO, EC_WORD_STUDY, EC_WORD_MORE},
-        .monSet = gBattleFrontierTrainerMons_Isiah
-=======
-        .speechBefore = COMPOUND_STRING("I pretend to study a lot."),
-        .speechWin = COMPOUND_STRING("I trick mother for my allowance."),
-        .speechLose = COMPOUND_STRING("I don't want to study more."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_IsiahBefore,
+        .speechWin = sText_IsiahWin,
+        .speechLose = sText_IsiahLose,
+        .monSet = gBattleFrontierTrainerMons_Isiah,
     },
-    [FRONTIER_TRAINER_GARRETT] = {
+    [FRONTIER_TRAINER_GARRETT] =
+    {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
         .trainerName = _("GARRETT"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_ENJOY, EC_WORD_COMICS, EC_WORD_AND, EC_WORD_THIS, EC_WORD_GAME},
-        .speechWin = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_THIS, EC_WORD_MUSIC, EC_WORD_IDOL, EC_WORD_TOO},
-        .speechLose = {EC_WORD_BUT, EC_WORD_I, EC_WORD_HAVE, EC_WORD_TO, EC_WORD_STUDY, EC_WORD_MORE},
-        .monSet = gBattleFrontierTrainerMons_Garrett
-=======
-        .speechBefore = COMPOUND_STRING("I enjoy comics and this game."),
-        .speechWin = COMPOUND_STRING("I like this music idol too."),
-        .speechLose = COMPOUND_STRING("But I have to study more."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GarrettBefore,
+        .speechWin = sText_GarrettWin,
+        .speechLose = sText_GarrettLose,
+        .monSet = gBattleFrontierTrainerMons_Garrett,
     },
-    [FRONTIER_TRAINER_HAYLIE] = {
+    [FRONTIER_TRAINER_HAYLIE] =
+    {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
         .trainerName = _("HAYLIE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WORRY, EC_WORD_TOO, EC_WORD_MUCH, EC_WORD_TO, EC_WORD_SLEEP},
-        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_GIVES, EC_WORD_ME, EC_WORD_A, EC_MOVE2(CALM_MIND)},
-        .speechLose = {EC_WORD_MY, EC_WORD_INSOMNIA, EC_WORD_WILL, EC_WORD_GET, EC_WORD_BAD, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Haylie
-=======
-        .speechBefore = COMPOUND_STRING("I worry too much to sleep."),
-        .speechWin = COMPOUND_STRING("A win gives me a calm mind."),
-        .speechLose = COMPOUND_STRING("My insomnia will get bad…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_HaylieBefore,
+        .speechWin = sText_HaylieWin,
+        .speechLose = sText_HaylieLose,
+        .monSet = gBattleFrontierTrainerMons_Haylie,
     },
-    [FRONTIER_TRAINER_MEGAN] = {
+    [FRONTIER_TRAINER_MEGAN] =
+    {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
         .trainerName = _("MEGAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_BELIEVE, EC_WORD_IN, EC_WORD_AN, EC_MOVE(AROMATHERAPY), EC_WORD_BATH},
-        .speechWin = {EC_WORD_I, EC_WORD_WANT, EC_WORD_A, EC_WORD_HEALTHY, EC_WORD_CLEAR_BODY, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_IF, EC_WORD_ONLY, EC_MOVE(AROMATHERAPY), EC_WORD_WERE, EC_WORD_LESS, EC_WORD_EXPENSIVE},
-        .monSet = gBattleFrontierTrainerMons_Megan
-=======
-        .speechBefore = COMPOUND_STRING("I believe in an aromatherapy bath."),
-        .speechWin = COMPOUND_STRING("I want a healthy clear body."),
-        .speechLose = COMPOUND_STRING("If only aromatherapy were less expensive."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MeganBefore,
+        .speechWin = sText_MeganWin,
+        .speechLose = sText_MeganLose,
+        .monSet = gBattleFrontierTrainerMons_Megan,
     },
-    [FRONTIER_TRAINER_ISSAC] = {
+    [FRONTIER_TRAINER_ISSAC] =
+    {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
         .trainerName = _("ISSAC"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_HOBBY, EC_WORD_QUES, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_ANY, EC_WORD_KIND, EC_WORD_OF, EC_MOVE2(WATER_SPORT)},
-        .speechLose = {EC_WORD_I, EC_WORD_DISLIKE, EC_WORD_ANY, EC_WORD_KIND, EC_WORD_OF, EC_MOVE2(MUD_SPORT)},
-        .monSet = gBattleFrontierTrainerMons_Issac
-=======
-        .speechBefore = COMPOUND_STRING("My hobby?"),
-        .speechWin = COMPOUND_STRING("I like any kind of water sport."),
-        .speechLose = COMPOUND_STRING("I dislike any kind of mud sport."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_IssacBefore,
+        .speechWin = sText_IssacWin,
+        .speechLose = sText_IssacLose,
+        .monSet = gBattleFrontierTrainerMons_Issac,
     },
-    [FRONTIER_TRAINER_QUINTON] = {
+    [FRONTIER_TRAINER_QUINTON] =
+    {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
         .trainerName = _("QUINTON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_SAD, EC_WORD_CAUSE, EC_WORD_I_AM, EC_WORD_TOO_WEAK, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_YOU, EC_WORD_AREN_T, EC_WORD_TOO_STRONG, EC_WORD_FOR, EC_WORD_ME, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_HEY, EC_WORD_WHAT, EC_WORD_DID, EC_WORD_I, EC_WORD_DO, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Quinton
-=======
-        .speechBefore = COMPOUND_STRING("I am sad cause I am too weak."),
-        .speechWin = COMPOUND_STRING("You aren't too strong for me."),
-        .speechLose = COMPOUND_STRING("Hey what did I do?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_QuintonBefore,
+        .speechWin = sText_QuintonWin,
+        .speechLose = sText_QuintonLose,
+        .monSet = gBattleFrontierTrainerMons_Quinton,
     },
-    [FRONTIER_TRAINER_SALMA] = {
+    [FRONTIER_TRAINER_SALMA] =
+    {
         .facilityClass = FACILITY_CLASS_LADY,
         .trainerName = _("SALMA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU_VE, EC_WORD_GOT, EC_WORD_YOUR, EC_WORD_HUSTLE, EC_WORD_ON, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_I, EC_WORD_WIN, EC_WORD_YOU, EC_WORD_HUSTLE, EC_WORD_ON, EC_WORD_OUT},
-        .speechLose = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_GET, EC_WORD_HOW, EC_WORD_I, EC_WORD_LOST},
-        .monSet = gBattleFrontierTrainerMons_Salma
-=======
-        .speechBefore = COMPOUND_STRING("You've got your hustle on!"),
-        .speechWin = COMPOUND_STRING("I win you hustle on out."),
-        .speechLose = COMPOUND_STRING("I don't get how I lost."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_SalmaBefore,
+        .speechWin = sText_SalmaWin,
+        .speechLose = sText_SalmaLose,
+        .monSet = gBattleFrontierTrainerMons_Salma,
     },
-    [FRONTIER_TRAINER_ANSLEY] = {
+    [FRONTIER_TRAINER_ANSLEY] =
+    {
         .facilityClass = FACILITY_CLASS_LADY,
         .trainerName = _("ANSLEY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_BORED, EC_WORD_ELLIPSIS, EC_WORD_DANCE, EC_WORD_FOR, EC_WORD_ME},
-        .speechWin = {EC_WORD_YOU_VE, EC_WORD_BORED, EC_WORD_ME, EC_WORD_SOME, EC_WORD_MORE, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_TAKE, EC_WORD_YOUR, EC_MOVE2(FRUSTRATION), EC_WORD_SOME, EC_WORD_OTHER, EC_WORD_PLACE},
-        .monSet = gBattleFrontierTrainerMons_Ansley
-=======
-        .speechBefore = COMPOUND_STRING("I am bored… Dance for me."),
-        .speechWin = COMPOUND_STRING("You've bored me some more."),
-        .speechLose = COMPOUND_STRING("Take your frustration some other place."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AnsleyBefore,
+        .speechWin = sText_AnsleyWin,
+        .speechLose = sText_AnsleyLose,
+        .monSet = gBattleFrontierTrainerMons_Ansley,
     },
-    [FRONTIER_TRAINER_HOLDEN] = {
+    [FRONTIER_TRAINER_HOLDEN] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_CATCHER,
         .trainerName = _("HOLDEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_LET_S, EC_WORD_COMMEMORATE, EC_WORD_MY, EC_WORD_COOLNESS, EC_WORD_IN, EC_WORD_BATTLE},
-        .speechWin = {EC_WORD_YOU_RE, EC_WORD_TOO_WEAK, EC_WORD_FOR, EC_WORD_ANY, EC_WORD_PRAISE, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_YOUR, EC_WORD_BATTLE, EC_WORD_SENSE, EC_WORD_IS, EC_WORD_AMUSING, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Holden
-=======
-        .speechBefore = COMPOUND_STRING("Let's commemorate my coolness in battle."),
-        .speechWin = COMPOUND_STRING("You're too weak for any praise."),
-        .speechLose = COMPOUND_STRING("Your battle sense is amusing."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_HoldenBefore,
+        .speechWin = sText_HoldenWin,
+        .speechLose = sText_HoldenLose,
+        .monSet = gBattleFrontierTrainerMons_Holden,
     },
-    [FRONTIER_TRAINER_LUCA] = {
+    [FRONTIER_TRAINER_LUCA] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_CATCHER,
         .trainerName = _("LUCA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WE, EC_WORD_WILL, EC_WORD_HAVE, EC_WORD_A, EC_WORD_COOL, EC_WORD_BATTLE},
-        .speechWin = {EC_WORD_I, EC_WORD_WON, EC_WORD_IN, EC_WORD_A, EC_WORD_COOL, EC_WORD_WAY},
-        .speechLose = {EC_WORD_HELLO, EC_WORD_QUES, EC_WORD_I_AM, EC_WORD_JUST, EC_WORD_A, EC_WORD_KID},
-        .monSet = gBattleFrontierTrainerMons_Luca
-=======
-        .speechBefore = COMPOUND_STRING("We will have a cool battle."),
-        .speechWin = COMPOUND_STRING("I won in a cool way."),
-        .speechLose = COMPOUND_STRING("Hello? I am just a kid."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LucaBefore,
+        .speechWin = sText_LucaWin,
+        .speechLose = sText_LucaLose,
+        .monSet = gBattleFrontierTrainerMons_Luca,
     },
-    [FRONTIER_TRAINER_JAMISON] = {
+    [FRONTIER_TRAINER_JAMISON] =
+    {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
         .trainerName = _("JAMISON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_MOVE2(SECRET_POWER), EC_WORD_IS, EC_WORD_OVERWHELMING, EC_WORD_TO, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_DID, EC_WORD_YOU, EC_WORD_SEE, EC_WORD_THAT, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I, EC_WORD_WILL, EC_WORD_USE, EC_MOVE(SMOKESCREEN), EC_WORD_TO, EC_WORD_ESCAPE},
-        .monSet = gBattleFrontierTrainerMons_Jamison
-=======
-        .speechBefore = COMPOUND_STRING("My secret power is overwhelming to Pokémon."),
-        .speechWin = COMPOUND_STRING("Did you see that?"),
-        .speechLose = COMPOUND_STRING("I will use smokescreen to escape."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JamisonBefore,
+        .speechWin = sText_JamisonWin,
+        .speechLose = sText_JamisonLose,
+        .monSet = gBattleFrontierTrainerMons_Jamison,
     },
-    [FRONTIER_TRAINER_GUNNAR] = {
+    [FRONTIER_TRAINER_GUNNAR] =
+    {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
         .trainerName = _("GUNNAR"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_MOVE(CUT), EC_WORD_DOWN, EC_WORD_EVERY, EC_WORD_OPPONENT, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_DON_T, EC_MOVE(GRUDGE), EC_WORD_ME, EC_WORD_FOR, EC_WORD_YOUR, EC_WORD_LOSS},
-        .speechLose = {EC_WORD_PLEASE, EC_WORD_LOSE, EC_WORD_THAT, EC_MOVE(SCARY_FACE), EC_WORD_OF, EC_WORD_YOURS},
-        .monSet = gBattleFrontierTrainerMons_Gunnar
-=======
-        .speechBefore = COMPOUND_STRING("I cut down every opponent."),
-        .speechWin = COMPOUND_STRING("Don't grudge me for your loss."),
-        .speechLose = COMPOUND_STRING("Please lose that scary face of yours."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GunnarBefore,
+        .speechWin = sText_GunnarWin,
+        .speechLose = sText_GunnarLose,
+        .monSet = gBattleFrontierTrainerMons_Gunnar,
     },
-    [FRONTIER_TRAINER_CRAIG] = {
+    [FRONTIER_TRAINER_CRAIG] =
+    {
         .facilityClass = FACILITY_CLASS_TUBER_M,
         .trainerName = _("CRAIG"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_WAIT, EC_WORD_FOR, EC_WORD_MY, EC_WORD_TRAIN},
-        .speechWin = {EC_WORD_MY, EC_WORD_TRAIN, EC_WORD_ISN_T, EC_WORD_HERE, EC_WORD_YET, EC_WORD_ELLIPSIS},
-        .speechLose = {EC_WORD_HERE_IT_IS, EC_WORD_MY, EC_WORD_TRAIN, EC_WORD_SEE_YA, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Craig
-=======
-        .speechBefore = COMPOUND_STRING("I can't wait for my train."),
-        .speechWin = COMPOUND_STRING("My train isn't here yet…"),
-        .speechLose = COMPOUND_STRING("Here it is my train see ya!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CraigBefore,
+        .speechWin = sText_CraigWin,
+        .speechLose = sText_CraigLose,
+        .monSet = gBattleFrontierTrainerMons_Craig,
     },
-    [FRONTIER_TRAINER_PIERCE] = {
+    [FRONTIER_TRAINER_PIERCE] =
+    {
         .facilityClass = FACILITY_CLASS_TUBER_M,
         .trainerName = _("PIERCE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THERE, EC_WORD_WAS, EC_WORD_A, EC_MOVE2(HEAT_WAVE), EC_WORD_LAST, EC_WORD_WEEK},
-        .speechWin = {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_TAKE, EC_WORD_A, EC_MOVE2(HEAT_WAVE), EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_DIDN_T, EC_WORD_IT, EC_MOVE(HAIL), EC_WORD_TOO, EC_WORD_QUES, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Pierce
-=======
-        .speechBefore = COMPOUND_STRING("There was a heat wave last week."),
-        .speechWin = COMPOUND_STRING("I can't take a heat wave."),
-        .speechLose = COMPOUND_STRING("Didn't it hail too?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_PierceBefore,
+        .speechWin = sText_PierceWin,
+        .speechLose = sText_PierceLose,
+        .monSet = gBattleFrontierTrainerMons_Pierce,
     },
-    [FRONTIER_TRAINER_REGINA] = {
+    [FRONTIER_TRAINER_REGINA] =
+    {
         .facilityClass = FACILITY_CLASS_TUBER_F,
         .trainerName = _("REGINA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_TO, EC_WORD_PLAY, EC_WORD_IN, EC_WORD_WATER},
-        .speechWin = {EC_WORD_I, EC_WORD_REFUSE, EC_WORD_TO, EC_WORD_COME, EC_WORD_OUT, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_NOT, EC_WORD_MUCH, EC_WORD_GOOD, EC_WORD_IN, EC_WORD_WATER},
-        .monSet = gBattleFrontierTrainerMons_Regina
-=======
-        .speechBefore = COMPOUND_STRING("I like to play in water."),
-        .speechWin = COMPOUND_STRING("I refuse to come out."),
-        .speechLose = COMPOUND_STRING("You're not much good in water."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ReginaBefore,
+        .speechWin = sText_ReginaWin,
+        .speechLose = sText_ReginaLose,
+        .monSet = gBattleFrontierTrainerMons_Regina,
     },
-    [FRONTIER_TRAINER_ALISON] = {
+    [FRONTIER_TRAINER_ALISON] =
+    {
         .facilityClass = FACILITY_CLASS_TUBER_F,
         .trainerName = _("ALISON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THIS, EC_WORD_KINDERGARTEN, EC_WORD_MAGAZINE, EC_WORD_IS, EC_WORD_TOO, EC_WORD_MUCH},
-        .speechWin = {EC_WORD_HOW, EC_WORD_TO, EC_WORD_BUG, EC_WORD_YOUR, EC_WORD_TEACHER, EC_WORD_QUES},
-        .speechLose = {EC_WORD_ENJOY, EC_WORD_A, EC_WORD_TASTY, EC_WORD_SCHOOL, EC_WORD_DIET, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Alison
-=======
-        .speechBefore = COMPOUND_STRING("This kindergarten magazine is too much."),
-        .speechWin = COMPOUND_STRING("How to bug your teacher?"),
-        .speechLose = COMPOUND_STRING("Enjoy a tasty school diet?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AlisonBefore,
+        .speechWin = sText_AlisonWin,
+        .speechLose = sText_AlisonLose,
+        .monSet = gBattleFrontierTrainerMons_Alison,
     },
-    [FRONTIER_TRAINER_HANK] = {
+    [FRONTIER_TRAINER_HANK] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
         .trainerName = _("HANK"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THERE, EC_WORD_IS, EC_WORD_A, EC_WORD_BUG, EC_WORD_EVENT, EC_WORD_SOON},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_A, EC_WORD_BUG, EC_WORD_FASHION, EC_WORD_SHOW, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_DON_T, EC_WORD_YOU, EC_WORD_LIKE, EC_WORD_BUG, EC_WORD_POKEMON, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Hank
-=======
-        .speechBefore = COMPOUND_STRING("There is a bug event soon."),
-        .speechWin = COMPOUND_STRING("It's a bug fashion show!"),
-        .speechLose = COMPOUND_STRING("Don't you like bug Pokémon?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_HankBefore,
+        .speechWin = sText_HankWin,
+        .speechLose = sText_HankLose,
+        .monSet = gBattleFrontierTrainerMons_Hank,
     },
-    [FRONTIER_TRAINER_EARL] = {
+    [FRONTIER_TRAINER_EARL] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
         .trainerName = _("EARL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THE, EC_WORD_INVINCIBLE, EC_WORD_BUG, EC_WORD_TRAINER, EC_WORD_IS, EC_WORD_HERE},
-        .speechWin = {EC_WORD_THE, EC_WORD_INVINCIBLE, EC_WORD_BUG, EC_WORD_TRAINER, EC_WORD_AM, EC_WORD_I},
-        .speechLose = {EC_WORD_SEE, EC_WORD_HOW, EC_WORD_FAST, EC_WORD_I, EC_WORD_RUN_AWAY, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Earl
-=======
-        .speechBefore = COMPOUND_STRING("The invincible bug trainer is here."),
-        .speechWin = COMPOUND_STRING("The invincible bug trainer am I."),
-        .speechLose = COMPOUND_STRING("See how fast I run away!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EarlBefore,
+        .speechWin = sText_EarlWin,
+        .speechLose = sText_EarlLose,
+        .monSet = gBattleFrontierTrainerMons_Earl,
     },
-    [FRONTIER_TRAINER_RAMIRO] = {
+    [FRONTIER_TRAINER_RAMIRO] =
+    {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
         .trainerName = _("RAMIRO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WENT, EC_WORD_TO, EC_WORD_A, EC_WORD_FISHING, EC_WORD_SCHOOL},
-        .speechWin = {EC_WORD_SERIOUSLY, EC_WORD_I_AM, EC_WORD_IN, EC_WORD_THE, EC_WORD_FISHING, EC_WORD_HALL_OF_FAME},
-        .speechLose = {EC_WORD_I, EC_WORD_WANT, EC_WORD_TO, EC_WORD_GO, EC_WORD_BACK, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Ramiro
-=======
-        .speechBefore = COMPOUND_STRING("I went to a fishing school."),
-        .speechWin = COMPOUND_STRING("Seriously I am in the fishing hall of fame."),
-        .speechLose = COMPOUND_STRING("I want to go back…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RamiroBefore,
+        .speechWin = sText_RamiroWin,
+        .speechLose = sText_RamiroLose,
+        .monSet = gBattleFrontierTrainerMons_Ramiro,
     },
-    [FRONTIER_TRAINER_HUNTER] = {
+    [FRONTIER_TRAINER_HUNTER] =
+    {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
         .trainerName = _("HUNTER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_SHOW, EC_WORD_ME, EC_WORD_A, EC_WORD_TOTALLY, EC_WORD_COOL, EC_MOVE(CROSS_CHOP)},
-        .speechWin = {EC_WORD_YOU_RE, EC_WORD_TOO_WEAK, EC_WORD_TO, EC_WORD_DO, EC_WORD_A, EC_MOVE(CROSS_CHOP)},
-        .speechLose = {EC_WORD_WAS, EC_WORD_IT, EC_WORD_A, EC_WORD_MISTAKE, EC_WORD_QUES, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Hunter
-=======
-        .speechBefore = COMPOUND_STRING("Show me a totally cool cross chop."),
-        .speechWin = COMPOUND_STRING("You're too weak to do a cross chop."),
-        .speechLose = COMPOUND_STRING("Was it a mistake?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_HunterBefore,
+        .speechWin = sText_HunterWin,
+        .speechLose = sText_HunterLose,
+        .monSet = gBattleFrontierTrainerMons_Hunter,
     },
-    [FRONTIER_TRAINER_AIDEN] = {
+    [FRONTIER_TRAINER_AIDEN] =
+    {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
         .trainerName = _("AIDEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_WORK, EC_WORD_IS, EC_WORD_MAKING, EC_WORD_ME, EC_WORD_HEALTHY},
-        .speechWin = {EC_WORD_YOU, EC_WORD_SEE, EC_WORD_QUES, EC_WORD_I_AM, EC_WORD_HEALTHY, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_MORE, EC_WORD_HEALTHY, EC_WORD_THAN, EC_WORD_I_AM, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Aiden
-=======
-        .speechBefore = COMPOUND_STRING("My work is making me healthy."),
-        .speechWin = COMPOUND_STRING("You see? I am healthy!"),
-        .speechLose = COMPOUND_STRING("You're more healthy than I am…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AidenBefore,
+        .speechWin = sText_AidenWin,
+        .speechLose = sText_AidenLose,
+        .monSet = gBattleFrontierTrainerMons_Aiden,
     },
-    [FRONTIER_TRAINER_XAVIER] = {
+    [FRONTIER_TRAINER_XAVIER] =
+    {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
         .trainerName = _("XAVIER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HEY_THERE, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_LOOK, EC_WORD_LOOK, EC_WORD_EXCL_EXCL},
-        .speechWin = {EC_WORD_GOOD_BYE, EC_WORD_AND, EC_WORD_THANK_YOU, EC_WORD_THAT_WAS, EC_WORD_FUNNY, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_WOWEE, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_NO, EC_WORD_NO, EC_WORD_EXCL_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Xavier
-=======
-        .speechBefore = COMPOUND_STRING("Hey there! Look look!!"),
-        .speechWin = COMPOUND_STRING("Good bye and thank you that was funny."),
-        .speechLose = COMPOUND_STRING("Wowee! No no!!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_XavierBefore,
+        .speechWin = sText_XavierWin,
+        .speechLose = sText_XavierLose,
+        .monSet = gBattleFrontierTrainerMons_Xavier,
     },
-    [FRONTIER_TRAINER_CLINTON] = {
+    [FRONTIER_TRAINER_CLINTON] =
+    {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
         .trainerName = _("CLINTON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WANT, EC_WORD_TO, EC_WORD_SEE, EC_WORD_MY, EC_MOVE(HYPNOSIS), EC_WORD_QUES},
-        .speechWin = {EC_WORD_YOUR, EC_MOVE2(FURY_SWIPES), EC_WORD_YOUR, EC_MOVE(STRENGTH), EC_WORD_YOUNG, EC_WORD_TRAINER},
-        .speechLose = {EC_WORD_TCH, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_WORD_I_AM, EC_WORD_TOO_WEAK, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Clinton
-=======
-        .speechBefore = COMPOUND_STRING("Want to see my hypnosis?"),
-        .speechWin = COMPOUND_STRING("Your fury swipes your strength young trainer."),
-        .speechLose = COMPOUND_STRING("Tch… I am too weak…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ClintonBefore,
+        .speechWin = sText_ClintonWin,
+        .speechLose = sText_ClintonLose,
+        .monSet = gBattleFrontierTrainerMons_Clinton,
     },
-    [FRONTIER_TRAINER_JESSE] = {
+    [FRONTIER_TRAINER_JESSE] =
+    {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
         .trainerName = _("JESSE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THIS, EC_WORD_BATTLE, EC_WORD_IS, EC_WORD_FOR, EC_WORD_MY, EC_WORD_MOTHER},
-        .speechWin = {EC_WORD_MOTHER, EC_WORD_WILL, EC_WORD_BE, EC_WORD_HAPPY, EC_WORD_FOR, EC_WORD_ME},
-        .speechLose = {EC_WORD_I, EC_WORD_WANT, EC_WORD_MY, EC_WORD_MOTHER, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Jesse
-=======
-        .speechBefore = COMPOUND_STRING("This battle is for my mother."),
-        .speechWin = COMPOUND_STRING("Mother will be happy for me."),
-        .speechLose = COMPOUND_STRING("I want my mother!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JesseBefore,
+        .speechWin = sText_JesseWin,
+        .speechLose = sText_JesseLose,
+        .monSet = gBattleFrontierTrainerMons_Jesse,
     },
-    [FRONTIER_TRAINER_EDUARDO] = {
+    [FRONTIER_TRAINER_EDUARDO] =
+    {
         .facilityClass = FACILITY_CLASS_GUITARIST,
         .trainerName = _("EDUARDO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_OUR, EC_WORD_MUSIC, EC_WORD_WILL, EC_WORD_PLAY, EC_WORD_ALL, EC_WORD_NIGHT},
-        .speechWin = {EC_WORD_NIGHTTIME, EC_WORD_IS, EC_WORD_WHEN, EC_WORD_I, EC_WORD_PLAY, EC_WORD_BEST},
-        .speechLose = {EC_WORD_LET_S, EC_WORD_PARTY, EC_WORD_UNTIL, EC_WORD_THE, EC_MOVE(MORNING_SUN), EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Eduardo
-=======
-        .speechBefore = COMPOUND_STRING("Our music will play all night."),
-        .speechWin = COMPOUND_STRING("Nighttime is when I play best."),
-        .speechLose = COMPOUND_STRING("Let's party until the morning sun!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EduardoBefore,
+        .speechWin = sText_EduardoWin,
+        .speechLose = sText_EduardoLose,
+        .monSet = gBattleFrontierTrainerMons_Eduardo,
     },
-    [FRONTIER_TRAINER_HAL] = {
+    [FRONTIER_TRAINER_HAL] =
+    {
         .facilityClass = FACILITY_CLASS_GUITARIST,
         .trainerName = _("HAL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_TRENDY, EC_WORD_AREN_T, EC_WORD_I, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_HIP_AND, EC_WORD_HAPPENING, EC_WORD_OH_YEAH, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_ALWAYS, EC_WORD_TRENDY, EC_WORD_THANK_YOU, EC_WORD_VERY, EC_WORD_MUCH},
-        .monSet = gBattleFrontierTrainerMons_Hal
-=======
-        .speechBefore = COMPOUND_STRING("I am trendy aren't I?"),
-        .speechWin = COMPOUND_STRING("I am feeling hip and happening oh, yeah!"),
-        .speechLose = COMPOUND_STRING("I am always trendy thank you very much."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_HalBefore,
+        .speechWin = sText_HalWin,
+        .speechLose = sText_HalLose,
+        .monSet = gBattleFrontierTrainerMons_Hal,
     },
-    [FRONTIER_TRAINER_GAGE] = {
+    [FRONTIER_TRAINER_GAGE] =
+    {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
         .trainerName = _("GAGE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HERE_IT_IS, EC_WORD_A, EC_WORD_FLYING, EC_WORD_TYPE, EC_WORD_HIDDEN, EC_WORD_MOVE},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_A, EC_WORD_FLYING, EC_WORD_TYPE, EC_WORD_VICTORY, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_IF_I_LOSE, EC_WORD_I, EC_WORD_JUST, EC_MOVE(FLY), EC_WORD_AWAY, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Gage
-=======
-        .speechBefore = COMPOUND_STRING("Here it is a flying type hidden move."),
-        .speechWin = COMPOUND_STRING("It's a flying type victory!"),
-        .speechLose = COMPOUND_STRING("If I lose I just fly away."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GageBefore,
+        .speechWin = sText_GageWin,
+        .speechLose = sText_GageLose,
+        .monSet = gBattleFrontierTrainerMons_Gage,
     },
-    [FRONTIER_TRAINER_ARNOLD] = {
+    [FRONTIER_TRAINER_ARNOLD] =
+    {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
         .trainerName = _("ARNOLD"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_WEIRD, EC_WORD_FROM, EC_WORD_A, EC_WORD_DREAM},
-        .speechWin = {EC_WORD_YOUR, EC_MOVE(SCARY_FACE), EC_WORD_WAS, EC_WORD_IN, EC_WORD_MY, EC_WORD_DREAM},
-        .speechLose = {EC_WORD_MY, EC_WORD_INCREDIBLE, EC_WORD_DREAM, EC_WORD_WAS, EC_WORD_SO, EC_WORD_WEIRD},
-        .monSet = gBattleFrontierTrainerMons_Arnold
-=======
-        .speechBefore = COMPOUND_STRING("I am feeling weird from a dream."),
-        .speechWin = COMPOUND_STRING("Your scary face was in my dream."),
-        .speechLose = COMPOUND_STRING("My incredible dream was so weird."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ArnoldBefore,
+        .speechWin = sText_ArnoldWin,
+        .speechLose = sText_ArnoldLose,
+        .monSet = gBattleFrontierTrainerMons_Arnold,
     },
-    [FRONTIER_TRAINER_JARRETT] = {
+    [FRONTIER_TRAINER_JARRETT] =
+    {
         .facilityClass = FACILITY_CLASS_SAILOR,
         .trainerName = _("JARRETT"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_COME_ON, EC_WORD_LET_S, EC_WORD_DANCE, EC_WORD_LIKE, EC_WORD_IT_S, EC_WORD_YESTERDAY},
-        .speechWin = {EC_WORD_YOU, EC_WORD_LIKE, EC_WORD_HOW, EC_WORD_I, EC_WORD_DANCE, EC_WORD_QUES},
-        .speechLose = {EC_WORD_YOU, EC_WORD_DON_T, EC_WORD_APPRECIATE, EC_WORD_HOW, EC_WORD_I, EC_WORD_DANCE},
-        .monSet = gBattleFrontierTrainerMons_Jarrett
-=======
-        .speechBefore = COMPOUND_STRING("Come on let's dance like it's yesterday."),
-        .speechWin = COMPOUND_STRING("You like how I dance?"),
-        .speechLose = COMPOUND_STRING("You don't appreciate how I dance."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JarrettBefore,
+        .speechWin = sText_JarrettWin,
+        .speechLose = sText_JarrettLose,
+        .monSet = gBattleFrontierTrainerMons_Jarrett,
     },
-    [FRONTIER_TRAINER_GARETT] = {
+    [FRONTIER_TRAINER_GARETT] =
+    {
         .facilityClass = FACILITY_CLASS_SAILOR,
         .trainerName = _("GARETT"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_GIRL, EC_WORD_GIVES, EC_WORD_ME, EC_WORD_A_LITTLE, EC_MOVE2(SWEET_KISS)},
-        .speechWin = {EC_WORD_MY, EC_WORD_GIRL, EC_WORD_FRIEND, EC_WORD_IS, EC_WORD_MY, EC_WORD_TREASURE},
-        .speechLose = {EC_WORD_A, EC_WORD_TREASURE, EC_WORD_ISN_T, EC_WORD_ALWAYS, EC_WORD_ABOUT, EC_WORD_MONEY},
-        .monSet = gBattleFrontierTrainerMons_Garett
-=======
-        .speechBefore = COMPOUND_STRING("My girl gives me a little sweet kiss."),
-        .speechWin = COMPOUND_STRING("My girl friend is my treasure."),
-        .speechLose = COMPOUND_STRING("A treasure isn't always about money."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GarettBefore,
+        .speechWin = sText_GarettWin,
+        .speechLose = sText_GarettLose,
+        .monSet = gBattleFrontierTrainerMons_Garett,
     },
-    [FRONTIER_TRAINER_EMANUEL] = {
+    [FRONTIER_TRAINER_EMANUEL] =
+    {
         .facilityClass = FACILITY_CLASS_HIKER,
         .trainerName = _("EMANUEL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_SMARTNESS, EC_WORD_ALONE, EC_WORD_WON_T, EC_WORD_MAKE, EC_WORD_YOU, EC_WORD_WIN},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_NOT_VERY, EC_WORD_SMART, EC_WORD_BUT, EC_WORD_I, EC_WORD_WON},
-        .speechLose = {EC_WORD_HOW, EC_WORD_DID, EC_WORD_YOU, EC_MOVE2(FAKE_OUT), EC_WORD_ME, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Emanuel
-=======
-        .speechBefore = COMPOUND_STRING("Smartness alone won't make you win."),
-        .speechWin = COMPOUND_STRING("I am not very smart but I won."),
-        .speechLose = COMPOUND_STRING("How did you fake out me?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EmanuelBefore,
+        .speechWin = sText_EmanuelWin,
+        .speechLose = sText_EmanuelLose,
+        .monSet = gBattleFrontierTrainerMons_Emanuel,
     },
-    [FRONTIER_TRAINER_GUSTAVO] = {
+    [FRONTIER_TRAINER_GUSTAVO] =
+    {
         .facilityClass = FACILITY_CLASS_HIKER,
         .trainerName = _("GUSTAVO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_MOVE(CHARGE), EC_WORD_EXCL, EC_EMPTY_WORD, EC_MOVE(CHARGE), EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_SURRENDER, EC_WORD_QUES, EC_EMPTY_WORD, EC_WORD_SO, EC_WORD_SOON, EC_WORD_QUES},
-        .speechLose = {EC_WORD_YOU, EC_WORD_CAN_T, EC_WORD_MAKE, EC_WORD_ME, EC_WORD_SURRENDER, EC_WORD_YET},
-        .monSet = gBattleFrontierTrainerMons_Gustavo
-=======
-        .speechBefore = COMPOUND_STRING("Charge! Charge!!"),
-        .speechWin = COMPOUND_STRING("Surrender? So soon?"),
-        .speechLose = COMPOUND_STRING("You can't make me surrender yet."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GustavoBefore,
+        .speechWin = sText_GustavoWin,
+        .speechLose = sText_GustavoLose,
+        .monSet = gBattleFrontierTrainerMons_Gustavo,
     },
-    [FRONTIER_TRAINER_KAMERON] = {
+    [FRONTIER_TRAINER_KAMERON] =
+    {
         .facilityClass = FACILITY_CLASS_KINDLER,
         .trainerName = _("KAMERON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_TAKE_THAT, EC_WORD_EXCL, EC_WORD_IT_S, EC_WORD_MY, EC_WORD_FIERY, EC_MOVE2(TRICK)},
-        .speechWin = {EC_WORD_DID, EC_WORD_MY, EC_WORD_FIERY, EC_MOVE2(TRICK), EC_MOVE(ASTONISH), EC_WORD_QUES},
-        .speechLose = {EC_WORD_YOU, EC_WORD_DIDN_T, EC_WORD_FALL, EC_WORD_FOR, EC_WORD_MY, EC_MOVE2(TRICK)},
-        .monSet = gBattleFrontierTrainerMons_Kameron
-=======
-        .speechBefore = COMPOUND_STRING("Take that! It's my fiery trick."),
-        .speechWin = COMPOUND_STRING("Did my fiery trick astonish?"),
-        .speechLose = COMPOUND_STRING("You didn't fall for my trick."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KameronBefore,
+        .speechWin = sText_KameronWin,
+        .speechLose = sText_KameronLose,
+        .monSet = gBattleFrontierTrainerMons_Kameron,
     },
-    [FRONTIER_TRAINER_ALFREDO] = {
+    [FRONTIER_TRAINER_ALFREDO] =
+    {
         .facilityClass = FACILITY_CLASS_KINDLER,
         .trainerName = _("ALFREDO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A, EC_WORD_FIERY, EC_WORD_GOURMET, EC_WORD_AM, EC_WORD_I, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_A, EC_WORD_TASTY, EC_WORD_GOURMET, EC_WORD_VICTORY, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_WHAT, EC_WORD_A, EC_WORD_DISASTER, EC_WORD_THAT_WAS, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Alfredo
-=======
-        .speechBefore = COMPOUND_STRING("A fiery gourmet am I!"),
-        .speechWin = COMPOUND_STRING("It's a tasty gourmet victory!"),
-        .speechLose = COMPOUND_STRING("What a disaster that was!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AlfredoBefore,
+        .speechWin = sText_AlfredoWin,
+        .speechLose = sText_AlfredoLose,
+        .monSet = gBattleFrontierTrainerMons_Alfredo,
     },
-    [FRONTIER_TRAINER_RUBEN] = {
+    [FRONTIER_TRAINER_RUBEN] =
+    {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
         .trainerName = _("RUBEN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_WAIT, EC_WORD_TO, EC_WORD_GET, EC_WORD_GOING},
-        .speechWin = {EC_WORD_GET, EC_WORD_GOING, EC_WORD_EXCL, EC_WORD_THIS, EC_WORD_IS, EC_WORD_GOOD_BYE},
-        .speechLose = {EC_WORD_I_VE, EC_WORD_GOT, EC_WORD_TO, EC_WORD_GET, EC_WORD_GOING, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Ruben
-=======
-        .speechBefore = COMPOUND_STRING("I can't wait to get going."),
-        .speechWin = COMPOUND_STRING("Get going! This is good bye."),
-        .speechLose = COMPOUND_STRING("I've got to get going."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RubenBefore,
+        .speechWin = sText_RubenWin,
+        .speechLose = sText_RubenLose,
+        .monSet = gBattleFrontierTrainerMons_Ruben,
     },
-    [FRONTIER_TRAINER_LAMAR] = {
+    [FRONTIER_TRAINER_LAMAR] =
+    {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
         .trainerName = _("LAMAR"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A, EC_MOVE2(PRESENT), EC_WORD_FOR, EC_WORD_ME, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_MMM, EC_WORD_THIS, EC_WORD_IS, EC_WORD_QUITE, EC_WORD_TASTY, EC_WORD_ELLIPSIS},
-        .speechLose = {EC_WORD_OH, EC_WORD_IT_S, EC_WORD_A, EC_WORD_GAME, EC_WORD_IS_IT_QUES, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Lamar
-=======
-        .speechBefore = COMPOUND_STRING("A present for me?"),
-        .speechWin = COMPOUND_STRING("Mmm this is quite tasty…"),
-        .speechLose = COMPOUND_STRING("Oh it's a game is it ques."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LamarBefore,
+        .speechWin = sText_LamarWin,
+        .speechLose = sText_LamarLose,
+        .monSet = gBattleFrontierTrainerMons_Lamar,
     },
-    [FRONTIER_TRAINER_JAXON] = {
+    [FRONTIER_TRAINER_JAXON] =
+    {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
         .trainerName = _("JAXON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A, EC_WORD_SHELL_ARMOR, EC_WORD_IS, EC_WORD_WHAT, EC_WORD_I, EC_WORD_WANT},
-        .speechWin = {EC_WORD_MY, EC_WORD_FATHER, EC_WORD_AND, EC_WORD_MOTHER, EC_WORD_WON_T, EC_WORD_ACCEPT},
-        .speechLose = {EC_WORD_PLEASE, EC_WORD_I, EC_WORD_NEED, EC_WORD_A, EC_WORD_SHELL_ARMOR, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Jaxon
-=======
-        .speechBefore = COMPOUND_STRING("A shell armor is what I want."),
-        .speechWin = COMPOUND_STRING("My father and mother won't accept."),
-        .speechLose = COMPOUND_STRING("Please I need a shell armor!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JaxonBefore,
+        .speechWin = sText_JaxonWin,
+        .speechLose = sText_JaxonLose,
+        .monSet = gBattleFrontierTrainerMons_Jaxon,
     },
-    [FRONTIER_TRAINER_LOGAN] = {
+    [FRONTIER_TRAINER_LOGAN] =
+    {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
         .trainerName = _("LOGAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_IF_I_LOSE, EC_WORD_I, EC_WORD_WILL, EC_WORD_STUDY, EC_WORD_FOR, EC_WORD_SCHOOL},
-        .speechWin = {EC_WORD_ME, EC_WORD_STUDY, EC_WORD_QUES, EC_WORD_NOT_VERY, EC_WORD_LIKELY_TO, EC_WORD_SEE},
-        .speechLose = {EC_WORD_NO, EC_WORD_THANKS, EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_TO, EC_WORD_SLEEP},
-        .monSet = gBattleFrontierTrainerMons_Logan
-=======
-        .speechBefore = COMPOUND_STRING("If I lose I will study for school."),
-        .speechWin = COMPOUND_STRING("Me study? Not very likely to see."),
-        .speechLose = COMPOUND_STRING("No thanks I am going to sleep."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LoganBefore,
+        .speechWin = sText_LoganWin,
+        .speechLose = sText_LoganLose,
+        .monSet = gBattleFrontierTrainerMons_Logan,
     },
-    [FRONTIER_TRAINER_EMILEE] = {
+    [FRONTIER_TRAINER_EMILEE] =
+    {
         .facilityClass = FACILITY_CLASS_LASS,
         .trainerName = _("EMILEE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_IS, EC_WORD_THIS, EC_WORD_KIND, EC_WORD_OF, EC_WORD_BATTLE, EC_WORD_OK_QUES},
-        .speechWin = {EC_WORD_LET_S, EC_WORD_GO, EC_WORD_FOR, EC_WORD_AN, EC_MOVE(ICY_WIND), EC_MOVE2(SURF)},
-        .speechLose = {EC_WORD_HOW, EC_WORD_ABOUT, EC_WORD_A, EC_MOVE(ROCK_SLIDE), EC_WORD_SHOW, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Emilee
-=======
-        .speechBefore = COMPOUND_STRING("Is this kind of battle ok ques."),
-        .speechWin = COMPOUND_STRING("Let's go for an icy wind surf."),
-        .speechLose = COMPOUND_STRING("How about a rock slide show?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EmileeBefore,
+        .speechWin = sText_EmileeWin,
+        .speechLose = sText_EmileeLose,
+        .monSet = gBattleFrontierTrainerMons_Emilee,
     },
-    [FRONTIER_TRAINER_JOSIE] = {
+    [FRONTIER_TRAINER_JOSIE] =
+    {
         .facilityClass = FACILITY_CLASS_LASS,
         .trainerName = _("JOSIE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A, EC_WORD_POKEMON, EC_WORD_FASHION, EC_WORD_CONTEST, EC_WORD_IS, EC_WORD_PRETTY},
-        .speechWin = {EC_WORD_I, EC_WORD_REALLY, EC_WORD_LIKE, EC_WORD_MODE, EC_WORD_FASHION, EC_WORD_THINGS},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_TOTALLY, EC_WORD_LACKING, EC_WORD_IN, EC_WORD_FASHION, EC_WORD_SENSE},
-        .monSet = gBattleFrontierTrainerMons_Josie
-=======
-        .speechBefore = COMPOUND_STRING("A Pokémon fashion contest is pretty."),
-        .speechWin = COMPOUND_STRING("I really like mode fashion things."),
-        .speechLose = COMPOUND_STRING("You're totally lacking in fashion sense."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JosieBefore,
+        .speechWin = sText_JosieWin,
+        .speechLose = sText_JosieLose,
+        .monSet = gBattleFrontierTrainerMons_Josie,
     },
-    [FRONTIER_TRAINER_ARMANDO] = {
+    [FRONTIER_TRAINER_ARMANDO] =
+    {
         .facilityClass = FACILITY_CLASS_CAMPER,
         .trainerName = _("ARMANDO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_NEED, EC_WORD_MORE, EC_WORD_GRASS, EC_WORD_TYPE, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_TRADE, EC_WORD_ME, EC_WORD_A, EC_WORD_GRASS, EC_WORD_POKEMON, EC_WORD_PLEASE},
-        .speechLose = {EC_WORD_THERE, EC_WORD_AREN_T, EC_WORD_ENOUGH, EC_WORD_GRASS, EC_WORD_TYPE, EC_WORD_POKEMON},
-        .monSet = gBattleFrontierTrainerMons_Armando
-=======
-        .speechBefore = COMPOUND_STRING("I need more grass type Pokémon."),
-        .speechWin = COMPOUND_STRING("Trade me a grass Pokémon please."),
-        .speechLose = COMPOUND_STRING("There aren't enough grass type Pokémon."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ArmandoBefore,
+        .speechWin = sText_ArmandoWin,
+        .speechLose = sText_ArmandoLose,
+        .monSet = gBattleFrontierTrainerMons_Armando,
     },
-    [FRONTIER_TRAINER_SKYLER] = {
+    [FRONTIER_TRAINER_SKYLER] =
+    {
         .facilityClass = FACILITY_CLASS_CAMPER,
         .trainerName = _("SKYLER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_MOVE2(INGRAIN), EC_WORD_IS, EC_WORD_MY, EC_WORD_CHOICE, EC_WORD_BATTLE, EC_WORD_MOVE},
-        .speechWin = {EC_WORD_YOU, EC_WORD_CAN_T, EC_WORD_MOVE, EC_WORD_ME, EC_WORD_NOW, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_YOU, EC_MOVE(CUT), EC_WORD_ME, EC_WORD_DOWN, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Skyler
-=======
-        .speechBefore = COMPOUND_STRING("Ingrain is my choice battle move."),
-        .speechWin = COMPOUND_STRING("You can't move me now!"),
-        .speechLose = COMPOUND_STRING("You cut me down…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_SkylerBefore,
+        .speechWin = sText_SkylerWin,
+        .speechLose = sText_SkylerLose,
+        .monSet = gBattleFrontierTrainerMons_Skyler,
     },
-    [FRONTIER_TRAINER_RUTH] = {
+    [FRONTIER_TRAINER_RUTH] =
+    {
         .facilityClass = FACILITY_CLASS_PICNICKER,
         .trainerName = _("RUTH"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WANT, EC_WORD_TO, EC_WORD_ENJOY, EC_WORD_THIS, EC_WORD_BATTLE},
-        .speechWin = {EC_WORD_THAT_WAS, EC_WORD_MUCH, EC_WORD_TOO, EC_WORD_EASY, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_PLEASE, EC_WORD_STOP, EC_WORD_I, EC_WORD_DON_T, EC_WORD_ENJOY, EC_WORD_THIS},
-        .monSet = gBattleFrontierTrainerMons_Ruth
-=======
-        .speechBefore = COMPOUND_STRING("I want to enjoy this battle."),
-        .speechWin = COMPOUND_STRING("That was much too easy!"),
-        .speechLose = COMPOUND_STRING("Please stop I don't enjoy this."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RuthBefore,
+        .speechWin = sText_RuthWin,
+        .speechLose = sText_RuthLose,
+        .monSet = gBattleFrontierTrainerMons_Ruth,
     },
-    [FRONTIER_TRAINER_MELODY] = {
+    [FRONTIER_TRAINER_MELODY] =
+    {
         .facilityClass = FACILITY_CLASS_PICNICKER,
         .trainerName = _("MELODY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_MOVE2(WISH), EC_WORD_SUNDAY, EC_WORD_IS, EC_WORD_A, EC_MOVE2(SUNNY_DAY)},
-        .speechWin = {EC_WORD_SUNDAY, EC_WORD_SEEMS, EC_WORD_FOREVER, EC_WORD_TO, EC_WORD_COME, EC_WORD_ELLIPSIS},
-        .speechLose = {EC_WORD_THE, EC_WORD_FORECAST, EC_WORD_SAYS, EC_WORD_IT, EC_WORD_WILL, EC_MOVE(HAIL)},
-        .monSet = gBattleFrontierTrainerMons_Melody
-=======
-        .speechBefore = COMPOUND_STRING("I wish sunday is a sunny day."),
-        .speechWin = COMPOUND_STRING("Sunday seems forever to come…"),
-        .speechLose = COMPOUND_STRING("The forecast says it will hail."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MelodyBefore,
+        .speechWin = sText_MelodyWin,
+        .speechLose = sText_MelodyLose,
+        .monSet = gBattleFrontierTrainerMons_Melody,
     },
-    [FRONTIER_TRAINER_PEDRO] = {
+    [FRONTIER_TRAINER_PEDRO] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
         .trainerName = _("PEDRO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A, EC_WORD_SWIFT_SWIM, EC_WORD_WILL, EC_WORD_DO, EC_WORD_YOU, EC_WORD_GOOD},
-        .speechWin = {EC_WORD_THAT_S, EC_WORD_HOW, EC_WORD_I, EC_WORD_SINK, EC_WORD_AN, EC_WORD_OPPONENT},
-        .speechLose = {EC_WORD_UH_OH, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_A, EC_MOVE(WHIRLPOOL), EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Pedro
-=======
-        .speechBefore = COMPOUND_STRING("A swift swim will do you good."),
-        .speechWin = COMPOUND_STRING("That's how I sink an opponent."),
-        .speechLose = COMPOUND_STRING("Uh-oh! A whirlpool!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_PedroBefore,
+        .speechWin = sText_PedroWin,
+        .speechLose = sText_PedroLose,
+        .monSet = gBattleFrontierTrainerMons_Pedro,
     },
-    [FRONTIER_TRAINER_ERICK] = {
+    [FRONTIER_TRAINER_ERICK] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
         .trainerName = _("ERICK"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WILL, EC_MOVE2(TACKLE), EC_WORD_YOU, EC_WORD_DOWN, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_DON_T, EC_WORD_YOU, EC_WORD_RUN_AWAY, EC_WORD_YOU, EC_WORD_LOSER, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I, EC_WORD_DIDN_T, EC_WORD_THINK, EC_WORD_YOU, EC_WORD_WOULD, EC_MOVE(COUNTER)},
-        .monSet = gBattleFrontierTrainerMons_Erick
-=======
-        .speechBefore = COMPOUND_STRING("I will tackle you down!"),
-        .speechWin = COMPOUND_STRING("Don't you run away you loser!"),
-        .speechLose = COMPOUND_STRING("I didn't think you would counter."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ErickBefore,
+        .speechWin = sText_ErickWin,
+        .speechLose = sText_ErickLose,
+        .monSet = gBattleFrontierTrainerMons_Erick,
     },
-    [FRONTIER_TRAINER_ELAINE] = {
+    [FRONTIER_TRAINER_ELAINE] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
         .trainerName = _("ELAINE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_HEROINE, EC_WORD_ADVENTURE, EC_WORD_ISN_T, EC_WORD_GOING, EC_WORD_WELL},
-        .speechWin = {EC_WORD_THANK_YOU, EC_WORD_EXCL, EC_WORD_THAT_S, EC_WORD_WHAT, EC_WORD_I, EC_WORD_NEED},
-        .speechLose = {EC_WORD_I, EC_WORD_KNOW, EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_A, EC_WORD_HEROINE},
-        .monSet = gBattleFrontierTrainerMons_Elaine
-=======
-        .speechBefore = COMPOUND_STRING("My heroine adventure isn't going well."),
-        .speechWin = COMPOUND_STRING("Thank you! That's what I need."),
-        .speechLose = COMPOUND_STRING("I know I am not a heroine."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ElaineBefore,
+        .speechWin = sText_ElaineWin,
+        .speechLose = sText_ElaineLose,
+        .monSet = gBattleFrontierTrainerMons_Elaine,
     },
-    [FRONTIER_TRAINER_JOYCE] = {
+    [FRONTIER_TRAINER_JOYCE] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
         .trainerName = _("JOYCE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU, EC_WORD_MAKE, EC_WORD_ME, EC_WORD_GO, EC_WORD_AHAHA, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_LALALA, EC_WORD_NO, EC_WORD_LOSING, EC_WORD_FOR, EC_WORD_ME, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_LALALA, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_WORD_HUH_QUES, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Joyce
-=======
-        .speechBefore = COMPOUND_STRING("You make me go ahaha!"),
-        .speechWin = COMPOUND_STRING("Lalala no losing for me!"),
-        .speechLose = COMPOUND_STRING("Lalala… Huh ques."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JoyceBefore,
+        .speechWin = sText_JoyceWin,
+        .speechLose = sText_JoyceLose,
+        .monSet = gBattleFrontierTrainerMons_Joyce,
     },
-    [FRONTIER_TRAINER_TODD] = {
+    [FRONTIER_TRAINER_TODD] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
         .trainerName = _("TODD"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU_RE, EC_WORD_A, EC_WORD_LIGHTNINGROD, EC_WORD_FOR, EC_WORD_MY, EC_WORD_POWER},
-        .speechWin = {EC_WORD_THAT_S, EC_WORD_ALL, EC_WORD_YOU, EC_WORD_COULD, EC_MOVE(ABSORB), EC_WORD_QUES},
-        .speechLose = {EC_WORD_YOU, EC_MOVE2(REFLECT), EC_WORD_MY, EC_WORD_POWER, EC_WORD_BACK, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Todd
-=======
-        .speechBefore = COMPOUND_STRING("You're a lightningrod for my power."),
-        .speechWin = COMPOUND_STRING("That's all you could absorb?"),
-        .speechLose = COMPOUND_STRING("You reflect my power back?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ToddBefore,
+        .speechWin = sText_ToddWin,
+        .speechLose = sText_ToddLose,
+        .monSet = gBattleFrontierTrainerMons_Todd,
     },
-    [FRONTIER_TRAINER_GAVIN] = {
+    [FRONTIER_TRAINER_GAVIN] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
         .trainerName = _("GAVIN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WILL, EC_MOVE(BIDE), EC_WORD_MY, EC_WORD_TIME, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_OVER, EC_WORD_SO, EC_WORD_SOON, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_MY, EC_WORD_MISTAKE, EC_WORD_WAS, EC_WORD_TOO, EC_WORD_EXPENSIVE, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Gavin
-=======
-        .speechBefore = COMPOUND_STRING("I will bide my time."),
-        .speechWin = COMPOUND_STRING("It's over so soon?"),
-        .speechLose = COMPOUND_STRING("My mistake was too expensive…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GavinBefore,
+        .speechWin = sText_GavinWin,
+        .speechLose = sText_GavinLose,
+        .monSet = gBattleFrontierTrainerMons_Gavin,
     },
-    [FRONTIER_TRAINER_MALORY] = {
+    [FRONTIER_TRAINER_MALORY] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
         .trainerName = _("MALORY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_PROMISE, EC_WORD_TO, EC_WORD_SHOW, EC_WORD_ME, EC_WORD_CUTE, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_GIGGLE, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_WORD_THANK_YOU, EC_WORD_SO, EC_WORD_MUCH},
-        .speechLose = {EC_WORD_TCH, EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_AREN_T, EC_WORD_VERY, EC_WORD_NICE},
-        .monSet = gBattleFrontierTrainerMons_Malory
-=======
-        .speechBefore = COMPOUND_STRING("Promise to show me cute Pokémon."),
-        .speechWin = COMPOUND_STRING("Giggle… Thank you so much."),
-        .speechLose = COMPOUND_STRING("Tch your Pokémon aren't very nice."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MaloryBefore,
+        .speechWin = sText_MaloryWin,
+        .speechLose = sText_MaloryLose,
+        .monSet = gBattleFrontierTrainerMons_Malory,
     },
-    [FRONTIER_TRAINER_ESTHER] = {
+    [FRONTIER_TRAINER_ESTHER] =
+    {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
         .trainerName = _("ESTHER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WANT, EC_WORD_A, EC_WORD_NICE, EC_MOVE2(PRESENT), EC_WORD_ELLIPSIS},
-        .speechWin = {EC_WORD_PLEASE, EC_WORD_GET, EC_WORD_ME, EC_WORD_A, EC_WORD_POKEMON, EC_WORD_GAME},
-        .speechLose = {EC_WORD_MESSAGE, EC_WORD_CARDS, EC_WORD_MAKE, EC_WORD_A, EC_WORD_WEAK, EC_MOVE2(PRESENT)},
-        .monSet = gBattleFrontierTrainerMons_Esther
-=======
-        .speechBefore = COMPOUND_STRING("I want a nice present…"),
-        .speechWin = COMPOUND_STRING("Please get me a Pokémon game."),
-        .speechLose = COMPOUND_STRING("Message cards make a weak present."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EstherBefore,
+        .speechWin = sText_EstherWin,
+        .speechLose = sText_EstherLose,
+        .monSet = gBattleFrontierTrainerMons_Esther,
     },
-    [FRONTIER_TRAINER_OSCAR] = {
+    [FRONTIER_TRAINER_OSCAR] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
         .trainerName = _("OSCAR"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_LET_S, EC_WORD_SEE, EC_WORD_YOUR, EC_WORD_POWER, EC_WORD_IN, EC_WORD_FULL},
-        .speechWin = {EC_WORD_THAT_WAS, EC_WORD_NOT, EC_WORD_YOUR, EC_WORD_FULL, EC_WORD_POWER, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_NOT, EC_WORD_FUNNY, EC_WORD_ELLIPSIS, EC_WORD_YOU_RE, EC_WORD_TOO_STRONG, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Oscar
-=======
-        .speechBefore = COMPOUND_STRING("Let's see your power in full."),
-        .speechWin = COMPOUND_STRING("That was not your full power!"),
-        .speechLose = COMPOUND_STRING("Not funny… You're too strong."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_OscarBefore,
+        .speechWin = sText_OscarWin,
+        .speechLose = sText_OscarLose,
+        .monSet = gBattleFrontierTrainerMons_Oscar,
     },
-    [FRONTIER_TRAINER_WILSON] = {
+    [FRONTIER_TRAINER_WILSON] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
         .trainerName = _("WILSON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WORK, EC_WORD_IS, EC_WORD_MAKING, EC_WORD_ME, EC_WORD_AN, EC_WORD_EARLY_BIRD},
-        .speechWin = {EC_WORD_ALL, EC_WORD_WORK, EC_WORD_AND, EC_WORD_NO, EC_WORD_PLAY, EC_WORD_ELLIPSIS},
-        .speechLose = {EC_MOVE(ENDURE), EC_WORD_IS, EC_WORD_ALL, EC_WORD_I, EC_WORD_CAN, EC_WORD_DO},
-        .monSet = gBattleFrontierTrainerMons_Wilson
-=======
-        .speechBefore = COMPOUND_STRING("Work is making me an early bird."),
-        .speechWin = COMPOUND_STRING("All work and no play…"),
-        .speechLose = COMPOUND_STRING("Endure is all I can do."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_WilsonBefore,
+        .speechWin = sText_WilsonWin,
+        .speechLose = sText_WilsonLose,
+        .monSet = gBattleFrontierTrainerMons_Wilson,
     },
-    [FRONTIER_TRAINER_CLARE] = {
+    [FRONTIER_TRAINER_CLARE] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
         .trainerName = _("CLARE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YAY, EC_WORD_EXCL, EC_WORD_A, EC_WORD_TOUGH, EC_WORD_TRAINER, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_AWW, EC_WORD_EXCL, EC_WORD_A, EC_WORD_WIMPY, EC_WORD_TRAINER, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_COOL, EC_WORD_EXCL, EC_WORD_A, EC_WORD_GENIUS, EC_WORD_TRAINER, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Clare
-=======
-        .speechBefore = COMPOUND_STRING("Yay! A tough trainer!"),
-        .speechWin = COMPOUND_STRING("Aww! A wimpy trainer!"),
-        .speechLose = COMPOUND_STRING("Cool! A genius trainer!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ClareBefore,
+        .speechWin = sText_ClareWin,
+        .speechLose = sText_ClareLose,
+        .monSet = gBattleFrontierTrainerMons_Clare,
     },
-    [FRONTIER_TRAINER_TESS] = {
+    [FRONTIER_TRAINER_TESS] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
         .trainerName = _("TESS"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WANT, EC_WORD_SOME, EC_POKEMON(GULPIN), EC_WORD_DESIGN, EC_WORD_SWEETS, EC_WORD_QUES},
-        .speechWin = {EC_WORD_THEY_RE, EC_WORD_A, EC_WORD_SECRET, EC_WORD_POKEMON, EC_WORD_GOURMET, EC_WORD_ITEM},
-        .speechLose = {EC_WORD_THEY_RE, EC_WORD_TASTY, EC_WORD_EXCL, EC_WORD_REFRESHING, EC_WORD_TOO, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Tess
-=======
-        .speechBefore = COMPOUND_STRING("Want some Gulpin design sweets?"),
-        .speechWin = COMPOUND_STRING("They're a secret Pokémon gourmet item."),
-        .speechLose = COMPOUND_STRING("They're tasty! Refreshing too!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_TessBefore,
+        .speechWin = sText_TessWin,
+        .speechLose = sText_TessLose,
+        .monSet = gBattleFrontierTrainerMons_Tess,
     },
-    [FRONTIER_TRAINER_LEON] = {
+    [FRONTIER_TRAINER_LEON] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
         .trainerName = _("LEON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_BETTER, EC_WORD_THAN, EC_WORD_ANY, EC_WORD_OTHER, EC_WORD_TRAINER},
-        .speechWin = {EC_WORD_I, EC_WORD_DID, EC_WORD_IT, EC_MOVE2(JUMP_KICK), EC_WORD_FOR, EC_WORD_JOY},
-        .speechLose = {EC_WORD_BACK, EC_WORD_HOME, EC_WORD_I, EC_WORD_WILL, EC_WORD_GO, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Leon
-=======
-        .speechBefore = COMPOUND_STRING("I am better than any other trainer."),
-        .speechWin = COMPOUND_STRING("I did it jump kick for joy."),
-        .speechLose = COMPOUND_STRING("Back home I will go…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LeonBefore,
+        .speechWin = sText_LeonWin,
+        .speechLose = sText_LeonLose,
+        .monSet = gBattleFrontierTrainerMons_Leon,
     },
-    [FRONTIER_TRAINER_ALONZO] = {
+    [FRONTIER_TRAINER_ALONZO] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
         .trainerName = _("ALONZO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_VE, EC_WORD_NOT, EC_WORD_LOST, EC_WORD_ONCE, EC_WORD_YET, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_YOUR, EC_WORD_SAD, EC_WORD_LOOK, EC_WORD_BECOMES, EC_WORD_YOU, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_BELIEVE, EC_WORD_THIS, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Alonzo
-=======
-        .speechBefore = COMPOUND_STRING("I've not lost once yet!"),
-        .speechWin = COMPOUND_STRING("Your sad look becomes you."),
-        .speechLose = COMPOUND_STRING("I don't believe this…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AlonzoBefore,
+        .speechWin = sText_AlonzoWin,
+        .speechLose = sText_AlonzoLose,
+        .monSet = gBattleFrontierTrainerMons_Alonzo,
     },
-    [FRONTIER_TRAINER_VINCE] = {
+    [FRONTIER_TRAINER_VINCE] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
         .trainerName = _("VINCE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THE, EC_WORD_TOP, EC_WORD_TRAINER, EC_WORD_THAT_S, EC_WORD_ME, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_THE, EC_WORD_TOP, EC_WORD_RANK, EC_WORD_BELONGS_TO, EC_WORD_ME, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I, EC_WORD_WILL, EC_WORD_APPEAL, EC_WORD_THIS, EC_MOVE(OUTRAGE), EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Vince
-=======
-        .speechBefore = COMPOUND_STRING("The top trainer that's me!"),
-        .speechWin = COMPOUND_STRING("The top rank belongs to me!"),
-        .speechLose = COMPOUND_STRING("I will appeal this outrage!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_VinceBefore,
+        .speechWin = sText_VinceWin,
+        .speechLose = sText_VinceLose,
+        .monSet = gBattleFrontierTrainerMons_Vince,
     },
-    [FRONTIER_TRAINER_BRYON] = {
+    [FRONTIER_TRAINER_BRYON] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
         .trainerName = _("BRYON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_MOVE2(BARRAGE), EC_WORD_WILL, EC_MOVE2(SLAM), EC_WORD_YOU, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_YOU, EC_WORD_DIDN_T, EC_WORD_COUNT_ON, EC_WORD_ANY, EC_WORD_LESS, EC_WORD_QUES},
-        .speechLose = {EC_WORD_I, EC_WORD_JUST, EC_WORD_DON_T, EC_WORD_GET, EC_WORD_IT, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Bryon
-=======
-        .speechBefore = COMPOUND_STRING("My barrage will slam you!"),
-        .speechWin = COMPOUND_STRING("You didn't count on any less?"),
-        .speechLose = COMPOUND_STRING("I just don't get it…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BryonBefore,
+        .speechWin = sText_BryonWin,
+        .speechLose = sText_BryonLose,
+        .monSet = gBattleFrontierTrainerMons_Bryon,
     },
-    [FRONTIER_TRAINER_AVA] = {
+    [FRONTIER_TRAINER_AVA] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
         .trainerName = _("AVA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_A, EC_WORD_TREASURE, EC_WORD_OF, EC_WORD_THIS, EC_WORD_WORLD},
-        .speechWin = {EC_WORD_MY, EC_WORD_WORLD, EC_WORD_IS, EC_WORD_FULL, EC_WORD_OF, EC_WORD_WONDER},
-        .speechLose = {EC_WORD_WHY, EC_WORD_ARE, EC_WORD_YOU, EC_WORD_SO, EC_WORD_TERRIBLE, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Ava
-=======
-        .speechBefore = COMPOUND_STRING("I am a treasure of this world."),
-        .speechWin = COMPOUND_STRING("My world is full of wonder."),
-        .speechLose = COMPOUND_STRING("Why are you so terrible?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AvaBefore,
+        .speechWin = sText_AvaWin,
+        .speechLose = sText_AvaLose,
+        .monSet = gBattleFrontierTrainerMons_Ava,
     },
-    [FRONTIER_TRAINER_MIRIAM] = {
+    [FRONTIER_TRAINER_MIRIAM] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
         .trainerName = _("MIRIAM"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_OH, EC_WORD_A, EC_WORD_TRAINER, EC_WORD_WITH, EC_WORD_A, EC_MOVE(SCARY_FACE)},
-        .speechWin = {EC_WORD_AHAHA, EC_WORD_YOU, EC_WORD_ONLY, EC_WORD_LOOK, EC_WORD_SCARY, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_AIYEEH, EC_WORD_EXCL, EC_WORD_YOU, EC_WORD_REALLY, EC_WORD_ARE, EC_WORD_SCARY},
-        .monSet = gBattleFrontierTrainerMons_Miriam
-=======
-        .speechBefore = COMPOUND_STRING("Oh a trainer with a scary face."),
-        .speechWin = COMPOUND_STRING("Ahaha you only look scary!"),
-        .speechLose = COMPOUND_STRING("Aiyeeh! You really are scary."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MiriamBefore,
+        .speechWin = sText_MiriamWin,
+        .speechLose = sText_MiriamLose,
+        .monSet = gBattleFrontierTrainerMons_Miriam,
     },
-    [FRONTIER_TRAINER_CARRIE] = {
+    [FRONTIER_TRAINER_CARRIE] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
         .trainerName = _("CARRIE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WILL, EC_WORD_SHOW, EC_WORD_YOU, EC_WORD_GUTSY, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_ALL, EC_WORD_ABOUT, EC_WORD_GUTS, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_OH, EC_WORD_NO, EC_WORD_ELLIPSIS, EC_MOVE(SELF_DESTRUCT), EC_WORD_MODE, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Carrie
-=======
-        .speechBefore = COMPOUND_STRING("I will show you gutsy!"),
-        .speechWin = COMPOUND_STRING("It's all about guts!"),
-        .speechLose = COMPOUND_STRING("Oh no… Self destruct mode!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CarrieBefore,
+        .speechWin = sText_CarrieWin,
+        .speechLose = sText_CarrieLose,
+        .monSet = gBattleFrontierTrainerMons_Carrie,
     },
-    [FRONTIER_TRAINER_GILLIAN2] = {
+    [FRONTIER_TRAINER_GILLIAN2] =
+    {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
         .trainerName = _("GILLIAN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_SEEK, EC_WORD_A, EC_WORD_TRULY, EC_WORD_GREAT, EC_WORD_BATTLE},
-        .speechWin = {EC_WORD_I, EC_WORD_NEED, EC_WORD_A_LOT, EC_WORD_BETTER, EC_WORD_BATTLE, EC_WORD_ELLIPSIS},
-        .speechLose = {EC_WORD_THAT_WAS, EC_WORD_A_LITTLE, EC_WORD_TOO, EC_WORD_MUCH, EC_WORD_TO, EC_WORD_TAKE},
-        .monSet = gBattleFrontierTrainerMons_Gillian2
-=======
-        .speechBefore = COMPOUND_STRING("I seek a truly great battle."),
-        .speechWin = COMPOUND_STRING("I need a lot better battle…"),
-        .speechLose = COMPOUND_STRING("That was a little too much to take."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_Gillian2Before,
+        .speechWin = sText_Gillian2Win,
+        .speechLose = sText_Gillian2Lose,
+        .monSet = gBattleFrontierTrainerMons_Gillian2,
     },
-    [FRONTIER_TRAINER_TYLER] = {
+    [FRONTIER_TRAINER_TYLER] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
         .trainerName = _("TYLER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YO, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_LET_S, EC_WORD_GO, EC_WORD_EXCL_EXCL},
-        .speechWin = {EC_WORD_YO, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_I, EC_WORD_WON, EC_WORD_YO},
-        .speechLose = {EC_WORD_YO, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_I, EC_WORD_LOST, EC_WORD_YO},
-        .monSet = gBattleFrontierTrainerMons_Tyler
-=======
-        .speechBefore = COMPOUND_STRING("Yo! Let's go!!"),
-        .speechWin = COMPOUND_STRING("Yo! I won yo."),
-        .speechLose = COMPOUND_STRING("Yo! I lost yo."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_TylerBefore,
+        .speechWin = sText_TylerWin,
+        .speechLose = sText_TylerLose,
+        .monSet = gBattleFrontierTrainerMons_Tyler,
     },
-    [FRONTIER_TRAINER_CHAZ] = {
+    [FRONTIER_TRAINER_CHAZ] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
         .trainerName = _("CHAZ"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_HAVE, EC_WORD_TOO, EC_WORD_MUCH, EC_WORD_POWER},
-        .speechWin = {EC_WORD_THEY, EC_WORD_HAVE, EC_WORD_MORE, EC_WORD_POWER, EC_WORD_NOW, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_YEAH, EC_MOVE2(TAKE_DOWN), EC_WORD_THEIR, EC_WORD_POWER, EC_WORD_A_TINY_BIT, EC_WORD_PLEASE},
-        .monSet = gBattleFrontierTrainerMons_Chaz
-=======
-        .speechBefore = COMPOUND_STRING("My Pokémon have too much power."),
-        .speechWin = COMPOUND_STRING("They have more power now!"),
-        .speechLose = COMPOUND_STRING("Yeah take down their power a tiny bit please."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ChazBefore,
+        .speechWin = sText_ChazWin,
+        .speechLose = sText_ChazLose,
+        .monSet = gBattleFrontierTrainerMons_Chaz,
     },
-    [FRONTIER_TRAINER_NELSON] = {
+    [FRONTIER_TRAINER_NELSON] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
         .trainerName = _("NELSON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WELL_THEN, EC_WORD_WILL, EC_WORD_THIS, EC_WORD_POKEMON, EC_WORD_WORK, EC_WORD_QUES},
-        .speechWin = {EC_WORD_I, EC_WORD_SEE, EC_WORD_THAT, EC_WORD_IT, EC_WORD_WAS, EC_WORD_TOO_STRONG},
-        .speechLose = {EC_WORD_IT, EC_WORD_DIDN_T, EC_WORD_MATCH_UP, EC_WORD_WELL, EC_WORD_I, EC_WORD_THINK},
-        .monSet = gBattleFrontierTrainerMons_Nelson
-=======
-        .speechBefore = COMPOUND_STRING("Well then will this Pokémon work?"),
-        .speechWin = COMPOUND_STRING("I see that it was too strong."),
-        .speechLose = COMPOUND_STRING("It didn't match up well I think."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_NelsonBefore,
+        .speechWin = sText_NelsonWin,
+        .speechLose = sText_NelsonLose,
+        .monSet = gBattleFrontierTrainerMons_Nelson,
     },
-    [FRONTIER_TRAINER_SHANIA] = {
+    [FRONTIER_TRAINER_SHANIA] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
         .trainerName = _("SHANIA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_ALL, EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_ABSOLUTELY, EC_WORD_ADORE, EC_WORD_ME},
-        .speechWin = {EC_WORD_HAPPINESS, EC_WORD_IS, EC_WORD_A, EC_WORD_POKEMON, EC_WORD_WITH, EC_WORD_CUTE_CHARM},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_SO, EC_WORD_MEAN, EC_WORD_TO, EC_WORD_CUTE, EC_WORD_POKEMON},
-        .monSet = gBattleFrontierTrainerMons_Shania
-=======
-        .speechBefore = COMPOUND_STRING("All my Pokémon absolutely adore me."),
-        .speechWin = COMPOUND_STRING("Happiness is a Pokémon with cute charm."),
-        .speechLose = COMPOUND_STRING("You're so mean to cute Pokémon."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ShaniaBefore,
+        .speechWin = sText_ShaniaWin,
+        .speechLose = sText_ShaniaLose,
+        .monSet = gBattleFrontierTrainerMons_Shania,
     },
-    [FRONTIER_TRAINER_STELLA] = {
+    [FRONTIER_TRAINER_STELLA] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
         .trainerName = _("STELLA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WANT, EC_WORD_TO, EC_WORD_SEE, EC_WORD_YOUR, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_WELL, EC_WORD_AREN_T, EC_WORD_THEY, EC_WORD_BORING, EC_WORD_QUES, EC_WORD_AHAHA},
-        .speechLose = {EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_SOMETHING, EC_WORD_ELSE, EC_WORD_ALL_RIGHT},
-        .monSet = gBattleFrontierTrainerMons_Stella
-=======
-        .speechBefore = COMPOUND_STRING("I want to see your Pokémon."),
-        .speechWin = COMPOUND_STRING("Well aren't they boring? Ahaha."),
-        .speechLose = COMPOUND_STRING("Your Pokémon are something else all right."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_StellaBefore,
+        .speechWin = sText_StellaWin,
+        .speechLose = sText_StellaLose,
+        .monSet = gBattleFrontierTrainerMons_Stella,
     },
-    [FRONTIER_TRAINER_DORINE] = {
+    [FRONTIER_TRAINER_DORINE] =
+    {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
         .trainerName = _("DORINE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_YOUNG, EC_WORD_AND, EC_WORD_STRONG, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_SEE, EC_WORD_QUES, EC_WORD_AREN_T, EC_WORD_I, EC_WORD_GOOD, EC_WORD_QUES},
-        .speechLose = {EC_WORD_THIS, EC_WORD_ISN_T, EC_WORD_WORKING, EC_WORD_OUT, EC_WORD_AT, EC_WORD_ALL},
-        .monSet = gBattleFrontierTrainerMons_Dorine
-=======
-        .speechBefore = COMPOUND_STRING("I am young and strong!"),
-        .speechWin = COMPOUND_STRING("See? Aren't I good?"),
-        .speechLose = COMPOUND_STRING("This isn't working out at all."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DorineBefore,
+        .speechWin = sText_DorineWin,
+        .speechLose = sText_DorineLose,
+        .monSet = gBattleFrontierTrainerMons_Dorine,
     },
-    [FRONTIER_TRAINER_MADDOX] = {
+    [FRONTIER_TRAINER_MADDOX] =
+    {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
         .trainerName = _("MADDOX"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_DRAGON, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_MY, EC_WORD_NO_1, EC_WORD_CHOICE},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_NO, EC_WORD_SECRET, EC_WORD_DRAGON, EC_WORD_POKEMON, EC_WORD_WIN},
-        .speechLose = {EC_WORD_DRAGON, EC_WORD_POKEMON, EC_WORD_SHOULD, EC_WORD_NOT, EC_WORD_LOSE, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Maddox
-=======
-        .speechBefore = COMPOUND_STRING("Dragon Pokémon are my no 1 choice."),
-        .speechWin = COMPOUND_STRING("It's no secret dragon Pokémon win."),
-        .speechLose = COMPOUND_STRING("Dragon Pokémon should not lose!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MaddoxBefore,
+        .speechWin = sText_MaddoxWin,
+        .speechLose = sText_MaddoxLose,
+        .monSet = gBattleFrontierTrainerMons_Maddox,
     },
-    [FRONTIER_TRAINER_DAVIN] = {
+    [FRONTIER_TRAINER_DAVIN] =
+    {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
         .trainerName = _("DAVIN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_LET_S, EC_WORD_HEAR, EC_WORD_YOU, EC_MOVE2(ROAR), EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_WROOOAAR_EXCL, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_WORD_VICTORY, EC_WORD_EXCL_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_WROOOAAR_EXCL, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_WORD_WHY, EC_WORD_QUES_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Davin
-=======
-        .speechBefore = COMPOUND_STRING("Let's hear you roar!"),
-        .speechWin = COMPOUND_STRING("Wroooaar! Victory!!"),
-        .speechLose = COMPOUND_STRING("Wroooaar! Why?!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DavinBefore,
+        .speechWin = sText_DavinWin,
+        .speechLose = sText_DavinLose,
+        .monSet = gBattleFrontierTrainerMons_Davin,
     },
-    [FRONTIER_TRAINER_TREVON] = {
+    [FRONTIER_TRAINER_TREVON] =
+    {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
         .trainerName = _("TREVON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_LIVING, EC_WORD_ONLY, EC_WORD_WITH, EC_WORD_DRAGON, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_THE, EC_WORD_WAY, EC_WORD_I_AM, EC_WORD_LIVING, EC_WORD_IS, EC_WORD_PERFECT},
-        .speechLose = {EC_WORD_YOU_VE, EC_WORD_DESTROYED, EC_WORD_THE, EC_WORD_WAY, EC_WORD_I_AM, EC_WORD_LIVING},
-        .monSet = gBattleFrontierTrainerMons_Trevon
-=======
-        .speechBefore = COMPOUND_STRING("I am living only with dragon Pokémon."),
-        .speechWin = COMPOUND_STRING("The way I am living is perfect."),
-        .speechLose = COMPOUND_STRING("You've destroyed the way I am living."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_TrevonBefore,
+        .speechWin = sText_TrevonWin,
+        .speechLose = sText_TrevonLose,
+        .monSet = gBattleFrontierTrainerMons_Trevon,
     },
-    [FRONTIER_TRAINER_MATEO] = {
+    [FRONTIER_TRAINER_MATEO] =
+    {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
         .trainerName = _("MATEO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THIS, EC_WORD_SHOULD, EC_WORD_BE, EC_WORD_OVER, EC_WORD_SOON, EC_WORD_ENOUGH},
-        .speechWin = {EC_WORD_WELL, EC_WORD_THAT, EC_WORD_DIDN_T, EC_WORD_TAKE, EC_WORD_VERY, EC_WORD_MUCH},
-        .speechLose = {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_LOSE, EC_WORD_SO, EC_WORD_SOON, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Mateo
-=======
-        .speechBefore = COMPOUND_STRING("This should be over soon enough."),
-        .speechWin = COMPOUND_STRING("Well that didn't take very much."),
-        .speechLose = COMPOUND_STRING("I can't lose so soon!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MateoBefore,
+        .speechWin = sText_MateoWin,
+        .speechLose = sText_MateoLose,
+        .monSet = gBattleFrontierTrainerMons_Mateo,
     },
-    [FRONTIER_TRAINER_BRET] = {
+    [FRONTIER_TRAINER_BRET] =
+    {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
         .trainerName = _("BRET"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_ROCK_SOLID, EC_WORD_POKEMON, EC_WORD_THE, EC_WORD_BEST},
-        .speechWin = {EC_WORD_TOUGHNESS, EC_WORD_IS, EC_WORD_THE, EC_WORD_WAY, EC_WORD_TO, EC_WORD_GO},
-        .speechLose = {EC_WORD_I, EC_WORD_ALSO, EC_WORD_HAVE, EC_WORD_A, EC_WORD_PLUSH_DOLL, EC_WORD_COLLECTION},
-        .monSet = gBattleFrontierTrainerMons_Bret
-=======
-        .speechBefore = COMPOUND_STRING("I like rock solid Pokémon the best."),
-        .speechWin = COMPOUND_STRING("Toughness is the way to go."),
-        .speechLose = COMPOUND_STRING("I also have a plush doll collection."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BretBefore,
+        .speechWin = sText_BretWin,
+        .speechLose = sText_BretLose,
+        .monSet = gBattleFrontierTrainerMons_Bret,
     },
-    [FRONTIER_TRAINER_RAUL] = {
+    [FRONTIER_TRAINER_RAUL] =
+    {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
         .trainerName = _("RAUL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_REJECT, EC_WORD_EVERY, EC_WORD_WEAK, EC_WORD_TRAINER, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_HUMPH, EC_WORD_EXCL, EC_WORD_ANOTHER, EC_WORD_WEAK, EC_WORD_TRAINER, EC_WORD_ELLIPSIS},
-        .speechLose = {EC_WORD_THERE, EC_WORD_IS, EC_WORD_NOTHING, EC_WORD_WEAK, EC_WORD_ABOUT, EC_WORD_YOU},
-        .monSet = gBattleFrontierTrainerMons_Raul
-=======
-        .speechBefore = COMPOUND_STRING("I reject every weak trainer."),
-        .speechWin = COMPOUND_STRING("Humph! Another weak trainer…"),
-        .speechLose = COMPOUND_STRING("There is nothing weak about you."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RaulBefore,
+        .speechWin = sText_RaulWin,
+        .speechLose = sText_RaulLose,
+        .monSet = gBattleFrontierTrainerMons_Raul,
     },
-    [FRONTIER_TRAINER_KAY] = {
+    [FRONTIER_TRAINER_KAY] =
+    {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
         .trainerName = _("KAY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_AND, EC_WORD_YET, EC_WORD_ANOTHER, EC_WORD_BATTLE, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I, EC_WORD_WON, EC_WORD_BUT, EC_WORD_I_AM, EC_WORD_TIRED, EC_WORD_ELLIPSIS},
-        .speechLose = {EC_WORD_GOOD, EC_WORD_IT_S, EC_WORD_OVER, EC_WORD_AT, EC_WORD_LAST, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Kay
-=======
-        .speechBefore = COMPOUND_STRING("And yet another battle?"),
-        .speechWin = COMPOUND_STRING("I won but I am tired…"),
-        .speechLose = COMPOUND_STRING("Good it's over at last…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KayBefore,
+        .speechWin = sText_KayWin,
+        .speechLose = sText_KayLose,
+        .monSet = gBattleFrontierTrainerMons_Kay,
     },
-    [FRONTIER_TRAINER_ELENA] = {
+    [FRONTIER_TRAINER_ELENA] =
+    {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
         .trainerName = _("ELENA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A, EC_WORD_BATTLE, EC_WORD_GIRL, EC_WORD_THAT_S, EC_WORD_ME, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_ISN_T, EC_WORD_A, EC_WORD_BATTLE, EC_WORD_GIRL, EC_WORD_AWESOME, EC_WORD_QUES},
-        .speechLose = {EC_WORD_YOU, EC_WORD_DISLIKE, EC_WORD_A, EC_WORD_BATTLE, EC_WORD_GIRL, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Elena
-=======
-        .speechBefore = COMPOUND_STRING("A battle girl that's me!"),
-        .speechWin = COMPOUND_STRING("Isn't a battle girl awesome?"),
-        .speechLose = COMPOUND_STRING("You dislike a battle girl?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ElenaBefore,
+        .speechWin = sText_ElenaWin,
+        .speechLose = sText_ElenaLose,
+        .monSet = gBattleFrontierTrainerMons_Elena,
     },
-    [FRONTIER_TRAINER_ALANA] = {
+    [FRONTIER_TRAINER_ALANA] =
+    {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
         .trainerName = _("ALANA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_EAT, EC_WORD_MY, EC_WORD_INVINCIBLE, EC_WORD_ATTACK, EC_WORD_YOU, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_MUCH, EC_WORD_TO, EC_WORD_LEARN, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_SO, EC_WORD_MUCH, EC_WORD_FOR, EC_WORD_MY, EC_WORD_INVINCIBLE, EC_WORD_ATTACK},
-        .monSet = gBattleFrontierTrainerMons_Alana
-=======
-        .speechBefore = COMPOUND_STRING("Eat my invincible attack you!"),
-        .speechWin = COMPOUND_STRING("You have much to learn."),
-        .speechLose = COMPOUND_STRING("So much for my invincible attack."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AlanaBefore,
+        .speechWin = sText_AlanaWin,
+        .speechLose = sText_AlanaLose,
+        .monSet = gBattleFrontierTrainerMons_Alana,
     },
-    [FRONTIER_TRAINER_ALEXAS] = {
+    [FRONTIER_TRAINER_ALEXAS] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
         .trainerName = _("ALEXAS"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_GOOD, EC_WORD_TO, EC_WORD_MEET_YOU, EC_WORD_YOUNG, EC_WORD_TRAINER, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_WAHAHAHA, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_GIVE, EC_WORD_IT, EC_WORD_UP},
-        .speechLose = {EC_WORD_YOU, EC_WORD_ARE, EC_WORD_A, EC_WORD_STRONG, EC_WORD_TRAINER, EC_WORD_KID},
-        .monSet = gBattleFrontierTrainerMons_Alexas
-=======
-        .speechBefore = COMPOUND_STRING("Good to meet you young trainer!"),
-        .speechWin = COMPOUND_STRING("Wahahaha! Give it up."),
-        .speechLose = COMPOUND_STRING("You are a strong trainer kid."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AlexasBefore,
+        .speechWin = sText_AlexasWin,
+        .speechLose = sText_AlexasLose,
+        .monSet = gBattleFrontierTrainerMons_Alexas,
     },
-    [FRONTIER_TRAINER_WESTON] = {
+    [FRONTIER_TRAINER_WESTON] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
         .trainerName = _("WESTON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_PLAY, EC_WORD_DOWN, EC_WORD_ALL_RIGHT, EC_WORD_QUES},
-        .speechWin = {EC_WORD_YOU_RE, EC_WORD_FAR, EC_WORD_TOO, EC_WORD_EASY, EC_WORD_TO, EC_WORD_ATTACK},
-        .speechLose = {EC_WORD_WELL, EC_WORD_WELL, EC_WORD_ELLIPSIS, EC_WORD_I, EC_WORD_SURRENDER, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Weston
-=======
-        .speechBefore = COMPOUND_STRING("I don't play down all right?"),
-        .speechWin = COMPOUND_STRING("You're far too easy to attack."),
-        .speechLose = COMPOUND_STRING("Well well… I surrender…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_WestonBefore,
+        .speechWin = sText_WestonWin,
+        .speechLose = sText_WestonLose,
+        .monSet = gBattleFrontierTrainerMons_Weston,
     },
-    [FRONTIER_TRAINER_JASPER] = {
+    [FRONTIER_TRAINER_JASPER] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
         .trainerName = _("JASPER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_OLD, EC_WORD_I_AM, EC_WORD_SKILLED, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_SKILLED, EC_WORD_THAT_S, EC_WORD_WHAT, EC_WORD_I_AM, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_SHOCKED, EC_WORD_EXCL, EC_WORD_DOWN, EC_WORD_I, EC_WORD_GO},
-        .monSet = gBattleFrontierTrainerMons_Jasper
-=======
-        .speechBefore = COMPOUND_STRING("I am not old I am skilled!"),
-        .speechWin = COMPOUND_STRING("Skilled that's what I am!"),
-        .speechLose = COMPOUND_STRING("I am shocked! Down I go."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JasperBefore,
+        .speechWin = sText_JasperWin,
+        .speechLose = sText_JasperLose,
+        .monSet = gBattleFrontierTrainerMons_Jasper,
     },
-    [FRONTIER_TRAINER_NADIA] = {
+    [FRONTIER_TRAINER_NADIA] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
         .trainerName = _("NADIA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU, EC_WORD_CAN_T, EC_WORD_BEAT, EC_WORD_ME, EC_WORD_DOWN, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_HAH, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_I, EC_WORD_BEAT, EC_WORD_YOU},
-        .speechLose = {EC_WORD_I_AM, EC_MOVE2(BEAT_UP), EC_WORD_AND, EC_WORD_DOWNCAST, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Nadia
-=======
-        .speechBefore = COMPOUND_STRING("You can't beat me down!"),
-        .speechWin = COMPOUND_STRING("Hah! I beat you."),
-        .speechLose = COMPOUND_STRING("I am beat up and downcast…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_NadiaBefore,
+        .speechWin = sText_NadiaWin,
+        .speechLose = sText_NadiaLose,
+        .monSet = gBattleFrontierTrainerMons_Nadia,
     },
-    [FRONTIER_TRAINER_MIRANDA] = {
+[FRONTIER_TRAINER_MIRANDA] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
         .trainerName = _("MIRANDA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WELL, EC_WORD_WELL, EC_EMPTY_WORD, EC_WORD_LET_S, EC_WORD_START, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_WHAT, EC_WORD_QUES, EC_WORD_DONE, EC_WORD_SO, EC_WORD_SOON, EC_WORD_QUES},
-        .speechLose = {EC_WORD_WELL, EC_WORD_I, EC_WORD_SEE, EC_WORD_THAT, EC_WORD_I_AM, EC_WORD_TOO_WEAK},
-        .monSet = gBattleFrontierTrainerMons_Miranda
-=======
-        .speechBefore = COMPOUND_STRING("Well well let's start."),
-        .speechWin = COMPOUND_STRING("What? Done so soon?"),
-        .speechLose = COMPOUND_STRING("Well I see that I am too weak."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MirandaBefore,
+        .speechWin = sText_MirandaWin,
+        .speechLose = sText_MirandaLose,
+        .monSet = gBattleFrontierTrainerMons_Miranda,
     },
-    [FRONTIER_TRAINER_EMMA] = {
+    [FRONTIER_TRAINER_EMMA] =
+    {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
         .trainerName = _("EMMA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_VE, EC_WORD_BEEN, EC_WORD_HEARING, EC_WORD_ABOUT, EC_WORD_YOU, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I, EC_WORD_THINK, EC_WORD_I_VE, EC_WORD_MISHEARD, EC_WORD_THINGS, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_WHAT, EC_WORD_I_VE, EC_WORD_BEEN, EC_WORD_HEARING, EC_WORD_IS, EC_WORD_RIGHT},
-        .monSet = gBattleFrontierTrainerMons_Emma
-=======
-        .speechBefore = COMPOUND_STRING("I've been hearing about you."),
-        .speechWin = COMPOUND_STRING("I think I've misheard things."),
-        .speechLose = COMPOUND_STRING("What I've been hearing is right."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_EmmaBefore,
+        .speechWin = sText_EmmaWin,
+        .speechLose = sText_EmmaLose,
+        .monSet = gBattleFrontierTrainerMons_Emma,
     },
-    [FRONTIER_TRAINER_ROLANDO] = {
+    [FRONTIER_TRAINER_ROLANDO] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
         .trainerName = _("ROLANDO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_A, EC_WORD_SUPER, EC_WORD_POKEMON, EC_WORD_HERO, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_WAS, EC_WORD_THAT, EC_WORD_ENOUGH, EC_WORD_FOR, EC_WORD_YOU, EC_WORD_QUES},
-        .speechLose = {EC_WORD_YOU, EC_WORD_SHOULD, EC_WORD_NOT, EC_WORD_BEAT, EC_WORD_A, EC_WORD_HERO},
-        .monSet = gBattleFrontierTrainerMons_Rolando
-=======
-        .speechBefore = COMPOUND_STRING("I am a super Pokémon hero!"),
-        .speechWin = COMPOUND_STRING("Was that enough for you?"),
-        .speechLose = COMPOUND_STRING("You should not beat a hero."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RolandoBefore,
+        .speechWin = sText_RolandoWin,
+        .speechLose = sText_RolandoLose,
+        .monSet = gBattleFrontierTrainerMons_Rolando,
     },
-    [FRONTIER_TRAINER_STANLY] = {
+    [FRONTIER_TRAINER_STANLY] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
         .trainerName = _("STANLY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THIS, EC_WORD_SHOULD, EC_WORD_BE, EC_WORD_AN, EC_WORD_EASY, EC_WORD_MATCH},
-        .speechWin = {EC_WORD_IT, EC_WORD_REALLY, EC_WORD_WAS, EC_WORD_EASY, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_ARE, EC_WORD_YOU, EC_WORD_HAPPY, EC_WORD_NOW, EC_WORD_QUES, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Stanly
-=======
-        .speechBefore = COMPOUND_STRING("This should be an easy match."),
-        .speechWin = COMPOUND_STRING("It really was easy."),
-        .speechLose = COMPOUND_STRING("Are you happy now?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_StanlyBefore,
+        .speechWin = sText_StanlyWin,
+        .speechLose = sText_StanlyLose,
+        .monSet = gBattleFrontierTrainerMons_Stanly,
     },
-    [FRONTIER_TRAINER_DARIO] = {
+    [FRONTIER_TRAINER_DARIO] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
         .trainerName = _("DARIO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_MOVE2(FORESIGHT), EC_WORD_SAYS, EC_WORD_I, EC_WORD_WILL, EC_WORD_WIN},
-        .speechWin = {EC_WORD_MY, EC_MOVE2(FORESIGHT), EC_WORD_HAS, EC_WORD_BEEN, EC_WORD_PERFECT, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I, EC_WORD_DIDN_T, EC_WORD_SEE, EC_WORD_THIS, EC_MOVE(REVERSAL), EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Dario
-=======
-        .speechBefore = COMPOUND_STRING("My foresight says I will win."),
-        .speechWin = COMPOUND_STRING("My foresight has been perfect."),
-        .speechLose = COMPOUND_STRING("I didn't see this reversal…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DarioBefore,
+        .speechWin = sText_DarioWin,
+        .speechLose = sText_DarioLose,
+        .monSet = gBattleFrontierTrainerMons_Dario,
     },
-    [FRONTIER_TRAINER_KARLEE] = {
+    [FRONTIER_TRAINER_KARLEE] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
         .trainerName = _("KARLEE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_SOMETHING, EC_WORD_GOOD, EC_WORD_WILL, EC_WORD_COME, EC_WORD_OF, EC_WORD_THIS},
-        .speechWin = {EC_WORD_YOU, EC_WORD_SEE, EC_WORD_QUES, EC_WORD_FANTASTIC, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_THAT, EC_WORD_SOMETHING, EC_WORD_GOOD, EC_WORD_WENT, EC_WORD_TO, EC_WORD_YOU},
-        .monSet = gBattleFrontierTrainerMons_Karlee
-=======
-        .speechBefore = COMPOUND_STRING("Something good will come of this."),
-        .speechWin = COMPOUND_STRING("You see? Fantastic!"),
-        .speechLose = COMPOUND_STRING("That something good went to you."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_KarleeBefore,
+        .speechWin = sText_KarleeWin,
+        .speechLose = sText_KarleeLose,
+        .monSet = gBattleFrontierTrainerMons_Karlee,
     },
-    [FRONTIER_TRAINER_JAYLIN] = {
+    [FRONTIER_TRAINER_JAYLIN] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
         .trainerName = _("JAYLIN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_EVERY, EC_WORD_TRAINER, EC_WORD_HAS, EC_WORD_BEEN, EC_WORD_TOO_WEAK, EC_WORD_ELLIPSIS},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_MAKING, EC_WORD_ME, EC_MOVE(YAWN), EC_WORD_THAT, EC_WORD_BATTLE},
-        .speechLose = {EC_WORD_I, EC_WORD_SLEPT, EC_WORD_AND, EC_WORD_SO, EC_WORD_I, EC_WORD_LOST},
-        .monSet = gBattleFrontierTrainerMons_Jaylin
-=======
-        .speechBefore = COMPOUND_STRING("Every trainer has been too weak…"),
-        .speechWin = COMPOUND_STRING("It's making me yawn that battle."),
-        .speechLose = COMPOUND_STRING("I slept and so I lost."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JaylinBefore,
+        .speechWin = sText_JaylinWin,
+        .speechLose = sText_JaylinLose,
+        .monSet = gBattleFrontierTrainerMons_Jaylin,
     },
-    [FRONTIER_TRAINER_INGRID] = {
+    [FRONTIER_TRAINER_INGRID] =
+    {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
-        .trainerName = _("INGRID"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_A, EC_WORD_VERY, EC_WORD_MEAN, EC_WORD_TRAINER},
-        .speechWin = {EC_WORD_WASN_T, EC_WORD_THAT, EC_WORD_A, EC_WORD_GOOD, EC_WORD_MATCH, EC_WORD_QUES},
-        .speechLose = {EC_WORD_I, EC_WORD_LOST, EC_WORD_CAUSE, EC_WORD_YOU_RE, EC_WORD_MEAN, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Ingrid
-=======
-        .speechBefore = COMPOUND_STRING("I am not a very mean trainer."),
-        .speechWin = COMPOUND_STRING("Wasn't that a good match?"),
-        .speechLose = COMPOUND_STRING("I lost cause you're mean…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_IngridBefore,
+        .speechWin = sText_IngridWin,
+        .speechLose = sText_IngridLose,
+        .monSet = gBattleFrontierTrainerMons_Ingrid,
     },
-    [FRONTIER_TRAINER_DELILAH] = {
+    [FRONTIER_TRAINER_DELILAH] =
+    {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
         .trainerName = _("DELILAH"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_DON_T, EC_MOVE(GRUDGE), EC_WORD_ME, EC_WORD_IF_I_WIN, EC_WORD_OK_QUES, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_SORRY, EC_WORD_TO, EC_WORD_SEE, EC_WORD_YOU, EC_WORD_ANGRY},
-        .speechLose = {EC_WORD_I, EC_WORD_HAVE, EC_WORD_A, EC_MOVE(GRUDGE), EC_WORD_WITH, EC_WORD_YOU},
-        .monSet = gBattleFrontierTrainerMons_Delilah
-=======
-        .speechBefore = COMPOUND_STRING("Don't grudge me if I win ok ques."),
-        .speechWin = COMPOUND_STRING("I am sorry to see you angry."),
-        .speechLose = COMPOUND_STRING("I have a grudge with you."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DelilahBefore,
+        .speechWin = sText_DelilahWin,
+        .speechLose = sText_DelilahLose,
+        .monSet = gBattleFrontierTrainerMons_Delilah,
     },
-    [FRONTIER_TRAINER_CARLY] = {
+    [FRONTIER_TRAINER_CARLY] =
+    {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
         .trainerName = _("CARLY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WILL, EC_WORD_SCATTER, EC_WORD_SOME, EC_MOVE2(POISON_POWDER), EC_WORD_ABOUT},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_SCARY, EC_WORD_HOW, EC_WORD_MY, EC_WORD_STRATEGY, EC_WORD_WORKS},
-        .speechLose = {EC_WORD_I, EC_WORD_DISLIKE, EC_WORD_YOU, EC_WORD_AND, EC_WORD_YOUR, EC_WORD_POKEMON},
-        .monSet = gBattleFrontierTrainerMons_Carly
-=======
-        .speechBefore = COMPOUND_STRING("I will scatter some poison powder about."),
-        .speechWin = COMPOUND_STRING("It's scary how my strategy works."),
-        .speechLose = COMPOUND_STRING("I dislike you and your Pokémon."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CarlyBefore,
+        .speechWin = sText_CarlyWin,
+        .speechLose = sText_CarlyLose,
+        .monSet = gBattleFrontierTrainerMons_Carly,
     },
-    [FRONTIER_TRAINER_LEXIE] = {
+    [FRONTIER_TRAINER_LEXIE] =
+    {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
         .trainerName = _("LEXIE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WANT, EC_WORD_TO, EC_WORD_SEE, EC_WORD_SCARY, EC_WORD_POKEMON, EC_WORD_QUES},
-        .speechWin = {EC_WORD_WASN_T, EC_WORD_THAT, EC_WORD_SCARY, EC_WORD_EH_QUES, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_MORE, EC_WORD_SCARY, EC_WORD_THAN, EC_WORD_MY, EC_WORD_POKEMON},
-        .monSet = gBattleFrontierTrainerMons_Lexie
-=======
-        .speechBefore = COMPOUND_STRING("Want to see scary Pokémon?"),
-        .speechWin = COMPOUND_STRING("Wasn't that scary eh?"),
-        .speechLose = COMPOUND_STRING("You're more scary than my Pokémon."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LexieBefore,
+        .speechWin = sText_LexieWin,
+        .speechLose = sText_LexieLose,
+        .monSet = gBattleFrontierTrainerMons_Lexie,
     },
-    [FRONTIER_TRAINER_MILLER] = {
+    [FRONTIER_TRAINER_MILLER] =
+    {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
         .trainerName = _("MILLER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_HELLO, EC_WORD_QUES, EC_EMPTY_WORD, EC_WORD_HELLO, EC_WORD_QUES_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_HELLO, EC_WORD_MOTHER, EC_WORD_EXCL, EC_WORD_I, EC_WORD_WON, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_MY, EC_WORD_PHONE, EC_WORD_ISN_T, EC_WORD_WORKING, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Miller
-=======
-        .speechBefore = COMPOUND_STRING("Hello? Hello?!"),
-        .speechWin = COMPOUND_STRING("Hello mother! I won!"),
-        .speechLose = COMPOUND_STRING("My phone isn't working…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MillerBefore,
+        .speechWin = sText_MillerWin,
+        .speechLose = sText_MillerLose,
+        .monSet = gBattleFrontierTrainerMons_Miller,
     },
-    [FRONTIER_TRAINER_MARV] = {
+    [FRONTIER_TRAINER_MARV] =
+    {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
         .trainerName = _("MARV"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_YOU, EC_WORD_CAN, EC_WORD_LOSE, EC_WORD_YOUR, EC_MOVE(SWAGGER), EC_WORD_NOW},
-        .speechWin = {EC_WORD_THERE, EC_WORD_IS, EC_WORD_NO, EC_MOVE(SWAGGER), EC_WORD_LEFT, EC_WORD_EH_QUES},
-        .speechLose = {EC_WORD_GO, EC_WORD_ON, EC_MOVE(SWAGGER), EC_WORD_ALL, EC_WORD_YOU, EC_WORD_WANT},
-        .monSet = gBattleFrontierTrainerMons_Marv
-=======
-        .speechBefore = COMPOUND_STRING("You can lose your swagger now."),
-        .speechWin = COMPOUND_STRING("There is no swagger left eh?"),
-        .speechLose = COMPOUND_STRING("Go on swagger all you want."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MarvBefore,
+        .speechWin = sText_MarvWin,
+        .speechLose = sText_MarvLose,
+        .monSet = gBattleFrontierTrainerMons_Marv,
     },
-    [FRONTIER_TRAINER_LAYTON] = {
+    [FRONTIER_TRAINER_LAYTON] =
+    {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
         .trainerName = _("LAYTON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_KNOW, EC_WORD_I_AM, EC_WORD_TOTALLY, EC_WORD_COOL, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_YOU, EC_WORD_CAN, EC_WORD_LOOK, EC_WORD_UP, EC_WORD_TO, EC_WORD_ME},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_COOL, EC_WORD_EXCL, EC_WORD_NO, EC_WORD_REALLY, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Layton
-=======
-        .speechBefore = COMPOUND_STRING("I know I am totally cool!"),
-        .speechWin = COMPOUND_STRING("You can look up to me."),
-        .speechLose = COMPOUND_STRING("You're cool! No really!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LaytonBefore,
+        .speechWin = sText_LaytonWin,
+        .speechLose = sText_LaytonLose,
+        .monSet = gBattleFrontierTrainerMons_Layton,
     },
-    [FRONTIER_TRAINER_BROOKS] = {
+    [FRONTIER_TRAINER_BROOKS] =
+    {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
         .trainerName = _("BROOKS"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THIS, EC_WORD_IS, EC_WORD_A, EC_WORD_HIGH, EC_WORD_LEVEL, EC_WORD_BATTLE},
-        .speechWin = {EC_WORD_THAT_WAS, EC_WORD_HIGH, EC_WORD_LEVEL, EC_WORD_AND, EC_WORD_EXCITING, EC_WORD_TOO},
-        .speechLose = {EC_WORD_YOU_RE, EC_WORD_TOO, EC_WORD_HIGH, EC_WORD_IN, EC_WORD_LEVEL, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Brooks
-=======
-        .speechBefore = COMPOUND_STRING("This is a high level battle."),
-        .speechWin = COMPOUND_STRING("That was high level and exciting too."),
-        .speechLose = COMPOUND_STRING("You're too high in level…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BrooksBefore,
+        .speechWin = sText_BrooksWin,
+        .speechLose = sText_BrooksLose,
+        .monSet = gBattleFrontierTrainerMons_Brooks,
     },
-    [FRONTIER_TRAINER_GREGORY] = {
+    [FRONTIER_TRAINER_GREGORY] =
+    {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
         .trainerName = _("GREGORY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_THAT, EC_WORD_OLD, EC_WORD_YET, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_WHO, EC_WORD_SAYS, EC_WORD_I_AM, EC_WORD_TOO, EC_WORD_OLD, EC_WORD_QUES},
-        .speechLose = {EC_WORD_PLEASE, EC_WORD_I_AM, EC_WORD_REALLY, EC_WORD_NOT, EC_WORD_THAT, EC_WORD_OLD},
-        .monSet = gBattleFrontierTrainerMons_Gregory
-=======
-        .speechBefore = COMPOUND_STRING("I am not that old yet."),
-        .speechWin = COMPOUND_STRING("Who says I am too old?"),
-        .speechLose = COMPOUND_STRING("Please I am really not that old."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GregoryBefore,
+        .speechWin = sText_GregoryWin,
+        .speechLose = sText_GregoryLose,
+        .monSet = gBattleFrontierTrainerMons_Gregory,
     },
-    [FRONTIER_TRAINER_REESE] = {
+    [FRONTIER_TRAINER_REESE] =
+    {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
         .trainerName = _("REESE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_VE, EC_WORD_A, EC_WORD_COUPLE, EC_WORD_THINGS, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_DON_T, EC_WORD_DIET, EC_WORD_PLAY, EC_WORD_SPORTS, EC_WORD_INSTEAD, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_INSTEAD, EC_WORD_OF, EC_WORD_TELEVISION, EC_WORD_GET, EC_WORD_A, EC_WORD_BOOK},
-        .monSet = gBattleFrontierTrainerMons_Reese
-=======
-        .speechBefore = COMPOUND_STRING("I've a couple things."),
-        .speechWin = COMPOUND_STRING("Don't diet play sports instead."),
-        .speechLose = COMPOUND_STRING("Instead of television get a book."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ReeseBefore,
+        .speechWin = sText_ReeseWin,
+        .speechLose = sText_ReeseLose,
+        .monSet = gBattleFrontierTrainerMons_Reese,
     },
-    [FRONTIER_TRAINER_MASON] = {
+    [FRONTIER_TRAINER_MASON] =
+    {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
         .trainerName = _("MASON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_PLEASE, EC_WORD_DON_T, EC_WORD_MAKE, EC_WORD_THIS, EC_WORD_SCARY, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_THANK_YOU, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_WORD_I_AM, EC_WORD_HAPPY, EC_WORD_NOW},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_DISAPPOINTED, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Mason
-=======
-        .speechBefore = COMPOUND_STRING("Please don't make this scary."),
-        .speechWin = COMPOUND_STRING("Thank you… I am happy now."),
-        .speechLose = COMPOUND_STRING("I am disappointed…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_MasonBefore,
+        .speechWin = sText_MasonWin,
+        .speechLose = sText_MasonLose,
+        .monSet = gBattleFrontierTrainerMons_Mason,
     },
-    [FRONTIER_TRAINER_TOBY] = {
+    [FRONTIER_TRAINER_TOBY] =
+    {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
         .trainerName = _("TOBY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_LISTEN, EC_WORD_UP, EC_EMPTY_WORD, EC_WORD_I, EC_WORD_ALWAYS, EC_WORD_WIN},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_A, EC_WORD_GENIUS, EC_WORD_OR, EC_WORD_WHAT, EC_WORD_QUES},
-        .speechLose = {EC_WORD_I, EC_WORD_CAN, EC_WORD_BEAT, EC_WORD_YOU, EC_WORD_AT, EC_WORD_SMARTNESS},
-        .monSet = gBattleFrontierTrainerMons_Toby
-=======
-        .speechBefore = COMPOUND_STRING("Listen up I always win."),
-        .speechWin = COMPOUND_STRING("I am a genius or what?"),
-        .speechLose = COMPOUND_STRING("I can beat you at smartness."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_TobyBefore,
+        .speechWin = sText_TobyWin,
+        .speechLose = sText_TobyLose,
+        .monSet = gBattleFrontierTrainerMons_Toby,
     },
-    [FRONTIER_TRAINER_DOROTHY] = {
+    [FRONTIER_TRAINER_DOROTHY] =
+    {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
         .trainerName = _("DOROTHY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_THE, EC_WORD_SPORTS, EC_WORD_WORLD, EC_WORD_SHOULD, EC_WORD_ACCEPT, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_THANK_YOU, EC_WORD_EXCL, EC_WORD_THAT, EC_WORD_WIN, EC_WORD_WAS, EC_WORD_REFRESHING},
-        .speechLose = {EC_WORD_THANK_YOU, EC_WORD_EXCL, EC_WORD_THAT, EC_WORD_LOSS, EC_WORD_WAS, EC_WORD_REFRESHING},
-        .monSet = gBattleFrontierTrainerMons_Dorothy
-=======
-        .speechBefore = COMPOUND_STRING("The sports world should accept Pokémon."),
-        .speechWin = COMPOUND_STRING("Thank you! That win was refreshing."),
-        .speechLose = COMPOUND_STRING("Thank you! That loss was refreshing."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DorothyBefore,
+        .speechWin = sText_DorothyWin,
+        .speechLose = sText_DorothyLose,
+        .monSet = gBattleFrontierTrainerMons_Dorothy,
     },
-    [FRONTIER_TRAINER_PIPER] = {
+    [FRONTIER_TRAINER_PIPER] =
+    {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
         .trainerName = _("PIPER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_COME_ON, EC_WORD_YOU, EC_WORD_NEED, EC_WORD_A, EC_WORD_SPEED_BOOST, EC_WORD_QUES},
-        .speechWin = {EC_WORD_YOU, EC_WORD_NEED, EC_WORD_TO, EC_WORD_SHOW, EC_WORD_MORE, EC_WORD_GUTS},
-        .speechLose = {EC_WORD_OH, EC_WORD_YOU, EC_WORD_EXCL, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Piper
-=======
-        .speechBefore = COMPOUND_STRING("Come on you need a speed boost?"),
-        .speechWin = COMPOUND_STRING("You need to show more guts."),
-        .speechLose = COMPOUND_STRING("Oh you!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_PiperBefore,
+        .speechWin = sText_PiperWin,
+        .speechLose = sText_PiperLose,
+        .monSet = gBattleFrontierTrainerMons_Piper,
     },
-    [FRONTIER_TRAINER_FINN] = {
+    [FRONTIER_TRAINER_FINN] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
         .trainerName = _("FINN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_NOT, EC_WORD_ANOTHER, EC_WORD_TRAINER, EC_WORD_BATTLE, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_WON_T, EC_WORD_THIS, EC_WORD_EVER, EC_WORD_END, EC_WORD_QUES, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I, EC_WORD_FINALLY, EC_WORD_GET, EC_WORD_TO, EC_MOVE2(REST), EC_WORD_A_LITTLE},
-        .monSet = gBattleFrontierTrainerMons_Finn
-=======
-        .speechBefore = COMPOUND_STRING("Not another trainer battle…"),
-        .speechWin = COMPOUND_STRING("Won't this ever end?"),
-        .speechLose = COMPOUND_STRING("I finally get to rest a little."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_FinnBefore,
+        .speechWin = sText_FinnWin,
+        .speechLose = sText_FinnLose,
+        .monSet = gBattleFrontierTrainerMons_Finn,
     },
-    [FRONTIER_TRAINER_SAMIR] = {
+    [FRONTIER_TRAINER_SAMIR] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
         .trainerName = _("SAMIR"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_MOVE2(DIVE), EC_WORD_BELOW, EC_WORD_THE, EC_MOVE2(SURF), EC_WORD_EXCL},
-        .speechWin = {EC_WORD_YAHOO, EC_WORD_TAKE, EC_WORD_A, EC_MOVE2(DIVE), EC_WORD_YOU, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_TO, EC_WORD_SINK, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Samir
-=======
-        .speechBefore = COMPOUND_STRING("I dive below the surf!"),
-        .speechWin = COMPOUND_STRING("Yahoo take a dive you!"),
-        .speechLose = COMPOUND_STRING("I am going to sink…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_SamirBefore,
+        .speechWin = sText_SamirWin,
+        .speechLose = sText_SamirLose,
+        .monSet = gBattleFrontierTrainerMons_Samir,
     },
-    [FRONTIER_TRAINER_FIONA] = {
+    [FRONTIER_TRAINER_FIONA] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
         .trainerName = _("FIONA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_DID, EC_WORD_YOU, EC_WORD_LIMBER, EC_WORD_UP, EC_WORD_BEFORE, EC_WORD_QUES},
-        .speechWin = {EC_WORD_YOU, EC_WORD_NEED, EC_WORD_TO, EC_WORD_BE, EC_WORD_MORE, EC_WORD_READY},
-        .speechLose = {EC_WORD_BEING, EC_WORD_LIMBER, EC_WORD_DIDN_T, EC_WORD_WORK, EC_WORD_FOR, EC_WORD_ME},
-        .monSet = gBattleFrontierTrainerMons_Fiona
-=======
-        .speechBefore = COMPOUND_STRING("Did you limber up before?"),
-        .speechWin = COMPOUND_STRING("You need to be more ready."),
-        .speechLose = COMPOUND_STRING("Being limber didn't work for me."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_FionaBefore,
+        .speechWin = sText_FionaWin,
+        .speechLose = sText_FionaLose,
+        .monSet = gBattleFrontierTrainerMons_Fiona,
     },
-    [FRONTIER_TRAINER_GLORIA] = {
+    [FRONTIER_TRAINER_GLORIA] =
+    {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
         .trainerName = _("GLORIA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_TO, EC_WORD_ATTACK, EC_WORD_WITH, EC_WORD_SUCTION_CUPS},
-        .speechWin = {EC_WORD_GIGGLE, EC_WORD_ELLIPSIS, EC_WORD_IT_S, EC_WORD_OVER, EC_WORD_FOR, EC_WORD_YOU},
-        .speechLose = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_GET, EC_WORD_HOW, EC_WORD_SUCTION_CUPS, EC_WORD_WORK},
-        .monSet = gBattleFrontierTrainerMons_Gloria
-=======
-        .speechBefore = COMPOUND_STRING("I like to attack with suction cups."),
-        .speechWin = COMPOUND_STRING("Giggle… It's over for you."),
-        .speechLose = COMPOUND_STRING("I don't get how suction cups work."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GloriaBefore,
+        .speechWin = sText_GloriaWin,
+        .speechLose = sText_GloriaLose,
+        .monSet = gBattleFrontierTrainerMons_Gloria,
     },
-    [FRONTIER_TRAINER_NICO] = {
+    [FRONTIER_TRAINER_NICO] =
+    {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
         .trainerName = _("NICO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_LIKE, EC_WORD_A, EC_MOVE(SONIC_BOOM), EC_WORD_I_VE_ARRIVED, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_SORRY, EC_WORD_TO, EC_WORD_MAKE, EC_WORD_YOU, EC_WORD_SO, EC_WORD_DOWNCAST},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_WITH, EC_WORD_A, EC_MOVE2(SUPERSONIC), EC_WORD_SPEED_BOOST},
-        .monSet = gBattleFrontierTrainerMons_Nico
-=======
-        .speechBefore = COMPOUND_STRING("Like a sonic boom I've arrived."),
-        .speechWin = COMPOUND_STRING("Sorry to make you so downcast."),
-        .speechLose = COMPOUND_STRING("I am going with a supersonic speed boost."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_NicoBefore,
+        .speechWin = sText_NicoWin,
+        .speechLose = sText_NicoLose,
+        .monSet = gBattleFrontierTrainerMons_Nico,
     },
-    [FRONTIER_TRAINER_JEREMY] = {
+    [FRONTIER_TRAINER_JEREMY] =
+    {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
         .trainerName = _("JEREMY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_A, EC_WORD_POKEMON, EC_WORD_MASTER, EC_WORD_THAT_S, EC_WORD_MY, EC_WORD_DREAM},
-        .speechWin = {EC_WORD_MY, EC_WORD_DREAM, EC_WORD_ISN_T, EC_WORD_FAR, EC_WORD_OFF, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_WHAT, EC_WORD_I, EC_WORD_DREAM, EC_WORD_ISN_T, EC_WORD_HAPPENING, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Jeremy
-=======
-        .speechBefore = COMPOUND_STRING("A Pokémon master that's my dream."),
-        .speechWin = COMPOUND_STRING("My dream isn't far off!"),
-        .speechLose = COMPOUND_STRING("What I dream isn't happening…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_JeremyBefore,
+        .speechWin = sText_JeremyWin,
+        .speechLose = sText_JeremyLose,
+        .monSet = gBattleFrontierTrainerMons_Jeremy,
     },
-    [FRONTIER_TRAINER_CAITLIN] = {
+    [FRONTIER_TRAINER_CAITLIN] =
+    {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
         .trainerName = _("CAITLIN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_DON_T, EC_WORD_YOU, EC_WORD_THINK, EC_WORD_I_AM, EC_WORD_CUTE, EC_WORD_QUES},
-        .speechWin = {EC_WORD_THERE, EC_WORD_IS, EC_WORD_MORE, EC_WORD_TO_ME, EC_WORD_THAN, EC_WORD_CUTENESS},
-        .speechLose = {EC_WORD_MY, EC_WORD_CUTE_CHARM, EC_WORD_DOESN_T, EC_MOVE2(ATTRACT), EC_WORD_YOU, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Caitlin
-=======
-        .speechBefore = COMPOUND_STRING("Don't you think I am cute?"),
-        .speechWin = COMPOUND_STRING("There is more to me than cuteness."),
-        .speechLose = COMPOUND_STRING("My cute charm doesn't attract you?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CaitlinBefore,
+        .speechWin = sText_CaitlinWin,
+        .speechLose = sText_CaitlinLose,
+        .monSet = gBattleFrontierTrainerMons_Caitlin,
     },
-    [FRONTIER_TRAINER_REENA] = {
+    [FRONTIER_TRAINER_REENA] =
+    {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
         .trainerName = _("REENA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_ALWAYS, EC_WORD_HAPPY, EC_WORD_HAPPY, EC_WORD_HAPPY, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_OH, EC_WORD_YAY, EC_WORD_EXCL, EC_WORD_YAHOO, EC_WORD_FOR, EC_WORD_ME},
-        .speechLose = {EC_WORD_YAHOO, EC_WORD_EXCL, EC_WORD_I_AM, EC_WORD_HAPPY, EC_WORD_FOR, EC_WORD_YOU},
-        .monSet = gBattleFrontierTrainerMons_Reena
-=======
-        .speechBefore = COMPOUND_STRING("I am always happy happy happy!"),
-        .speechWin = COMPOUND_STRING("Oh yay! Yahoo for me."),
-        .speechLose = COMPOUND_STRING("Yahoo! I am happy for you."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_ReenaBefore,
+        .speechWin = sText_ReenaWin,
+        .speechLose = sText_ReenaLose,
+        .monSet = gBattleFrontierTrainerMons_Reena,
     },
-    [FRONTIER_TRAINER_AVERY] = {
+    [FRONTIER_TRAINER_AVERY] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
         .trainerName = _("AVERY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_VE, EC_WORD_GOT, EC_WORD_A_LOT, EC_WORD_OF, EC_WORD_BUG, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_MY, EC_WORD_BUG, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_ALL, EC_WORD_UNBELIEVABLE},
-        .speechLose = {EC_WORD_MY, EC_WORD_BUG, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_ALL, EC_WORD_UPSIDE_DOWN},
-        .monSet = gBattleFrontierTrainerMons_Avery
-=======
-        .speechBefore = COMPOUND_STRING("I've got a lot of bug Pokémon."),
-        .speechWin = COMPOUND_STRING("My bug Pokémon are all unbelievable."),
-        .speechLose = COMPOUND_STRING("My bug Pokémon are all upside down."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AveryBefore,
+        .speechWin = sText_AveryWin,
+        .speechLose = sText_AveryLose,
+        .monSet = gBattleFrontierTrainerMons_Avery,
     },
-    [FRONTIER_TRAINER_LIAM] = {
+    [FRONTIER_TRAINER_LIAM] =
+    {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
         .trainerName = _("LIAM"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WE, EC_WORD_REALLY, EC_WORD_DISLIKE, EC_WORD_FIRE, EC_WORD_AND, EC_WORD_FLYING},
-        .speechWin = {EC_WORD_BUG, EC_WORD_POKEMON, EC_WORD_AREN_T, EC_WORD_BAD, EC_WORD_HEY_QUES, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_YOU, EC_WORD_KNOW, EC_WORD_WHAT, EC_WORD_WE, EC_WORD_DISLIKE, EC_WORD_HEY_QUES},
-        .monSet = gBattleFrontierTrainerMons_Liam
-=======
-        .speechBefore = COMPOUND_STRING("We really dislike fire and flying."),
-        .speechWin = COMPOUND_STRING("Bug Pokémon aren't bad hey ques."),
-        .speechLose = COMPOUND_STRING("You know what we dislike hey ques."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_LiamBefore,
+        .speechWin = sText_LiamWin,
+        .speechLose = sText_LiamLose,
+        .monSet = gBattleFrontierTrainerMons_Liam,
     },
-    [FRONTIER_TRAINER_THEO] = {
+    [FRONTIER_TRAINER_THEO] =
+    {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
         .trainerName = _("THEO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_FISHING, EC_WORD_IS, EC_WORD_MY, EC_WORD_CHOICE, EC_WORD_IN, EC_WORD_LIFE},
-        .speechWin = {EC_WORD_WATER, EC_WORD_POKEMON, EC_MOVE2(ATTRACT), EC_WORD_ME, EC_WORD_WITHOUT, EC_WORD_END},
-        .speechLose = {EC_WORD_DON_T, EC_WORD_COUNT_ON, EC_WORD_THAT, EC_WORD_HAPPENING, EC_WORD_ANOTHER, EC_WORD_TIME},
-        .monSet = gBattleFrontierTrainerMons_Theo
-=======
-        .speechBefore = COMPOUND_STRING("Fishing is my choice in life."),
-        .speechWin = COMPOUND_STRING("Water Pokémon attract me without end."),
-        .speechLose = COMPOUND_STRING("Don't count on that happening another time."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_TheoBefore,
+        .speechWin = sText_TheoWin,
+        .speechLose = sText_TheoLose,
+        .monSet = gBattleFrontierTrainerMons_Theo,
     },
-    [FRONTIER_TRAINER_BAILEY] = {
+    [FRONTIER_TRAINER_BAILEY] =
+    {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
         .trainerName = _("BAILEY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_AN, EC_WORD_ADULT, EC_WORD_I, EC_WORD_BATTLE, EC_WORD_EASY},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_AN, EC_WORD_ADULT, EC_WORD_I, EC_MOVE2(SWALLOW), EC_WORD_JOY},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_AN, EC_WORD_ADULT, EC_WORD_I, EC_MOVE2(SWALLOW), EC_MOVE2(FRUSTRATION)},
-        .monSet = gBattleFrontierTrainerMons_Bailey
-=======
-        .speechBefore = COMPOUND_STRING("I am an adult I battle easy."),
-        .speechWin = COMPOUND_STRING("I am an adult I swallow joy."),
-        .speechLose = COMPOUND_STRING("I am an adult I swallow frustration."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BaileyBefore,
+        .speechWin = sText_BaileyWin,
+        .speechLose = sText_BaileyLose,
+        .monSet = gBattleFrontierTrainerMons_Bailey,
     },
-    [FRONTIER_TRAINER_HUGO] = {
+    [FRONTIER_TRAINER_HUGO] =
+    {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
         .trainerName = _("HUGO"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_TRY, EC_WORD_THE, EC_WORD_BEST, EC_WORD_I, EC_WORD_CAN},
-        .speechWin = {EC_WORD_I, EC_WORD_CAN_WIN, EC_WORD_IF, EC_WORD_I, EC_WORD_TRY, EC_WORD_ENOUGH},
-        .speechLose = {EC_WORD_I, EC_WORD_DID, EC_WORD_TRY, EC_WORD_DIDN_T, EC_WORD_I, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Hugo
-=======
-        .speechBefore = COMPOUND_STRING("I try the best I can."),
-        .speechWin = COMPOUND_STRING("I can win if I try enough."),
-        .speechLose = COMPOUND_STRING("I did try didn't I?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_HugoBefore,
+        .speechWin = sText_HugoWin,
+        .speechLose = sText_HugoLose,
+        .monSet = gBattleFrontierTrainerMons_Hugo,
     },
-    [FRONTIER_TRAINER_BRYCE] = {
+    [FRONTIER_TRAINER_BRYCE] =
+    {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
         .trainerName = _("BRYCE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_WAS, EC_WORD_ON, EC_WORD_VACATION, EC_WORD_UNTIL, EC_WORD_ONLY, EC_WORD_YESTERDAY},
-        .speechWin = {EC_WORD_I, EC_WORD_HAVEN_T, EC_WORD_LOST, EC_WORD_MY, EC_WORD_SKILL, EC_WORD_YET},
-        .speechLose = {EC_WORD_THAT_S, EC_WORD_IT, EC_WORD_ELLIPSIS, EC_WORD_I, EC_WORD_NEED, EC_WORD_SLEEP},
-        .monSet = gBattleFrontierTrainerMons_Bryce
-=======
-        .speechBefore = COMPOUND_STRING("I was on vacation until only yesterday."),
-        .speechWin = COMPOUND_STRING("I haven't lost my skill yet."),
-        .speechLose = COMPOUND_STRING("That's it… I need sleep."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_BryceBefore,
+        .speechWin = sText_BryceWin,
+        .speechLose = sText_BryceLose,
+        .monSet = gBattleFrontierTrainerMons_Bryce,
     },
-    [FRONTIER_TRAINER_GIDEON] = {
+    [FRONTIER_TRAINER_GIDEON] =
+    {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
         .trainerName = _("GIDEON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WHAT_S_UP_QUES, EC_WORD_YOU, EC_WORD_THINK, EC_WORD_I_AM, EC_WORD_SCARY, EC_WORD_QUES},
-        .speechWin = {EC_WORD_I_AM, EC_WORD_COOL, EC_WORD_BUT, EC_WORD_NOT, EC_WORD_SCARY, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_LOOK, EC_WORD_AT, EC_WORD_MY, EC_WORD_FABULOUS, EC_WORD_FASHION, EC_WORD_SENSE},
-        .monSet = gBattleFrontierTrainerMons_Gideon
-=======
-        .speechBefore = COMPOUND_STRING("What's up ques you think I am scary?"),
-        .speechWin = COMPOUND_STRING("I am cool but not scary!"),
-        .speechLose = COMPOUND_STRING("Look at my fabulous fashion sense."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GideonBefore,
+        .speechWin = sText_GideonWin,
+        .speechLose = sText_GideonLose,
+        .monSet = gBattleFrontierTrainerMons_Gideon,
     },
-    [FRONTIER_TRAINER_TRISTON] = {
+    [FRONTIER_TRAINER_TRISTON] =
+    {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
         .trainerName = _("TRISTON"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_WOULD, EC_WORD_RATHER, EC_WORD_LOOK, EC_WORD_AT, EC_WORD_POKEMON},
-        .speechWin = {EC_WORD_HUH_QUES, EC_WORD_YOU, EC_WORD_MEAN, EC_WORD_I, EC_WORD_WON, EC_WORD_QUES_EXCL},
-        .speechLose = {EC_WORD_SEE, EC_WORD_QUES, EC_EMPTY_WORD, EC_WORD_I, EC_WORD_ALWAYS, EC_WORD_LOSE},
-        .monSet = gBattleFrontierTrainerMons_Triston
-=======
-        .speechBefore = COMPOUND_STRING("I would rather look at Pokémon."),
-        .speechWin = COMPOUND_STRING("Huh ques you mean I won?!"),
-        .speechLose = COMPOUND_STRING("See? I always lose."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_TristonBefore,
+        .speechWin = sText_TristonWin,
+        .speechLose = sText_TristonLose,
+        .monSet = gBattleFrontierTrainerMons_Triston,
     },
-    [FRONTIER_TRAINER_CHARLES] = {
+    [FRONTIER_TRAINER_CHARLES] =
+    {
         .facilityClass = FACILITY_CLASS_GUITARIST,
         .trainerName = _("CHARLES"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_IT_S, EC_WORD_HOPELESS, EC_WORD_TO, EC_MOVE2(STRUGGLE), EC_WORD_WITH, EC_WORD_ME},
-        .speechWin = {EC_MOVE(SUBMISSION), EC_WORD_WAS, EC_WORD_YOUR, EC_WORD_ONLY, EC_WORD_CHOICE, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_DOWN, EC_WORD_DOWN, EC_WORD_DOWN, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Charles
-=======
-        .speechBefore = COMPOUND_STRING("It's hopeless to struggle with me."),
-        .speechWin = COMPOUND_STRING("Submission was your only choice."),
-        .speechLose = COMPOUND_STRING("I am going down down down!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CharlesBefore,
+        .speechWin = sText_CharlesWin,
+        .speechLose = sText_CharlesLose,
+        .monSet = gBattleFrontierTrainerMons_Charles,
     },
-    [FRONTIER_TRAINER_RAYMOND] = {
+    [FRONTIER_TRAINER_RAYMOND] =
+    {
         .facilityClass = FACILITY_CLASS_GUITARIST,
         .trainerName = _("RAYMOND"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_WANT, EC_WORD_TO, EC_WORD_HEAR, EC_WORD_MY, EC_WORD_SONG, EC_WORD_QUES},
-        .speechWin = {EC_WORD_SATISFIED, EC_WORD_THAT_S, EC_WORD_WHAT, EC_WORD_I_AM, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_SATISFIED, EC_WORD_IS, EC_WORD_WHAT, EC_WORD_I, EC_WORD_CAN_T, EC_WORD_BE},
-        .monSet = gBattleFrontierTrainerMons_Raymond
-=======
-        .speechBefore = COMPOUND_STRING("Want to hear my song?"),
-        .speechWin = COMPOUND_STRING("Satisfied that's what I am!"),
-        .speechLose = COMPOUND_STRING("Satisfied is what I can't be."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_RaymondBefore,
+        .speechWin = sText_RaymondWin,
+        .speechLose = sText_RaymondLose,
+        .monSet = gBattleFrontierTrainerMons_Raymond,
     },
-    [FRONTIER_TRAINER_DIRK] = {
+    [FRONTIER_TRAINER_DIRK] =
+    {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
         .trainerName = _("DIRK"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_FLYING, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_ABOVE, EC_WORD_THE, EC_MOVE2(REST)},
-        .speechWin = {EC_WORD_YOU, EC_WORD_CAN_T_WIN, EC_WORD_EXCL, EC_WORD_FLYING, EC_WORD_POKEMON, EC_WORD_RULE},
-        .speechLose = {EC_WORD_AREN_T, EC_WORD_THERE, EC_WORD_MORE, EC_WORD_FLYING, EC_WORD_POKEMON, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Dirk
-=======
-        .speechBefore = COMPOUND_STRING("Flying Pokémon are above the rest."),
-        .speechWin = COMPOUND_STRING("You can't win! Flying Pokémon rule."),
-        .speechLose = COMPOUND_STRING("Aren't there more flying Pokémon?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DirkBefore,
+        .speechWin = sText_DirkWin,
+        .speechLose = sText_DirkLose,
+        .monSet = gBattleFrontierTrainerMons_Dirk,
     },
-    [FRONTIER_TRAINER_HAROLD] = {
+    [FRONTIER_TRAINER_HAROLD] =
+    {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
         .trainerName = _("HAROLD"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_APPEAL, EC_WORD_TO, EC_WORD_YOU, EC_WORD_QUES},
-        .speechWin = {EC_WORD_YOU, EC_WORD_DO, EC_WORD_LIKE, EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_QUES},
-        .speechLose = {EC_WORD_SO, EC_WORD_YOU, EC_WORD_DISLIKE, EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Harold
-=======
-        .speechBefore = COMPOUND_STRING("My Pokémon appeal to you?"),
-        .speechWin = COMPOUND_STRING("You do like my Pokémon?"),
-        .speechLose = COMPOUND_STRING("So you dislike my Pokémon?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_HaroldBefore,
+        .speechWin = sText_HaroldWin,
+        .speechLose = sText_HaroldLose,
+        .monSet = gBattleFrontierTrainerMons_Harold,
     },
-    [FRONTIER_TRAINER_OMAR] = {
+    [FRONTIER_TRAINER_OMAR] =
+    {
         .facilityClass = FACILITY_CLASS_SAILOR,
         .trainerName = _("OMAR"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_LET_ME_WIN, EC_WORD_IN, EC_MOVE(RETURN), EC_WORD_FOR, EC_WORD_A, EC_MOVE2(PRESENT)},
-        .speechWin = {EC_WORD_HERE, EC_WORD_YOU, EC_WORD_ARE, EC_WORD_SOME, EC_MOVE2(TOXIC), EC_WORD_SWEETS},
-        .speechLose = {EC_WORD_YOUR, EC_MOVE2(PRESENT), EC_WORD_QUES, EC_WORD_WHAT, EC_WORD_FOR, EC_WORD_QUES_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Omar
-=======
-        .speechBefore = COMPOUND_STRING("Let me win in return for a present."),
-        .speechWin = COMPOUND_STRING("Here you are some toxic sweets."),
-        .speechLose = COMPOUND_STRING("Your present? What for?!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_OmarBefore,
+        .speechWin = sText_OmarWin,
+        .speechLose = sText_OmarLose,
+        .monSet = gBattleFrontierTrainerMons_Omar,
     },
-    [FRONTIER_TRAINER_PETER] = {
+    [FRONTIER_TRAINER_PETER] =
+    {
         .facilityClass = FACILITY_CLASS_SAILOR,
         .trainerName = _("PETER"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_BRAG, EC_WORD_ABOUT, EC_WORD_MY, EC_WORD_HAPPINESS, EC_WORD_OK_QUES},
-        .speechWin = {EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_TO, EC_WORD_LISTEN, EC_WORD_TO_ME, EC_WORD_BRAG},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_DISAPPOINTED, EC_WORD_YOU, EC_WORD_WON_T, EC_WORD_LISTEN, EC_WORD_TO_ME},
-        .monSet = gBattleFrontierTrainerMons_Peter
-=======
-        .speechBefore = COMPOUND_STRING("I brag about my happiness ok ques."),
-        .speechWin = COMPOUND_STRING("You have to listen to me brag."),
-        .speechLose = COMPOUND_STRING("I am disappointed you won't listen to me."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_PeterBefore,
+        .speechWin = sText_PeterWin,
+        .speechLose = sText_PeterLose,
+        .monSet = gBattleFrontierTrainerMons_Peter,
     },
-    [FRONTIER_TRAINER_DEV] = {
+    [FRONTIER_TRAINER_DEV] =
+    {
         .facilityClass = FACILITY_CLASS_HIKER,
         .trainerName = _("DEV"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_COME_ON, EC_WORD_LET_S, EC_WORD_GET, EC_WORD_A, EC_WORD_MOVE, EC_WORD_ON},
-        .speechWin = {EC_WORD_I, EC_WORD_GET, EC_WORD_TO, EC_WORD_NAP, EC_WORD_AFTER, EC_WORD_THAT},
-        .speechLose = {EC_WORD_I, EC_WORD_NEED, EC_WORD_TO, EC_WORD_NAP, EC_WORD_AFTER, EC_WORD_THAT},
-        .monSet = gBattleFrontierTrainerMons_Dev
-=======
-        .speechBefore = COMPOUND_STRING("Come on let's get a move on."),
-        .speechWin = COMPOUND_STRING("I get to nap after that."),
-        .speechLose = COMPOUND_STRING("I need to nap after that."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DevBefore,
+        .speechWin = sText_DevWin,
+        .speechLose = sText_DevLose,
+        .monSet = gBattleFrontierTrainerMons_Dev,
     },
-    [FRONTIER_TRAINER_COREY] = {
+    [FRONTIER_TRAINER_COREY] =
+    {
         .facilityClass = FACILITY_CLASS_HIKER,
         .trainerName = _("COREY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_LET_S, EC_WORD_TEACH, EC_WORD_YOU, EC_WORD_HOW, EC_WORD_TOUGH, EC_WORD_I_AM},
-        .speechWin = {EC_WORD_LOOK, EC_WORD_AT, EC_WORD_ME, EC_WORD_MAKE, EC_WORD_A, EC_MOVE(BRICK_BREAK)},
-        .speechLose = {EC_WORD_MY, EC_MOVE2(FRUSTRATION), EC_WORD_IS, EC_WORD_CLOSE, EC_WORD_TO, EC_MOVE2(ERUPTION)},
-        .monSet = gBattleFrontierTrainerMons_Corey
-=======
-        .speechBefore = COMPOUND_STRING("Let's teach you how tough I am."),
-        .speechWin = COMPOUND_STRING("Look at me make a brick break."),
-        .speechLose = COMPOUND_STRING("My frustration is close to eruption."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_CoreyBefore,
+        .speechWin = sText_CoreyWin,
+        .speechLose = sText_CoreyLose,
+        .monSet = gBattleFrontierTrainerMons_Corey,
     },
-    [FRONTIER_TRAINER_ANDRE] = {
+    [FRONTIER_TRAINER_ANDRE] =
+    {
         .facilityClass = FACILITY_CLASS_KINDLER,
         .trainerName = _("ANDRE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_NOW, EC_WORD_THIS, EC_WORD_IS, EC_WORD_A, EC_WORD_PERFECT, EC_WORD_FLAME_BODY},
-        .speechWin = {EC_WORD_LOOK, EC_WORD_AT, EC_WORD_MY, EC_WORD_FIERY, EC_WORD_DANCE, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_YOU, EC_WORD_WANT, EC_WORD_AN, EC_MOVE2(EXPLOSION), EC_WORD_HERE, EC_WORD_QUES},
-        .monSet = gBattleFrontierTrainerMons_Andre
-=======
-        .speechBefore = COMPOUND_STRING("Now this is a perfect flame body."),
-        .speechWin = COMPOUND_STRING("Look at my fiery dance!"),
-        .speechLose = COMPOUND_STRING("You want an explosion here?"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AndreBefore,
+        .speechWin = sText_AndreWin,
+        .speechLose = sText_AndreLose,
+        .monSet = gBattleFrontierTrainerMons_Andre,
     },
-    [FRONTIER_TRAINER_FERRIS] = {
+    [FRONTIER_TRAINER_FERRIS] =
+    {
         .facilityClass = FACILITY_CLASS_KINDLER,
         .trainerName = _("FERRIS"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_NO_1, EC_WORD_IN, EC_WORD_THE, EC_WORD_OLD, EC_WORD_CLASS},
-        .speechWin = {EC_WORD_NO_1, EC_WORD_THAT_S, EC_WORD_WHAT, EC_WORD_I_AM, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_NO_1, EC_WORD_ANY, EC_WORD_MORE, EC_WORD_ELLIPSIS},
-        .monSet = gBattleFrontierTrainerMons_Ferris
-=======
-        .speechBefore = COMPOUND_STRING("I am no 1 in the old class."),
-        .speechWin = COMPOUND_STRING("No 1 that's what I am!"),
-        .speechLose = COMPOUND_STRING("I am not no 1 any more…"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_FerrisBefore,
+        .speechWin = sText_FerrisWin,
+        .speechLose = sText_FerrisLose,
+        .monSet = gBattleFrontierTrainerMons_Ferris,
     },
-    [FRONTIER_TRAINER_ALIVIA] = {
+    [FRONTIER_TRAINER_ALIVIA] =
+    {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
         .trainerName = _("ALIVIA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_GIDDY, EC_WORD_SO, EC_WORD_SHOULD, EC_WORD_YOU},
-        .speechWin = {EC_WORD_IT, EC_WORD_WAS, EC_WORD_ALL, EC_WORD_TOGETHER, EC_WORD_TOO, EC_WORD_EASY},
-        .speechLose = {EC_WORD_I, EC_WORD_WILL, EC_WORD_GIDDY, EC_WORD_UP, EC_WORD_AND, EC_WORD_AWAY},
-        .monSet = gBattleFrontierTrainerMons_Alivia
-=======
-        .speechBefore = COMPOUND_STRING("I am feeling giddy so should you."),
-        .speechWin = COMPOUND_STRING("It was all together too easy."),
-        .speechLose = COMPOUND_STRING("I will giddy up and away."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AliviaBefore,
+        .speechWin = sText_AliviaWin,
+        .speechLose = sText_AliviaLose,
+        .monSet = gBattleFrontierTrainerMons_Alivia,
     },
-    [FRONTIER_TRAINER_PAIGE] = {
+    [FRONTIER_TRAINER_PAIGE] =
+    {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
         .trainerName = _("PAIGE"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_LET_S, EC_WORD_ENJOY, EC_WORD_OUR, EC_WORD_BATTLE, EC_WORD_TOGETHER, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_THAT_S_IT_EXCL, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_WORD_THANK_YOU, EC_WORD_VERY, EC_WORD_MUCH},
-        .speechLose = {EC_WORD_THAT_S_IT_EXCL, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_WORD_DO, EC_WORD_GO, EC_WORD_ON},
-        .monSet = gBattleFrontierTrainerMons_Paige
-=======
-        .speechBefore = COMPOUND_STRING("Let's enjoy our battle together."),
-        .speechWin = COMPOUND_STRING("That's it excl thank you very much."),
-        .speechLose = COMPOUND_STRING("That's it excl do go on."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_PaigeBefore,
+        .speechWin = sText_PaigeWin,
+        .speechLose = sText_PaigeLose,
+        .monSet = gBattleFrontierTrainerMons_Paige,
     },
-    [FRONTIER_TRAINER_ANYA] = {
+    [FRONTIER_TRAINER_ANYA] =
+    {
         .facilityClass = FACILITY_CLASS_BEAUTY,
         .trainerName = _("ANYA"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_DISLIKE, EC_WORD_OH, EC_WORD_SO, EC_WORD_PRETTY, EC_WORD_FASHION},
-        .speechWin = {EC_WORD_FASHION, EC_WORD_SHOULD, EC_WORD_MATCH, EC_WORD_THE, EC_WORD_PERSON, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_PRETTY, EC_WORD_COULD, EC_WORD_BE, EC_WORD_GOOD, EC_EMPTY_WORD, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Anya
-=======
-        .speechBefore = COMPOUND_STRING("I dislike oh so pretty fashion."),
-        .speechWin = COMPOUND_STRING("Fashion should match the person."),
-        .speechLose = COMPOUND_STRING("Pretty could be good."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AnyaBefore,
+        .speechWin = sText_AnyaWin,
+        .speechLose = sText_AnyaLose,
+        .monSet = gBattleFrontierTrainerMons_Anya,
     },
-    [FRONTIER_TRAINER_DAWN] = {
+    [FRONTIER_TRAINER_DAWN] =
+    {
         .facilityClass = FACILITY_CLASS_BEAUTY,
         .trainerName = _("DAWN"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_GO, EC_WORD_ALL, EC_WORD_OUT, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechWin = {EC_WORD_DON_T, EC_WORD_BE, EC_WORD_A, EC_WORD_BABY, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_YOU, EC_WORD_WON, EC_WORD_EXCL, EC_WORD_MOVE, EC_WORD_ON, EC_WORD_EXCL},
-        .monSet = gBattleFrontierTrainerMons_Dawn
-=======
-        .speechBefore = COMPOUND_STRING("I go all out!"),
-        .speechWin = COMPOUND_STRING("Don't be a baby!"),
-        .speechLose = COMPOUND_STRING("You won! Move on!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_DawnBefore,
+        .speechWin = sText_DawnWin,
+        .speechLose = sText_DawnLose,
+        .monSet = gBattleFrontierTrainerMons_Dawn,
     },
-    [FRONTIER_TRAINER_ABBY] = {
+    [FRONTIER_TRAINER_ABBY] =
+    {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
         .trainerName = _("ABBY"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_A, EC_WORD_TRAINER, EC_WORD_THAT_S, EC_WORD_REFRESHING},
-        .speechWin = {EC_WORD_VICTORY, EC_WORD_HAS, EC_WORD_A, EC_MOVE(SWEET_SCENT), EC_WORD_EXCL, EC_EMPTY_WORD},
-        .speechLose = {EC_WORD_WHAT, EC_WORD_AN, EC_WORD_AWFUL, EC_WORD_STENCH, EC_WORD_EXCL, EC_EMPTY_WORD},
-        .monSet = gBattleFrontierTrainerMons_Abby
-=======
-        .speechBefore = COMPOUND_STRING("I like a trainer that's refreshing."),
-        .speechWin = COMPOUND_STRING("Victory has a sweet scent!"),
-        .speechLose = COMPOUND_STRING("What an awful stench!"),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_AbbyBefore,
+        .speechWin = sText_AbbyWin,
+        .speechLose = sText_AbbyLose,
+        .monSet = gBattleFrontierTrainerMons_Abby,
     },
-    [FRONTIER_TRAINER_GRETEL] = {
+    [FRONTIER_TRAINER_GRETEL] =
+    {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
         .trainerName = _("GRETEL"),
-<<<<<<< HEAD
-        .speechBefore = {EC_WORD_I, EC_WORD_CAUSE, EC_MOVE(OUTRAGE), EC_WORD_AS, EC_WORD_A, EC_WORD_TRAINER},
-        .speechWin = {EC_WORD_IT_S, EC_WORD_ONLY, EC_WORD_NATURAL, EC_WORD_SEE_YA, EC_WORD_BYE_BYE, EC_WORD_EXCL},
-        .speechLose = {EC_WORD_IT_S, EC_WORD_HARD, EC_WORD_TO, EC_WORD_BELIEVE, EC_WORD_BUT, EC_WORD_CONGRATS},
-        .monSet = gBattleFrontierTrainerMons_Gretel
-=======
-        .speechBefore = COMPOUND_STRING("I cause outrage as a trainer."),
-        .speechWin = COMPOUND_STRING("It's only natural see ya bye bye!"),
-        .speechLose = COMPOUND_STRING("It's hard to believe but congrats."),
-        .monSet = sUniversalMonSet,
->>>>>>> caf732dc3d (Battle Frontier no longer uses EC WORDs!)
+        .speechBefore = sText_GretelBefore,
+        .speechWin = sText_GretelWin,
+        .speechLose = sText_GretelLose,
+        .monSet = gBattleFrontierTrainerMons_Gretel,
     }
 };
