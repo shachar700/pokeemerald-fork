@@ -4,6 +4,194 @@
 #define TRAINER_DIRS(a, b)  (((a-1)<<4)|(b-1))
 #define TRAINER_RANGE(a, b) ((a<<4)|(b))
 
+
+// JP Default Challenge - Unused
+static const u8 sText_ShigenobuSpeechBefore[] = _("מאמן גברת ! הם היו יריב יכול");
+static const u8 sText_ShigenobuSpeechWin[] = _("מאמן גברת חלש של היו …");
+static const u8 sText_ShigenobuSpeechLose[] = _("מאמן גברת חזק היי ? ! !");
+static const u8 sText_ShigenobuSpeechAfter[] = _("נהדר לא יכול מאמן גברת … מרגש");
+
+static const u8 sText_AkariSpeechBefore[] = _("היא כל סוג מעריץ עבור !");
+static const u8 sText_AkariSpeechWin[] = _("הפתעה אלה פלא צחקוק …");
+static const u8 sText_AkariSpeechLose[] = _("או ? רעידת אדמה קיים של בלי !");
+static const u8 sText_AkariSpeechAfter[] = _("אתה כנראה סוף עד הולך לשום מקום");
+
+static const u8 sText_ShigezouSpeechBefore[] = _("ניצחון עד בת הגבלה של היו");
+static const u8 sText_ShigezouSpeechWin[] = _("הגבלה עד פחות אף אחד היי ? !");
+static const u8 sText_ShigezouSpeechLose[] = _("עדיין … ארח כמעט עוצמה אף אחד");
+static const u8 sText_ShigezouSpeechAfter[] = _("הא ? מחר ריח לחלוטין אלה ! !");
+
+static const u8 sText_NamikoSpeechBefore[] = _("אחות למרות סוג התאמה בבקשה בלי");
+static const u8 sText_NamikoSpeechWin[] = _("סוג … במקום עמוק חלש ?");
+static const u8 sText_NamikoSpeechLose[] = _("נורא גווא! חסר סיכוי! הוא לא יכול\nלנצח אף אחד");
+static const u8 sText_NamikoSpeechAfter[] = _("אוו כמעט טוב לשום מקום");
+
+// sFloors_Normal
+static const u8 sText_AlaynaSpeechBefore[] = _("אתה יכול לבחור לא להאמין");
+static const u8 sText_AlaynaSpeechWin[] = _("כוח על טבעי הגיע");
+static const u8 sText_AlaynaSpeechLose[] = _("זה חייב להיות סיוט !");
+static const u8 sText_AlaynaSpeechAfter[] = _("אני איעלם בחשכה");
+
+static const u8 sText_AlfonzoSpeechBefore[] = _("אני אף פעם לא לוקח רכבת");
+static const u8 sText_AlfonzoSpeechWin[] = _("אני מרגיש על-קולי על האופניים שלי");
+static const u8 sText_AlfonzoSpeechLose[] = _("האופניים שלי ! הרסת אותם");
+static const u8 sText_AlfonzoSpeechAfter[] = _("אופניים מעל כל רכבת !");
+
+static const u8 sText_TheodoreSpeechBefore[] = _("הכוח שלי ירמוס אותך !");
+static const u8 sText_TheodoreSpeechWin[] = _("וואאהה חחחח ! וואאהה חחחח ! !");
+static const u8 sText_TheodoreSpeechLose[] = _("אני הלכתי על זה קשה מדי");
+static const u8 sText_TheodoreSpeechAfter[] = _("כן אדוני ! אתה נראה נחמד ונועז");
+
+static const u8 sText_JaydenSpeechBefore[] = _("כמה דברים אתה לא יכול לעשות לבד");
+static const u8 sText_JaydenSpeechWin[] = _("אתה מנצח כ קבוצה");
+static const u8 sText_JaydenSpeechLose[] = _("אנחנו לא יכולנו לנצח ביחד ?");
+static const u8 sText_JaydenSpeechAfter[] = _("אולי אני צריך חבר");
+
+static const u8 sText_SalvadorSpeechBefore[] = _("בואו עיטוף דברים כאן היי ?");
+static const u8 sText_SalvadorSpeechWin[] = _("היית רוצה ללכת הביתה ?");
+static const u8 sText_SalvadorSpeechLose[] = _("אני אגרום לך להצטער חבר");
+static const u8 sText_SalvadorSpeechAfter[] = _("לא עשית מספיק ?");
+
+static const u8 sText_VeronicaSpeechBefore[] = _("אני היופי החזק בסביבה כאן");
+static const u8 sText_VeronicaSpeechWin[] = _("אני חזקה בגלל זה !");
+static const u8 sText_VeronicaSpeechLose[] = _("אני עייפה היום בגלל זה !");
+static const u8 sText_VeronicaSpeechAfter[] = _("למה כן אני כועסת תודה לך !");
+
+static const u8 sText_KeenanSpeechBefore[] = _("אתה נראה כל כך ממהר");
+static const u8 sText_KeenanSpeechWin[] = _("חבל הזמן עבר");
+static const u8 sText_KeenanSpeechLose[] = _("האם הזמן מדאיג אותך ?");
+static const u8 sText_KeenanSpeechAfter[] = _("אין לך זמן לשוחח");
+
+static const u8 sText_KristinaSpeechBefore[] = _("זה חם … מה צחנה");
+static const u8 sText_KristinaSpeechWin[] = _("אני באמת אוהבת צחנה פוגענית");
+static const u8 sText_KristinaSpeechLose[] = _("אני חמדה כל צחנה חזקה");
+static const u8 sText_KristinaSpeechAfter[] = _("חוש הריח שלי לא נורמלי");
+
+
+// sFloors_Variety
+static const u8 sText_TerenceSpeechBefore[] = _("ילדים טובים יקבלו מתנה");
+static const u8 sText_TerenceSpeechWin[] = _("תודה לך הניצחון שלי הוא ה מתנה שלך");
+static const u8 sText_TerenceSpeechLose[] = _("זאת הייתה ה מתנה שלי אליך");
+static const u8 sText_TerenceSpeechAfter[] = _("ובכן אז ברכות חבר שלי");
+
+static const u8 sText_ElizabethSpeechBefore[] = _("אתה יכול להרגיש אותי ריכוז אנרגיה ?");
+static const u8 sText_ElizabethSpeechWin[] = _("זה בערך נכון אני הייתי חושבת");
+static const u8 sText_ElizabethSpeechLose[] = _("דברים לא תמיד מסתדרים");
+static const u8 sText_ElizabethSpeechAfter[] = _("אני מרגישה בודדה ועצובה עכשיו");
+
+static const u8 sText_AnnabelSpeechBefore[] = _("היי האם אתה מרגיש קצבי ?");
+static const u8 sText_AnnabelSpeechWin[] = _("האם אתה לא מרגיש טוב ?");
+static const u8 sText_AnnabelSpeechLose[] = _("אני יכולה לראות שאתה מרגיש נהדר");
+static const u8 sText_AnnabelSpeechAfter[] = _("הפוקימון שלך נראה מוכן להתאמץ");
+
+static const u8 sText_ColemanSpeechBefore[] = _("אני מחפש מישהו כ המודל לחיקוי שלי");
+static const u8 sText_ColemanSpeechWin[] = _("האם המודל לחיקוי שלי ראה את זה ?");
+static const u8 sText_ColemanSpeechLose[] = _("אתה כמו פעמון ריפוי בשבילי !");
+static const u8 sText_ColemanSpeechAfter[] = _("החלטתי אני בוחר בך כ המודל לחיקוי שלי");
+
+static const u8 sText_AnriqueSpeechBefore[] = _("היערך לקראת זמן מדהים");
+static const u8 sText_AnriqueSpeechWin[] = _("היי היי ! מה המצב ?");
+static const u8 sText_AnriqueSpeechLose[] = _("אוו לא יכולת לתת לי לנצח ?");
+static const u8 sText_AnriqueSpeechAfter[] = _("האם ראית את המיומנות שלי ?");
+
+static const u8 sText_ColleenSpeechBefore[] = _("אני הייתי רוצה להשתולל");
+static const u8 sText_ColleenSpeechWin[] = _("אני אוהבת את הדבר הזה של להשתולל !");
+static const u8 sText_ColleenSpeechLose[] = _("קדימה ותמחץ את החלום שלי …");
+static const u8 sText_ColleenSpeechAfter[] = _("אני רוצה להשתולל מתישהו");
+
+static const u8 sText_KimberlySpeechBefore[] = _("אני אוהבת לעבוד בקצב שלי");
+static const u8 sText_KimberlySpeechWin[] = _("אני לא גרועה אתה חושב ?");
+static const u8 sText_KimberlySpeechLose[] = _("אתה ילד רע כפי שזה נראה");
+static const u8 sText_KimberlySpeechAfter[] = _("הקצב שלי נכון עבורי");
+
+static const u8 sText_FranciscoSpeechBefore[] = _("אני לומד כל יום גם");
+static const u8 sText_FranciscoSpeechWin[] = _("אז ככה אתה מפסיד");
+static const u8 sText_FranciscoSpeechLose[] = _("לא פלא שלא יכולתי לנצח אותך");
+static const u8 sText_FranciscoSpeechAfter[] = _("כן … תודה לך");
+
+
+// sFloors_Unique
+static const u8 sText_MeredithSpeechBefore[] = _("אממ … אני …");
+static const u8 sText_MeredithSpeechWin[] = _("או ! אממ … יש !");
+static const u8 sText_MeredithSpeechLose[] = _("אממ … וואאהה …");
+static const u8 sText_MeredithSpeechAfter[] = _("אממ … אני עצובה …");
+
+static const u8 sText_BernardSpeechBefore[] = _("אני לא יכול להפסיד את הקרב הלוהט הזה");
+static const u8 sText_BernardSpeechWin[] = _("האם ציננתי אותך ?");
+static const u8 sText_BernardSpeechLose[] = _("איייי ! אתה אדם נורא");
+static const u8 sText_BernardSpeechAfter[] = _("הלב שלך חייב להיות קר כקרח …");
+
+static const u8 sText_AbrahamSpeechBefore[] = _("אני אוהב את הפוקימון הזה הכי טוב");
+static const u8 sText_AbrahamSpeechWin[] = _("איזה פוקימון נהדר זה");
+static const u8 sText_AbrahamSpeechLose[] = _("אני בלבלתי מהלך עם אחר");
+static const u8 sText_AbrahamSpeechAfter[] = _("אני רוצה שרטוט שלך");
+
+static const u8 sText_LukeSpeechBefore[] = _("יש לי מהלך נדיר ומגניב");
+static const u8 sText_LukeSpeechWin[] = _("המהלך הנדיר שלי מגניב נכון ?");
+static const u8 sText_LukeSpeechLose[] = _("האם לא ראית את המהלך שלי ?");
+static const u8 sText_LukeSpeechAfter[] = _("אני חכם אבל גם חלש …");
+
+static const u8 sText_BraydenSpeechBefore[] = _("אני דואג לפוקימון שלי המון");
+static const u8 sText_BraydenSpeechWin[] = _("הפוקימון שלי יכול לעשות את הכל");
+static const u8 sText_BraydenSpeechLose[] = _("זה לא שאנחנו תמיד מנצחים");
+static const u8 sText_BraydenSpeechAfter[] = _("אני אוהב את הפוקימון ההתחלתי הכי טוב");
+
+static const u8 sText_AniaSpeechBefore[] = _("מישהו הביא לי ביצת פוקימון קטנה");
+static const u8 sText_AniaSpeechWin[] = _("אני לא חדשה בזה !");
+static const u8 sText_AniaSpeechLose[] = _("או אבל … למה למה ? !");
+static const u8 sText_AniaSpeechAfter[] = _("אתה עסוק ? אל תרים ידיים !");
+
+static const u8 sText_DaneSpeechBefore[] = _("אני קיבלתי את הפוקימון שלי בחופשה");
+static const u8 sText_DaneSpeechWin[] = _("זה נהדר לטייל וללהילחם");
+static const u8 sText_DaneSpeechLose[] = _("וואאהה ! הפוקימון הנדיר שלי !");
+static const u8 sText_DaneSpeechAfter[] = _("יוצא לחופשה אחרת אני הולך");
+
+static const u8 sText_StephanieSpeechBefore[] = _("זה איך שאתה מנצח !");
+static const u8 sText_StephanieSpeechWin[] = _("האם אתה מבין איך עכשיו ?");
+static const u8 sText_StephanieSpeechLose[] = _("כן ככה אתה עושה את זה");
+static const u8 sText_StephanieSpeechAfter[] = _("ניצחת אותי טוב בשבילך");
+
+// sFloors_Expert
+static const u8 sText_AlfredSpeechBefore[] = _("אנחנו יכולים להתמודד עם כל סוג");
+static const u8 sText_AlfredSpeechWin[] = _("אנחנו עשינו טוב יותר מאשר בסדר !");
+static const u8 sText_AlfredSpeechLose[] = _("האסטרטגיה שלנו אינה טובה …");
+static const u8 sText_AlfredSpeechAfter[] = _("אנחנו צריכים להתאמן המון יותר");
+
+static const u8 sText_EdieSpeechBefore[] = _("אנחנו נהיה כאן לכל אתגר מאמנים");
+static const u8 sText_EdieSpeechWin[] = _("האסטרטגיה שלי עובדת לשלמות !");
+static const u8 sText_EdieSpeechLose[] = _("לא לא … זה לא יילך");
+static const u8 sText_EdieSpeechAfter[] = _("צריכה להיות בית ספר למאמנים");
+
+static const u8 sText_RoderickSpeechBefore[] = _("אני יכול לנצח בלי יד עוזרת");
+static const u8 sText_RoderickSpeechWin[] = _("זה רק טבעי שאני אנצח");
+static const u8 sText_RoderickSpeechLose[] = _("ההפסד גורם לי להרגיש קטן …");
+static const u8 sText_RoderickSpeechAfter[] = _("יש לך מורה טוב ?");
+
+static const u8 sText_AliciaSpeechBefore[] = _("אני לא צריכה יד עוזרת !");
+static const u8 sText_AliciaSpeechWin[] = _("מצטערת ! חבל מאוד בשבילך");
+static const u8 sText_AliciaSpeechLose[] = _("איזה מאבק בלתי יאומן זה היה !");
+static const u8 sText_AliciaSpeechAfter[] = _("אני יכולה להיות המורה לפוקימון שלך");
+
+static const u8 sText_TerenceExpertSpeechBefore[] = _("אוי יקירתי המשחק הזה הוא בשבילך");
+static const u8 sText_TerenceExpertSpeechWin[] = _("אוי יקירתי האם ראית את זה ?");
+static const u8 sText_TerenceExpertSpeechLose[] = _("אוי יקירתי אני כל כך מצטער");
+static const u8 sText_TerenceExpertSpeechAfter[] = _("האם סבתא שלך חזקה ?");
+
+static const u8 sText_CarlottaSpeechBefore[] = _("אוי יקירתי אני אנצח בשבילך");
+static const u8 sText_CarlottaSpeechWin[] = _("אוי יקירתי יש לנו מסיבה מאוחר יותר");
+static const u8 sText_CarlottaSpeechLose[] = _("אוי יקירתי אני מצטערת לאכזב אותך");
+static const u8 sText_CarlottaSpeechAfter[] = _("האם סבא שלך מגניב ?");
+
+static const u8 sText_NoraSpeechBefore[] = _("וואאהה זה כל כך מרגש !");
+static const u8 sText_NoraSpeechWin[] = _("וואאהה אני כל כך שמחה שניצחתי");
+static const u8 sText_NoraSpeechLose[] = _("וואאהה אני כל כך עצובה שהפסדתי");
+static const u8 sText_NoraSpeechAfter[] = _("וואאהה ! לך מכאן !");
+
+static const u8 sText_GavSpeechBefore[] = _("וואחחחחההה אתה לא יכול לעצור אותי !");
+static const u8 sText_GavSpeechWin[] = _("וואואי ! אני מדהים מגניב");
+static const u8 sText_GavSpeechLose[] = _("אני בכלל לא מגניב !");
+static const u8 sText_GavSpeechAfter[] = _("חחחחזה היה קרב מדהים !");
+
 // WARNING: While not referenced directly, the floor data in this file is referenced by virtue
 //          of coming after its corresponding challenge (see SetUpDataStruct in trainer_hill.c).
 //          Do not insert data between a pair of 'sChallenge_Mode' and 'sFloors_Mode'.
@@ -26,10 +214,10 @@ static const struct TrainerHillFloor sFloors_JPDefault[] = {
                 .name = __("シゲノブ$$$$   "),
                 .facilityClass = FACILITY_CLASS_YOUNGSTER,
                 .unused = TRUE,
-                .speechBefore = { EC_WORD_TRAINER, EC_WORD_MRS, EC_WORD_EXCL, EC_WORD_THEY_WERE, EC_WORD_OPPONENT, EC_WORD_CAN },
-                .speechWin = { EC_WORD_TRAINER, EC_WORD_MRS, EC_WORD_WEAK, EC_WORD_OF, EC_WORD_WERE, EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS },
-                .speechLose = { EC_WORD_TRAINER, EC_WORD_MRS, EC_WORD_STRONG, EC_WORD_HEY_QUES, EC_WORD_EXCL, EC_WORD_EXCL },
-                .speechAfter = { EC_WORD_FABULOUS, EC_WORD_CAN_T, EC_WORD_TRAINER, EC_WORD_MRS, EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS, EC_WORD_EXCITING },
+                .speechBefore = sText_ShigenobuSpeechBefore,
+                .speechWin = sText_ShigenobuSpeechWin,
+                .speechLose = sText_ShigenobuSpeechLose,
+                .speechAfter = sText_ShigenobuSpeechAfter,
                 .mons = {
                     [0] = {
                         .species = SPECIES_ZIGZAGOON,
@@ -101,10 +289,10 @@ static const struct TrainerHillFloor sFloors_JPDefault[] = {
                 .name = __("アカリ$$$$$   "),
                 .facilityClass = FACILITY_CLASS_PARASOL_LADY,
                 .unused = TRUE,
-                .speechBefore = { EC_WORD_SHE, EC_WORD_EVERY, EC_WORD_TYPE, EC_WORD_ADORE, EC_WORD_FOR, EC_WORD_EXCL },
-                .speechWin = { EC_WORD_SURPRISE, EC_WORD_THESE, EC_WORD_WONDER, EC_WORD_GIGGLE, EC_WORD_ELLIPSIS, EC_WORD_EXCL },
-                .speechLose = { EC_WORD_OH_QUES, EC_MOVE(EARTHQUAKE), EC_WORD_EXISTS, EC_WORD_OF, EC_WORD_WITHOUT, EC_WORD_EXCL },
-                .speechAfter = { EC_WORD_YOU_RE, EC_WORD_PROBABLY, EC_WORD_END, EC_WORD_UNTIL, EC_WORD_GOING, EC_WORD_ANYWHERE },
+                .speechBefore = sText_AkariSpeechBefore,
+                .speechWin = sText_AkariSpeechWin,
+                .speechLose = sText_AkariSpeechLose,
+                .speechAfter = sText_AkariSpeechAfter,
                 .mons = {
                     [0] = DUMMY_HILL_MON,
                     [1] = DUMMY_HILL_MON,
@@ -191,10 +379,10 @@ static const struct TrainerHillFloor sFloors_JPDefault[] = {
                 .name = __("シゲゾウ$$$$   "),
                 .facilityClass = FACILITY_CLASS_NINJA_BOY,
                 .unused = TRUE,
-                .speechBefore = { EC_WORD_WIN, EC_WORD_UNTIL, EC_WORD_DAUGHTER, EC_MOVE(CONSTRICT), EC_WORD_OF, EC_WORD_WERE },
-                .speechWin = { EC_MOVE(CONSTRICT), EC_WORD_UNTIL, EC_WORD_LESS, EC_WORD_NONE, EC_WORD_HEY_QUES, EC_WORD_EXCL },
-                .speechLose = { EC_WORD_YET, EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS, EC_WORD_URGH, EC_WORD_ALMOST, EC_WORD_POWER, EC_WORD_NONE },
-                .speechAfter = { EC_WORD_HUH_QUES, EC_WORD_TOMORROW, EC_WORD_SMELL, EC_WORD_ABSOLUTELY, EC_WORD_THOSE, EC_WORD_EXCL_EXCL },
+                .speechBefore = sText_ShigezouSpeechBefore,
+                .speechWin = sText_ShigezouSpeechWin,
+                .speechLose = sText_ShigezouSpeechLose,
+                .speechAfter = sText_ShigezouSpeechAfter,
                 .mons = {
                     [0] = {
                         .species = SPECIES_ELECTRIKE,
@@ -267,10 +455,10 @@ static const struct TrainerHillFloor sFloors_JPDefault[] = {
                 .name = __("ナミコ$$$$$   "),
                 .facilityClass = FACILITY_CLASS_BEAUTY,
                 .unused = TRUE,
-                .speechBefore = { EC_WORD_SISTER, EC_WORD_ALTHOUGH, EC_WORD_KIND, EC_WORD_MATCH, EC_WORD_PLEASE, EC_WORD_WITHOUT },
-                .speechWin = { EC_WORD_KIND, EC_WORD_ELLIPSIS, EC_WORD_INSTEAD, EC_WORD_DEEP, EC_WORD_WEAK, EC_WORD_QUES },
-                .speechLose = { EC_WORD_AWFUL, EC_WORD_GWAH, EC_WORD_HOPELESS, EC_WORD_CAN_T_WIN, EC_WORD_IS, EC_WORD_NONE },
-                .speechAfter = { EC_WORD_AWW, EC_EMPTY_WORD, EC_EMPTY_WORD, EC_WORD_ALMOST, EC_WORD_GOOD, EC_WORD_ANYWHERE },
+                .speechBefore = sText_NamikoSpeechBefore,
+                .speechWin = sText_NamikoSpeechWin,
+                .speechLose = sText_NamikoSpeechLose,
+                .speechAfter = sText_NamikoSpeechAfter,
                 .mons = {
                     [0] = DUMMY_HILL_MON,
                     [1] = DUMMY_HILL_MON,
@@ -372,10 +560,10 @@ static const struct TrainerHillFloor sFloors_Normal[] =
             {
                 .name = _("אליינה"),
                 .facilityClass = FACILITY_CLASS_HEX_MANIAC,
-                .speechBefore = {EC_WORD_YOU, EC_WORD_CAN, EC_WORD_CHOOSE, EC_WORD_NOT, EC_WORD_TO, EC_WORD_BELIEVE},
-                .speechWin = {EC_WORD_A, EC_WORD_SUPER, EC_WORD_NATURAL, EC_WORD_POWER, EC_WORD_HAS, EC_WORD_COME},
-                .speechLose = {EC_WORD_THIS, EC_WORD_MUST_BE, EC_WORD_A, EC_MOVE(NIGHTMARE), EC_WORD_EXCL, EC_EMPTY_WORD},
-                .speechAfter = {EC_WORD_I, EC_WORD_WILL, EC_WORD_DISAPPEAR, EC_WORD_IN, EC_WORD_THE, EC_WORD_DARK},
+                .speechBefore = sText_AlaynaSpeechBefore,
+                .speechWin = sText_AlaynaSpeechWin,
+                .speechLose = sText_AlaynaSpeechLose,
+                .speechAfter = sText_AlaynaSpeechAfter,
                 .mons =
                 {
                     [0] =
@@ -506,10 +694,10 @@ static const struct TrainerHillFloor sFloors_Normal[] =
             {
                 .name = _("אלפונזו"),
                 .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
-                .speechBefore = {EC_WORD_I, EC_WORD_NEVER, EC_WORD_TAKE, EC_WORD_A, EC_WORD_TRAIN, EC_EMPTY_WORD},
-                .speechWin = {EC_WORD_I_AM, EC_WORD_FEELING, EC_MOVE2(SUPERSONIC), EC_WORD_ON, EC_WORD_MY, EC_WORD_BIKE},
-                .speechLose = {EC_WORD_MY, EC_WORD_BIKE, EC_WORD_EXCL, EC_WORD_YOU_VE, EC_WORD_DESTROYED, EC_WORD_IT},
-                .speechAfter = {EC_WORD_A, EC_WORD_BIKE, EC_WORD_OVER, EC_WORD_ANY, EC_WORD_TRAIN, EC_WORD_EXCL},
+                .speechBefore = sText_AlfonzoSpeechBefore,
+                .speechWin = sText_AlfonzoSpeechWin,
+                .speechLose = sText_AlfonzoSpeechLose,
+                .speechAfter = sText_AlfonzoSpeechAfter,
                 .mons =
                 {
                     [0] =
@@ -648,10 +836,10 @@ static const struct TrainerHillFloor sFloors_Normal[] =
             {
                 .name = _("ת'יאודור"),
                 .facilityClass = FACILITY_CLASS_BLACK_BELT,
-                .speechBefore = {EC_WORD_MY, EC_WORD_POWER, EC_WORD_WILL, EC_MOVE2(STOMP), EC_WORD_YOU, EC_WORD_EXCL},
-                .speechWin = {EC_WORD_WAAAH, EC_WORD_HAHAHA, EC_WORD_EXCL, EC_WORD_WAAAH, EC_WORD_HAHAHA, EC_WORD_EXCL_EXCL},
-                .speechLose = {EC_WORD_I, EC_WORD_WENT, EC_WORD_AT, EC_WORD_IT, EC_WORD_TOO, EC_WORD_HARD},
-                .speechAfter = {EC_WORD_YES_SIR_EXCL, EC_WORD_YOU, EC_WORD_LOOK, EC_WORD_NICE, EC_WORD_AND, EC_WORD_GUTSY},
+                .speechBefore = sText_TheodoreSpeechBefore,
+                .speechWin = sText_TheodoreSpeechWin,
+                .speechLose = sText_TheodoreSpeechLose,
+                .speechAfter = sText_TheodoreSpeechAfter,
                 .mons =
                 {
                     [0] =
@@ -780,10 +968,10 @@ static const struct TrainerHillFloor sFloors_Normal[] =
             {
                 .name = _("ג'יידן"),
                 .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
-                .speechBefore = {EC_WORD_SOME, EC_WORD_THINGS, EC_WORD_YOU, EC_WORD_CAN_T, EC_WORD_DO, EC_WORD_ALONE},
-                .speechWin = {EC_WORD_YOU, EC_WORD_WIN, EC_WORD_AS, EC_WORD_A, EC_WORD_GROUP, EC_EMPTY_WORD},
-                .speechLose = {EC_WORD_WE, EC_WORD_COULDN_T, EC_WORD_WIN, EC_WORD_TOGETHER, EC_WORD_QUES, EC_EMPTY_WORD},
-                .speechAfter = {EC_WORD_MAYBE, EC_WORD_I, EC_WORD_NEED, EC_WORD_A, EC_WORD_BOY, EC_WORD_FRIEND},
+                .speechBefore = sText_JaydenSpeechBefore,
+                .speechWin = sText_JaydenSpeechWin,
+                .speechLose = sText_JaydenSpeechLose,
+                .speechAfter = sText_JaydenSpeechAfter,
                 .mons =
                 {
                     [0] =
@@ -927,10 +1115,10 @@ static const struct TrainerHillFloor sFloors_Normal[] =
             {
                 .name = _("סלבדור"),
                 .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
-                .speechBefore = {EC_WORD_LET_S, EC_MOVE2(WRAP), EC_WORD_THINGS, EC_WORD_UP, EC_WORD_HERE, EC_WORD_HEY_QUES},
-                .speechWin = {EC_WORD_WOULD, EC_WORD_YOU, EC_WORD_LIKE, EC_WORD_TO, EC_WORD_GO_HOME, EC_WORD_QUES},
-                .speechLose = {EC_WORD_I, EC_WORD_WILL, EC_WORD_MAKE, EC_WORD_YOU, EC_WORD_SORRY, EC_WORD_FRIEND},
-                .speechAfter = {EC_WORD_HAVEN_T, EC_WORD_YOU, EC_WORD_DONE, EC_WORD_ENOUGH, EC_WORD_QUES, EC_EMPTY_WORD},
+                .speechBefore = sText_SalvadorSpeechBefore,
+                .speechWin = sText_SalvadorSpeechWin,
+                .speechLose = sText_SalvadorSpeechLose,
+                .speechAfter = sText_SalvadorSpeechAfter,
                 .mons =
                 {
                     [0] =
@@ -1059,10 +1247,10 @@ static const struct TrainerHillFloor sFloors_Normal[] =
             {
                 .name = _("ורוניקה"),
                 .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
-                .speechBefore = {EC_WORD_I_AM, EC_WORD_THE, EC_WORD_STRONG, EC_WORD_BEAUTY, EC_WORD_AROUND, EC_WORD_HERE},
-                .speechWin = {EC_WORD_I_AM, EC_WORD_STRONG, EC_WORD_THAT_S, EC_WORD_WHY, EC_WORD_EXCL, EC_EMPTY_WORD},
-                .speechLose = {EC_WORD_I_AM, EC_WORD_TIRED, EC_WORD_TODAY, EC_WORD_THAT_S, EC_WORD_WHY, EC_WORD_EXCL},
-                .speechAfter = {EC_WORD_WHY, EC_WORD_YES, EC_WORD_I_AM, EC_WORD_ANGRY, EC_WORD_THANK_YOU, EC_WORD_EXCL},
+                .speechBefore = sText_VeronicaSpeechBefore,
+                .speechWin = sText_VeronicaSpeechWin,
+                .speechLose = sText_VeronicaSpeechLose,
+                .speechAfter = sText_VeronicaSpeechAfter,
                 .mons =
                 {
                     [0] =
@@ -1205,10 +1393,10 @@ static const struct TrainerHillFloor sFloors_Normal[] =
             {
                 .name = _("קינן"),
                 .facilityClass = FACILITY_CLASS_PSYCHIC_M,
-                .speechBefore = {EC_WORD_YOU, EC_WORD_LOOK, EC_WORD_SO, EC_WORD_HURRIED, EC_EMPTY_WORD, EC_EMPTY_WORD},
-                .speechWin = {EC_WORD_TOO, EC_WORD_BAD, EC_EMPTY_WORD, EC_WORD_TIME, EC_WORD_IS, EC_WORD_UP},
-                .speechLose = {EC_WORD_DOES, EC_WORD_THE, EC_WORD_TIME, EC_WORD_WORRY, EC_WORD_YOU, EC_WORD_QUES},
-                .speechAfter = {EC_WORD_YOU, EC_WORD_DON_T, EC_WORD_HAVE, EC_WORD_TIME, EC_WORD_TO, EC_WORD_CHAT},
+                .speechBefore = sText_KeenanSpeechBefore,
+                .speechWin = sText_KeenanSpeechWin,
+                .speechLose = sText_KeenanSpeechLose,
+                .speechAfter = sText_KeenanSpeechAfter,
                 .mons =
                 {
                     [0] =
@@ -1333,10 +1521,10 @@ static const struct TrainerHillFloor sFloors_Normal[] =
             {
                 .name = _("קריסטינה"),
                 .facilityClass = FACILITY_CLASS_AROMA_LADY,
-                .speechBefore = {EC_WORD_IT_S, EC_WORD_HOT, EC_WORD_ELLIPSIS, EC_WORD_WHAT, EC_WORD_A, EC_WORD_STENCH},
-                .speechWin = {EC_WORD_I, EC_WORD_REALLY, EC_WORD_LIKE, EC_WORD_AN, EC_WORD_OFFENSIVE, EC_WORD_STENCH},
-                .speechLose = {EC_WORD_I, EC_MOVE2(COVET), EC_WORD_ANY, EC_WORD_STRONG, EC_WORD_STENCH, EC_EMPTY_WORD},
-                .speechAfter = {EC_WORD_MY, EC_WORD_SENSE, EC_WORD_OF, EC_WORD_SMELL, EC_WORD_ISN_T, EC_WORD_NORMAL},
+                .speechBefore = sText_KristinaSpeechBefore,
+                .speechWin = sText_KristinaSpeechWin,
+                .speechLose = sText_KristinaSpeechLose,
+                .speechAfter = sText_KristinaSpeechAfter,
                 .mons =
                 {
                     [0] =
@@ -1487,10 +1675,10 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                         {
                             .name = _("טראנס"),
                             .facilityClass = FACILITY_CLASS_GENTLEMAN,
-                            .speechBefore = {EC_WORD_GOOD, EC_WORD_CHILDREN, EC_WORD_WILL, EC_WORD_GET, EC_WORD_A, EC_MOVE2(PRESENT)},
-                            .speechWin = {EC_WORD_THANK_YOU, EC_WORD_MY, EC_WORD_VICTORY, EC_WORD_IS, EC_WORD_YOUR, EC_MOVE2(PRESENT)},
-                            .speechLose = {EC_WORD_THAT_WAS, EC_WORD_MY, EC_MOVE2(PRESENT), EC_WORD_TO, EC_WORD_YOU, EC_EMPTY_WORD},
-                            .speechAfter = {EC_WORD_WELL_THEN, EC_WORD_CONGRATS, EC_WORD_MY, EC_WORD_FRIEND, EC_EMPTY_WORD, EC_EMPTY_WORD},
+                            .speechBefore = sText_TerenceSpeechBefore,
+                            .speechWin = sText_TerenceSpeechWin,
+                            .speechLose = sText_TerenceSpeechLose,
+                            .speechAfter = sText_TerenceSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -1613,10 +1801,10 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                         {
                             .name = _("אליזבת"),
                             .facilityClass = FACILITY_CLASS_LADY,
-                            .speechBefore = {EC_WORD_CAN, EC_WORD_YOU, EC_WORD_SENSE, EC_WORD_ME, EC_MOVE(FOCUS_ENERGY), EC_WORD_QUES},
-                            .speechWin = {EC_WORD_THAT_S, EC_WORD_ABOUT, EC_WORD_RIGHT, EC_WORD_I, EC_WORD_WOULD, EC_WORD_THINK},
-                            .speechLose = {EC_WORD_THINGS, EC_WORD_DON_T, EC_WORD_ALWAYS, EC_WORD_WORK, EC_WORD_OUT, EC_EMPTY_WORD},
-                            .speechAfter = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_LONESOME, EC_WORD_AND, EC_WORD_SAD, EC_WORD_NOW},
+                            .speechBefore = sText_ElizabethSpeechBefore,
+                            .speechWin = sText_ElizabethSpeechWin,
+                            .speechLose = sText_ElizabethSpeechLose,
+                            .speechAfter = sText_ElizabethSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -1754,10 +1942,10 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                         {
                             .name = _("אנאבל"),
                             .facilityClass = FACILITY_CLASS_PARASOL_LADY,
-                            .speechBefore = {EC_WORD_HI, EC_WORD_ARE, EC_WORD_YOU, EC_WORD_FEELING, EC_WORD_UPBEAT, EC_WORD_QUES},
-                            .speechWin = {EC_WORD_AREN_T, EC_WORD_YOU, EC_WORD_FEELING, EC_WORD_WELL, EC_WORD_QUES, EC_EMPTY_WORD},
-                            .speechLose = {EC_WORD_I, EC_WORD_CAN, EC_WORD_SEE, EC_WORD_YOU_RE, EC_WORD_FEELING, EC_WORD_GREAT},
-                            .speechAfter = {EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_LOOK, EC_WORD_READY, EC_WORD_TO, EC_WORD_HUSTLE},
+                            .speechBefore = sText_AnnabelSpeechBefore,
+                            .speechWin = sText_AnnabelSpeechWin,
+                            .speechLose = sText_AnnabelSpeechLose,
+                            .speechAfter = sText_AnnabelSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -1904,10 +2092,10 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                         {
                             .name = _("קולמן"),
                             .facilityClass = FACILITY_CLASS_COLLECTOR,
-                            .speechBefore = {EC_WORD_I, EC_WORD_SEEK, EC_WORD_SOMEONE, EC_WORD_AS, EC_WORD_MY, EC_WORD_IDOL},
-                            .speechWin = {EC_WORD_DID, EC_WORD_MY, EC_WORD_IDOL, EC_WORD_SEE, EC_WORD_THAT, EC_WORD_QUES},
-                            .speechLose = {EC_WORD_YOU_RE, EC_WORD_LIKE, EC_WORD_A, EC_MOVE(HEAL_BELL), EC_WORD_TO_ME, EC_WORD_EXCL},
-                            .speechAfter = {EC_WORD_I_VE, EC_WORD_DECIDED, EC_WORD_I_CHOOSE_YOU, EC_WORD_AS, EC_WORD_MY, EC_WORD_IDOL},
+                            .speechBefore = sText_ColemanSpeechBefore,
+                            .speechWin = sText_ColemanSpeechWin,
+                            .speechLose = sText_ColemanSpeechLose,
+                            .speechAfter = sText_ColemanSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -2051,10 +2239,10 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                         {
                             .name = _("אנריק"),
                             .facilityClass = FACILITY_CLASS_RICH_BOY,
-                            .speechBefore = {EC_WORD_GET, EC_WORD_READY, EC_WORD_FOR, EC_WORD_AN, EC_WORD_AWESOME, EC_WORD_TIME},
-                            .speechWin = {EC_WORD_HEY, EC_WORD_HEY, EC_WORD_EXCL, EC_WORD_WHAT_S_UP_QUES, EC_EMPTY_WORD, EC_EMPTY_WORD},
-                            .speechLose = {EC_WORD_AWW, EC_WORD_COULDN_T, EC_WORD_YOU, EC_WORD_LET_ME_WIN, EC_WORD_QUES, EC_EMPTY_WORD},
-                            .speechAfter = {EC_WORD_DID, EC_WORD_YOU, EC_WORD_SEE, EC_WORD_MY, EC_WORD_SKILL, EC_WORD_QUES},
+                            .speechBefore = sText_AnriqueSpeechBefore,
+                            .speechWin = sText_AnriqueSpeechWin,
+                            .speechLose = sText_AnriqueSpeechLose,
+                            .speechAfter = sText_AnriqueSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -2183,10 +2371,10 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                         {
                             .name = _("קולין"),
                             .facilityClass = FACILITY_CLASS_LADY,
-                            .speechBefore = {EC_WORD_I, EC_WORD_WOULD, EC_WORD_LIKE, EC_WORD_TO, EC_WORD_ROCK, EC_WORD_OUT},
-                            .speechWin = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_THIS, EC_WORD_ROCK, EC_WORD_THING, EC_WORD_EXCL},
-                            .speechLose = {EC_WORD_GO_AHEAD, EC_WORD_AND, EC_WORD_CRUSH, EC_WORD_MY, EC_WORD_DREAM, EC_WORD_ELLIPSIS},
-                            .speechAfter = {EC_WORD_I, EC_WORD_WANT, EC_WORD_TO, EC_WORD_GO, EC_WORD_WILD, EC_WORD_SOMETIME},
+                            .speechBefore = sText_ColleenSpeechBefore,
+                            .speechWin = sText_ColleenSpeechWin,
+                            .speechLose = sText_ColleenSpeechLose,
+                            .speechAfter = sText_ColleenSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -2329,10 +2517,10 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                         {
                             .name = _("קימברלי"),
                             .facilityClass = FACILITY_CLASS_POKEFAN_F,
-                            .speechBefore = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_WORKING, EC_WORD_AT, EC_WORD_MY, EC_WORD_OWN_TEMPO},
-                            .speechWin = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_BAD, EC_WORD_YOU, EC_WORD_THINK, EC_WORD_QUES},
-                            .speechLose = {EC_WORD_YOU_RE, EC_WORD_A, EC_WORD_MEAN, EC_WORD_KID, EC_WORD_IT, EC_WORD_SEEMS},
-                            .speechAfter = {EC_WORD_MY, EC_WORD_OWN_TEMPO, EC_WORD_IS, EC_WORD_RIGHT, EC_WORD_FOR, EC_WORD_ME},
+                            .speechBefore = sText_KimberlySpeechBefore,
+                            .speechWin = sText_KimberlySpeechWin,
+                            .speechLose = sText_KimberlySpeechLose,
+                            .speechAfter = sText_KimberlySpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -2456,10 +2644,10 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                         {
                             .name = _("פרנסיסקו"),
                             .facilityClass = FACILITY_CLASS_POKEFAN_M,
-                            .speechBefore = {EC_WORD_I, EC_WORD_STUDY, EC_WORD_EVERY, EC_WORD_DAY, EC_WORD_TOO, EC_EMPTY_WORD},
-                            .speechWin = {EC_WORD_SO, EC_WORD_THAT_S, EC_WORD_HOW, EC_WORD_YOU, EC_WORD_LOSE, EC_EMPTY_WORD},
-                            .speechLose = {EC_WORD_NO, EC_WORD_WONDER, EC_WORD_I, EC_WORD_COULDN_T, EC_WORD_BEAT, EC_WORD_YOU},
-                            .speechAfter = {EC_WORD_YES, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_WORD_THANK_YOU, EC_EMPTY_WORD, EC_EMPTY_WORD},
+                            .speechBefore = sText_FranciscoSpeechBefore,
+                            .speechWin = sText_FranciscoSpeechWin,
+                            .speechLose = sText_FranciscoSpeechLose,
+                            .speechAfter = sText_FranciscoSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -2609,10 +2797,10 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                         {
                             .name = _("מרדית'"),
                             .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
-                            .speechBefore = {EC_WORD_UM, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_WORD_I, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-                            .speechWin = {EC_WORD_OH, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_UM, EC_WORD_ELLIPSIS, EC_WORD_YAY},
-                            .speechLose = {EC_WORD_UM, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_WORD_WAAAH, EC_WORD_ELLIPSIS, EC_EMPTY_WORD},
-                            .speechAfter = {EC_WORD_UM, EC_WORD_ELLIPSIS, EC_EMPTY_WORD, EC_WORD_I_AM, EC_WORD_SAD, EC_WORD_ELLIPSIS},
+                            .speechBefore = sText_MeredithSpeechBefore,
+                            .speechWin = sText_MeredithSpeechWin,
+                            .speechLose = sText_MeredithSpeechLose,
+                            .speechAfter = sText_MeredithSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -2739,10 +2927,10 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                         {
                             .name = _("ברנרד"),
                             .facilityClass = FACILITY_CLASS_KINDLER,
-                            .speechBefore = {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_LOSE, EC_WORD_THIS, EC_WORD_HOT, EC_WORD_BATTLE},
-                            .speechWin = {EC_WORD_DID, EC_WORD_I, EC_WORD_COOL, EC_WORD_YOU, EC_WORD_DOWN, EC_WORD_QUES},
-                            .speechLose = {EC_WORD_AIYEEH, EC_WORD_EXCL, EC_WORD_YOU_RE, EC_WORD_A, EC_WORD_TERRIBLE, EC_WORD_PERSON},
-                            .speechAfter = {EC_WORD_YOUR, EC_WORD_HEART, EC_WORD_MUST_BE, EC_WORD_ICE, EC_WORD_COLD, EC_WORD_ELLIPSIS},
+                            .speechBefore = sText_BernardSpeechBefore,
+                            .speechWin = sText_BernardSpeechWin,
+                            .speechLose = sText_BernardSpeechLose,
+                            .speechAfter = sText_BernardSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -2881,10 +3069,10 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                         {
                             .name = _("אברהם"),
                             .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-                            .speechBefore = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_THIS, EC_WORD_POKEMON, EC_WORD_THE, EC_WORD_BEST},
-                            .speechWin = {EC_WORD_WHAT, EC_WORD_A, EC_WORD_GREAT, EC_WORD_POKEMON, EC_WORD_IT, EC_WORD_IS},
-                            .speechLose = {EC_WORD_I, EC_WORD_CONFUSED, EC_WORD_A, EC_WORD_MOVE, EC_WORD_WITH, EC_WORD_ANOTHER},
-                            .speechAfter = {EC_WORD_I, EC_WORD_WANT, EC_WORD_A, EC_MOVE(SKETCH), EC_WORD_OF, EC_WORD_YOU},
+                            .speechBefore = sText_AbrahamSpeechBefore,
+                            .speechWin = sText_AbrahamSpeechWin,
+                            .speechLose = sText_AbrahamSpeechLose,
+                            .speechAfter = sText_AbrahamSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -3013,10 +3201,10 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                         {
                             .name = _("לוק"),
                             .facilityClass = FACILITY_CLASS_TUBER_M,
-                            .speechBefore = {EC_WORD_I, EC_WORD_HAVE, EC_WORD_A, EC_WORD_COOL, EC_WORD_RARE, EC_WORD_MOVE},
-                            .speechWin = {EC_WORD_MY, EC_WORD_RARE, EC_WORD_MOVE, EC_WORD_IS, EC_WORD_COOL, EC_WORD_ISN_T_IT_QUES},
-                            .speechLose = {EC_WORD_DIDN_T, EC_WORD_YOU, EC_WORD_SEE, EC_WORD_MY, EC_WORD_MOVE, EC_WORD_QUES},
-                            .speechAfter = {EC_WORD_I_AM, EC_WORD_SMART, EC_WORD_BUT, EC_WORD_ALSO, EC_WORD_WEAK, EC_WORD_ELLIPSIS},
+                            .speechBefore = sText_LukeSpeechBefore,
+                            .speechWin = sText_LukeSpeechWin,
+                            .speechLose = sText_LukeSpeechLose,
+                            .speechAfter = sText_LukeSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -3159,10 +3347,10 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                         {
                             .name = _("בריידן"),
                             .facilityClass = FACILITY_CLASS_YOUNGSTER,
-                            .speechBefore = {EC_WORD_I, EC_WORD_CARE, EC_WORD_FOR, EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_A_LOT},
-                            .speechWin = {EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_CAN, EC_WORD_DO, EC_WORD_IT, EC_WORD_ALL},
-                            .speechLose = {EC_WORD_IT_S, EC_WORD_NOT, EC_WORD_LIKE, EC_WORD_WE, EC_WORD_ALWAYS, EC_WORD_WIN},
-                            .speechAfter = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_THE, EC_WORD_BEGINNING, EC_WORD_POKEMON, EC_WORD_BEST},
+                            .speechBefore = sText_BraydenSpeechBefore,
+                            .speechWin = sText_BraydenSpeechWin,
+                            .speechLose = sText_BraydenSpeechLose,
+                            .speechAfter = sText_BraydenSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -3290,10 +3478,10 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                         {
                             .name = _("אניה"),
                             .facilityClass = FACILITY_CLASS_TUBER_F,
-                            .speechBefore = {EC_WORD_SOMEONE, EC_WORD_GOT, EC_WORD_ME, EC_WORD_A_LITTLE, EC_WORD_POKEMON, EC_WORD_EGG},
-                            .speechWin = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_NEW, EC_WORD_AT, EC_WORD_THIS, EC_WORD_EXCL},
-                            .speechLose = {EC_WORD_OH, EC_WORD_BUT, EC_WORD_ELLIPSIS, EC_WORD_WHY, EC_WORD_WHY, EC_WORD_QUES_EXCL},
-                            .speechAfter = {EC_WORD_YOU_RE, EC_WORD_BUSY, EC_WORD_QUES, EC_WORD_DON_T, EC_WORD_GIVE_UP, EC_WORD_EXCL},
+                            .speechBefore = sText_AniaSpeechBefore,
+                            .speechWin = sText_AniaSpeechWin,
+                            .speechLose = sText_AniaSpeechLose,
+                            .speechAfter = sText_AniaSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -3437,10 +3625,10 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                         {
                             .name = _("דיין"),
                             .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-                            .speechBefore = {EC_WORD_I, EC_WORD_GOT, EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_ON, EC_WORD_VACATION},
-                            .speechWin = {EC_WORD_IT_S, EC_WORD_GREAT, EC_WORD_TO, EC_WORD_TRAVEL, EC_WORD_AND, EC_WORD_BATTLE},
-                            .speechLose = {EC_WORD_WAAAH, EC_WORD_EXCL, EC_WORD_MY, EC_WORD_RARE, EC_WORD_POKEMON, EC_WORD_EXCL},
-                            .speechAfter = {EC_WORD_OFF, EC_WORD_ON, EC_WORD_ANOTHER, EC_WORD_VACATION, EC_WORD_I, EC_WORD_GO},
+                            .speechBefore = sText_DaneSpeechBefore,
+                            .speechWin = sText_DaneSpeechWin,
+                            .speechLose = sText_DaneSpeechLose,
+                            .speechAfter = sText_DaneSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -3564,10 +3752,10 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                         {
                             .name = _("סטפני"),
                             .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
-                            .speechBefore = {EC_WORD_THIS, EC_WORD_IS, EC_WORD_HOW, EC_WORD_YOU, EC_WORD_WIN, EC_WORD_EXCL},
-                            .speechWin = {EC_WORD_DO, EC_WORD_YOU, EC_WORD_UNDERSTAND, EC_WORD_HOW, EC_WORD_NOW, EC_WORD_QUES},
-                            .speechLose = {EC_WORD_YES, EC_WORD_THAT_S, EC_WORD_HOW, EC_WORD_YOU, EC_WORD_DO, EC_WORD_IT},
-                            .speechAfter = {EC_WORD_YOU, EC_WORD_BEAT, EC_WORD_ME, EC_WORD_GOOD, EC_WORD_FOR, EC_WORD_YOU},
+                            .speechBefore = sText_StephanieSpeechBefore,
+                            .speechWin = sText_StephanieSpeechWin,
+                            .speechLose = sText_StephanieSpeechLose,
+                            .speechAfter = sText_StephanieSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -3716,10 +3904,10 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                         {
                             .name = _("אלפרד"),
                             .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-                            .speechBefore = {EC_WORD_WE, EC_WORD_CAN, EC_WORD_TAKE, EC_WORD_ON, EC_WORD_ANY, EC_WORD_TYPE},
-                            .speechWin = {EC_WORD_WE, EC_WORD_DID, EC_WORD_BETTER, EC_WORD_THAN, EC_WORD_OKAY, EC_WORD_EXCL},
-                            .speechLose = {EC_WORD_OUR, EC_WORD_STRATEGY, EC_WORD_ISN_T, EC_WORD_ANY, EC_WORD_GOOD, EC_WORD_ELLIPSIS},
-                            .speechAfter = {EC_WORD_WE, EC_WORD_NEED, EC_WORD_TO, EC_WORD_TRAIN, EC_WORD_A_LOT, EC_WORD_MORE},
+                            .speechBefore = sText_AlfredSpeechBefore,
+                            .speechWin = sText_AlfredSpeechWin,
+                            .speechLose = sText_AlfredSpeechLose,
+                            .speechAfter = sText_AlfredSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -3848,10 +4036,10 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                         {
                             .name = _("אדי"),
                             .facilityClass = FACILITY_CLASS_PSYCHIC_F,
-                            .speechBefore = {EC_WORD_WE, EC_WORD_WILL_BE_HERE, EC_WORD_FOR, EC_WORD_ANY, EC_WORD_TRAINER, EC_WORD_CHALLENGE},
-                            .speechWin = {EC_WORD_MY, EC_WORD_STRATEGY, EC_WORD_WORKS, EC_WORD_TO, EC_WORD_PERFECTION, EC_WORD_EXCL},
-                            .speechLose = {EC_WORD_NO, EC_WORD_NO, EC_WORD_ELLIPSIS, EC_WORD_THAT, EC_WORD_WON_T, EC_WORD_DO},
-                            .speechAfter = {EC_WORD_THERE, EC_WORD_SHOULD, EC_WORD_BE, EC_WORD_A, EC_WORD_TRAINER, EC_WORD_SCHOOL},
+                            .speechBefore = sText_EdieSpeechBefore,
+                            .speechWin = sText_EdieSpeechWin,
+                            .speechLose = sText_EdieSpeechLose,
+                            .speechAfter = sText_EdieSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -3995,10 +4183,10 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                         {
                             .name = _("רודריק"),
                             .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-                            .speechBefore = {EC_WORD_I, EC_WORD_CAN, EC_WORD_WIN, EC_WORD_WITHOUT, EC_WORD_A, EC_MOVE2(HELPING_HAND)},
-                            .speechWin = {EC_WORD_IT_S, EC_WORD_ONLY, EC_WORD_NATURAL, EC_WORD_THAT, EC_WORD_I, EC_WORD_WIN},
-                            .speechLose = {EC_WORD_LOSING, EC_WORD_HAS, EC_WORD_ME, EC_WORD_FEELING, EC_WORD_SMALL, EC_WORD_ELLIPSIS},
-                            .speechAfter = {EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_A, EC_WORD_GOOD, EC_WORD_TEACHER, EC_WORD_QUES},
+                            .speechBefore = sText_RoderickSpeechBefore,
+                            .speechWin = sText_RoderickSpeechWin,
+                            .speechLose = sText_RoderickSpeechLose,
+                            .speechAfter = sText_RoderickSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -4127,10 +4315,10 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                         {
                             .name = _("אליסיה"),
                             .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-                            .speechBefore = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_NEED, EC_WORD_A, EC_MOVE2(HELPING_HAND), EC_WORD_EXCL},
-                            .speechWin = {EC_WORD_SORRY, EC_WORD_EXCL, EC_WORD_TOO, EC_WORD_BAD, EC_WORD_FOR, EC_WORD_YOU},
-                            .speechLose = {EC_WORD_WHAT, EC_WORD_AN, EC_WORD_UNBELIEVABLE, EC_MOVE2(STRUGGLE), EC_WORD_THAT_WAS, EC_WORD_EXCL},
-                            .speechAfter = {EC_WORD_I, EC_WORD_CAN, EC_WORD_BE, EC_WORD_YOUR, EC_WORD_POKEMON, EC_WORD_TEACHER},
+                            .speechBefore = sText_AliciaSpeechBefore,
+                            .speechWin = sText_AliciaSpeechWin,
+                            .speechLose = sText_AliciaSpeechLose,
+                            .speechAfter = sText_AliciaSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -4274,10 +4462,10 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                         {
                             .name = _("טרנס"),
                             .facilityClass = FACILITY_CLASS_EXPERT_M,
-                            .speechBefore = {EC_WORD_OH_DEAR, EC_WORD_THIS, EC_WORD_MATCH, EC_WORD_IS, EC_WORD_FOR, EC_WORD_YOU},
-                            .speechWin = {EC_WORD_OH_DEAR, EC_WORD_DID, EC_WORD_YOU, EC_WORD_SEE, EC_WORD_THAT, EC_WORD_QUES},
-                            .speechLose = {EC_WORD_OH_DEAR, EC_WORD_I_AM, EC_WORD_SO, EC_WORD_SORRY, EC_EMPTY_WORD, EC_EMPTY_WORD},
-                            .speechAfter = {EC_WORD_IS, EC_WORD_YOUR, EC_WORD_GRANDMOTHER, EC_WORD_STRONG, EC_WORD_QUES, EC_EMPTY_WORD},
+                            .speechBefore = sText_TerenceExpertSpeechBefore,
+                            .speechWin = sText_TerenceExpertSpeechWin,
+                            .speechLose = sText_TerenceExpertSpeechLose,
+                            .speechAfter = sText_TerenceExpertSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -4406,10 +4594,10 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                         {
                             .name = _("קרלוטה"),
                             .facilityClass = FACILITY_CLASS_EXPERT_F,
-                            .speechBefore = {EC_WORD_OH_DEAR, EC_WORD_I, EC_WORD_WILL, EC_WORD_WIN, EC_WORD_FOR, EC_WORD_YOU},
-                            .speechWin = {EC_WORD_OH_DEAR, EC_WORD_WE, EC_WORD_HAVE, EC_WORD_A, EC_WORD_PARTY, EC_WORD_LATER},
-                            .speechLose = {EC_WORD_OH_DEAR, EC_WORD_I_AM, EC_WORD_SORRY, EC_WORD_TO, EC_WORD_DISAPPOINT, EC_WORD_YOU},
-                            .speechAfter = {EC_WORD_IS, EC_WORD_YOUR, EC_WORD_GRANDFATHER, EC_WORD_COOL, EC_WORD_QUES, EC_EMPTY_WORD},
+                            .speechBefore = sText_CarlottaSpeechBefore,
+                            .speechWin = sText_CarlottaSpeechWin,
+                            .speechLose = sText_CarlottaSpeechLose,
+                            .speechAfter = sText_CarlottaSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -4553,10 +4741,10 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                         {
                             .name = _("נורה"),
                             .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
-                            .speechBefore = {EC_WORD_WAAAH, EC_WORD_THIS, EC_WORD_IS, EC_WORD_SO, EC_WORD_EXCITING, EC_WORD_EXCL},
-                            .speechWin = {EC_WORD_WAAAH, EC_WORD_I_AM, EC_WORD_SO, EC_WORD_HAPPY, EC_WORD_I, EC_WORD_WON},
-                            .speechLose = {EC_WORD_WAAAH, EC_WORD_I_AM, EC_WORD_SO, EC_WORD_SAD, EC_WORD_I, EC_WORD_LOST},
-                            .speechAfter = {EC_WORD_WAAAH, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_GO, EC_WORD_AWAY, EC_WORD_EXCL},
+                            .speechBefore = sText_NoraSpeechBefore,
+                            .speechWin = sText_NoraSpeechWin,
+                            .speechLose = sText_NoraSpeechLose,
+                            .speechAfter = sText_NoraSpeechAfter,
                             .mons =
                                 {
                                     [0] =
@@ -4681,10 +4869,10 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                         {
                             .name = _("גב"),
                             .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
-                            .speechBefore = {EC_WORD_WAHAHAHA, EC_WORD_YOU, EC_WORD_CAN_T, EC_WORD_STOP, EC_WORD_ME, EC_WORD_EXCL},
-                            .speechWin = {EC_WORD_WOWEE, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_I_AM, EC_WORD_AWESOME, EC_WORD_COOL},
-                            .speechLose = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_COOL, EC_WORD_AT, EC_WORD_ALL, EC_WORD_EXCL},
-                            .speechAfter = {EC_WORD_HEHEHE, EC_WORD_THAT_WAS, EC_WORD_AN, EC_WORD_AWESOME, EC_WORD_BATTLE, EC_WORD_EXCL},
+                            .speechBefore = sText_GavSpeechBefore,
+                            .speechWin = sText_GavSpeechWin,
+                            .speechLose = sText_GavSpeechLose,
+                            .speechAfter = sText_GavSpeechAfter,
                             .mons =
                                 {
                                     [0] =

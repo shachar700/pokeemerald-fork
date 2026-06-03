@@ -378,16 +378,16 @@ void CopyTrainerHillTrainerText(u8 which, u16 localId)
     switch (which)
     {
     case TRAINER_HILL_TEXT_INTRO:
-        FrontierSpeechToString((const u16 *)sHillData->floors[floorId].trainers[id].speechBefore);
+        StringExpandPlaceholders(gStringVar4, sHillData->floors[floorId].trainers[id].speechBefore);
         break;
     case TRAINER_HILL_TEXT_PLAYER_LOST:
-        FrontierSpeechToString((const u16 *)sHillData->floors[floorId].trainers[id].speechWin);
+        StringExpandPlaceholders(gStringVar4, sHillData->floors[floorId].trainers[id].speechWin);
         break;
     case TRAINER_HILL_TEXT_PLAYER_WON:
-        FrontierSpeechToString((const u16 *)sHillData->floors[floorId].trainers[id].speechLose);
+        StringExpandPlaceholders(gStringVar4, sHillData->floors[floorId].trainers[id].speechLose);
         break;
     case TRAINER_HILL_TEXT_AFTER:
-        FrontierSpeechToString((const u16 *)sHillData->floors[floorId].trainers[id].speechAfter);
+        StringExpandPlaceholders(gStringVar4, sHillData->floors[floorId].trainers[id].speechAfter);
         break;
     }
 
@@ -601,11 +601,14 @@ void PrintOnTrainerHillRecordsWindow(void)
         minutes = total / (60 * 60);
         total %= (60 * 60);
         ConvertIntToDecimalStringN(gStringVar1, minutes, STR_CONV_MODE_RIGHT_ALIGN, 2);
+        ReverseNumeric(gStringVar1);
         secondsWhole = total / 60;
         total %= 60;
         ConvertIntToDecimalStringN(gStringVar2, secondsWhole, STR_CONV_MODE_RIGHT_ALIGN, 2);
+        ReverseNumeric(gStringVar2);
         secondsFraction = (total * 168) / 100;
         ConvertIntToDecimalStringN(gStringVar3, secondsFraction, STR_CONV_MODE_LEADING_ZEROS, 2);
+        ReverseNumeric(gStringVar3);
         StringExpandPlaceholders(StringCopy(gStringVar4, gText_TimeCleared), gText_XMinYDotZSec);
         x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0xD0);
         AddTextPrinterParameterized3WithRTL(0, FONT_NORMAL, x, y, sRecordWinColors, TEXT_SKIP_DRAW, gStringVar4, TRUE);

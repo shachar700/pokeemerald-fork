@@ -1946,7 +1946,7 @@ static void GetOpponentIntroSpeech(void)
     if (trainerId == TRAINER_EREADER)
         FrontierSpeechToString(gSaveBlock2Ptr->frontier.ereaderTrainer.greeting);
     else if (trainerId < FRONTIER_TRAINERS_COUNT)
-        StringCopy(gStringVar4, gFacilityTrainers[trainerId].speechBefore);
+        StringExpandPlaceholders(gStringVar4, gFacilityTrainers[trainerId].speechBefore);
     else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
         FrontierSpeechToString(gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].greeting);
     else
