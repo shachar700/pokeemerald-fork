@@ -120,9 +120,6 @@ BattleFrontier_BattlePalaceCorridor_Movement_AttendantEnterBattleRoom:
 	step_end
 
 BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame:
-	.string "People and POKéMON, they are but\n"
-	.string "the same…\p"
-	.string "Their individual nature makes them\n"
 	.string "אנשים ופוקימונים הם בעצם\n"
 	.string "אותו הדבר…\p"
 	.string "האופי הייחודי שלהם גורם לכך\n"

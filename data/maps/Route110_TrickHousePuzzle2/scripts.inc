@@ -125,8 +125,8 @@ Route110_TrickHousePuzzle2_Text_PaulDefeat:
 	.string "את{EMIT_HEY} גם טוב{ADD_HEY} בקרבות?$"
 
 Route110_TrickHousePuzzle2_Text_PaulPostBattle:
-	.string "The TRICK MASTER rigged all the tricks\n"
-	.string "in this house all by himself.$"
+	.string "מאסטר הטריקים הכין את כל\n"
+	.string "הטריקים בבית הזה לבד.$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaIntro:
 	.string "אני רוצה להקים מכון משלי יום אחד.\n"

@@ -160,7 +160,7 @@ ProfileMan_Text_FantasticProfile:
 
 @ Unused
 ProfileMan_Text_YouKnowSecretSaying:
-	.string "Oh?\n"
-	.string "You know the secret saying!\p"
-	.string "That means you're now a fellow member\n"
-	.string "of the MYSTERY EVENT CLUB!$"
+	.string "מה?\n"
+	.string "את{EMIT_HEY} מכיר{ADD_HEY} את המשפט הסודי!\p"
+	.string "זה אומר שעכשיו את{EMIT_HEY} חבר{ADD_HEY}\n"
+	.string "במועדון האירוע המסתורי!$"

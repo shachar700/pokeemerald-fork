@@ -463,33 +463,33 @@ BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor7thOpponentSet:
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_2ndOpponentSetNext:
-	.string "The 2nd set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "סט היריבים השני הוא הבא בתור.\n"
+	.string "ת{SWAP_NUN}{ADD_YUD} את המיטב!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_3rdOpponentSetNext:
-	.string "The 3rd set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "סט היריבים השלישי הוא הבא בתור.\n"
+	.string "ת{SWAP_NUN}{ADD_YUD} את המיטב!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_4thOpponentSetNext:
-	.string "The 4th set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "סט היריבים הרביעי הוא הבא בתור.\n"
+	.string "ת{SWAP_NUN}{ADD_YUD} את המיטב!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_5thOpponentSetNext:
-	.string "The 5th set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "סט היריבים החמישי הוא הבא בתור.\n"
+	.string "ת{SWAP_NUN}{ADD_YUD} את המיטב!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_6thOpponentSetNext:
-	.string "The 6th set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "סט היריבים השישי הוא הבא בתור.\n"
+	.string "ת{SWAP_NUN}{ADD_YUD} את המיטב!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_7thOpponentSetNext:
-	.string "The 7th set of opponents is next.\n"
-	.string "Do your best!$"
+	.string "סט היריבים השביעי הוא הבא בתור.\n"
+	.string "ת{SWAP_NUN}{ADD_YUD} את המיטב!$"
 
 gText_LinkStandby3::
 	.string "תקשורת בהמתנה…$"
