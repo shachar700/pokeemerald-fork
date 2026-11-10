@@ -256,21 +256,21 @@ static const u16 sUnused_Pal[] = INCGFX_U16("graphics/berry_blender/unused.pal",
 static const u16 sEmpty_Pal[16 * 14] = {0};
 
 // unused text
-static const u8 sUnusedText_YesNo[] = _("YES\nNO");
+static const u8 sUnusedText_YesNo[] = _("כן\nלא");
 static const u8 sUnusedText_2[] = _("▶");
 static const u8 sUnusedText_Space[] = _(" ");
-static const u8 sUnusedText_Terminating[] = _("Terminating.");
-static const u8 sUnusedText_LinkPartnerNotFound[] = _("Link partner(s) not found.\nPlease try again.\p");
+static const u8 sUnusedText_Terminating[] = _("מסיים.");
+static const u8 sUnusedText_LinkPartnerNotFound[] = _("לא נמצאו שותפים לחיבור.\nנא לנסות שוב.\p");
 
-static const u8 sText_BerryBlenderStart[] = _("Starting up the BERRY BLENDER.\pPlease select a BERRY from your BAG\nto put in the BERRY BLENDER.\p");
+static const u8 sText_BerryBlenderStart[] = _("מפעילים את מערבל הפירות.\pבחר{ADD_YUD} פרי יער מהתיק שלך\nכדי לשים במערבל הפירות.\p");
 static const u8 sText_NewParagraph[] = _("\p");
-static const u8 sText_WasMade[] = _(" was made!");
-static const u8 sText_Mister[] = _("MISTER");
-static const u8 sText_Laddie[] = _("LADDIE");
-static const u8 sText_Lassie[] = _("LASSIE");
-static const u8 sText_Master[] = _("MASTER");
-static const u8 sText_Dude[] = _("DUDE");
-static const u8 sText_Miss[] = _("MISS");
+static const u8 sText_WasMade[] = _(" נוצר!");
+static const u8 sText_Mister[] = _("אדון");
+static const u8 sText_Laddie[] = _("בחור");
+static const u8 sText_Lassie[] = _("בחורה");
+static const u8 sText_Master[] = _("מאסטר");
+static const u8 sText_Dude[] = _("אחי");
+static const u8 sText_Miss[] = _("גברת");
 
 static const u8 *const sBlenderOpponentsNames[] =
 {
