@@ -904,7 +904,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BRADY] =
     {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
-        .trainerName = _("BRADY"),
+        .trainerName = _("בריידי"),
         .speechBefore = sText_BradyBefore,
         .speechWin = sText_BradyWin,
         .speechLose = sText_BradyLose,
@@ -913,7 +913,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CONNER] =
     {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
-        .trainerName = _("CONNER"),
+        .trainerName = _("קונר"),
         .speechBefore = sText_ConnerBefore,
         .speechWin = sText_ConnerWin,
         .speechLose = sText_ConnerLose,
@@ -922,7 +922,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BRADLEY] =
     {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
-        .trainerName = _("BRADLEY"),
+        .trainerName = _("בראדלי"),
         .speechBefore = sText_BradleyBefore,
         .speechWin = sText_BradleyWin,
         .speechLose = sText_BradleyLose,
@@ -931,7 +931,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CYBIL] =
     {
         .facilityClass = FACILITY_CLASS_LASS,
-        .trainerName = _("CYBIL"),
+        .trainerName = _("סיביל"),
         .speechBefore = sText_CybilBefore,
         .speechWin = sText_CybilWin,
         .speechLose = sText_CybilLose,
@@ -940,7 +940,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RODETTE] =
     {
         .facilityClass = FACILITY_CLASS_LASS,
-        .trainerName = _("RODETTE"),
+        .trainerName = _("רודט"),
         .speechBefore = sText_RodetteBefore,
         .speechWin = sText_RodetteWin,
         .speechLose = sText_RodetteLose,
@@ -949,7 +949,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_PEGGY] =
     {
         .facilityClass = FACILITY_CLASS_LASS,
-        .trainerName = _("PEGGY"),
+        .trainerName = _("פגי"),
         .speechBefore = sText_PeggyBefore,
         .speechWin = sText_PeggyWin,
         .speechLose = sText_PeggyLose,
@@ -958,7 +958,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KEITH] =
     {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
-        .trainerName = _("KEITH"),
+        .trainerName = _("קית"),
         .speechBefore = sText_KeithBefore,
         .speechWin = sText_KeithWin,
         .speechLose = sText_KeithLose,
@@ -967,7 +967,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GRAYSON] =
     {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
-        .trainerName = _("GRAYSON"),
+        .trainerName = _("גרייסון"),
         .speechBefore = sText_GraysonBefore,
         .speechWin = sText_GraysonWin,
         .speechLose = sText_GraysonLose,
@@ -976,7 +976,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GLENN] =
     {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
-        .trainerName = _("GLENN"),
+        .trainerName = _("גלן"),
         .speechBefore = sText_GlennBefore,
         .speechWin = sText_GlennWin,
         .speechLose = sText_GlennLose,
@@ -985,7 +985,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LILIANA] =
     {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
-        .trainerName = _("LILIANA"),
+        .trainerName = _("ליליאנה"),
         .speechBefore = sText_LilianaBefore,
         .speechWin = sText_LilianaWin,
         .speechLose = sText_LilianaLose,
@@ -994,7 +994,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ELISE] =
     {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
-        .trainerName = _("ELISE"),
+        .trainerName = _("אליס"),
         .speechBefore = sText_EliseBefore,
         .speechWin = sText_EliseWin,
         .speechLose = sText_EliseLose,
@@ -1003,7 +1003,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ZOEY] =
     {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
-        .trainerName = _("ZOEY"),
+        .trainerName = _("זואי"),
         .speechBefore = sText_ZoeyBefore,
         .speechWin = sText_ZoeyWin,
         .speechLose = sText_ZoeyLose,
@@ -1012,7 +1012,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MANUEL] =
     {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
-        .trainerName = _("MANUEL"),
+        .trainerName = _("מנואל"),
         .speechBefore = sText_ManuelBefore,
         .speechWin = sText_ManuelWin,
         .speechLose = sText_ManuelLose,
@@ -1021,7 +1021,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RUSS] =
     {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
-        .trainerName = _("RUSS"),
+        .trainerName = _("ראס"),
         .speechBefore = sText_RussBefore,
         .speechWin = sText_RussWin,
         .speechLose = sText_RussLose,
@@ -1030,7 +1030,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DUSTIN] =
     {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
-        .trainerName = _("DUSTIN"),
+        .trainerName = _("דסטין"),
         .speechBefore = sText_DustinBefore,
         .speechWin = sText_DustinWin,
         .speechLose = sText_DustinLose,
@@ -1039,7 +1039,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_TINA] =
     {
         .facilityClass = FACILITY_CLASS_LADY,
-        .trainerName = _("TINA"),
+        .trainerName = _("טינה"),
         .speechBefore = sText_TinaBefore,
         .speechWin = sText_TinaWin,
         .speechLose = sText_TinaLose,
@@ -1048,7 +1048,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GILLIAN1] =
     {
         .facilityClass = FACILITY_CLASS_LADY,
-        .trainerName = _("GILLIAN"),
+        .trainerName = _("ג'יליאן"),
         .speechBefore = sText_GillianBefore,
         .speechWin = sText_GillianWin,
         .speechLose = sText_GillianLose,
@@ -1057,7 +1057,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ZOE] =
     {
         .facilityClass = FACILITY_CLASS_LADY,
-        .trainerName = _("ZOE"),
+        .trainerName = _("זואי"),
         .speechBefore = sText_ZoeBefore,
         .speechWin = sText_ZoeWin,
         .speechLose = sText_ZoeLose,
@@ -1066,7 +1066,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CHEN] =
     {
         .facilityClass = FACILITY_CLASS_CAMPER,
-        .trainerName = _("CHEN"),
+        .trainerName = _("צ'ן"),
         .speechBefore = sText_ChenBefore,
         .speechWin = sText_ChenWin,
         .speechLose = sText_ChenLose,
@@ -1075,7 +1075,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_AL] =
     {
         .facilityClass = FACILITY_CLASS_CAMPER,
-        .trainerName = _("AL"),
+        .trainerName = _("אל"),
         .speechBefore = sText_AlBefore,
         .speechWin = sText_AlWin,
         .speechLose = sText_AlLose,
@@ -1084,7 +1084,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MITCH] =
     {
         .facilityClass = FACILITY_CLASS_CAMPER,
-        .trainerName = _("MITCH"),
+        .trainerName = _("מיץ'"),
         .speechBefore = sText_MitchBefore,
         .speechWin = sText_MitchWin,
         .speechLose = sText_MitchLose,
@@ -1093,7 +1093,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ANNE] =
     {
         .facilityClass = FACILITY_CLASS_PICNICKER,
-        .trainerName = _("ANNE"),
+        .trainerName = _("אן"),
         .speechBefore = sText_AnneBefore,
         .speechWin = sText_AnneWin,
         .speechLose = sText_AnneLose,
@@ -1102,7 +1102,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ALIZE] =
     {
         .facilityClass = FACILITY_CLASS_PICNICKER,
-        .trainerName = _("ALIZE"),
+        .trainerName = _("אליזה"),
         .speechBefore = sText_AlizeBefore,
         .speechWin = sText_AlizeWin,
         .speechLose = sText_AlizeLose,
@@ -1111,7 +1111,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LAUREN] =
     {
         .facilityClass = FACILITY_CLASS_PICNICKER,
-        .trainerName = _("LAUREN"),
+        .trainerName = _("לורן"),
         .speechBefore = sText_LaurenBefore,
         .speechWin = sText_LaurenWin,
         .speechLose = sText_LaurenLose,
@@ -1120,7 +1120,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KIPP] =
     {
         .facilityClass = FACILITY_CLASS_TUBER_M,
-        .trainerName = _("KIPP"),
+        .trainerName = _("קיפ"),
         .speechBefore = sText_KippBefore,
         .speechWin = sText_KippWin,
         .speechLose = sText_KippLose,
@@ -1129,7 +1129,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JASON] =
     {
         .facilityClass = FACILITY_CLASS_TUBER_M,
-        .trainerName = _("JASON"),
+        .trainerName = _("ג'ייסון"),
         .speechBefore = sText_JasonBefore,
         .speechWin = sText_JasonWin,
         .speechLose = sText_JasonLose,
@@ -1138,7 +1138,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JOHN] =
     {
         .facilityClass = FACILITY_CLASS_TUBER_M,
-        .trainerName = _("JOHN"),
+        .trainerName = _("ג'ון"),
         .speechBefore = sText_JohnBefore,
         .speechWin = sText_JohnWin,
         .speechLose = sText_JohnLose,
@@ -1147,7 +1147,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ANN] =
     {
         .facilityClass = FACILITY_CLASS_TUBER_F,
-        .trainerName = _("ANN"),
+        .trainerName = _("אן"),
         .speechBefore = sText_AnnBefore,
         .speechWin = sText_AnnWin,
         .speechLose = sText_AnnLose,
@@ -1156,7 +1156,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_EILEEN] =
     {
         .facilityClass = FACILITY_CLASS_TUBER_F,
-        .trainerName = _("EILEEN"),
+        .trainerName = _("איילין"),
         .speechBefore = sText_EileenBefore,
         .speechWin = sText_EileenWin,
         .speechLose = sText_EileenLose,
@@ -1165,7 +1165,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CARLIE] =
     {
         .facilityClass = FACILITY_CLASS_TUBER_F,
-        .trainerName = _("CARLIE"),
+        .trainerName = _("קרלי"),
         .speechBefore = sText_CarlieBefore,
         .speechWin = sText_CarlieWin,
         .speechLose = sText_CarlieLose,
@@ -1174,7 +1174,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GORDON] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
-        .trainerName = _("GORDON"),
+        .trainerName = _("גורדון"),
         .speechBefore = sText_GordonBefore,
         .speechWin = sText_GordonWin,
         .speechLose = sText_GordonLose,
@@ -1183,7 +1183,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_AYDEN] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
-        .trainerName = _("AYDEN"),
+        .trainerName = _("איידן"),
         .speechBefore = sText_AydenBefore,
         .speechWin = sText_AydenWin,
         .speechLose = sText_AydenLose,
@@ -1192,7 +1192,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MARCO] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
-        .trainerName = _("MARCO"),
+        .trainerName = _("מרקו"),
         .speechBefore = sText_MarcoBefore,
         .speechWin = sText_MarcoWin,
         .speechLose = sText_MarcoLose,
@@ -1201,7 +1201,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CIERRA] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
-        .trainerName = _("CIERRA"),
+        .trainerName = _("סיירה"),
         .speechBefore = sText_CierraBefore,
         .speechWin = sText_CierraWin,
         .speechLose = sText_CierraLose,
@@ -1210,7 +1210,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MARCY] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
-        .trainerName = _("MARCY"),
+        .trainerName = _("מרסי"),
         .speechBefore = sText_MarcyBefore,
         .speechWin = sText_MarcyWin,
         .speechLose = sText_MarcyLose,
@@ -1219,7 +1219,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KATHY] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
-        .trainerName = _("KATHY"),
+        .trainerName = _("קתי"),
         .speechBefore = sText_KathyBefore,
         .speechWin = sText_KathyWin,
         .speechLose = sText_KathyLose,
@@ -1228,7 +1228,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_PEYTON] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
-        .trainerName = _("PEYTON"),
+        .trainerName = _("פייטון"),
         .speechBefore = sText_PeytonBefore,
         .speechWin = sText_PeytonWin,
         .speechLose = sText_PeytonLose,
@@ -1237,7 +1237,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JULIAN] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
-        .trainerName = _("JULIAN"),
+        .trainerName = _("ג'וליאן"),
         .speechBefore = sText_JulianBefore,
         .speechWin = sText_JulianWin,
         .speechLose = sText_JulianLose,
@@ -1246,7 +1246,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_QUINN] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
-        .trainerName = _("QUINN"),
+        .trainerName = _("קווין"),
         .speechBefore = sText_QuinnBefore,
         .speechWin = sText_QuinnWin,
         .speechLose = sText_QuinnLose,
@@ -1255,7 +1255,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_HAYLEE] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
-        .trainerName = _("HAYLEE"),
+        .trainerName = _("היילי"),
         .speechBefore = sText_HayleeBefore,
         .speechWin = sText_HayleeWin,
         .speechLose = sText_HayleeLose,
@@ -1264,7 +1264,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_AMANDA] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
-        .trainerName = _("AMANDA"),
+        .trainerName = _("אמנדה"),
         .speechBefore = sText_AmandaBefore,
         .speechWin = sText_AmandaWin,
         .speechLose = sText_AmandaLose,
@@ -1273,7 +1273,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_STACY] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
-        .trainerName = _("STACY"),
+        .trainerName = _("סטייסי"),
         .speechBefore = sText_StacyBefore,
         .speechWin = sText_StacyWin,
         .speechLose = sText_StacyLose,
@@ -1283,7 +1283,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RAFAEL] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
-        .trainerName = _("RAFAEL"),
+        .trainerName = _("רפאל"),
         .speechBefore = sText_RafaelBefore,
         .speechWin = sText_RafaelWin,
         .speechLose = sText_RafaelLose,
@@ -1292,7 +1292,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_OLIVER] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
-        .trainerName = _("OLIVER"),
+        .trainerName = _("אוליבר"),
         .speechBefore = sText_OliverBefore,
         .speechWin = sText_OliverWin,
         .speechLose = sText_OliverLose,
@@ -1301,7 +1301,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_PAYTON] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
-        .trainerName = _("PAYTON"),
+        .trainerName = _("פייטון"),
         .speechBefore = sText_PaytonBefore,
         .speechWin = sText_PaytonWin,
         .speechLose = sText_PaytonLose,
@@ -1310,7 +1310,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_PAMELA] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
-        .trainerName = _("PAMELA"),
+        .trainerName = _("פמלה"),
         .speechBefore = sText_PamelaBefore,
         .speechWin = sText_PamelaWin,
         .speechLose = sText_PamelaLose,
@@ -1319,7 +1319,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ELIZA] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
-        .trainerName = _("ELIZA"),
+        .trainerName = _("אליזה"),
         .speechBefore = sText_ElizaBefore,
         .speechWin = sText_ElizaWin,
         .speechLose = sText_ElizaLose,
@@ -1328,7 +1328,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MARISA] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
-        .trainerName = _("MARISA"),
+        .trainerName = _("מריסה"),
         .speechBefore = sText_MarisaBefore,
         .speechWin = sText_MarisaWin,
         .speechLose = sText_MarisaLose,
@@ -1337,7 +1337,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LEWIS] =
     {
         .facilityClass = FACILITY_CLASS_BUG_CATCHER,
-        .trainerName = _("LEWIS"),
+        .trainerName = _("לואיס"),
         .speechBefore = sText_LewisBefore,
         .speechWin = sText_LewisWin,
         .speechLose = sText_LewisLose,
@@ -1346,7 +1346,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_YOSHI] =
     {
         .facilityClass = FACILITY_CLASS_BUG_CATCHER,
-        .trainerName = _("YOSHI"),
+        .trainerName = _("יושי"),
         .speechBefore = sText_YoshiBefore,
         .speechWin = sText_YoshiWin,
         .speechLose = sText_YoshiLose,
@@ -1355,7 +1355,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DESTIN] =
     {
         .facilityClass = FACILITY_CLASS_BUG_CATCHER,
-        .trainerName = _("DESTIN"),
+        .trainerName = _("דסטין"),
         .speechBefore = sText_DestinBefore,
         .speechWin = sText_DestinWin,
         .speechLose = sText_DestinLose,
@@ -1364,7 +1364,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KEON] =
     {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
-        .trainerName = _("KEON"),
+        .trainerName = _("קיאון"),
         .speechBefore = sText_KeonBefore,
         .speechWin = sText_KeonWin,
         .speechLose = sText_KeonLose,
@@ -1373,7 +1373,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_STUART] =
     {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
-        .trainerName = _("STUART"),
+        .trainerName = _("סטיוארט"),
         .speechBefore = sText_StuartBefore,
         .speechWin = sText_StuartWin,
         .speechLose = sText_StuartLose,
@@ -1382,7 +1382,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_NESTOR] =
     {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
-        .trainerName = _("NESTOR"),
+        .trainerName = _("נסטור"),
         .speechBefore = sText_NestorBefore,
         .speechWin = sText_NestorWin,
         .speechLose = sText_NestorLose,
@@ -1391,7 +1391,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DERRICK] =
     {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("DERRICK"),
+        .trainerName = _("דריק"),
         .speechBefore = sText_DerrickBefore,
         .speechWin = sText_DerrickWin,
         .speechLose = sText_DerrickLose,
@@ -1400,7 +1400,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BRYSON] =
     {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("BRYSON"),
+        .trainerName = _("בריסון"),
         .speechBefore = sText_BrysonBefore,
         .speechWin = sText_BrysonWin,
         .speechLose = sText_BrysonLose,
@@ -1409,7 +1409,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CLAYTON] =
     {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("CLAYTON"),
+        .trainerName = _("קלייטון"),
         .speechBefore = sText_ClaytonBefore,
         .speechWin = sText_ClaytonWin,
         .speechLose = sText_ClaytonLose,
@@ -1418,7 +1418,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_TRENTON] =
     {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
-        .trainerName = _("TRENTON"),
+        .trainerName = _("טרנטון"),
         .speechBefore = sText_TrentonBefore,
         .speechWin = sText_TrentonWin,
         .speechLose = sText_TrentonLose,
@@ -1427,7 +1427,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JENSON] =
     {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
-        .trainerName = _("JENSON"),
+        .trainerName = _("ג'נסון"),
         .speechBefore = sText_JensonBefore,
         .speechWin = sText_JensonWin,
         .speechLose = sText_JensonLose,
@@ -1436,7 +1436,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_WESLEY] =
     {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
-        .trainerName = _("WESLEY"),
+        .trainerName = _("וסלי"),
         .speechBefore = sText_WesleyBefore,
         .speechWin = sText_WesleyWin,
         .speechLose = sText_WesleyLose,
@@ -1445,7 +1445,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ANTON] =
     {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("ANTON"),
+        .trainerName = _("אנטון"),
         .speechBefore = sText_AntonBefore,
         .speechWin = sText_AntonWin,
         .speechLose = sText_AntonLose,
@@ -1454,7 +1454,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LAWSON] =
     {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("LAWSON"),
+        .trainerName = _("לוסון"),
         .speechBefore = sText_LawsonBefore,
         .speechWin = sText_LawsonWin,
         .speechLose = sText_LawsonLose,
@@ -1463,7 +1463,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_SAMMY] =
     {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("SAMMY"),
+        .trainerName = _("סמי"),
         .speechBefore = sText_SammyBefore,
         .speechWin = sText_SammyWin,
         .speechLose = sText_SammyLose,
@@ -1473,7 +1473,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ARNIE] =
     {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("ARNIE"),
+        .trainerName = _("ארני"),
         .speechBefore = sText_ArnieBefore,
         .speechWin = sText_ArnieWin,
         .speechLose = sText_ArnieLose,
@@ -1482,7 +1482,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ADRIAN] =
     {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("ADRIAN"),
+        .trainerName = _("אדריאן"),
         .speechBefore = sText_AdrianBefore,
         .speechWin = sText_AdrianWin,
         .speechLose = sText_AdrianLose,
@@ -1491,7 +1491,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_TRISTAN] =
     {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("TRISTAN"),
+        .trainerName = _("טריסטן"),
         .speechBefore = sText_TristanBefore,
         .speechWin = sText_TristanWin,
         .speechLose = sText_TristanLose,
@@ -1500,7 +1500,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JULIANA] =
     {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
-        .trainerName = _("JULIANA"),
+        .trainerName = _("יוליאנה"),
         .speechBefore = sText_JulianaBefore,
         .speechWin = sText_JulianaWin,
         .speechLose = sText_JulianaLose,
@@ -1509,7 +1509,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RYLEE] =
     {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
-        .trainerName = _("RYLEE"),
+        .trainerName = _("ריילי"),
         .speechBefore = sText_RyleeBefore,
         .speechWin = sText_RyleeWin,
         .speechLose = sText_RyleeLose,
@@ -1518,7 +1518,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CHELSEA] =
     {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
-        .trainerName = _("CHELSEA"),
+        .trainerName = _("צ'לסי"),
         .speechBefore = sText_ChelseaBefore,
         .speechWin = sText_ChelseaWin,
         .speechLose = sText_ChelseaLose,
@@ -1528,7 +1528,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DANELA] =
     {
         .facilityClass = FACILITY_CLASS_BEAUTY,
-        .trainerName = _("DANELA"),
+        .trainerName = _("דנלה"),
         .speechBefore = sText_DanelaBefore,
         .speechWin = sText_DanelaWin,
         .speechLose = sText_DanelaLose,
@@ -1537,7 +1537,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LIZBETH] =
     {
         .facilityClass = FACILITY_CLASS_BEAUTY,
-        .trainerName = _("LIZBETH"),
+        .trainerName = _("ליזבת"),
         .speechBefore = sText_LizbethBefore,
         .speechWin = sText_LizbethWin,
         .speechLose = sText_LizbethLose,
@@ -1546,7 +1546,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_AMELIA] =
     {
         .facilityClass = FACILITY_CLASS_BEAUTY,
-        .trainerName = _("AMELIA"),
+        .trainerName = _("אמליה"),
         .speechBefore = sText_AmeliaBefore,
         .speechWin = sText_AmeliaWin,
         .speechLose = sText_AmeliaLose,
@@ -1555,7 +1555,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JILLIAN] =
     {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
-        .trainerName = _("JILLIAN"),
+        .trainerName = _("ג'יליאן"),
         .speechBefore = sText_JillianBefore,
         .speechWin = sText_JillianWin,
         .speechLose = sText_JillianLose,
@@ -1564,7 +1564,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ABBIE] =
     {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
-        .trainerName = _("ABBIE"),
+        .trainerName = _("אבי"),
         .speechBefore = sText_AbbieBefore,
         .speechWin = sText_AbbieWin,
         .speechLose = sText_AbbieLose,
@@ -1573,7 +1573,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BRIANA] =
     {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
-        .trainerName = _("BRIANA"),
+        .trainerName = _("בריאנה"),
         .speechBefore = sText_BrianaBefore,
         .speechWin = sText_BrianaWin,
         .speechLose = sText_BrianaLose,
@@ -1582,7 +1582,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ANTONIO] =
     {
         .facilityClass = FACILITY_CLASS_GUITARIST,
-        .trainerName = _("ANTONIO"),
+        .trainerName = _("אנטוניו"),
         .speechBefore = sText_AntonioBefore,
         .speechWin = sText_AntonioWin,
         .speechLose = sText_AntonioLose,
@@ -1591,7 +1591,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JADEN] =
     {
         .facilityClass = FACILITY_CLASS_GUITARIST,
-        .trainerName = _("JADEN"),
+        .trainerName = _("ג'יידן"),
         .speechBefore = sText_JadenBefore,
         .speechWin = sText_JadenWin,
         .speechLose = sText_JadenLose,
@@ -1600,7 +1600,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DAKOTA] =
     {
         .facilityClass = FACILITY_CLASS_GUITARIST,
-        .trainerName = _("DAKOTA"),
+        .trainerName = _("דקוטה"),
         .speechBefore = sText_DakotaBefore,
         .speechWin = sText_DakotaWin,
         .speechLose = sText_DakotaLose,
@@ -1609,7 +1609,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BRAYDEN] =
     {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-        .trainerName = _("BRAYDEN"),
+        .trainerName = _("בריידן"),
         .speechBefore = sText_BraydenBefore,
         .speechWin = sText_BraydenWin,
         .speechLose = sText_BraydenLose,
@@ -1618,7 +1618,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CORSON] =
     {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-        .trainerName = _("CORSON"),
+        .trainerName = _("קורסון"),
         .speechBefore = sText_CorsonBefore,
         .speechWin = sText_CorsonWin,
         .speechLose = sText_CorsonLose,
@@ -1627,7 +1627,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_TREVIN] =
     {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-        .trainerName = _("TREVIN"),
+        .trainerName = _("טרווין"),
         .speechBefore = sText_TrevinBefore,
         .speechWin = sText_TrevinWin,
         .speechLose = sText_TrevinLose,
@@ -1636,7 +1636,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_PATRICK] =
     {
         .facilityClass = FACILITY_CLASS_SAILOR,
-        .trainerName = _("PATRICK"),
+        .trainerName = _("פטריק"),
         .speechBefore = sText_PatrickBefore,
         .speechWin = sText_PatrickWin,
         .speechLose = sText_PatrickLose,
@@ -1645,7 +1645,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KADEN] =
     {
         .facilityClass = FACILITY_CLASS_SAILOR,
-        .trainerName = _("KADEN"),
+        .trainerName = _("קיידן"),
         .speechBefore = sText_KadenBefore,
         .speechWin = sText_KadenWin,
         .speechLose = sText_KadenLose,
@@ -1654,7 +1654,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MAXWELL] =
     {
         .facilityClass = FACILITY_CLASS_SAILOR,
-        .trainerName = _("MAXWELL"),
+        .trainerName = _("מקסוול"),
         .speechBefore = sText_MaxwellBefore,
         .speechWin = sText_MaxwellWin,
         .speechLose = sText_MaxwellLose,
@@ -1663,7 +1663,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DARYL] =
     {
         .facilityClass = FACILITY_CLASS_HIKER,
-        .trainerName = _("DARYL"),
+        .trainerName = _("דריל"),
         .speechBefore = sText_DarylBefore,
         .speechWin = sText_DarylWin,
         .speechLose = sText_DarylLose,
@@ -1672,7 +1672,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KENNETH] =
     {
         .facilityClass = FACILITY_CLASS_HIKER,
-        .trainerName = _("KENNETH"),
+        .trainerName = _("קנת"),
         .speechBefore = sText_KennethBefore,
         .speechWin = sText_KennethWin,
         .speechLose = sText_KennethLose,
@@ -1681,7 +1681,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RICH] =
     {
         .facilityClass = FACILITY_CLASS_HIKER,
-        .trainerName = _("RICH"),
+        .trainerName = _("ריץ'"),
         .speechBefore = sText_RichBefore,
         .speechWin = sText_RichWin,
         .speechLose = sText_RichLose,
@@ -1690,7 +1690,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CADEN] =
     {
         .facilityClass = FACILITY_CLASS_KINDLER,
-        .trainerName = _("CADEN"),
+        .trainerName = _("קיידן"),
         .speechBefore = sText_CadenBefore,
         .speechWin = sText_CadenWin,
         .speechLose = sText_CadenLose,
@@ -1699,7 +1699,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MARLON] =
     {
         .facilityClass = FACILITY_CLASS_KINDLER,
-        .trainerName = _("MARLON"),
+        .trainerName = _("מרלון"),
         .speechBefore = sText_MarlonBefore,
         .speechWin = sText_MarlonWin,
         .speechLose = sText_MarlonLose,
@@ -1708,7 +1708,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_NASH] =
     {
         .facilityClass = FACILITY_CLASS_KINDLER,
-        .trainerName = _("NASH"),
+        .trainerName = _("נאש"),
         .speechBefore = sText_NashBefore,
         .speechWin = sText_NashWin,
         .speechLose = sText_NashLose,
@@ -1717,7 +1717,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ROBBY] =
     {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
-        .trainerName = _("ROBBY"),
+        .trainerName = _("רובי"),
         .speechBefore = sText_RobbyBefore,
         .speechWin = sText_RobbyWin,
         .speechLose = sText_RobbyLose,
@@ -1726,7 +1726,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_REECE] =
     {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
-        .trainerName = _("REECE"),
+        .trainerName = _("ריס"),
         .speechBefore = sText_ReeceBefore,
         .speechWin = sText_ReeceWin,
         .speechLose = sText_ReeceLose,
@@ -1735,7 +1735,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KATHRYN] =
     {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
-        .trainerName = _("KATHRYN"),
+        .trainerName = _("קתרין"),
         .speechBefore = sText_KathrynBefore,
         .speechWin = sText_KathrynWin,
         .speechLose = sText_KathrynLose,
@@ -1744,7 +1744,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ELLEN] =
     {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
-        .trainerName = _("ELLEN"),
+        .trainerName = _("אלן"),
         .speechBefore = sText_EllenBefore,
         .speechWin = sText_EllenWin,
         .speechLose = sText_EllenLose,
@@ -1753,7 +1753,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RAMON] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
-        .trainerName = _("RAMON"),
+        .trainerName = _("רמון"),
         .speechBefore = sText_RamonBefore,
         .speechWin = sText_RamonWin,
         .speechLose = sText_RamonLose,
@@ -1762,7 +1762,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ARTHUR] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
-        .trainerName = _("ARTHUR"),
+        .trainerName = _("ארתור"),
         .speechBefore = sText_ArthurBefore,
         .speechWin = sText_ArthurWin,
         .speechLose = sText_ArthurLose,
@@ -1771,7 +1771,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ALONDRA] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
-        .trainerName = _("ALONDRA"),
+        .trainerName = _("אלונדרה"),
         .speechBefore = sText_AlondraBefore,
         .speechWin = sText_AlondraWin,
         .speechLose = sText_AlondraLose,
@@ -1780,7 +1780,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ADRIANA] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
-        .trainerName = _("ADRIANA"),
+        .trainerName = _("אדריאנה"),
         .speechBefore = sText_AdrianaBefore,
         .speechWin = sText_AdrianaWin,
         .speechLose = sText_AdrianaLose,
@@ -1789,7 +1789,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MALIK] =
     {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
-        .trainerName = _("MALIK"),
+        .trainerName = _("מאליק"),
         .speechBefore = sText_MalikBefore,
         .speechWin = sText_MalikWin,
         .speechLose = sText_MalikLose,
@@ -1798,7 +1798,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JILL] =
     {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
-        .trainerName = _("JILL"),
+        .trainerName = _("ג'יל"),
         .speechBefore = sText_JillBefore,
         .speechWin = sText_JillWin,
         .speechLose = sText_JillLose,
@@ -1807,7 +1807,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ERIK] =
     {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
-        .trainerName = _("ERIK"),
+        .trainerName = _("אריק"),
         .speechBefore = sText_ErikBefore,
         .speechWin = sText_ErikWin,
         .speechLose = sText_ErikLose,
@@ -1816,7 +1816,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_YAZMIN] =
     {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
-        .trainerName = _("YAZMIN"),
+        .trainerName = _("יזמין"),
         .speechBefore = sText_YazminBefore,
         .speechWin = sText_YazminWin,
         .speechLose = sText_YazminLose,
@@ -1825,7 +1825,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JAMAL] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
-        .trainerName = _("JAMAL"),
+        .trainerName = _("ג'מאל"),
         .speechBefore = sText_JamalBefore,
         .speechWin = sText_JamalWin,
         .speechLose = sText_JamalLose,
@@ -1834,7 +1834,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LESLIE] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
-        .trainerName = _("LESLIE"),
+        .trainerName = _("לסלי"),
         .speechBefore = sText_LeslieBefore,
         .speechWin = sText_LeslieWin,
         .speechLose = sText_LeslieLose,
@@ -1843,7 +1843,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DAVE] =
     {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
-        .trainerName = _("DAVE"),
+        .trainerName = _("דייב"),
         .speechBefore = sText_DaveBefore,
         .speechWin = sText_DaveWin,
         .speechLose = sText_DaveLose,
@@ -1852,7 +1852,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CARLO] =
     {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
-        .trainerName = _("CARLO"),
+        .trainerName = _("קרלו"),
         .speechBefore = sText_CarloBefore,
         .speechWin = sText_CarloWin,
         .speechLose = sText_CarloLose,
@@ -1861,7 +1861,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_EMILIA] =
     {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
-        .trainerName = _("EMILIA"),
+        .trainerName = _("אמיליה"),
         .speechBefore = sText_EmiliaBefore,
         .speechWin = sText_EmiliaWin,
         .speechLose = sText_EmiliaLose,
@@ -1870,7 +1870,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DALIA] =
     {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
-        .trainerName = _("DALIA"),
+        .trainerName = _("דליה"),
         .speechBefore = sText_DaliaBefore,
         .speechWin = sText_DaliaWin,
         .speechLose = sText_DaliaLose,
@@ -1879,7 +1879,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_HITOMI] =
     {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
-        .trainerName = _("HITOMI"),
+        .trainerName = _("היטומי"),
         .speechBefore = sText_HitomiBefore,
         .speechWin = sText_HitomiWin,
         .speechLose = sText_HitomiLose,
@@ -1888,7 +1888,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RICARDO] =
     {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
-        .trainerName = _("RICARDO"),
+        .trainerName = _("ריקרדו"),
         .speechBefore = sText_RicardoBefore,
         .speechWin = sText_RicardoWin,
         .speechLose = sText_RicardoLose,
@@ -1897,7 +1897,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_SHIZUKA] =
     {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
-        .trainerName = _("SHIZUKA"),
+        .trainerName = _("שיזוקה"),
         .speechBefore = sText_ShizukaBefore,
         .speechWin = sText_ShizukaWin,
         .speechLose = sText_ShizukaLose,
@@ -1906,7 +1906,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JOANA] =
     {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
-        .trainerName = _("JOANA"),
+        .trainerName = _("ג'ואנה"),
         .speechBefore = sText_JoanaBefore,
         .speechWin = sText_JoanaWin,
         .speechLose = sText_JoanaLose,
@@ -1915,7 +1915,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KELLY] =
     {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
-        .trainerName = _("KELLY"),
+        .trainerName = _("קלי"),
         .speechBefore = sText_KellyBefore,
         .speechWin = sText_KellyWin,
         .speechLose = sText_KellyLose,
@@ -1924,7 +1924,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RAYNA] =
     {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
-        .trainerName = _("RAYNA"),
+        .trainerName = _("ריינה"),
         .speechBefore = sText_RaynaBefore,
         .speechWin = sText_RaynaWin,
         .speechLose = sText_RaynaLose,
@@ -1933,7 +1933,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_EVAN] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
-        .trainerName = _("EVAN"),
+        .trainerName = _("אוון"),
         .speechBefore = sText_EvanBefore,
         .speechWin = sText_EvanWin,
         .speechLose = sText_EvanLose,
@@ -1942,7 +1942,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JORDAN] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
-        .trainerName = _("JORDAN"),
+        .trainerName = _("ג'ורדן"),
         .speechBefore = sText_JordanBefore,
         .speechWin = sText_JordanWin,
         .speechLose = sText_JordanLose,
@@ -1951,7 +1951,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JOEL] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
-        .trainerName = _("JOEL"),
+        .trainerName = _("ג'ואל"),
         .speechBefore = sText_JoelBefore,
         .speechWin = sText_JoelWin,
         .speechLose = sText_JoelLose,
@@ -1960,7 +1960,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KRISTEN] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
-        .trainerName = _("KRISTEN"),
+        .trainerName = _("קריסטן"),
         .speechBefore = sText_KristenBefore,
         .speechWin = sText_KristenWin,
         .speechLose = sText_KristenLose,
@@ -1969,7 +1969,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_SELPHY] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
-        .trainerName = _("SELPHY"),
+        .trainerName = _("סלפי"),
         .speechBefore = sText_SelphyBefore,
         .speechWin = sText_SelphyWin,
         .speechLose = sText_SelphyLose,
@@ -1978,7 +1978,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CHLOE] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
-        .trainerName = _("CHLOE"),
+        .trainerName = _("קלואי"),
         .speechBefore = sText_ChloeBefore,
         .speechWin = sText_ChloeWin,
         .speechLose = sText_ChloeLose,
@@ -1987,7 +1987,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_NORTON] =
     {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
-        .trainerName = _("NORTON"),
+        .trainerName = _("נורטון"),
         .speechBefore = sText_NortonBefore,
         .speechWin = sText_NortonWin,
         .speechLose = sText_NortonLose,
@@ -1996,7 +1996,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LUKAS] =
     {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
-        .trainerName = _("LUKAS"),
+        .trainerName = _("לוקאס"),
         .speechBefore = sText_LukasBefore,
         .speechWin = sText_LukasWin,
         .speechLose = sText_LukasLose,
@@ -2005,7 +2005,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ZACH] =
     {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
-        .trainerName = _("ZACH"),
+        .trainerName = _("זאק"),
         .speechBefore = sText_ZachBefore,
         .speechWin = sText_ZachWin,
         .speechLose = sText_ZachLose,
@@ -2014,7 +2014,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KAITLYN] =
     {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
-        .trainerName = _("KAITLYN"),
+        .trainerName = _("קייטלין"),
         .speechBefore = sText_KaitlynBefore,
         .speechWin = sText_KaitlynWin,
         .speechLose = sText_KaitlynLose,
@@ -2023,7 +2023,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BREANNA] =
     {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
-        .trainerName = _("BREANNA"),
+        .trainerName = _("בריאנה"),
         .speechBefore = sText_BreannaBefore,
         .speechWin = sText_BreannaWin,
         .speechLose = sText_BreannaLose,
@@ -2032,7 +2032,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KENDRA] =
     {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
-        .trainerName = _("KENDRA"),
+        .trainerName = _("קנדרה"),
         .speechBefore = sText_KendraBefore,
         .speechWin = sText_KendraWin,
         .speechLose = sText_KendraLose,
@@ -2041,7 +2041,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MOLLY] =
     {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
-        .trainerName = _("MOLLY"),
+        .trainerName = _("מולי"),
         .speechBefore = sText_MollyBefore,
         .speechWin = sText_MollyWin,
         .speechLose = sText_MollyLose,
@@ -2050,7 +2050,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JAZMIN] =
     {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
-        .trainerName = _("JAZMIN"),
+        .trainerName = _("ג'זמין"),
         .speechBefore = sText_JazminBefore,
         .speechWin = sText_JazminWin,
         .speechLose = sText_JazminLose,
@@ -2059,7 +2059,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KELSEY] =
     {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
-        .trainerName = _("KELSEY"),
+        .trainerName = _("קלסי"),
         .speechBefore = sText_KelseyBefore,
         .speechWin = sText_KelseyWin,
         .speechLose = sText_KelseyLose,
@@ -2068,7 +2068,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JALEN] =
     {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
-        .trainerName = _("JALEN"),
+        .trainerName = _("ג'יילן"),
         .speechBefore = sText_JalenBefore,
         .speechWin = sText_JalenWin,
         .speechLose = sText_JalenLose,
@@ -2077,7 +2077,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GRIFFEN] =
     {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
-        .trainerName = _("GRIFFEN"),
+        .trainerName = _("גריפין"),
         .speechBefore = sText_GriffenBefore,
         .speechWin = sText_GriffenWin,
         .speechLose = sText_GriffenLose,
@@ -2086,7 +2086,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_XANDER] =
     {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
-        .trainerName = _("XANDER"),
+        .trainerName = _("זנדר"),
         .speechBefore = sText_XanderBefore,
         .speechWin = sText_XanderWin,
         .speechLose = sText_XanderLose,
@@ -2095,7 +2095,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MARVIN] =
     {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
-        .trainerName = _("MARVIN"),
+        .trainerName = _("מרווין"),
         .speechBefore = sText_MarvinBefore,
         .speechWin = sText_MarvinWin,
         .speechLose = sText_MarvinLose,
@@ -2104,7 +2104,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BRENNAN] =
     {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
-        .trainerName = _("BRENNAN"),
+        .trainerName = _("ברנן"),
         .speechBefore = sText_BrennanBefore,
         .speechWin = sText_BrennanWin,
         .speechLose = sText_BrennanLose,
@@ -2113,7 +2113,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BALEY] =
     {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("BALEY"),
+        .trainerName = _("ביילי"),
         .speechBefore = sText_BaleyBefore,
         .speechWin = sText_BaleyWin,
         .speechLose = sText_BaleyLose,
@@ -2122,7 +2122,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ZACKARY] =
     {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("ZACKARY"),
+        .trainerName = _("זאקרי"),
         .speechBefore = sText_ZackaryBefore,
         .speechWin = sText_ZackaryWin,
         .speechLose = sText_ZackaryLose,
@@ -2131,7 +2131,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GABRIEL] =
     {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("GABRIEL"),
+        .trainerName = _("גבריאל"),
         .speechBefore = sText_GabrielBefore,
         .speechWin = sText_GabrielWin,
         .speechLose = sText_GabrielLose,
@@ -2140,7 +2140,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_EMILY] =
     {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
-        .trainerName = _("EMILY"),
+        .trainerName = _("אמילי"),
         .speechBefore = sText_EmilyBefore,
         .speechWin = sText_EmilyWin,
         .speechLose = sText_EmilyLose,
@@ -2149,7 +2149,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JORDYN] =
     {
         .facilityClass = FACILITY_CLASS_BEAUTY,
-        .trainerName = _("JORDYN"),
+        .trainerName = _("ג'ורדין"),
         .speechBefore = sText_JordynBefore,
         .speechWin = sText_JordynWin,
         .speechLose = sText_JordynLose,
@@ -2158,7 +2158,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_SOFIA] =
     {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
-        .trainerName = _("SOFIA"),
+        .trainerName = _("סופיה"),
         .speechBefore = sText_SofiaBefore,
         .speechWin = sText_SofiaWin,
         .speechLose = sText_SofiaLose,
@@ -2167,7 +2167,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BRADEN] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-        .trainerName = _("BRADEN"),
+        .trainerName = _("ברידן"),
         .speechBefore = sText_BradenBefore,
         .speechWin = sText_BradenWin,
         .speechLose = sText_BradenLose,
@@ -2176,7 +2176,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KAYDEN] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-        .trainerName = _("KAYDEN"),
+        .trainerName = _("קיידן"),
         .speechBefore = sText_KaydenBefore,
         .speechWin = sText_KaydenWin,
         .speechLose = sText_KaydenLose,
@@ -2185,7 +2185,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_COOPER] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-        .trainerName = _("COOPER"),
+        .trainerName = _("קופר"),
         .speechBefore = sText_CooperBefore,
         .speechWin = sText_CooperWin,
         .speechLose = sText_CooperLose,
@@ -2194,7 +2194,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JULIA] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-        .trainerName = _("JULIA"),
+        .trainerName = _("ג'וליה"),
         .speechBefore = sText_JuliaBefore,
         .speechWin = sText_JuliaWin,
         .speechLose = sText_JuliaLose,
@@ -2203,7 +2203,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_AMARA] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-        .trainerName = _("AMARA"),
+        .trainerName = _("אמרה"),
         .speechBefore = sText_AmaraBefore,
         .speechWin = sText_AmaraWin,
         .speechLose = sText_AmaraLose,
@@ -2212,7 +2212,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LYNN] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-        .trainerName = _("LYNN"),
+        .trainerName = _("לין"),
         .speechBefore = sText_LynnBefore,
         .speechWin = sText_LynnWin,
         .speechLose = sText_LynnLose,
@@ -2221,7 +2221,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JOVAN] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
-        .trainerName = _("JOVAN"),
+        .trainerName = _("ג'ובאן"),
         .speechBefore = sText_JovanBefore,
         .speechWin = sText_JovanWin,
         .speechLose = sText_JovanLose,
@@ -2230,7 +2230,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DOMINIC] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
-        .trainerName = _("DOMINIC"),
+        .trainerName = _("דומיניק"),
         .speechBefore = sText_DominicBefore,
         .speechWin = sText_DominicWin,
         .speechLose = sText_DominicLose,
@@ -2239,7 +2239,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_NIKOLAS] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
-        .trainerName = _("NIKOLAS"),
+        .trainerName = _("ניקולס"),
         .speechBefore = sText_NikolasBefore,
         .speechWin = sText_NikolasWin,
         .speechLose = sText_NikolasLose,
@@ -2248,7 +2248,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_VALERIA] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
-        .trainerName = _("VALERIA"),
+        .trainerName = _("ולריה"),
         .speechBefore = sText_ValeriaBefore,
         .speechWin = sText_ValeriaWin,
         .speechLose = sText_ValeriaLose,
@@ -2257,7 +2257,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DELANEY] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
-        .trainerName = _("DELANEY"),
+        .trainerName = _("דילייני"),
         .speechBefore = sText_DelaneyBefore,
         .speechWin = sText_DelaneyWin,
         .speechLose = sText_DelaneyLose,
@@ -2266,7 +2266,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MEGHAN] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
-        .trainerName = _("MEGHAN"),
+        .trainerName = _("מייגן"),
         .speechBefore = sText_MeghanBefore,
         .speechWin = sText_MeghanWin,
         .speechLose = sText_MeghanLose,
@@ -2275,7 +2275,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ROBERTO] =
     {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
-        .trainerName = _("ROBERTO"),
+        .trainerName = _("רוברטו"),
         .speechBefore = sText_RobertoBefore,
         .speechWin = sText_RobertoWin,
         .speechLose = sText_RobertoLose,
@@ -2284,7 +2284,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DAMIAN] =
     {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
-        .trainerName = _("DAMIAN"),
+        .trainerName = _("דמיאן"),
         .speechBefore = sText_DamianBefore,
         .speechWin = sText_DamianWin,
         .speechLose = sText_DamianLose,
@@ -2293,7 +2293,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BRODY] =
     {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
-        .trainerName = _("BRODY"),
+        .trainerName = _("ברודי"),
         .speechBefore = sText_BrodyBefore,
         .speechWin = sText_BrodyWin,
         .speechLose = sText_BrodyLose,
@@ -2302,7 +2302,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GRAHAM] =
     {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
-        .trainerName = _("GRAHAM"),
+        .trainerName = _("גרהאם"),
         .speechBefore = sText_GrahamBefore,
         .speechWin = sText_GrahamWin,
         .speechLose = sText_GrahamLose,
@@ -2311,7 +2311,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_TYLOR] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
-        .trainerName = _("TYLOR"),
+        .trainerName = _("טיילור"),
         .speechBefore = sText_TylorBefore,
         .speechWin = sText_TylorWin,
         .speechLose = sText_TylorLose,
@@ -2320,7 +2320,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JAREN] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
-        .trainerName = _("JAREN"),
+        .trainerName = _("ג'רן"),
         .speechBefore = sText_JarenBefore,
         .speechWin = sText_JarenWin,
         .speechLose = sText_JarenLose,
@@ -2329,7 +2329,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CORDELL] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
-        .trainerName = _("CORDELL"),
+        .trainerName = _("קורדל"),
         .speechBefore = sText_CordellBefore,
         .speechWin = sText_CordellWin,
         .speechLose = sText_CordellLose,
@@ -2338,7 +2338,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JAZLYN] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
-        .trainerName = _("JAZLYN"),
+        .trainerName = _("ג'זלין"),
         .speechBefore = sText_JazlynBefore,
         .speechWin = sText_JazlynWin,
         .speechLose = sText_JazlynLose,
@@ -2347,7 +2347,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ZACHERY] =
     {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
-        .trainerName = _("ZACHERY"),
+        .trainerName = _("זכרי"),
         .speechBefore = sText_ZacheryBefore,
         .speechWin = sText_ZacheryWin,
         .speechLose = sText_ZacheryLose,
@@ -2356,7 +2356,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JOHAN] =
     {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
-        .trainerName = _("JOHAN"),
+        .trainerName = _("יוהאן"),
         .speechBefore = sText_JohanBefore,
         .speechWin = sText_JohanWin,
         .speechLose = sText_JohanLose,
@@ -2365,7 +2365,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_SHEA] =
     {
         .facilityClass = FACILITY_CLASS_LASS,
-        .trainerName = _("SHEA"),
+        .trainerName = _("שיי"),
         .speechBefore = sText_SheaBefore,
         .speechWin = sText_SheaWin,
         .speechLose = sText_SheaLose,
@@ -2374,7 +2374,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KAILA] =
     {
         .facilityClass = FACILITY_CLASS_LASS,
-        .trainerName = _("KAILA"),
+        .trainerName = _("קיילה"),
         .speechBefore = sText_KailaBefore,
         .speechWin = sText_KailaWin,
         .speechLose = sText_KailaLose,
@@ -2383,7 +2383,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ISIAH] =
     {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
-        .trainerName = _("ISIAH"),
+        .trainerName = _("איזאיה"),
         .speechBefore = sText_IsiahBefore,
         .speechWin = sText_IsiahWin,
         .speechLose = sText_IsiahLose,
@@ -2392,7 +2392,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GARRETT] =
     {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
-        .trainerName = _("GARRETT"),
+        .trainerName = _("גארט"),
         .speechBefore = sText_GarrettBefore,
         .speechWin = sText_GarrettWin,
         .speechLose = sText_GarrettLose,
@@ -2401,7 +2401,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_HAYLIE] =
     {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
-        .trainerName = _("HAYLIE"),
+        .trainerName = _("היילי"),
         .speechBefore = sText_HaylieBefore,
         .speechWin = sText_HaylieWin,
         .speechLose = sText_HaylieLose,
@@ -2410,7 +2410,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MEGAN] =
     {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
-        .trainerName = _("MEGAN"),
+        .trainerName = _("מגן"),
         .speechBefore = sText_MeganBefore,
         .speechWin = sText_MeganWin,
         .speechLose = sText_MeganLose,
@@ -2419,7 +2419,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ISSAC] =
     {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
-        .trainerName = _("ISSAC"),
+        .trainerName = _("אייזק"),
         .speechBefore = sText_IssacBefore,
         .speechWin = sText_IssacWin,
         .speechLose = sText_IssacLose,
@@ -2428,7 +2428,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_QUINTON] =
     {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
-        .trainerName = _("QUINTON"),
+        .trainerName = _("קווינטן"),
         .speechBefore = sText_QuintonBefore,
         .speechWin = sText_QuintonWin,
         .speechLose = sText_QuintonLose,
@@ -2437,7 +2437,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_SALMA] =
     {
         .facilityClass = FACILITY_CLASS_LADY,
-        .trainerName = _("SALMA"),
+        .trainerName = _("סלמה"),
         .speechBefore = sText_SalmaBefore,
         .speechWin = sText_SalmaWin,
         .speechLose = sText_SalmaLose,
@@ -2446,7 +2446,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ANSLEY] =
     {
         .facilityClass = FACILITY_CLASS_LADY,
-        .trainerName = _("ANSLEY"),
+        .trainerName = _("אנסלי"),
         .speechBefore = sText_AnsleyBefore,
         .speechWin = sText_AnsleyWin,
         .speechLose = sText_AnsleyLose,
@@ -2455,7 +2455,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_HOLDEN] =
     {
         .facilityClass = FACILITY_CLASS_BUG_CATCHER,
-        .trainerName = _("HOLDEN"),
+        .trainerName = _("הולדן"),
         .speechBefore = sText_HoldenBefore,
         .speechWin = sText_HoldenWin,
         .speechLose = sText_HoldenLose,
@@ -2464,7 +2464,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LUCA] =
     {
         .facilityClass = FACILITY_CLASS_BUG_CATCHER,
-        .trainerName = _("LUCA"),
+        .trainerName = _("לוקה"),
         .speechBefore = sText_LucaBefore,
         .speechWin = sText_LucaWin,
         .speechLose = sText_LucaLose,
@@ -2473,7 +2473,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JAMISON] =
     {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
-        .trainerName = _("JAMISON"),
+        .trainerName = _("ג'מיסון"),
         .speechBefore = sText_JamisonBefore,
         .speechWin = sText_JamisonWin,
         .speechLose = sText_JamisonLose,
@@ -2482,7 +2482,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GUNNAR] =
     {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
-        .trainerName = _("GUNNAR"),
+        .trainerName = _("גונאר"),
         .speechBefore = sText_GunnarBefore,
         .speechWin = sText_GunnarWin,
         .speechLose = sText_GunnarLose,
@@ -2491,7 +2491,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CRAIG] =
     {
         .facilityClass = FACILITY_CLASS_TUBER_M,
-        .trainerName = _("CRAIG"),
+        .trainerName = _("קרייג"),
         .speechBefore = sText_CraigBefore,
         .speechWin = sText_CraigWin,
         .speechLose = sText_CraigLose,
@@ -2500,7 +2500,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_PIERCE] =
     {
         .facilityClass = FACILITY_CLASS_TUBER_M,
-        .trainerName = _("PIERCE"),
+        .trainerName = _("פירס"),
         .speechBefore = sText_PierceBefore,
         .speechWin = sText_PierceWin,
         .speechLose = sText_PierceLose,
@@ -2509,7 +2509,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_REGINA] =
     {
         .facilityClass = FACILITY_CLASS_TUBER_F,
-        .trainerName = _("REGINA"),
+        .trainerName = _("רג'ינה"),
         .speechBefore = sText_ReginaBefore,
         .speechWin = sText_ReginaWin,
         .speechLose = sText_ReginaLose,
@@ -2518,7 +2518,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ALISON] =
     {
         .facilityClass = FACILITY_CLASS_TUBER_F,
-        .trainerName = _("ALISON"),
+        .trainerName = _("אליסון"),
         .speechBefore = sText_AlisonBefore,
         .speechWin = sText_AlisonWin,
         .speechLose = sText_AlisonLose,
@@ -2527,7 +2527,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_HANK] =
     {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("HANK"),
+        .trainerName = _("האנק"),
         .speechBefore = sText_HankBefore,
         .speechWin = sText_HankWin,
         .speechLose = sText_HankLose,
@@ -2536,7 +2536,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_EARL] =
     {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("EARL"),
+        .trainerName = _("ארל"),
         .speechBefore = sText_EarlBefore,
         .speechWin = sText_EarlWin,
         .speechLose = sText_EarlLose,
@@ -2545,7 +2545,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RAMIRO] =
     {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
-        .trainerName = _("RAMIRO"),
+        .trainerName = _("רמירו"),
         .speechBefore = sText_RamiroBefore,
         .speechWin = sText_RamiroWin,
         .speechLose = sText_RamiroLose,
@@ -2554,7 +2554,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_HUNTER] =
     {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
-        .trainerName = _("HUNTER"),
+        .trainerName = _("האנטר"),
         .speechBefore = sText_HunterBefore,
         .speechWin = sText_HunterWin,
         .speechLose = sText_HunterLose,
@@ -2563,7 +2563,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_AIDEN] =
     {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("AIDEN"),
+        .trainerName = _("איידן"),
         .speechBefore = sText_AidenBefore,
         .speechWin = sText_AidenWin,
         .speechLose = sText_AidenLose,
@@ -2572,7 +2572,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_XAVIER] =
     {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("XAVIER"),
+        .trainerName = _("זאוויר"),
         .speechBefore = sText_XavierBefore,
         .speechWin = sText_XavierWin,
         .speechLose = sText_XavierLose,
@@ -2581,7 +2581,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CLINTON] =
     {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("CLINTON"),
+        .trainerName = _("קלינטון"),
         .speechBefore = sText_ClintonBefore,
         .speechWin = sText_ClintonWin,
         .speechLose = sText_ClintonLose,
@@ -2590,7 +2590,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JESSE] =
     {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("JESSE"),
+        .trainerName = _("ג'סי"),
         .speechBefore = sText_JesseBefore,
         .speechWin = sText_JesseWin,
         .speechLose = sText_JesseLose,
@@ -2599,7 +2599,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_EDUARDO] =
     {
         .facilityClass = FACILITY_CLASS_GUITARIST,
-        .trainerName = _("EDUARDO"),
+        .trainerName = _("אדוארדו"),
         .speechBefore = sText_EduardoBefore,
         .speechWin = sText_EduardoWin,
         .speechLose = sText_EduardoLose,
@@ -2608,7 +2608,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_HAL] =
     {
         .facilityClass = FACILITY_CLASS_GUITARIST,
-        .trainerName = _("HAL"),
+        .trainerName = _("הל"),
         .speechBefore = sText_HalBefore,
         .speechWin = sText_HalWin,
         .speechLose = sText_HalLose,
@@ -2617,7 +2617,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GAGE] =
     {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-        .trainerName = _("GAGE"),
+        .trainerName = _("גייג'"),
         .speechBefore = sText_GageBefore,
         .speechWin = sText_GageWin,
         .speechLose = sText_GageLose,
@@ -2626,7 +2626,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ARNOLD] =
     {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-        .trainerName = _("ARNOLD"),
+        .trainerName = _("ארנולד"),
         .speechBefore = sText_ArnoldBefore,
         .speechWin = sText_ArnoldWin,
         .speechLose = sText_ArnoldLose,
@@ -2635,7 +2635,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JARRETT] =
     {
         .facilityClass = FACILITY_CLASS_SAILOR,
-        .trainerName = _("JARRETT"),
+        .trainerName = _("ג'ארט"),
         .speechBefore = sText_JarrettBefore,
         .speechWin = sText_JarrettWin,
         .speechLose = sText_JarrettLose,
@@ -2644,7 +2644,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GARETT] =
     {
         .facilityClass = FACILITY_CLASS_SAILOR,
-        .trainerName = _("GARETT"),
+        .trainerName = _("גארט"),
         .speechBefore = sText_GarettBefore,
         .speechWin = sText_GarettWin,
         .speechLose = sText_GarettLose,
@@ -2653,7 +2653,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_EMANUEL] =
     {
         .facilityClass = FACILITY_CLASS_HIKER,
-        .trainerName = _("EMANUEL"),
+        .trainerName = _("עמנואל"),
         .speechBefore = sText_EmanuelBefore,
         .speechWin = sText_EmanuelWin,
         .speechLose = sText_EmanuelLose,
@@ -2662,7 +2662,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GUSTAVO] =
     {
         .facilityClass = FACILITY_CLASS_HIKER,
-        .trainerName = _("GUSTAVO"),
+        .trainerName = _("גוסטבו"),
         .speechBefore = sText_GustavoBefore,
         .speechWin = sText_GustavoWin,
         .speechLose = sText_GustavoLose,
@@ -2671,7 +2671,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KAMERON] =
     {
         .facilityClass = FACILITY_CLASS_KINDLER,
-        .trainerName = _("KAMERON"),
+        .trainerName = _("קמרון"),
         .speechBefore = sText_KameronBefore,
         .speechWin = sText_KameronWin,
         .speechLose = sText_KameronLose,
@@ -2680,7 +2680,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ALFREDO] =
     {
         .facilityClass = FACILITY_CLASS_KINDLER,
-        .trainerName = _("ALFREDO"),
+        .trainerName = _("אלפרדו"),
         .speechBefore = sText_AlfredoBefore,
         .speechWin = sText_AlfredoWin,
         .speechLose = sText_AlfredoLose,
@@ -2689,7 +2689,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RUBEN] =
     {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
-        .trainerName = _("RUBEN"),
+        .trainerName = _("רובן"),
         .speechBefore = sText_RubenBefore,
         .speechWin = sText_RubenWin,
         .speechLose = sText_RubenLose,
@@ -2698,7 +2698,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LAMAR] =
     {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
-        .trainerName = _("LAMAR"),
+        .trainerName = _("למאר"),
         .speechBefore = sText_LamarBefore,
         .speechWin = sText_LamarWin,
         .speechLose = sText_LamarLose,
@@ -2707,7 +2707,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JAXON] =
     {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
-        .trainerName = _("JAXON"),
+        .trainerName = _("ג'קסון"),
         .speechBefore = sText_JaxonBefore,
         .speechWin = sText_JaxonWin,
         .speechLose = sText_JaxonLose,
@@ -2716,7 +2716,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LOGAN] =
     {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
-        .trainerName = _("LOGAN"),
+        .trainerName = _("לוגן"),
         .speechBefore = sText_LoganBefore,
         .speechWin = sText_LoganWin,
         .speechLose = sText_LoganLose,
@@ -2725,7 +2725,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_EMILEE] =
     {
         .facilityClass = FACILITY_CLASS_LASS,
-        .trainerName = _("EMILEE"),
+        .trainerName = _("אמילי"),
         .speechBefore = sText_EmileeBefore,
         .speechWin = sText_EmileeWin,
         .speechLose = sText_EmileeLose,
@@ -2734,7 +2734,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JOSIE] =
     {
         .facilityClass = FACILITY_CLASS_LASS,
-        .trainerName = _("JOSIE"),
+        .trainerName = _("ג'וזי"),
         .speechBefore = sText_JosieBefore,
         .speechWin = sText_JosieWin,
         .speechLose = sText_JosieLose,
@@ -2743,7 +2743,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ARMANDO] =
     {
         .facilityClass = FACILITY_CLASS_CAMPER,
-        .trainerName = _("ARMANDO"),
+        .trainerName = _("ארמנדו"),
         .speechBefore = sText_ArmandoBefore,
         .speechWin = sText_ArmandoWin,
         .speechLose = sText_ArmandoLose,
@@ -2752,7 +2752,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_SKYLER] =
     {
         .facilityClass = FACILITY_CLASS_CAMPER,
-        .trainerName = _("SKYLER"),
+        .trainerName = _("סקיילר"),
         .speechBefore = sText_SkylerBefore,
         .speechWin = sText_SkylerWin,
         .speechLose = sText_SkylerLose,
@@ -2761,7 +2761,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RUTH] =
     {
         .facilityClass = FACILITY_CLASS_PICNICKER,
-        .trainerName = _("RUTH"),
+        .trainerName = _("רות"),
         .speechBefore = sText_RuthBefore,
         .speechWin = sText_RuthWin,
         .speechLose = sText_RuthLose,
@@ -2770,7 +2770,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MELODY] =
     {
         .facilityClass = FACILITY_CLASS_PICNICKER,
-        .trainerName = _("MELODY"),
+        .trainerName = _("מלודי"),
         .speechBefore = sText_MelodyBefore,
         .speechWin = sText_MelodyWin,
         .speechLose = sText_MelodyLose,
@@ -2779,7 +2779,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_PEDRO] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
-        .trainerName = _("PEDRO"),
+        .trainerName = _("פדרו"),
         .speechBefore = sText_PedroBefore,
         .speechWin = sText_PedroWin,
         .speechLose = sText_PedroLose,
@@ -2788,7 +2788,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ERICK] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
-        .trainerName = _("ERICK"),
+        .trainerName = _("אריק"),
         .speechBefore = sText_ErickBefore,
         .speechWin = sText_ErickWin,
         .speechLose = sText_ErickLose,
@@ -2797,7 +2797,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ELAINE] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
-        .trainerName = _("ELAINE"),
+        .trainerName = _("איליין"),
         .speechBefore = sText_ElaineBefore,
         .speechWin = sText_ElaineWin,
         .speechLose = sText_ElaineLose,
@@ -2806,7 +2806,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JOYCE] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
-        .trainerName = _("JOYCE"),
+        .trainerName = _("ג'ויס"),
         .speechBefore = sText_JoyceBefore,
         .speechWin = sText_JoyceWin,
         .speechLose = sText_JoyceLose,
@@ -2815,7 +2815,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_TODD] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
-        .trainerName = _("TODD"),
+        .trainerName = _("טוד"),
         .speechBefore = sText_ToddBefore,
         .speechWin = sText_ToddWin,
         .speechLose = sText_ToddLose,
@@ -2824,7 +2824,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GAVIN] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
-        .trainerName = _("GAVIN"),
+        .trainerName = _("גאווין"),
         .speechBefore = sText_GavinBefore,
         .speechWin = sText_GavinWin,
         .speechLose = sText_GavinLose,
@@ -2833,7 +2833,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MALORY] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
-        .trainerName = _("MALORY"),
+        .trainerName = _("מלורי"),
         .speechBefore = sText_MaloryBefore,
         .speechWin = sText_MaloryWin,
         .speechLose = sText_MaloryLose,
@@ -2842,7 +2842,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ESTHER] =
     {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
-        .trainerName = _("ESTHER"),
+        .trainerName = _("אסתר"),
         .speechBefore = sText_EstherBefore,
         .speechWin = sText_EstherWin,
         .speechLose = sText_EstherLose,
@@ -2851,7 +2851,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_OSCAR] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
-        .trainerName = _("OSCAR"),
+        .trainerName = _("אוסקר"),
         .speechBefore = sText_OscarBefore,
         .speechWin = sText_OscarWin,
         .speechLose = sText_OscarLose,
@@ -2860,7 +2860,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_WILSON] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_M,
-        .trainerName = _("WILSON"),
+        .trainerName = _("וילסון"),
         .speechBefore = sText_WilsonBefore,
         .speechWin = sText_WilsonWin,
         .speechLose = sText_WilsonLose,
@@ -2869,7 +2869,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CLARE] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
-        .trainerName = _("CLARE"),
+        .trainerName = _("קלייר"),
         .speechBefore = sText_ClareBefore,
         .speechWin = sText_ClareWin,
         .speechLose = sText_ClareLose,
@@ -2878,7 +2878,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_TESS] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
-        .trainerName = _("TESS"),
+        .trainerName = _("טס"),
         .speechBefore = sText_TessBefore,
         .speechWin = sText_TessWin,
         .speechLose = sText_TessLose,
@@ -2887,7 +2887,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LEON] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-        .trainerName = _("LEON"),
+        .trainerName = _("לאון"),
         .speechBefore = sText_LeonBefore,
         .speechWin = sText_LeonWin,
         .speechLose = sText_LeonLose,
@@ -2896,7 +2896,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ALONZO] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-        .trainerName = _("ALONZO"),
+        .trainerName = _("אלונזו"),
         .speechBefore = sText_AlonzoBefore,
         .speechWin = sText_AlonzoWin,
         .speechLose = sText_AlonzoLose,
@@ -2905,7 +2905,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_VINCE] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-        .trainerName = _("VINCE"),
+        .trainerName = _("וינס"),
         .speechBefore = sText_VinceBefore,
         .speechWin = sText_VinceWin,
         .speechLose = sText_VinceLose,
@@ -2914,7 +2914,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BRYON] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-        .trainerName = _("BRYON"),
+        .trainerName = _("בראיון"),
         .speechBefore = sText_BryonBefore,
         .speechWin = sText_BryonWin,
         .speechLose = sText_BryonLose,
@@ -2923,7 +2923,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_AVA] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-        .trainerName = _("AVA"),
+        .trainerName = _("אווה"),
         .speechBefore = sText_AvaBefore,
         .speechWin = sText_AvaWin,
         .speechLose = sText_AvaLose,
@@ -2932,7 +2932,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MIRIAM] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-        .trainerName = _("MIRIAM"),
+        .trainerName = _("מרים"),
         .speechBefore = sText_MiriamBefore,
         .speechWin = sText_MiriamWin,
         .speechLose = sText_MiriamLose,
@@ -2941,7 +2941,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CARRIE] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-        .trainerName = _("CARRIE"),
+        .trainerName = _("קארי"),
         .speechBefore = sText_CarrieBefore,
         .speechWin = sText_CarrieWin,
         .speechLose = sText_CarrieLose,
@@ -2950,7 +2950,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GILLIAN2] =
     {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-        .trainerName = _("GILLIAN"),
+        .trainerName = _("ג'יליאן"),
         .speechBefore = sText_Gillian2Before,
         .speechWin = sText_Gillian2Win,
         .speechLose = sText_Gillian2Lose,
@@ -2959,7 +2959,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_TYLER] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
-        .trainerName = _("TYLER"),
+        .trainerName = _("טיילר"),
         .speechBefore = sText_TylerBefore,
         .speechWin = sText_TylerWin,
         .speechLose = sText_TylerLose,
@@ -2968,7 +2968,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CHAZ] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
-        .trainerName = _("CHAZ"),
+        .trainerName = _("צ'אז"),
         .speechBefore = sText_ChazBefore,
         .speechWin = sText_ChazWin,
         .speechLose = sText_ChazLose,
@@ -2977,7 +2977,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_NELSON] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
-        .trainerName = _("NELSON"),
+        .trainerName = _("נלסון"),
         .speechBefore = sText_NelsonBefore,
         .speechWin = sText_NelsonWin,
         .speechLose = sText_NelsonLose,
@@ -2986,7 +2986,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_SHANIA] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
-        .trainerName = _("SHANIA"),
+        .trainerName = _("שניה"),
         .speechBefore = sText_ShaniaBefore,
         .speechWin = sText_ShaniaWin,
         .speechLose = sText_ShaniaLose,
@@ -2995,7 +2995,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_STELLA] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
-        .trainerName = _("STELLA"),
+        .trainerName = _("סטלה"),
         .speechBefore = sText_StellaBefore,
         .speechWin = sText_StellaWin,
         .speechLose = sText_StellaLose,
@@ -3004,7 +3004,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DORINE] =
     {
         .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
-        .trainerName = _("DORINE"),
+        .trainerName = _("דורין"),
         .speechBefore = sText_DorineBefore,
         .speechWin = sText_DorineWin,
         .speechLose = sText_DorineLose,
@@ -3013,7 +3013,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MADDOX] =
     {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
-        .trainerName = _("MADDOX"),
+        .trainerName = _("מדוקס"),
         .speechBefore = sText_MaddoxBefore,
         .speechWin = sText_MaddoxWin,
         .speechLose = sText_MaddoxLose,
@@ -3022,7 +3022,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DAVIN] =
     {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
-        .trainerName = _("DAVIN"),
+        .trainerName = _("דאווין"),
         .speechBefore = sText_DavinBefore,
         .speechWin = sText_DavinWin,
         .speechLose = sText_DavinLose,
@@ -3031,7 +3031,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_TREVON] =
     {
         .facilityClass = FACILITY_CLASS_DRAGON_TAMER,
-        .trainerName = _("TREVON"),
+        .trainerName = _("טרבון"),
         .speechBefore = sText_TrevonBefore,
         .speechWin = sText_TrevonWin,
         .speechLose = sText_TrevonLose,
@@ -3040,7 +3040,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MATEO] =
     {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
-        .trainerName = _("MATEO"),
+        .trainerName = _("מתאו"),
         .speechBefore = sText_MateoBefore,
         .speechWin = sText_MateoWin,
         .speechLose = sText_MateoLose,
@@ -3049,7 +3049,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BRET] =
     {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
-        .trainerName = _("BRET"),
+        .trainerName = _("ברט"),
         .speechBefore = sText_BretBefore,
         .speechWin = sText_BretWin,
         .speechLose = sText_BretLose,
@@ -3058,7 +3058,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RAUL] =
     {
         .facilityClass = FACILITY_CLASS_BLACK_BELT,
-        .trainerName = _("RAUL"),
+        .trainerName = _("ראול"),
         .speechBefore = sText_RaulBefore,
         .speechWin = sText_RaulWin,
         .speechLose = sText_RaulLose,
@@ -3067,7 +3067,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KAY] =
     {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
-        .trainerName = _("KAY"),
+        .trainerName = _("קיי"),
         .speechBefore = sText_KayBefore,
         .speechWin = sText_KayWin,
         .speechLose = sText_KayLose,
@@ -3076,7 +3076,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ELENA] =
     {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
-        .trainerName = _("ELENA"),
+        .trainerName = _("אלנה"),
         .speechBefore = sText_ElenaBefore,
         .speechWin = sText_ElenaWin,
         .speechLose = sText_ElenaLose,
@@ -3085,7 +3085,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ALANA] =
     {
         .facilityClass = FACILITY_CLASS_BATTLE_GIRL,
-        .trainerName = _("ALANA"),
+        .trainerName = _("אלנה"),
         .speechBefore = sText_AlanaBefore,
         .speechWin = sText_AlanaWin,
         .speechLose = sText_AlanaLose,
@@ -3094,7 +3094,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ALEXAS] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
-        .trainerName = _("ALEXAS"),
+        .trainerName = _("אלקסס"),
         .speechBefore = sText_AlexasBefore,
         .speechWin = sText_AlexasWin,
         .speechLose = sText_AlexasLose,
@@ -3103,7 +3103,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_WESTON] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
-        .trainerName = _("WESTON"),
+        .trainerName = _("וסטון"),
         .speechBefore = sText_WestonBefore,
         .speechWin = sText_WestonWin,
         .speechLose = sText_WestonLose,
@@ -3112,7 +3112,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JASPER] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
-        .trainerName = _("JASPER"),
+        .trainerName = _("ג'ספר"),
         .speechBefore = sText_JasperBefore,
         .speechWin = sText_JasperWin,
         .speechLose = sText_JasperLose,
@@ -3121,7 +3121,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_NADIA] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
-        .trainerName = _("NADIA"),
+        .trainerName = _("נדיה"),
         .speechBefore = sText_NadiaBefore,
         .speechWin = sText_NadiaWin,
         .speechLose = sText_NadiaLose,
@@ -3130,7 +3130,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
 [FRONTIER_TRAINER_MIRANDA] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
-        .trainerName = _("MIRANDA"),
+        .trainerName = _("מירנדה"),
         .speechBefore = sText_MirandaBefore,
         .speechWin = sText_MirandaWin,
         .speechLose = sText_MirandaLose,
@@ -3139,7 +3139,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_EMMA] =
     {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
-        .trainerName = _("EMMA"),
+        .trainerName = _("אמה"),
         .speechBefore = sText_EmmaBefore,
         .speechWin = sText_EmmaWin,
         .speechLose = sText_EmmaLose,
@@ -3148,7 +3148,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ROLANDO] =
     {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
-        .trainerName = _("ROLANDO"),
+        .trainerName = _("רולנדו"),
         .speechBefore = sText_RolandoBefore,
         .speechWin = sText_RolandoWin,
         .speechLose = sText_RolandoLose,
@@ -3157,7 +3157,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_STANLY] =
     {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
-        .trainerName = _("STANLY"),
+        .trainerName = _("סטנלי"),
         .speechBefore = sText_StanlyBefore,
         .speechWin = sText_StanlyWin,
         .speechLose = sText_StanlyLose,
@@ -3166,7 +3166,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DARIO] =
     {
         .facilityClass = FACILITY_CLASS_PSYCHIC_M,
-        .trainerName = _("DARIO"),
+        .trainerName = _("דאריו"),
         .speechBefore = sText_DarioBefore,
         .speechWin = sText_DarioWin,
         .speechLose = sText_DarioLose,
@@ -3175,7 +3175,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_KARLEE] =
     {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
-        .trainerName = _("KARLEE"),
+        .trainerName = _("קרלי"),
         .speechBefore = sText_KarleeBefore,
         .speechWin = sText_KarleeWin,
         .speechLose = sText_KarleeLose,
@@ -3184,7 +3184,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JAYLIN] =
     {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
-        .trainerName = _("JAYLIN"),
+        .trainerName = _("ג'יילין"),
         .speechBefore = sText_JaylinBefore,
         .speechWin = sText_JaylinWin,
         .speechLose = sText_JaylinLose,
@@ -3201,7 +3201,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DELILAH] =
     {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
-        .trainerName = _("DELILAH"),
+        .trainerName = _("דלילה"),
         .speechBefore = sText_DelilahBefore,
         .speechWin = sText_DelilahWin,
         .speechLose = sText_DelilahLose,
@@ -3210,7 +3210,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CARLY] =
     {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
-        .trainerName = _("CARLY"),
+        .trainerName = _("קרלי"),
         .speechBefore = sText_CarlyBefore,
         .speechWin = sText_CarlyWin,
         .speechLose = sText_CarlyLose,
@@ -3219,7 +3219,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LEXIE] =
     {
         .facilityClass = FACILITY_CLASS_HEX_MANIAC,
-        .trainerName = _("LEXIE"),
+        .trainerName = _("לקסי"),
         .speechBefore = sText_LexieBefore,
         .speechWin = sText_LexieWin,
         .speechLose = sText_LexieLose,
@@ -3228,7 +3228,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MILLER] =
     {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
-        .trainerName = _("MILLER"),
+        .trainerName = _("מילר"),
         .speechBefore = sText_MillerBefore,
         .speechWin = sText_MillerWin,
         .speechLose = sText_MillerLose,
@@ -3237,7 +3237,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MARV] =
     {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
-        .trainerName = _("MARV"),
+        .trainerName = _("מרב"),
         .speechBefore = sText_MarvBefore,
         .speechWin = sText_MarvWin,
         .speechLose = sText_MarvLose,
@@ -3246,7 +3246,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LAYTON] =
     {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
-        .trainerName = _("LAYTON"),
+        .trainerName = _("לייטון"),
         .speechBefore = sText_LaytonBefore,
         .speechWin = sText_LaytonWin,
         .speechLose = sText_LaytonLose,
@@ -3255,7 +3255,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BROOKS] =
     {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
-        .trainerName = _("BROOKS"),
+        .trainerName = _("ברוקס"),
         .speechBefore = sText_BrooksBefore,
         .speechWin = sText_BrooksWin,
         .speechLose = sText_BrooksLose,
@@ -3264,7 +3264,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GREGORY] =
     {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
-        .trainerName = _("GREGORY"),
+        .trainerName = _("גרגורי"),
         .speechBefore = sText_GregoryBefore,
         .speechWin = sText_GregoryWin,
         .speechLose = sText_GregoryLose,
@@ -3273,7 +3273,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_REESE] =
     {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
-        .trainerName = _("REESE"),
+        .trainerName = _("ריס"),
         .speechBefore = sText_ReeseBefore,
         .speechWin = sText_ReeseWin,
         .speechLose = sText_ReeseLose,
@@ -3282,7 +3282,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_MASON] =
     {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
-        .trainerName = _("MASON"),
+        .trainerName = _("מייסון"),
         .speechBefore = sText_MasonBefore,
         .speechWin = sText_MasonWin,
         .speechLose = sText_MasonLose,
@@ -3291,7 +3291,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_TOBY] =
     {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_M,
-        .trainerName = _("TOBY"),
+        .trainerName = _("טובי"),
         .speechBefore = sText_TobyBefore,
         .speechWin = sText_TobyWin,
         .speechLose = sText_TobyLose,
@@ -3300,7 +3300,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DOROTHY] =
     {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
-        .trainerName = _("DOROTHY"),
+        .trainerName = _("דורותי"),
         .speechBefore = sText_DorothyBefore,
         .speechWin = sText_DorothyWin,
         .speechLose = sText_DorothyLose,
@@ -3309,7 +3309,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_PIPER] =
     {
         .facilityClass = FACILITY_CLASS_RUNNING_TRIATHLETE_F,
-        .trainerName = _("PIPER"),
+        .trainerName = _("פייפר"),
         .speechBefore = sText_PiperBefore,
         .speechWin = sText_PiperWin,
         .speechLose = sText_PiperLose,
@@ -3318,7 +3318,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_FINN] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
-        .trainerName = _("FINN"),
+        .trainerName = _("פין"),
         .speechBefore = sText_FinnBefore,
         .speechWin = sText_FinnWin,
         .speechLose = sText_FinnLose,
@@ -3327,7 +3327,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_SAMIR] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_M,
-        .trainerName = _("SAMIR"),
+        .trainerName = _("סמיר"),
         .speechBefore = sText_SamirBefore,
         .speechWin = sText_SamirWin,
         .speechLose = sText_SamirLose,
@@ -3336,7 +3336,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_FIONA] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
-        .trainerName = _("FIONA"),
+        .trainerName = _("פיונה"),
         .speechBefore = sText_FionaBefore,
         .speechWin = sText_FionaWin,
         .speechLose = sText_FionaLose,
@@ -3345,7 +3345,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GLORIA] =
     {
         .facilityClass = FACILITY_CLASS_SWIMMING_TRIATHLETE_F,
-        .trainerName = _("GLORIA"),
+        .trainerName = _("גלוריה"),
         .speechBefore = sText_GloriaBefore,
         .speechWin = sText_GloriaWin,
         .speechLose = sText_GloriaLose,
@@ -3354,7 +3354,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_NICO] =
     {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
-        .trainerName = _("NICO"),
+        .trainerName = _("ניקו"),
         .speechBefore = sText_NicoBefore,
         .speechWin = sText_NicoWin,
         .speechLose = sText_NicoLose,
@@ -3363,7 +3363,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_JEREMY] =
     {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_M,
-        .trainerName = _("JEREMY"),
+        .trainerName = _("ג'רמי"),
         .speechBefore = sText_JeremyBefore,
         .speechWin = sText_JeremyWin,
         .speechLose = sText_JeremyLose,
@@ -3372,7 +3372,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CAITLIN] =
     {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
-        .trainerName = _("CAITLIN"),
+        .trainerName = _("קייטלין"),
         .speechBefore = sText_CaitlinBefore,
         .speechWin = sText_CaitlinWin,
         .speechLose = sText_CaitlinLose,
@@ -3381,7 +3381,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_REENA] =
     {
         .facilityClass = FACILITY_CLASS_CYCLING_TRIATHLETE_F,
-        .trainerName = _("REENA"),
+        .trainerName = _("רינה"),
         .speechBefore = sText_ReenaBefore,
         .speechWin = sText_ReenaWin,
         .speechLose = sText_ReenaLose,
@@ -3390,7 +3390,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_AVERY] =
     {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("AVERY"),
+        .trainerName = _("אייברי"),
         .speechBefore = sText_AveryBefore,
         .speechWin = sText_AveryWin,
         .speechLose = sText_AveryLose,
@@ -3399,7 +3399,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_LIAM] =
     {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("LIAM"),
+        .trainerName = _("ליאם"),
         .speechBefore = sText_LiamBefore,
         .speechWin = sText_LiamWin,
         .speechLose = sText_LiamLose,
@@ -3408,7 +3408,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_THEO] =
     {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
-        .trainerName = _("THEO"),
+        .trainerName = _("תאו"),
         .speechBefore = sText_TheoBefore,
         .speechWin = sText_TheoWin,
         .speechLose = sText_TheoLose,
@@ -3417,7 +3417,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BAILEY] =
     {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
-        .trainerName = _("BAILEY"),
+        .trainerName = _("ביילי"),
         .speechBefore = sText_BaileyBefore,
         .speechWin = sText_BaileyWin,
         .speechLose = sText_BaileyLose,
@@ -3426,7 +3426,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_HUGO] =
     {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("HUGO"),
+        .trainerName = _("הוגו"),
         .speechBefore = sText_HugoBefore,
         .speechWin = sText_HugoWin,
         .speechLose = sText_HugoLose,
@@ -3435,7 +3435,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_BRYCE] =
     {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("BRYCE"),
+        .trainerName = _("בראייס"),
         .speechBefore = sText_BryceBefore,
         .speechWin = sText_BryceWin,
         .speechLose = sText_BryceLose,
@@ -3444,7 +3444,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GIDEON] =
     {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("GIDEON"),
+        .trainerName = _("גדעון"),
         .speechBefore = sText_GideonBefore,
         .speechWin = sText_GideonWin,
         .speechLose = sText_GideonLose,
@@ -3453,7 +3453,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_TRISTON] =
     {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("TRISTON"),
+        .trainerName = _("טריסטון"),
         .speechBefore = sText_TristonBefore,
         .speechWin = sText_TristonWin,
         .speechLose = sText_TristonLose,
@@ -3462,7 +3462,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_CHARLES] =
     {
         .facilityClass = FACILITY_CLASS_GUITARIST,
-        .trainerName = _("CHARLES"),
+        .trainerName = _("צ'ארלס"),
         .speechBefore = sText_CharlesBefore,
         .speechWin = sText_CharlesWin,
         .speechLose = sText_CharlesLose,
@@ -3471,7 +3471,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_RAYMOND] =
     {
         .facilityClass = FACILITY_CLASS_GUITARIST,
-        .trainerName = _("RAYMOND"),
+        .trainerName = _("ריימונד"),
         .speechBefore = sText_RaymondBefore,
         .speechWin = sText_RaymondWin,
         .speechLose = sText_RaymondLose,
@@ -3480,7 +3480,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DIRK] =
     {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-        .trainerName = _("DIRK"),
+        .trainerName = _("דירק"),
         .speechBefore = sText_DirkBefore,
         .speechWin = sText_DirkWin,
         .speechLose = sText_DirkLose,
@@ -3489,7 +3489,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_HAROLD] =
     {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-        .trainerName = _("HAROLD"),
+        .trainerName = _("הרולד"),
         .speechBefore = sText_HaroldBefore,
         .speechWin = sText_HaroldWin,
         .speechLose = sText_HaroldLose,
@@ -3498,7 +3498,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_OMAR] =
     {
         .facilityClass = FACILITY_CLASS_SAILOR,
-        .trainerName = _("OMAR"),
+        .trainerName = _("עומאר"),
         .speechBefore = sText_OmarBefore,
         .speechWin = sText_OmarWin,
         .speechLose = sText_OmarLose,
@@ -3507,7 +3507,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_PETER] =
     {
         .facilityClass = FACILITY_CLASS_SAILOR,
-        .trainerName = _("PETER"),
+        .trainerName = _("פיטר"),
         .speechBefore = sText_PeterBefore,
         .speechWin = sText_PeterWin,
         .speechLose = sText_PeterLose,
@@ -3516,7 +3516,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DEV] =
     {
         .facilityClass = FACILITY_CLASS_HIKER,
-        .trainerName = _("DEV"),
+        .trainerName = _("דב"),
         .speechBefore = sText_DevBefore,
         .speechWin = sText_DevWin,
         .speechLose = sText_DevLose,
@@ -3525,7 +3525,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_COREY] =
     {
         .facilityClass = FACILITY_CLASS_HIKER,
-        .trainerName = _("COREY"),
+        .trainerName = _("קורי"),
         .speechBefore = sText_CoreyBefore,
         .speechWin = sText_CoreyWin,
         .speechLose = sText_CoreyLose,
@@ -3534,7 +3534,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ANDRE] =
     {
         .facilityClass = FACILITY_CLASS_KINDLER,
-        .trainerName = _("ANDRE"),
+        .trainerName = _("אנדרה"),
         .speechBefore = sText_AndreBefore,
         .speechWin = sText_AndreWin,
         .speechLose = sText_AndreLose,
@@ -3543,7 +3543,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_FERRIS] =
     {
         .facilityClass = FACILITY_CLASS_KINDLER,
-        .trainerName = _("FERRIS"),
+        .trainerName = _("פריס"),
         .speechBefore = sText_FerrisBefore,
         .speechWin = sText_FerrisWin,
         .speechLose = sText_FerrisLose,
@@ -3552,7 +3552,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ALIVIA] =
     {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
-        .trainerName = _("ALIVIA"),
+        .trainerName = _("אליביה"),
         .speechBefore = sText_AliviaBefore,
         .speechWin = sText_AliviaWin,
         .speechLose = sText_AliviaLose,
@@ -3561,7 +3561,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_PAIGE] =
     {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
-        .trainerName = _("PAIGE"),
+        .trainerName = _("פייג'"),
         .speechBefore = sText_PaigeBefore,
         .speechWin = sText_PaigeWin,
         .speechLose = sText_PaigeLose,
@@ -3570,7 +3570,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ANYA] =
     {
         .facilityClass = FACILITY_CLASS_BEAUTY,
-        .trainerName = _("ANYA"),
+        .trainerName = _("אניה"),
         .speechBefore = sText_AnyaBefore,
         .speechWin = sText_AnyaWin,
         .speechLose = sText_AnyaLose,
@@ -3579,7 +3579,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_DAWN] =
     {
         .facilityClass = FACILITY_CLASS_BEAUTY,
-        .trainerName = _("DAWN"),
+        .trainerName = _("דון"),
         .speechBefore = sText_DawnBefore,
         .speechWin = sText_DawnWin,
         .speechLose = sText_DawnLose,
@@ -3588,7 +3588,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_ABBY] =
     {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
-        .trainerName = _("ABBY"),
+        .trainerName = _("אבי"),
         .speechBefore = sText_AbbyBefore,
         .speechWin = sText_AbbyWin,
         .speechLose = sText_AbbyLose,
@@ -3597,7 +3597,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
     [FRONTIER_TRAINER_GRETEL] =
     {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
-        .trainerName = _("GRETEL"),
+        .trainerName = _("גרטל"),
         .speechBefore = sText_GretelBefore,
         .speechWin = sText_GretelWin,
         .speechLose = sText_GretelLose,
