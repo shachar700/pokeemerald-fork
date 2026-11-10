@@ -170,16 +170,16 @@ LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign:
 
 @ Unused
 LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun:
-	.string "Wireless Communication is a\n"
-	.string "lot of fun, isn't it?\p"
-	.string "I think it lets you do things that\n"
-	.string "weren't possible before.\p"
-	.string "For instance, you can now trade\n"
-	.string "with people you couldn't before.\p"
-	.string "I think it's going to be exciting!$"
+	.string "התקשורת האלחוטית ממש כיפית,\n"
+	.string "נכון?\p"
+	.string "אני חושבת שהיא מאפשרת לעשות\n"
+	.string "דברים שלא היו אפשריים קודם.\p"
+	.string "למשל, עכשיו אפשר להחליף עם\n"
+	.string "אנשים שלא יכולת להחליף איתם קודם.\p"
+	.string "אני חושבת שזה יהיה מרגש!$"
 
 @ Unused
 LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm:
-	.string "I want to spread the word about how\n"
-	.string "fun Wireless Communication can be.$"
+	.string "אני רוצה לספר לכולם כמה כיף\n"
+	.string "יכולה להיות התקשורת האלחוטית.$"
 

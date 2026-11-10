@@ -909,7 +909,7 @@ BattleFrontier_BattleTowerLobby_EventScript_ExitRules::
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_DirectYouToBattleRoom:
-	.string "I'll direct you to your BATTLE ROOM now.$"
+	.string "אדריך אותך עכשיו לחדר הקרב שלך.$"
 
 BattleFrontier_BattleTowerLobby_Text_DidntSaveBeforeQuitting:
 	.string "סלח{ADD_YUD} לי!\p"
@@ -925,8 +925,8 @@ BattleFrontier_BattleTowerLobby_Text_CongratsBeatenSeven:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_EarnedFabulousPrize:
-	.string "For beating seven TRAINERS in a row,\n"
-	.string "you have earned this fabulous prize!\p"
+	.string "על כך שהבסת שבעה מאמנים ברצף,\n"
+	.string "זכית בפרס המופלא הזה!\p"
 	.string "$"
 
 BattleFrontier_BattleTowerLobby_Text_ReceivedPrize:
@@ -935,9 +935,9 @@ BattleFrontier_BattleTowerLobby_Text_ReceivedPrize:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom:
-	.string "Oh, your BAG appears to be full.\p"
-	.string "Please make room in your BAG, then come\n"
-	.string "see me.$"
+	.string "אוי, נראה שהתיק שלך מלא.\p"
+	.string "אנא פנ{EMIT_HEY}{ADD_YUD} מקום בתיק, ואז\n"
+	.string "בוא{ADD_YUD} אליי.$"
 
 BattleFrontier_BattleTowerLobby_Text_ThankYouForPlaying:
 	.string "תודה לך ששיחקת!\p"

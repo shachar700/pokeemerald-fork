@@ -1144,7 +1144,7 @@ RustboroCity_Text_MayPassedBrineyWantToBattle:
 	.string "מה דעתך על קרב קטן?$"
 
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
-	.string "MAY: או, מה קרה?\p"
+	.string "מאי: או, מה קרה?\p"
 	.string "לא תפסת או אימנת את הפוקימונים\n"
 	.string "שלך מספיק?\p"
 	.string "זה לא כזה טוב עבור מאמן!$"
@@ -1169,11 +1169,11 @@ RustboroCity_Text_MayMrBrineyHint:
 	.string "היה פעם יורד ים מכובד.$"
 
 RustboroCity_Text_BrendanHiLetsRegister:
-	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
-	.string "You had a MATCH CALL feature put\n"
-	.string "on your POKéNAV! Cool!\p"
-	.string "Let's register each other so we can\n"
-	.string "get in touch anytime!\p"
+	.string "ברנדן: או, היי, {PLAYER}!\p"
+	.string "התקינו לך בפוקינווט את האפשרות\n"
+	.string "להתקשר לקרבות! מגניב!\p"
+	.string "בואי נרשום אחד את השנייה\n"
+	.string "כדי שנוכל לדבר בכל עת!\p"
 	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredBrendan:

@@ -1376,9 +1376,9 @@ LilycoveCity_ContestLobby_Text_ContestReception:
 
 @ Unused
 LilycoveCity_ContestLobby_Text_CounterOnlyFor4PlayerContests:
-	.string "Hello!\p"
-	.string "This reception counter is only\n"
-	.string "for 4-player POKéMON CONTESTS.$"
+	.string "שלום!\p"
+	.string "דלפק הקבלה הזה מיועד רק\n"
+	.string "לתחרויות פוקימונים של 4 שחקנים.$"
 
 LilycoveCity_ContestLobby_Text_EnterContest1:
 	.string "האם תרצ{EMIT_HEY}{ADD_YUD} לרשום את הפוקימון שלך\n"
@@ -1573,11 +1573,11 @@ ContestHall_Text_PickUpPrizeAtCounterLater:
 
 @ Unused
 ContestHall_Text_OnlyRegister4Players:
-	.string "I only register four players for\n"
-	.string "POKéMON CONTESTS.\p"
-	.string "If three other players link up, all\n"
-	.string "four may enter the same CONTEST.\p"
-	.string "Would you like to take part?$"
+	.string "אני רושם רק ארבעה שחקנים\n"
+	.string "לתחרויות פוקימונים.\p"
+	.string "אם עוד שלושה שחקנים מתחברים,\n"
+	.string "כל הארבעה יכולים להשתתף באותה תחרות.\p"
+	.string "האם תרצ{EMIT_HEY}{ADD_YUD} להשתתף?$"
 
 LilycoveCity_ContestLobby_Text_ProgressWillBeSaved:
 	.string "לפני הכניסה לתחרות, ההתקדמות\n"
@@ -1589,27 +1589,27 @@ LilycoveCity_ContestLobby_Text_ParticipateAnotherTime:
 
 @ Unused
 LilycoveCity_ContestLobby_Text_EnterContest2:
-	.string "Would you like to enter a CONTEST?$"
+	.string "האם תרצ{EMIT_HEY}{ADD_YUD} להשתתף בתחרות?$"
 
 @ Unused
 LilycoveCity_ContestLobby_Text_Explain4PlayerContest:
-	.string "When four players are ready, connect\n"
-	.string "over a Game Link cable, and register\l"
-	.string "with me, please.\p"
-	.string "Please choose the same CONTEST\n"
-	.string "as your fellow contestants.\p"
-	.string "The CONTEST begins as soon as all\n"
-	.string "players register their entry.\p"
-	.string "After that, the usual CONTEST rules\n"
-	.string "apply.$"
+	.string "כשארבעה שחקנים מוכנים, התחברו\n"
+	.string "בכבל קישור והירשמו\l"
+	.string "אצלי, בבקשה.\p"
+	.string "אנא בחרו באותה תחרות\n"
+	.string "כמו שאר המתחרים.\p"
+	.string "התחרות מתחילה ברגע שכל\n"
+	.string "השחקנים רושמים את השתתפותם.\p"
+	.string "לאחר מכן, חלים חוקי התחרות\n"
+	.string "הרגילים.$"
 
 @ Unused
 LilycoveCity_ContestLobby_Text_EnterWhichContest2:
-	.string "Which CONTEST would you like to enter?$"
+	.string "באיזו תחרות תרצ{EMIT_HEY}{ADD_YUD} להשתתף?$"
 
 @ Unused
 LilycoveCity_ContestLobby_Text_EnterWhichPokemon2:
-	.string "Which POKéMON would you like to enter?$"
+	.string "איזה פוקימון תרצ{EMIT_HEY}{ADD_YUD} לרשום?$"
 
 LilycoveCity_ContestLobby_Text_Transmitting:
 	.string "משדר…$"
@@ -1631,13 +1631,13 @@ LilycoveCity_ContestLobby_Text_PleaseWaitBButtonCancel:
 
 @ Unused
 LilycoveCity_ContestLobby_Text_ParticipateAnotherTime2:
-	.string "We hope you will participate another\n"
-	.string "time.$"
+	.string "אנחנו מקווים שתשתת{SWAP_PEY}{ADD_YUD} בפעם\n"
+	.string "אחרת.$"
 
 @ Unused
 LilycoveCity_ContestLobby_Text_TransmissionErrorTryAgain:
-	.string "Transmission error.\n"
-	.string "Please try again.$"
+	.string "שגיאת תקשורת.\n"
+	.string "אנא נס{EMIT_HEY}{ADD_YUD} שוב.$"
 
 LilycoveCity_ContestLobby_Text_YourMonIsEntryNumX:
 	.string "הפוקימון שלך ייכנס\n"
@@ -1674,7 +1674,7 @@ LilycoveCity_ContestLobby_Text_EnterWhichPokemon3:
 	.string "איזה פוקימון תרצ{EMIT_HEY}{ADD_YUD} להכניס?$"
 
 LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader:
-	.string "נא תחליטו מי מכם יהיה decide which of you will\n"
+	.string "נא תחליטו מי מכם יהיה\n"
 	.string "מנהיג הקבוצה.\p"
 	.string "שאר השחקנים חייבים לבחור\n"
 	.string "ב-”הצטרף לקבוצה.“$"

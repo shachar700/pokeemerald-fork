@@ -309,8 +309,8 @@ Route117_Text_FriendlyWithOtherTrainersMon:
 
 @ Unused
 Route117_Text_SeeWifeIfYouWantToPickUpMon:
-	.string "If you want to pick up your POKéMON,\n"
-	.string "have a word with my wife.$"
+	.string "אם את{EMIT_HEY} רוצה לאסוף את הפוקימון שלך,\n"
+	.string "דבר{ADD_YUD} עם אשתי.$"
 
 Route117_Text_YourMonsAreDoingFine:
 	.string "אה, זה את{EMIT_HEY}! ה{STR_VAR_1} שלך\n"
@@ -369,7 +369,7 @@ Route117_PokemonDayCare_Text_YourTeamIsFull:
 
 @ Unused
 Route117_PokemonDayCare_Text_TakeBackWhichMon:
-	.string "Which POKéMON will you take back?$"
+	.string "איזה פוקימון תרצ{EMIT_HEY}{ADD_YUD} לקחת בחזרה?$"
 
 Route117_PokemonDayCare_Text_ItWillCostX:
 	.string "אם את{EMIT_HEY} רוצה את {STR_VAR_1} שלך בחזרה,\n"
