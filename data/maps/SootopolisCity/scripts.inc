@@ -848,6 +848,8 @@ SootopolisCity_EventScript_Boy1Rayquaza::
 	end
 
 SootopolisCity_EventScript_Boy1GameClear::
+	bufferspeciesname STR_VAR_1, SPECIES_GROUDON
+	bufferspeciesname STR_VAR_2, SPECIES_KYOGRE
 	msgbox SootopolisCity_Text_WhereDidLegendariesGo, MSGBOX_DEFAULT
 	release
 	end
@@ -878,6 +880,7 @@ SootopolisCity_EventScript_Steven::
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 3, SootopolisCity_EventScript_StevenHelpedWallace
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_StevenHelpedWallace
 	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_StevenMaxieArchieLeft
+	bufferspeciesname STR_VAR_1, SPECIES_RAYQUAZA
 	msgbox SootopolisCity_Text_SoThatsRayquaza, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -898,10 +901,14 @@ SootopolisCity_EventScript_StevenHelpedWallace::
 	end
 
 SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin::
+	bufferspeciesname STR_VAR_1, SPECIES_GROUDON
+	bufferspeciesname STR_VAR_2, SPECIES_KYOGRE
 	msgbox SootopolisCity_Text_InvolvedWithCrisisComeWithMe, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_WEST, SootopolisCity_EventScript_StartWalkToCaveOfOriginWest
 	call_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_StartWalkToCaveOfOriginNorth
+	bufferspeciesname STR_VAR_1, SPECIES_GROUDON
+	bufferspeciesname STR_VAR_2, SPECIES_KYOGRE
 	msgbox SootopolisCity_Text_DoesThisMakeYourFearPokemon, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_SOOTOPOLIS_STEVEN, SootopolisCity_Movement_StevenWalkToCaveOfOrigin
@@ -1331,12 +1338,15 @@ SootopolisCity_Movement_WallaceMoveFromGymWest:
 SootopolisCity_EventScript_Maxie::
 	lockall
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_MaxieRayquaza
+	bufferspeciesname STR_VAR_1, SPECIES_GROUDON
 	msgbox SootopolisCity_Text_GroudonPleaseStop, MSGBOX_DEFAULT
 	closemessage
 	releaseall
 	end
 
 SootopolisCity_EventScript_MaxieRayquaza::
+	bufferspeciesname STR_VAR_1, SPECIES_GROUDON
+	bufferspeciesname STR_VAR_2, SPECIES_KYOGRE
 	msgbox SootopolisCity_Text_AfterAllOurScheming, MSGBOX_DEFAULT
 	setflag FLAG_MET_MAXIE_SOOTOPOLIS
 	goto_if_set FLAG_MET_ARCHIE_SOOTOPOLIS, SootopolisCity_EventScript_MaxieArchieLeave
@@ -1346,12 +1356,15 @@ SootopolisCity_EventScript_MaxieRayquaza::
 SootopolisCity_EventScript_Archie::
 	lockall
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_ArchieRayquaza
+	bufferspeciesname STR_VAR_2, SPECIES_KYOGRE
 	msgbox SootopolisCity_Text_KyogreCalmDown, MSGBOX_DEFAULT
 	closemessage
 	releaseall
 	end
 
 SootopolisCity_EventScript_ArchieRayquaza::
+	bufferspeciesname STR_VAR_1, SPECIES_GROUDON
+	bufferspeciesname STR_VAR_2, SPECIES_KYOGRE
 	msgbox SootopolisCity_Text_TryingMeaninglessToPokemon, MSGBOX_DEFAULT
 	setflag FLAG_MET_ARCHIE_SOOTOPOLIS
 	goto_if_set FLAG_MET_MAXIE_SOOTOPOLIS, SootopolisCity_EventScript_MaxieArchieLeave
@@ -1381,322 +1394,323 @@ SootopolisCity_Movement_DestroyTask::
 	step_end
 
 SootopolisCity_Text_GymSign:
-	.string "SOOTOPOLIS CITY POKéMON GYM\n"
-	.string "LEADER: JUAN\p"
-	.string "“The GYM LEADER with the beauty\n"
-	.string "of pure water!”$"
+	.string "מכון הפוקימונים של העיר סוטופוליס\n"
+	.string "מנהיג: חואן\p"
+	.string "”מנהיג המכון עם היופי של\n"
+	.string "מים טהורים!“$"
 
 SootopolisCity_Text_CitySign:
-	.string "SOOTOPOLIS CITY\p"
-	.string "“The mystical city where history\n"
-	.string "slumbers.”$"
+	.string "העיר סוטופוליס\p"
+	.string "”העיר המיסטית שבה ההיסטוריה\n"
+	.string "נמה.“$"
 
 SootopolisCity_Text_DoorIsClosed:
-	.string "The door is closed.$"
+	.string "הדלת סגורה.$"
 
 SootopolisCity_Text_PhysicallyFitLivingHere:
-	.string "Diving in the sea. Climbing up and\n"
-	.string "down stairs all the time…\p"
-	.string "If you live in this town, you end up\n"
-	.string "getting physically fit.$"
+	.string "צוללים בים. עולים ויורדים\n"
+	.string "במדרגות כל הזמן…\p"
+	.string "מי שגר בעיר הזו, בסוף\n"
+	.string "נהיה בכושר מעולה.$"
 
 SootopolisCity_Text_GiantPokemonSuddenlyAppeared:
-	.string "These giant POKéMON suddenly appeared\n"
-	.string "in the middle of the city!\p"
-	.string "And, I've never seen them before!\p"
-	.string "Why are they smashing into each\n"
-	.string "other like that?\p"
-	.string "Why can't they be friends, those\n"
-	.string "POKéMON?$"
+	.string "פוקימונים ענקיים הופיעו פתאום\n"
+	.string "באמצע העיר!\p"
+	.string "ואף פעם לא ראיתי אותם לפני כן!\p"
+	.string "למה הם מתנגשים אחד בשני\n"
+	.string "ככה?\p"
+	.string "למה הם לא יכולים להיות חברים,\n"
+	.string "הפוקימונים האלה?$"
 
 SootopolisCity_Text_WhatIsThatGreenPokemon:
-	.string "What? What? What?\n"
-	.string "What is that green POKéMON?!$"
+	.string "מה? מה? מה?\n"
+	.string "מה זה הפוקימון הירוק הזה?!$"
 
 SootopolisCity_Text_WhereDidLegendariesGo:
-	.string "GROUDON and KYOGRE…\n"
-	.string "Where did they go?\p"
-	.string "Will they cause droughts or downpours\n"
-	.string "somewhere else?$"
+	.string "{STR_VAR_1} ו{STR_VAR_2}…\n"
+	.string "לאן הם נעלמו?\p"
+	.string "הם יגרמו לבצורות או לשיטפונות\n"
+	.string "במקום אחר?$"
 
 SootopolisCity_Text_TwoPokemonArentAngry:
-	.string "I just get this sense somehow that\n"
-	.string "the two POKéMON aren't angry.\p"
-	.string "I think… They probably can't control\n"
-	.string "their own power…$"
+	.string "יש לי איכשהו תחושה ששני\n"
+	.string "הפוקימונים האלה לא כועסים.\p"
+	.string "נראה לי… שהם פשוט לא מסוגלים\n"
+	.string "לשלוט בכוח של עצמם…$"
 
 SootopolisCity_Text_FlyingMonStoppedRampage:
-	.string "That flying POKéMON came down from\n"
-	.string "the sky and stopped the rampaging\l"
-	.string "POKéMON…$"
+	.string "הפוקימון המעופף הזה ירד מהשמיים\n"
+	.string "ועצר את הפוקימונים\l"
+	.string "המשתוללים…$"
 
 SootopolisCity_Text_WonderWhatWorldIsLike:
-	.string "I… I've never been out of this city.\p"
-	.string "I wonder what the world is like on\n"
-	.string "the other side of this round sky?$"
+	.string "א… אף פעם לא יצאתי מהעיר הזו.\p"
+	.string "מעניין איך נראה העולם בצד\n"
+	.string "השני של השמיים העגולים האלה?$"
 
 SootopolisCity_Text_ThisIsWicked:
-	.string "Wow!\n"
-	.string "This is wicked!$"
+	.string "וואו!\n"
+	.string "זה מטורף!$"
 
 SootopolisCity_Text_ThatWasWicked:
-	.string "Wow!\n"
-	.string "That was wicked!$"
+	.string "וואו!\n"
+	.string "זה היה מטורף!$"
 
 SootopolisCity_Text_GoRedAndBlueMon:
-	.string "Go for it, red POKéMON!\n"
-	.string "Don't back off, blue POKéMON!$"
+	.string "קדימה, פוקימון אדום!\n"
+	.string "אל תיסוג, פוקימון כחול!$"
 
 SootopolisCity_Text_DoYouKnowMonNames:
 	.string "… … … … … …\p"
-	.string "Hi, do you know the names of those\n"
-	.string "POKéMON fighting over there?$"
+	.string "היי, את{EMIT_HEY} יודע{ADD_TAF} איך קוראים\n"
+	.string "לפוקימונים שנלחמים שם?$"
 
 SootopolisCity_Text_GreenOneSettlesThings:
-	.string "I was wondering which one would win,\n"
-	.string "the red one or the blue one, but, oh no,\l"
-	.string "it's the green one that settles things!\p"
-	.string "Talk about a huge turn of events!$"
+	.string "תהיתי מי ינצח, האדום או\n"
+	.string "הכחול, אבל אוי לא,\l"
+	.string "דווקא הירוק הוא שהכריע!\p"
+	.string "זה מה שנקרא תפנית ענקית!$"
 
 SootopolisCity_Text_SeeingLegendWithOwnEyes:
-	.string "There's an ancient legend that claims\n"
-	.string "the land and sea were shaped by\l"
-	.string "a colossal battle between POKéMON.\p"
-	.string "Well, I'm seeing that happen with\n"
-	.string "my very own eyes!\p"
-	.string "Whoa! I never expected to be\n"
-	.string "witness to something this huge!$"
+	.string "יש אגדה עתיקה שטוענת\n"
+	.string "שהיבשה והים עוצבו בידי\l"
+	.string "קרב אדיר בין פוקימונים.\p"
+	.string "ועכשיו אני רואה את זה קורה\n"
+	.string "במו עיניי!\p"
+	.string "וואו! לא ציפיתי שאזכה\n"
+	.string "לראות משהו כזה ענק!$"
 
 SootopolisCity_Text_SawLegendWithOwnEyes:
-	.string "There's an ancient legend that claims\n"
-	.string "the land and sea were shaped by\l"
-	.string "a colossal battle between POKéMON.\p"
-	.string "Well, I saw that happen with\n"
-	.string "my very own eyes!\p"
-	.string "Whoa! I never expected to be\n"
-	.string "witness to something this huge!$"
+	.string "יש אגדה עתיקה שטוענת\n"
+	.string "שהיבשה והים עוצבו בידי\l"
+	.string "קרב אדיר בין פוקימונים.\p"
+	.string "ובכן, ראיתי את זה קורה\n"
+	.string "במו עיניי!\p"
+	.string "וואו! לא ציפיתי שאזכה\n"
+	.string "לראות משהו כזה ענק!$"
 
 SootopolisCity_Text_BigPokemonFighting:
-	.string "A big POKéMON is fighting with\n"
-	.string "another big POKéMON!\p"
-	.string "Please, someone make them stop!$"
+	.string "פוקימון גדול נלחם\n"
+	.string "בפוקימון גדול אחר!\p"
+	.string "בבקשה, שמישהו יעצור אותם!$"
 
 SootopolisCity_Text_PrettyMonCameFromSky:
-	.string "A pretty POKéMON came down from\n"
-	.string "the sky…$"
+	.string "פוקימון יפהפה ירד\n"
+	.string "מהשמיים…$"
 
 SootopolisCity_Text_SootopolisWillBeWrecked:
-	.string "Oh, no!\n"
-	.string "SOOTOPOLIS CITY will get wrecked!$"
+	.string "אוי, לא!\n"
+	.string "העיר סוטופוליס תיהרס!$"
 
 SootopolisCity_Text_SootopolisDidntGetWrecked:
-	.string "SOOTOPOLIS CITY didn't get wrecked!$"
+	.string "העיר סוטופוליס לא נהרסה!$"
 
 SootopolisCity_Text_NoOrdinaryTourist:
-	.string "Hm!\n"
-	.string "You've come all the way to SOOTOPOLIS?\l"
-	.string "You're no ordinary tourist.\p"
-	.string "But I suppose that doesn't make you\n"
-	.string "an extraordinary tourist, either.$"
+	.string "הממ!\n"
+	.string "הגעת עד לסוטופוליס?\l"
+	.string "את{EMIT_HEY} לא תייר{ADD_TAF} רגיל{ADD_HEY}.\p"
+	.string "אבל נראה שזה גם לא הופך אותך\n"
+	.string "לתייר{ADD_TAF} יוצא{ADD_TAF} דופן.$"
 
 SootopolisCity_Text_CityRegainedCalm:
-	.string "The city has regained its calm…$"
+	.string "העיר חזרה לשלוותה…$"
 
 SootopolisCity_Text_CaveOfOriginPleaseLeave:
-	.string "Who might you be?\p"
-	.string "This is the CAVE OF ORIGIN.\p"
-	.string "The spirits of POKéMON, becalmed at\n"
-	.string "MT. PYRE, are said to be revived here.\p"
-	.string "Please leave.$"
+	.string "מי את{EMIT_HEY}?\p"
+	.string "זוהי מערת המקור.\p"
+	.string "אומרים שרוחות הפוקימונים שנחות\n"
+	.string "בהר המוקד קמות כאן לתחייה.\p"
+	.string "בבקשה ל{SWAP_CHAF}{ADD_YUD} מכאן.$"
 
 SootopolisCity_Text_LeadSuperiorTrainerToCave:
-	.string "A person with a strong will and\n"
-	.string "superior talent…\p"
-	.string "A TRAINER who has knowledge and\n"
-	.string "experience of many kinds of POKéMON…\p"
-	.string "If such a person were to appear, I was\n"
-	.string "instructed by WALLACE to lead that\l"
-	.string "TRAINER to this CAVE.$"
+	.string "אדם בעל רצון חזק\n"
+	.string "וכישרון יוצא דופן…\p"
+	.string "מאמן בעל ידע וניסיון\n"
+	.string "עם סוגים רבים של פוקימונים…\p"
+	.string "אם אדם כזה יופיע, וולאס הורה לי\n"
+	.string "להוביל את המאמן הזה\l"
+	.string "אל המערה הזו.$"
 
 SootopolisCity_Text_AwakenedPokemonClash:
-	.string "Oh, my…\p"
-	.string "The clash between the two awakened\n"
-	.string "POKéMON was quelled by the awakening\l"
-	.string "of a third POKéMON…$"
+	.string "אוי, אלוהים…\p"
+	.string "ההתנגשות בין שני הפוקימונים\n"
+	.string "שהתעוררו שככה בזכות התעוררותו\l"
+	.string "של פוקימון שלישי…$"
 
 SootopolisCity_Text_CaveOfOriginSleepsToo:
-	.string "This is the CAVE OF ORIGIN…\p"
-	.string "With the passing of the crisis,\n"
-	.string "the cave, too, shall sleep…$"
+	.string "זוהי מערת המקור…\p"
+	.string "עכשיו כשהמשבר חלף,\n"
+	.string "גם המערה תשוב לישון…$"
 
 SootopolisCity_Text_SootopolisSkyBeautiful:
-	.string "SOOTOPOLIS sprang up as a town in\n"
-	.string "the crater of a volcano.\p"
-	.string "If you look up at the sky, the lip of\n"
-	.string "the crater is also visible.\l"
-	.string "So, all you see is the sky in a circle.\p"
-	.string "But that's what makes the sky above\n"
-	.string "SOOTOPOLIS the most beautiful.$"
+	.string "סוטופוליס צמחה כעיירה בתוך\n"
+	.string "לוע של הר געש.\p"
+	.string "אם מסתכלים למעלה לשמיים, רואים\n"
+	.string "גם את שפת הלוע.\l"
+	.string "אז רואים רק שמיים בתוך עיגול.\p"
+	.string "אבל זה בדיוק מה שהופך את השמיים\n"
+	.string "מעל סוטופוליס ליפים ביותר.$"
 
 SootopolisCity_Text_GiganticPokemonFight:
-	.string "When two POKéMON that gigantic\n"
-	.string "are fighting that savagely, there's\l"
-	.string "not much that we can do.$"
+	.string "כששני פוקימונים כל כך ענקיים\n"
+	.string "נלחמים בפראות כזאת, אין\l"
+	.string "הרבה שאנחנו יכולים לעשות.$"
 
 SootopolisCity_Text_FearedWorstWhenPokemonFlewDown:
-	.string "When that third POKéMON flew down,\n"
-	.string "I feared the worst.$"
+	.string "כשהפוקימון השלישי ירד בטיסה,\n"
+	.string "חששתי מהגרוע מכול.$"
 
 SootopolisCity_Text_NightSkyFavoriteScenery:
-	.string "A circle of a night sky framed by\n"
-	.string "the crater of a volcano…\p"
-	.string "And in that ring, stars flicker and\n"
-	.string "blink as if they were alive…\l"
-	.string "It's my favorite scenery.$"
+	.string "עיגול של שמי לילה ממוסגר\n"
+	.string "בלוע של הר געש…\p"
+	.string "ובתוך הטבעת הזו, כוכבים מנצנצים\n"
+	.string "ומהבהבים כאילו הם חיים…\l"
+	.string "זה הנוף האהוב עליי.$"
 
 SootopolisCity_Text_WeatherWentWild:
-	.string "The weather was clear this morning,\n"
-	.string "but…\p"
-	.string "All of a sudden, dark clouds brewed up,\n"
-	.string "rain started falling in sheets, and\l"
-	.string "there was thunder and lightning, too.\p"
-	.string "The weather just went completely\n"
-	.string "wild!\p"
-	.string "Is all of this because of those\n"
-	.string "POKéMON?$"
+	.string "מזג האוויר היה בהיר הבוקר,\n"
+	.string "אבל…\p"
+	.string "פתאום הצטברו עננים כהים,\n"
+	.string "התחיל לרדת גשם זלעפות,\l"
+	.string "והיו גם רעמים וברקים.\p"
+	.string "מזג האוויר פשוט השתגע\n"
+	.string "לגמרי!\p"
+	.string "כל זה בגלל הפוקימונים\n"
+	.string "האלה?$"
 
 SootopolisCity_Text_YouBroughtFlyingMon:
-	.string "Oh?\p"
-	.string "It was you who brought that flying\n"
-	.string "POKéMON here?\p"
-	.string "Well, aren't you amazing!$"
+	.string "אה?\p"
+	.string "את{EMIT_HEY} הבאת לכאן את הפוקימון\n"
+	.string "המעופף הזה?\p"
+	.string "וואו, את{EMIT_HEY} פשוט מדהים{ADD_HEY}!$"
 
 SootopolisCity_Text_GroudonPleaseStop:
-	.string "MAXIE: G… GROUDON…\n"
-	.string "Please! Stop what you're doing!\p"
-	.string "I know the extent of your power now!\p"
-	.string "If you keep going, all HOENN, not just\n"
-	.string "SOOTOPOLIS, will be utterly ruined!$"
+	.string "מקסי: {STR_VAR_1}…\n"
+	.string "בבקשה! תפסיק את מה שאתה עושה!\p"
+	.string "עכשיו אני מבין את היקף הכוח שלך!\p"
+	.string "אם תמשיך, לא רק סוטופוליס, אלא\n"
+	.string "כל הואן תיהרס לחלוטין!$"
 
 SootopolisCity_Text_AfterAllOurScheming:
-	.string "MAXIE: So the super-ancient POKéMON\n"
-	.string "weren't only GROUDON and KYOGRE…\p"
-	.string "After all our fruitless scheming and\n"
-	.string "frantic efforts, that one POKéMON's\l"
-	.string "simple action puts everything right\l"
-	.string "again as if nothing had happened…\p"
-	.string "Fu…\n"
-	.string "Fuhahaha…$"
+	.string "מקסי: אז הפוקימונים הקדומים לא היו\n"
+	.string "רק {STR_VAR_1} ו{STR_VAR_2}…\p"
+	.string "אחרי כל המזימות העקרות שלנו\n"
+	.string "והמאמצים הנואשים, פעולה פשוטה\l"
+	.string "אחת של הפוקימון ההוא מתקנת הכול\l"
+	.string "כאילו כלום לא קרה…\p"
+	.string "פו…\n"
+	.string "פוהאהאהא…$"
 
 SootopolisCity_Text_KyogreCalmDown:
-	.string "ARCHIE: KYOGRE! What's wrong?!\n"
-	.string "Look over here! It's the RED ORB!\l"
-	.string "Calm down! KYOGRE!\p"
+	.string "ארצ'י: {STR_VAR_2}! מה קרה?!\n"
+	.string "תסתכל לכאן! זה הכדור האדום!\l"
+	.string "תירגע! {STR_VAR_2}!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "It's no good!\n"
-	.string "It's not responding at all!$"
+	.string "זה לא עוזר!\n"
+	.string "הוא לא מגיב בכלל!$"
 
 SootopolisCity_Text_TryingMeaninglessToPokemon:
-	.string "ARCHIE: KYOGRE and GROUDON both\n"
-	.string "flew off to who knows where.\p"
-	.string "The weather in HOENN has returned\n"
-	.string "to its normal state…\p"
-	.string "Haha…\n"
-	.string "Hahaha…\p"
-	.string "Maybe what we were trying to do was\n"
-	.string "something small, even meaningless,\l"
-	.string "to POKéMON…$"
+	.string "ארצ'י: {STR_VAR_2}\n"
+	.string "ו{STR_VAR_1} עפו למי יודע איפה.\p"
+	.string "מזג האוויר בהואן חזר\n"
+	.string "למצבו הרגיל…\p"
+	.string "האה…\n"
+	.string "האהאהא…\p"
+	.string "אולי מה שניסינו לעשות היה\n"
+	.string "משהו קטן, אפילו חסר משמעות,\l"
+	.string "בעיני הפוקימונים…$"
 
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
-	.string "STEVEN: Those POKéMON fighting…\n"
-	.string "GROUDON… And KYOGRE…\p"
-	.string "The two super-ancient POKéMON\n"
-	.string "were awakened from a long sleep…\p"
-	.string "And now they are smashing each other\n"
-	.string "with their uncontrollable energy…\p"
+	.string "סטיבן: הפוקימונים האלה שנלחמים…\n"
+	.string "{STR_VAR_1}… ו{STR_VAR_2}…\p"
+	.string "שני הפוקימונים הקדומים\n"
+	.string "התעוררו משינה ארוכה…\p"
+	.string "ועכשיו הם מתנגשים זה בזה\n"
+	.string "באנרגיה הבלתי נשלטת שלהם…\p"
 	.string "…{PLAYER}{KUN}.\p"
-	.string "You being here now I'll take to mean\n"
-	.string "that you're prepared to become\l"
-	.string "involved in this crisis.\p"
-	.string "Well, then, there's someone that\n"
-	.string "I'd like you to meet.\p"
-	.string "Come with me, please.$"
+	.string "העובדה שאת{EMIT_HEY} כאן עכשיו אומרת לי\n"
+	.string "שאת{EMIT_HEY} מוכ{SWAP_NUN}{ADD_HEY} להיות\l"
+	.string "מעורב{ADD_TAF} במשבר הזה.\p"
+	.string "אם כך, יש מישהו\n"
+	.string "שהייתי רוצה שתפגוש{ADD_YUD}.\p"
+	.string "בוא{ADD_YUD} איתי, בבקשה.$"
 
 SootopolisCity_Text_DoesThisMakeYourFearPokemon:
-	.string "STEVEN: Listen, {PLAYER}{KUN}.\p"
-	.string "Does seeing GROUDON and KYOGRE make\n"
-	.string "you think POKéMON are to be feared?\p"
-	.string "But that's not true.\n"
-	.string "POKéMON are really more…\p"
-	.string "…Why am I asking you this?\n"
-	.string "You already know.$"
+	.string "סטיבן: תקשיב{ADD_YUD}, {PLAYER}{KUN}.\p"
+	.string "כשאת{EMIT_HEY} רואה את {STR_VAR_1}\n"
+	.string "ואת {STR_VAR_2}, את{EMIT_HEY} חושב{ADD_TAF}\l"
+	.string "שצריך לפחד מפוקימונים?\p"
+	.string "אבל זה לא נכון.\n"
+	.string "פוקימונים הם באמת יותר…\p"
+	.string "…למה אני בכלל שואל אותך?\n"
+	.string "את{EMIT_HEY} כבר יודע{ADD_TAF}.$"
 
 SootopolisCity_Text_HereWereAreHelpWallace:
-	.string "STEVEN: Okay, here we are!\p"
-	.string "Inside here you'll find someone named\n"
-	.string "WALLACE.\p"
-	.string "I think you have what's needed to\n"
-	.string "help him…$"
+	.string "סטיבן: אוקיי, הגענו!\p"
+	.string "בפנים תמצא{ADD_YUD} מישהו בשם\n"
+	.string "וולאס.\p"
+	.string "אני חושב שיש לך את מה שצריך כדי\n"
+	.string "לעזור לו…$"
 
 SootopolisCity_Text_KnowWhatsNeededToHelpHim:
-	.string "STEVEN: I think you have what's\n"
-	.string "needed to help him…$"
+	.string "סטיבן: אני חושב שיש לך את מה\n"
+	.string "שצריך כדי לעזור לו…$"
 
 SootopolisCity_Text_NeverBeenToSkyPillar:
-	.string "STEVEN: The SKY PILLAR…\p"
-	.string "I've never been there.\n"
-	.string "I wonder where it could be?$"
+	.string "סטיבן: עמוד השמיים…\p"
+	.string "אף פעם לא הייתי שם.\n"
+	.string "מעניין איפה הוא יכול להיות?$"
 
 SootopolisCity_Text_SoThatsRayquaza:
-	.string "STEVEN: So that's RAYQUAZA…\p"
-	.string "It's incredible how the two rampaging\n"
-	.string "POKéMON would flee from it in fear…$"
+	.string "סטיבן: אז זה {STR_VAR_1}…\p"
+	.string "מדהים איך שני הפוקימונים\n"
+	.string "המשתוללים ברחו ממנו בפחד…$"
 
 SootopolisCity_Text_MaxieArchieLeft:
-	.string "STEVEN: It looks like both MAXIE and\n"
-	.string "ARCHIE have gone away somewhere.\p"
-	.string "Perhaps they've gone to MT. PYRE to\n"
-	.string "return those ORBS…$"
+	.string "סטיבן: נראה שגם מקסי וגם\n"
+	.string "ארצ'י הלכו לאנשהו.\p"
+	.string "אולי הם הלכו להר המוקד כדי\n"
+	.string "להחזיר את הכדורים…$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
-	.string "WALLACE: Oh?\n"
+	.string "וולאס: אה?\n"
 	.string "{PLAYER}{KUN}?\p"
-	.string "Haven't you scaled the SKY PILLAR\n"
-	.string "yet?\p"
-	.string "I'm sure that you can make it to\n"
-	.string "the top of the SKY PILLAR…$"
+	.string "עוד לא טיפסת על עמוד\n"
+	.string "השמיים?\p"
+	.string "אני בטוח שאת{EMIT_HEY} יכול{ADD_HEY} להגיע\n"
+	.string "לפסגת עמוד השמיים…$"
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
-	.string "WALLACE: {PLAYER}{KUN}…\p"
-	.string "The leaders of TEAM MAGMA and AQUA,\n"
-	.string "I don't think they meant harm.\p"
-	.string "It wouldn't hurt to hear what they\n"
-	.string "have to say for themselves.$"
+	.string "וולאס: {PLAYER}{KUN}…\p"
+	.string "המנהיגים של צוות מגמה ואקווה,\n"
+	.string "אני לא חושב שהם התכוונו להזיק.\p"
+	.string "לא יזיק לשמוע מה יש להם\n"
+	.string "לומר להגנתם.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
-	.string "WALLACE: {PLAYER}{KUN}…\n"
-	.string "My eyes didn't deceive me.\p"
-	.string "Thanks to your help, SOOTOPOLIS…\n"
-	.string "No, all of HOENN was saved.\p"
-	.string "On behalf of the people, I thank you.\p"
-	.string "This is a gift from me.\n"
-	.string "Please accept it.$"
+	.string "וולאס: {PLAYER}{KUN}…\n"
+	.string "עיניי לא הטעו אותי.\p"
+	.string "בזכות העזרה שלך, סוטופוליס…\n"
+	.string "לא, כל הואן ניצלה.\p"
+	.string "בשם העם, אני מודה לך.\p"
+	.string "זו מתנה ממני.\n"
+	.string "בבקשה, קבל{ADD_YUD} אותה.$"
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:
-	.string "That HIDDEN MACHINE contains\n"
-	.string "WATERFALL.\p"
-	.string "If you have the RAIN BADGE, a POKéMON\n"
-	.string "that has learned that HM move can\l"
-	.string "force its way up waterfalls.\p"
-	.string "And where does one get the RAIN BADGE?\n"
-	.string "You know, don't you?\p"
-	.string "That's right! You have to beat\n"
-	.string "the SOOTOPOLIS GYM LEADER.\p"
-	.string "When you're all set to go, step through\n"
-	.string "that door.$"
+	.string "המכונה הנסתרת הזו מכילה\n"
+	.string "מפל מים.\p"
+	.string "אם יש לך את תג הגשם, פוקימון\n"
+	.string "שלמד את מהלך המ”נ הזה יוכל\l"
+	.string "לפלס את דרכו במעלה מפלים.\p"
+	.string "ואיפה משיגים את תג הגשם?\n"
+	.string "את{EMIT_HEY} יודע{ADD_TAF}, נכון?\p"
+	.string "נכון מאוד! צריך לנצח את\n"
+	.string "מנהיג המכון של סוטופוליס.\p"
+	.string "כשהכול מוכן, פשוט צריך\n"
+	.string "לעבור דרך הדלת הזו.$"
 
 SootopolisCity_Text_DazzledByMentor:
-	.string "WALLACE: I'm sure that you will be\n"
-	.string "dazzled by my mentor's breathtakingly\l"
-	.string "elegant battle style.$"
+	.string "וולאס: אני בטוח שאת{EMIT_HEY} תסתנוור{ADD_YUD}\n"
+	.string "מסגנון הקרב האלגנטי ועוצר הנשימה\l"
+	.string "של המורה שלי.$"
