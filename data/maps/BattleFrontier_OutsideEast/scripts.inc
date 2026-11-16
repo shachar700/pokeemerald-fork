@@ -107,8 +107,7 @@ BattleFrontier_OutsideEast_EventScript_Sudowoodo::
 	faceplayer
 	waitse
 	playse SE_SUDOWOODO_SHAKE
-	applymovement LOCALID_FRONTIER_SUDOWOODO, BattleFrontier_OutsideEast_Movement_SudowoodoShake
-	waitmovement 0
+	applywaitmovement LOCALID_FRONTIER_SUDOWOODO, BattleFrontier_OutsideEast_Movement_SudowoodoShake
 	release
 	end
 
@@ -118,8 +117,7 @@ BattleFrontier_OutsideEast_EventScript_WaterSudowoodo::
 	special DoWateringBerryTreeAnim
 	waitse
 	playse SE_SUDOWOODO_SHAKE
-	applymovement LOCALID_FRONTIER_SUDOWOODO, BattleFrontier_OutsideEast_Movement_SudowoodoShake
-	waitmovement 0
+	applywaitmovement LOCALID_FRONTIER_SUDOWOODO, BattleFrontier_OutsideEast_Movement_SudowoodoShake
 	msgbox gText_Sudowoodo_Attacked, MSGBOX_DEFAULT
 	closemessage
 	waitse

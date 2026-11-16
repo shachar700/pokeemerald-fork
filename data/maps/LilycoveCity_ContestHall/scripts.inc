@@ -26,8 +26,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestMC::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_GiveItBestSmartAppeal, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SMART_MC, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_SMART_MC, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -36,8 +35,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestJudge::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_AreYouEnjoyingThisContest, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SMART_JUDGE, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_SMART_JUDGE, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -46,8 +44,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestant1::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_EnteredWrongContest, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SMART_CONTESTANT_1, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_SMART_CONTESTANT_1, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -56,8 +53,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestant2::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_RaisedMonToBeSmart, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SMART_CONTESTANT_2, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_SMART_CONTESTANT_2, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -66,8 +62,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestant3::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_IfMonPullsSmartMoveNext, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SMART_CONTESTANT_3, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_SMART_CONTESTANT_3, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -77,8 +72,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestant4::
 	bufferspeciesname STR_VAR_1, SPECIES_ZUBAT
 	msgbox LilycoveCity_ContestHall_Text_DontAppreciateCuteLeechLife, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SMART_CONTESTANT_4, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_SMART_CONTESTANT_4, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -91,8 +85,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestAudience2::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_AllSeemToUseDifferentMoves, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SMART_AUDIENCE_2, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_SMART_AUDIENCE_2, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -101,8 +94,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestAudience3::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_PokemonSmarterThanTrainers, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SMART_AUDIENCE_3, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_SMART_AUDIENCE_3, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -111,8 +103,7 @@ LilycoveCity_ContestHall_EventScript_SmartContestAudience4::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_StillLoveSmartnessContests, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SMART_AUDIENCE_4, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_SMART_AUDIENCE_4, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -121,8 +112,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestMC::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_AreYouEnteringBeautyContest, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_BEAUTY_MC, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_BEAUTY_MC, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -131,8 +121,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestJudge::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_EveryPokemonPristineBeauty, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_BEAUTY_JUDGE, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_BEAUTY_JUDGE, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -141,8 +130,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant1::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_EyesWillBeGluedToMyBeauty, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_BEAUTY_CONTESTANT_1, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_BEAUTY_CONTESTANT_1, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -151,8 +139,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant2::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_OverdidGrooming, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_BEAUTY_CONTESTANT_2, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_BEAUTY_CONTESTANT_2, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -161,8 +148,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant3::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_JudgeWontSeeAuroraBeam, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_BEAUTY_CONTESTANT_3, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_BEAUTY_CONTESTANT_3, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -171,8 +157,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestant4::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_PokemonLooksLikeYoungerMe, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_BEAUTY_CONTESTANT_4, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_BEAUTY_CONTESTANT_4, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -181,8 +166,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestAudience1::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_WinBeautyContestMakesMeHappy, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_BEAUTY_AUDIENCE_1, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_BEAUTY_AUDIENCE_1, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -191,8 +175,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestAudience2::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_GanderAtAllThosePrettyPokemon, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_BEAUTY_AUDIENCE_2, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_BEAUTY_AUDIENCE_2, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -201,8 +184,7 @@ LilycoveCity_ContestHall_EventScript_BeautyContestAudience3::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_CantWinOnBeautyAlone, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_BEAUTY_AUDIENCE_3, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_BEAUTY_AUDIENCE_3, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -211,8 +193,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestMC::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_InTheMiddleOfContest, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_CUTE_MC, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_CUTE_MC, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -221,8 +202,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestJudge::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_CUTE_JUDGE, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_CUTE_JUDGE, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -232,8 +212,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestant1::
 	bufferspeciesname STR_VAR_1, SPECIES_AZURILL
 	msgbox LilycoveCity_ContestHall_Text_MyAzurillWasDistracted, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_CUTE_CONTESTANT_1, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_CUTE_CONTESTANT_1, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -242,8 +221,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestant2::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_NeverWonBattleButContest, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_CUTE_CONTESTANT_2, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_CUTE_CONTESTANT_2, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -252,8 +230,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestant3::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_PetalDanceIsMarvel, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_CUTE_CONTESTANT_3, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_CUTE_CONTESTANT_3, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -262,19 +239,16 @@ LilycoveCity_ContestHall_EventScript_CuteContestant4::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_MyMonAppealSoMuchCuter, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_CUTE_CONTESTANT_4, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_CUTE_CONTESTANT_4, Common_Movement_FaceOriginalDirection
 	release
 	end
 
 LilycoveCity_ContestHall_EventScript_CuteContestAudience1::
 	lockall
-	applymovement LOCALID_CUTE_AUDIENCE_1, Common_Movement_FacePlayer
-	waitmovement 0
+	applywaitmovement LOCALID_CUTE_AUDIENCE_1, Common_Movement_FacePlayer
 	msgbox LilycoveCity_ContestHall_Text_MyChildIsInContest, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_CUTE_AUDIENCE_1, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_CUTE_AUDIENCE_1, Common_Movement_FaceOriginalDirection
 	delay 25
 	msgbox LilycoveCity_ContestHall_Text_ComeOnDear, MSGBOX_DEFAULT
 	releaseall
@@ -285,8 +259,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestAudience2::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_WantCuteMonOfMyOwn, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_CUTE_AUDIENCE_2, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_CUTE_AUDIENCE_2, Common_Movement_FaceOriginalDirection
 	release
 	end
 
@@ -295,8 +268,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestAudience3::
 	faceplayer
 	msgbox LilycoveCity_ContestHall_Text_ThatGirlThereIsCutest, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_CUTE_AUDIENCE_3, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	applywaitmovement LOCALID_CUTE_AUDIENCE_3, Common_Movement_FaceOriginalDirection
 	release
 	end
 

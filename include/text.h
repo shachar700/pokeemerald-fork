@@ -7,7 +7,8 @@
 // loaded at once but not copied to vram yet.
 #define TEXT_SKIP_DRAW 0xFF
 
-enum {
+enum
+{
     FONT_SMALL,
     FONT_NORMAL,
     FONT_SHORT,
@@ -21,7 +22,8 @@ enum {
 };
 
 // Return values for font functions
-enum {
+enum
+{
     RENDER_PRINT,
     RENDER_FINISH,
     RENDER_REPEAT, // Run render function again, if e.g. a control code is encountered.
@@ -29,7 +31,8 @@ enum {
 };
 
 // Text printer states read by RenderText / FontFunc_Braille
-enum {
+enum
+{
     RENDER_STATE_HANDLE_CHAR,
     RENDER_STATE_WAIT,
     RENDER_STATE_CLEAR,
@@ -39,7 +42,8 @@ enum {
     RENDER_STATE_PAUSE,
 };
 
-enum {
+enum
+{
     FONTATTR_MAX_LETTER_WIDTH,
     FONTATTR_MAX_LETTER_HEIGHT,
     FONTATTR_LETTER_SPACING,
@@ -79,11 +83,13 @@ struct TextPrinterTemplate
     bool8 rtlMode;
 };
 
+typedef void (*TextPrinterCallback)(struct TextPrinterTemplate *printerTemplate, u16 renderCmd);
+
 struct TextPrinter
 {
     struct TextPrinterTemplate printerTemplate;
 
-    void (*callback)(struct TextPrinterTemplate *, u16); // 0x10
+    TextPrinterCallback callback; // 0x10
 
     u8 subStructFields[7]; // always cast to struct TextPrinterSubStruct... so why bother
     u8 active;
@@ -133,12 +139,12 @@ struct TextGlyph
 
 extern TextFlags gTextFlags;
 
-extern u8 gDisableTextPrinters;
+extern bool8 gDisableTextPrinters;
 extern struct TextGlyph gCurGlyph;
 
 void DeactivateAllTextPrinters(void);
-u16 AddTextPrinterParameterizedWithRTL(u8 windowId, u8 fontId, const u8 *str, s8 x, u8 y, u8 speed, void (*callback)(struct TextPrinterTemplate *, u16), bool8 rtlMode);
-bool16 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, void (*callback)(struct TextPrinterTemplate *, u16));
+bool16 AddTextPrinterParameterized(u8 windowId, u8 fontId, const u8 *str, u8 x, u8 y, u8 speed, TextPrinterCallback callback, bool8 rtlMode);
+bool16 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, TextPrinterCallback callback);
 void RunTextPrinters(void);
 bool16 IsTextPrinterActive(u8 id);
 void GenerateFontHalfRowLookupTable(u8 fgColor, u8 bgColor, u8 shadowColor);

@@ -15,6 +15,7 @@
 #include "constants/berry.h"
 #include "constants/cable_club.h"
 #include "constants/coins.h"
+#include "constants/comparison_operators.h"
 #include "constants/contest.h"
 #include "constants/daycare.h"
 #include "constants/decorations.h"
@@ -750,8 +751,7 @@ Common_EventScript_StopBrineysBoatMusic::
 @ Below could be split as ferry.inc aside from the Rusturf tunnel script
 Common_EventScript_FerryDepart::
 	delay 60
-	applymovement VAR_0x8004, Movement_FerryDepart
-	waitmovement 0
+	applywaitmovement VAR_0x8004, Movement_FerryDepart
 	return
 
 Movement_FerryDepart:
@@ -787,12 +787,10 @@ RusturfTunnel_EventScript_SetRusturfTunnelOpen::
 
 EventScript_UnusedBoardFerry::
 	delay 30
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-	waitmovement 0
+	applywaitmovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	showplayer
 	delay 30
-	applymovement LOCALID_PLAYER, Movement_UnusedBoardFerry
-	waitmovement 0
+	applywaitmovement LOCALID_PLAYER, Movement_UnusedBoardFerry
 	delay 30
 	return
 
