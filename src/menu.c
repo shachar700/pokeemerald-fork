@@ -1976,17 +1976,6 @@ void AddTextPrinterParameterized4WithRTL(u8 windowId, u8 fontId, s8 rightPadding
     printer.x = rtlMode ? (windowWidthPx - rightPadding): rightPadding;
     printer.currentX = printer.x;
 
-    AddTextPrinter(&printer, speed, NULL);
-}
-
-void AddTextPrinterParameterized5(u8 windowId, u8 fontId, const u8 *str, u8 left, u8 top, u8 speed, TextPrinterCallback callback, u8 letterSpacing, u8 lineSpacing)
-{
-    struct TextPrinterTemplate printer;
-
-    printer.currentChar = str;
-    printer.windowId = windowId;
-    printer.fontId = fontId;
-    printer.x = left;
     printer.y = top;
     printer.currentY = top;
     printer.letterSpacing = letterSpacing;
@@ -2003,7 +1992,7 @@ void AddTextPrinterParameterized5(u8 windowId, u8 fontId, const u8 *str, u8 left
 // AddTextPrinterParameterized5WithRTL
 void AddTextPrinterParameterized5WithRTL(u8 windowId, u8 fontId, const u8 *str,
                                         s8 rightPadding, u8 top, u8 speed,
-                                        void (*callback)(struct TextPrinterTemplate *, u16),
+                                        TextPrinterCallback callback,
                                         u8 letterSpacing, u8 lineSpacing, bool8 rtlMode)
 {
     struct TextPrinterTemplate printer;

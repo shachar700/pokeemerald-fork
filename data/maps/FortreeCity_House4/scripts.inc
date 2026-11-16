@@ -21,7 +21,6 @@ FortreeCity_House4_EventScript_Boy::
 
 FortreeCity_House4_EventScript_WingullOnErrand::
 	applywaitmovement VAR_LAST_TALKED, Common_Movement_FacePlayer
-	waitmovement 0
 	bufferspeciesname STR_VAR_1, SPECIES_WINGULL
 	msgbox FortreeCity_House4_Text_AskedWingullToRunErrand, MSGBOX_DEFAULT
 	releaseall
@@ -29,7 +28,6 @@ FortreeCity_House4_EventScript_WingullOnErrand::
 
 FortreeCity_House4_EventScript_WingullReturned::
 	applywaitmovement VAR_LAST_TALKED, Common_Movement_FacePlayer
-	waitmovement 0
 	bufferspeciesname STR_VAR_1, SPECIES_WINGULL
 	msgbox FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb, MSGBOX_DEFAULT
 	giveitem ITEM_MENTAL_HERB
@@ -40,7 +38,6 @@ FortreeCity_House4_EventScript_WingullReturned::
 
 FortreeCity_House4_EventScript_ReceivedMentalHerb::
 	applywaitmovement VAR_LAST_TALKED, Common_Movement_FacePlayer
-	waitmovement 0
 	bufferspeciesname STR_VAR_1, SPECIES_WINGULL
 	msgbox FortreeCity_House4_Text_FriendsFarAwayThanksToWingull, MSGBOX_DEFAULT
 	releaseall
