@@ -145,9 +145,9 @@ VerdanturfTown_BattleTentLobby_Text_ReturnFortified:
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_WhichLevelMode:
-	.string "There are two levels of difficulty,\n"
-	.string "Level 50 and Open Level.\l"
-	.string "Which is your choice of a challenge?$"
+	.string "יש שתי רמות קושי,\n"
+	.string "רמה 05 ורמה פתוחה.\l"
+	.string "באיזה אתגר את{EMIT_HEY} בוחר{ADD_TAF}?$"
 
 VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
 	.string "אה…\p"
@@ -228,8 +228,8 @@ SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit:
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_WhichLevelMode:
-	.string "Which level do you wish to challenge?\n"
-	.string "Level 50 or Level 100?$"
+	.string "באיזו רמה ברצונך להתמודד?\n"
+	.string "רמה 05 או רמה 001?$"
 
 SlateportCity_BattleTentLobby_Text_SaveBeforeChallenge:
 	.string "לפני תחילת האתגר,\n"
@@ -237,8 +237,8 @@ SlateportCity_BattleTentLobby_Text_SaveBeforeChallenge:
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_HoldMonsForSafekeeping:
-	.string "Okay, I will hold your POKéMON for\n"
-	.string "safekeeping while you compete.$"
+	.string "בסדר, אשמור על הפוקימונים שלך\n"
+	.string "בזמן שאת{EMIT_HEY} מתחרה.$"
 
 SlateportCity_BattleTentLobby_Text_StepThisWay:
 	.string "אנא צעד{ADD_YUD} בדרך זו.$"
@@ -252,8 +252,8 @@ SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults:
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReturnMonsExchangeRentals:
-	.string "I will return your POKéMON in exchange\n"
-	.string "for our rental POKéMON.$"
+	.string "אחזיר לך את הפוקימונים שלך\n"
+	.string "תמורת הפוקימונים המושאלים שלנו.$"
 
 SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons:
 	.string "ברכות!\n"
@@ -286,20 +286,20 @@ SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting:
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReturnPersonalMons:
-	.string "We'll return your personal POKéMON.$"
+	.string "נחזיר לך את הפוקימונים שלך.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReceivedPrize:
-	.string "{PLAYER} received the prize\n"
+	.string "{PLAYER} קיבל{ADD_HEY} את הפרס\n"
 	.string "{STR_VAR_1}.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_RulesAreListed:
-	.string "The Battle Swap rules are listed.$"
+	.string "כאן כתובים חוקי החלפת קרב.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReadWhichHeading:
-	.string "Which heading do you want to read?$"
+	.string "איזה סעיף ברצונך לקרוא?$"
 
 SlateportCity_BattleTentLobby_Text_ExplainBasicRules:
 	.string "באירוע החלפת קרב, ניתן להשתמש\n"
@@ -339,68 +339,68 @@ SlateportCity_BattleTentLobby_Text_ExplainMonRules:
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed2:
-	.string "The ורדנטרף אוהל הקרב\n"
-	.string "rules are listed.$"
+	.string "כאן כתובים החוקים של\n"
+	.string "אוהל הקרב של ורדנטרף.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ReadWhichHeading:
-	.string "Which heading do you want to read?$"
+	.string "איזה סעיף ברצונך לקרוא?$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules:
-	.string "Here at the ורדנטרף אוהל הקרב,\n"
-	.string "POKéMON are required to think and\l"
-	.string "battle by themselves.\p"
-	.string "Unlike in the wild, POKéMON that live\n"
-	.string "with people behave differently\l"
-	.string "depending on their nature.$"
+	.string "כאן, באוהל הקרב של ורדנטרף,\n"
+	.string "הפוקימונים צריכים לחשוב\l"
+	.string "ולהילחם בעצמם.\p"
+	.string "בניגוד לטבע, פוקימונים שחיים\n"
+	.string "עם אנשים מתנהגים אחרת\l"
+	.string "בהתאם לאופי שלהם.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules:
-	.string "Depending on its nature, a POKéMON\n"
-	.string "may prefer to attack no matter what.\p"
-	.string "Another POKéMON may prefer to protect\n"
-	.string "itself from any harm.\p"
-	.string "Yet another may enjoy vexing or\n"
-	.string "confounding its foes.\p"
-	.string "Depending on its nature, a POKéMON\n"
-	.string "will have favorite moves that it is good\l"
-	.string "at using.\p"
-	.string "It may also dislike certain moves that\n"
-	.string "it has trouble using.$"
+	.string "בהתאם לאופי שלו, פוקימון אחד\n"
+	.string "עשוי להעדיף לתקוף בכל מצב.\p"
+	.string "פוקימון אחר עשוי להעדיף\n"
+	.string "להגן על עצמו מכל פגיעה.\p"
+	.string "ופוקימון אחר עשוי ליהנות\n"
+	.string "להציק ליריביו ולבלבל אותם.\p"
+	.string "בהתאם לאופי שלו, לפוקימון יש\n"
+	.string "מהלכים אהובים שהוא טוב\l"
+	.string "בשימוש בהם.\p"
+	.string "הוא עשוי גם לא לאהוב מהלכים\n"
+	.string "מסוימים שקשה לו להשתמש בהם.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules:
-	.string "There are offensive moves that inflict\n"
-	.string "direct damage on the foe.\p"
-	.string "There are defensive moves that are\n"
-	.string "used to prepare for enemy attacks or\l"
-	.string "used to heal HP and so on.\p"
-	.string "There are also other somewhat-odd\n"
-	.string "moves that may enfeeble the foes with\l"
-	.string "stat problems including poison and \l"
-	.string "paralysis.\p"
-	.string "POKéMON will consider using moves in\n"
-	.string "these three categories.$"
+	.string "יש מהלכי התקפה שגורמים\n"
+	.string "נזק ישיר ליריב.\p"
+	.string "יש מהלכי הגנה שמשמשים\n"
+	.string "כהכנה להתקפות האויב או\l"
+	.string "לריפוי נקודות חיים וכדומה.\p"
+	.string "יש גם מהלכים קצת משונים\n"
+	.string "שמחלישים את היריבים\l"
+	.string "בבעיות מצב כמו הרעלה\l"
+	.string "ושיתוק.\p"
+	.string "פוקימונים ישקלו להשתמש במהלכים\n"
+	.string "משלושת הסוגים האלה.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules:
-	.string "When not under command by its TRAINER,\n"
-	.string "a POKéMON may be unable to effectively\l"
-	.string "use certain moves.\p"
-	.string "A POKéMON is not good at using any\n"
-	.string "move that it dislikes.\p"
-	.string "If a POKéMON only knows moves that\n"
-	.string "do not match its nature, it will often\l"
-	.string "be unable to live up to its potential.$"
+	.string "כשהמאמן לא נותן לו הוראות,\n"
+	.string "פוקימון עלול לא להצליח\l"
+	.string "להשתמש היטב במהלכים מסוימים.\p"
+	.string "פוקימון לא טוב בשימוש\n"
+	.string "במהלך שהוא לא אוהב.\p"
+	.string "אם פוקימון מכיר רק מהלכים\n"
+	.string "שלא מתאימים לאופי שלו, לעיתים\l"
+	.string "קרובות הוא לא ימצה את הפוטנציאל שלו.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules:
-	.string "Depending on its nature, a POKéMON may\n"
-	.string "start using moves that don't match its\l"
-	.string "nature when it is in trouble.\p"
-	.string "If a POKéMON begins behaving oddly\n"
-	.string "in a pinch, watch it carefully.$"
+	.string "בהתאם לאופי שלו, פוקימון עשוי\n"
+	.string "להתחיל להשתמש במהלכים שלא\l"
+	.string "מתאימים לאופי שלו כשהוא בצרה.\p"
+	.string "אם פוקימון מתחיל להתנהג מוזר\n"
+	.string "במצב קשה, השגיח{ADD_YUD} עליו היטב.$"
 
 BattleTentLobby_Text_ExplainLevelRules:
 	.string "באוהל זה, רמות הפוקימונים של היריבים\n"

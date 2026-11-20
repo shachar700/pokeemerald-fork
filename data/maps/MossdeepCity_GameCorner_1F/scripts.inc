@@ -39,49 +39,49 @@ RS_MysteryEventsHouse_EventScript_Door::
 	end
 
 RS_MysteryEventsHouse_Text_OldManGreeting:
-	.string "When I was young, I traveled the world\n"
-	.string "as a POKéMON TRAINER.\p"
-	.string "Now that I've become an old buzzard,\n"
-	.string "my only amusement is watching young\l"
-	.string "TRAINERS battle.$"
+	.string "כשהייתי צעיר, טיילתי בעולם\n"
+	.string "כמאמן פוקימונים.\p"
+	.string "עכשיו, כשנהייתי זקן בלה,\n"
+	.string "הבידור היחיד שלי הוא לצפות\l"
+	.string "במאמנים צעירים נלחמים.$"
 
 RS_MysteryEventsHouse_Text_DoorIsLocked:
-	.string "The door appears to be locked.$"
+	.string "נראה שהדלת נעולה.$"
 
 RS_MysteryEventsHouse_Text_ChallengeVisitingTrainer:
-	.string "A TRAINER named {STR_VAR_1} is\n"
-	.string "visiting my home.\p"
-	.string "Would you like to challenge\n"
+	.string "מאמן בשם {STR_VAR_1}\n"
+	.string "מתארח בביתי.\p"
+	.string "האם ברצונך לאתגר את\n"
 	.string "{STR_VAR_1}?$"
 
 RS_MysteryEventsHouse_Text_YouWontBattle:
-	.string "You won't battle? I'm disappointed\n"
-	.string "that I can't see you battle…$"
+	.string "לא תילח{SWAP_MEM}{ADD_YUD}? חבל לי מאוד\n"
+	.string "שלא אזכה לראות אותך בקרב…$"
 
 RS_MysteryEventsHouse_Text_KeepItToA3On3:
-	.string "Oh, good, good!\p"
-	.string "But my house isn't all that sturdy.\p"
-	.string "Could I ask you to keep it down to\n"
-	.string "a 3-on-3 match?$"
+	.string "אה, טוב, טוב!\p"
+	.string "אבל הבית שלי לא כל כך יציב.\p"
+	.string "אפשר לבקש שתסתפקו\n"
+	.string "בקרב של 3 מול 3?$"
 
 RS_MysteryEventsHouse_Text_SaveYourProgress:
-	.string "Before you two battle, you should\n"
-	.string "save your progress.$"
+	.string "לפני שתילחמו, כדאי לך\n"
+	.string "לשמור את המשחק.$"
 
 RS_MysteryEventsHouse_Text_HopeToSeeAGoodMatch:
-	.string "I hope to see a good match!$"
+	.string "אני מקווה לראות קרב טוב!$"
 
 RS_MysteryEventsHouse_Text_BattleTie:
-	.string "So, it became a standoff.\p"
-	.string "It was a brilliant match in which\n"
-	.string "neither side conceded a step!$"
+	.string "אז זה נגמר בתיקו.\p"
+	.string "זה היה קרב מבריק שבו\n"
+	.string "אף צד לא ויתר על צעד!$"
 
 RS_MysteryEventsHouse_Text_BattleWon:
-	.string "That was superlative!\p"
-	.string "Why, it was like seeing myself in\n"
-	.string "my youth again!$"
+	.string "זה היה מעולה!\p"
+	.string "כאילו ראיתי את עצמי\n"
+	.string "בצעירותי שוב!$"
 
 RS_MysteryEventsHouse_Text_BattleLost:
-	.string "Ah, too bad for you!\p"
-	.string "But it was a good match.\n"
-	.string "I hope you can win next time.$"
+	.string "אה, חבל!\p"
+	.string "אבל זה היה קרב טוב.\n"
+	.string "אני מקווה שתנצח{ADD_YUD} בפעם הבאה.$"
