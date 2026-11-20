@@ -507,102 +507,102 @@ const u16 gSlateportBattleTentTrainerMons_Tamia[] =
     -1
 };
 
-static const u8 sText_JolieBefore[] = _("What will I be tomorrow?");
-static const u8 sText_JolieWin[] = _("I am feeling like it's friday!");
-static const u8 sText_JolieLose[] = _("I am feeling like it's monday…");
-static const u8 sText_MalachiBefore[] = _("Bad news! It's a sand tomb");
-static const u8 sText_MalachiWin[] = _("Yeehaw excl -1 -1 I've done it");
-static const u8 sText_MalachiLose[] = _("I've lost in this sand tomb…");
-static const u8 sText_KelsieBefore[] = _("Go!! My bath Pokémon!!");
-static const u8 sText_KelsieWin[] = _("Yahoo!! My bath Pokémon!!");
-static const u8 sText_KelsieLose[] = _("Gwah!! My bath Pokémon!!");
-static const u8 sText_DavonBefore[] = _("Yeah yeah!! -1 great whirlpool isn't it ques");
-static const u8 sText_DavonWin[] = _("That was like a whirlpool yeah yeah!!");
-static const u8 sText_DavonLose[] = _("Don't get beat up in that whirlpool");
-static const u8 sText_GlendaBefore[] = _("Conversation can wait until I win");
-static const u8 sText_GlendaWin[] = _("Fabulous! I am going to rock");
-static const u8 sText_GlendaLose[] = _("No! -1 I wasn't serious");
-static const u8 sText_HelenaBefore[] = _("Does my beauty intimidate you?");
-static const u8 sText_HelenaWin[] = _("I am so sorry but you're boring");
-static const u8 sText_HelenaLose[] = _("I do so enjoy this!");
-static const u8 sText_RodolfoBefore[] = _("Go get a Whiscash for me");
-static const u8 sText_RodolfoWin[] = _("Aww you don't have a Whiscash");
-static const u8 sText_RodolfoLose[] = _("Please I need a Whiscash badly");
-static const u8 sText_DavionBefore[] = _("Graaah graaah!! Graaah graaah!!");
-static const u8 sText_DavionWin[] = _("Roar! -1 roar!!");
-static const u8 sText_DavionLose[] = _("Urgh waaah!! -1 -1");
-static const u8 sText_KendallBefore[] = _("A little petal dance to please you!");
-static const u8 sText_KendallWin[] = _("I do this only for work");
-static const u8 sText_KendallLose[] = _("How could you pound me?");
-static const u8 sText_ColtenBefore[] = _("I want to go run around");
-static const u8 sText_ColtenWin[] = _("Yay! Want to run?");
-static const u8 sText_ColtenLose[] = _("A swift swim would be good too");
-static const u8 sText_IrvinBefore[] = _("Have a look at my confuse ray");
-static const u8 sText_IrvinWin[] = _("Yahoo my confuse ray is the best");
-static const u8 sText_IrvinLose[] = _("Gwah!! -1 I am sorry!");
-static const u8 sText_ShaunBefore[] = _("Listen… You aren't very good");
-static const u8 sText_ShaunWin[] = _("You see? I was right");
-static const u8 sText_ShaunLose[] = _("Yes yes… You're quite something");
+static const u8 sText_JolieBefore[] = _("מה אהיה מחר?");
+static const u8 sText_JolieWin[] = _("מרגיש לי כמו יום שישי!");
+static const u8 sText_JolieLose[] = _("מרגיש לי כמו יום שני…");
+static const u8 sText_MalachiBefore[] = _("חדשות רעות! זה קבר חול.");
+static const u8 sText_MalachiWin[] = _("יאהו! הצלחתי!");
+static const u8 sText_MalachiLose[] = _("הפסדתי בקבר החול הזה…");
+static const u8 sText_KelsieBefore[] = _("קדימה!! פוקימון האמבטיה שלי!!");
+static const u8 sText_KelsieWin[] = _("יש!! פוקימון האמבטיה שלי!!");
+static const u8 sText_KelsieLose[] = _("אוי!! פוקימון האמבטיה שלי!!");
+static const u8 sText_DavonBefore[] = _("כן כן!! מערבולת אדירה, נכון?");
+static const u8 sText_DavonWin[] = _("זה היה כמו מערבולת, כן כן!!");
+static const u8 sText_DavonLose[] = _("אל תיסחף במערבולת הזאת.");
+static const u8 sText_GlendaBefore[] = _("השיחה יכולה לחכות עד שאנצח.");
+static const u8 sText_GlendaWin[] = _("נפלא! אני הולכת להרעיד!");
+static const u8 sText_GlendaLose[] = _("לא! לא הייתי רצינית.");
+static const u8 sText_HelenaBefore[] = _("היופי שלי מאיים עליך?");
+static const u8 sText_HelenaWin[] = _("סליחה, אבל אתה משעמם.");
+static const u8 sText_HelenaLose[] = _("אני ממש נהנית מזה!");
+static const u8 sText_RodolfoBefore[] = _("לך תביא לי ווישקאש.");
+static const u8 sText_RodolfoWin[] = _("אוי, אין לך ווישקאש?");
+static const u8 sText_RodolfoLose[] = _("בבקשה, אני חייב ווישקאש!");
+static const u8 sText_DavionBefore[] = _("גרררר גרררר!! גרררר גרררר!!");
+static const u8 sText_DavionWin[] = _("שאגה! שאגה!!");
+static const u8 sText_DavionLose[] = _("אוףף וואאא!!");
+static const u8 sText_KendallBefore[] = _("ריקוד עלי כותרת רק בשבילך!");
+static const u8 sText_KendallWin[] = _("אני עושה את זה רק בשביל העבודה.");
+static const u8 sText_KendallLose[] = _("איך הצלחת להכות אותי ככה?");
+static const u8 sText_ColtenBefore[] = _("בא לי לצאת לרוץ.");
+static const u8 sText_ColtenWin[] = _("יש! רוצה לרוץ?");
+static const u8 sText_ColtenLose[] = _("גם שחייה מהירה תהיה טובה.");
+static const u8 sText_IrvinBefore[] = _("תסתכל על קרן הבלבול שלי.");
+static const u8 sText_IrvinWin[] = _("יאהו, קרן הבלבול שלי הכי טובה!");
+static const u8 sText_IrvinLose[] = _("אוי!! סליחה!");
+static const u8 sText_ShaunBefore[] = _("תקשיב… אתה לא כל כך טוב.");
+static const u8 sText_ShaunWin[] = _("רואה? צדקתי.");
+static const u8 sText_ShaunLose[] = _("כן כן… אתה באמת משהו.");
 static const u8 sText_KylerBefore[] = _("………………………………………?");
-static const u8 sText_KylerWin[] = _("……………………………………… Yay");
-static const u8 sText_KylerLose[] = _("……………………………………… Wow");
-static const u8 sText_MaggieBefore[] = _("Vulpix Xatu Umbreon… Um…");
-static const u8 sText_MaggieWin[] = _("Nosepass… Um Seviper!");
-static const u8 sText_MaggieLose[] = _("Nosepass… Um Snorlax… Uh-oh");
-static const u8 sText_StephonBefore[] = _("I am going to enjoy an egg");
-static const u8 sText_StephonWin[] = _("I will enjoy this tasty victory");
-static const u8 sText_StephonLose[] = _("Awful!! -1 just awful!!");
-static const u8 sText_RebeccaBefore[] = _("That egg has a tasty shine");
-static const u8 sText_RebeccaWin[] = _("I can't! Smell that stench");
-static const u8 sText_RebeccaLose[] = _("You can't make me stop…");
-static const u8 sText_ReggieBefore[] = _("Pokémon come before money or family");
-static const u8 sText_ReggieWin[] = _("That's what is making me strong");
-static const u8 sText_ReggieLose[] = _("That's why I am so thick…");
-static const u8 sText_JanaeBefore[] = _("I just adore your tough look");
-static const u8 sText_JanaeWin[] = _("I like how you struggle");
-static const u8 sText_JanaeLose[] = _("You're a mean and awful trainer");
-static const u8 sText_CaidenBefore[] = _("My curse will break your spirit");
-static const u8 sText_CaidenWin[] = _("Curse? It's a lie…");
-static const u8 sText_CaidenLose[] = _("My curse will last forever");
-static const u8 sText_KirstenBefore[] = _("Huh ques a battle you said?");
-static const u8 sText_KirstenWin[] = _("Huh ques strong but not strong enough");
-static const u8 sText_KirstenLose[] = _("Huh ques I surrender to your strength");
-static const u8 sText_KurtisBefore[] = _("Sorry you're going to get beat up");
-static const u8 sText_KurtisWin[] = _("I said we would pound you");
-static const u8 sText_KurtisLose[] = _("How did I get beat up?");
-static const u8 sText_StefanBefore[] = _("I only want cute Pokémon");
-static const u8 sText_StefanWin[] = _("What is it to you?");
-static const u8 sText_StefanLose[] = _("You're kind of awesome…");
-static const u8 sText_AveryTentBefore[] = _("Toys! I need more toys");
-static const u8 sText_AveryTentWin[] = _("I need some easy money fast");
-static const u8 sText_AveryTentLose[] = _("I need to work for money");
-static const u8 sText_DwaneBefore[] = _("Mmm tasty… Wonder what?");
-static const u8 sText_DwaneWin[] = _("Mmm mmm… You don't know");
-static const u8 sText_DwaneLose[] = _("Mmm mmm… Oh, yeah this is it excl");
-static const u8 sText_MckennaBefore[] = _("I dislike small talk let's go");
-static const u8 sText_MckennaWin[] = _("Yup that's that -1 -1");
-static const u8 sText_MckennaLose[] = _("Kthx bye -1 -1 -1 -1");
-static const u8 sText_CamrynBefore[] = _("Mr judge you have our trust");
-static const u8 sText_CamrynWin[] = _("Yes sir excl we're no 1 in this contest");
-static const u8 sText_CamrynLose[] = _("I won't give up my idol dream");
-static const u8 sText_NatashaBefore[] = _("Come over to my place ok ques");
-static const u8 sText_NatashaWin[] = _("Come on over it will be great");
-static const u8 sText_NatashaLose[] = _("Aww won't you come over?");
-static const u8 sText_AustynBefore[] = _("I don't care how we match up");
-static const u8 sText_AustynWin[] = _("Hah back to school for you");
-static const u8 sText_AustynLose[] = _("I need to study my lessons");
-static const u8 sText_DonovanBefore[] = _("Oh I am feeling slimy all over");
-static const u8 sText_DonovanWin[] = _("You're going down the mega drain hahaha");
-static const u8 sText_DonovanLose[] = _("I am naturally slimy that's what I am");
-static const u8 sText_TamiaBefore[] = _("I am angry with my father…");
-static const u8 sText_TamiaWin[] = _("I really dislike my father!");
-static const u8 sText_TamiaLose[] = _("I just so adore my father");
+static const u8 sText_KylerWin[] = _("……………………………………… יש");
+static const u8 sText_KylerLose[] = _("……………………………………… וואו");
+static const u8 sText_MaggieBefore[] = _("וולפיקס, אקסטו, אמבריאון… אממ…");
+static const u8 sText_MaggieWin[] = _("נוזפאס… אממ, סוויפר!");
+static const u8 sText_MaggieLose[] = _("נוזפאס… אממ, סנורלקס… אוי-אוי");
+static const u8 sText_StephonBefore[] = _("אני הולך ליהנות מביצה.");
+static const u8 sText_StephonWin[] = _("אתענג על הניצחון הטעים הזה.");
+static const u8 sText_StephonLose[] = _("נורא!! פשוט נורא!!");
+static const u8 sText_RebeccaBefore[] = _("לביצה הזאת יש ברק טעים.");
+static const u8 sText_RebeccaWin[] = _("אי אפשר! תריח את הצחנה!");
+static const u8 sText_RebeccaLose[] = _("לא תוכל לעצור אותי…");
+static const u8 sText_ReggieBefore[] = _("פוקימונים לפני כסף ומשפחה.");
+static const u8 sText_ReggieWin[] = _("זה מה שעושה אותי חזק.");
+static const u8 sText_ReggieLose[] = _("בגלל זה אני כל כך עבה…");
+static const u8 sText_JanaeBefore[] = _("אני מתה על המבט הקשוח שלך.");
+static const u8 sText_JanaeWin[] = _("אני אוהבת איך שאתה נאבק.");
+static const u8 sText_JanaeLose[] = _("אתה מאמן רע ונוראי.");
+static const u8 sText_CaidenBefore[] = _("הקללה שלי תשבור את רוחך.");
+static const u8 sText_CaidenWin[] = _("קללה? זה שקר…");
+static const u8 sText_CaidenLose[] = _("הקללה שלי תימשך לנצח.");
+static const u8 sText_KirstenBefore[] = _("הא? קרב, אמרת?");
+static const u8 sText_KirstenWin[] = _("הא? חזק, אבל לא מספיק.");
+static const u8 sText_KirstenLose[] = _("הא? אני נכנעת לכוח שלך.");
+static const u8 sText_KurtisBefore[] = _("סליחה, אבל אתה הולך לחטוף.");
+static const u8 sText_KurtisWin[] = _("אמרתי שנכסח אותך.");
+static const u8 sText_KurtisLose[] = _("איך אני חטפתי?");
+static const u8 sText_StefanBefore[] = _("אני רוצה רק פוקימונים חמודים.");
+static const u8 sText_StefanWin[] = _("מה אכפת לך?");
+static const u8 sText_StefanLose[] = _("אתה די מדהים…");
+static const u8 sText_AveryTentBefore[] = _("צעצועים! אני צריך עוד צעצועים.");
+static const u8 sText_AveryTentWin[] = _("אני צריך כסף קל ומהר.");
+static const u8 sText_AveryTentLose[] = _("אני צריך לעבוד בשביל כסף.");
+static const u8 sText_DwaneBefore[] = _("ממם טעים… תנחש מה?");
+static const u8 sText_DwaneWin[] = _("ממם ממם… אתה לא יודע.");
+static const u8 sText_DwaneLose[] = _("ממם ממם… אה, כן, זה זה!");
+static const u8 sText_MckennaBefore[] = _("אני לא אוהבת חפירות, קדימה.");
+static const u8 sText_MckennaWin[] = _("כן, זהו זה.");
+static const u8 sText_MckennaLose[] = _("תודה ביי.");
+static const u8 sText_CamrynBefore[] = _("אדון שופט, אנחנו סומכים עליך.");
+static const u8 sText_CamrynWin[] = _("כן! אנחנו מספר 1 בתחרות!");
+static const u8 sText_CamrynLose[] = _("לא אוותר על חלום הכוכבת שלי.");
+static const u8 sText_NatashaBefore[] = _("בוא אליי הביתה, בסדר?");
+static const u8 sText_NatashaWin[] = _("בוא אליי, יהיה מעולה.");
+static const u8 sText_NatashaLose[] = _("אוף, לא תבוא אליי?");
+static const u8 sText_AustynBefore[] = _("לא אכפת לי מול מי אני.");
+static const u8 sText_AustynWin[] = _("הה, תחזור לבית הספר.");
+static const u8 sText_AustynLose[] = _("אני צריך לחזור על השיעורים.");
+static const u8 sText_DonovanBefore[] = _("אוי, אני מרגיש רירי לגמרי.");
+static const u8 sText_DonovanWin[] = _("אתה נשאב בניקוז הענק! חחח");
+static const u8 sText_DonovanLose[] = _("אני רירי מטבעי, זה מה שאני.");
+static const u8 sText_TamiaBefore[] = _("אני כועסת על אבא שלי…");
+static const u8 sText_TamiaWin[] = _("אני ממש לא אוהבת את אבא שלי!");
+static const u8 sText_TamiaLose[] = _("אני פשוט מעריצה את אבא שלי.");
 
 const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_TRAINERS] =
 {
     [SLATEPORT_TENT_TRAINER_JOLIE] = {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
-        .trainerName = _("JOLIE"),
+        .trainerName = _("ג'ולי"),
         .speechBefore = sText_JolieBefore,
         .speechWin = sText_JolieWin,
         .speechLose = sText_JolieLose,
@@ -610,7 +610,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_MALACHI] = {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("MALACHI"),
+        .trainerName = _("מלאכי"),
         .speechBefore = sText_MalachiBefore,
         .speechWin = sText_MalachiWin,
         .speechLose = sText_MalachiLose,
@@ -618,7 +618,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_KELSIE] = {
         .facilityClass = FACILITY_CLASS_TUBER_F,
-        .trainerName = _("KELSIE"),
+        .trainerName = _("קלסי"),
         .speechBefore = sText_KelsieBefore,
         .speechWin = sText_KelsieWin,
         .speechLose = sText_KelsieLose,
@@ -626,7 +626,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_DAVON] = {
         .facilityClass = FACILITY_CLASS_TUBER_M,
-        .trainerName = _("DAVON"),
+        .trainerName = _("דבון"),
         .speechBefore = sText_DavonBefore,
         .speechWin = sText_DavonWin,
         .speechLose = sText_DavonLose,
@@ -634,7 +634,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_GLENDA] = {
         .facilityClass = FACILITY_CLASS_LADY,
-        .trainerName = _("GLENDA"),
+        .trainerName = _("גלנדה"),
         .speechBefore = sText_GlendaBefore,
         .speechWin = sText_GlendaWin,
         .speechLose = sText_GlendaLose,
@@ -642,7 +642,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_HELENA] = {
         .facilityClass = FACILITY_CLASS_BEAUTY,
-        .trainerName = _("HELENA"),
+        .trainerName = _("הלנה"),
         .speechBefore = sText_HelenaBefore,
         .speechWin = sText_HelenaWin,
         .speechLose = sText_HelenaLose,
@@ -650,7 +650,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_RODOLFO] = {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
-        .trainerName = _("RODOLFO"),
+        .trainerName = _("רודולפו"),
         .speechBefore = sText_RodolfoBefore,
         .speechWin = sText_RodolfoWin,
         .speechLose = sText_RodolfoLose,
@@ -658,7 +658,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_DAVION] = {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
-        .trainerName = _("DAVION"),
+        .trainerName = _("דביון"),
         .speechBefore = sText_DavionBefore,
         .speechWin = sText_DavionWin,
         .speechLose = sText_DavionLose,
@@ -666,7 +666,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_KENDALL] = {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
-        .trainerName = _("KENDALL"),
+        .trainerName = _("קנדל"),
         .speechBefore = sText_KendallBefore,
         .speechWin = sText_KendallWin,
         .speechLose = sText_KendallLose,
@@ -674,7 +674,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_COLTEN] = {
         .facilityClass = FACILITY_CLASS_CAMPER,
-        .trainerName = _("COLTEN"),
+        .trainerName = _("קולטן"),
         .speechBefore = sText_ColtenBefore,
         .speechWin = sText_ColtenWin,
         .speechLose = sText_ColtenLose,
@@ -682,7 +682,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_IRVIN] = {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("IRVIN"),
+        .trainerName = _("אירווין"),
         .speechBefore = sText_IrvinBefore,
         .speechWin = sText_IrvinWin,
         .speechLose = sText_IrvinLose,
@@ -690,7 +690,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_SHAUN] = {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
-        .trainerName = _("SHAUN"),
+        .trainerName = _("שון"),
         .speechBefore = sText_ShaunBefore,
         .speechWin = sText_ShaunWin,
         .speechLose = sText_ShaunLose,
@@ -698,7 +698,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_KYLER] = {
         .facilityClass = FACILITY_CLASS_GUITARIST,
-        .trainerName = _("KYLER"),
+        .trainerName = _("קיילר"),
         .speechBefore = sText_KylerBefore,
         .speechWin = sText_KylerWin,
         .speechLose = sText_KylerLose,
@@ -706,7 +706,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_MAGGIE] = {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
-        .trainerName = _("MAGGIE"),
+        .trainerName = _("מגי"),
         .speechBefore = sText_MaggieBefore,
         .speechWin = sText_MaggieWin,
         .speechLose = sText_MaggieLose,
@@ -714,7 +714,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_STEPHON] = {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-        .trainerName = _("STEPHON"),
+        .trainerName = _("סטפון"),
         .speechBefore = sText_StephonBefore,
         .speechWin = sText_StephonWin,
         .speechLose = sText_StephonLose,
@@ -722,7 +722,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_REBECCA] = {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-        .trainerName = _("REBECCA"),
+        .trainerName = _("רבקה"),
         .speechBefore = sText_RebeccaBefore,
         .speechWin = sText_RebeccaWin,
         .speechLose = sText_RebeccaLose,
@@ -730,7 +730,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_REGGIE] = {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
-        .trainerName = _("REGGIE"),
+        .trainerName = _("רג'י"),
         .speechBefore = sText_ReggieBefore,
         .speechWin = sText_ReggieWin,
         .speechLose = sText_ReggieLose,
@@ -738,7 +738,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_JANAE] = {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
-        .trainerName = _("JANAE"),
+        .trainerName = _("ג'נאי"),
         .speechBefore = sText_JanaeBefore,
         .speechWin = sText_JanaeWin,
         .speechLose = sText_JanaeLose,
@@ -746,7 +746,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_CAIDEN] = {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
-        .trainerName = _("CAIDEN"),
+        .trainerName = _("קיידן"),
         .speechBefore = sText_CaidenBefore,
         .speechWin = sText_CaidenWin,
         .speechLose = sText_CaidenLose,
@@ -754,7 +754,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_KIRSTEN] = {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
-        .trainerName = _("KIRSTEN"),
+        .trainerName = _("קירסטן"),
         .speechBefore = sText_KirstenBefore,
         .speechWin = sText_KirstenWin,
         .speechLose = sText_KirstenLose,
@@ -762,7 +762,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_KURTIS] = {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
-        .trainerName = _("KURTIS"),
+        .trainerName = _("קרטיס"),
         .speechBefore = sText_KurtisBefore,
         .speechWin = sText_KurtisWin,
         .speechLose = sText_KurtisLose,
@@ -770,7 +770,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_STEFAN] = {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
-        .trainerName = _("STEFAN"),
+        .trainerName = _("סטפן"),
         .speechBefore = sText_StefanBefore,
         .speechWin = sText_StefanWin,
         .speechLose = sText_StefanLose,
@@ -778,7 +778,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_AVERY] = {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-        .trainerName = _("AVERY"),
+        .trainerName = _("אייברי"),
         .speechBefore = sText_AveryTentBefore,
         .speechWin = sText_AveryTentWin,
         .speechLose = sText_AveryTentLose,
@@ -786,7 +786,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_DWANE] = {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
-        .trainerName = _("DWANE"),
+        .trainerName = _("דוויין"),
         .speechBefore = sText_DwaneBefore,
         .speechWin = sText_DwaneWin,
         .speechLose = sText_DwaneLose,
@@ -794,7 +794,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_MCKENNA] = {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
-        .trainerName = _("MCKENNA"),
+        .trainerName = _("מקנה"),
         .speechBefore = sText_MckennaBefore,
         .speechWin = sText_MckennaWin,
         .speechLose = sText_MckennaLose,
@@ -802,7 +802,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_CAMRYN] = {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
-        .trainerName = _("CAMRYN"),
+        .trainerName = _("קמרין"),
         .speechBefore = sText_CamrynBefore,
         .speechWin = sText_CamrynWin,
         .speechLose = sText_CamrynLose,
@@ -810,7 +810,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_NATASHA] = {
         .facilityClass = FACILITY_CLASS_PICNICKER,
-        .trainerName = _("NATASHA"),
+        .trainerName = _("נטשה"),
         .speechBefore = sText_NatashaBefore,
         .speechWin = sText_NatashaWin,
         .speechLose = sText_NatashaLose,
@@ -818,7 +818,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_AUSTYN] = {
         .facilityClass = FACILITY_CLASS_SAILOR,
-        .trainerName = _("AUSTYN"),
+        .trainerName = _("אוסטין"),
         .speechBefore = sText_AustynBefore,
         .speechWin = sText_AustynWin,
         .speechLose = sText_AustynLose,
@@ -826,7 +826,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_DONOVAN] = {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("DONOVAN"),
+        .trainerName = _("דונובן"),
         .speechBefore = sText_DonovanBefore,
         .speechWin = sText_DonovanWin,
         .speechLose = sText_DonovanLose,
@@ -834,7 +834,7 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [SLATEPORT_TENT_TRAINER_TAMIA] = {
         .facilityClass = FACILITY_CLASS_LASS,
-        .trainerName = _("TAMIA"),
+        .trainerName = _("טמיה"),
         .speechBefore = sText_TamiaBefore,
         .speechWin = sText_TamiaWin,
         .speechLose = sText_TamiaLose,
@@ -1746,7 +1746,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
 {
     [VERDANTURF_TENT_TRAINER_BRENNA] = {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
-        .trainerName = _("BRENNA"),
+        .trainerName = _("ברנה"),
         .speechBefore = sText_BrennaBefore,
         .speechWin = sText_BrennaWin,
         .speechLose = sText_BrennaLose,
@@ -1754,7 +1754,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_DILAN] = {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("DILAN"),
+        .trainerName = _("דילן"),
         .speechBefore = sText_DilanBefore,
         .speechWin = sText_DilanWin,
         .speechLose = sText_DilanLose,
@@ -1762,7 +1762,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_ELIANA] = {
         .facilityClass = FACILITY_CLASS_TUBER_F,
-        .trainerName = _("ELIANA"),
+        .trainerName = _("אליאנה"),
         .speechBefore = sText_ElianaBefore,
         .speechWin = sText_ElianaWin,
         .speechLose = sText_ElianaLose,
@@ -1770,7 +1770,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_MARKUS] = {
         .facilityClass = FACILITY_CLASS_TUBER_M,
-        .trainerName = _("MARKUS"),
+        .trainerName = _("מרקוס"),
         .speechBefore = sText_MarkusBefore,
         .speechWin = sText_MarkusWin,
         .speechLose = sText_MarkusLose,
@@ -1778,7 +1778,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_CAITLYN] = {
         .facilityClass = FACILITY_CLASS_LADY,
-        .trainerName = _("CAITLYN"),
+        .trainerName = _("קייטלין"),
         .speechBefore = sText_CaitlynBefore,
         .speechWin = sText_CaitlynWin,
         .speechLose = sText_CaitlynLose,
@@ -1786,7 +1786,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_DESIREE] = {
         .facilityClass = FACILITY_CLASS_BEAUTY,
-        .trainerName = _("DESIREE"),
+        .trainerName = _("דזירה"),
         .speechBefore = sText_DesireeBefore,
         .speechWin = sText_DesireeWin,
         .speechLose = sText_DesireeLose,
@@ -1794,7 +1794,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_RONALD] = {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
-        .trainerName = _("RONALD"),
+        .trainerName = _("רונלד"),
         .speechBefore = sText_RonaldBefore,
         .speechWin = sText_RonaldWin,
         .speechLose = sText_RonaldLose,
@@ -1802,7 +1802,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_ASHTEN] = {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
-        .trainerName = _("ASHTEN"),
+        .trainerName = _("אשטון"),
         .speechBefore = sText_AshtenBefore,
         .speechWin = sText_AshtenWin,
         .speechLose = sText_AshtenLose,
@@ -1810,7 +1810,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_GERARD] = {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
-        .trainerName = _("GERARD"),
+        .trainerName = _("ג'רארד"),
         .speechBefore = sText_GerardBefore,
         .speechWin = sText_GerardWin,
         .speechLose = sText_GerardLose,
@@ -1818,7 +1818,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_BRADLY] = {
         .facilityClass = FACILITY_CLASS_CAMPER,
-        .trainerName = _("BRADLY"),
+        .trainerName = _("בראדלי"),
         .speechBefore = sText_BradlyBefore,
         .speechWin = sText_BradlyWin,
         .speechLose = sText_BradlyLose,
@@ -1826,7 +1826,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_DENNIS] = {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("DENNIS"),
+        .trainerName = _("דניס"),
         .speechBefore = sText_DennisBefore,
         .speechWin = sText_DennisWin,
         .speechLose = sText_DennisLose,
@@ -1834,7 +1834,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_PRESTIN] = {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
-        .trainerName = _("PRESTIN"),
+        .trainerName = _("פרסטין"),
         .speechBefore = sText_PrestinBefore,
         .speechWin = sText_PrestinWin,
         .speechLose = sText_PrestinLose,
@@ -1842,7 +1842,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_ERNESTO] = {
         .facilityClass = FACILITY_CLASS_GUITARIST,
-        .trainerName = _("ERNESTO"),
+        .trainerName = _("ארנסטו"),
         .speechBefore = sText_ErnestoBefore,
         .speechWin = sText_ErnestoWin,
         .speechLose = sText_ErnestoLose,
@@ -1850,7 +1850,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_NALA] = {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
-        .trainerName = _("NALA"),
+        .trainerName = _("נאלה"),
         .speechBefore = sText_NalaBefore,
         .speechWin = sText_NalaWin,
         .speechLose = sText_NalaLose,
@@ -1858,7 +1858,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_DARNELL] = {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-        .trainerName = _("DARNELL"),
+        .trainerName = _("דרנל"),
         .speechBefore = sText_DarnellBefore,
         .speechWin = sText_DarnellWin,
         .speechLose = sText_DarnellLose,
@@ -1866,7 +1866,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_ASHLYN] = {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-        .trainerName = _("ASHLYN"),
+        .trainerName = _("אשלין"),
         .speechBefore = sText_AshlynBefore,
         .speechWin = sText_AshlynWin,
         .speechLose = sText_AshlynLose,
@@ -1874,7 +1874,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_ADDISON] = {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
-        .trainerName = _("ADDISON"),
+        .trainerName = _("אדיסון"),
         .speechBefore = sText_AddisonBefore,
         .speechWin = sText_AddisonWin,
         .speechLose = sText_AddisonLose,
@@ -1882,7 +1882,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_JUSTINE] = {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
-        .trainerName = _("JUSTINE"),
+        .trainerName = _("ג'סטין"),
         .speechBefore = sText_JustineBefore,
         .speechWin = sText_JustineWin,
         .speechLose = sText_JustineLose,
@@ -1890,7 +1890,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_TYSON] = {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
-        .trainerName = _("TYSON"),
+        .trainerName = _("טייסון"),
         .speechBefore = sText_TysonBefore,
         .speechWin = sText_TysonWin,
         .speechLose = sText_TysonLose,
@@ -1898,7 +1898,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_LAILA] = {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
-        .trainerName = _("LAILA"),
+        .trainerName = _("לילה"),
         .speechBefore = sText_LailaBefore,
         .speechWin = sText_LailaWin,
         .speechLose = sText_LailaLose,
@@ -1906,7 +1906,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_WAREN] = {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
-        .trainerName = _("WAREN"),
+        .trainerName = _("וורן"),
         .speechBefore = sText_WarenBefore,
         .speechWin = sText_WarenWin,
         .speechLose = sText_WarenLose,
@@ -1914,7 +1914,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_TOBIAS] = {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
-        .trainerName = _("TOBIAS"),
+        .trainerName = _("טוביאס"),
         .speechBefore = sText_TobiasBefore,
         .speechWin = sText_TobiasWin,
         .speechLose = sText_TobiasLose,
@@ -1922,7 +1922,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_JOSIAH] = {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-        .trainerName = _("JOSIAH"),
+        .trainerName = _("ג'וסיה"),
         .speechBefore = sText_JosiahBefore,
         .speechWin = sText_JosiahWin,
         .speechLose = sText_JosiahLose,
@@ -1930,7 +1930,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_DION] = {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
-        .trainerName = _("DION"),
+        .trainerName = _("דיון"),
         .speechBefore = sText_DionBefore,
         .speechWin = sText_DionWin,
         .speechLose = sText_DionLose,
@@ -1938,7 +1938,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_KENZIE] = {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
-        .trainerName = _("KENZIE"),
+        .trainerName = _("קנזי"),
         .speechBefore = sText_KenzieBefore,
         .speechWin = sText_KenzieWin,
         .speechLose = sText_KenzieLose,
@@ -1946,7 +1946,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_LILLIAN] = {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
-        .trainerName = _("LILLIAN"),
+        .trainerName = _("ליליאן"),
         .speechBefore = sText_LillianBefore,
         .speechWin = sText_LillianWin,
         .speechLose = sText_LillianLose,
@@ -1954,7 +1954,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_LESLEY] = {
         .facilityClass = FACILITY_CLASS_PICNICKER,
-        .trainerName = _("LESLEY"),
+        .trainerName = _("לסלי"),
         .speechBefore = sText_LesleyBefore,
         .speechWin = sText_LesleyWin,
         .speechLose = sText_LesleyLose,
@@ -1962,7 +1962,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_MARQUIS] = {
         .facilityClass = FACILITY_CLASS_SAILOR,
-        .trainerName = _("MARQUIS"),
+        .trainerName = _("מרקיז"),
         .speechBefore = sText_MarquisBefore,
         .speechWin = sText_MarquisWin,
         .speechLose = sText_MarquisLose,
@@ -1970,7 +1970,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_FREDDY] = {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("FREDDY"),
+        .trainerName = _("פרדי"),
         .speechBefore = sText_FreddyBefore,
         .speechWin = sText_FreddyWin,
         .speechLose = sText_FreddyLose,
@@ -1978,7 +1978,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     },
     [VERDANTURF_TENT_TRAINER_CECILIA] = {
         .facilityClass = FACILITY_CLASS_LASS,
-        .trainerName = _("CECILIA"),
+        .trainerName = _("ססיליה"),
         .speechBefore = sText_CeciliaBefore,
         .speechWin = sText_CeciliaWin,
         .speechLose = sText_CeciliaLose,
@@ -2623,102 +2623,102 @@ const u16 gFallarborBattleTentTrainerMons_Kianna[] =
     -1
 };
 
-static const u8 sText_AmberBefore[] = _("I have to diet every day");
-static const u8 sText_AmberWin[] = _("A nightmare of sweets shocked me");
-static const u8 sText_AmberLose[] = _("If you give up you will lose");
-static const u8 sText_JavierBefore[] = _("I never ever have enough money");
-static const u8 sText_JavierWin[] = _("I won but I need money");
-static const u8 sText_JavierLose[] = _("I need money for a bike");
-static const u8 sText_NatalieBefore[] = _("The way I battle is weird");
-static const u8 sText_NatalieWin[] = _("You're much too weak for this place");
-static const u8 sText_NatalieLose[] = _("Give me an easy match next time");
-static const u8 sText_TreveBefore[] = _("Look at my metronome and sleep");
-static const u8 sText_TreveWin[] = _("Yeah! Hypnosis is totally great");
-static const u8 sText_TreveLose[] = _("My hypnosis didn't work…");
-static const u8 sText_AriannaBefore[] = _("If I win give me Pokémon for my collection");
-static const u8 sText_AriannaWin[] = _("Your Pokémon are too weak to collect");
-static const u8 sText_AriannaLose[] = _("Your Pokémon are something else…");
-static const u8 sText_JadynBefore[] = _("My name is really a mystery");
-static const u8 sText_JadynWin[] = _("My name goes on a mystery");
-static const u8 sText_JadynLose[] = _("My name? I am your mother");
-static const u8 sText_GerardoBefore[] = _("I am the best hero ever!");
-static const u8 sText_GerardoWin[] = _("See what I mean?");
-static const u8 sText_GerardoLose[] = _("Huh ques you were right?");
-static const u8 sText_JonnBefore[] = _("The world superpower stomp contest!!");
-static const u8 sText_JonnWin[] = _("I am no 1!! Hear me roar");
-static const u8 sText_JonnLose[] = _("I give up! You're no 1!");
-static const u8 sText_EstebanBefore[] = _("You're a good trainer? Unbelievable");
-static const u8 sText_EstebanWin[] = _("You're some pushover of a trainer");
-static const u8 sText_EstebanLose[] = _("You're much too much for me");
-static const u8 sText_JamesonBefore[] = _("My Pokémon are silky smooth!");
-static const u8 sText_JamesonWin[] = _("My silky smooth Pokémon rule!");
-static const u8 sText_JamesonLose[] = _("My Pokémon struggle in your sticky hold");
-static const u8 sText_AlanzoBefore[] = _("Foresight is a power I have");
-static const u8 sText_AlanzoWin[] = _("You're oblivious about foresight!");
-static const u8 sText_AlanzoLose[] = _("My foresight is always right!");
-static const u8 sText_HowardBefore[] = _("Your Pokémon can't beat me");
-static const u8 sText_HowardWin[] = _("You couldn't win could you?");
-static const u8 sText_HowardLose[] = _("You would go all out…");
-static const u8 sText_ConradBefore[] = _("Your Pokémon are pretty wild!");
-static const u8 sText_ConradWin[] = _("Whoah!! -1 let's dance!");
-static const u8 sText_ConradLose[] = _("My music will play on…");
-static const u8 sText_MakennaBefore[] = _("Show me that you mean it");
-static const u8 sText_MakennaWin[] = _("That's why I study every day");
-static const u8 sText_MakennaLose[] = _("Aww I study every day too");
-static const u8 sText_BrayanBefore[] = _("Can you see my power?");
-static const u8 sText_BrayanWin[] = _("How boring… This is good bye");
-static const u8 sText_BrayanLose[] = _("Am I the weak trainer?");
-static const u8 sText_MarianaBefore[] = _("A lie can be kind…");
-static const u8 sText_MarianaWin[] = _("This is like the sunday comics");
-static const u8 sText_MarianaLose[] = _("This is like from a movie");
-static const u8 sText_SheldonBefore[] = _("A Pokémon teacher gets no rest");
-static const u8 sText_SheldonWin[] = _("My smartness gets me easy wins");
-static const u8 sText_SheldonLose[] = _("I have to go work bye bye");
-static const u8 sText_GiannaBefore[] = _("Ahaha yes! Lovey dovey Pokémon world");
-static const u8 sText_GiannaWin[] = _("My shine is making things better");
-static const u8 sText_GiannaLose[] = _("Do you dislike Pokémon?");
-static const u8 sText_YahirBefore[] = _("You……………………… Come on!");
-static const u8 sText_YahirWin[] = _("You need to train a lot more");
-static const u8 sText_YahirLose[] = _("Not enough… Just not enough");
-static const u8 sText_BritneyBefore[] = _("It seems that you're quite good");
-static const u8 sText_BritneyWin[] = _("You're a lukewarm talent at best");
-static const u8 sText_BritneyLose[] = _("You're a cool hero at this");
-static const u8 sText_HecterBefore[] = _("My hidden power is exciting me!");
-static const u8 sText_HecterWin[] = _("Yeehaw excl let's have a hidden power party");
-static const u8 sText_HecterLose[] = _("Waaah! Don't you mimic me");
-static const u8 sText_TannorBefore[] = _("You have got to be joking");
-static const u8 sText_TannorWin[] = _("You're the best at being funny");
-static const u8 sText_TannorLose[] = _("You weren't being funny at all");
-static const u8 sText_BenjiBefore[] = _("You don't think very fast huh ques");
-static const u8 sText_BenjiWin[] = _("Sorry! I didn't mean you");
-static const u8 sText_BenjiLose[] = _("You left me feeling sad…");
-static const u8 sText_RoryBefore[] = _("Don't cause an uproar you!");
-static const u8 sText_RoryWin[] = _("I don't need an uproar!");
-static const u8 sText_RoryLose[] = _("I am going to cause an uproar");
-static const u8 sText_EleanorBefore[] = _("I really want to party");
-static const u8 sText_EleanorWin[] = _("A trendy party would be refreshing");
-static const u8 sText_EleanorLose[] = _("Don't you like to party?");
-static const u8 sText_EvelynBefore[] = _("My pc is my secret base!");
-static const u8 sText_EvelynWin[] = _("It's all secret on my pc");
-static const u8 sText_EvelynLose[] = _("No! -1 I reject this");
-static const u8 sText_ArielleBefore[] = _("It's not very pretty but I try");
-static const u8 sText_ArielleWin[] = _("We're not very pretty but we're great");
-static const u8 sText_ArielleLose[] = _("That was pretty mean of you!");
-static const u8 sText_ConnarBefore[] = _("I am not strong enough for this");
-static const u8 sText_ConnarWin[] = _("Do you think you're ok ques");
-static const u8 sText_ConnarLose[] = _("Good bye and thank you -1 -1");
-static const u8 sText_MauriceBefore[] = _("There is no radio or television");
-static const u8 sText_MauriceWin[] = _("But there is a lot of Pokémon");
-static const u8 sText_MauriceLose[] = _("I can't enjoy myself without money");
-static const u8 sText_KiannaBefore[] = _("I want to go dept store shopping");
-static const u8 sText_KiannaWin[] = _("I dislike shopping alone -1");
-static const u8 sText_KiannaLose[] = _("Want to go shopping together?");
+static const u8 sText_AmberBefore[] = _("אני חייבת לעשות דיאטה כל יום.");
+static const u8 sText_AmberWin[] = _("סיוט של ממתקים הלם בי.");
+static const u8 sText_AmberLose[] = _("אם תוותר, תפסיד.");
+static const u8 sText_JavierBefore[] = _("אף פעם אין לי מספיק כסף.");
+static const u8 sText_JavierWin[] = _("ניצחתי, אבל אני צריך כסף.");
+static const u8 sText_JavierLose[] = _("אני צריך כסף לאופניים.");
+static const u8 sText_NatalieBefore[] = _("הדרך שבה אני נלחמת מוזרה.");
+static const u8 sText_NatalieWin[] = _("אתה חלש מדי למקום הזה.");
+static const u8 sText_NatalieLose[] = _("תן לי קרב קל בפעם הבאה.");
+static const u8 sText_TreveBefore[] = _("תסתכל על המטרונום שלי ותירדם.");
+static const u8 sText_TreveWin[] = _("כן! היפנוזה זה פשוט מעולה.");
+static const u8 sText_TreveLose[] = _("ההיפנוזה שלי לא עבדה…");
+static const u8 sText_AriannaBefore[] = _("אם אנצח, תן לי פוקימון לאוסף.");
+static const u8 sText_AriannaWin[] = _("הפוקימונים שלך חלשים מדי לאוסף.");
+static const u8 sText_AriannaLose[] = _("הפוקימונים שלך משהו אחר…");
+static const u8 sText_JadynBefore[] = _("השם שלי באמת תעלומה.");
+static const u8 sText_JadynWin[] = _("השם שלי נשאר תעלומה.");
+static const u8 sText_JadynLose[] = _("השם שלי? אני אמא שלך.");
+static const u8 sText_GerardoBefore[] = _("אני הגיבור הכי טוב אי פעם!");
+static const u8 sText_GerardoWin[] = _("רואה למה אני מתכוון?");
+static const u8 sText_GerardoLose[] = _("הא? צדקת?");
+static const u8 sText_JonnBefore[] = _("תחרות הרקיעה של מעצמות העולם!!");
+static const u8 sText_JonnWin[] = _("אני מספר 1!! שמעו אותי שואג!");
+static const u8 sText_JonnLose[] = _("אני מוותר! אתה מספר 1!");
+static const u8 sText_EstebanBefore[] = _("אתה מאמן טוב? לא ייאמן.");
+static const u8 sText_EstebanWin[] = _("אתה מאמן שקל לנצח.");
+static const u8 sText_EstebanLose[] = _("אתה יותר מדי בשבילי.");
+static const u8 sText_JamesonBefore[] = _("הפוקימונים שלי חלקים כמשי!");
+static const u8 sText_JamesonWin[] = _("הפוקימונים המשיים שלי שולטים!");
+static const u8 sText_JamesonLose[] = _("הפוקימונים שלי נתקעו באחיזה שלך.");
+static const u8 sText_AlanzoBefore[] = _("ראיית הנולד היא כוח שיש לי.");
+static const u8 sText_AlanzoWin[] = _("אין לך מושג בראיית הנולד!");
+static const u8 sText_AlanzoLose[] = _("ראיית הנולד שלי תמיד צודקת!");
+static const u8 sText_HowardBefore[] = _("הפוקימונים שלך לא ינצחו אותי.");
+static const u8 sText_HowardWin[] = _("לא הצלחת לנצח, נכון?");
+static const u8 sText_HowardLose[] = _("הלכת על כל הקופה…");
+static const u8 sText_ConradBefore[] = _("הפוקימונים שלך די פראיים!");
+static const u8 sText_ConradWin[] = _("וואו!! בוא נרקוד!");
+static const u8 sText_ConradLose[] = _("המוזיקה שלי תמשיך להתנגן…");
+static const u8 sText_MakennaBefore[] = _("תראה לי שאתה רציני.");
+static const u8 sText_MakennaWin[] = _("בגלל זה אני לומדת כל יום.");
+static const u8 sText_MakennaLose[] = _("אוף, גם אני לומדת כל יום.");
+static const u8 sText_BrayanBefore[] = _("אתה רואה את הכוח שלי?");
+static const u8 sText_BrayanWin[] = _("כמה משעמם… להתראות.");
+static const u8 sText_BrayanLose[] = _("אני המאמן החלש?");
+static const u8 sText_MarianaBefore[] = _("שקר יכול להיות טוב לב…");
+static const u8 sText_MarianaWin[] = _("זה כמו קומיקס של סוף השבוע.");
+static const u8 sText_MarianaLose[] = _("זה כמו מתוך סרט.");
+static const u8 sText_SheldonBefore[] = _("מורה לפוקימונים לא נח לרגע.");
+static const u8 sText_SheldonWin[] = _("החוכמה שלי מביאה ניצחונות קלים.");
+static const u8 sText_SheldonLose[] = _("אני חייב ללכת לעבוד, ביי ביי.");
+static const u8 sText_GiannaBefore[] = _("חחח כן! עולם פוקימון מתוק ואוהב!");
+static const u8 sText_GiannaWin[] = _("הברק שלי משפר הכל.");
+static const u8 sText_GiannaLose[] = _("אתה לא אוהב פוקימונים?");
+static const u8 sText_YahirBefore[] = _("אתה……………………… קדימה!");
+static const u8 sText_YahirWin[] = _("אתה צריך להתאמן הרבה יותר.");
+static const u8 sText_YahirLose[] = _("לא מספיק… פשוט לא מספיק.");
+static const u8 sText_BritneyBefore[] = _("נראה שאתה די טוב.");
+static const u8 sText_BritneyWin[] = _("כישרון פושר במקרה הטוב.");
+static const u8 sText_BritneyLose[] = _("אתה גיבור מגניב בזה.");
+static const u8 sText_HecterBefore[] = _("הכוח הנסתר שלי מרגש אותי!");
+static const u8 sText_HecterWin[] = _("יאהו! מסיבת כוח נסתר!");
+static const u8 sText_HecterLose[] = _("וואאא! אל תחקה אותי!");
+static const u8 sText_TannorBefore[] = _("אתה בטח צוחק עליי.");
+static const u8 sText_TannorWin[] = _("אתה הכי מצחיק שיש.");
+static const u8 sText_TannorLose[] = _("לא היית מצחיק בכלל.");
+static const u8 sText_BenjiBefore[] = _("אתה לא חושב מהר, הא?");
+static const u8 sText_BenjiWin[] = _("סליחה! לא התכוונתי אליך.");
+static const u8 sText_BenjiLose[] = _("השארת אותי עצוב…");
+static const u8 sText_RoryBefore[] = _("אל תעשה מהומה, אתה!");
+static const u8 sText_RoryWin[] = _("אני לא צריך מהומה!");
+static const u8 sText_RoryLose[] = _("אני הולך לעשות מהומה.");
+static const u8 sText_EleanorBefore[] = _("אני ממש רוצה לחגוג.");
+static const u8 sText_EleanorWin[] = _("מסיבה טרנדית תהיה מרעננת.");
+static const u8 sText_EleanorLose[] = _("אתה לא אוהב מסיבות?");
+static const u8 sText_EvelynBefore[] = _("המחשב שלי הוא הבסיס הסודי שלי!");
+static const u8 sText_EvelynWin[] = _("הכל סודי במחשב שלי.");
+static const u8 sText_EvelynLose[] = _("לא! אני דוחה את זה.");
+static const u8 sText_ArielleBefore[] = _("זה לא ממש יפה, אבל אני מנסה.");
+static const u8 sText_ArielleWin[] = _("אנחנו לא יפים, אבל אנחנו מעולים.");
+static const u8 sText_ArielleLose[] = _("זה היה די מרושע מצדך!");
+static const u8 sText_ConnarBefore[] = _("אני לא מספיק חזק בשביל זה.");
+static const u8 sText_ConnarWin[] = _("אתה חושב שאתה בסדר?");
+static const u8 sText_ConnarLose[] = _("להתראות ותודה.");
+static const u8 sText_MauriceBefore[] = _("אין פה רדיו ואין טלוויזיה.");
+static const u8 sText_MauriceWin[] = _("אבל יש המון פוקימונים.");
+static const u8 sText_MauriceLose[] = _("אני לא נהנה בלי כסף.");
+static const u8 sText_KiannaBefore[] = _("בא לי ללכת לכלבו לעשות קניות.");
+static const u8 sText_KiannaWin[] = _("אני לא אוהבת לקנות לבד.");
+static const u8 sText_KiannaLose[] = _("רוצה ללכת לקניות ביחד?");
 
 const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_TRAINERS] =
 {
     [FALLARBOR_TENT_TRAINER_AMBER] = {
         .facilityClass = FACILITY_CLASS_AROMA_LADY,
-        .trainerName = _("AMBER"),
+        .trainerName = _("אמבר"),
         .speechBefore = sText_AmberBefore,
         .speechWin = sText_AmberWin,
         .speechLose = sText_AmberLose,
@@ -2726,7 +2726,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_JAVIER] = {
         .facilityClass = FACILITY_CLASS_RUIN_MANIAC,
-        .trainerName = _("JAVIER"),
+        .trainerName = _("חאבייר"),
         .speechBefore = sText_JavierBefore,
         .speechWin = sText_JavierWin,
         .speechLose = sText_JavierLose,
@@ -2734,7 +2734,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_NATALIA] = {
         .facilityClass = FACILITY_CLASS_TUBER_F,
-        .trainerName = _("NATALIE"),
+        .trainerName = _("נטלי"),
         .speechBefore = sText_NatalieBefore,
         .speechWin = sText_NatalieWin,
         .speechLose = sText_NatalieLose,
@@ -2742,7 +2742,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_TREVE] = {
         .facilityClass = FACILITY_CLASS_TUBER_M,
-        .trainerName = _("TREVE"),
+        .trainerName = _("טרב"),
         .speechBefore = sText_TreveBefore,
         .speechWin = sText_TreveWin,
         .speechLose = sText_TreveLose,
@@ -2750,7 +2750,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_ARIANNA] = {
         .facilityClass = FACILITY_CLASS_LADY,
-        .trainerName = _("ARIANNA"),
+        .trainerName = _("אריאנה"),
         .speechBefore = sText_AriannaBefore,
         .speechWin = sText_AriannaWin,
         .speechLose = sText_AriannaLose,
@@ -2758,7 +2758,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_JADYN] = {
         .facilityClass = FACILITY_CLASS_BEAUTY,
-        .trainerName = _("JADYN"),
+        .trainerName = _("ג'יידן"),
         .speechBefore = sText_JadynBefore,
         .speechWin = sText_JadynWin,
         .speechLose = sText_JadynLose,
@@ -2766,7 +2766,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_GERARDO] = {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
-        .trainerName = _("GERARDO"),
+        .trainerName = _("חרארדו"),
         .speechBefore = sText_GerardoBefore,
         .speechWin = sText_GerardoWin,
         .speechLose = sText_GerardoLose,
@@ -2774,7 +2774,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_JONN] = {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
-        .trainerName = _("JONN"),
+        .trainerName = _("ג'ון"),
         .speechBefore = sText_JonnBefore,
         .speechWin = sText_JonnWin,
         .speechLose = sText_JonnLose,
@@ -2782,7 +2782,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_ESTEBAN] = {
         .facilityClass = FACILITY_CLASS_SWIMMER_M,
-        .trainerName = _("ESTEBAN"),
+        .trainerName = _("אסטבן"),
         .speechBefore = sText_EstebanBefore,
         .speechWin = sText_EstebanWin,
         .speechLose = sText_EstebanLose,
@@ -2790,7 +2790,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_JAMESON] = {
         .facilityClass = FACILITY_CLASS_CAMPER,
-        .trainerName = _("JAMESON"),
+        .trainerName = _("ג'יימסן"),
         .speechBefore = sText_JamesonBefore,
         .speechWin = sText_JamesonWin,
         .speechLose = sText_JamesonLose,
@@ -2798,7 +2798,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_ALANZO] = {
         .facilityClass = FACILITY_CLASS_BUG_MANIAC,
-        .trainerName = _("ALANZO"),
+        .trainerName = _("אלנזו"),
         .speechBefore = sText_AlanzoBefore,
         .speechWin = sText_AlanzoWin,
         .speechLose = sText_AlanzoLose,
@@ -2806,7 +2806,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_HOWARD] = {
         .facilityClass = FACILITY_CLASS_GENTLEMAN,
-        .trainerName = _("HOWARD"),
+        .trainerName = _("הווארד"),
         .speechBefore = sText_HowardBefore,
         .speechWin = sText_HowardWin,
         .speechLose = sText_HowardLose,
@@ -2814,7 +2814,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_CONRAD] = {
         .facilityClass = FACILITY_CLASS_GUITARIST,
-        .trainerName = _("CONRAD"),
+        .trainerName = _("קונרד"),
         .speechBefore = sText_ConradBefore,
         .speechWin = sText_ConradWin,
         .speechLose = sText_ConradLose,
@@ -2822,7 +2822,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_MAKENNA] = {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
-        .trainerName = _("MAKENNA"),
+        .trainerName = _("מקנה"),
         .speechBefore = sText_MakennaBefore,
         .speechWin = sText_MakennaWin,
         .speechLose = sText_MakennaLose,
@@ -2830,7 +2830,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_BRAYAN] = {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_M,
-        .trainerName = _("BRAYAN"),
+        .trainerName = _("בראיין"),
         .speechBefore = sText_BrayanBefore,
         .speechWin = sText_BrayanWin,
         .speechLose = sText_BrayanLose,
@@ -2838,7 +2838,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_MARIANA] = {
         .facilityClass = FACILITY_CLASS_COOLTRAINER_F,
-        .trainerName = _("MARIANA"),
+        .trainerName = _("מריאנה"),
         .speechBefore = sText_MarianaBefore,
         .speechWin = sText_MarianaWin,
         .speechLose = sText_MarianaLose,
@@ -2846,7 +2846,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_SHELDON] = {
         .facilityClass = FACILITY_CLASS_POKEFAN_M,
-        .trainerName = _("SHELDON"),
+        .trainerName = _("שלדון"),
         .speechBefore = sText_SheldonBefore,
         .speechWin = sText_SheldonWin,
         .speechLose = sText_SheldonLose,
@@ -2854,7 +2854,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_GIANNA] = {
         .facilityClass = FACILITY_CLASS_POKEFAN_F,
-        .trainerName = _("GIANNA"),
+        .trainerName = _("ג'יאנה"),
         .speechBefore = sText_GiannaBefore,
         .speechWin = sText_GiannaWin,
         .speechLose = sText_GiannaLose,
@@ -2862,7 +2862,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_YAHIR] = {
         .facilityClass = FACILITY_CLASS_EXPERT_M,
-        .trainerName = _("YAHIR"),
+        .trainerName = _("יאהיר"),
         .speechBefore = sText_YahirBefore,
         .speechWin = sText_YahirWin,
         .speechLose = sText_YahirLose,
@@ -2870,7 +2870,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_BRITNEY] = {
         .facilityClass = FACILITY_CLASS_EXPERT_F,
-        .trainerName = _("BRITNEY"),
+        .trainerName = _("בריטני"),
         .speechBefore = sText_BritneyBefore,
         .speechWin = sText_BritneyWin,
         .speechLose = sText_BritneyLose,
@@ -2878,7 +2878,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_HECTER] = {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
-        .trainerName = _("HECTER"),
+        .trainerName = _("הקטור"),
         .speechBefore = sText_HecterBefore,
         .speechWin = sText_HecterWin,
         .speechLose = sText_HecterLose,
@@ -2886,7 +2886,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_TANNOR] = {
         .facilityClass = FACILITY_CLASS_FISHERMAN,
-        .trainerName = _("TANNOR"),
+        .trainerName = _("טאנור"),
         .speechBefore = sText_TannorBefore,
         .speechWin = sText_TannorWin,
         .speechLose = sText_TannorLose,
@@ -2894,7 +2894,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_BENJI] = {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
-        .trainerName = _("BENJI"),
+        .trainerName = _("בנג'י"),
         .speechBefore = sText_BenjiBefore,
         .speechWin = sText_BenjiWin,
         .speechLose = sText_BenjiLose,
@@ -2902,7 +2902,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_RORY] = {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
-        .trainerName = _("RORY"),
+        .trainerName = _("רורי"),
         .speechBefore = sText_RoryBefore,
         .speechWin = sText_RoryWin,
         .speechLose = sText_RoryLose,
@@ -2910,7 +2910,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_ELEANOR] = {
         .facilityClass = FACILITY_CLASS_PARASOL_LADY,
-        .trainerName = _("ELEANOR"),
+        .trainerName = _("אלינור"),
         .speechBefore = sText_EleanorBefore,
         .speechWin = sText_EleanorWin,
         .speechLose = sText_EleanorLose,
@@ -2918,7 +2918,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_EVELYN] = {
         .facilityClass = FACILITY_CLASS_SWIMMER_F,
-        .trainerName = _("EVELYN"),
+        .trainerName = _("אוולין"),
         .speechBefore = sText_EvelynBefore,
         .speechWin = sText_EvelynWin,
         .speechLose = sText_EvelynLose,
@@ -2926,7 +2926,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_ARIELLE] = {
         .facilityClass = FACILITY_CLASS_PICNICKER,
-        .trainerName = _("ARIELLE"),
+        .trainerName = _("אריאל"),
         .speechBefore = sText_ArielleBefore,
         .speechWin = sText_ArielleWin,
         .speechLose = sText_ArielleLose,
@@ -2934,7 +2934,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_CONNAR] = {
         .facilityClass = FACILITY_CLASS_SAILOR,
-        .trainerName = _("CONNAR"),
+        .trainerName = _("קונר"),
         .speechBefore = sText_ConnarBefore,
         .speechWin = sText_ConnarWin,
         .speechLose = sText_ConnarLose,
@@ -2942,7 +2942,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_MAURICE] = {
         .facilityClass = FACILITY_CLASS_COLLECTOR,
-        .trainerName = _("MAURICE"),
+        .trainerName = _("מוריס"),
         .speechBefore = sText_MauriceBefore,
         .speechWin = sText_MauriceWin,
         .speechLose = sText_MauriceLose,
@@ -2950,7 +2950,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     },
     [FALLARBOR_TENT_TRAINER_KIANNA] = {
         .facilityClass = FACILITY_CLASS_LASS,
-        .trainerName = _("KIANNA"),
+        .trainerName = _("קיאנה"),
         .speechBefore = sText_KiannaBefore,
         .speechWin = sText_KiannaWin,
         .speechLose = sText_KiannaLose,
