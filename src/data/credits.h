@@ -236,6 +236,7 @@ static const u8 sCreditsText_ShaharBerenson[]                 = _("שחר ברנ
 static const u8 sCreditsText_SagiBelmash[]                    = _("שגיא בלמש");
 static const u8 sCreditsText_NogaShakked[]                    = _("נגה שקד");
 static const u8 sCreditsText_LiorHalphon[]                    = _("ליאור חלפון");
+static const u8 sCreditsText_LiorTes[]                        = _("ליאור טס");
 static const u8 sCreditsText_HebrewNames[]                    = _("עברות שמות הפוקימון");
 static const u8 sCreditsText_MSElboim[]                       = _("מ. ש. אלבוים");
 static const u8 sCreditsText_MayaKatz[]                       = _("מאיה כץ");
@@ -404,6 +405,7 @@ static const struct CreditsEntry sCreditsEntry_HebrewVersion                    
 static const struct CreditsEntry sCreditsEntry_ShaharBerenson                   = { 0, FALSE, sCreditsText_ShaharBerenson};
 static const struct CreditsEntry sCreditsEntry_SagiBelmash                      = { 0, FALSE, sCreditsText_SagiBelmash};
 static const struct CreditsEntry sCreditsEntry_LiorHalfon                       = { 0, FALSE, sCreditsText_LiorHalphon};
+static const struct CreditsEntry sCreditsEntry_LiorTes                          = { 0, FALSE, sCreditsText_LiorTes};
 static const struct CreditsEntry sCreditsEntry_NogaShakked                      = { 0, FALSE, sCreditsText_NogaShakked};
 static const struct CreditsEntry sCreditsEntry_HebrewNames                      = { 0, TRUE, sCreditsText_HebrewNames};
 static const struct CreditsEntry sCreditsEntry_MSElboim                         = { 0, FALSE, sCreditsText_MSElboim};
@@ -437,7 +439,7 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
         &sCreditsEntry_Translator,
         &sCreditsEntry_ShaharBerenson,
-        _,
+        &sCreditsEntry_LiorTes,
         _,
     },
         [PAGE_GRAPHIC_DESIGNERS_4] = {
@@ -449,10 +451,10 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
     },
     [PAGE_PROGRAMMERS_6] = {
         &sCreditsEntry_Programmers,
-        &sCreditsEntry_ShaharBerenson,
+        &sCreditsEntry_NogaShakked,
         &sCreditsEntry_SagiBelmash,
         &sCreditsEntry_LiorHalfon,
-        &sCreditsEntry_NogaShakked,
+        &sCreditsEntry_LiorTes,
     },
     [PAGE_HEBREW_NAMES] = {
         _,
